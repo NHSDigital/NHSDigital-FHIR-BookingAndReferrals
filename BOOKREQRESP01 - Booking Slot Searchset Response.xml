@@ -1,0 +1,247 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="777a156c-af3c-4748-a8a3-7e95e4b0df9a" />
+  <meta>
+    <versionId value="1.0.0-alpha" />
+    <lastUpdated value="2021-10-11T15:01:30+00:00" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
+  </meta>
+  <type value="searchset" />
+  <timestamp value="2021-10-11T12:15:10+00:00" />
+  <total value="8" />
+  <link>
+    <relation value="self" />
+    <url value="https://simplifier.net/nhsbookingandreferrals/777a156c-af3c-4748-a8a3-7e95e4b0df9a-duplicate-2" />
+  </link>
+  <entry>
+    <fullUrl value="urn:uuid:73706f31-2578-4377-88c7-c8b8a5891c4a" />
+    <resource>
+      <Slot>
+        <id value="slot001" />
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30+00:00" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Slot" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
+        </meta>
+        <!--       Delivery Channel extension       -->
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
+          <valueCode value="Telephone" />
+        </extension>
+        <serviceCategory>
+          <coding>
+            <code value="14" />
+            <display value="Emergency Department" />
+          </coding>
+        </serviceCategory>
+        <appointmentType>
+          <coding>
+            <code value="EMERGENCY" />
+            <display value="Emergency appointment" />
+          </coding>
+        </appointmentType>
+        <schedule>
+          <reference value="urn:uuid:a5fab26c-0dfd-424f-be1d-afc877c1afb0" />
+        </schedule>
+        <status value="free" />
+        <start value="2021-10-06T09:00:00.000+00:00" />
+        <end value="2021-10-06T10:00:00.000+00:00" />
+      </Slot>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9f41ba91-d69a-4269-a558-54a20b79c4f2" />
+    <resource>
+      <Slot>
+        <id value="slot002" />
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30+00:00" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Slot" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
+        </meta>
+        <!--       Delivery Channel extension       -->
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
+          <valueCode value="Telephone" />
+        </extension>
+        <serviceCategory>
+          <coding>
+            <code value="14" />
+            <display value="Emergency Department" />
+          </coding>
+        </serviceCategory>
+        <appointmentType>
+          <coding>
+            <code value="EMERGENCY" />
+            <display value="Emergency appointment" />
+          </coding>
+        </appointmentType>
+        <schedule>
+          <reference value="urn:uuid:a5fab26c-0dfd-424f-be1d-afc877c1afb0" />
+        </schedule>
+        <status value="free" />
+        <start value="2021-10-06T10:00:00.000+00:00" />
+        <end value="2021-10-06T10:30:00.000+00:00" />
+      </Slot>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:bb094130-c64f-43a8-b22b-d5b30e1b782f" />
+    <resource>
+      <Slot>
+        <id value="slot003" />
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30+00:00" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Slot" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
+        </meta>
+        <!--       Delivery Channel extension       -->
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeliveryChannel">
+          <valueCode value="Telephone" />
+        </extension>
+        <serviceCategory>
+          <coding>
+            <code value="14" />
+            <display value="Emergency Department" />
+          </coding>
+        </serviceCategory>
+        <appointmentType>
+          <coding>
+            <code value="EMERGENCY" />
+            <display value="Emergency appointment" />
+          </coding>
+        </appointmentType>
+        <schedule>
+          <reference value="urn:uuid:a5fab26c-0dfd-424f-be1d-afc877c1afb0" />
+        </schedule>
+        <status value="free" />
+        <start value="2021-10-06T11:00:00.000+00:00" />
+        <end value="2021-10-06T11:30:00.000+00:00" />
+      </Slot>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a5fab26c-0dfd-424f-be1d-afc877c1afb0" />
+    <resource>
+      <Schedule>
+        <id value="sched1111" />
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30+00:00" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Schedule" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule" />
+        </meta>
+        <identifier>
+          <system value="https://system.supplier.co.uk/Diary/id" />
+          <value value="8622dfdb-dc6a-47b6-b3a7-2eb2829db287" />
+        </identifier>
+        <serviceCategory>
+          <coding>
+            <system value="http://hl7.org/fhir/ValueSet/service-category" />
+            <code value="14" />
+            <display value="Emergency Department" />
+          </coding>
+        </serviceCategory>
+        <serviceType>
+          <coding>
+            <system value="http://hl7.org/fhir/ValueSet/service-type" />
+            <code value="117" />
+            <display value="Emergency Medical" />
+          </coding>
+        </serviceType>
+        <actor>
+          <!--   HealthcareService   -->
+          <reference value="urn:uuid:7dfe2de5-abbe-4a3c-911f-1482e6fb34c3" />
+        </actor>
+        <actor>
+          <!--   PractitionerRole   -->
+          <reference value="urn:uuid:9e895580-e649-4194-96f8-4a8a8d305fef" />
+        </actor>
+        <actor>
+          <!--   Practitioner   -->
+          <reference value="urn:uuid:782bef0c-c90b-41bc-87c1-80f03c0046a5" />
+        </actor>
+      </Schedule>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7dfe2de5-abbe-4a3c-911f-1482e6fb34c3" />
+    <resource>
+      <HealthcareService>
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30+00:00" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
+        </meta>
+        <identifier>
+          <system value="https://system.supplier.co.uk/My/Healthcare/Services" />
+          <value value="100" />
+        </identifier>
+        <location>
+          <reference value="urn:uuid:b3a27952-657e-49ab-9650-fc99094bfb1a" />
+        </location>
+        <name value="Healthcare Service Name" />
+      </HealthcareService>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:782bef0c-c90b-41bc-87c1-80f03c0046a5" />
+    <resource>
+      <Practitioner>
+        <id value="ABCD123456" />
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+          <value value="ABCD123456" />
+        </identifier>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+          <value value="R0260" />
+        </identifier>
+        <name>
+          <family value="Bloggs" />
+          <given value="Joe" />
+          <prefix value="Dr" />
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9e895580-e649-4194-96f8-4a8a8d305fef" />
+    <resource>
+      <PractitionerRole>
+        <id value="R0260" />
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        </meta>
+        <practitioner>
+          <reference value="urn:uuid:782bef0c-c90b-41bc-87c1-80f03c0046a5" />
+        </practitioner>
+        <code>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/practitioner-role" />
+            <code value="doctor" />
+            <display value="Doctor" />
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b3a27952-657e-49ab-9650-fc99094bfb1a" />
+    <resource>
+      <Location>
+        <id value="loc1111" />
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+        </meta>
+        <name value="Healthcare Service Location" />
+        <position>
+          <longitude value="143.20196" />
+          <latitude value="-37.22866" />
+        </position>
+      </Location>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,25 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="triage-outcome-pathways-dx-codes" />
+  <url value="https://fhir.nhs.uk/CodeSystem/pathways-dx-codes" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/pathways-dx-codes" />
+    <value value="pathways-dx-codes" />
+  </identifier>
+  <version value="1.0.1" />
+  <name value="pathwaysdxcodes" />
+  <title value="Triage Outcome Pathways DX Codes" />
+  <status value="active" />
+  <date value="2022-03-08" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Pathways DX Codes from the triage outcome." />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <content value="complete" />
+</CodeSystem>

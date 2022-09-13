@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.guide.md
+- name: Release notes
+  filename: Releasenotes
+- name: Payload Definitions
+  filename: PayloadDefinitions
+- name: FHIR Assets
+  filename: FHIRAssets
+- name: Help and support
+  filename: Helpandsupport

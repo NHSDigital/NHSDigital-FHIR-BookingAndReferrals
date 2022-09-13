@@ -1,0 +1,40 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="message-reason-bars" />
+  <url value="https://fhir.nhs.uk/CodeSystem/message-reason-bars" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/message-reason-code" />
+    <value value="message-reason-bars" />
+  </identifier>
+  <version value="1.1.0" />
+  <name value="messagereasonbars" />
+  <title value="Message Reason BARS" />
+  <status value="active" />
+  <date value="2022-03-02" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Message Reason codes." />
+  <copyright value="Copyright © 2021 NHS Digital" />
+  <content value="complete" />
+  <concept>
+    <code value="new" />
+    <display value="New" />
+    <definition value="New message." />
+  </concept>
+  <concept>
+    <code value="update" />
+    <display value="Update" />
+    <definition value="Update to a message." />
+  </concept>
+  <concept>
+    <code value="delete" />
+    <display value="Delete" />
+    <definition value="Delete a message." />
+  </concept>
+</CodeSystem>

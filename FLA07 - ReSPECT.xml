@@ -1,0 +1,30 @@
+<Flag>
+  <id value="3c55a29d-fbad-4962-9a29-7c9ef8e9b6ec" />
+  <meta>
+    <versionId value="1.0.0-alpha" />
+    <lastUpdated value="2021-10-11T15:23:30+00:00" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
+  </meta>
+  <status value="active" />
+  <category>
+    <coding>
+      <system value="https://fhir.nhs.uk/CodeSystem/flag-categories-bars" />
+      <code value="RT" />
+      <display value="ReSPECT" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="1107891000000106" />
+      <display value=" Has Recommended Summary Plan for Emergency Care and Treatment (finding)" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+  </subject>
+  <period>
+    <start value="2022-01-01" />
+  </period>
+</Flag>
