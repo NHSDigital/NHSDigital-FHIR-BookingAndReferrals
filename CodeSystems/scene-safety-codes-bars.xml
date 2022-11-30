@@ -1,0 +1,46 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="scene-safety-codes-bars" />
+  <url value="https://fhir.nhs.uk/CodeSystem/scene-safety-codes-bars" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
+    <value value="scene-safety-codes-bars" />
+  </identifier>
+  <version value="1.0.0" />
+  <name value="scenesafetycodesbars" />
+  <title value="Scene Safety Codes BARS" />
+  <status value="active" />
+  <date value="2022-03-22" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Scene Safety Codes" />
+  <copyright value="Copyright © 2021 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="S" />
+    <display value="The Scene is safe" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="The Scene is unsafe" />
+  </concept>
+  <concept>
+    <code value="UT" />
+    <display value="The Scene is unsafe and the individual is trapped" />
+  </concept>
+  <concept>
+    <code value="ST" />
+    <display value="The Scene is safe but the individual is trapped" />
+  </concept>
+  <concept>
+    <code value="UNK" />
+    <display value="Unknown" />
+  </concept>
+</CodeSystem>

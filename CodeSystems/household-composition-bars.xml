@@ -1,0 +1,58 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="household-composition-bars" />
+  <url value="https://fhir.nhs.uk/CodeSystem/household-composition-bars" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
+    <value value="household-composition-bars" />
+  </identifier>
+  <version value="1.0.0" />
+  <name value="householdcompositionbars" />
+  <title value="Household Composition BARS" />
+  <status value="active" />
+  <date value="2022-03-11" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Household Compostion Codes BARS" />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="AllHouseholdsWithoutDependentChildren" />
+    <display value="All households without dependent children" />
+  </concept>
+  <concept>
+    <code value="OnePersonHouseholds" />
+    <display value="One person households" />
+  </concept>
+  <concept>
+    <code value="OneFamilyHouseholds" />
+    <display value="One family households" />
+  </concept>
+  <concept>
+    <code value="NoChildren" />
+    <display value="No children" />
+  </concept>
+  <concept>
+    <code value="NonDependentChildren" />
+    <display value="Non dependent children" />
+  </concept>
+  <concept>
+    <code value="AllHouseholdsWithDependentChildren " />
+    <display value="All households with dependent children " />
+  </concept>
+  <concept>
+    <code value="OtherHouseholds" />
+    <display value="Other households" />
+  </concept>
+  <concept>
+    <code value="LivesAlone" />
+    <display value="Lives Alone" />
+  </concept>
+</CodeSystem>

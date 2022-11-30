@@ -1,0 +1,75 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="dos-rejected-reasons-bars" />
+  <url value="https://fhir.nhs.uk/CodeSystem/dos-rejected-reasons-bars" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
+    <value value="dos-rejected-reasons-bars" />
+  </identifier>
+  <version value="1.0.0" />
+  <name value="dosrejectedreasonsbars" />
+  <title value="DOS Rejected Reasons BARS" />
+  <status value="active" />
+  <date value="2022-03-11" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="DoS Rejected Service Reasons BARS" />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <!-- Rejected Services allowed for DoS https://developer.nhs.uk/apis/dos-api/reject_reasons.html -->
+  <concept>
+    <code value="21" />
+    <display value="Unsuitable due to transport" />
+  </concept>
+  <concept>
+    <code value="22" />
+    <display value="Rejected for capacity reasons" />
+  </concept>
+  <concept>
+    <code value="23" />
+    <display value="Service not clinically appropriate" />
+  </concept>
+  <concept>
+    <code value="24" />
+    <display value="Service declined referral" />
+  </concept>
+  <concept>
+    <code value="26" />
+    <display value="Rejected for patient choice" />
+  </concept>
+  <concept>
+    <code value="27" />
+    <display value="Service could not be contacted" />
+  </concept>
+  <concept>
+    <code value="31" />
+    <display value="No appointments available" />
+  </concept>
+  <concept>
+    <code value="32" />
+    <display value="Appointments not suitable" />
+  </concept>
+  <concept>
+    <code value="40" />
+    <display value="Patient not eligible for service" />
+  </concept>
+  <concept>
+    <code value="41" />
+    <display value="Patient requested home visit" />
+  </concept>
+  <concept>
+    <code value="42" />
+    <display value="Unsuitable due to distance" />
+  </concept>
+  <concept>
+    <code value="99" />
+    <display value="Other reason" />
+  </concept>
+</CodeSystem>
