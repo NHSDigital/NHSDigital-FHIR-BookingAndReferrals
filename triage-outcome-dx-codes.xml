@@ -1,0 +1,45 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="triage-outcome-pathways-dx-codes" />
+  <url value="https://fhir.nhs.uk/CodeSystem/pathways-dx-codes" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/pathways-dx-codes" />
+    <value value="pathways-dx-codes" />
+  </identifier>
+  <version value="1.0.2" />
+  <name value="pathwaysdxcodes" />
+  <title value="Triage Outcome Pathways DX Codes" />
+  <status value="active" />
+  <date value="2023-04-13" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Pathways DX Codes from the triage outcome. These are EXAMPLE VALUES ONLY." />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <content value="complete" />
+  <concept>
+    <code value="DX02" />
+    <display value="The individual needs to attend an emergency treatment centre within 1 hour." />
+  </concept>
+  <concept>
+    <code value="Dx335" />
+    <display value="A clinician from our service will call the individual back immediately to assess the problem" />
+  </concept>
+  <concept>
+    <code value="Dx0122" />
+    <display value="Emergency Ambulance Response (Category 3)" />
+  </concept>
+  <concept>
+    <code value="1122334455" />
+    <display value="DX Code example" />
+  </concept>
+  <concept>
+    <code value="Dx0116" />
+    <display value="Emergency Ambulance Response for Major Blood Loss" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,29 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ampds-dispatch-codes" />
+  <url value="https://fhir.nhs.uk/CodeSystem/ampds-dispatch-codes" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/ampds-dispatch-codes" />
+    <value value="ampds-dispatch-codes" />
+  </identifier>
+  <version value="1.0.0" />
+  <name value="amodsdispatchcodes" />
+  <title value="AMPDS Dispatch Codes" />
+  <status value="active" />
+  <date value="2023-04-13" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="AMPDS Dispatch codes. These are EXAMPLE VALUES ONLY." />
+  <copyright value="Copyright © 2023 NHS Digital" />
+  <content value="complete" />
+  <concept>
+    <code value="10A01" />
+    <display value="Chest Pain 12 - 34 yrs with Normal Breathing" />
+  </concept>
+</CodeSystem>

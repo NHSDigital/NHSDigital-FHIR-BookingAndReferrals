@@ -1,0 +1,210 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="safeguarding-codes-bars" />
+  <url value="https://fhir.nhs.uk/CodeSystem/safeguarding-codes-bars" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
+    <value value="safeguarding-codes-bars" />
+  </identifier>
+  <version value="1.0.0" />
+  <name value="safeguardingcodesbars" />
+  <title value="Safeguarding Codes BARS" />
+  <status value="active" />
+  <date value="2022-03-11" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Safeguarding Flag Reason Codes" />
+  <copyright value="Copyright © 2021 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="836881000000105" />
+    <display value="Child is cause for safeguarding concern (finding)" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unspecified Safeguarding Concern Identified" />
+  </concept>
+  <concept>
+    <code value="297591000000108" />
+    <display value="Alleged victim of sexual assault (situation)" />
+  </concept>
+  <concept>
+    <code value="736792008" />
+    <display value="At risk of honor based violence (finding)" />
+  </concept>
+  <concept>
+    <code value="401206008" />
+    <display value="At risk for deliberate self harm (finding)" />
+  </concept>
+  <concept>
+    <code value="702953007" />
+    <display value="Suspected victim of child neglect (situation)" />
+  </concept>
+  <concept>
+    <code value="702579009" />
+    <display value="Suspected victim of sexual abuse (situation)" />
+  </concept>
+  <concept>
+    <code value="707087005" />
+    <display value="At risk of domestic violence (finding)" />
+  </concept>
+  <concept>
+    <code value="881081000000100" />
+    <display value="Domestic abuse victim in household (finding)" />
+  </concept>
+  <concept>
+    <code value="838481000000106" />
+    <display value="At risk of institutional abuse (finding)" />
+  </concept>
+  <concept>
+    <code value="697951004" />
+    <display value="Suspected victim of emotional abuse (situation)" />
+  </concept>
+  <concept>
+    <code value="697950003" />
+    <display value="Suspected domestic abuse (situation)" />
+  </concept>
+  <concept>
+    <code value="697949003" />
+    <display value="Suspected victim of physical abuse (situation)" />
+  </concept>
+  <concept>
+    <code value="1054321000000100" />
+    <display value="At risk of forced marriage (finding)" />
+  </concept>
+  <concept>
+    <code value="766969008" />
+    <display value="At risk of radicalization (finding)" />
+  </concept>
+  <concept>
+    <code value="415685003" />
+    <display value="Suspected alcohol abuse (situation)" />
+  </concept>
+  <concept>
+    <code value="761571000000106" />
+    <display value="At risk of financial abuse (finding)" />
+  </concept>
+  <concept>
+    <code value="449889006" />
+    <display value="Delay in seeking medical advice (finding)" />
+  </concept>
+  <concept>
+    <code value="300731000000106" />
+    <display value="Family is cause for concern (finding)" />
+  </concept>
+  <concept>
+    <code value="878111000000109" />
+    <display value="Unborn child is cause for safeguarding concern (finding)" />
+  </concept>
+  <concept>
+    <code value="861931000000100" />
+    <display value="No safeguarding issues identified (finding)" />
+  </concept>
+  <concept>
+    <code value="713201008" />
+    <display value="At risk of female genital mutilation (finding)" />
+  </concept>
+  <concept>
+    <code value="919461000000108" />
+    <display value="At risk of sexual exploitation (finding)" />
+  </concept>
+  <concept>
+    <code value="700254002" />
+    <display value="Suspected victim of child sexual abuse (situation)" />
+  </concept>
+  <concept>
+    <code value="700253008" />
+    <display value="Suspected victim of sexual grooming (situation)" />
+  </concept>
+  <concept>
+    <code value="700255001" />
+    <display value="Suspected non-accidental injury to child (situation)" />
+  </concept>
+  <concept>
+    <code value="1076171000000100" />
+    <display value="Carer behavior is cause for safeguarding concern (situation)" />
+  </concept>
+  <concept>
+    <code value="293161000000103" />
+    <display value="Family history of alcohol misuse (situation)" />
+  </concept>
+  <concept>
+    <code value="416936003" />
+    <display value="At risk of physical abuse (finding)" />
+  </concept>
+  <concept>
+    <code value="766561000000109" />
+    <display value="Adult safeguarding concern (finding)" />
+  </concept>
+  <concept>
+    <code value="417361000" />
+    <display value="At risk of sexual abuse (finding)" />
+  </concept>
+  <concept>
+    <code value="771983008" />
+    <display value="At risk of psychological abuse (finding)" />
+  </concept>
+  <concept>
+    <code value="771984002" />
+    <display value="At risk of emotional abuse (finding)" />
+  </concept>
+  <concept>
+    <code value="864491000000105" />
+    <display value="Has child subject of child protection plan (situation)" />
+  </concept>
+  <concept>
+    <code value="826931000000104" />
+    <display value="Frequent attender of accident and emergency department (finding)" />
+  </concept>
+  <concept>
+    <code value="417427001" />
+    <display value="At risk of discriminatory abuse (finding)" />
+  </concept>
+  <concept>
+    <code value="417430008" />
+    <display value="Vulnerable adult (finding)" />
+  </concept>
+  <concept>
+    <code value="771385008" />
+    <display value="Suspected victim of bullying (situation)" />
+  </concept>
+  <concept>
+    <code value="104586100000100" />
+    <display value="At risk of human trafficking (finding)" />
+  </concept>
+  <concept>
+    <code value="129707006" />
+    <display value="At risk for other-directed violence (finding)" />
+  </concept>
+  <concept>
+    <code value="287351000000105" />
+    <display value="Family history of substance misuse (situation)" />
+  </concept>
+  <concept>
+    <code value="375041000000100" />
+    <display value="Family member subject of child protection plan (situation)" />
+  </concept>
+  <concept>
+    <code value="248054003" />
+    <display value="Self-neglect (finding)" />
+  </concept>
+  <concept>
+    <code value="162596006" />
+    <display value="Suspected victim of child abuse (situation)" />
+  </concept>
+  <concept>
+    <code value="162591001" />
+    <display value="Suspected drug abuse (situation)" />
+  </concept>
+  <concept>
+    <code value="777996001" />
+    <display value="Alleged being subjected to abuse (situation)" />
+  </concept>
+</CodeSystem>

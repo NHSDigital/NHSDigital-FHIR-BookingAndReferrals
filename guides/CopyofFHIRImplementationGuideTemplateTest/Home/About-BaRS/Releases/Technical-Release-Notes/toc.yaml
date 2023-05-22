@@ -1,0 +1,16 @@
+- name: BaRS Core
+  filename: BaRS-Core
+- name: API Spec Change Log
+  filename: API-Spec-Change-Log
+- name: Implementation Guide Change Log
+  filename: Implementation-Guide-Change-Log
+- name: TKW Change Log
+  filename: TKW-Change-Log
+- name: BaRS-UEC1
+  filename: BaRS-UEC1
+- name: BaRS-UEC2
+  filename: BaRS-UEC2
+- name: BaRS-UEC3
+  filename: BaRS-UEC3
+- name: BaRS-UEC4
+  filename: BaRS-UEC4

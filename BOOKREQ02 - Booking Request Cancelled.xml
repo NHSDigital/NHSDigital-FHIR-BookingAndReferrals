@@ -1,0 +1,223 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="446053f9-047a-4c67-b021-58871edb4414" />
+  <meta>
+    <versionId value="1.0.0-alpha" />
+    <lastUpdated value="2023-04-12T15:01:30.8185338+00:00" />
+    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
+  </meta>
+  <type value="message" />
+  <timestamp value="2021-10-11T12:15:10+00:00" />
+  <entry>
+    <fullUrl value="urn:uuid:c5957fdd-097b-409d-a406-49c52ceef2cd" />
+    <resource>
+      <MessageHeader>
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
+          <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-booking-request" />
+        </meta>
+        <eventCoding>
+          <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
+          <code value="booking-request" />
+        </eventCoding>
+        <destination>
+          <endpoint value="https://fhir.nhs.uk/Id/dos-service-id|111111111" />
+          <receiver>
+            <reference value="urn:uuid:43a42f7a-a6f2-42a5-a8f0-fc85abf8c3fa" />
+          </receiver>
+        </destination>
+        <sender>
+          <reference value="urn:uuid:6324587b-eb70-4333-9db2-22d48f64c9ba" />
+        </sender>
+        <source>
+          <name value="My organisation name" />
+          <software value="My software name" />
+          <version value="2.1.45" />
+          <contact>
+            <system value="phone" />
+            <value value="+44 (0113) 123 4567" />
+          </contact>
+          <endpoint value="https://fhir.nhs.uk/Id/dos-service-id|2222222222" />
+        </source>
+        <reason>
+          <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/message-reason-bars" />
+            <code value="new" />
+          </coding>
+        </reason>
+        <focus>
+          <!--     Appointment     -->
+          <reference value="urn:uuid:aca94bdb-2e38-4399-9ece-2ba083ce65b5" />
+        </focus>
+        <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request-cancelled" />
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aca94bdb-2e38-4399-9ece-2ba083ce65b5" />
+    <resource>
+      <Appointment>
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
+        </meta>
+        <status value="cancelled" />
+        <description value="Reason for calling-" />
+        <start value="2021-10-12T12:30:30+00:00" />
+        <end value="2021-10-12T12:40:30+00:00" />
+        <created value="2021-10-11T15:01:30+00:00" />
+        <participant>
+          <actor>
+            <reference value="urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2" />
+          </actor>
+          <status value="accepted" />
+        </participant>
+      </Appointment>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2" />
+    <resource>
+      <Patient>
+        <meta>
+          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        </meta>
+        <!--       added EthnicCategory extension       -->
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory" />
+              <code value="A" />
+              <display value="British, Mixed British" />
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <!--       added Religion extension       -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
+              <code value="1041" />
+              <display value="Roman Catholic Church" />
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                <code value="number-present-and-verified" />
+                <display value="Number present and verified" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="9476719931" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <text value="Mr Peter Chalmers" />
+          <family value="Chalmers" />
+          <given value="Peter" />
+          <prefix value="Mr" />
+        </name>
+        <gender value="male" />
+        <birthDate value="1974-12-25" />
+        <address>
+          <use value="home" />
+          <text value="123 High Street, Leeds LS1 4HR" />
+          <line value="123 High Street" />
+          <line value="Leeds" />
+          <city value="Leeds" />
+          <postalCode value="LS1 4HR" />
+        </address>
+        <contact>
+          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+            <valuePositiveInt value="1" />
+          </extension>
+          <relationship>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+              <code value="ONESELF" />
+            </coding>
+          </relationship>
+          <telecom>
+            <system value="phone" />
+            <value value="01138698975" />
+            <use value="home" />
+            <rank value="2" />
+          </telecom>
+          <telecom>
+            <system value="phone" />
+            <value value="07736312544" />
+            <use value="mobile" />
+            <rank value="1" />
+          </telecom>
+          <telecom>
+            <system value="email" />
+            <value value="jjones@hotmail.co.uk" />
+            <use value="home" />
+            <rank value="1" />
+          </telecom>
+        </contact>
+        <contact>
+          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+            <valuePositiveInt value="2" />
+          </extension>
+          <relationship>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+              <code value="NEPHEW" />
+            </coding>
+          </relationship>
+          <name>
+            <family value="Grayson" />
+            <given value="Jack" />
+          </name>
+          <telecom>
+            <system value="phone" />
+            <value value="0789 1234567" />
+            <rank value="1" />
+          </telecom>
+          <gender value="male" />
+        </contact>
+        <communication>
+          <language>
+            <coding>
+              <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+              <code value="en" />
+              <display value="English" />
+            </coding>
+          </language>
+          <preferred value="true" />
+        </communication>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:43a42f7a-a6f2-42a5-a8f0-fc85abf8c3fa" />
+    <resource>
+      <Organization>
+        <meta>
+          <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </meta>
+        <name value="ORIGINAL Receiving/performing Organization" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6324587b-eb70-4333-9db2-22d48f64c9ba" />
+    <resource>
+      <Organization>
+        <meta>
+          <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </meta>
+        <name value="ORIGINAL Sender Organization" />
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>

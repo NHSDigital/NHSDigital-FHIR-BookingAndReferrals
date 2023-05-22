@@ -1,0 +1,117 @@
+# See the FHIR Package Specification for the valid format of a FHIR package: https://confluence.hl7.org/display/FHIR/NPM+Package+Specification
+# Documentation on the format of a bake file is available here: https://simplifier.net/docs/bake
+
+# Transform all resources to JSON (Mandatory according to the specification)
+transform-to-json:
+  - source: input
+  - category: Resource
+#  - filter: status!='retired'
+  - transform: json
+  - target: bucket1
+ 
+# Generate snapshots for all Profiles/StructureDefinitions (Optional)
+# Note, since the file names stay the same the files will be overwritten and we do not need an extra bucket.
+generate-snapshots:
+  - source: bucket1
+  - category: Profile
+  - action: snapshot
+  - target: bucket1
+ 
+# Move all conformance resources to the /package folder (Mandatory according to the specification)
+move-conformance-resources:
+  - source: bucket1
+  - category: Conformance
+  - move: /package
+  - target: output
+
+# Move all codesystem resources to the /package folder
+move-codesystem-resources:
+  - source: bucket1
+  - category: CodeSystem
+  - move: /package
+  - target: output
+
+# Move all valueset resources to the /package folder
+move-valueset-resources:
+  - source: bucket1
+  - category: ValueSet
+  - move: /package
+  - target: output
+
+# Move all capabilitystatement resources to the /package folder
+move-capabilitystatement-resources:
+  - source: bucket1
+  - category: CapabilityStatement
+  - move: /package
+  - target: output
+  
+# Move all operationdefinition resources to the /package folder
+move-operationdefinition-resources:
+  - source: bucket1
+  - category: OperationDefinition
+  - move: /package
+  - target: output
+  
+# Move all namingsystem resources to the /package folder
+move-namingsystem-resources:
+  - source: bucket1
+  - category: NamingSystem
+  - move: /package
+  - target: output
+  
+# Move all conceptmap resources to the /package folder
+move-conceptmap-resources:
+  - source: bucket1
+  - category: ConceptMap
+  - move: /package
+  - target: output
+  
+# Move all structuremap resources to the /package folder
+move-structuremap-resources:
+  - source: bucket1
+  - category: StructureMap
+  - move: /package
+  - target: output
+
+# Move all extension resources to the /package folder
+move-extension-resources:
+  - source: bucket1
+  - category: Extension
+  - move: /package
+  - target: output
+
+# Move all implementationguide resources to the /package folder
+move-implementationguide-resources:
+  - source: bucket1
+  - category: ImplementationGuide
+  - move: /package
+  - target: output
+
+# Move all examples to the /package/examples folder
+move-examples:
+  - source: bucket1
+  - category: Instance
+  - move: /package/examples
+  - target: output
+ 
+ # Move all messagedefinitions to the /package folder
+move-messagedefinitions:
+  - source: bucket1
+  - category: MessageDefinition
+  - move: /package
+  - target: output
+ 
+# Move the Package Manifest to the /package folder (Mandatory according to the specification)
+manifest:
+  - source: input
+  - files: package.json
+  - move: /package
+  - target: output
+ 
+# Generate an .index.json file with all files in the package (Optional)
+index-file:
+  - source: output
+  - files: /package/**/*.json
+  - action: create-package-index
+  - move: /package
+  - target: output

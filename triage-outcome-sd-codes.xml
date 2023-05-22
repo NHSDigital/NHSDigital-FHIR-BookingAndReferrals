@@ -1,0 +1,45 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="triage-outcome-pathways-sd-codes" />
+  <url value="https://fhir.nhs.uk/CodeSystem/pathways-sd-codes" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/pathways-sd-codes" />
+    <value value="pathways-sd-codes" />
+  </identifier>
+  <version value="1.0.2" />
+  <name value="pathwayssdcodes" />
+  <title value="Triage Outcome Pathways SD Codes" />
+  <status value="active" />
+  <date value="2023-04-13" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Pathways SD Codes from the triage outcome. These are EXAMPLE VALUES ONLY." />
+  <copyright value="Copyright © 2022 NHS Digital" />
+  <content value="complete" />
+  <concept>
+    <code value="4389" />
+    <display value="ED post tonsillectomy bleeding" />
+  </concept>
+  <concept>
+    <code value="SD4501" />
+    <display value="ED Ischaemia, post trauma" />
+  </concept>
+  <concept>
+    <code value="SD4033" />
+    <display value="AMB new/worsening breathlessness" />
+  </concept>
+  <concept>
+    <code value="1122334455" />
+    <display value="SD Code example" />
+  </concept>
+  <concept>
+    <code value="SD4215" />
+    <display value="AMB major blood loss, trauma" />
+  </concept>
+</CodeSystem>
