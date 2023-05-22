@@ -1,0 +1,22 @@
+      <Observation>
+        <id value="9c2b9f44-154a-42d3-9b43-d2fba2fb4c85" />
+        <!-- Patient Estimated Age recorded as an Observation  -->
+        <meta>
+          <lastUpdated value="2021-11-26T15:00:00+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>
+        <status value="final" />
+        <code>
+				<text value="Patient Estimated Age" />
+		</code>
+			<valueQuantity>
+					<value value="32.0" />
+					<unit value="years" />
+					<system value="https://ucum.org/trac" />
+					<code value="year" />
+			</valueQuantity>
+        <subject>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+        <effectiveDateTime value="2021-11-26T15:00:00+00:00" />
+      </Observation>

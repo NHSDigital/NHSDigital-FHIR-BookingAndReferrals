@@ -1,0 +1,8 @@
+- name: About BaRS
+  filename: About-BaRS
+- name: BaRS Principles and Prerequisites
+  filename: BaRS-Principles-and-Prerequisites
+- name: Releases
+  filename: Releases
+- name: Versioning
+  filename: Versioning.guide.md

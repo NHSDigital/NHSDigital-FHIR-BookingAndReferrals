@@ -1,0 +1,104 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="45bcbe62-718b-4874-a68c-b0fe39a76cf5" />
+  <url value="https://MyService.nhs.uk/FHIR-Server" />
+  <name value="BaRS FHIR Server CapabilityStatement" />
+  <status value="active" />
+  <version value="1.0.0-alpha" />
+  <experimental value="true" />
+  <date value="2023-05-17" />
+  <publisher value="NHS England" />
+  <kind value="instance" />
+  <contact>
+    <name value="System Administrator" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+    </telecom>
+  </contact>
+  <description value="Sample capability statement showing new MessageDefinition structure, modify this Capability Statement to reflect what your system is capable of." />
+  <software>
+    <name value="NHS Digital" />
+  </software>
+  <implementation>
+    <description value="NHS Digital Message endpoint" />
+    <url value="https://fhir.nhs.uk/fhir/message-drop" />
+  </implementation>
+  <fhirVersion value="4.0.1" />
+  <format value="xml" />
+  <format value="json" />
+  <messaging>
+    <endpoint>
+      <protocol>
+        <system value="http://terminology.hl7.org/CodeSystem/message-transport" />
+        <code value="mllp" />
+      </protocol>
+      <address value="mllp:10.1.1.10:9234" />
+    </endpoint>
+    <reliableCache value="30" />
+    <documentation value="ADT A08 equivalent for external system notifications" />
+    <supportedMessage>
+      <mode value="sender" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="sender" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="sender" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-full" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="sender" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="sender" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="sender" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-cancelled" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="sender" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="sender" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request-cancelled" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="receiver" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="receiver" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="receiver" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-full" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="receiver" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="receiver" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="receiver" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-cancelled" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="receiver" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
+    </supportedMessage>
+    <supportedMessage>
+      <mode value="receiver" />
+      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request-cancelled" />
+    </supportedMessage>
+  </messaging>
+</CapabilityStatement>

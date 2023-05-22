@@ -1,0 +1,9 @@
+{
+  "updated": "2023-05-22T10:26:21.6187962+01:00",
+  "dependencies": {
+    "uk.nhsdigital.r4": "2.5.0",
+    "hl7.fhir.r4.core": "4.0.1",
+    "fhir.r4.ukcore.stu1": "0.5.1"
+  },
+  "missing": {}
+}

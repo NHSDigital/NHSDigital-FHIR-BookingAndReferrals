@@ -1,0 +1,24 @@
+      <Observation>
+	    <id value="4ccf50f3-c9c5-496d-9695-260088f5e08e" />
+        <!-- Patient Birth Sex as an Observation  -->
+        <meta>
+          <lastUpdated value="2022-01-26T15:00:00+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>
+        <status value="final" />
+		<code> 
+			<coding> 
+				<system value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex"/> 
+				<code value="M"/> 
+				<display value="Male"/> 
+			</coding> 
+			<text value="Birth Sex"/> 
+		</code> 
+        <subject>
+			<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+		<encounter> 
+			<reference value="urn:uuid:8765fb37-87a2-48d8-968f-b37142920000"/> 
+		</encounter> 
+        <effectiveDateTime value="2021-11-26T15:00:00+00:00" />
+      </Observation>

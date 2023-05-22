@@ -1,0 +1,33 @@
+<Flag xmlns="http://hl7.org/fhir">
+  <id value="ef690efe-43eb-4519-8b0b-7fe880652c02" />
+  <meta>
+    <versionId value="1.0.0-alpha" />
+    <lastUpdated value="2021-10-11T15:23:30+00:00" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
+  </meta>
+  <status value="active" />
+  <category>
+    <coding>
+      <system value="https://fhir.nhs.uk/CodeSystem/flag-categories-bars" />
+      <code value="RS" />
+      <display value="Rejected Services" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.uk/flag-codes-bars" />
+      <code value="patientChoice" />
+      <display value="Patient Choice in Service Selection" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+  </encounter>
+  <period>
+    <start value="2022-01-01" />
+  </period>
+</Flag>

@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Release Notes
+  filename: Release-Notes.guide.md
+- name: Current Releases
+  filename: Current-Releases.page.md
+- name: Previous Releases
+  filename: Previous-Releases.page.md
+- name: Pre-Releases
+  filename: Pre-Releases.page.md
+- name: Technical Release Notes
+  filename: Technical-Release-Notes

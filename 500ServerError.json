@@ -1,0 +1,24 @@
+{
+  "resourceType": "OperationOutcome",
+  "id":"4e2e13af-3bc7-4de3-8cc5-ea4f14d45ef8",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "exception",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/Codesystem/http-error-codes",
+            "code": "REC_SERVER_ERROR"
+          }
+        ]
+      },
+      "diagnostics": "An problem was encountered processing the request: <further diagnostics information, error message/error text>"
+    }
+  ]
+}

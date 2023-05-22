@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="reasonable-adjustment-codes-bars"/>
+    <url value="https://fhir.nhs.uk/CodeSystem/reasonable-adjustment-codes-bars"/>
+    <identifier>
+        <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
+        <value value="reasonable-adjustment-codes-bars"/>
+    </identifier>
+    <version value="1.0.0"/>
+    <name value="reasonableadjustmentcodesbars"/>
+    <title value="Reasonable Adjustment Codes BARS"/>
+    <status value="active"/>
+    <date value="2022-03-11"/>
+    <publisher value="NHS Digital"/>
+    <contact>
+        <name value="NHS Digital" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <description value="Reasonable Adjustment Flag Reason Codes"/>
+    <copyright value="Copyright &#169; 2022 NHS Digital" />
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+	<concept>
+        <code value="patientChoice" />
+        <display value="Patient Choice in Service Selection" />
+    </concept>
+	<!-- Communication Adjustement  - https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-CommunicationAdjustments-1 -->
+    <concept>
+        <code value="adjustcommunicationforhearingsensoryimpairment" />
+        <display value="Adjust communication for hearing / sensory impairment" />
+    </concept>
+	<concept>
+        <code value="adjustforatypicalexpressionofpain" />
+        <display value="Adjust for atypical expression of pain" />
+    </concept>
+	<concept>
+        <code value="adjustforuseofcommunicationbookaid" />
+        <display value="Adjust for use of communication book / aid" />
+    </concept>
+	<concept>
+        <code value="advocatetobepresent" />
+        <display value="Advocate to be present" />
+    </concept>
+	<concept>
+        <code value="carertobepresentforallcommunication" />
+        <display value="Carer to be present for all communication" />
+    </concept>
+	<concept>
+        <code value="patientlikelytoalwaysrespondinthepositive" />
+        <display value="Patient likely to always respond in the positive" />
+    </concept>
+	<concept>
+        <code value="provideappointmentreminders" />
+        <display value="Provide appointment reminders" />
+    </concept>
+	<concept>
+        <code value="providewrittenremindersandadvice" />
+        <display value="Provide written reminders and advice" />
+    </concept>
+	<concept>
+        <code value="reasonableadjustmentforcommunicationnodetailprovided" />
+        <display value="Reasonable adjustment for communication (no detail provided)" />
+    </concept>
+	<concept>
+        <code value="reasonableadjustmentforcommunicationseedetailprovided" />
+        <display value="Reasonable adjustment for communication (see detail provided)" />
+    </concept>
+	<!-- Support Adjustments - https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-SupportAdjustments-1 -->
+   <concept>
+      <code value="patientnottobeleftalone"/>
+      <display value="Patient not to be left alone"/>
+   </concept>
+   <concept>
+      <code value="adjusttoinvolvecarersinallaspectsofcare"/>
+      <display value="Adjust to involve Carers in all aspects of care"/>
+   </concept>
+   <concept>
+      <code value="lastingpowerofattorney"/>
+      <display value="Lasting Power of Attorney"/>
+   </concept>
+   <concept>
+      <code value="additionalsupportfordischarge"/>
+      <display value="Additional support for discharge"/>
+   </concept>
+   <concept>
+      <code value="supportforvisualsensoryimpairment"/>
+      <display value="Support for visual /sensory impairment"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmentforadditionalsupportseedetailprovided"/>
+      <display value="Reasonable adjustment for additional support (see detail provided)"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmentforadditionalsupportnodetailprovided"/>
+      <display value="Reasonable adjustment for additional support (no detail provided)"/>
+   </concept>
+   <!-- Personalisation Adjustments - https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-PersonalisationAdjustments-1 -->
+      <concept>
+      <code value="adjustforneedlephobia"/>
+      <display value="Adjust for needle phobia"/>
+   </concept>
+   <concept>
+      <code value="dislikesuniformswhitecoats"/>
+      <display value="Dislikes uniforms / white coats"/>
+   </concept>
+   <concept>
+      <code value="respondstodistraction"/>
+      <display value="Responds to distraction"/>
+   </concept>
+   <concept>
+      <code value="hasanticipatorycarecrisisplan"/>
+      <display value="Has anticipatory care /crisis plan"/>
+   </concept>
+   <concept>
+      <code value="willonlytoleratemedicationsincertainformat"/>
+      <display value="Will only tolerate medications in certain format"/>
+   </concept>
+   <concept>
+      <code value="maleorfemaleonlysupport"/>
+      <display value="Male or Female only support"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmenttopersonalisationseedetailprovided"/>
+      <display value="Reasonable adjustment to personalisation (see detail provided)"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmenttopersonalisationnodetailprovided"/>
+      <display value="Reasonable adjustment to personalisation (no detail provided)"/>
+   </concept>
+   <!-- Environmental Adjustments - https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-EnvironmentAdjustments-1 -->
+   <concept>
+      <code value="adjustforlownoisestimulus"/>
+      <display value="Adjust for low noise stimulus"/>
+   </concept>
+   <concept>
+      <code value="adjustforsingleroom"/>
+      <display value="Adjust for single room"/>
+   </concept>
+   <concept>
+      <code value="wheelchairaccess"/>
+      <display value="Wheelchair access"/>
+   </concept>
+   <concept>
+      <code value="adjustforspecialistequipment"/>
+      <display value="Adjust for specialist equipment"/>
+   </concept>
+   <concept>
+      <code value="adjustforlowlightstimulus"/>
+      <display value="Adjust for low light stimulus"/>
+   </concept>
+   <concept>
+      <code value="adjustminimisewaitingtimes"/>
+      <display value="Adjust / minimise waiting times"/>
+   </concept>
+      <concept>
+      <code value="reasonableadjustmenttoenvironmentseedetailprovided"/>
+      <display value="Reasonable adjustment to environment (see detail provided)"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmenttoenvironmentnodetailprovided"/>
+      <display value="Reasonable adjustment to environment (no detail provided)"/>
+   </concept>
+   <!-- Service Delivery Adjustments - https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ServiceDeliveryAdjustments-1 -->
+      <concept>
+      <code value="offerfirstorlastappointment"/>
+      <display value="Offer first or last appointment"/>
+   </concept>
+   <concept>
+      <code value="considerhomevisits"/>
+      <display value="Consider Home Visits"/>
+   </concept>
+   <concept>
+      <code value="providelongerappointment"/>
+      <display value="Provide longer appointment"/>
+   </concept>
+   <concept>
+      <code value="provideadditionaltimefordecisionmakingprocessing"/>
+      <display value="Provide additional time for decision making / processing"/>
+   </concept>
+   <concept>
+      <code value="adjustforhighlevelsofanxiety"/>
+      <display value="Adjust for high levels of anxiety"/>
+   </concept>
+   <concept>
+      <code value="considerdesensitisationforanyprocedure"/>
+      <display value="Consider desensitisation for any procedure"/>
+   </concept>
+   <concept>
+      <code value="considerpreoutpatientoradmissionvisit"/>
+      <display value="Consider pre outpatient or admission visit"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmenttoservicedeliveryseedetailprovided"/>
+      <display value="Reasonable adjustment to service delivery (see detail provided)"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmenttoservicedeliverynodetailprovided"/>
+      <display value="Reasonable adjustment to service delivery (no detail provided)"/>
+   </concept>   
+   <!-- Risk Adjustments - https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-EnvironmentAdjustments-1 -->
+      <concept>
+      <code value="monitorforconstipation"/>
+      <display value="Monitor for constipation"/>
+   </concept>
+   <concept>
+      <code value="monitorfordehydration"/>
+      <display value="Monitor for dehydration"/>
+   </concept>
+   <concept>
+      <code value="monitornutrition"/>
+      <display value="Monitor nutrition"/>
+   </concept>
+   <concept>
+      <code value="monitorforpressuresores"/>
+      <display value="Monitor for pressure sores"/>
+   </concept>
+   <concept>
+      <code value="monitorfordysphagia"/>
+      <display value="Monitor for Dysphagia"/>
+   </concept>
+   <concept>
+      <code value="monitorforself-harm"/>
+      <display value="Monitor for self-harm"/>
+   </concept>
+   <concept>
+      <code value="monitorforepilepsy"/>
+      <display value="Monitor for epilepsy"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmentforspecificrisksseedetailprovided"/>
+      <display value="Reasonable adjustment for specific risks (see detail provided)"/>
+   </concept>
+   <concept>
+      <code value="reasonableadjustmentforspecificrisksnodetailprovided"/>
+      <display value="Reasonable adjustment for specific risks (no detail provided)"/>
+   </concept>   
+   <!-- Other Adjustments - https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-EnvironmentAdjustments-1 -->
+      <concept>
+      <code value="reasonableadjustmentsforhealthandcareaccess"/>
+      <display value="Reasonable adjustments for health and care access"/>
+   </concept>
+   <!-- Accessible Information Adjustments - https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1 -->
+ <concept>
+      <code value="doeslipread"/>
+      <display value="Does lip read"/>
+   </concept>
+   <concept>
+      <code value="doesusecommunicationdevice"/>
+      <display value="Does use communication device"/>
+   </concept>
+   <concept>
+      <code value="doesusehearingaid"/>
+      <display value="Does use hearing aid"/>
+   </concept>
+   <concept>
+      <code value="preferredmethodofcommunicationwritten"/>
+      <display value="Preferred method of communication: written"/>
+   </concept>
+   <concept>
+      <code value="usesa citizenadvocate"/>
+      <display value="Uses a citizen advocate"/>
+   </concept>
+   <concept>
+      <code value="usesa legaladvocate"/>
+      <display value="Uses a legal advocate"/>
+   </concept>
+   <concept>
+      <code value="usesalternativecommunicationskill"/>
+      <display value="Uses alternative communication skill"/>
+   </concept>
+   <concept>
+      <code value="usesbritishsignlanguage"/>
+      <display value="Uses British sign language"/>
+   </concept>
+   <concept>
+      <code value="usescuedspeechtransliterator"/>
+      <display value="Uses cued speech transliterator"/>
+   </concept>
+   <concept>
+      <code value="usesdeafblindintervener"/>
+      <display value="Uses deafblind intervener"/>
+   </concept>
+   <concept>
+      <code value="usesdeafblindmanualalphabet"/>
+      <display value="Uses Deafblind Manual Alphabet"/>
+   </concept>
+   <concept>
+      <code value="useselectronicnotetaker"/>
+      <display value="Uses electronic note taker"/>
+   </concept>
+   <concept>
+      <code value="useslipspeaker"/>
+      <display value="Uses lipspeaker"/>
+   </concept>
+   <concept>
+      <code value="usesmakatonsignlanguage"/>
+      <display value="Uses Makaton sign language"/>
+   </concept>
+   <concept>
+      <code value="usesmanualnotetaker"/>
+      <display value="Uses manual note taker"/>
+   </concept>
+   <concept>
+      <code value="usespersonalaudiorecordingdevicetorecordinformation"/>
+      <display value="Uses personal audio recording device to record information"/>
+   </concept>
+   <concept>
+      <code value="usespersonalcommunicationpassport"/>
+      <display value="Uses Personal Communication Passport"/>
+   </concept>
+   <concept>
+      <code value="usessignlanguage"/>
+      <display value="Uses sign language"/>
+   </concept>
+   <concept>
+      <code value="usesspeechtotextreporter"/>
+      <display value="Uses speech to text reporter"/>
+   </concept>
+   <concept>
+      <code value="usestelecommunicationsdeviceforthedeaf"/>
+      <display value="Uses telecommunications device for the deaf"/>
+   </concept>
+   <concept>
+      <code value="britishsignlanguageinterpreterneeded"/>
+      <display value="British Sign Language interpreter needed"/>
+   </concept>
+   <concept>
+      <code value="hands-onsigninginterpreterneeded"/>
+      <display value="Hands-on signing interpreter needed"/>
+   </concept>
+   <concept>
+      <code value="makatonsignlanguageinterpreterneeded"/>
+      <display value="Makaton Sign Language interpreter needed"/>
+   </concept>
+   <concept>
+      <code value="needsanadvocate"/>
+      <display value="Needs an advocate"/>
+   </concept>
+   <concept>
+      <code value="requiresdeafblindblockalphabetinterpreter"/>
+      <display value="Requires deafblind block alphabet interpreter"/>
+   </concept>
+   <concept>
+      <code value="requiresdeafblindcommunicatorguide"/>
+      <display value="Requires deafblind communicator guide"/>
+   </concept>
+   <concept>
+      <code value="requiresdeafblindhapticcommunicationinterpreter"/>
+      <display value="Requires deafblind haptic communication interpreter"/>
+   </concept>
+   <concept>
+      <code value="requiresdeafblindmanualalphabetinterpreter"/>
+      <display value="Requires deafblind manual alphabet interpreter"/>
+   </concept>
+   <concept>
+      <code value="requireslipspeaker"/>
+      <display value="Requires lipspeaker"/>
+   </concept>
+   <concept>
+      <code value="requiresmanualnotetaker"/>
+      <display value="Requires manual note taker"/>
+   </concept>
+   <concept>
+      <code value="requiressightedguide"/>
+      <display value="Requires sighted guide"/>
+   </concept>
+   <concept>
+      <code value="requiresspeechtotextreporter"/>
+      <display value="Requires speech to text reporter"/>
+   </concept>
+   <concept>
+      <code value="signsupportedenglishinterpreterneeded"/>
+      <display value="Sign Supported English interpreter needed"/>
+   </concept>
+   <concept>
+      <code value="visualframesignlanguageinterpreterneeded"/>
+      <display value="Visual frame sign language interpreter needed"/>
+   </concept>
+   <concept>
+      <code value="requiresaudiblealert"/>
+      <display value="Requires audible alert"/>
+   </concept>
+   <concept>
+      <code value="requirescontactbyemail"/>
+      <display value="Requires contact by email"/>
+   </concept>
+   <concept>
+      <code value="requirescontactbyletter"/>
+      <display value="Requires contact by letter"/>
+   </concept>
+   <concept>
+      <code value="requirescontactbyshortmessageservicetextmessage"/>
+      <display value="Requires contact by short message service text message"/>
+   </concept>
+   <concept>
+      <code value="requirescontactbytelephone"/>
+      <display value="Requires contact by telephone"/>
+   </concept>
+   <concept>
+      <code value="requirescontactbytextrelay"/>
+      <display value="Requires contact by text relay"/>
+   </concept>
+   <concept>
+      <code value="requirescontactviacarer"/>
+      <display value="Requires contact via carer"/>
+   </concept>
+   <concept>
+      <code value="requirestactilealert"/>
+      <display value="Requires tactile alert"/>
+   </concept>
+   <concept>
+      <code value="requiresvisualalert"/>
+      <display value="Requires visual alert"/>
+   </concept>
+   <concept>
+      <code value="requireshealthcareinformationrecordingonpersonalaudiorecordingdevice"/>
+      <display value="Requires healthcare information recording on personal audio recording device"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationbyemail"/>
+      <display value="Requires information by email"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationincontractedgrade2braille"/>
+      <display value="Requires information in contracted (Grade 2) Braille"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationineasyread"/>
+      <display value="Requires information in Easyread"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationinelectronicaudioformat"/>
+      <display value="Requires information in electronic audio format"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationinelectronicdownloadableformat"/>
+      <display value="Requires information in electronic downloadable format"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationinmakaton"/>
+      <display value="Requires information in Makaton"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationinmoonalphabet"/>
+      <display value="Requires information in Moon alphabet"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationinuncontractedgrade1braille"/>
+      <display value="Requires information in uncontracted (Grade 1) Braille"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationonaudiocassettetape"/>
+      <display value="Requires information on audio cassette tape"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationoncompactdisc"/>
+      <display value="Requires information on compact disc"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationondigitalversatiledisc"/>
+      <display value="Requires information on digital versatile disc"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationonuniversalserialbusmassstoragedevice"/>
+      <display value="Requires information on universal serial bus mass storage device"/>
+   </concept>
+   <concept>
+      <code value="requiresinformationverbally"/>
+      <display value="Requires information verbally"/>
+   </concept>
+   <concept>
+      <code value="requiresthirdpartytoreadoutwritteninformation"/>
+      <display value="Requires third party to read out written information"/>
+   </concept>
+   <concept>
+      <code value="requireswritteninformationinatleast20pointsansseriffont"/>
+      <display value="Requires written information in at least 20 point sans serif font"/>
+   </concept>
+   <concept>
+      <code value="requireswritteninformationinatleast24pointsansseriffont"/>
+      <display value="Requires written information in at least 24 point sans serif font"/>
+   </concept>
+   <concept>
+      <code value="requireswritteninformationinatleast28pointsansseriffont"/>
+      <display value="Requires written information in at least 28 point sans serif font"/>
+   </concept>
+</CodeSystem>

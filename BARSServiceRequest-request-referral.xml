@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BARSServiceRequestRequestReferral" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
+  <version value="1.0.4" />
+  <name value="BARSServiceRequestRequestReferral" />
+  <title value="BARS ServiceRequest-Request Referral" />
+  <status value="active" />
+  <date value="2023-03-08" />
+  <description value="BARS ServiceRequest-request Referral profile" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ServiceRequest" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ServiceRequest.intent">
+      <path value="ServiceRequest.intent" />
+      <fixedCode value="plan" />
+    </element>
+    <element id="ServiceRequest.category">
+      <path value="ServiceRequest.category" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ServiceRequest.category.coding.system">
+      <path value="ServiceRequest.category.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
+    </element>
+    <element id="ServiceRequest.category.coding.code">
+      <path value="ServiceRequest.category.coding.code" />
+      <fixedCode value="referral" />
+    </element>
+    <element id="ServiceRequest.subject">
+      <path value="ServiceRequest.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+      </type>
+    </element>
+    <element id="ServiceRequest.occurrence[x]">
+      <path value="ServiceRequest.occurrence[x]" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="ServiceRequest.authoredOn">
+      <path value="ServiceRequest.authoredOn" />
+      <comment value="DateTime the Referral Request was generated" />
+      <min value="1" />
+    </element>
+    <element id="ServiceRequest.performer">
+      <path value="ServiceRequest.performer" />
+      <comment value="Referral To" />
+    </element>
+  </differential>
+</StructureDefinition>
