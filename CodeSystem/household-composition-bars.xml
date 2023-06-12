@@ -45,7 +45,7 @@
         <display value="Non dependent children" />
     </concept>
 	<concept>
-        <code value="AllHouseholdsWithDependentChildren " />
+        <code value="AllHouseholdsWithDependentChildren" />
         <display value="All households with dependent children " />
     </concept>
 	<concept>
