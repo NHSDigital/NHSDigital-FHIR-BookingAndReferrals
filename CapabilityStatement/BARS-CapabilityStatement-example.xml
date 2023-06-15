@@ -3,7 +3,7 @@
   <url value="https://MyService.nhs.uk/FHIR-Server" />
   <name value="BaRS FHIR Server CapabilityStatement" />
   <status value="active" />
-  <version value="1.0.0-alpha" />
+  <version value="1.0.1" />
   <experimental value="true" />
   <date value="2023-05-17" />
   <publisher value="NHS England" />

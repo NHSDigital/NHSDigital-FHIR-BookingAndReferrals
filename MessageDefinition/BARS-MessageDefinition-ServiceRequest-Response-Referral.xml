@@ -5,7 +5,7 @@
   <title value="BARS Message Definition ServiceRequest - Response Referral" />
   <status value="active" />
   <date value="2022-02-11" />
-  <version value="1.0.0-alpha" />
+  <version value="1.0.1" />
   <eventCoding>
     <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
     <code value="servicerequest-response" />
