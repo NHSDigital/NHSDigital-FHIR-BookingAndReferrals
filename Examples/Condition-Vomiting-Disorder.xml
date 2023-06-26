@@ -1,0 +1,39 @@
+<Condition xmlns="http://hl7.org/fhir">
+    <id value="4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+            <code value="active" />
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+            <code value="provisional" />
+        </coding>
+    </verificationStatus>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
+            <code value="encounter-diagnosis" />
+            <display value="Encounter Diagnosis" />
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="439401001" />
+            <display value="Diagnosis" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="422400008" />
+            <display value="Vomiting (disorder)" />
+        </coding>
+        <text value="Chief Complaint - Vomiting (disorder)" />
+    </code>
+    <subject>
+        <reference value="Patient/a29d7d72-b545-4f9a-9878-ebd323e4ab14" />
+    </subject>
+    <onsetDateTime value="2023-06-13" />
+</Condition>

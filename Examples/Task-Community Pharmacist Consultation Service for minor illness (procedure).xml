@@ -1,0 +1,19 @@
+<Task xmlns="http://hl7.org/fhir">
+    <id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
+    <status value="requested" />
+    <intent value="order" />
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1577041000000109" />
+            <display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
+        </coding>
+    </code>
+    <authoredOn value="2023-06-26T11:30:00.259000+00:00" />
+	<restriction> 
+		<period>
+			<start value="2023-06-26T11:30:00+10:00"/> 
+			<end value="2023-06-26T12:00:00+10:00"/> 
+		</period> 
+	</restriction> 
+</Task>
