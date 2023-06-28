@@ -33,7 +33,7 @@
         <text value="Chief Complaint - Vomiting (disorder)" />
     </code>
     <subject>
-        <reference value="Patient/a29d7d72-b545-4f9a-9878-ebd323e4ab14" />
+        <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
     </subject>
     <onsetDateTime value="2023-06-13" />
 </Condition>

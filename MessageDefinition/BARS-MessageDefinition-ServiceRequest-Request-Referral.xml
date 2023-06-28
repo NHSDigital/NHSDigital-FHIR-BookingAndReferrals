@@ -16,6 +16,11 @@
       <system value="https://fhir.nhs.uk/CodeSystem/dos-id" />
       <code value="dos-id" />
     </code>
+	<!-- Use cases supported by this MessageDefinition -->
+	<code>
+      <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+      <code value="GPCPCS-MinorIllness" />
+    </code>
     <valueCodeableConcept>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/variant-state" />
