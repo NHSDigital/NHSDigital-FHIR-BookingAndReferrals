@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="usecases-categories-bars"/>
+    <url value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+    <identifier>
+        <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
+        <value value="usecases-categories-bars"/>
+    </identifier>
+    <version value="1.0.0"/>
+    <name value="usecasescategoriesbars"/>
+    <title value="Use Cases Categories BARS"/>
+    <status value="active"/>
+    <date value="2023-06-27"/>
+    <publisher value="NHS England"/>
+    <contact>
+        <name value="NHS England" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <description value="Use Cases Categories in BaRS"/>
+    <copyright value="Copyright &#169; 2022 NHS Digital" />
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+	<!-- This list is intended to support all Flag Categories supported within BaRS -->
+    <concept>
+        <code value="GPCPCS-MinorIllness" />
+        <display value="GP to CPCS (Minor Illness)" />
+    </concept>
+</CodeSystem>
