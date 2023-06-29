@@ -9,6 +9,7 @@
             <display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
         </coding>
     </code>
+	<description value="Carry out an initial assesment within 30 minutes"/> 
     <authoredOn value="2023-06-26T11:30:00.259000+00:00" />
 	<restriction> 
 		<period>

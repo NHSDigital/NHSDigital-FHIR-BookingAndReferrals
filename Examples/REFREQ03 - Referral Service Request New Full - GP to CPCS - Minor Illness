@@ -1,0 +1,664 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="9ae77bb4-db12-42f3-a90c-733fe232f26c" />
+  <meta>
+    <versionId value="1.1.0" />
+    <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
+  </meta>
+  <type value="message" />
+  <timestamp value="2023-06-26T11:30:00+00:00" />
+  <entry>
+    <fullUrl value="urn:uuid:c89a8895-56fe-41de-b20b-fab6efa99c99" />
+    <resource>
+      <MessageHeader>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request" />
+        </meta>
+        <extension url="https://fhir.nhs.uk/StructureDefinition/CDSSExtension">
+          <extension url="RequesterCDSSsoftware">
+            <valueString value="Pathways" />
+          </extension>
+          <extension url="RequesterCDSSversion">
+            <valueString value="30.2.0" />
+          </extension>
+        </extension>
+        <eventCoding>
+          <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
+          <code value="servicerequest-request" />
+        </eventCoding>
+        <destination>
+          <endpoint value="https://fhir.nhs.uk/Id/dos-service-id|111111111" />
+          <!--       Sender to populate with the system (of the DoS used) and Service Identity value       -->
+          <receiver>
+            <!--       Organization       -->
+            <reference value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
+          </receiver>
+        </destination>
+        <sender>
+          <!--       Organization       -->
+          <reference value="urn:uuid:07939a0c-2854-46ff-9282-ad906bc93679" />
+        </sender>
+        <source>
+          <name value="Emergency service" />
+          <software value="Anon Patient Manager" />
+          <version value="2.1.45" />
+          <contact>
+            <system value="phone" />
+            <value value="+44 (0113) 123 4567" />
+          </contact>
+          <endpoint value="https://fhir.nhs.uk/Id/dos-service-id|2222222222" />
+          <!--       The Sender must populate the 'NHSD-Target-Identifier' header value a Receiver needs to populate in order to send a response to them via the BaRS API e.g. 'system value(URL):Service-TargetIdentifer'      -->
+        </source>
+        <reason>
+          <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/message-reason-bars" />
+            <code value="new" />
+          </coding>
+        </reason>
+        <focus>
+          <!--     ServiceRequest     -->
+          <reference value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
+        </focus>
+        <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
+        <!-- The MessageDefinition that this Bundle conforms against -->
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+    <resource>
+      <Encounter>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
+        </meta>
+        <identifier>
+          <system value="https://sender.url/Id/case-number" />
+          <!-- Set by the sender who is passing the business case number value -->
+          <value value="sender1234" />
+        </identifier>
+        <status value="finished" />
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+          <code value="EMER" />
+          <display value="emergency" />
+        </class>
+        <subject>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+        <episodeOfCare>
+          <!--     Resource reference to an EpisodeOfCare Journey ID     -->
+          <reference value="EpisodeOfCare/d877b820-e72b-44d1-a627-195f54bfc606" />
+        </episodeOfCare>
+        <period>
+          <start value="2023-06-26T11:30:00+00:00" />
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:38e9c018-adbb-4579-9cd8-45f4f890b93b" />
+    <resource>
+      <CarePlan>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
+        </meta>
+        <status value="completed" />
+        <intent value="plan" />
+        <subject>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+        </encounter>
+		<addresses> 
+			<reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4"/>
+		</addresses> 
+        <activity>
+			<reference> 
+				<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
+			</reference> 
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+	<fullUrl value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
+	<resource>
+	<Task xmlns="http://hl7.org/fhir">
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task" />
+        </meta>	
+		<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
+		<status value="requested" />
+		<intent value="order" />
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<code value="1577041000000109" />
+				<display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
+			</coding>
+		</code>
+		<description value="Carry out an initial assesment within 30 minutes"/> 
+		<authoredOn value="2023-06-26T11:30:00.259000+00:00" />
+		<restriction> 
+			<period>
+				<start value="2023-06-26T11:30:00+10:00"/> 
+				<end value="2023-06-26T12:00:00+10:00"/> 
+			</period> 
+		</restriction> 
+		</Task>
+    </resource>
+  </entry>
+  <entry>
+	<fullUrl value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
+	<resource>  
+	<Condition xmlns="http://hl7.org/fhir">
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
+        </meta>	
+		<id value="4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
+		<clinicalStatus>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+				<code value="active" />
+			</coding>
+		</clinicalStatus>
+		<verificationStatus>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+				<code value="provisional" />
+			</coding>
+		</verificationStatus>
+		<category>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<code value="33962009" />
+				<display value="Presenting complaint" />
+			</coding>
+		</category>
+		<code>
+			<text value="Vomiting" />
+		</code>
+		<subject>
+			<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+		</subject>
+		<encounter> 
+			<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/> 
+		</encounter>
+		<onsetDateTime value="2023-06-26" />
+	</Condition>
+    </resource>
+  </entry>  
+  <entry>
+    <fullUrl value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
+    <resource>
+      <ServiceRequest>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
+        </meta>
+        <basedOn>
+          <!--      Always CarePlan      -->
+          <reference value="urn:uuid:38e9c018-adbb-4579-9cd8-45f4f890b93b" />
+        </basedOn>
+        <!--      used to drive workflow e.g. cancel/remove      -->
+        <status value="active" />
+        <!--       required and always set to 'plan'      -->
+        <intent value="plan" />
+        <category><!--       workflow category      -->
+          <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
+            <code value="referral" /><!--    Important for driving workflow, determining the type of referral being requested    -->
+            <display value="Transfer of Care" />
+          </coding>
+        </category>
+        <category><!--       type category      -->
+          <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+            <code value="REFERRALTOPHARMACY" />
+			<display value="Referral to Pharmacy" />
+          </coding>
+        </category>
+        <subject>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+        </encounter>
+        <occurrencePeriod>
+          <start value="2023-06-26T11:30:00+00:00" />
+		  <end value="2023-06-26T12:00:00+00:00" />
+        </occurrencePeriod>
+        <authoredOn value="2023-06-26T11:30:00+00:00" />
+        <requester>
+          <!--      Sending Practitioner       -->
+          <reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56" />
+        </requester>
+        <performer>
+          <!--       Receiving/performing Organization/HealthcareService       -->
+          <reference value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
+        </performer>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+    <resource>
+      <Patient>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        </meta>
+        <!--      added EthnicCategory extension      -->
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory" />
+              <code value="A" />
+              <display value="British, Mixed British" />
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <!--      added Religion extension      -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
+              <code value="1041" />
+              <display value="Roman Catholic Church" />
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                <code value="number-present-and-verified" />
+                <display value="Number present and verified" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="3478526985" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <text value="Mrs Julie Jones" />
+          <family value="Jones" />
+          <given value="Julie" />
+          <prefix value="Mrs" />
+        </name>
+        <gender value="female" />
+        <birthDate value="1959-05-04" />
+        <address>
+          <use value="home" />
+          <type value="both" />
+          <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU" />
+          <line value="22 Brightside Crescent" />
+          <city value="Overtown" />
+          <district value="West Yorkshire" />
+          <postalCode value="LS10 4YU" />
+        </address>
+        <contact>
+          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+            <valuePositiveInt value="1" />
+          </extension>
+          <relationship>
+            <coding>
+              <!--       patient      -->
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+              <code value="ONESELF" />
+              <display value="self" />
+            </coding>
+          </relationship>
+          <telecom>
+            <system value="phone" />
+            <value value="01138698975" />
+            <use value="home" />
+            <rank value="2" />
+          </telecom>
+          <telecom>
+            <system value="phone" />
+            <value value="07736312544" />
+            <use value="mobile" />
+            <rank value="1" />
+          </telecom>
+          <telecom>
+            <system value="email" />
+            <value value="jjones@hotmail.co.uk" />
+            <use value="home" />
+            <rank value="3" />
+          </telecom>
+        </contact>
+        <contact>
+          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+            <valuePositiveInt value="2" />
+          </extension>
+          <relationship>
+            <coding>
+              <!--       Emergency contact person      -->
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+              <code value="ECON" />
+              <display value="emergency contact" />
+            </coding>
+          </relationship>
+          <name>
+            <family value="Grayson" />
+            <given value="Jack" />
+          </name>
+          <telecom>
+            <system value="phone" />
+            <value value="0789 1234567" />
+            <use value="mobile" />
+            <rank value="1" />
+          </telecom>
+          <gender value="male" />
+        </contact>
+        <communication>
+          <language>
+            <coding>
+              <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+              <code value="en" />
+              <display value="English" />
+            </coding>
+          </language>
+          <preferred value="true" />
+        </communication>
+        <generalPractitioner>
+          <reference value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
+        </generalPractitioner>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f" />
+    <resource>
+      <PractitionerRole>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        </meta>
+        <practitioner>
+          <reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1" />
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
+        </organization>
+        <specialty>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="408443003" />
+            <display value="General medical practice" />
+          </coding>
+        </specialty>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
+    <resource>
+      <Organization>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </meta>
+        <name value="Practitioner Org" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
+    <resource>
+      <Organization>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/id/ods-organization-code" />
+          <value value="G82080" />
+        </identifier>
+        <name value="Patient's Surgery" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1" />
+    <resource>
+      <Practitioner>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+          <value value="G823658" />
+        </identifier>
+        <name>
+          <family value="Smith" />
+          <given value="John" />
+        </name>
+        <telecom>
+          <system value="phone" />
+          <value value="0205663859" />
+          <use value="work" />
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
+    <resource>
+      <Organization>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/id/ods-organization-code" />
+          <value value="RYE" />
+        </identifier>
+        <name value="Receiving/performing Organization" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:07939a0c-2854-46ff-9282-ad906bc93679" />
+    <resource>
+      <Organization>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/id/ods-organization-code" />
+          <value value="RND" />
+        </identifier>
+        <name value="Sender Organization" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56" />
+    <resource>
+      <Practitioner>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+          <value value="PT2489" />
+        </identifier>
+        <name>
+          <family value="BLAKE" />
+          <given value="Marcy" />
+        </name>
+        <telecom>
+          <system value="phone" />
+          <value value="0205568263" />
+          <use value="work" />
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b923aa53-2376-4015-a07d-afe8bf2310eb" />
+    <resource>
+      <PractitionerRole>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        </meta>
+        <practitioner>
+          <reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56" />
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
+        </organization>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="224608005" />
+            <display value="Administrative healthcare staff" />
+          </coding>
+        </code>
+        <specialty>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="408443003" />
+            <display value="General medical practice" />
+          </coding>
+        </specialty>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30b7b6e3-93f0-4061-b90e-71f43d5fb06d" />
+    <resource>
+      <MedicationStatement>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
+        </meta>
+        <status value="active" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
+            <code value="outpatient" />
+            <display value="Outpatient" />
+          </coding>
+        </category>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="https://dmd.nhs.uk/" />
+            <code value="8280711000001102" />
+            <display value="Aspirin 50mg/5ml oral solution" />
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+        <context>
+          <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+        </context>
+        <effectiveDateTime value="2021-09-23" />
+        <dateAsserted value="2021-10-22" />
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="65363002" />
+            <display value="Otitis media (disorder)" />
+          </coding>
+        </reasonCode>
+        <dosage>
+          <text value="2 capsules 4 times a day." />
+          <timing>
+            <repeat>
+              <frequency value="4" />
+              <period value="1" />
+              <periodUnit value="d" />
+            </repeat>
+          </timing>
+          <asNeededCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="16001004" />
+              <display value="Otalgia" />
+            </coding>
+          </asNeededCodeableConcept>
+          <site>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="123851003" />
+              <display value="Mouth region structure" />
+            </coding>
+          </site>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="26643006" />
+              <display value="Oral" />
+            </coding>
+          </route>
+          <method>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="421984009" />
+              <display value="Until finished" />
+            </coding>
+          </method>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="500" />
+              <unit value="milligram" />
+              <system value="http://unitsofmeasure.org" />
+              <code value="mg" />
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1e91008e-96d0-438b-873c-c6d2c007fc29" />
+    <resource>
+      <Consent>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
+        </meta>
+        <status value="active" />
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope" />
+            <code value="patient-privacy" />
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/consent-categories-bars" />
+            <code value="DRC" />
+            <display value="Direct Care" />
+          </coding>
+        </category>
+        <patient>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </patient>
+        <dateTime value="2021-11-26" />
+        <policyRule>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+            <code value="IMPLIED" />
+          </coding>
+        </policyRule>
+      </Consent>
+    </resource>
+  </entry>
+</Bundle>
