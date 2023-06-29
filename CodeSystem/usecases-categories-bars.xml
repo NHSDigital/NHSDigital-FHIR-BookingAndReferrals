@@ -21,12 +21,12 @@
         </telecom>
     </contact>
     <description value="Use Cases Categories in BaRS"/>
-    <copyright value="Copyright &#169; 2022 NHS Digital" />
+    <copyright value="Copyright &#169; 2023 NHS England" />
     <caseSensitive value="true"/>
     <content value="complete"/>
-	<!-- This list is intended to support all Flag Categories supported within BaRS -->
+	<!-- This list is intended to support all Use Case Categories supported within BaRS -->
     <concept>
-        <code value="GPCPCS-MinorIllness" />
-        <display value="GP to CPCS (Minor Illness)" />
+        <code value="REFERRALTOPHARMACY" />
+        <display value="Referral to Pharmacy" />
     </concept>
 </CodeSystem>

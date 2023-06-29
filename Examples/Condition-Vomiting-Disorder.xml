@@ -12,28 +12,21 @@
             <code value="provisional" />
         </coding>
     </verificationStatus>
-    <category>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
-            <code value="encounter-diagnosis" />
-            <display value="Encounter Diagnosis" />
-        </coding>
+	<category>
         <coding>
             <system value="http://snomed.info/sct" />
-            <code value="439401001" />
-            <display value="Diagnosis" />
+            <code value="33962009" />
+            <display value="Presenting complaint" />
         </coding>
     </category>
     <code>
-        <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="422400008" />
-            <display value="Vomiting (disorder)" />
-        </coding>
-        <text value="Chief Complaint - Vomiting (disorder)" />
+        <text value="Vomiting" />
     </code>
     <subject>
         <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
     </subject>
+	<encounter> 
+		<reference value="urn:uuid:efe9bcc1-4c27-4b71-8dc7-20c6aa59ef08"/> 
+  </encounter>
     <onsetDateTime value="2023-06-13" />
 </Condition>
