@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="BARSServiceRequestRequestReferral" />
   <url value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
-  <version value="1.0.4" />
+  <version value="1.0.5" />
   <name value="BARSServiceRequestRequestReferral" />
   <title value="BARS ServiceRequest-Request Referral" />
   <status value="active" />
-  <date value="2023-03-08" />
+  <date value="2023-07-03" />
   <description value="BARS ServiceRequest-request Referral profile" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

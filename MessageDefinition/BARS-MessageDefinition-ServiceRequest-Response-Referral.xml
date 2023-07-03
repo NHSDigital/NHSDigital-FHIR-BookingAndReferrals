@@ -4,28 +4,26 @@
   <name value="BARS Message Definition ServiceRequest - Response Referral" />
   <title value="BARS Message Definition ServiceRequest - Response Referral" />
   <status value="active" />
-  <date value="2023-06-28" />
+  <date value="2023-07-03" />
   <version value="1.1.0" />
   <eventCoding>
     <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
     <code value="servicerequest-response" />
   </eventCoding>
   <useContext>
-    <!-- We are expecting the UseContext to be a DOS ID -->
-    <code>
+    <code><!-- We are expecting the UseContext to be a DOS ID -->
       <system value="https://fhir.nhs.uk/CodeSystem/dos-id" />
       <code value="dos-id" />
     </code>
-    <valueCodeableConcept>
+	<valueCodeableConcept>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/variant-state" />
         <code value="positive" />
       </coding>
     </valueCodeableConcept>
   </useContext>
-  <useContext>
-    <!--  Use cases supported by this MessageDefinition  -->
-    <code>
+  <useContext>  
+   <code><!--  Use cases supported by this MessageDefinition  -->
       <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
       <code value="referraltopharmacy" />
     </code>
