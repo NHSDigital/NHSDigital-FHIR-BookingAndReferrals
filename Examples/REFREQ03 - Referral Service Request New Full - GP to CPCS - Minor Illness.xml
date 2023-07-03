@@ -66,6 +66,56 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
+    <resource>
+      <ServiceRequest>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
+        </meta>
+        <basedOn>
+          <!--      Always CarePlan      -->
+          <reference value="urn:uuid:38e9c018-adbb-4579-9cd8-45f4f890b93b" />
+        </basedOn>
+        <!--      used to drive workflow e.g. cancel/remove      -->
+        <status value="active" />
+        <!--       required and always set to 'plan'      -->
+        <intent value="plan" />
+        <category>
+          <coding><!--       workflow category      -->
+            <system value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
+            <code value="referral" /><!--    Important for driving workflow, determining the type of referral being requested    -->
+            <display value="Transfer of Care" />
+          </coding>
+          <coding><!--       Use case category      -->
+            <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+            <code value="referraltopharmacy" />
+			<display value="Referral to Pharmacy" />
+          </coding>
+        </category>
+        <subject>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+        </encounter>
+        <occurrencePeriod>
+          <start value="2023-06-26T11:30:00+00:00" />
+		  <end value="2023-06-26T12:00:00+00:00" />
+        </occurrencePeriod>
+        <authoredOn value="2023-06-26T11:30:00+00:00" />
+        <requester>
+          <!--      Sending Practitioner       -->
+          <reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56" />
+        </requester>
+        <performer>
+          <!--       Receiving/performing Organization/HealthcareService       -->
+          <reference value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
+        </performer>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
     <resource>
       <Encounter>
@@ -192,58 +242,6 @@
 		</encounter>
 		<onsetDateTime value="2023-06-26" />
 	</Condition>
-    </resource>
-  </entry>  
-  <entry>
-    <fullUrl value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
-    <resource>
-      <ServiceRequest>
-        <meta>
-          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-          <profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
-        </meta>
-        <basedOn>
-          <!--      Always CarePlan      -->
-          <reference value="urn:uuid:38e9c018-adbb-4579-9cd8-45f4f890b93b" />
-        </basedOn>
-        <!--      used to drive workflow e.g. cancel/remove      -->
-        <status value="active" />
-        <!--       required and always set to 'plan'      -->
-        <intent value="plan" />
-        <category><!--       workflow category      -->
-          <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
-            <code value="referral" /><!--    Important for driving workflow, determining the type of referral being requested    -->
-            <display value="Transfer of Care" />
-          </coding>
-        </category>
-        <category><!--       type category      -->
-          <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-            <code value="referraltopharmacy" />
-			<display value="Referral to Pharmacy" />
-          </coding>
-        </category>
-        <subject>
-          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
-        </subject>
-        <encounter>
-          <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
-        </encounter>
-        <occurrencePeriod>
-          <start value="2023-06-26T11:30:00+00:00" />
-		  <end value="2023-06-26T12:00:00+00:00" />
-        </occurrencePeriod>
-        <authoredOn value="2023-06-26T11:30:00+00:00" />
-        <requester>
-          <!--      Sending Practitioner       -->
-          <reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56" />
-        </requester>
-        <performer>
-          <!--       Receiving/performing Organization/HealthcareService       -->
-          <reference value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
-        </performer>
-      </ServiceRequest>
     </resource>
   </entry>
   <entry>
