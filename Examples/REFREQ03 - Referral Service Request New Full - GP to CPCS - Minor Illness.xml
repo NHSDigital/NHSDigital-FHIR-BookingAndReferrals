@@ -17,10 +17,10 @@
         </meta>
         <extension url="https://fhir.nhs.uk/StructureDefinition/CDSSExtension">
           <extension url="RequesterCDSSsoftware">
-            <valueString value="Pathways" />
+            <valueString value="CDSS Assessment Tool" />
           </extension>
           <extension url="RequesterCDSSversion">
-            <valueString value="30.2.0" />
+            <valueString value="1.2.0" />
           </extension>
         </extension>
         <eventCoding>
@@ -170,6 +170,9 @@
 			<reference> 
 				<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
 			</reference> 
+			<outcomeCodeableConcept>
+            <text value="Who is this query about constipation about?: An adult or child over 10 years old\n Do you have constipation and any of the following apply to you?: None of the above\n\n Symptoms: 2/7 hx constipation\n\n Self-care / medication already tried: None\n\n Patient concerns: Unable to pass stool dor 2/7; straining.\n" />
+          </outcomeCodeableConcept>
         </activity>
       </CarePlan>
     </resource>
@@ -535,93 +538,6 @@
           </coding>
         </specialty>
       </PractitionerRole>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:30b7b6e3-93f0-4061-b90e-71f43d5fb06d" />
-    <resource>
-      <MedicationStatement>
-        <meta>
-          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
-        </meta>
-        <status value="active" />
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
-            <code value="outpatient" />
-            <display value="Outpatient" />
-          </coding>
-        </category>
-        <medicationCodeableConcept>
-          <coding>
-            <system value="https://dmd.nhs.uk/" />
-            <code value="8280711000001102" />
-            <display value="Aspirin 50mg/5ml oral solution" />
-          </coding>
-        </medicationCodeableConcept>
-        <subject>
-          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
-        </subject>
-        <context>
-          <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
-        </context>
-        <effectiveDateTime value="2021-09-23" />
-        <dateAsserted value="2021-10-22" />
-        <reasonCode>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="65363002" />
-            <display value="Otitis media (disorder)" />
-          </coding>
-        </reasonCode>
-        <dosage>
-          <text value="2 capsules 4 times a day." />
-          <timing>
-            <repeat>
-              <frequency value="4" />
-              <period value="1" />
-              <periodUnit value="d" />
-            </repeat>
-          </timing>
-          <asNeededCodeableConcept>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="16001004" />
-              <display value="Otalgia" />
-            </coding>
-          </asNeededCodeableConcept>
-          <site>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="123851003" />
-              <display value="Mouth region structure" />
-            </coding>
-          </site>
-          <route>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="26643006" />
-              <display value="Oral" />
-            </coding>
-          </route>
-          <method>
-            <coding>
-              <system value="http://snomed.info/sct" />
-              <code value="421984009" />
-              <display value="Until finished" />
-            </coding>
-          </method>
-          <doseAndRate>
-            <doseQuantity>
-              <value value="500" />
-              <unit value="milligram" />
-              <system value="http://unitsofmeasure.org" />
-              <code value="mg" />
-            </doseQuantity>
-          </doseAndRate>
-        </dosage>
-      </MedicationStatement>
     </resource>
   </entry>
   <entry>
