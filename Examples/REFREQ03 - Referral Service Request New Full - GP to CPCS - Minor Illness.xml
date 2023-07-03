@@ -217,7 +217,7 @@
             <display value="Transfer of Care" />
           </coding>
         </category>
-        <category><!--       type category      -->
+        <category><!--       type category       -->
           <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
             <code value="REFERRALTOPHARMACY" />
