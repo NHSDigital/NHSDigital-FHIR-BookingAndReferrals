@@ -27,7 +27,7 @@
     <!--  Use cases supported by this MessageDefinition  -->
     <code>
       <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-      <code value="REFERRALTOPHARMACY" />
+      <code value="referraltopharmacy" />
     </code>
     <valueCodeableConcept>
       <coding>

@@ -26,7 +26,7 @@
     <content value="complete"/>
 	<!-- This list is intended to support all Use Case Categories supported within BaRS -->
     <concept>
-        <code value="REFERRALTOPHARMACY" />
+        <code value="referraltopharmacy" />
         <display value="Referral to Pharmacy" />
     </concept>
 </CodeSystem>
