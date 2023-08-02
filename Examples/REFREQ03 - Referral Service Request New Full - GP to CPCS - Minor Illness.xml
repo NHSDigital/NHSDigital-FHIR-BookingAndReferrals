@@ -541,6 +541,27 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="urn:uuid:94267a2d-75b3-44d9-8d46-d65b36332a31" />
+    <resource>
+      <HealthcareService>
+        <meta>
+          <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
+        </meta>
+        <identifier>
+          <system value="http://fhir.nhs.uk/Id/dos-service-id" />
+          <value value="111111111" />
+        </identifier>
+        <active value="true" />
+        <providedBy>
+          <reference value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
+        </providedBy>
+        <name value="Emergency Department - Adult" />
+      </HealthcareService>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="urn:uuid:1e91008e-96d0-438b-873c-c6d2c007fc29" />
     <resource>
       <Consent>
