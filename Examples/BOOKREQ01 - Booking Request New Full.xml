@@ -144,6 +144,7 @@
             <coding>
               <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
               <code value="ONESELF" />
+			  <display value="self" />
             </coding>
           </relationship>
           <telecom>
