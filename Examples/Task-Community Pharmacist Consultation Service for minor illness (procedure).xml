@@ -9,12 +9,6 @@
             <display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
         </coding>
     </code>
-	<description value="Carry out an initial assesment within 30 minutes"/> 
+	<description value="Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient."/> 
     <authoredOn value="2023-06-26T11:30:00.259000+00:00" />
-	<restriction> 
-		<period>
-			<start value="2023-06-26T11:30:00+10:00"/> 
-			<end value="2023-06-26T12:00:00+10:00"/> 
-		</period> 
-	</restriction> 
 </Task>
