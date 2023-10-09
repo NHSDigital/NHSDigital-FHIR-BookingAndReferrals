@@ -192,10 +192,10 @@
 			<coding>
 				<system value="http://snomed.info/sct" />
 				<code value="1577041000000109" />
-				<display value="Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient." />
+				<display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
 			</coding>
 		</code>
-		<description value="Carry out an initial assesment within 30 minutes"/> 
+		<description value="Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient."/> 
 		<authoredOn value="2023-06-26T11:30:00.259000+00:00" />
 		</Task>
     </resource>
