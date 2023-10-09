@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="9ae77bb4-db12-42f3-a90c-733fe232f26c" />
   <meta>
-    <versionId value="1.1.0" />
+    <versionId value="1.0.0-beta" />
     <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
   </meta>
@@ -101,7 +101,7 @@
         </encounter>
         <occurrencePeriod>
           <start value="2023-06-26T11:30:00+00:00" />
-		  <end value="2023-06-26T12:00:00+00:00" />
+		  <end value="2023-06-27T11:30:00+00:00" />
         </occurrencePeriod>
         <authoredOn value="2023-06-26T11:30:00+00:00" />
         <requester>
@@ -110,7 +110,7 @@
         </requester>
         <performer>
           <!--       Receiving/performing Organization/HealthcareService       -->
-          <reference value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
+          <reference value="urn:uuid:94267a2d-75b3-44d9-8d46-d65b36332a31" />
         </performer>
       </ServiceRequest>
     </resource>
@@ -192,17 +192,11 @@
 			<coding>
 				<system value="http://snomed.info/sct" />
 				<code value="1577041000000109" />
-				<display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
+				<display value="Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient." />
 			</coding>
 		</code>
 		<description value="Carry out an initial assesment within 30 minutes"/> 
 		<authoredOn value="2023-06-26T11:30:00.259000+00:00" />
-		<restriction> 
-			<period>
-				<start value="2023-06-26T11:30:00+10:00"/> 
-				<end value="2023-06-26T12:00:00+10:00"/> 
-			</period> 
-		</restriction> 
 		</Task>
     </resource>
   </entry>
