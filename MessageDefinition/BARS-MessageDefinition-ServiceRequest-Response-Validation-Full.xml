@@ -4,8 +4,8 @@
   <name value="BARS Message Definition ServiceRequest - Response Validation Full" />
   <title value="BARS Message Definition ServiceRequest - Response Validation Full" />
   <status value="active" />
-  <date value="2022-05-31" />
-  <version value="1.1.0" />
+  <date value="2023-10-16" />
+  <version value="1.3.0" />
   <eventCoding>
     <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
     <code value="servicerequest-response" />
@@ -92,7 +92,7 @@
   <focus>
     <code value="Flag" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSFlag-scene-safety" />
-    <min value="1" />
+    <min value="0" />
     <max value="*" />
   </focus>
   <focus>
