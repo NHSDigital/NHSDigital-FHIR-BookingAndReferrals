@@ -15,9 +15,9 @@
   </category>
   <code>
     <coding>
-      <system value="https://fhir.nhs.uk/flag-codes-bars" />
-      <code value="patientChoice" />
-      <display value="Patient Choice in Service Selection" />
+      <system value="http://snomed.info/sct" />
+      <code value="718941000000104" />
+      <display value="Patient choice" />
     </coding>
   </code>
   <subject>

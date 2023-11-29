@@ -765,6 +765,11 @@
           </coding>
         </category>
         <code>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<code value="718941000000104" />
+				<display value="Patient choice" />
+			</coding>
           <text value="Patient Choice in Service Selection" />
         </code>
         <subject>
