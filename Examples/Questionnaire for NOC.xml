@@ -1,0 +1,25 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+	<id value="81599e54-c713-4f3e-bca9-90225657f18d" />
+	<meta>
+	    <lastUpdated value="2023-12-20T12:15:30.8185338+00:00" />
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+	</meta>
+	<identifier>
+		<value value="bf28a7e8-ae92-4e86-8c0f-ac3144f81bf6" />
+	</identifier>
+	<version value="0.1" />
+	<name value="NOC" />
+	<title value="Nature of Call Questionnaire" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2023-12-20T14:00:00+00:00" />
+	<publisher value="NHSE - BaRS" />
+	<description value="NOC Questionnaire for CAD-to-CAD" />
+	<item>
+		<linkId value="0" />
+		<text value="What is the nature of call?" />
+		<type value="choice" />
+		<required value="true" />
+		<answerValueSet value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
+	</item>
+</Questionnaire>
