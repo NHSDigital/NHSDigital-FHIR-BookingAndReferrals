@@ -56,4 +56,8 @@
     <code value="AC" />
     <display value="Agency Contacted" />
   </concept>
+  <concept>
+    <code value="API" />
+    <display value="Additional Patient Information" />
+  </concept>
 </CodeSystem>

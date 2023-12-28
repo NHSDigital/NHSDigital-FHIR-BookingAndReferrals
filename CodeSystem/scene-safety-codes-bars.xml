@@ -33,14 +33,6 @@
         <display value="The Scene is unsafe" />
     </concept>
     <concept>
-        <code value="UT" />
-        <display value="The Scene is unsafe and the individual is trapped" />
-    </concept>
-    <concept>
-        <code value="ST" />
-        <display value="The Scene is safe but the individual is trapped" />
-    </concept>
-    <concept>
         <code value="UNK" />
         <display value="Unknown" />
     </concept>
