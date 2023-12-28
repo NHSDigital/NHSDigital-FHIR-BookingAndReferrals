@@ -16,10 +16,10 @@
   <code>
     <coding>
       <system value="https://fhir.nhs.uk/CodeSystem/scene-safety-codes-bars" />
-      <code value="UT" />
-      <display value="The Scene is unsafe and the individual is trapped" />
+      <code value="U" />
+      <display value="The Scene is unsafe" />
     </coding>
-    <text value="Patient trapped in vehicle and fuel spilling out" />
+    <text value="There is a weapon on scene" />
   </code>
   <subject>
     <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2ad1" />
