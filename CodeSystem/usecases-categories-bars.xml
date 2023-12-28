@@ -30,8 +30,8 @@
         <display value="Referral to Pharmacy" />
     </concept>
 	<concept>
-        <code value="outofarea" />
-        <display value="Out of Area" />
+        <code value="outofareareferral" />
+        <display value="Out of Area Referral" />
     </concept>
     <concept>
         <code value="mutualaidrequest" />
