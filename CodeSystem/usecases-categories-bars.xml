@@ -29,4 +29,16 @@
         <code value="referraltopharmacy" />
         <display value="Referral to Pharmacy" />
     </concept>
+	<concept>
+        <code value="outofarea" />
+        <display value="Out of Area" />
+    </concept>
+    <concept>
+        <code value="mutualaidrequest" />
+        <display value="Mutual Aid Request" />
+    </concept>
+    <concept>
+        <code value="callassistrequest" />
+        <display value="Call Assist Request" />
+    </concept>
 </CodeSystem>
