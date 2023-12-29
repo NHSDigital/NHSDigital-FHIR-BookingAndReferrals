@@ -2,7 +2,7 @@
     <id value="86e3371d-1c15-4862-9552-d9560f8292ba" />
     <meta>
         <versionId value="1.1.0" />
-        <lastUpdated value="2022-06-01T15:00:00.8185338+00:00" />
+        <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
     </meta>
     <type value="message" />
@@ -12,7 +12,7 @@
         <resource>
             <MessageHeader>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request" />
                 </meta>
                 <extension url="https://fhir.nhs.uk/StructureDefinition/CDSSExtension">
@@ -69,7 +69,7 @@
         <resource>
             <ServiceRequest>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
 					<profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
                 </meta>
                 <basedOn>
@@ -100,8 +100,8 @@
                     <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
                 </encounter>
                 <occurrencePeriod>
-                    <start value="2021-11-26T15:00:00+00:00" />
-                    <end value="2021-11-26T15:20:00+00:00" />
+                    <start value="2023-12-26T15:00:00+00:00" />
+                    <end value="2023-12-26T15:20:00+00:00" />
                     <!--     'end' used a breach time for ambulance despatch     -->
                 </occurrencePeriod>
 				<authoredOn value="2023-12-26T11:30:00+00:00" />
@@ -125,7 +125,7 @@
         <resource>
             <HealthcareService>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
                 </meta>
@@ -146,7 +146,7 @@
         <resource>
             <Encounter>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
                 </meta>
                 <identifier>
@@ -158,15 +158,15 @@
 				<statusHistory>
 						<status value="planned" />
 						<period>
-							<start value="2021-11-26T15:00:01+00:00" />
+							<start value="2023-12-26T15:00:01+00:00" />
 						</period>
 						<status value="arrived" />
 						<period>
-							<start value="2021-11-26T15:00:02+00:00" />
+							<start value="2023-12-26T15:00:02+00:00" />
 						</period>
 						<status value="in-progress" />
 						<period>
-							<start value="2021-11-26T15:00:03+00:00" />
+							<start value="2023-12-26T15:00:03+00:00" />
 						</period>
 				</statusHistory>
                 <class>
@@ -182,14 +182,14 @@
                     <reference value="EpisodeOfCare/d877b820-e72b-44d1-a627-195f54bfc606" />
                 </episodeOfCare>
                 <period>
-                    <start value="2021-11-26T15:00:00+00:00" />
+                    <start value="2023-12-26T15:00:00+00:00" />
                 </period>
 				<location>
                     <!--    Incident Location      -->
                     <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
 					<status value="active" />
 				    <period>
-						<start value="2021-11-26T15:00:00+00:00" />
+						<start value="2023-12-26T15:00:00+00:00" />
 					</period>
 				</location>
             </Encounter>
@@ -200,7 +200,7 @@
         <resource>
             <CarePlan>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
                 </meta>
                 <status value="active" />
@@ -213,7 +213,7 @@
                     <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
                 </encounter>
                 <period>
-                    <start value="2021-11-26T15:00:00+00:00" />
+                    <start value="2023-12-26T15:00:00+00:00" />
                 </period>
                 <activity>
                     <outcomeCodeableConcept>
@@ -246,7 +246,7 @@
                     </outcomeCodeableConcept>
                     <!--   Pathways assessment   -->
                     <outcomeCodeableConcept>
-                        <text value="CONSULTATION SUMMARY /n PRINTED ON 22/02/2022 10:52:18 CASE ID: e093dd1d-d377-4819-8c52-504b93de49da NHS PATHWAYS R32.2.0_Nightly (Alpha) /n PATIENT: Julie Jones TELEPHONE: AGE GROUP: Adult GENDER: Female PARTY: 3 POSTCODE: LS10 4YU NOTES: /n SKILLSET: 999 Call Handler CALL HANDLER USER ID: user1@nhs.net PATHWAY: PW1030 - Palpitations SYMPTOM GROUP: SG1137 - Palpitations SYMPTOM DISCRIMINATOR: SD4033 - AMB new/worsening breathlessness DISPOSITION: Dx0122 - Emergency Ambulance Response (Category 3) SELECTED CARE SERVICE: No care service selected /n CONSULTATION SUMMARY: Conscious Illness - Palpitations Warm to touch New/worsening breathlessness Breathing worsening in last hour No indication scene unsafe PATHWAYS ASSESSMENT: Cardiac arrest not identified at this point. The individual was conscious at the time of the assessment. The call was not from a health professional. It was not appropriate to speak to the patient. There was no blood loss. An illness or health problem was the main problem. - Palpitations The individual was not fighting for breath. The main reason for the assessment was not an allergic reaction, a heart attack, chest/upper back pain, probable stroke, recent fit/seizure or suicide attempt. The main reason for assessment was not new confusion, declared diabetic hypo/hyperglycaemia, successful resuscitation or ICD shock. The skin on the torso felt normal, warm or hot. Pathway Selected: PW1030, Palpitations The individual did not have an implanted cardioverter defibrillator. The individual was 35 years of age or more. There had been no crushing chest, upper back or abdominal pain, or chest pain spreading to the arm, neck or jaw in the previous 24 hours. There had been no episodes of inability to raise both arms, speech difficulty or unilateral facial weakness in the last week. There had been no episode of unilateral leg weakness in the last week. There had been no exposure to extremes of temperature in the previous 24 hours. There was new or worsening breathlessness since the onset of the problem. The breathing had worsened in the previous hour. There was no further information to help with dispatch. The individual did not have someone to stay with them. There was no safeguarding concern. The scene was safe. Pre-arrival instructions were considered appropriate. ADVICE GIVEN: Sit upright. Use prescribed inhalers, nebulisers or oxygen according to the instructions. Sit upright. Use prescribed inhalers, nebulisers or oxygen according to the instructions. If you can, ask for someone to meet and direct the vehicle. Shut any dogs away. If you do need to contact somebody do so now, then try and keep the line free as we may need to call you back. If there are any new symptoms, or their condition gets worse, changes or you have any other concerns call 999. Drinking caffeine or alcohol, or smoking and taking decongestants can all make the problem worse. Breathlessness or pain in the chest that is getting worse - CALL 999 Pain in the upper abdomen or upper back - CALL 999" />
+                        <text value="CONSULTATION SUMMARY /n PRINTED ON 26/12/2023 15:10:18 CASE ID: e093dd1d-d377-4819-8c52-504b93de49da NHS PATHWAYS R32.2.0_Nightly (Alpha) /n PATIENT: Julie Jones TELEPHONE: AGE GROUP: Adult GENDER: Female PARTY: 3 POSTCODE: LS10 4YU NOTES: /n SKILLSET: 999 Call Handler CALL HANDLER USER ID: user1@nhs.net PATHWAY: PW1030 - Palpitations SYMPTOM GROUP: SG1137 - Palpitations SYMPTOM DISCRIMINATOR: SD4033 - AMB new/worsening breathlessness DISPOSITION: Dx0122 - Emergency Ambulance Response (Category 3) SELECTED CARE SERVICE: No care service selected /n CONSULTATION SUMMARY: Conscious Illness - Palpitations Warm to touch New/worsening breathlessness Breathing worsening in last hour No indication scene unsafe PATHWAYS ASSESSMENT: Cardiac arrest not identified at this point. The individual was conscious at the time of the assessment. The call was not from a health professional. It was not appropriate to speak to the patient. There was no blood loss. An illness or health problem was the main problem. - Palpitations The individual was not fighting for breath. The main reason for the assessment was not an allergic reaction, a heart attack, chest/upper back pain, probable stroke, recent fit/seizure or suicide attempt. The main reason for assessment was not new confusion, declared diabetic hypo/hyperglycaemia, successful resuscitation or ICD shock. The skin on the torso felt normal, warm or hot. Pathway Selected: PW1030, Palpitations The individual did not have an implanted cardioverter defibrillator. The individual was 35 years of age or more. There had been no crushing chest, upper back or abdominal pain, or chest pain spreading to the arm, neck or jaw in the previous 24 hours. There had been no episodes of inability to raise both arms, speech difficulty or unilateral facial weakness in the last week. There had been no episode of unilateral leg weakness in the last week. There had been no exposure to extremes of temperature in the previous 24 hours. There was new or worsening breathlessness since the onset of the problem. The breathing had worsened in the previous hour. There was no further information to help with dispatch. The individual did not have someone to stay with them. There was no safeguarding concern. The scene was safe. Pre-arrival instructions were considered appropriate. ADVICE GIVEN: Sit upright. Use prescribed inhalers, nebulisers or oxygen according to the instructions. Sit upright. Use prescribed inhalers, nebulisers or oxygen according to the instructions. If you can, ask for someone to meet and direct the vehicle. Shut any dogs away. If you do need to contact somebody do so now, then try and keep the line free as we may need to call you back. If there are any new symptoms, or their condition gets worse, changes or you have any other concerns call 999. Drinking caffeine or alcohol, or smoking and taking decongestants can all make the problem worse. Breathlessness or pain in the chest that is getting worse - CALL 999 Pain in the upper abdomen or upper back - CALL 999" />
                     </outcomeCodeableConcept>
                     <outcomeCodeableConcept>
                         <text value="Pre-Triage Sieve, Patient breathing, Patient conscious, NOT noisy breathing, No NOC - Proceed to Triage" />
@@ -268,7 +268,7 @@
         <resource>
             <Patient>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
                 </meta>
                 <!--     added EthnicCategory extension     -->
@@ -398,7 +398,7 @@
         <resource>
             <Organization>
                 <meta>
-                    <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:23:30.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
                 </meta>
                 <identifier>
@@ -414,7 +414,7 @@
         <resource>
             <PractitionerRole>
                 <meta>
-                    <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:23:30.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
                 </meta>
                 <practitioner>
@@ -438,7 +438,7 @@
         <resource>
             <Practitioner>
                 <meta>
-                    <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:23:30.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
                 </meta>
                 <identifier>
@@ -462,7 +462,7 @@
         <resource>
             <Organization>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
                 </meta>
                 <name value="Practitioner Org" />
@@ -474,7 +474,7 @@
         <resource>
             <Organization>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
                 </meta>
                 <identifier>
@@ -490,7 +490,7 @@
         <resource>
             <Organization>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
                 </meta>
                 <name value="Receiver Organization" />
@@ -502,7 +502,7 @@
         <resource>
             <Organization>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
                 </meta>
                 <identifier>
@@ -519,7 +519,7 @@
         <resource>
             <Location>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/BARSLocation-incident-location" />
                 </meta>
@@ -567,7 +567,7 @@
         <resource>
             <Location>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
                 </meta>
                 <extension url="https://fhir.nhs.uk/StructureDefinition/LocationExtension">
@@ -608,7 +608,7 @@
         <resource>
             <Practitioner>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
                 </meta>
                 <identifier>
@@ -632,7 +632,7 @@
         <resource>
             <PractitionerRole>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
                 </meta>
                 <practitioner>
@@ -664,7 +664,7 @@
         <resource>
             <Observation>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
                 </meta>
                 <status value="final" />
@@ -678,7 +678,7 @@
                 <subject>
                     <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
                 </subject>
-                <effectiveDateTime value="2021-11-26T15:00:00+00:00" />
+                <effectiveDateTime value="2023-12-26T15:00:00+00:00" />
             </Observation>
         </resource>
 	</entry>
@@ -704,7 +704,7 @@
 				<encounter> 
 					<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/> 
 				</encounter>				
-				<authoredOn value="2021-11-26T15:00:00.8185338+00:00" />
+				<authoredOn value="2023-12-26T15:00:00.8185338+00:00" />
 			    <Period>
 					<start value="2023-12-26T15:00:00+00:00" />
 					<end value="2023-12-26T19:00:00+00:00" />
@@ -717,7 +717,7 @@
 		<resource>  
 			<Condition xmlns="http://hl7.org/fhir">
 				<meta>
-				  <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+				  <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
 				  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
 				</meta>	
 				<id value="4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
@@ -750,7 +750,7 @@
         <resource>
             <Flag>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
                     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSFlag-scene-safety" />
                 </meta>
@@ -774,7 +774,7 @@
                     <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2ad1" />
                 </subject>
                 <period>
-                    <start value="2021-11-26T15:00:00+00:00" />
+                    <start value="2023-12-26T15:00:00+00:00" />
                 </period>				
                 <encounter>
                     <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
@@ -787,7 +787,7 @@
         <resource>
             <Communication>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication" />
                 </meta>
 				<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be523" />
@@ -795,7 +795,7 @@
                 <topic>
 					<text value="Crew Note or Call Log Entry" />
 				</topic>
-                <sent value="2021-11-26T15:00:00.8185338+00:00" />
+                <sent value="2023-12-26T15:00:00.8185338+00:00" />
 				<payload>
 					<contentString value="Reports of knife on scene" />
 				</payload>
@@ -824,7 +824,7 @@
                 </subject>
 				<performed>
 				    <period>
-						<start value="2021-11-26T15:01:00+00:00" />
+						<start value="2023-12-26T15:01:00+00:00" />
 					</period>	
 				</performed>
 			</Procedure>
@@ -835,7 +835,7 @@
         <resource>
             <Consent>
                 <meta>
-                    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
                 </meta>
                 <status value="active" />
@@ -855,7 +855,7 @@
                 <patient>
                     <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
                 </patient>
-                <dateTime value="2021-11-26" />
+                <dateTime value="2023-12-26" />
                 <policyRule>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
