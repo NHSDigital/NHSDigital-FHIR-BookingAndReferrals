@@ -2,7 +2,6 @@
   <id value="529b583f-5e01-41ea-9b49-0b7e3fee719f" />
   <meta>
     <lastUpdated value="2021-11-26T15:00:00+00:00" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
   </meta>
   <!--     added birthSex extension     -->
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex">
