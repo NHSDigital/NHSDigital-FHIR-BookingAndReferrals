@@ -24,18 +24,6 @@
     </valueCodeableConcept>
   </useContext>
   <focus>
-    <code value="Bundle" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-booking-request" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
     <code value="Patient" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
     <min value="1" />

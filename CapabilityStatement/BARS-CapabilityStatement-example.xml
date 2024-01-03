@@ -47,6 +47,7 @@
 		<resource>
 			<type value="MessageHeader"/>
 			<profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-response"/>
+			<supportedProfile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request"/>
 		</resource>
 		<resource>
 			<type value="Observation"/>
