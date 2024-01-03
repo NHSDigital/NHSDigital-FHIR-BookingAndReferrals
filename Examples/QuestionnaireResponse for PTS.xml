@@ -32,8 +32,8 @@
 			<answer>
 				<valueCoding>
 					<system value="http://snomed.info/sct"/>
-					<code value="271591004"/>
-					<display value="Fully conscious (finding)"/>
+					<code value="78064003"/>
+					<display value="Respiratory function (observable entity)"/>
 				</valueCoding>
 			</answer>
 		</item>
