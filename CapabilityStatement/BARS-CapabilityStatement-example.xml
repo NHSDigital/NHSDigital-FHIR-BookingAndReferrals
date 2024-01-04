@@ -30,7 +30,7 @@
 		<mode value="server"/>
 		<resource>
 			<type value="Bundle"/>
-			<profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle"/>
 		</resource>
 		<resource>
 			<type value="Condition"/>
@@ -46,8 +46,7 @@
 		</resource>
 		<resource>
 			<type value="MessageHeader"/>
-			<profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-response"/>
-			<supportedProfile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"/>
 		</resource>
 		<resource>
 			<type value="Observation"/>
