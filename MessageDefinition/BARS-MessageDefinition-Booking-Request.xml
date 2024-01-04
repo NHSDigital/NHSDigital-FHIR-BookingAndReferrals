@@ -1,7 +1,7 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
   <id value="95b337c0-9644-4b5e-accf-246636e55905" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
-  <name value="BARSMessageDefinitionBookingRequest" />
+  <name value="BARS Message Definition Booking - Request" />
   <title value="BARS Message Definition Booking - Request" />
   <status value="active" />
   <date value="2023-10-16" />

@@ -581,7 +581,7 @@
           <coding>
             <system value="http://snomed.info/sct" />
             <code value="271594007" />
-            <display value="Syncope" />
+            <display value="Syncope (disorder)" />
           </coding>
         </code>
         <subject>

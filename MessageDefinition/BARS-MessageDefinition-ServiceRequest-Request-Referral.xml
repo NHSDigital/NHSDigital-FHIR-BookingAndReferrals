@@ -1,7 +1,7 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
   <id value="11882ae2-211f-49ee-acbe-e319304d80cd" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
-  <name value="BARSMessageDefinitionServiceRequestRequestReferral" />
+  <name value="BARS Message Definition ServiceRequest - Request Referral" />
   <title value="BARS Message Definition ServiceRequest - Request Referral" />
   <status value="active" />
   <date value="2023-12-28" />

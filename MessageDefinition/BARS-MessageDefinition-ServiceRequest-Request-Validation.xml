@@ -1,7 +1,7 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
   <id value="7731af63-04ed-47d9-8f05-e510dece3b3f" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation" />
-  <name value="BARSMessageDefinitionServiceRequestRequestValidation" />
+  <name value="BARS Message Definition ServiceRequest - Request Validation" />
   <title value="BARS Message Definition ServiceRequest - Request Validation" />
   <status value="active" />
   <date value="2023-10-16" />
