@@ -89,9 +89,10 @@
                     </coding>
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="outofareareferral" />
-						<display value="Out of Area Referral" />
+						<code value="mutualaidrequest" />
+						<display value="Mutual Aid Request" />
 					</coding>
+					<text value="Please can you spare a Paramedic closer than 20 mins?" />
                 </category>
                 <subject>
                     <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
@@ -154,7 +155,7 @@
                     <!--  Set by the sender who is passing the business case number value  -->
                     <value value="sender1234" />
                 </identifier>
-                <status value="finished" />
+                <status value="triaged" />
 				<statusHistory>
 						<status value="planned" />
 						<period>
@@ -747,7 +748,7 @@
 					</coding>
 				</category>
 				<code>
-					<text value="Choking" />
+					<text value="Nausea and vomiting" />
 				</code>
 				<subject>
 					<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
@@ -1048,93 +1049,6 @@
 					</answer>
 				</item>
 			</QuestionnaireResponse>
-		</resource>
-	</entry>
-    <entry>
-        <fullUrl value="urn:uuid:5b94d980-b9b6-42ce-8ca3-56676af6c0a7" />
-		<!-- Scene Safety Flag -->
-        <resource>
-            <Flag>
-                <meta>
-                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-                    <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
-                    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSFlag-scene-safety" />
-                </meta>
-                <status value="active" />
-                <category>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/CodeSystem/flag-categories-bars" />
-                        <code value="SS" />
-                        <display value="Scene Safety" />
-                    </coding>
-                </category>
-                <code>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/CodeSystem/scene-safety-codes-bars" />
-                        <code value="U" />
-                        <display value="The Scene is unsafe" />
-                    </coding>
-					<text value="Intoxicated patient" />
-                </code>
-                <subject>
-                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2ad1" />
-                </subject>
-                <period>
-                    <start value="2023-12-26T15:00:00+00:00" />
-                </period>				
-                <encounter>
-                    <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
-                </encounter>
-            </Flag>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="urn:uuid:1e91008e-96d0-438b-873c-c6d2c007f123" />
-        <resource>
-		<!-- Crew Notes -->
-            <Communication>
-                <meta>
-                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication" />
-                </meta>
-				<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be523" />
-                <status value="completed" />
-                <topic>
-					<text value="Crew Note or Call Log Entry" />
-				</topic>
-                <sent value="2023-12-26T15:00:00.8185338+00:00" />
-				<payload>
-					<contentString value="Reports of a knife on scene" />
-				</payload>
-            </Communication>
-        </resource>
-    </entry>
-	<entry>
-		<fullUrl value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be566" />
-		<resource>
-			<Procedure>
-				<meta>
-				  <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-				  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
-				</meta>	
-				<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be566" />
-				<status value="in-progress" />
-				<code>
-					<coding>
-						<system value="http://snomed.info/sct" />
-						<code value="89666000" />
-						<display value="Cardiopulmonary resuscitation (procedure)" />
-					</coding>
-				</code>
-				<subject>
-                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2ad1" />
-                </subject>
-				<performed>
-				    <period>
-						<start value="2023-12-26T15:01:00+00:00" />
-					</period>	
-				</performed>
-			</Procedure>
 		</resource>
 	</entry>
     <entry>
