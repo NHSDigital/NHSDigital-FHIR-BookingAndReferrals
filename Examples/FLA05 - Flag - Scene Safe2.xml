@@ -9,7 +9,7 @@
     <coding>
       <system value="https://fhir.nhs.uk/CodeSystem/flag-categories-bars" />
       <code value="SS" />
-      <display value="Scene Safety " />
+      <display value="Scene Safety" />
     </coding>
   </category>
   <code>

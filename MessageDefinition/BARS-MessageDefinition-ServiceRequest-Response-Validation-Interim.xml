@@ -1,7 +1,7 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
   <id value="15b429dc-2464-42ca-b401-4c2a5e8320bb" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim" />
-  <name value="BARS Message Definition ServiceRequest - Response Validation Interim" />
+  <name value="BARSMessageDefinitionServiceRequestResponseValidationInterim" />
   <title value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <status value="active" />
   <date value="2023-10-16" />
