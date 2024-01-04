@@ -6,7 +6,7 @@
     <value value="pathways-sg-codes" />
   </identifier>
   <version value="1.0.2" />
-  <name value="PathwaysSgCodes" />
+  <name value="pathwayssgcodes" />
   <title value="Triage Outcome Pathways SG Codes" />
   <status value="active" />
   <date value="2023-04-13" />
