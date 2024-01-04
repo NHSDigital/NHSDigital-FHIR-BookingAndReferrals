@@ -25,7 +25,7 @@
   <useContext>  
    <code><!--  Use cases supported by this MessageDefinition ??@@ Do we need this use Context??@@?? -->
       <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-      <code value="referraltopharmacy" />
+      <code value="mutualaidrequest" />
     </code>
     <valueCodeableConcept>
       <coding>
