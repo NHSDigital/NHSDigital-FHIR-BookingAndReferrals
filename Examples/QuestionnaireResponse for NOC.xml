@@ -1,0 +1,41 @@
+<resource>
+	<QuestionnaireResponse>
+		<meta>
+			<lastUpdated value="2021-10-11T15:23:30.8185338+00:00"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
+		</meta>
+		<extension url="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-reason">
+			<valueCodeableConcept>
+				<text value="Nature of Call Questionnaire"/>
+			</valueCodeableConcept>
+		</extension>
+		<questionnaire>
+			<reference value="Questionnaire/3b99d1d9-45ef-4767-ba9c-2c7d550d3922" />
+		</questionnaire>
+		<status value="completed"/>
+		<subject>
+			<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
+		</subject>
+		<encounter>
+			<reference value="Ecounter/05f85045-4627-49f6-821e-b69468356cff"/>
+		</encounter>
+		<authored value="2023-12-20T12:18:01+00:00"/>
+		<author>
+			<reference value="Practitioner/7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
+		</author>
+		<source>
+			<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
+		</source>
+		<item>
+			<linkId value="0"/>
+			<text value="What is the nature of call??"/>
+			<answer>
+				<valueCoding>
+					<system value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
+					<code value="CHO"/>
+					<display value="Choking"/>
+				</valueCoding>
+			</answer>
+		</item>
+	</QuestionnaireResponse>
+</resource>
