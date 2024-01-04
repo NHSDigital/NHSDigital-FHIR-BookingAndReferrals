@@ -2,6 +2,8 @@
   <id value="22394f04-7556-40c7-8f9c-9ff716939170" />
   <meta>
     <lastUpdated value="2021-10-11T15:23:30+00:00" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
   </meta>
   <status value="active" />
   <category>

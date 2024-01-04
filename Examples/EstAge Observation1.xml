@@ -3,6 +3,7 @@
         <!-- Patient Estimated Age recorded as an Observation  -->
         <meta>
           <lastUpdated value="2021-11-26T15:00:00+00:00" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <status value="final" />
         <code>
