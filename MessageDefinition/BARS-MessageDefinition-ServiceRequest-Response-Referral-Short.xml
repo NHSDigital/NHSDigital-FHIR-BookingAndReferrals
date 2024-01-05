@@ -23,7 +23,7 @@
     </valueCodeableConcept>
   </useContext>
   <useContext>  
-   <code><!--  Use cases supported by this MessageDefinition ??@@ Do we need this use Context??@@?? -->
+   <code><!--  Use cases supported by this MessageDefinition -->
       <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
       <code value="mutualaidrequest" />
     </code>
