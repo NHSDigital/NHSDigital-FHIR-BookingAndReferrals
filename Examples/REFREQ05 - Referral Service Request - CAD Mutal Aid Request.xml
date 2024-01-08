@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="86e3371d-1c15-4862-9552-d9560f8292ba" />
+    <id value="86e3371d-1c15-4862-9552-d9560f828866" />
     <meta>
         <versionId value="1.1.0" />
         <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
@@ -161,10 +161,14 @@
 						<period>
 							<start value="2023-12-26T15:00:01+00:00" />
 						</period>
+				</statusHistory>
+				<statusHistory>
 						<status value="arrived" />
 						<period>
 							<start value="2023-12-26T15:00:02+00:00" />
 						</period>
+				</statusHistory>
+				<statusHistory>
 						<status value="in-progress" />
 						<period>
 							<start value="2023-12-26T15:00:03+00:00" />
@@ -187,7 +191,9 @@
                 </period>
 				<location>
                     <!--    Incident Location      -->
-                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
+                    <location>
+						<reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
+					</location>	
 					<status value="active" />
 				    <period>
 						<start value="2023-12-26T15:00:00+00:00" />
@@ -253,14 +259,12 @@
                         <text value="Pre-Triage Sieve, Patient breathing, Patient conscious, NOT noisy breathing, No NOC - Proceed to Triage" />
                     </outcomeCodeableConcept>
 					<!-- Reference to a Task Resource if included.  -->
-					<reference> 
-						<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
-					</reference>
-					<author>
-					<!-- PractitionerRole Reference if clinical -->
-						<reference value="urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f"/>
-					</author>
+					<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
                 </activity>
+				<author>
+					<!-- Practitioner Reference if clinical -->
+					<reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1"/>
+				</author>
             </CarePlan>
         </resource>
     </entry>
@@ -318,7 +322,6 @@
                     <use value="home" />
                     <type value="both" />
                     <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU" />
-                    <line value="" />
 					<line value="22 Brightside Crescent" />
 					<line value="Overtown" />
 					<line value="Leeds" />
@@ -593,12 +596,9 @@
                 </extension>
                 <name value="Briggate corner" />
                 <address>
-                    <line value="" />
                     <line value="20 The Headrow" />
-					<line value="" />
                     <line value="Leeds" />
-                    <line value="" />
-                    <city value="Leeds" />
+                     <city value="Leeds" />
                     <postalCode value="LS1 6PT" />
                     <country value="UK" />
                 </address>
@@ -719,10 +719,12 @@
 					<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/> 
 				</encounter>				
 				<authoredOn value="2023-12-26T15:00:00.8185338+00:00" />
-			    <Period>
-					<start value="2023-12-26T15:00:00+00:00" />
-					<end value="2023-12-26T19:00:00+00:00" />
-				</Period>	
+				<restriction>
+					<period>
+						<start value="2023-12-26T15:00:00+00:00" />
+						<end value="2023-12-26T19:00:00+00:00" />
+					</period>
+				</restriction>				
 			</Task>
 		</resource>
 	</entry>
@@ -759,7 +761,7 @@
 			</Condition>
 		</resource>
 	</entry>
-	<entry>
+		<entry>
 		<fullUrl value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c86666" />
 		<resource>
 		<!-- NOC Questionaire -->
@@ -819,7 +821,7 @@
 						<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
 					</author>
 					<source>
-						<reference value="urn:uuid:41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
+						<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
 					</source>
 					<item>
 						<linkId value="0"/>
@@ -1010,10 +1012,10 @@
 				</encounter>
 				<authored value="2023-12-26T15:00:00+00:00"/>
 				<author>
-					<reference value="urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f"/>
+					<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
 				</author>
 				<source>
-					<reference value="urn:uuid:41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
+					<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
 				</source>
 				<item>
 					<linkId value="0"/>
