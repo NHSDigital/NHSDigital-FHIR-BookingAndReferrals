@@ -64,4 +64,10 @@
     <min value="2" />
     <max value="2" />
   </focus>
+  <focus>
+    <code value="Organization" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+    <min value="2" />
+    <max value="*" />
+  </focus>
 </MessageDefinition>
