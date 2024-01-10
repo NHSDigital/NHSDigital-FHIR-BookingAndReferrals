@@ -8,9 +8,7 @@
 				<text value="Pre Triage Sieve Questionnaire"/>
 			</valueCodeableConcept>
 		</extension>
-		<questionnaire>
-			<reference value="Questionnaire/7ef7724b-a802-4c56-b6f9-2f1f5c5291e4" />
-		</questionnaire>
+		<questionnaire value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
 		<status value="completed"/>
 		<subject>
 			<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>

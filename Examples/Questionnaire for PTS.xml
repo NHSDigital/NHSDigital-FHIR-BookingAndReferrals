@@ -4,94 +4,6 @@
 	    <lastUpdated value="2023-12-20T12:15:30.8185338+00:00" />
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
 	</meta>
-	<contained>
-		<ValueSet>
-			<id value="breathing"/>
-			<name value="Patient breathing values"/>
-			<status value="active"/>
-			<description value="Answers for patient breathing"/>
-			<compose>
-				<include>
-					<system value="http://snomed.info/sct"/>
-					<concept>
-						<code value="78064003"/>
-						<display value="Respiratory function (observable entity)"/>
-						<designation>
-							<value value="Y" />
-						</designation>
-					</concept>
-					<concept>
-						<code value="1023001"/>
-						<display value="Apnea (finding)"/>
-						<designation>
-							<value value="N" />
-						</designation>
-					</concept>
-				</include>
-			</compose>
-		</ValueSet>
-	</contained>
-	<contained>
-		<ValueSet>
-			<id value="conscious"/>
-			<name value="Patient conscious state values"/>
-			<status value="active"/>
-			<description value="Answers for patient conscious"/>
-			<compose>
-				<include>
-					<system value="http://snomed.info/sct"/>
-					<concept>
-						<code value="271591004"/>
-						<display value="Fully conscious (finding)"/>
-						<designation>
-							<value value="Y" />
-						</designation>
-					</concept>
-					<concept>
-						<code value="428913001"/>
-						<display value="No loss of consciousness (situation)"/>
-						<designation>
-							<value value="Y" />
-						</designation>
-					</concept>
-					<concept>
-						<code value="419045004"/>
-						<display value="Loss of consciousness (finding)"/>
-						<designation>
-							<value value="N" />
-						</designation>
-					</concept>
-				</include>
-			</compose>
-		</ValueSet>
-	</contained>
-	<contained>
-		<ValueSet>
-			<id value="noisy"/>
-			<name value="Noisy breathing values"/>
-			<status value="active"/>
-			<description value="Answers for whether patient has noisy breathing"/>
-			<compose>
-				<include>
-					<system value="http://snomed.info/sct"/>
-					<concept>
-						<code value="248573009"/>
-						<display value="Noisy respiration (finding)"/>
-						<designation>
-							<value value="Y" />
-						</designation>
-					</concept>
-					<concept>
-						<code value="373067005"/>
-						<display value="No"/>
-						<designation>
-							<value value="N" />
-						</designation>
-					</concept>
-				</include>
-			</compose>
-		</ValueSet>
-	</contained>
 	<identifier>
 		<value value="76b4622b-2b8b-4f24-aee5-2631c7695594" />
 	</identifier>
@@ -108,7 +20,20 @@
 		<text value="Is the patient breathing?" />
 		<type value="choice" />
 		<required value="true" />
-		<answerValueSet value="#breathing"/>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="78064003"/>
+				<display value="Respiratory function (observable entity)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="1023001"/>
+				<display value="Apnea (finding)"/>
+			</valueCoding>
+		</answerOption>
 	</item>
 	<item>
 		<linkId value="1" />
@@ -123,7 +48,27 @@
 			</answerCoding>
 		</enableWhen>
 		<required value="false" />
-		<answerValueSet value="#conscious"/>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="271591004"/>
+				<display value="Fully conscious (finding)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="428913001"/>
+				<display value="No loss of consciousness (situation)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="419045004"/>
+				<display value="Loss of consciousness (finding)"/>
+			</valueCoding>
+		</answerOption>
 	</item>
 	<item>
 		<linkId value="2" />
@@ -138,6 +83,19 @@
 			</answerCoding>
 		</enableWhen>
 		<required value="false" />
-		<answerValueSet value="#noisy"/>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="248573009"/>
+				<display value="Noisy respiration (finding)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="373067005"/>
+				<display value="No"/>
+			</valueCoding>
+		</answerOption>
 	</item>
 </Questionnaire>
