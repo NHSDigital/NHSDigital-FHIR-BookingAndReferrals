@@ -8,9 +8,7 @@
 				<text value="Pre Triage Sieve Questionnaire"/>
 			</valueCodeableConcept>
 		</extension>
-		<questionnaire>
-			<reference value="Questionnaire/7ef7724b-a802-4c56-b6f9-2f1f5c5291e4" />
-		</questionnaire>
+		<questionnaire value="https://fhir.nhs.uk/Questionnaire/PTS" />
 		<status value="completed"/>
 		<subject>
 			<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
@@ -32,7 +30,7 @@
 				<valueCoding>
 					<system value="http://snomed.info/sct"/>
 					<code value="78064003"/>
-					<display value="Respiratory function (observable entity)"/>
+					<display value="Breathing (observable entity)"/>
 				</valueCoding>
 			</answer>
 		</item>
@@ -42,8 +40,8 @@
 			<answer>
 				<valueCoding>
 					<system value="http://snomed.info/sct"/>
-					<code value="271591004"/>
-					<display value="Fully conscious (finding)"/>
+					<code value="428913001"/>
+					<display value="No loss of consciousness (situation)"/>
 				</valueCoding>
 			</answer>
 		</item>

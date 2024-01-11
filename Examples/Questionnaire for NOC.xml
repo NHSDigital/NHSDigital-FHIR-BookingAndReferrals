@@ -1,7 +1,7 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
 	<id value="81599e54-c713-4f3e-bca9-90225657f18d" />
 	<meta>
-	    <lastUpdated value="2023-12-20T12:15:30.8185338+00:00" />
+		<lastUpdated value="2023-12-20T12:15:30.8185338+00:00" />
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
 	</meta>
 	<identifier>
@@ -20,6 +20,149 @@
 		<text value="What is the nature of call?" />
 		<type value="choice" />
 		<required value="true" />
-		<answerValueSet value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
+		<answerOption>
+			<valueCoding>
+				<code value="CHOM"/>
+				<display value="Choking"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="DAHM"/>
+				<display value="Dangerous Haemorrhage"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="DROM"/>
+				<display value="Drowning"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="FINM"/>
+				<display value="Fitting now"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="HANM"/>
+				<display value="Hanging"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="HI1M"/>
+				<display value="HCP /IFT C1"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="INBM"/>
+				<display value="Ineffective Breathing"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="MATM"/>
+				<display value="Major Trauma"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="MACM"/>
+				<display value="Maternity Complications"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="MEUM"/>
+				<display value="Medical (unconscious)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="SARM"/>
+				<display value="Severe Allergic Reaction"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="TRUM"/>
+				<display value="Trauma (unconcious)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="ANAP"/>
+				<display value="Anaphylaxis (potential)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="AP1P"/>
+				<display value="Arrest/ Peri Arrest (Cat1)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="ALTP"/>
+				<display value="Asthma (life threatening)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="CHOP"/>
+				<display value="Choking"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="DROP"/>
+				<display value="Drowning"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="FINP"/>
+				<display value="Fitting Now"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="HANP"/>
+				<display value="Hanging"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="HI1P"/>
+				<display value="HCP/IFT C1"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="OBEP"/>
+				<display value="Obstetric Emergency"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="5SHP"/>
+				<display value="Under 5 Severe Haemorrhage"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="16UP"/>
+				<display value="Under 16 unconscious"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<code value="UNPP"/>
+				<display value="Unconscious pregnant > 20 weeks "/>
+			</valueCoding>
+		</answerOption>
 	</item>
 </Questionnaire>
