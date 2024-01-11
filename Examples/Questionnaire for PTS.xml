@@ -1,0 +1,94 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+	<id value="9749ae76-28f7-4b8a-863f-aba64d19d678" />
+	<meta>
+	    <lastUpdated value="2023-12-20T12:15:30.8185338+00:00" />
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+	</meta>
+	<identifier>
+		<value value="76b4622b-2b8b-4f24-aee5-2631c7695594" />
+	</identifier>
+	<version value="0.1" />
+	<name value="PTS" />
+	<title value="Pre Triage Sieve Questionnaire" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2023-12-19T14:00:00+00:00" />
+	<publisher value="NHSE - BaRS" />
+	<description value="PTS Questionnaire for CAD-to-CAD" />
+	<item>
+		<linkId value="0" />
+		<text value="Is the patient breathing?" />
+		<type value="choice" />
+		<required value="true" />
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="78064003"/>
+				<display value="Breathing (observable entity)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="1023001"/>
+				<display value="Not Breathing (finding)"/>
+			</valueCoding>
+		</answerOption>
+	</item>
+	<item>
+		<linkId value="1" />
+		<text value="Is the patient awake (conscious)?" />
+		<type value="choice" />
+		<enableWhen>
+			<question value="0" />
+			<operator value="="/> 
+			<answerCoding>
+				<code value="78064003" />
+				<display value="Breathing (observable entity)" />
+			</answerCoding>
+		</enableWhen>
+		<required value="false" />
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="428913001"/>
+				<display value="No loss of consciousness (situation)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="419045004"/>
+				<display value="Loss of consciousness (finding)"/>
+			</valueCoding>
+		</answerOption>
+	</item>
+	<item>
+		<linkId value="2" />
+		<text value="Is their breathing noisy?" />
+		<type value="choice" />
+		<enableWhen>
+			<question value="0" />
+			<operator value="="/> 
+			<answerCoding>
+				<code value="78064003"/>
+				<display value="Breathing (observable entity)"/>
+			</answerCoding>
+		</enableWhen>
+		<required value="false" />
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="248573009"/>
+				<display value="Noisy respiration (finding)"/>
+			</valueCoding>
+		</answerOption>
+		<answerOption>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="48348007"/>
+				<display value="Normal breath sounds (finding)"/>
+			</valueCoding>
+		</answerOption>
+	</item>
+</Questionnaire>
