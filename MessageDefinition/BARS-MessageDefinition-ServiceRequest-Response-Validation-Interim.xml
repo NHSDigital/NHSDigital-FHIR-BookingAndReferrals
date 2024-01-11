@@ -4,8 +4,8 @@
   <name value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <title value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <status value="active" />
-  <date value="2023-10-16" />
-  <version value="1.3.0" />
+  <date value="2024-01-11" />
+  <version value="1.4.0" />
   <useContext>
     <!--  We are expecting the UseContext to be a DOS ID  -->
     <code>
@@ -52,5 +52,29 @@
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
     <min value="2" />
     <max value="3" />
+  </focus>
+  <focus>
+    <code value="Organization" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+    <min value="1" />
+    <max value="*" />
+  </focus>
+  <focus>
+    <code value="Practitioner" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+    <min value="1" />
+    <max value="*" />
+  </focus>
+  <focus>
+    <code value="PractitionerRole" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+    <min value="1" />
+    <max value="*" />
+  </focus>
+  <focus>
+    <code value="HealthcareService" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
+    <min value="0" />
+    <max value="*" />
   </focus>
 </MessageDefinition>

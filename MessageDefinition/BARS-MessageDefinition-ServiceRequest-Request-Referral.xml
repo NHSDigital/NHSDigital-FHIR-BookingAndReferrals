@@ -4,8 +4,8 @@
   <name value="BARS Message Definition ServiceRequest - Request Referral" />
   <title value="BARS Message Definition ServiceRequest - Request Referral" />
   <status value="active" />
-  <date value="2023-12-28" />
-  <version value="1.4.0" />
+  <date value="2024-01-11" />
+  <version value="1.5.0" />
   <eventCoding>
     <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
     <code value="servicerequest-request" />
@@ -131,6 +131,12 @@
     <max value="*" />
   </focus>
   <focus>
+    <code value="Questionnaire" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+    <min value="0" />
+    <max value="*" />
+  </focus>
+  <focus>
     <code value="QuestionnaireResponse" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
     <min value="0" />
@@ -157,6 +163,18 @@
   <focus>
     <code value="Task" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task" />
+    <min value="0" />
+    <max value="*" />
+  </focus>
+  <focus>
+    <code value="Communication" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication" />
+    <min value="0" />
+    <max value="*" />
+  </focus>
+  <focus>
+    <code value="Procedure" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
     <min value="0" />
     <max value="*" />
   </focus>
