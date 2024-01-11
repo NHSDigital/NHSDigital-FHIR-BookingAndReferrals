@@ -24,14 +24,14 @@
 			<valueCoding>
 				<system value="http://snomed.info/sct"/>
 				<code value="78064003"/>
-				<display value="Respiratory function (observable entity)"/>
+				<display value="Breathing (observable entity)"/>
 			</valueCoding>
 		</answerOption>
 		<answerOption>
 			<valueCoding>
 				<system value="http://snomed.info/sct"/>
 				<code value="1023001"/>
-				<display value="Apnea (finding)"/>
+				<display value="Not Breathing (finding)"/>
 			</valueCoding>
 		</answerOption>
 	</item>
@@ -44,17 +44,10 @@
 			<operator value="="/> 
 			<answerCoding>
 				<code value="78064003" />
-				<display value="Respiratory function (observable entity)" />
+				<display value="Breathing (observable entity)" />
 			</answerCoding>
 		</enableWhen>
 		<required value="false" />
-		<answerOption>
-			<valueCoding>
-				<system value="http://snomed.info/sct"/>
-				<code value="271591004"/>
-				<display value="Fully conscious (finding)"/>
-			</valueCoding>
-		</answerOption>
 		<answerOption>
 			<valueCoding>
 				<system value="http://snomed.info/sct"/>
@@ -75,11 +68,11 @@
 		<text value="Is their breathing noisy?" />
 		<type value="choice" />
 		<enableWhen>
-			<question value="1" />
+			<question value="0" />
 			<operator value="="/> 
 			<answerCoding>
-				<code value="271591004"/>
-				<display value="Fully conscious (finding)"/>
+				<code value="78064003"/>
+				<display value="Breathing (observable entity)"/>
 			</answerCoding>
 		</enableWhen>
 		<required value="false" />
@@ -93,8 +86,8 @@
 		<answerOption>
 			<valueCoding>
 				<system value="http://snomed.info/sct"/>
-				<code value="373067005"/>
-				<display value="No"/>
+				<code value="48348007"/>
+				<display value="Normal breath sounds (finding)"/>
 			</valueCoding>
 		</answerOption>
 	</item>

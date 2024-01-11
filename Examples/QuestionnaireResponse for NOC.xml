@@ -8,7 +8,7 @@
 				<text value="Nature of Call Questionnaire"/>
 			</valueCodeableConcept>
 		</extension>
-		<questionnaire value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+		<questionnaire value="https://fhir.nhs.uk/Questionnaire/NOC" />
 		<status value="completed"/>
 		<subject>
 			<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
@@ -28,7 +28,7 @@
 			<text value="What is the nature of call??"/>
 			<answer>
 				<valueCoding>
-					<code value="CHO"/>
+					<code value="CHOM"/>
 					<display value="Choking"/>
 				</valueCoding>
 			</answer>
