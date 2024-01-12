@@ -99,11 +99,6 @@
                 <encounter>
                     <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
                 </encounter>
-                <occurrencePeriod>
-                    <start value="2023-12-26T15:00:00+00:00" />
-                    <end value="2023-12-26T15:20:00+00:00" />
-                    <!--     'end' used a breach time for ambulance despatch     -->
-                </occurrencePeriod>
 				<authoredOn value="2023-12-26T11:30:00+00:00" />
                 <requester>
                     <!--      Sending Practitioner      -->

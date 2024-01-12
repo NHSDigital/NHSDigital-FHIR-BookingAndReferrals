@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="c4b190d6-9623-4235-859d-e3d4c09d5658" />
+    <id value="dcd2aaa9-efe2-4df2-bb34-ad4ee9a41f28" />
     <meta>
         <versionId value="1.0.0" />
         <lastUpdated value="2023-12-26T15:30:00.8185338+00:00" />
@@ -85,10 +85,9 @@
                     </coding>
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="mutualaidrequest" />
-						<display value="Mutual Aid Request" />
+						<code value="outofareareferral" />
+						<display value="Out of Area Referral" />
 					</coding>
-					<text value="Please can you spare a Paramedic closer than 20 mins?" />
                 </category>
                 <subject>
                     <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
@@ -165,7 +164,7 @@
                     <!--  Set by the receiver who is passing the business case number value  -->
                     <value value="reciever1234" />
                 </identifier>
-                <status value="cancelled" />
+                <status value="planned" />
                 <class>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
                     <code value="EMER" />
@@ -181,14 +180,6 @@
                 <period>
                     <start value="2023-12-26T15:30:00+00:00" />
                 </period>
-				<reasonCode>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/CodeSystem/rejected-reasons-bars" />
-                        <code value="RRNA" />
-                        <display value="Requested resource not available within timescale" />
-                    </coding>
-					<text value="We have a paramedic but not available for 30 mins" />
-                </reasonCode>
             </Encounter>
         </resource>
     </entry>
