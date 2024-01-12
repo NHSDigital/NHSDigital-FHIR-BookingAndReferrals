@@ -51,7 +51,7 @@
     <code value="Encounter" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
     <min value="2" />
-    <max value="3" />
+    <max value="2" />
   </focus>
   <focus>
     <code value="Organization" />
