@@ -1,0 +1,441 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="c4b190d6-9623-4235-859d-e3d4c09d5658" />
+    <meta>
+        <versionId value="1.0.0" />
+        <lastUpdated value="2023-12-26T15:30:00.8185338+00:00" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
+    </meta>
+    <type value="message" />
+    <timestamp value="2023-12-26T15:30:00+00:00" />
+    <entry> <!-- 0 -->
+        <fullUrl value="urn:uuid:1cbdfb97-5859-48a4-8301-d54eab818d68" />
+        <resource>
+            <MessageHeader>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:30:00.8185338+00:00" />
+                    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request-short" />
+                </meta>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/CDSSExtension">
+                    <extension url="RequesterCDSSsoftware">
+                        <valueString value="Pathways" />
+                    </extension>
+                    <extension url="RequesterCDSSversion">
+                        <valueString value="30.2.0" />
+                    </extension>
+                </extension>
+                <eventCoding>
+                    <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
+                    <code value="servicerequest-response" />
+                </eventCoding>
+                <destination>
+                    <endpoint value="https://fhir.nhs.uk/Id/dos-service-id|2222222222" />
+                    <!--      Sender to populate with the system (of the DoS used) and Service Identity value      -->
+                    <receiver>
+                        <!--      Organization      -->
+                        <reference value="urn:uuid:10397afd-479c-42ea-9d5d-e4024481e0f8" />
+                    </receiver>
+                </destination>
+                <sender>
+                    <!--      Organization      -->
+                    <reference value="urn:uuid:07939a0c-2854-46ff-9282-ad906bc93679" />
+                </sender>
+                <source>
+                    <name value="Emergency service" />
+                    <software value="Patient Manager" />
+                    <version value="1.7" />
+                    <contact>
+                        <system value="phone" />
+                        <value value="+44 (0113) 123 4567" />
+                    </contact>
+                    <endpoint value="https://fhir.nhs.uk/Id/dos-service-id|11111111111" />
+                    <!--      The Sender must populate the 'NHSD-Target-Identifier' header value a Receiver needs to populate in order to send a response to them via the BaRS API e.g. 'system value(URL):Service-TargetIdentifer'     -->
+                </source>
+                <reason>
+                    <coding>
+                        <system value="https://fhir.nhs.uk/CodeSystem/message-reason-bars" />
+                        <code value="new" />
+                    </coding>
+                </reason>
+                <focus>
+                    <!--      ServiceRequest      -->
+                    <reference value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
+                </focus>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral-short" />
+            </MessageHeader>
+        </resource>
+    </entry>
+    <entry> <!-- 1 -->
+        <fullUrl value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
+        <resource>
+            <ServiceRequest>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
+					<profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
+                </meta>
+                <status value="active" />
+                <!--     used to drive workflow e.g. cancel/remove     -->
+                <intent value="plan" />
+                <!--      required and always set to 'plan'     -->
+                <category>
+                    <coding>
+                        <system value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
+                        <code value="referral" />
+                        <!--     Important for driving workflow, determining the type of referral being requested     -->
+                        <display value="Transfer of Care" />
+                    </coding>
+					<coding><!--       Use case category      -->
+						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+						<code value="mutualaidrequest" />
+						<display value="Mutual Aid Request" />
+					</coding>
+					<text value="Please can you spare a Paramedic closer than 20 mins?" />
+                </category>
+                <subject>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+                </subject>
+				<authoredOn value="2023-12-26T11:30:00+00:00" />
+                <performer>
+                    <!--      Receiving/performing Organization/HealthcareService      -->
+                    <reference value="urn:uuid:10397afd-479c-42ea-9d5d-e4024481e0f8" />
+                </performer>
+            </ServiceRequest>
+        </resource>
+    </entry>
+	<entry>  <!-- 2 -->
+        <fullUrl value="urn:uuid:6f6dc04b-c1e8-408c-9c34-60a3ac990ee4" />
+        <resource>
+            <Encounter>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
+                </meta>
+                <identifier>
+                    <system value="https://sender.url/Id/case-number" />
+                    <!--  Set by the sender who is passing the business case number value  -->
+                    <value value="sender1234" />
+                </identifier>
+                <status value="triaged" />
+				<statusHistory>
+						<status value="planned" />
+						<period>
+							<start value="2023-12-26T15:00:01+00:00" />
+						</period>
+				</statusHistory>
+				<statusHistory>
+						<status value="arrived" />
+						<period>
+							<start value="2023-12-26T15:00:02+00:00" />
+						</period>
+				</statusHistory>
+				<statusHistory>
+						<status value="in-progress" />
+						<period>
+							<start value="2023-12-26T15:00:03+00:00" />
+						</period>
+				</statusHistory>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+                    <code value="EMER" />
+                    <display value="emergency" />
+                </class>
+                <subject>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+                </subject>
+                <episodeOfCare>
+                    <!--      Resource reference to an EpisodeOfCare Journey ID      -->
+                    <reference value="EpisodeOfCare/d877b820-e72b-44d1-a627-195f54bfc606" />
+                </episodeOfCare>
+                <period>
+                    <start value="2023-12-26T15:00:00+00:00" />
+                </period>
+            </Encounter>
+        </resource>
+    </entry>
+	<entry> <!-- 3 -->
+        <fullUrl value="urn:uuid:eba5ef44-5fdc-4d4f-b025-24db80e9b906" />
+        <resource>
+		 <!--  Recievers Encounter -->
+            <Encounter>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:30:00.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
+                </meta>
+                <identifier>
+                    <system value="https://sender.url/Id/case-number" />
+                    <!--  Set by the receiver who is passing the business case number value  -->
+                    <value value="reciever1234" />
+                </identifier>
+                <status value="cancelled" />
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+                    <code value="EMER" />
+                    <display value="emergency" />
+                </class>
+                <subject>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+                </subject>
+                <episodeOfCare>
+                    <!--      Resource reference to an EpisodeOfCare Journey ID      -->
+                    <reference value="EpisodeOfCare/d877b820-e72b-44d1-a627-195f54bfc606" />
+                </episodeOfCare>
+                <period>
+                    <start value="2023-12-26T15:30:00+00:00" />
+                </period>
+				<reasonCode>
+                    <coding>
+                        <system value="https://fhir.nhs.uk/CodeSystem/rejected-reasons-bars" />
+                        <code value="RRNA" />
+                        <display value="Requested resource not available within timescale" />
+                    </coding>
+					<text value="We have a paramedic but not available for 30 mins" />
+                </reasonCode>
+            </Encounter>
+        </resource>
+    </entry>
+    <entry> <!-- 4 -->
+        <fullUrl value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        <resource>
+            <Patient>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+                </meta>
+                <!--     added EthnicCategory extension     -->
+                <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory" />
+                            <code value="A" />
+                            <display value="British, Mixed British" />
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <!--     added Religion extension     -->
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
+                            <code value="1041" />
+                            <display value="Roman Catholic Church" />
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <identifier>
+                    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                                <code value="number-present-and-verified" />
+                                <display value="Number present and verified" />
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="3478526985" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <text value="Mrs Julie Jones" />
+                    <family value="Jones" />
+                    <given value="Julie" />
+                    <prefix value="Mrs" />
+                </name>
+                <gender value="female" />
+                <birthDate value="1959-05-04" />
+                <address>
+                    <use value="home" />
+                    <type value="both" />
+                    <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU" />
+					<line value="22 Brightside Crescent" />
+					<line value="Overtown" />
+					<line value="Leeds" />
+					<line value="West Yorkshire" />					
+                    <city value="Overtown" />
+                    <district value="West Yorkshire" />
+                    <postalCode value="LS10 4YU" />
+                </address>
+                <contact>
+                    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+                        <valuePositiveInt value="1" />
+                    </extension>
+                    <relationship>
+                        <coding>
+                            <!--        patient       -->
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+                            <code value="ONESELF" />
+                            <display value="self" />
+                        </coding>
+                    </relationship>
+                    <telecom>
+                        <system value="phone" />
+                        <value value="01138698975" />
+                        <use value="home" />
+                        <rank value="2" />
+                    </telecom>
+                    <telecom>
+                        <system value="phone" />
+                        <value value="07736312544" />
+                        <use value="mobile" />
+                        <rank value="1" />
+                    </telecom>
+                    <telecom>
+                        <system value="email" />
+                        <value value="jjones@hotmail.co.uk" />
+                        <use value="home" />
+                        <rank value="3" />
+                    </telecom>
+                </contact>
+                <contact>
+                    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+                        <valuePositiveInt value="2" />
+                    </extension>
+                    <relationship>
+                        <coding>
+                            <!--        Emergency contact person       -->
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+                            <code value="EP" />
+                            <display value="Emergency contact person" />
+                        </coding>
+                    </relationship>
+                    <name>
+                        <family value="Grayson" />
+                        <given value="Jack" />
+                    </name>
+                    <telecom>
+                        <system value="phone" />
+                        <value value="0789 1234567" />
+                        <use value="mobile" />
+                        <rank value="1" />
+                    </telecom>
+                    <gender value="male" />
+                </contact>
+                <communication>
+                    <language>
+                        <coding>
+                            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+                            <code value="en" />
+                            <display value="English" />
+                        </coding>
+                    </language>
+                    <preferred value="true" />
+                </communication>
+                <generalPractitioner>
+                    <reference value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
+                </generalPractitioner>
+            </Patient>
+        </resource>
+    </entry>
+    <entry> <!-- 5 -->
+        <fullUrl value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
+        <resource>
+            <Organization>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:23:30.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/id/ods-organization-code" />
+                    <value value="G82080" />
+                </identifier>
+                <name value="Patient&#39;s Surgery" />
+            </Organization>
+        </resource>
+    </entry>
+    <entry> <!-- 6 -->
+        <fullUrl value="urn:uuid:10397afd-479c-42ea-9d5d-e4024481e0f8" />
+        <resource>
+            <Organization>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+                </meta>
+                <name value="Receiver Organization" />
+            </Organization>
+        </resource>
+    </entry>
+    <entry> <!-- 7 -->
+        <fullUrl value="urn:uuid:07939a0c-2854-46ff-9282-ad906bc93679" />
+        <resource>
+            <Organization>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:30:00.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/id/ods-organization-code" />
+                    <value value="RND" />
+                </identifier>
+                <name value="Sender Organization" />
+            </Organization>
+        </resource>
+    </entry>
+    <entry> <!-- 8 -->
+        <fullUrl value="urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f" />
+        <resource>
+            <PractitionerRole>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:30:30.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+                </meta>
+                <practitioner>
+                    <reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1" />
+                </practitioner>
+                <organization>
+                    <reference value="urn:uuid:07939a0c-2854-46ff-9282-ad906bc93679" />
+                </organization>
+                <specialty>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="408443003" />
+                        <display value="General medical practice" />
+                    </coding>
+                </specialty>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry> <!-- 9 -->
+        <fullUrl value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1" />
+        <resource>
+            <Practitioner>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:30:30.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+                    <value value="G823658" />
+                </identifier>
+                <name>
+                    <family value="Smith" />
+                    <given value="Alex" />
+                </name>
+                <telecom>
+                    <system value="phone" />
+                    <value value="0205663333" />
+                    <use value="work" />
+                </telecom>
+            </Practitioner>
+        </resource>
+    </entry>
+	<entry>  <!-- 10 -->
+        <fullUrl value="urn:uuid:d482d092-6efc-4eef-b4a0-730718b1fbfd" />
+        <resource>
+            <HealthcareService>
+                <meta>
+                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
+                    <profile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
+                </meta>
+                <identifier>
+                    <system value="http://fhir.nhs.uk/Id/dos-service-id" />
+                    <value value="111111111" />
+                </identifier>
+                <active value="true" />
+                <providedBy>
+                    <reference value="urn:uuid:07939a0c-2854-46ff-9282-ad906bc93679" />
+                </providedBy>
+                <name value="Ambulance Service Trust A" />
+            </HealthcareService>
+        </resource>
+    </entry>
+ </Bundle>
