@@ -1,0 +1,25 @@
+<Flag xmlns="http://hl7.org/fhir">
+  <id value="01dcdcbb-93c0-4418-a5f5-d8b2573d4866" />
+  <meta>
+    <lastUpdated value="2023-12-28T15:23:30+00:00" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
+  </meta>
+  <status value="active" />
+  <category>
+    <coding>
+      <system value="https://fhir.nhs.uk/CodeSystem/flag-categories-bars" />
+      <code value="AC" />
+      <display value="Agency Contacted" />
+    </coding>
+  </category>
+  <code>
+	<text value="The Police have been contacted and are enroute to scene" />
+  </code>	
+  <subject>
+    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+  </subject>
+  <period>
+    <start value="2023-12-28T12:15:10+00:00" />
+  </period>
+</Flag>
