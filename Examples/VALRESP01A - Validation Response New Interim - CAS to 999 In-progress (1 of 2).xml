@@ -338,7 +338,7 @@
     </resource>
   </entry>
   <entry>
-    <!--    Practitioner taking the request details    -->
+    <!--    Receiver Practitioner details    -->
     <fullUrl value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56" />
     <resource>
       <Practitioner>
@@ -376,7 +376,7 @@
           <reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56" />
         </practitioner>
         <organization>
-          <reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
+          <reference value="urn:uuid:10397afd-479c-42ea-9d5d-e4024481e0f8" />
         </organization>
         <code>
           <!--    If populated then use SDS code    -->
