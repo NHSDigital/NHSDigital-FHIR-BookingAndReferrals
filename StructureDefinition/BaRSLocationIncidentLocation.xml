@@ -70,12 +70,19 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="Location.type">
+      <path value="Location.type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Location.type.coding.system">
       <path value="Location.type.coding.system" />
+      <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/location-types-bars" />
     </element>
     <element id="Location.type.coding.code">
       <path value="Location.type.coding.code" />
+      <min value="1" />
       <fixedCode value="ILOC" />
     </element>
     <element id="Location.managingOrganization">
