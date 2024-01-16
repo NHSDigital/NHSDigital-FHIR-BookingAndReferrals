@@ -4,6 +4,7 @@
 	    <lastUpdated value="2023-12-20T12:15:30.8185338+00:00" />
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
 	</meta>
+  <url value="https://fhir.nhs.uk/Questionnaire/PTS" />
 	<identifier>
 		<value value="76b4622b-2b8b-4f24-aee5-2631c7695594" />
 	</identifier>
