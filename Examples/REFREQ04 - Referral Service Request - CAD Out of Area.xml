@@ -83,13 +83,13 @@
                 <category>
                     <coding>
                         <system value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
-                        <code value="referral" />
+                        <code value="validation" />
                         <!--     Important for driving workflow, determining the type of referral being requested     -->
-                        <display value="Transfer of Care" />
+                        <display value="For Validation" />
                     </coding>
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="outofareareferral" />
+						<code value="OOA" />
 						<display value="Out of Area Referral" />
 					</coding>
                 </category>
@@ -137,7 +137,7 @@
                 <providedBy>
                     <reference value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
                 </providedBy>
-                <name value="Ambulance Service Trust A" />
+                <name value="Consulting psychologists and/or psychology services" />
             </HealthcareService>
         </resource>
     </entry>
@@ -154,20 +154,16 @@
                     <!--  Set by the sender who is passing the business case number value  -->
                     <value value="sender1234" />
                 </identifier>
-                <status value="finished" />
+                <status value="planned" />
 				<statusHistory>
 						<status value="planned" />
 						<period>
 							<start value="2023-12-26T15:00:01+00:00" />
 						</period>
-				</statusHistory>
-				<statusHistory>
 						<status value="arrived" />
 						<period>
 							<start value="2023-12-26T15:00:02+00:00" />
 						</period>
-				</statusHistory>
-				<statusHistory>
 						<status value="in-progress" />
 						<period>
 							<start value="2023-12-26T15:00:03+00:00" />
@@ -190,9 +186,7 @@
                 </period>
 				<location>
                     <!--    Incident Location      -->
-                    <location>
-						<reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
-					</location>	
+                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
 					<status value="active" />
 				    <period>
 						<start value="2023-12-26T15:00:00+00:00" />
@@ -261,11 +255,11 @@
 					<reference> 
 						<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
 					</reference>
+					<author>
+					<!-- PractitionerRole Reference if clinical -->
+						<reference value="urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f"/>
+					</author>
                 </activity>
-				<author>
-					<!-- Practitioner Reference if clinical -->
-					<reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1"/>
-				</author>
             </CarePlan>
         </resource>
     </entry>
@@ -323,10 +317,7 @@
                     <use value="home" />
                     <type value="both" />
                     <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU" />
-					<line value="22 Brightside Crescent" />
-					<line value="Overtown" />
-					<line value="Leeds" />
-					<line value="West Yorkshire" />					
+                    <line value="22 Brightside Crescent" />
                     <city value="Overtown" />
                     <district value="West Yorkshire" />
                     <postalCode value="LS10 4YU" />
@@ -551,13 +542,8 @@
                 </extension>
                 <name value="Ladybridge Hall" />
                 <address>
-                    <line value="Ladybridge Hall" />
                     <line value="399 Chorley New Road" />
-                    <line value="Markland Hill" />
-                    <line value="Bolton" />
-                    <line value="Greater Manchester" />
-                    <city value="Bolton" />
-                    <district value="Greater Manchester" />
+                    <city value="Greater Manchester" />
                     <postalCode value="BL1 5DD" />
                     <country value="UK" />
                 </address>
@@ -598,7 +584,6 @@
                 <name value="Briggate corner" />
                 <address>
                     <line value="20 The Headrow" />
-                    <line value="Leeds" />
                     <city value="Leeds" />
                     <postalCode value="LS1 6PT" />
                     <country value="UK" />
@@ -720,12 +705,10 @@
 					<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/> 
 				</encounter>				
 				<authoredOn value="2023-12-26T15:00:00.8185338+00:00" />
-				<restriction>
-					<period>
-						<start value="2023-12-26T15:00:00+00:00" />
-						<end value="2023-12-26T19:00:00+00:00" />
-					</period>
-				</restriction>
+			    <Period>
+					<start value="2023-12-26T15:00:00+00:00" />
+					<end value="2023-12-26T19:00:00+00:00" />
+				</Period>	
 			</Task>
 		</resource>
 	</entry>
@@ -808,21 +791,21 @@
 						</valueCodeableConcept>
 					</extension>
 					<questionnaire>
-						<reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c86666" />
+						<reference value="Questionnaire/4b816945-a51b-47c4-9efd-4d7f94c86666" />
 					</questionnaire>
 					<status value="completed"/>
 					<subject>
-						<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/>
+						<reference value="Patient/urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/>
 					</subject>
 					<encounter>
-						<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/>
+						<reference value="Ecounter/8c63d621-4d86-4f57-8699-e8e22d49935d"/>
 					</encounter>
 					<authored value="2023-12-26T15:00:00+00:00"/>
 					<author>
-						<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
+						<reference value="Practitioner/7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
 					</author>
 					<source>
-						<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
+						<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
 					</source>
 					<item>
 						<linkId value="0"/>
@@ -1002,21 +985,21 @@
 					</valueCodeableConcept>
 				</extension>
 				<questionnaire>
-					<reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c84444" />
+					<reference value="Questionnaire/urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c84444" />
 				</questionnaire>
 				<status value="completed"/>
 				<subject>
-					<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/>
+					<reference value="Patient/urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/>
 				</subject>
 				<encounter>
-					<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/>
+					<reference value="Ecounter/8c63d621-4d86-4f57-8699-e8e22d49935d"/>
 				</encounter>
 				<authored value="2023-12-26T15:00:00+00:00"/>
 				<author>
-					<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
+					<reference value="Practitioner/7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
 				</author>
 				<source>
-					<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
+					<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
 				</source>
 				<item>
 					<linkId value="0"/>
@@ -1081,7 +1064,7 @@
 					<text value="Intoxicated patient" />
                 </code>
                 <subject>
-                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
+                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2ad1" />
                 </subject>
                 <period>
                     <start value="2023-12-26T15:00:00+00:00" />
@@ -1108,7 +1091,7 @@
 				</topic>
                 <sent value="2023-12-26T15:00:00.8185338+00:00" />
 				<payload>
-					<contentString value="Reports of a knife on scene" />
+					<contentString value="Reports of knife on scene" />
 				</payload>
             </Communication>
         </resource>
@@ -1131,14 +1114,16 @@
 					</coding>
 				</code>
 				<subject>
-                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2ad1" />
                 </subject>
-				<performedPeriod>
-						<start value="2023-12-26T15:01:00+00:00" />	
-				</performedPeriod>
+				<performed>
+				    <period>
+						<start value="2023-12-26T15:01:00+00:00" />
+					</period>	
+				</performed>
 			</Procedure>
 		</resource>
-	</entry>
+		</entry>
     <entry>
         <fullUrl value="urn:uuid:1e91008e-96d0-438b-873c-c6d2c007fc29" />
         <resource>

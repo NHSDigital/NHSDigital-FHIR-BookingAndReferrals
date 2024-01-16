@@ -1,0 +1,62 @@
+<Bundle>   
+   <entry>
+        <fullUrl value="urn:uuid:1e91008e-96d0-438b-873c-c6d2c007f111" />
+        <resource>
+            <Communication>
+                <meta>
+                    <lastUpdated value="2023-12-29T15:00:00.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication" />
+                </meta>
+				<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be523" />
+                <status value="completed" />
+                <topic>
+					<text value="Crew Note or Call Log Entry" />
+				</topic>
+                <sent value="2023-12-29T15:00:00.8185338+00:00" />
+				<payload>
+					<contentString value="Reports of knife on scene" />
+				</payload>
+            </Communication>
+        </resource>
+    </entry>
+	<entry>
+		<fullUrl value="urn:uuid:1e91008e-96d0-438b-873c-c6d2c007f222" />
+        <resource>
+            <Communication>
+                <meta>
+                    <lastUpdated value="2023-12-29T15:00:10.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication" />
+                </meta>
+				<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be523" />
+                <status value="completed" />
+                <topic>
+					<text value="Crew Note or Call Log Entry" />
+				</topic>
+                <sent value="2023-12-26T15:00:10.8185338+00:00" />
+				<payload>
+					<contentString value="Police have been contacted and are enroute to the scene" />
+				</payload>
+            </Communication>
+        </resource>
+    </entry>
+	<entry>
+        <fullUrl value="urn:uuid:1e91008e-96d0-438b-873c-c6d2c007f333" />
+        <resource>
+            <Communication>
+                <meta>
+                    <lastUpdated value="2023-12-29T15:00:20.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication" />
+                </meta>
+				<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be523" />
+                <status value="completed" />
+                <topic>
+					<text value="Crew Note or Call Log Entry" />
+				</topic>
+                <sent value="2023-12-29T15:00:20.8185338+00:00" />
+				<payload>
+					<contentString value="Additional resource has bee dispatched" />
+				</payload>
+            </Communication>
+        </resource>
+    </entry>
+</Bundle>

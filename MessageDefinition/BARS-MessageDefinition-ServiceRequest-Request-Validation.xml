@@ -1,7 +1,7 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
   <id value="7731af63-04ed-47d9-8f05-e510dece3b3f" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation" />
-  <name value="BARS Message Definition ServiceRequest - Request Validation" />
+  <name value="BARSMessageDefinitionServiceRequestRequestValidation" />
   <title value="BARS Message Definition ServiceRequest - Request Validation" />
   <status value="active" />
   <date value="2023-10-16" />
@@ -23,18 +23,6 @@
       </coding>
     </valueCodeableConcept>
   </useContext>
-  <focus>
-    <code value="Bundle" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
   <focus>
     <code value="ServiceRequest" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-validation" />

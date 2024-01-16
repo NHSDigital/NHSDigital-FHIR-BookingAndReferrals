@@ -2,7 +2,6 @@
   <id value="0c29eb812-09b7-4ada-a84c-839d7727fa99" />
   <meta>
     <lastUpdated value="2021-10-11T15:23:30+00:00" />
-    <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSFlag-scene-safety" />
   </meta>
   <status value="active" />

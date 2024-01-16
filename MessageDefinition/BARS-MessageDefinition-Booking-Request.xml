@@ -1,7 +1,7 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
   <id value="95b337c0-9644-4b5e-accf-246636e55905" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
-  <name value="BARS Message Definition Booking - Request" />
+  <name value="BARSMessageDefinitionBookingRequest" />
   <title value="BARS Message Definition Booking - Request" />
   <status value="active" />
   <date value="2023-10-16" />
@@ -23,18 +23,6 @@
       </coding>
     </valueCodeableConcept>
   </useContext>
-  <focus>
-    <code value="Bundle" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-booking-request" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
   <focus>
     <code value="ServiceRequest" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
