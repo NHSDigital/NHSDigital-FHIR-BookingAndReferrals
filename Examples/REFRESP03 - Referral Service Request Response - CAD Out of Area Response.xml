@@ -13,7 +13,7 @@
             <MessageHeader>
                 <meta>
                     <lastUpdated value="2023-12-26T15:30:00.8185338+00:00" />
-                    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request-short" />
+                    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-response" />
                 </meta>
                 <extension url="https://fhir.nhs.uk/StructureDefinition/CDSSExtension">
                     <extension url="RequesterCDSSsoftware">
@@ -56,11 +56,16 @@
                         <code value="new" />
                     </coding>
                 </reason>
+				<response>
+                    <!--  Response to the original Bundle ID  -->
+                    <identifier value="86e3371d-1c15-4862-9552-d9560f8292ba" />
+                    <code value="ok" />
+                </response>
                 <focus>
                     <!--      ServiceRequest      -->
                     <reference value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
                 </focus>
-			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral-short" />
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-response-short" />
             </MessageHeader>
         </resource>
     </entry>
