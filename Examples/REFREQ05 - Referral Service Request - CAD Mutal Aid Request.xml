@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="86e3371d-1c15-4862-9552-d9560f828866" />
+    <id value="c4b190d6-9623-4235-859d-e3d4c09d5658" />
     <meta>
         <versionId value="1.1.0" />
         <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
@@ -60,7 +60,7 @@
                     <!--      ServiceRequest      -->
                     <reference value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
                 </focus>
-        <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
+				<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
             </MessageHeader>
         </resource>
     </entry>
@@ -100,11 +100,6 @@
                 <encounter>
                     <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
                 </encounter>
-                <occurrencePeriod>
-                    <start value="2023-12-26T15:00:00+00:00" />
-                    <end value="2023-12-26T15:20:00+00:00" />
-                    <!--     'end' used a breach time for ambulance despatch     -->
-                </occurrencePeriod>
 				<authoredOn value="2023-12-26T11:30:00+00:00" />
                 <requester>
                     <!--      Sending Practitioner      -->
@@ -259,7 +254,9 @@
                         <text value="Pre-Triage Sieve, Patient breathing, Patient conscious, NOT noisy breathing, No NOC - Proceed to Triage" />
                     </outcomeCodeableConcept>
 					<!-- Reference to a Task Resource if included.  -->
-					<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
+					<reference> 
+						<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
+					</reference> 
                 </activity>
 				<author>
 					<!-- Practitioner Reference if clinical -->
@@ -322,6 +319,7 @@
                     <use value="home" />
                     <type value="both" />
                     <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU" />
+					<line value="unknown" />
 					<line value="22 Brightside Crescent" />
 					<line value="Overtown" />
 					<line value="Leeds" />
@@ -544,11 +542,7 @@
 					<extension url="accuracy">
                         <valueString value="80" />
                     </extension>
-					<extension>
-						<valueString value="noted.bunch.ballots" />
-					</extension>
                 </extension>
-                <name value="Ladybridge Hall" />
                 <address>
                     <line value="Ladybridge Hall" />
                     <line value="399 Chorley New Road" />
@@ -596,8 +590,11 @@
                 </extension>
                 <name value="Briggate corner" />
                 <address>
+					<line value="unknown" />	
                     <line value="20 The Headrow" />
+					<line value="unknown" />
                     <line value="Leeds" />
+					<line value="unknown" />
                      <city value="Leeds" />
                     <postalCode value="LS1 6PT" />
                     <country value="UK" />
@@ -796,45 +793,43 @@
 		<fullUrl value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c81234" />
 		<resource>
 		<!-- NOC Questionaire Responses -->
-				<QuestionnaireResponse>
-					<meta>
-						<lastUpdated value="2023-12-26T15:00:00.8185338+00:00"/>
-						<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
-					</meta>
-					<extension url="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-reason">
-						<valueCodeableConcept>
-							<text value="Nature of Call Questionnaire"/>
-						</valueCodeableConcept>
-					</extension>
-					<questionnaire>
-						<reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c86666" />
-					</questionnaire>
-					<status value="completed"/>
-					<subject>
-						<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/>
-					</subject>
-					<encounter>
-						<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/>
-					</encounter>
-					<authored value="2023-12-26T15:00:00+00:00"/>
-					<author>
-						<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
-					</author>
-					<source>
-						<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
-					</source>
-					<item>
-						<linkId value="0"/>
-						<text value="What is the nature of call??"/>
-						<answer>
-							<valueCoding>
-								<system value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
-								<code value="CHO"/>
-								<display value="Choking"/>
-							</valueCoding>
-						</answer>
-					</item>
-				</QuestionnaireResponse>
+			<QuestionnaireResponse>
+				<meta>
+					<lastUpdated value="2023-12-26T15:00:00.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
+				</meta>
+				<extension url="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-reason">
+					<valueCodeableConcept>
+						<text value="Nature of Call Questionnaire"/>
+					</valueCodeableConcept>
+				</extension>
+				<questionnaire value="https://fhir.nhs.uk/Questionnaire/NOC" />
+				<status value="completed"/>
+				<subject>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+				</subject>
+				<encounter>
+                    <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+				</encounter>
+				<authored value="2023-12-26T15:00:00+00:00"/>
+				<author>
+					<reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1"/>
+				</author>
+				<source>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+				</source>
+				<item>
+					<linkId value="0"/>
+					<text value="What is the nature of call??"/>
+					<answer>
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
+							<code value="CHO"/>
+							<display value="Choking"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
 		</resource>
 	</entry>
 	<entry>
@@ -1000,22 +995,20 @@
 						<text value="Pre Triage Sieve Questionnaire"/>
 					</valueCodeableConcept>
 				</extension>
-				<questionnaire>
-					<reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c84444" />
-				</questionnaire>
+				<questionnaire value="https://fhir.nhs.uk/Questionnaire/PTS" />
 				<status value="completed"/>
 				<subject>
-					<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
 				</subject>
 				<encounter>
-					<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/>
+                    <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
 				</encounter>
 				<authored value="2023-12-26T15:00:00+00:00"/>
 				<author>
-					<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
+					<reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1"/>
 				</author>
 				<source>
-					<reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
 				</source>
 				<item>
 					<linkId value="0"/>

@@ -94,6 +94,21 @@
         <code value="string" />
       </type>
     </element>
+    <element id="Extension.extension:accuracy">
+      <path value="Extension.extension" />
+      <sliceName value="accuracy" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:accuracy.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="accuracy" />
+    </element>
+    <element id="Extension.extension:accuracy.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://fhir.nhs.uk/StructureDefinition/LocationExtension" />

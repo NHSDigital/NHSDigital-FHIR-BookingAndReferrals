@@ -7,7 +7,7 @@
     </meta>
     <type value="message" />
     <timestamp value="2023-12-26T15:00:00+00:00" />
-    <entry>
+    <entry> <!-- 0  -->
         <fullUrl value="urn:uuid:1cbdfb97-5859-48a4-8301-d54eab818d68" />
         <resource>
             <MessageHeader>
@@ -60,11 +60,11 @@
                     <!--      ServiceRequest      -->
                     <reference value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
                 </focus>
-        <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
+				<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
             </MessageHeader>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 1  -->
         <fullUrl value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
         <resource>
             <ServiceRequest>
@@ -83,13 +83,13 @@
                 <category>
                     <coding>
                         <system value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
-                        <code value="validation" />
+                        <code value="referral" />
                         <!--     Important for driving workflow, determining the type of referral being requested     -->
-                        <display value="For Validation" />
+                        <display value="Transfer of Care" />
                     </coding>
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="OOA" />
+						<code value="outofareareferral" />
 						<display value="Out of Area Referral" />
 					</coding>
                 </category>
@@ -99,11 +99,6 @@
                 <encounter>
                     <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
                 </encounter>
-                <occurrencePeriod>
-                    <start value="2023-12-26T15:00:00+00:00" />
-                    <end value="2023-12-26T15:20:00+00:00" />
-                    <!--     'end' used a breach time for ambulance despatch     -->
-                </occurrencePeriod>
 				<authoredOn value="2023-12-26T11:30:00+00:00" />
                 <requester>
                     <!--      Sending Practitioner      -->
@@ -120,7 +115,7 @@
             </ServiceRequest>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 2  -->
         <fullUrl value="urn:uuid:d482d092-6efc-4eef-b4a0-730718b1fbfd" />
         <resource>
             <HealthcareService>
@@ -137,11 +132,11 @@
                 <providedBy>
                     <reference value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
                 </providedBy>
-                <name value="Consulting psychologists and/or psychology services" />
+                <name value="Ambulance Service Trust A" />
             </HealthcareService>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!--  3 -->
         <fullUrl value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
         <resource>
             <Encounter>
@@ -154,16 +149,20 @@
                     <!--  Set by the sender who is passing the business case number value  -->
                     <value value="sender1234" />
                 </identifier>
-                <status value="planned" />
+                <status value="finished" />
 				<statusHistory>
 						<status value="planned" />
 						<period>
 							<start value="2023-12-26T15:00:01+00:00" />
 						</period>
+				</statusHistory>
+				<statusHistory>
 						<status value="arrived" />
 						<period>
 							<start value="2023-12-26T15:00:02+00:00" />
 						</period>
+				</statusHistory>
+				<statusHistory>
 						<status value="in-progress" />
 						<period>
 							<start value="2023-12-26T15:00:03+00:00" />
@@ -186,7 +185,9 @@
                 </period>
 				<location>
                     <!--    Incident Location      -->
-                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
+                    <location>
+						<reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
+					</location>	
 					<status value="active" />
 				    <period>
 						<start value="2023-12-26T15:00:00+00:00" />
@@ -195,7 +196,7 @@
             </Encounter>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 4  -->
         <fullUrl value="urn:uuid:68d3c42e-f76e-4f66-9498-d96e1040c81c" />
         <resource>
             <CarePlan>
@@ -254,16 +255,16 @@
 					<!-- Reference to a Task Resource if included.  -->
 					<reference> 
 						<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
-					</reference>
-					<author>
-					<!-- PractitionerRole Reference if clinical -->
-						<reference value="urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f"/>
-					</author>
+					</reference> 
                 </activity>
+				<author>
+					<!-- Practitioner Reference if clinical -->
+					<reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1"/>
+				</author>
             </CarePlan>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 5  -->
         <fullUrl value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
         <resource>
             <Patient>
@@ -317,7 +318,11 @@
                     <use value="home" />
                     <type value="both" />
                     <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU" />
-                    <line value="22 Brightside Crescent" />
+					<line value="unknown" />
+					<line value="22 Brightside Crescent" />
+					<line value="Overtown" />
+					<line value="Leeds" />
+					<line value="West Yorkshire" />					
                     <city value="Overtown" />
                     <district value="West Yorkshire" />
                     <postalCode value="LS10 4YU" />
@@ -393,7 +398,7 @@
             </Patient>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!--  6 -->
         <fullUrl value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
         <resource>
             <Organization>
@@ -409,7 +414,7 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 7  -->
         <fullUrl value="urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f" />
         <resource>
             <PractitionerRole>
@@ -433,7 +438,7 @@
             </PractitionerRole>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!--  8 -->
         <fullUrl value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1" />
         <resource>
             <Practitioner>
@@ -457,7 +462,7 @@
             </Practitioner>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 9  -->
         <fullUrl value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
         <resource>
             <Organization>
@@ -469,7 +474,7 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 10  -->
         <fullUrl value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
         <resource>
             <Organization>
@@ -485,7 +490,7 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!--  11 -->
         <fullUrl value="urn:uuid:10397afd-479c-42ea-9d5d-e4024481e0f8" />
         <resource>
             <Organization>
@@ -497,7 +502,7 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 12  -->
         <fullUrl value="urn:uuid:07939a0c-2854-46ff-9282-ad906bc93679" />
         <resource>
             <Organization>
@@ -513,8 +518,8 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
-        <!--      Incident location      -->
+   <entry>
+      <!--    Incident location     -->
         <fullUrl value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
         <resource>
             <Location>
@@ -536,14 +541,15 @@
 					<extension url="accuracy">
                         <valueString value="80" />
                     </extension>
-					<extension>
-						<valueString value="noted.bunch.ballots" />
-					</extension>
                 </extension>
-                <name value="Ladybridge Hall" />
                 <address>
+                    <line value="Ladybridge Hall" />
                     <line value="399 Chorley New Road" />
-                    <city value="Greater Manchester" />
+                    <line value="Markland Hill" />
+                    <line value="Bolton" />
+                    <line value="Greater Manchester" />
+                    <city value="Bolton" />
+                    <district value="Greater Manchester" />
                     <postalCode value="BL1 5DD" />
                     <country value="UK" />
                 </address>
@@ -583,7 +589,11 @@
                 </extension>
                 <name value="Briggate corner" />
                 <address>
-                    <line value="20 The Headrow" />
+                    <line value="unknown" />
+					<line value="20 The Headrow" />
+					<line value="unknown" />
+                    <line value="Leeds" />
+					<line value="unknown" />
                     <city value="Leeds" />
                     <postalCode value="LS1 6PT" />
                     <country value="UK" />
@@ -705,13 +715,15 @@
 					<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/> 
 				</encounter>				
 				<authoredOn value="2023-12-26T15:00:00.8185338+00:00" />
-			    <Period>
-					<start value="2023-12-26T15:00:00+00:00" />
-					<end value="2023-12-26T19:00:00+00:00" />
-				</Period>	
+				<restriction>
+					<period>
+						<start value="2023-12-26T15:00:00+00:00" />
+						<end value="2023-12-26T19:00:00+00:00" />
+					</period>
+				</restriction>
 			</Task>
 		</resource>
-	</entry>
+	</entry> -->
 	<entry>
 		<fullUrl value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
 		<resource>  
@@ -780,45 +792,43 @@
 		<fullUrl value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c81234" />
 		<resource>
 		<!-- NOC Questionaire Responses -->
-				<QuestionnaireResponse>
-					<meta>
-						<lastUpdated value="2023-12-26T15:00:00.8185338+00:00"/>
-						<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
-					</meta>
-					<extension url="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-reason">
-						<valueCodeableConcept>
-							<text value="Nature of Call Questionnaire"/>
-						</valueCodeableConcept>
-					</extension>
-					<questionnaire>
-						<reference value="Questionnaire/4b816945-a51b-47c4-9efd-4d7f94c86666" />
-					</questionnaire>
-					<status value="completed"/>
-					<subject>
-						<reference value="Patient/urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/>
-					</subject>
-					<encounter>
-						<reference value="Ecounter/8c63d621-4d86-4f57-8699-e8e22d49935d"/>
-					</encounter>
-					<authored value="2023-12-26T15:00:00+00:00"/>
-					<author>
-						<reference value="Practitioner/7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
-					</author>
-					<source>
-						<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
-					</source>
-					<item>
-						<linkId value="0"/>
-						<text value="What is the nature of call??"/>
-						<answer>
-							<valueCoding>
-								<system value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
-								<code value="CHO"/>
-								<display value="Choking"/>
-							</valueCoding>
-						</answer>
-					</item>
-				</QuestionnaireResponse>
+			<QuestionnaireResponse>
+				<meta>
+					<lastUpdated value="2023-12-26T15:00:00.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
+				</meta>
+				<extension url="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-reason">
+					<valueCodeableConcept>
+						<text value="Nature of Call Questionnaire"/>
+					</valueCodeableConcept>
+				</extension>
+				<questionnaire value="https://fhir.nhs.uk/Questionnaire/NOC" />
+				<status value="completed"/>
+				<subject>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+				</subject>
+				<encounter>
+                    <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+				</encounter>
+				<authored value="2023-12-26T15:00:00+00:00"/>
+				<author>
+					<reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1"/>
+				</author>
+				<source>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+				</source>
+				<item>
+					<linkId value="0"/>
+					<text value="What is the nature of call??"/>
+					<answer>
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
+							<code value="CHO"/>
+							<display value="Choking"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
 		</resource>
 	</entry>
 	<entry>
@@ -826,148 +836,148 @@
 		<resource>
 		<!-- PTS Questionaire -->
 			<Questionnaire xmlns="http://hl7.org/fhir">
-				<id value="9749ae76-28f7-4b8a-863f-aba64d19d678" />
-				<meta>
-					<lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
-				</meta>
-				<contained>
-					<ValueSet>
-						<id value="breathing"/>
-						<name value="Patient breathing values"/>
-						<status value="active"/>
-						<description value="Answers for patient breathing"/>
-						<compose>
-							<include>
-								<system value="http://snomed.info/sct"/>
-								<concept>
-									<code value="78064003"/>
-									<display value="Respiratory function (observable entity)"/>
-									<designation>
-										<value value="Y" />
-									</designation>
-								</concept>
-								<concept>
-									<code value="1023001"/>
-									<display value="Apnea (finding)"/>
-									<designation>
-										<value value="N" />
-									</designation>
-								</concept>
-							</include>
-						</compose>
-					</ValueSet>
-				</contained>
-				<contained>
-					<ValueSet>
-						<id value="conscious"/>
-						<name value="Patient conscious state values"/>
-						<status value="active"/>
-						<description value="Answers for patient conscious"/>
-						<compose>
-							<include>
-								<system value="http://snomed.info/sct"/>
-								<concept>
-									<code value="271591004"/>
-									<display value="Fully conscious (finding)"/>
-									<designation>
-										<value value="Y" />
-									</designation>
-								</concept>
-								<concept>
-									<code value="428913001"/>
-									<display value="No loss of consciousness (situation)"/>
-									<designation>
-										<value value="Y" />
-									</designation>
-								</concept>
-								<concept>
-									<code value="419045004"/>
-									<display value="Loss of consciousness (finding)"/>
-									<designation>
-										<value value="N" />
-									</designation>
-								</concept>
-							</include>
-						</compose>
-					</ValueSet>
-				</contained>
-				<contained>
-					<ValueSet>
-						<id value="noisy"/>
-						<name value="Noisy breathing values"/>
-						<status value="active"/>
-						<description value="Answers for whether patient has noisy breathing"/>
-						<compose>
-							<include>
-								<system value="http://snomed.info/sct"/>
-								<concept>
-									<code value="248573009"/>
-									<display value="Noisy respiration (finding)"/>
-									<designation>
-										<value value="Y" />
-									</designation>
-								</concept>
-								<concept>
-									<code value="373067005"/>
-									<display value="No"/>
-									<designation>
-										<value value="N" />
-									</designation>
-								</concept>
-							</include>
-						</compose>
-					</ValueSet>
-				</contained>
-				<identifier>
-					<value value="76b4622b-2b8b-4f24-aee5-2631c7695594" />
-				</identifier>
-				<version value="0.1" />
-				<name value="PTS" />
-				<title value="Pre Triage Sieve Questionnaire" />
-				<status value="active" />
-				<experimental value="false" />
-				<date value="2023-12-26T15:00:00+00:00" />
-				<publisher value="NHSE - BaRS" />
-				<description value="PTS Questionnaire for CAD-to-CAD" />
-				<item>
-					<linkId value="0" />
-					<text value="Is the patient breathing?" />
-					<type value="choice" />
-					<required value="true" />
-					<answerValueSet value="#breathing"/>
-				</item>
-				<item>
-					<linkId value="1" />
-					<text value="Is the patient awake (conscious)?" />
-					<type value="choice" />
-					<enableWhen>
-						<question value="0" />
-						<operator value="="/> 
-						<answerCoding>
-							<code value="78064003" />
-							<display value="Respiratory function (observable entity)" />
-						</answerCoding>
-					</enableWhen>
-					<required value="false" />
-					<answerValueSet value="#conscious"/>
-				</item>
-				<item>
-					<linkId value="2" />
-					<text value="Is their breathing noisy?" />
-					<type value="choice" />
-					<enableWhen>
-						<question value="1" />
-						<operator value="="/> 
-						<answerCoding>
-							<code value="271591004"/>
-							<display value="Fully conscious (finding)"/>
-						</answerCoding>
-					</enableWhen>
-					<required value="false" />
-					<answerValueSet value="#noisy"/>
-				</item>
-			</Questionnaire>
+			<id value="9749ae76-28f7-4b8a-863f-aba64d19d678" />
+			<meta>
+				<lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
+				<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+			</meta>
+			<contained>
+				<ValueSet>
+					<id value="breathing"/>
+					<name value="Patient breathing values"/>
+					<status value="active"/>
+					<description value="Answers for patient breathing"/>
+					<compose>
+						<include>
+							<system value="http://snomed.info/sct"/>
+							<concept>
+								<code value="78064003"/>
+								<display value="Respiratory function (observable entity)"/>
+								<designation>
+									<value value="Y" />
+								</designation>
+							</concept>
+							<concept>
+								<code value="1023001"/>
+								<display value="Apnea (finding)"/>
+								<designation>
+									<value value="N" />
+								</designation>
+							</concept>
+						</include>
+					</compose>
+				</ValueSet>
+			</contained>
+			<contained>
+				<ValueSet>
+					<id value="conscious"/>
+					<name value="Patient conscious state values"/>
+					<status value="active"/>
+					<description value="Answers for patient conscious"/>
+					<compose>
+						<include>
+							<system value="http://snomed.info/sct"/>
+							<concept>
+								<code value="271591004"/>
+								<display value="Fully conscious (finding)"/>
+								<designation>
+									<value value="Y" />
+								</designation>
+							</concept>
+							<concept>
+								<code value="428913001"/>
+								<display value="No loss of consciousness (situation)"/>
+								<designation>
+									<value value="Y" />
+								</designation>
+							</concept>
+							<concept>
+								<code value="419045004"/>
+								<display value="Loss of consciousness (finding)"/>
+								<designation>
+									<value value="N" />
+								</designation>
+							</concept>
+						</include>
+					</compose>
+				</ValueSet>
+			</contained>
+			<contained>
+				<ValueSet>
+					<id value="noisy"/>
+					<name value="Noisy breathing values"/>
+					<status value="active"/>
+					<description value="Answers for whether patient has noisy breathing"/>
+					<compose>
+						<include>
+							<system value="http://snomed.info/sct"/>
+							<concept>
+								<code value="248573009"/>
+								<display value="Noisy respiration (finding)"/>
+								<designation>
+									<value value="Y" />
+								</designation>
+							</concept>
+							<concept>
+								<code value="373067005"/>
+								<display value="No"/>
+								<designation>
+									<value value="N" />
+								</designation>
+							</concept>
+						</include>
+					</compose>
+				</ValueSet>
+			</contained>
+			<identifier>
+				<value value="76b4622b-2b8b-4f24-aee5-2631c7695594" />
+			</identifier>
+			<version value="0.1" />
+			<name value="PTS" />
+			<title value="Pre Triage Sieve Questionnaire" />
+			<status value="active" />
+			<experimental value="false" />
+			<date value="2023-12-26T15:00:00+00:00" />
+			<publisher value="NHSE - BaRS" />
+			<description value="PTS Questionnaire for CAD-to-CAD" />
+			<item>
+				<linkId value="0" />
+				<text value="Is the patient breathing?" />
+				<type value="choice" />
+				<required value="true" />
+				<answerValueSet value="#breathing"/>
+			</item>
+			<item>
+				<linkId value="1" />
+				<text value="Is the patient awake (conscious)?" />
+				<type value="choice" />
+				<enableWhen>
+					<question value="0" />
+					<operator value="="/> 
+					<answerCoding>
+						<code value="78064003" />
+						<display value="Respiratory function (observable entity)" />
+					</answerCoding>
+				</enableWhen>
+				<required value="false" />
+				<answerValueSet value="#conscious"/>
+			</item>
+			<item>
+				<linkId value="2" />
+				<text value="Is their breathing noisy?" />
+				<type value="choice" />
+				<enableWhen>
+					<question value="1" />
+					<operator value="="/> 
+					<answerCoding>
+						<code value="271591004"/>
+						<display value="Fully conscious (finding)"/>
+					</answerCoding>
+				</enableWhen>
+				<required value="false" />
+				<answerValueSet value="#noisy"/>
+			</item>
+		</Questionnaire>
 		</resource>
 	</entry>
 	<entry>
@@ -984,22 +994,20 @@
 						<text value="Pre Triage Sieve Questionnaire"/>
 					</valueCodeableConcept>
 				</extension>
-				<questionnaire>
-					<reference value="Questionnaire/urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c84444" />
-				</questionnaire>
+				<questionnaire value="https://fhir.nhs.uk/Questionnaire/PTS" />
 				<status value="completed"/>
 				<subject>
-					<reference value="Patient/urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
 				</subject>
 				<encounter>
-					<reference value="Ecounter/8c63d621-4d86-4f57-8699-e8e22d49935d"/>
+                    <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
 				</encounter>
 				<authored value="2023-12-26T15:00:00+00:00"/>
 				<author>
-					<reference value="Practitioner/7d948662-bade-450e-b6c5-9bb6ee39cb56"/>
+					<reference value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1"/>
 				</author>
 				<source>
-					<reference value="Patient/41e591ab-d333-4fb8-87b4-d35f740b6bfc"/>
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
 				</source>
 				<item>
 					<linkId value="0"/>
@@ -1064,7 +1072,7 @@
 					<text value="Intoxicated patient" />
                 </code>
                 <subject>
-                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2ad1" />
+                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
                 </subject>
                 <period>
                     <start value="2023-12-26T15:00:00+00:00" />
@@ -1091,7 +1099,7 @@
 				</topic>
                 <sent value="2023-12-26T15:00:00.8185338+00:00" />
 				<payload>
-					<contentString value="Reports of knife on scene" />
+					<contentString value="Reports of a knife on scene" />
 				</payload>
             </Communication>
         </resource>
@@ -1114,16 +1122,14 @@
 					</coding>
 				</code>
 				<subject>
-                    <reference value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2ad1" />
+                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
                 </subject>
-				<performed>
-				    <period>
-						<start value="2023-12-26T15:01:00+00:00" />
-					</period>	
-				</performed>
+				<performedPeriod>
+						<start value="2023-12-26T15:01:00+00:00" />	
+				</performedPeriod>
 			</Procedure>
 		</resource>
-		</entry>
+	</entry>
     <entry>
         <fullUrl value="urn:uuid:1e91008e-96d0-438b-873c-c6d2c007fc29" />
         <resource>
