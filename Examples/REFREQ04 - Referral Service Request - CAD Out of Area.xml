@@ -7,7 +7,7 @@
     </meta>
     <type value="message" />
     <timestamp value="2023-12-26T15:00:00+00:00" />
-    <entry>
+    <entry> <!-- 0  -->
         <fullUrl value="urn:uuid:1cbdfb97-5859-48a4-8301-d54eab818d68" />
         <resource>
             <MessageHeader>
@@ -64,7 +64,7 @@
             </MessageHeader>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 1  -->
         <fullUrl value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
         <resource>
             <ServiceRequest>
@@ -115,7 +115,7 @@
             </ServiceRequest>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 2  -->
         <fullUrl value="urn:uuid:d482d092-6efc-4eef-b4a0-730718b1fbfd" />
         <resource>
             <HealthcareService>
@@ -136,7 +136,7 @@
             </HealthcareService>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!--  3 -->
         <fullUrl value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
         <resource>
             <Encounter>
@@ -196,7 +196,7 @@
             </Encounter>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 4  -->
         <fullUrl value="urn:uuid:68d3c42e-f76e-4f66-9498-d96e1040c81c" />
         <resource>
             <CarePlan>
@@ -255,7 +255,7 @@
 					<!-- Reference to a Task Resource if included.  -->
 					<reference> 
 						<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
-					</reference>
+					</reference> 
                 </activity>
 				<author>
 					<!-- Practitioner Reference if clinical -->
@@ -264,7 +264,7 @@
             </CarePlan>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 5  -->
         <fullUrl value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
         <resource>
             <Patient>
@@ -318,7 +318,7 @@
                     <use value="home" />
                     <type value="both" />
                     <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU" />
-					<line value=" " />
+					<line value="unknown" />
 					<line value="22 Brightside Crescent" />
 					<line value="Overtown" />
 					<line value="Leeds" />
@@ -398,7 +398,7 @@
             </Patient>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!--  6 -->
         <fullUrl value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
         <resource>
             <Organization>
@@ -414,7 +414,7 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 7  -->
         <fullUrl value="urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f" />
         <resource>
             <PractitionerRole>
@@ -438,7 +438,7 @@
             </PractitionerRole>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!--  8 -->
         <fullUrl value="urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1" />
         <resource>
             <Practitioner>
@@ -462,7 +462,7 @@
             </Practitioner>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 9  -->
         <fullUrl value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
         <resource>
             <Organization>
@@ -474,7 +474,7 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 10  -->
         <fullUrl value="urn:uuid:d5ffd0cd-ec7e-48a1-84f1-91f4c0eb8fc5" />
         <resource>
             <Organization>
@@ -490,7 +490,7 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!--  11 -->
         <fullUrl value="urn:uuid:10397afd-479c-42ea-9d5d-e4024481e0f8" />
         <resource>
             <Organization>
@@ -502,7 +502,7 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
+    <entry>  <!-- 12  -->
         <fullUrl value="urn:uuid:07939a0c-2854-46ff-9282-ad906bc93679" />
         <resource>
             <Organization>
@@ -518,8 +518,8 @@
             </Organization>
         </resource>
     </entry>
-    <entry>
-        <!--      Incident location      -->
+   <entry>
+      <!--    Incident location     -->
         <fullUrl value="urn:uuid:2ec99e82-a0af-4b70-bd53-1869d84b2a22" />
         <resource>
             <Location>
@@ -541,11 +541,7 @@
 					<extension url="accuracy">
                         <valueString value="80" />
                     </extension>
-					<extension>
-						<valueString value="noted.bunch.ballots" />
-					</extension>
                 </extension>
-                <name value="Ladybridge Hall" />
                 <address>
                     <line value="Ladybridge Hall" />
                     <line value="399 Chorley New Road" />
@@ -593,11 +589,11 @@
                 </extension>
                 <name value="Briggate corner" />
                 <address>
-					<line value=" " />
-                    <line value="20 The Headrow" />
-					<line value=" " />
+                    <line value="unknown" />
+					<line value="20 The Headrow" />
+					<line value="unknown" />
                     <line value="Leeds" />
-					<line value=" " />
+					<line value="unknown" />
                     <city value="Leeds" />
                     <postalCode value="LS1 6PT" />
                     <country value="UK" />
@@ -727,7 +723,7 @@
 				</restriction>
 			</Task>
 		</resource>
-	</entry>
+	</entry> -->
 	<entry>
 		<fullUrl value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
 		<resource>  
@@ -806,9 +802,7 @@
 						<text value="Nature of Call Questionnaire"/>
 					</valueCodeableConcept>
 				</extension>
-				<questionnaire>
-					<reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c86666" />
-				</questionnaire>
+				<questionnaire value="https://fhir.nhs.uk/Questionnaire/NOC" />
 				<status value="completed"/>
 				<subject>
                     <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
@@ -1000,9 +994,7 @@
 						<text value="Pre Triage Sieve Questionnaire"/>
 					</valueCodeableConcept>
 				</extension>
-				<questionnaire>
-					<reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c84444" />
-				</questionnaire>
+				<questionnaire value="https://fhir.nhs.uk/Questionnaire/PTS" />
 				<status value="completed"/>
 				<subject>
                     <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />

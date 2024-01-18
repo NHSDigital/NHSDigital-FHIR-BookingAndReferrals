@@ -17,7 +17,7 @@
 			<extension url="accuracy">
 				<valueString value="80" />
 			</extension>
-			<extension>
+			<extension url="what3words">
 				<valueString value="noted.bunch.ballots" />
 			</extension>
 		</extension>
