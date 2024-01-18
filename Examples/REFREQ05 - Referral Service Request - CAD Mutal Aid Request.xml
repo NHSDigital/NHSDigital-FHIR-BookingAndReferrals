@@ -319,7 +319,6 @@
                     <use value="home" />
                     <type value="both" />
                     <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU" />
-					<line value="unknown" />
 					<line value="22 Brightside Crescent" />
 					<line value="Overtown" />
 					<line value="Leeds" />
@@ -590,11 +589,8 @@
                 </extension>
                 <name value="Briggate corner" />
                 <address>
-					<line value="unknown" />	
                     <line value="20 The Headrow" />
-					<line value="unknown" />
                     <line value="Leeds" />
-					<line value="unknown" />
                      <city value="Leeds" />
                     <postalCode value="LS1 6PT" />
                     <country value="UK" />
@@ -784,7 +780,150 @@
 					<text value="What is the nature of call?" />
 					<type value="choice" />
 					<required value="true" />
-					<answerValueSet value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
+					<answerOption>
+						<valueCoding>
+							<code value="CHOM"/>
+							<display value="Choking"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="DAHM"/>
+							<display value="Dangerous Haemorrhage"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="DROM"/>
+							<display value="Drowning"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="FINM"/>
+							<display value="Fitting now"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="HANM"/>
+							<display value="Hanging"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="HI1M"/>
+							<display value="HCP /IFT C1"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="INBM"/>
+							<display value="Ineffective Breathing"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="MATM"/>
+							<display value="Major Trauma"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="MACM"/>
+							<display value="Maternity Complications"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="MEUM"/>
+							<display value="Medical (unconscious)"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="SARM"/>
+							<display value="Severe Allergic Reaction"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="TRUM"/>
+							<display value="Trauma (unconcious)"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="ANAP"/>
+							<display value="Anaphylaxis (potential)"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="AP1P"/>
+							<display value="Arrest/ Peri Arrest (Cat1)"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="ALTP"/>
+							<display value="Asthma (life threatening)"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="CHOP"/>
+							<display value="Choking"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="DROP"/>
+							<display value="Drowning"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="FINP"/>
+							<display value="Fitting Now"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="HANP"/>
+							<display value="Hanging"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="HI1P"/>
+							<display value="HCP/IFT C1"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="OBEP"/>
+							<display value="Obstetric Emergency"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="5SHP"/>
+							<display value="Under 5 Severe Haemorrhage"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="16UP"/>
+							<display value="Under 16 unconscious"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<code value="UNPP"/>
+							<display value="Unconscious pregnant > 20 weeks "/>
+						</valueCoding>
+					</answerOption>
 				</item>
 			</Questionnaire>
 		</resource>
@@ -823,8 +962,7 @@
 					<text value="What is the nature of call??"/>
 					<answer>
 						<valueCoding>
-							<system value="https://fhir.nhs.uk/CodeSystem/bars-noc-codes-TBC"/>
-							<code value="CHO"/>
+							<code value="CHOM"/>
 							<display value="Choking"/>
 						</valueCoding>
 					</answer>
@@ -842,94 +980,6 @@
 					<lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
 				</meta>
-				<contained>
-					<ValueSet>
-						<id value="breathing"/>
-						<name value="Patient breathing values"/>
-						<status value="active"/>
-						<description value="Answers for patient breathing"/>
-						<compose>
-							<include>
-								<system value="http://snomed.info/sct"/>
-								<concept>
-									<code value="78064003"/>
-									<display value="Respiratory function (observable entity)"/>
-									<designation>
-										<value value="Y" />
-									</designation>
-								</concept>
-								<concept>
-									<code value="1023001"/>
-									<display value="Apnea (finding)"/>
-									<designation>
-										<value value="N" />
-									</designation>
-								</concept>
-							</include>
-						</compose>
-					</ValueSet>
-				</contained>
-				<contained>
-					<ValueSet>
-						<id value="conscious"/>
-						<name value="Patient conscious state values"/>
-						<status value="active"/>
-						<description value="Answers for patient conscious"/>
-						<compose>
-							<include>
-								<system value="http://snomed.info/sct"/>
-								<concept>
-									<code value="271591004"/>
-									<display value="Fully conscious (finding)"/>
-									<designation>
-										<value value="Y" />
-									</designation>
-								</concept>
-								<concept>
-									<code value="428913001"/>
-									<display value="No loss of consciousness (situation)"/>
-									<designation>
-										<value value="Y" />
-									</designation>
-								</concept>
-								<concept>
-									<code value="419045004"/>
-									<display value="Loss of consciousness (finding)"/>
-									<designation>
-										<value value="N" />
-									</designation>
-								</concept>
-							</include>
-						</compose>
-					</ValueSet>
-				</contained>
-				<contained>
-					<ValueSet>
-						<id value="noisy"/>
-						<name value="Noisy breathing values"/>
-						<status value="active"/>
-						<description value="Answers for whether patient has noisy breathing"/>
-						<compose>
-							<include>
-								<system value="http://snomed.info/sct"/>
-								<concept>
-									<code value="248573009"/>
-									<display value="Noisy respiration (finding)"/>
-									<designation>
-										<value value="Y" />
-									</designation>
-								</concept>
-								<concept>
-									<code value="373067005"/>
-									<display value="No"/>
-									<designation>
-										<value value="N" />
-									</designation>
-								</concept>
-							</include>
-						</compose>
-					</ValueSet>
-				</contained>
 				<identifier>
 					<value value="76b4622b-2b8b-4f24-aee5-2631c7695594" />
 				</identifier>
@@ -946,7 +996,20 @@
 					<text value="Is the patient breathing?" />
 					<type value="choice" />
 					<required value="true" />
-					<answerValueSet value="#breathing"/>
+					<answerOption>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="78064003"/>
+							<display value="Breathing (observable entity)"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1023001"/>
+							<display value="Not Breathing (finding)"/>
+						</valueCoding>
+					</answerOption>
 				</item>
 				<item>
 					<linkId value="1" />
@@ -957,26 +1020,52 @@
 						<operator value="="/> 
 						<answerCoding>
 							<code value="78064003" />
-							<display value="Respiratory function (observable entity)" />
+							<display value="Breathing (observable entity)" />
 						</answerCoding>
 					</enableWhen>
 					<required value="false" />
-					<answerValueSet value="#conscious"/>
+					<answerOption>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="428913001"/>
+							<display value="No loss of consciousness (situation)"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="419045004"/>
+							<display value="Loss of consciousness (finding)"/>
+						</valueCoding>
+					</answerOption>
 				</item>
 				<item>
 					<linkId value="2" />
 					<text value="Is their breathing noisy?" />
 					<type value="choice" />
 					<enableWhen>
-						<question value="1" />
+						<question value="0" />
 						<operator value="="/> 
 						<answerCoding>
-							<code value="271591004"/>
-							<display value="Fully conscious (finding)"/>
+							<code value="78064003"/>
+							<display value="Breathing (observable entity)"/>
 						</answerCoding>
 					</enableWhen>
 					<required value="false" />
-					<answerValueSet value="#noisy"/>
+					<answerOption>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="248573009"/>
+							<display value="Noisy respiration (finding)"/>
+						</valueCoding>
+					</answerOption>
+					<answerOption>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="48348007"/>
+							<display value="Normal breath sounds (finding)"/>
+						</valueCoding>
+					</answerOption>
 				</item>
 			</Questionnaire>
 		</resource>
@@ -1017,7 +1106,7 @@
 						<valueCoding>
 							<system value="http://snomed.info/sct"/>
 							<code value="78064003"/>
-							<display value="Respiratory function (observable entity)"/>
+							<display value="Breathing (observable entity)"/>
 						</valueCoding>
 					</answer>
 				</item>
@@ -1027,8 +1116,8 @@
 					<answer>
 						<valueCoding>
 							<system value="http://snomed.info/sct"/>
-							<code value="271591004"/>
-							<display value="Fully conscious (finding)"/>
+							<code value="428913001"/>
+							<display value="No loss of consciousness (situation)"/>
 						</valueCoding>
 					</answer>
 				</item>
