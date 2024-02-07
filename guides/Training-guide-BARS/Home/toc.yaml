@@ -1,4 +1,20 @@
 - name: Index
-  filename: Index.page.md
-- name: First folder
-  filename: First-folder
+  filename: Index.guide.md
+- name: About BaRS
+  filename: About-BaRS
+- name: Core
+  filename: Core
+- name: Applications
+  filename: Applications
+- name: Build
+  filename: Build
+- name: Assure
+  filename: Assure
+- name: Deploy
+  filename: Deploy
+- name: FHIR Assets
+  filename: FHIR-Assets
+- name: Help and support
+  filename: Helpandsupport
+- name: BaRS-API-Spec-Change-Log
+  filename: BaRS-API-Spec-Change-Log

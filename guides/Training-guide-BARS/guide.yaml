@@ -1,5 +1,5 @@
-title: Training guide BARS
-description: A testing area for the BARS team to learn how to edit and configure an implementation guide.
-version: 1.0-alpha
+title: NHS Booking and Referral Standard
+description: FHIR Implementation Guide for the NHS Booking and Referral Standard
+version: 1.x.x
 style-root: project
-style-name: Test
+style-name: NHSD
