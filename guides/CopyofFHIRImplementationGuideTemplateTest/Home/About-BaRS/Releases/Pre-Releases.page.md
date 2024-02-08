@@ -34,7 +34,7 @@ Core                 | 1.0.0   | alpha   | Preview      | Released        | 01/0
 ### Overview of the release
 
 This is the first release of the implementation guide, mainly to establish the underlying publishing platform and principles. Most content placeholder and boiler plate.
-The initial preview (alpha) documentation of the core and first application (111-ED) were made available to vendors who were going to participate in first of type.
+The initial preview (alpha) documentation of the core and first Application (111-ED) were made available to vendors who were going to participate in first of type.
     
 </div>
 </div>

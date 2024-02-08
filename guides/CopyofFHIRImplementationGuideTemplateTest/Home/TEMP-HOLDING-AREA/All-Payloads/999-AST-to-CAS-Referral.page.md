@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-This guidance is specific to the 999 AST to CAS Referral application. It should be applied alongside the core guidance.
+This guidance is specific to the 999 AST to CAS Referral Application. It should be applied alongside the core guidance.
 
 #### UKcore-Encounter resource
 

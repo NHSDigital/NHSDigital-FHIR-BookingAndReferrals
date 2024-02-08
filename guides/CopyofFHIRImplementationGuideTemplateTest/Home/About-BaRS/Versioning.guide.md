@@ -1,3 +1,7 @@
+---
+topic: version-negotiation
+---
+
 ## Versioning
 The Booking and Referral Standard (BaRS) will follow [Semantic Versioning](https://semver.org/), i.e. a three-part version number consisting of major, minor and patch versions.  There will also be support for pre-releases versioning by use of ALPHA and BETA extensions
 
@@ -70,4 +74,40 @@ These labels will be taken from the GDS (Goverment Digital Services) development
 * **Live**: The live phase is about supporting the service in a sustainable way, and continuing to iterate and make improvements
 
 * **Retiring**: Implementors notified that the service is discontinued and not to be used for new developments
+
+<hr>
+
+## Version Negotiation
+
+The Booking and Referrals standard implements version negotiation in 3 steps. Each step is protected by the step before it. Version negotiation works in a similar way at each step. The 3 stages are the API version header, the call to GET /CapabilityStatement and the call to GET /MessageDefinition.
+
+### API (step 1)
+
+APIs should have the ability to route traffic based on the version header as shown below. This is to ensure that major version differences (breaking changes) can be negotiated as shown in the second diagram.
+
+
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images//Versioning/API_Proxies-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/Versioning/API_Proxies-1.1.0.svg" width="800"></img></a>
+
+API Versioning between entities is fairly loose, only the major versioning differences would case a failure. with the exception of new endpoints which will be gated by minor versioning. The diagram below shows desired behavior in all versioning negotiations at the API.
+
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images//Versioning/API_Interactions-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/Versioning/API_Interactions-1.1.0.svg" width="1800"/></img></a>
+
+
+### CapabilityStatement (step 2)
+
+The CapabilityStatement, coupled with the Accept header can define what version of Core the receiver is using. This ties in with the API spec which the CapabilityStatement mimics in terms of functions/features. The capability statement will return a list of message definitions for a given endpoint.
+
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images//Versioning/CapabilityStatement-1.1.0.svg" target="_blank">
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/Versioning/CapabilityStatement-1.1.0.svg" width="1200"/></img></a>
+
+### MessageDefinition (step 3)
+
+The serviceID will help dictate what MessageDefinitions are returned and ensure they are specifiic to the service being queried. The version of the MessageDefinitions returned would be linked to the version of the Use case. The use case is identified using the useContext element.
+
+For example, a service could service multiple applications covered by a single message definition, of varying versions. They would then choose the version of the message definition most appropriate for the use case. Knowing, from Service Discovery, that the Receiver accepts that type of referral and that it requires that version of the messageDefinition.
+
+This is describes version control at the BaRS use case level.
+
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images//Versioning/MessageDefinition-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/Versioning/MessageDefinition-1.1.0.svg" width="1700"/></img></a>
+
 
