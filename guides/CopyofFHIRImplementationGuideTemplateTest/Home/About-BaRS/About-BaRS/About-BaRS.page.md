@@ -24,14 +24,15 @@ The **first** is the transport layer (referred to as BaRS Core). This is all the
 
 The workflow and payload elements can be predefined or completely dynamic, enabled by the inbuilt content negotiation mechanism, as required by the needs of each specific use case and the sophistication of the systems implementing compliant solutions.
 
-The documentation for BaRS is separated into two groups (or "products"):
+The documentation for BaRS is separated into three groups (or "products"):
 
-- {{pagelink:Home/Design/BaRS-Core}} is the foundation containing all the things *everyone* has to do regardless of what flows BaRS is being used to support
+- {{pagelink:design-core}} is the foundation containing all the things *everyone* has to do regardless of what flows BaRS is being used to support
 
-- {{pagelink:Home/Design/BaRS-Applications}}, *apply* the standard to a specific problem and build on this to support specific use cases
+- {{pagelink:Applications}}, *apply* the standard to a specific problem and build on this to support specific use cases
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/Applications-v1.0.0.svg)
+- {{pagelink:prereleases}}, this is the same as above but for applications that are in a *pre-release* state, so not generally available until private/public beta is complete.
 
+<br>
 
 ## Foundation Principles
 
@@ -65,7 +66,7 @@ If you have come to this implementation guide directly it might be helpful to re
 
 ## Combining the elements together
 
-It is common to use a recipe analogy to describe complex concepts. It is also possible to describe the payload entities within the BaRS standard using this analogy. In this analogy the recipe is for a specific cake which corresponds to a BaRS application conformant solution developed by suppliers to enable the digitisation of a use case specific workflow.
+It is common to use a recipe analogy to describe complex concepts. It is also possible to describe the payload entities within the BaRS standard using this analogy. In this analogy the recipe is for a specific cake which corresponds to a BaRS Application conformant solution developed by suppliers to enable the digitisation of a use case specific workflow.
 
 
 **Profiles**
@@ -76,7 +77,7 @@ Profiles are the base **ingredients** for the BaRS and come from two sources.
  specifies a set of constraints and/or extensions to specific base FHIR resources to enable consistent information flows across UK borders, to improve health and care outcomes for all citizens
  
 - **BaRS**
-specifies additional constraints and/or extensions to UK core profiles, that are common for all BaRS applications
+specifies additional constraints and/or extensions to UK core profiles, that are common for all BaRS Applications
 
 **Cardinalities**
 
@@ -84,19 +85,19 @@ All attributes defined in FHIR have cardinality as part of their definition - a 
 
 **Necessity**
 
-Necessity is an additional layer of conformance and specifies if the population of an element by the SENDER is required for successful execution of the business process that the BaRS application is enabling. This relates to optionality of ingredients in a recipe. If you want your cake to be a lemon cake, then you MUST add lemons! See Definition of conformance key words for more information.
+Necessity is an additional layer of conformance and specifies if the population of an element by the SENDER is required for successful execution of the business process that the BaRS Application is enabling. This relates to optionality of ingredients in a recipe. If you want your cake to be a lemon cake, then you MUST add lemons! See Definition of conformance key words for more information.
 
 **Implementation guidance**
 
-Implementation guidance is provided at several levels in the BaRS, for example, at the FHIR element, resource and bundle levels. It describes how these attributes should be populated to support the business process that the BaRS application. It corresponds to the **Method**  in the recipe analogy, which also can be at the ingredient level or the recipe level.
+Implementation guidance is provided at several levels in the BaRS, for example, at the FHIR element, resource and bundle levels. It describes how these attributes should be populated to support the business process that the BaRS Application. It corresponds to the **Method**  in the recipe analogy, which also can be at the ingredient level or the recipe level.
 
 **Core Payload definition**
 
-BaRS will have Core Payload Definitions that will relate to all BaRS applications that are build on that definition, e.g.  Urgent Referral. These correspond to a **Basic Recipe**  in the recipe analogy. A good example would be a vanilla sponge. This recipe can be added to to make a variety of cakes for different occasions (or use cases). For BaRS v1.0.0 core payload definitions are not documented as they require more BaRS use cases to be defined so that the common elements can be identified.
+BaRS will have Core Payload Definitions that will relate to all BaRS Applications that are build on that definition, e.g.  Urgent Referral. These correspond to a **Basic Recipe**  in the recipe analogy. A good example would be a vanilla sponge. This recipe can be added to to make a variety of cakes for different occasions (or use cases). For BaRS v1.0.0 core payload definitions are not documented as they require more BaRS use cases to be defined so that the common elements can be identified.
 
 **Application**
 
-A BaRS application consists of implementation guidance that describes how a supplier builds a BaRS conformant solution for a **specific workflow** using the BaRS toolbox. This corresponds to the **Full recipe** for a specific cake, potentially for a 
+A BaRS Application consists of implementation guidance that describes how a supplier builds a BaRS conformant solution for a **specific workflow** using the BaRS toolbox. This corresponds to the **Full recipe** for a specific cake, potentially for a 
 specific occasion.
 
 

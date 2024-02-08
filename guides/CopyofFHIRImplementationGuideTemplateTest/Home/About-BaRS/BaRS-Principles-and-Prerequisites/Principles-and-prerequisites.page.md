@@ -13,7 +13,7 @@ This page describes BaRS principles and prerequisites for suppliers. Elements of
 |7| The receiver always specifies the payload, not the sender
 |8| When transporting information, clinical intent must be preserved between systems
 |9| Minimise technical burden by building reusable technology that is easy to adopt
-|10| Maintain core data structure to support multiple applications
+|10| Maintain core data structure to support multiple Applications
 |11| Only workflows identified by research are supported by the standard
 |12| Suppliers MUST support continuous development of the standard (see release management) 
 

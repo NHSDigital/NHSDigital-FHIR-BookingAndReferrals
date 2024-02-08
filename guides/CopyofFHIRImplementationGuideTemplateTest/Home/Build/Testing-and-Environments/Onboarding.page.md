@@ -185,4 +185,4 @@ At this point you should have a .key and a .csr files. The next step will be to 
 * Email <dnsteam@nhs.net> with FQDN and **public facing IP** to register DNS
 * Email <bookingandreferralstandard@nhs.net> with Receiver URL for BaRS/API-M to add to the Endpoint Catalogue
 
-**Note** - <span style="color:red">**Receiver Firewall Amendments**</span> - Requests from the BaRS API (for both INT and Prod) will originate from **34.89.0.111** & **34.89.69.6**
+**Note** - <span style="color:red">**Receiver Firewall Amendments**</span> - Requests from the BaRS API Proxy will originate from **INT** on **35.197.254.55** & **35.246.55.143** and **PROD** on **34.89.0.111** & **34.89.69.6**

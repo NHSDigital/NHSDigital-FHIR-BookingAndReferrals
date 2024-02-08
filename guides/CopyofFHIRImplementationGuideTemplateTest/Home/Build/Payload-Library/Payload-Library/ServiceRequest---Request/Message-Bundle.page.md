@@ -3,7 +3,7 @@
 
 #### Business level guidance
 
-There is no application specific business level guidance for this resource. Please refer to the BaRS core guidance in the structure definition for this resource, visible below.
+There is no Application specific business level guidance for this resource. Please refer to the BaRS core guidance in the structure definition for this resource, visible below.
 
 
 #### FHIR model view

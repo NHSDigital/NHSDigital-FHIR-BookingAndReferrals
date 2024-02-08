@@ -6,7 +6,7 @@ TKW - Toolkit Workbench - is a tool to assist development and assurance of suppl
 
 The tool supports testing of key high-level workflows e.g. a booking routine, including some of asynchronous ones, but is also capable of inspecting low level technical requirements. It reports the output in Validation Reports which clearly indicates to the reader where and why a test has failed. In addition, it supports consistent error states which are often difficult to create but required for development and assurance. 
 
-The BaRS TKW tooling is embedded into the INT environment, encompassing all the same end-to-end BaRS infrastructure that is mirrored in Production, rather than being downloaded and used in isolation. This ensures the same steps to deploy solutions to Production are followed during deployment to INT, and allowing testing of requests/responses to occur under Production-like conditions. Similarly, we're able to incorporate other key components, similar to those used in Production workflows, such as the [UserTest Directory of Services (DoS)](https://usertest.directoryofservices.nhs.uk/app/controllers/home/home.php). In the current {{pagelink:Home/Design/BaRS-Applications/Applications, text:BaRS Applications}}, the TKW tool relies on values in the UserTest DoS to elicit particular behavioural responses. The Sender will populate what are termed 'sentinel' values, such as the NHSD-Target-Identifier, with a particular value and TKW will respond with a certain Capability Statement, MessageDefinition etc. (See the 'Scenarios' section for detail).
+The BaRS TKW tooling is embedded into the INT environment, encompassing all the same end-to-end BaRS infrastructure that is mirrored in Production, rather than being downloaded and used in isolation. This ensures the same steps to deploy solutions to Production are followed during deployment to INT, and allowing testing of requests/responses to occur under Production-like conditions. Similarly, we're able to incorporate other key components, similar to those used in Production workflows, such as the [UserTest Directory of Services (DoS)](https://usertest.directoryofservices.nhs.uk/app/controllers/home/home.php). In the current {{pagelink:Applications, text:BaRS Applications}}, the TKW tool relies on values in the UserTest DoS to elicit particular behavioural responses. The Sender will populate what are termed 'sentinel' values, such as the NHSD-Target-Identifier, with a particular value and TKW will respond with a certain Capability Statement, MessageDefinition etc. (See the 'Scenarios' section for detail).
 
 It is important for Senders to remember TKW is a stateless receiver and is not checking the relationship between requests (except in a handful of stateful scenarios - outlined below). This is important when developing workflows such as linking a booking and referral and transactional Integrity.
 
@@ -77,39 +77,39 @@ NB: where 'Any' NHSD-Target-Identifier is specified, only those highlighted in t
 ||Return no Slots|BaRS Core|Schedule.actor:HealthcareService (parameter)|2000073917||
 ||Return mandatory Slot response|BaRS Core |Schedule.actor:HealthcareService (parameter)|1503499715|This will only include Slot, Schedule and HealthcareService|
 ||Slot search failed request - HTTP 408|BaRS Core|Schedule.actor:HealthcareService (parameter)|2000081230|HealthcareService = 2000081230|
-||New booking for verified patient |BaRS Core|Patient.identifier (NHS No)|9054613556|The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7 in HTTP synchronous response|
+||New booking for verified patient |BaRS Core|Patient.identifier (NHS No)|9658499007|The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7 in HTTP synchronous response|
 ||Get Booking|BaRS Core|n/a||The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7|
 ||Cancel Booking|BaRS Core|n/a||The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7 (assumed cancel is for this appointment)|
 ||New booking for a patient with no NHS No.|BaRS Core|Patient.identifier (NHS No)|blank (no NHS No.)|The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7|
-||New booking failed request - HTTP 404|BaRS Core|Patient.identifier (NHS No)|9976150288||
-||New booking failed request - HTTP 409|BaRS Core|Patient.identifier (NHS No)|9933902830||
-||New booking failed request - HTTP 422|BaRS Core|Patient.identifier (NHS No)|9818556143||
+||New booking failed request - HTTP 404|BaRS Core|Patient.identifier (NHS No)|9658499015||
+||New booking failed request - HTTP 409|BaRS Core|Patient.identifier (NHS No)|9658499023||
+||New booking failed request - HTTP 422|BaRS Core|Patient.identifier (NHS No)|9658499031||
 ||Get booking failed request - HTTP 501|BaRS Core|n/a||GET must be for Appointment Id 0d440c22-7f25-4c6c-905d-2213d197d02a|
-|Referral|New referral for a verified patient|111-ED, 999-CAS|Patient.identifier (NHS No)|9054613556|The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0|
+|Referral|New referral for a verified patient|111-ED, 999-CAS|Patient.identifier (NHS No)|9658499058|The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0|
 ||Get Referral|111-ED, 999-CAS|n/a||The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0|
 ||Cancel Referral|111-ED, 999-CAS|n/a||The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0 (assumed revoke is for this Service Request)|
 ||New referral for a patient with no NHS No.|111-ED, 999-CAS|n/a||The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0|
-||New referral failed request - HTTP 400|111-ED, 999-CAS|Patient.identifier (NHS No)|9618388816|Request must be for a patient with NHS No - 9618388816 and returns 400|
-||New referral failed request - HTTP 500|111-ED, 999-CAS|Patient.identifier (NHS No)|9853944189|Request must be for a patient with NHS No - 9853944189 and returns 500|
+||New referral failed request - HTTP 400|111-ED, 999-CAS|Patient.identifier (NHS No)|9658499066|Request must be for a patient with NHS No - 9658499066 and returns 400|
+||New referral failed request - HTTP 500|111-ED, 999-CAS|Patient.identifier (NHS No)|9658499074|Request must be for a patient with NHS No - 9658499074 and returns 500|
 ||Get Referral - HTTP 405|111-ED, 999-CAS|n/a||GET must be for ServiceRequest Id 61215702-0049-4d76-9807-2123f0a6ca15 and returns 405|
 ||Get Referral - HTTP 429|111-ED, 999-CAS|n/a||GET must be for ServiceRequest Id 9d280ad9-6dda-46d2-a75e-f5b47b2f4e87 and returns 429|
 ||Get Referral - HTTP 503|111-ED, 999-CAS|n/a||GET must be for ServiceRequest Id 4d65ddaa-4d09-41cd-87c9-aeb9c0c96352 and returns 503|
 |Validation |New validation request |999-CAS|n/a||The validation request will return Service Request id = 0b42eac3-0175-43c8-bbab-efaa8ca31ccf|
-||New validation request |999-CAS|Patient.identifier (NHS No)|9945210394|The validation request will return Service Request id = 9e595424-9d67-45db-9a90-03259653cd37 which can be used in subsequent error scenarios 'Get Validation - HTTP 408' (4.6)|
-||New validation request|999-CAS|Patient.identifier (NHS No)|9010223337|The validation request will return Service Request id =  c337e8d8-fd5b-4a13-a8e4-0f6f4ac1bb1a which can be used in subsequent error scenarios 'Get Validation - HTTP 501' (4.8)|
+||New validation request |999-CAS|Patient.identifier (NHS No)|9658499082|The validation request will return Service Request id = 9e595424-9d67-45db-9a90-03259653cd37 which can be used in subsequent error scenarios 'Get Validation - HTTP 408' (4.6)|
+||New validation request|999-CAS|Patient.identifier (NHS No)|9658499090|The validation request will return Service Request id =  c337e8d8-fd5b-4a13-a8e4-0f6f4ac1bb1a which can be used in subsequent error scenarios 'Get Validation - HTTP 501' (4.8)|
 ||Get validation request |999-CAS|n/a||GET must be for Service Request id = 0b42eac3-0175-43c8-bbab-efaa8ca31ccf|
 ||Update validation request |999-CAS|n/a||The validation request returned will be Service Request id = 0b42eac3-0175-43c8-bbab-efaa8ca31ccf|
 ||Cancel validation request|999-CAS|n/a|||
-||New validation failed request - HTTP 404|999-CAS|Patient.identifier (NHS No)|9976150288|Request must be for a patient with NHS No - 9976150288 and returns 404|
-||New validation failed request - HTTP 409|999-CAS|Patient.identifier (NHS No)|9933902830|Request must be for a patient with NHS No - 9933902830 and returns 409|
-||New validation failed request - HTTP 422|999-CAS|Patient.identifier (NHS No)|9818556143|Request must be for a patient with NHS No - 9818556143 and returns 422|
-||New validation failed request - HTTP 401|999-CAS|Patient.identifier (NHS No)|9383924314|Request must be for a patient with NHS No - 9383924314 and returns 401|
+||New validation failed request - HTTP 404|999-CAS|Patient.identifier (NHS No)|9658499015|Request must be for a patient with NHS No - 9658499015 and returns 404|
+||New validation failed request - HTTP 409|999-CAS|Patient.identifier (NHS No)|9658499112|Request must be for a patient with NHS No - 9658499112 and returns 409|
+||New validation failed request - HTTP 422|999-CAS|Patient.identifier (NHS No)|9658499120|Request must be for a patient with NHS No - 9658499120 and returns 422|
+||New validation failed request - HTTP 401|999-CAS|Patient.identifier (NHS No)|9658499139|Request must be for a patient with NHS No - 9658499139 and returns 401|
 ||Get Validation - HTTP 408|999-CAS|n/a||GET must be for Service Request id = 0b42eac3-0175-43c8-bbab-efaa8ca31ccf and returns 408|
 ||Get Validation - HTTP 501|999-CAS|n/a||GET must be for Service Request id = c337e8d8-fd5b-4a13-a8e4-0f6f4ac1bb1a and returns 501|
-|Response|Full Validation Response|999-CAS|Patient.identifier (NHS No)|9091510129|Trigger a Validation response for full validation|
-||Interim validation response |999-CAS|Patient.identifier (NHS No)|9706161317|Trigger a Validation response for interim validation|
-||Safeguarding DNA Response|111-ED|Patient.identifier (NHS No)|9054613556|Accept a Response flow for failed Safeguarding|
-||Safeguarding DNA Response - HTTP 401|111-ED|Patient.identifier (NHS No)|9383924314|Accept a Response flow for failed Safeguarding and returns a 401|
+|Response|Full Validation Response|999-CAS|Patient.identifier (NHS No)|9658499147|Trigger a Validation response for full validation|
+||Interim validation response |999-CAS|Patient.identifier (NHS No)|9658499155|Trigger a Validation response for interim validation|
+||Safeguarding DNA Response|111-ED|Patient.identifier (NHS No)|9658499163|Accept a Response flow for failed Safeguarding|
+||Safeguarding DNA Response - HTTP 401|111-ED|Patient.identifier (NHS No)|9658499171|Accept a Response flow for failed Safeguarding and returns a 401|
 
 **UserTest DoS Services**
 
@@ -126,7 +126,32 @@ The sentinel values linked to [UserTest DoS](https://usertest.directoryofservice
 |2000011147|**TESTING ONLY** BaRS Test Service (TKW 7)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
 |2000076289|**TESTING ONLY** BaRS Test Service (TKW 8)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
 |2000003366|**TESTING ONLY** BaRS Test Service (TKW 9)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
-|2000071898|**TESTING ONLY** BaRS Test Service (TKW 10)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
+|2000071898|**TESTING ONLY** BaRS Test Service (TKW 12)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
+
+**INT Test Patient (traceable on SPINE)**
+
+The patient.Identifier sentinel values used to trigger Scenarios in TKW can be found on the INT Spine. The full patient details are outlined below. 
+
+| Surname | Forename | DoB        | NHS No     | Sex | Postcode |
+|---------|----------|------------|------------|-----|----------|
+| DYBALL  | Adrian   | 29/10/1932 | 9658499007 | M   | DN17 4LR |
+| FOWLER  | Frank    | 07/06/1921 | 9658499015 | M   | DN17 1HJ |
+| SWAIN   | Dudley   | 03/10/1931 | 9658499023 | M   | DN19 7EQ |
+| WEBBER  | Jeremy   | 19/12/1934 | 9658499031 | M   | DN16 3JH |
+| MURRY   | Josiah   | 10/08/1918 | 9658499058 | M   | DN8 5SP  |
+| MARSH   | Irving   | 15/06/1937 | 9658499066 | M   | DN17 2QU |
+| POVAH   | Horton   | 15/07/1938 | 9658499074 | M   | DN17 1UU |
+| McCANN  | Levi     | 08/07/1934 | 9658499082 | M   | DN16 2LH |
+| DRIVER  | Claude   | 29/04/1934 | 9658499090 | M   | DN18 6BW |
+| LYMER   | Peter    | 07/09/1948 | 9658499104 | M   | DN16 1SA |
+| TAFT    | Daphne   | 16/03/1919 | 9658499112 | F   | DN16 2QY |
+| MCGURK  | Verena   | 28/03/1940 | 9658499120 | F   | DN17 2NB |
+| GILROY  | Ellice   | 24/02/1929 | 9658499139 | F   | DN20 8PT |
+| COOK    | Violet   | 07/02/1918 | 9658499147 | F   | DN20 0JH |
+| COYNE   | Joyce    | 22/01/1933 | 9658499155 | F   | DN17 1TR |
+| LUMAS   | Hariot   | 23/04/1948 | 9658499163 | F   | DN15 7QQ |
+| BONNEY  | Lynda    | 21/03/1949 | 9658499171 | F   | DN17 1XR |
+
 
 ### Stateful Scenarios 
 TKW supports a limited stateful response for 111 to ED requests. This is a simulation of the real-world receiving end-point and mimics the expected behaviour of a Reciever solution.

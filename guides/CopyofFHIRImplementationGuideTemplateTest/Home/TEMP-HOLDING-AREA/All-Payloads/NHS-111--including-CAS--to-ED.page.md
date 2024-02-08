@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-This guidance is specific to the NHS 111 (including CAS) to ED application. It should be applied alongside the core guidance.
+This guidance is specific to the NHS 111 (including CAS) to ED Application. It should be applied alongside the core guidance.
 
 #### BARS ServiceRequest-Request Referral
 
