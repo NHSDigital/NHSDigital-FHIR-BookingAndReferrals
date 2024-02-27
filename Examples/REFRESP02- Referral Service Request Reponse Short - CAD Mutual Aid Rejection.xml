@@ -90,8 +90,8 @@
                     </coding>
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="mutualaidrequest" />
-						<display value="Mutual Aid Request" />
+						<code value="999to999mutualaidrequest" />
+						<display value="999-999 Mutual Aid Request" />
 					</coding>
 					<text value="Please can you spare a Paramedic closer than 20 mins?" />
                 </category>
