@@ -42,11 +42,11 @@
         <display value="999-999 Call Assist Request" />
     </concept>
     <concept>
-        <code value="999fallsvaliation" />
+        <code value="999fallsvalidation" />
         <display value="999-Falls Validation" />
     </concept>
     <concept>
-        <code value="999casvaliation" />
+        <code value="999casvalidation" />
         <display value="999-CAS Validation" />
     </concept>
 </CodeSystem>
