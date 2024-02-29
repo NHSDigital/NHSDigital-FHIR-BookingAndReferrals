@@ -94,6 +94,11 @@
             <!--   Important for driving workflow, determining the type of referral being requested   -->
             <display value="For Validation" />
           </coding>
+					<coding><!--       Use case category      -->
+						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+						<code value="999casvalidation" />
+						<display value="999-CAS Validation" />
+					</coding>
         </category>
         <subject>
           <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />

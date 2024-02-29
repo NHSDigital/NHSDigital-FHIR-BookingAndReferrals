@@ -1,0 +1,10 @@
+- name: index
+  filename: index.page.md
+- name: Standard Pattern For Composites
+  filename: Standard-Pattern-For-Composites.page.md
+- name: Message Headers
+  filename: Message-Headers.page.md
+- name: Cancellation
+  filename: Cancellation.page.md
+- name: Use Case Categories
+  filename: Use-Case-Categories.page.md

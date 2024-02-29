@@ -10,9 +10,8 @@ topic: trn-core
 This page will list all changes to the BaRS Core. 
 <br>
 <br>
-<div class="imgHandshake">{{render:handshake:}}</div> &nbsp; - Indicates a change inspired by provider or supplier feedback.
+<div class="imgHandshake">{{render:handshake}}</div> &nbsp; - Indicates a change inspired by provider or supplier feedback.
 <p>
-
 
 |Key                                                            | Description                            | 
 |---------------------------------------------------------------|----------------------------------------|

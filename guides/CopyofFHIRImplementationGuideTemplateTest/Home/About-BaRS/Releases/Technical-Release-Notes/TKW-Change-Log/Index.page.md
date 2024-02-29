@@ -10,6 +10,6 @@ topic: trn-tkw
 This page will list all general improvements for BaRS. 
 <br>
 <br>
-<div class="imgHandshake">{{render:handshake:}}</div> &nbsp; - Indicates a change inspired by provider or supplier feedback.
+<div class="imgHandshake">{{render:handshake}}</div> &nbsp; - Indicates a change inspired by provider or supplier feedback.
 <p>
 <hr>

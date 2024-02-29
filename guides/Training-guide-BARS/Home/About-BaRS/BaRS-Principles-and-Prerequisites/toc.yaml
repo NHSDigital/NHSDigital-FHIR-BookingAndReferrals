@@ -1,8 +1,0 @@
-- name: Index
-  filename: Index.page.md
-- name: Principles and prerequisites
-  filename: Principles-and-prerequisites.page.md
-- name: Principles for rendering BaRS payloads
-  filename: Principles-for-rendering-BaRS-payloads.page.md
-- name: Principles for integration systems
-  filename: Principles-for-Integration-systems.page.md
