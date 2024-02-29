@@ -9,6 +9,8 @@ topic: APP2-ScopeAndRequirements
 This BaRS Application (Application 2) covers only use cases:
 * NHS 111 Online (patient facing service) to ED (Emergency Department)
 * NHS 111 Online (patient facing service) to UTC (Urgent Treatment Centre)
+* S&R-ED use case
+* S&R-UTC use case
 
 The payloads and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
 

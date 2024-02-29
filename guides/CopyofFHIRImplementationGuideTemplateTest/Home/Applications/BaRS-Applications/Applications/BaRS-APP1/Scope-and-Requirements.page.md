@@ -10,6 +10,11 @@ This BaRS Application (Application 1) covers only use cases:
 * 111 (telephony) to UTC (Urgent Treatment Centre)
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to ED (Emergency Department)
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to UTC (Urgent Treatment Centre)
+* 999-ED use case (Pathways only)
+* 999-UTC use case (Pathways only)
+* 111- SDEC use case
+* CAS-SDEC use case
+* 999-SDEC use case (Pathways only)
 
 The payloads and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
 
