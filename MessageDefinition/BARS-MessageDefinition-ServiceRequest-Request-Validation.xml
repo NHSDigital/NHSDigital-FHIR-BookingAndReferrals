@@ -26,7 +26,7 @@
   <useContext>  
    <code><!--  Use cases supported by this MessageDefinition  -->
       <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-      <code value="999casvaliation" />
+      <code value="999casvalidation" />
     </code>
     <valueCodeableConcept>
       <coding>
