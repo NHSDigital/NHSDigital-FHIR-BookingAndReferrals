@@ -83,6 +83,9 @@ In addition to that the specific workflow parameters that are required are as fo
                         <td>ServiceRequest (Category) = validation</td>
                     </tr>
                     <tr>
+                        <td>ServiceRequest (Category) = 999casvalidation</td>
+                    </tr>
+                    <tr>
                         <td>Encounter (Status) = triaged</td>
                     </tr>
                     <tr>
@@ -161,6 +164,9 @@ In addition the specific workflow parameters that are required are as follows:
                     </tr>
                     <tr>
                         <td>ServiceRequest (Category) = validation</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceRequest (Category) = 999casvalidation</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged</td>
