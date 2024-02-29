@@ -4,8 +4,8 @@
   <name value="BARS Message Definition ServiceRequest - Request Validation" />
   <title value="BARS Message Definition ServiceRequest - Request Validation" />
   <status value="active" />
-  <date value="2023-10-16" />
-  <version value="1.3.0" />
+  <date value="2024-02-26" />
+  <version value="1.3.1" />
   <eventCoding>
     <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
     <code value="servicerequest-request" />
@@ -15,6 +15,18 @@
     <code>
       <system value="https://fhir.nhs.uk/CodeSystem/dos-id" />
       <code value="dos-id" />
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/variant-state" />
+        <code value="positive" />
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <useContext>  
+   <code><!--  Use cases supported by this MessageDefinition  -->
+      <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+      <code value="999casvalidation" />
     </code>
     <valueCodeableConcept>
       <coding>

@@ -4,8 +4,8 @@
   <name value="BARS Message Definition ServiceRequest - Request Referral" />
   <title value="BARS Message Definition ServiceRequest - Request Referral" />
   <status value="active" />
-  <date value="2024-01-11" />
-  <version value="1.5.0" />
+  <date value="2024-02-26" />
+  <version value="1.5.1" />
   <eventCoding>
     <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
     <code value="servicerequest-request" />
@@ -26,6 +26,18 @@
    <code><!--  Use cases supported by this MessageDefinition  -->
       <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
       <code value="referraltopharmacy" />
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/variant-state" />
+        <code value="positive" />
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <useContext>  
+   <code><!--  Use cases supported by this MessageDefinition  -->
+      <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+      <code value="999to999outofareareferral" />
     </code>
     <valueCodeableConcept>
       <coding>

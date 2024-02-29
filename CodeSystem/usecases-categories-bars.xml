@@ -6,11 +6,11 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="usecases-categories-bars"/>
     </identifier>
-    <version value="1.0.0"/>
+    <version value="1.1.0"/>
     <name value="usecasescategoriesbars"/>
     <title value="Use Cases Categories BARS"/>
     <status value="active"/>
-    <date value="2023-06-27"/>
+    <date value="2024-02-23"/>
     <publisher value="NHS England"/>
     <contact>
         <name value="NHS England" />
@@ -30,15 +30,23 @@
         <display value="Referral to Pharmacy" />
     </concept>
 	<concept>
-        <code value="outofareareferral" />
-        <display value="Out of Area Referral" />
+        <code value="999to999outofareareferral" />
+        <display value="999-999 Out of Area Referral" />
     </concept>
     <concept>
-        <code value="mutualaidrequest" />
-        <display value="Mutual Aid Request" />
+        <code value="999to999mutualaidrequest" />
+        <display value="999-999 Mutual Aid Request" />
     </concept>
     <concept>
-        <code value="callassistrequest" />
-        <display value="Call Assist Request" />
+        <code value="999to999callassistrequest" />
+        <display value="999-999 Call Assist Request" />
+    </concept>
+    <concept>
+        <code value="999fallsvalidation" />
+        <display value="999-Falls Validation" />
+    </concept>
+    <concept>
+        <code value="999casvalidation" />
+        <display value="999-CAS Validation" />
     </concept>
 </CodeSystem>
