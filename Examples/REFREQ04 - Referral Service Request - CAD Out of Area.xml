@@ -89,8 +89,8 @@
                     </coding>
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="outofareareferral" />
-						<display value="Out of Area Referral" />
+						<code value="999to999outofareareferral" />
+						<display value="999-999 Out of Area Referral" />
 					</coding>
                 </category>
                 <subject>
