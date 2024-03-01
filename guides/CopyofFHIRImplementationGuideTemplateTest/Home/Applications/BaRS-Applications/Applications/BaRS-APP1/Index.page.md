@@ -38,6 +38,11 @@ This Application supports the use of the following use cases:
 * 111 (telephony) to UTC (Urgent Treatment Centre)
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to ED (Emergency Department)
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to UTC (Urgent Treatment Centre)
+* Ambulance Services to ED (Emergency Department)
+* Ambulance Services to  UTC (Urgent Treatment Centre)
+* 111 (telephony) to SDEC (Same Day Emergency Care)
+* IUC CAS (Integrated Urgent Care Clinical Assessment Service) to SDEC (Same Day Emergency Care)
+* Ambulance Services to SDEC (Same Day Emergency Care)
 
 **note:** for use cases where the sending system is 111 Online, please see {{pagelink: application2, text:Bookings and Referrals into UEC Application 2}}
 
@@ -45,7 +50,7 @@ This Application supports the use of the following use cases:
 
 ### Overview
 
-This page provides guidance for implementing the Booking and Referral Standard (BaRS) specifically for the NHS 111 (telephony) to Emergency Department (ED, also known as Accident and Emergency or A&E) and Urgent Treatment Centre (UTC) use cases. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
+This page provides guidance for implementing the Booking and Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard.
 
 ### Data model endorsements
 
