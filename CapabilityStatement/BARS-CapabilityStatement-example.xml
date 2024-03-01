@@ -1,328 +1,329 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-  <id value="45bcbe62-718b-4874-a68c-b0fe39a76cf5" />
-  <url value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4'" />
-  <name value="BaRS FHIR Server CapabilityStatement" />
-  <status value="active" />
-  <version value="1.4.0" />
-  <experimental value="false" />
-  <date value="2024-01-09" />
-  <publisher value="NHS England" />
-  <kind value="instance" />
-  <contact>
-    <name value="System Administrator" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-    </telecom>
-  </contact>
-  <description value="Sample capability statement showing new MessageDefinition structure, modify this Capability Statement to reflect what your system is capable of." />
-  <software>
-    <name value="NHS Digital" />
-    <version value='1.2.0'/>
-  </software>
-  <implementation>
-    <description value="BaRS FHIR Server" />
-    <url value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4" />
-  </implementation>
-  <fhirVersion value="4.0.1" />
-  <format value="xml" />
-  <format value="json" />
- <rest>
-    <mode value='server'/>
-    <security>
-      <service>
-        <coding>
-          <system value='http://terminology.hl7.org/CodeSystem/restful-security-service'/>
-          <code value='Certificates'/>
-          <display value='Certificates'/>
-        </coding>
-      </service>
-    </security>
-    <resource>
-      <type value='CapabilityStatement'/>
-      <interaction>
-        <code value='read'/>
-      </interaction>
-      <interaction>
-        <code value='vread'/>
-      </interaction>
-      <versioning value='no-version'/>
-    </resource>
-    <resource>
-      <type value='MessageDefinition'/>
-      <interaction>
-        <code value='search-type'/>
-      </interaction>
-      <versioning value='no-version'/>
-      <searchParam>
-        <name value='useContext:identifier'/>
-        <type value='token'/>
-        <documentation value='The target service identifier. Allowing the ability to filter returned message definitions by the specified service id.'/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value='Appointment'/>
-      <interaction>
-        <code value='read'/>
-      </interaction>
-      <interaction>
-        <code value='vread'/>
-      </interaction>
-      <interaction>
-        <code value='search-type'/>
-      </interaction>
-      <versioning value='no-version'/>
-      <searchParam>
-        <name value='_id'/>
-        <type value='token'/>
-        <documentation value='Unique identifier for an appointment'/>
-      </searchParam>
-      <searchParam>
-        <name value='date'/>
-        <type value='date'/>
-        <documentation value='Appointment start date'/>
-      </searchParam>
-      <searchParam>
-        <name value='patient:identifier'/>
-        <type value='token'/>
-        <documentation value='NHS Number (system must be https://fhir.nhs.uk/Id/nhs-number)'/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value='ServiceRequest'/>
-      <interaction>
-        <code value='read'/>
-      </interaction>
-      <interaction>
-        <code value='vread'/>
-      </interaction>
-      <interaction>
-        <code value='search-type'/>
-      </interaction>
-      <versioning value='no-version'/>
-      <searchParam>
-        <name value='_id'/>
-        <type value='token'/>
-        <documentation value='Unique identifier for a ServiceRequest'/>
-      </searchParam>
-      <searchParam>
-        <name value='patient:identifier'/>
-        <type value='token'/>
-        <documentation value='NHS Number (system must be https://fhir.nhs.uk/Id/nhs-number)'/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value='Slot'/>
-      <interaction>
-        <code value='search-type'/>
-      </interaction>
-      <versioning value='no-version'/>
-      <searchInclude value='Slot:schedule'/>
-      <searchInclude value='Schedule:actor:Practitioner'/>
-      <searchInclude value='Schedule:actor:PractitionerRole'/>
-      <searchInclude value='Schedule:actor:HealthcareService'/>
-      <searchInclude value='HealthcareService.providedBy'/>
-      <searchInclude value='HealthcareService:location'/>
-      <searchParam>
-        <name value='start'/>
-        <type value='date'/>
-      </searchParam>
-      <searchParam>
-        <name value='status'/>
-        <type value='token'/>
-      </searchParam>
-      <searchParam>
-        <name value='Schedule.actor:HealthcareService'/>
-        <type value='token'/>
-      </searchParam>
-    </resource>
-    <interaction>
-      <code value='transaction'/>
-    </interaction>
-    <interaction>
-      <code value='search-system'/>
-    </interaction>
-    <operation>
-      <name value='$process-message'/>
-      <definition value='http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message'/>
-    </operation>
-  </rest>
-  <rest>
-    <mode value='client'/>
-    <security>
-      <service>
-        <coding>
-          <system value='http://terminology.hl7.org/CodeSystem/restful-security-service'/>
-          <code value='OAuth'/>
-          <display value='OAuth'/>
-        </coding>
-      </service>
-    </security>
-    <resource>
-      <type value='Appointment'/>
-      <interaction>
-        <code value='read'/>
-      </interaction>
-      <interaction>
-        <code value='vread'/>
-      </interaction>
-      <interaction>
-        <code value='search-type'/>
-      </interaction>
-      <versioning value='no-version'/>
-      <searchParam>
-        <name value='_id'/>
-        <type value='token'/>
-        <documentation value='Unique identifier for an appointment'/>
-      </searchParam>
-      <searchParam>
-        <name value='date'/>
-        <type value='date'/>
-        <documentation value='Appointment start date'/>
-      </searchParam>
-      <searchParam>
-        <name value='patient:identifier'/>
-        <type value='token'/>
-        <documentation value='NHS Number (system must be https://fhir.nhs.uk/Id/nhs-number)'/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value='ServiceRequest'/>
-      <interaction>
-        <code value='read'/>
-      </interaction>
-      <interaction>
-        <code value='vread'/>
-      </interaction>
-      <interaction>
-        <code value='search-type'/>
-      </interaction>
-      <versioning value='no-version'/>
-      <searchParam>
-        <name value='_id'/>
-        <type value='token'/>
-        <documentation value='Unique identifier for a ServiceRequest'/>
-      </searchParam>
-      <searchParam>
-        <name value='patient:identifier'/>
-        <type value='token'/>
-        <documentation value='NHS Number (system must be https://fhir.nhs.uk/Id/nhs-number)'/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value='Slot'/>
-      <interaction>
-        <code value='search-type'/>
-      </interaction>
-      <versioning value='no-version'/>
-      <searchInclude value='Slot:schedule'/>
-      <searchInclude value='Schedule:actor:Practitioner'/>
-      <searchInclude value='Schedule:actor:PractitionerRole'/>
-      <searchInclude value='Schedule:actor:HealthcareService'/>
-      <searchInclude value='HealthcareService.providedBy'/>
-      <searchInclude value='HealthcareService:location'/>
-      <searchParam>
-        <name value='start'/>
-        <type value='date'/>
-      </searchParam>
-      <searchParam>
-        <name value='status'/>
-        <type value='token'/>
-      </searchParam>
-      <searchParam>
-        <name value='Schedule.actor:HealthcareService'/>
-        <type value='token'/>
-      </searchParam>
-    </resource>
-    <interaction>
-      <code value='transaction'/>
-    </interaction>
-    <interaction>
-      <code value='search-system'/>
-    </interaction>
-    <operation>
-      <name value='$process-message'/>
-      <definition value='http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message'/>
-    </operation>
-  </rest>		
-  <messaging>
-    <endpoint>
-      <protocol>
-        <code value="http" />
-      </protocol>
-      <address value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4" />
-    </endpoint>
-    <supportedMessage>
-      <mode value="sender" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="sender" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="sender" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-full" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="sender" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="sender" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral" />
-    </supportedMessage>
-	<supportedMessage>
-      <mode value="sender" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-cancelled" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="sender" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="sender" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request-cancelled" />
-    </supportedMessage>
-	<supportedMessage>
-      <mode value="sender"/>
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral-short"/>																	   
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-full" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-cancelled" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver" />
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request-cancelled" />
-    </supportedMessage>
-    <supportedMessage>
-      <mode value="receiver"/>
-      <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral-short"/>
-    </supportedMessage>
-  </messaging>
+	<id value="45bcbe62-718b-4874-a68c-b0fe39a76cf5"/>
+	<url value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4'"/>
+	<name value="BaRS FHIR Server CapabilityStatement"/>
+	<status value="active"/>
+	<!-- This is the version of BaRS Core -->
+	<version value="1.2.2"/>
+	<experimental value="false"/>
+	<date value="2024-01-09"/>
+	<publisher value="NHS England"/>
+	<kind value="instance"/>
+	<contact>
+		<name value="System Administrator"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+		</telecom>
+	</contact>
+	<description value="Sample capability statement showing new MessageDefinition structure, modify this Capability Statement to reflect what your system is capable of."/>
+	<software>
+		<name value="NHS Digital"/>
+		<version value='1.2.0'/>
+	</software>
+	<implementation>
+		<description value="BaRS FHIR Server"/>
+		<url value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4"/>
+	</implementation>
+	<fhirVersion value="4.0.1"/>
+	<format value="xml"/>
+	<format value="json"/>
+	<rest>
+		<mode value='server'/>
+		<security>
+			<service>
+				<coding>
+					<system value='http://terminology.hl7.org/CodeSystem/restful-security-service'/>
+					<code value='Certificates'/>
+					<display value='Certificates'/>
+				</coding>
+			</service>
+		</security>
+		<resource>
+			<type value='CapabilityStatement'/>
+			<interaction>
+				<code value='read'/>
+			</interaction>
+			<interaction>
+				<code value='vread'/>
+			</interaction>
+			<versioning value='no-version'/>
+		</resource>
+		<resource>
+			<type value='MessageDefinition'/>
+			<interaction>
+				<code value='search-type'/>
+			</interaction>
+			<versioning value='no-version'/>
+			<searchParam>
+				<name value='useContext:identifier'/>
+				<type value='token'/>
+				<documentation value='The target service identifier. Allowing the ability to filter returned message definitions by the specified service id.'/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value='Appointment'/>
+			<interaction>
+				<code value='read'/>
+			</interaction>
+			<interaction>
+				<code value='vread'/>
+			</interaction>
+			<interaction>
+				<code value='search-type'/>
+			</interaction>
+			<versioning value='no-version'/>
+			<searchParam>
+				<name value='_id'/>
+				<type value='token'/>
+				<documentation value='Unique identifier for an appointment'/>
+			</searchParam>
+			<searchParam>
+				<name value='date'/>
+				<type value='date'/>
+				<documentation value='Appointment start date'/>
+			</searchParam>
+			<searchParam>
+				<name value='patient:identifier'/>
+				<type value='token'/>
+				<documentation value='NHS Number (system must be https://fhir.nhs.uk/Id/nhs-number)'/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value='ServiceRequest'/>
+			<interaction>
+				<code value='read'/>
+			</interaction>
+			<interaction>
+				<code value='vread'/>
+			</interaction>
+			<interaction>
+				<code value='search-type'/>
+			</interaction>
+			<versioning value='no-version'/>
+			<searchParam>
+				<name value='_id'/>
+				<type value='token'/>
+				<documentation value='Unique identifier for a ServiceRequest'/>
+			</searchParam>
+			<searchParam>
+				<name value='patient:identifier'/>
+				<type value='token'/>
+				<documentation value='NHS Number (system must be https://fhir.nhs.uk/Id/nhs-number)'/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value='Slot'/>
+			<interaction>
+				<code value='search-type'/>
+			</interaction>
+			<versioning value='no-version'/>
+			<searchInclude value='Slot:schedule'/>
+			<searchInclude value='Schedule:actor:Practitioner'/>
+			<searchInclude value='Schedule:actor:PractitionerRole'/>
+			<searchInclude value='Schedule:actor:HealthcareService'/>
+			<searchInclude value='HealthcareService.providedBy'/>
+			<searchInclude value='HealthcareService:location'/>
+			<searchParam>
+				<name value='start'/>
+				<type value='date'/>
+			</searchParam>
+			<searchParam>
+				<name value='status'/>
+				<type value='token'/>
+			</searchParam>
+			<searchParam>
+				<name value='Schedule.actor:HealthcareService'/>
+				<type value='token'/>
+			</searchParam>
+		</resource>
+		<interaction>
+			<code value='transaction'/>
+		</interaction>
+		<interaction>
+			<code value='search-system'/>
+		</interaction>
+		<operation>
+			<name value='$process-message'/>
+			<definition value='http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message'/>
+		</operation>
+	</rest>
+	<rest>
+		<mode value='client'/>
+		<security>
+			<service>
+				<coding>
+					<system value='http://terminology.hl7.org/CodeSystem/restful-security-service'/>
+					<code value='OAuth'/>
+					<display value='OAuth'/>
+				</coding>
+			</service>
+		</security>
+		<resource>
+			<type value='Appointment'/>
+			<interaction>
+				<code value='read'/>
+			</interaction>
+			<interaction>
+				<code value='vread'/>
+			</interaction>
+			<interaction>
+				<code value='search-type'/>
+			</interaction>
+			<versioning value='no-version'/>
+			<searchParam>
+				<name value='_id'/>
+				<type value='token'/>
+				<documentation value='Unique identifier for an appointment'/>
+			</searchParam>
+			<searchParam>
+				<name value='date'/>
+				<type value='date'/>
+				<documentation value='Appointment start date'/>
+			</searchParam>
+			<searchParam>
+				<name value='patient:identifier'/>
+				<type value='token'/>
+				<documentation value='NHS Number (system must be https://fhir.nhs.uk/Id/nhs-number)'/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value='ServiceRequest'/>
+			<interaction>
+				<code value='read'/>
+			</interaction>
+			<interaction>
+				<code value='vread'/>
+			</interaction>
+			<interaction>
+				<code value='search-type'/>
+			</interaction>
+			<versioning value='no-version'/>
+			<searchParam>
+				<name value='_id'/>
+				<type value='token'/>
+				<documentation value='Unique identifier for a ServiceRequest'/>
+			</searchParam>
+			<searchParam>
+				<name value='patient:identifier'/>
+				<type value='token'/>
+				<documentation value='NHS Number (system must be https://fhir.nhs.uk/Id/nhs-number)'/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value='Slot'/>
+			<interaction>
+				<code value='search-type'/>
+			</interaction>
+			<versioning value='no-version'/>
+			<searchInclude value='Slot:schedule'/>
+			<searchInclude value='Schedule:actor:Practitioner'/>
+			<searchInclude value='Schedule:actor:PractitionerRole'/>
+			<searchInclude value='Schedule:actor:HealthcareService'/>
+			<searchInclude value='HealthcareService.providedBy'/>
+			<searchInclude value='HealthcareService:location'/>
+			<searchParam>
+				<name value='start'/>
+				<type value='date'/>
+			</searchParam>
+			<searchParam>
+				<name value='status'/>
+				<type value='token'/>
+			</searchParam>
+			<searchParam>
+				<name value='Schedule.actor:HealthcareService'/>
+				<type value='token'/>
+			</searchParam>
+		</resource>
+		<interaction>
+			<code value='transaction'/>
+		</interaction>
+		<interaction>
+			<code value='search-system'/>
+		</interaction>
+		<operation>
+			<name value='$process-message'/>
+			<definition value='http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message'/>
+		</operation>
+	</rest>
+	<messaging>
+		<endpoint>
+			<protocol>
+				<code value="http"/>
+			</protocol>
+			<address value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4"/>
+		</endpoint>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-full"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-cancelled"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request-cancelled"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="sender"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral-short"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-full"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-cancelled"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request-cancelled"/>
+		</supportedMessage>
+		<supportedMessage>
+			<mode value="receiver"/>
+			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral-short"/>
+		</supportedMessage>
+	</messaging>
 </CapabilityStatement>
