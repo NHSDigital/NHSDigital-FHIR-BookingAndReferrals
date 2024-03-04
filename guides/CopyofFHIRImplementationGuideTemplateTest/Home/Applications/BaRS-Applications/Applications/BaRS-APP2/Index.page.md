@@ -38,15 +38,16 @@ This Application supports the use of the following use cases:
 
 * 111 Online to ED (Emergency Department)
 * 111 Online to UTC (Urgent Treatment Centre)
+* S&R (Streaming and Redirection) to ED (Emergency Department)
+* S&R (Streaming and Redirection) to UTC (Urgent Treatment Centre)
 
 **note:** for use cases where the sending system is a 111 telephony service, please see {{pagelink: application1, text:Bookings and Referrals into UEC Application 1}}
-
 
 ## Introduction
 
 ### Overview
 
-This page provides guidance for implementing the Booking and Referral Standard (BaRS) specifically for the NHS 111 Online (patient facing service) to Emergency Department (ED, also known as Accident and Emergency or A&E) and Urgent Treatment Centre (UTC) use case. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
+This page provides guidance for implementing the Booking and Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
 
 ### Data model endorsements
 
