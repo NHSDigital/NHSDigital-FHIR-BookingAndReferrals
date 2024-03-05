@@ -6,3 +6,5 @@
   filename: Message-Headers.page.md
 - name: Cancellation
   filename: Cancellation.page.md
+- name: Use Case Categories
+  filename: Use-Case-Categories.page.md
