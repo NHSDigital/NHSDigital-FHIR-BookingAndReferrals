@@ -14,7 +14,7 @@ The below details the specific guidance around the use of resources required to 
 ### MessageHeader Resource
 For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader, text:Standard Pattern Message Header}}. 
 
-The MessageHeader resource for the Validation Request should have the following resource elements set as follows:
+The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
 * **MessageHeader.reasonCode** - **must** be 'new'
 * **MessageHeader.focus** - **must** reference the ServiceRequest FHIR resource
@@ -23,7 +23,11 @@ The MessageHeader resource for the Validation Request should have the following 
 ### ServiceRequest Resource
 The 'focus' resource in a referral is the ServiceRequest resource. When the request payload (bundle) is created by the Sender and processed by the Receiver, this is the starting point from which the request is understood. It provides either the detail and references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail.
 
-The *ServiceRequest.category* is important to denote the type of referral, which combined with the *MessageHeader.eventCoding* is key to drive workflow.
+There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
+1. Denotes the type of referral e.g. Transfer of care
+2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
+). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories, text:use-case categories}}
 
 Additionally, the *ServiceRequest.category.text* **must** be populated with details about the service request when the request is to support the Call Assist or Mutual Aid use cases.
 
@@ -33,7 +37,7 @@ The Encounter is used to represent the interaction between a patient and healthc
 In the initial referral request, the Sender will include an Encounter resource as the carrier for the assessment, which established the need for the referral. This encounter **should** include a local human readable reference to the Sender's assessment under *encounter.identifier*. Additionally, the *encounter.episodeOfCare* **must** be populated with a 'Journey ID' reference which can be used in subsequent referrals to allow the audit of the route a patient took through service providers to resolve their initial request for care. 
 
 
-When a referral request is made, the Receiver **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Sender's request. This new 'planned' encounter will have an Identifier value, indicating *the Receiver's* local human readable reference. (See the {{pagelink:APP6-EntityRelationshipDiagrams, text:Entity Relationship Diagrams}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
+When a referral request is made, the Receiver **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Sender's request. This new 'planned' encounter will have an Identifier value, indicating *the Receiver's* local human readable reference. See the {{pagelink:APP6-EntityRelationshipDiagrams, text:Entity Relationship Diagrams}} for reference. The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
 
 
 ### Incident Location Resource ###
@@ -73,7 +77,7 @@ When the Sender populates the Location resource:
     
 *  They **should** populate the *Location.address* for all property based locations. 
 *  They **should** populate *Location.address.line* which is a repeatable element, with the order in which lines should appear in an address label
-*  They **should** populate *Location.address.name* when there is a property name
+*  They **should** populate *Location.name* when there is a property name
 *  They **should** populate *Location.address.text* with a text representation of the full address (including the address name), with each line separated by a comma
 
 When a the Receiver processes information in a Location resource:
@@ -83,7 +87,7 @@ When a the Receiver processes information in a Location resource:
 
 
 ### CarePlan Resource
-The CarePlan resource is used in a Validation Request to communicate the Sender's triage outcome and any associated clinical information, based on the assessment performed by the Sender. The Receiver will utilise the detail in this resource to review what the previous assessment ascertained about the patient, and to inform any subsequent action.
+The CarePlan resource is used in a Referral Request to communicate the Sender's triage outcome and any associated clinical information, based on the assessment performed by the Sender. The Receiver will utilise the detail in this resource to review what the previous assessment ascertained about the patient, and to inform any subsequent action.
 
 Primarily, *careplan.activity* is the section which holds this information, whether it be coded or free text. The *careplan.activity.outcomeCodeableConcept*  supports the transmission of AMPDS and Pathways coded outcomes and the clinical narrative. The element guidance for this resource below goes into the specific detail but, the Sender **must** include the following:
 *  The selected AMPDS dispatch code and triage summary, or  
@@ -128,7 +132,7 @@ There are specific instances where an Observation **must** be used to convey inf
 * Where Estimated Age is communicated it **must** be conveyed in an Observation.
 
 ### Consent 
-The level of consent currently supported by BaRS is for 'Direct Care' only. In emergency care use cases this is usually implied consent. A Validation Request **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 
+The level of consent currently supported by BaRS is for 'Direct Care' only. In emergency care use cases this is usually implied consent. A Referral Request **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 
 
 ### Questionnaire
 A Questionnaire is an organised collection of questions intended to solicit information from patients, providers or other individuals involved in the healthcare domain. They may be simple flat lists of questions or can be hierarchically organised in groups and sub-groups, each containing questions. The Questionnaire defines the questions to be asked, how they are ordered and grouped, any intervening instructional text and what the constraints are on the allowed answers. The results of a Questionnaire can be communicated using the QuestionnaireResponse resource.
@@ -227,7 +231,7 @@ The Procedure resource is used to communicate that Cardio Pulmonary Resuscitatio
 ### Task
 The Task is used to direct the next action(s) required by the Sender making the referral. Task supports in fulfilling Careplan, which also references it. The narrative within the payload starts with the assessment performed by the Sender (Encounter), identifying a 'problem' (Condition) which a plan of care (CarePlan) is established to address. The Sender is unable to support the plan of care so transitions responsibility, via a referral (ServiceRequest), while directing the next requested action (Task).
 
-This Application utilises two elements within Task to direct the activity and time-frame, using *Task.code* and *Task.restriction*. The code will be a fixed value, indicating that a consultation is being request of the 'Community Pharmacist Consultation Service for minor illness', dictating the action should take place within thirty minutes, under the *Restriction.period* element.
+This Application utilises two elements within Task to direct the activity and time-frame, using *Task.code* and *Task.restriction.period*.
 
 ### Communication
 
