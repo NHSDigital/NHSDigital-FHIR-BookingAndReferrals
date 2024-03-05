@@ -45,8 +45,6 @@ The payload and workflow have been designed to support this service. Other {{pag
 - The referral Receiver **must** accept the referral request regardless of whether the patient is known to the service provider
 - The referral Receiver **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number.
 - Where a national identifier is included, it **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified' or 'Number present but not traced', otherwise, the referral Sender **must <ins>not</ins>** include it in the request
-- Any new or existing safeguarding concern, recorded as part of the assessment, **should** be included in the referral Sender's request
-- The referral Receiver **must** clearly identify any included safeguarding concern to the end user
 - Any new or existing individual requirements, e.g. need for interpreter, recorded as part of the assessment, **should** be included in the referral Sender's request
 - The referral Receiver **must** clearly identify any included individual requirements to the end user
 - The referral Receiver **must** accurately represent information made by the Sender to the end user 
@@ -56,7 +54,6 @@ The payload and workflow have been designed to support this service. Other {{pag
 - The referral Sender **should** indicate novel medications, established during the latest assessment and not available on existing records, to the Receiver 
 - The referral Sender **should** indicate novel allergies, established during the latest assessment and not available on existing records, to the Receiver 
 - The referral Sender **should** indicate localised Special Patient Notes (SPNs) to the Receiver 
-- The referral Sender **should** indicate where Additional Information Sources have been accessed  e.g. Shared Care Records, informing the latest assessment, to the Receiver
 - The referral Sender **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user so they can share with the patient/third party
 - Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 - Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.

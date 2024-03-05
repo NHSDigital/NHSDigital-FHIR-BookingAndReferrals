@@ -4,19 +4,22 @@ topic: APP6-HowDoesItWork
 
 ## {{page-title}}
 
-This section describes how the primary operations used in this application work. The following  diagrams illustrate the workflows and interactions of the following use cases :
+This section describes how the primary operations used in this application work. The following diagrams illustrate the workflows and interactions of the following use cases :
 * CAD to CAD Out of Area referral
 * CAD to CAD Call Assist Request
 * CAD to CAD Mutual Aid Request
 
 <br>
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADOutOfArea-1.0.0.svg" width="1000"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADOutOfArea-1.0.1.svg" target="_blank>">
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADOutOfArea-1.0.1.svg" width="1200"></img></a>
 
 <br>
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADCallAssist-1.0.0.svg" width="1000"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADCallAssist-1.0.1.svg" target="_blank>">
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADCallAssist-1.0.1.svg" width="1200"></img></a>
 
 <br>
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADMutualAid-1.0.0.svg" width="1000"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADMutualAid-1.0.1.svg" target="_blank>">
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/CADMutualAid-1.0.1.svg" width="1200"></img></a>
 
 ### Actors
 
@@ -95,7 +98,7 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
 
 ### Continue updates
 - If additional or changed information about the case is captured by the referral Sender, subsequent to sending the BaRS Referral, they may send a BaRS Referral Update to ensure that the referral Receiver has the most up to date information.
-- If the referral Sender no longer requires the Receiving AST to perform the validation, for example the patient calls back and says they do not require an ambulance, they may send a Cancellation.
+- If the referral Sender needs to cancel a Referral, for example the patient calls back and says they do not require an ambulance, they need to send a Cancellation.
 - On receipt of a Referral Update, the referral Receiver will send an acknowledgement back to the Sending AST on when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 
 ### Manage Stack
@@ -148,6 +151,9 @@ In addition to that the specific workflow parameters that are required are as fo
                     </tr>
                     <tr>
                         <td>ServiceRequest (Category) = referral</td>
+                    </tr>
+					<tr>
+                        <td>ServiceRequest (Category) = outofareareferral</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>
@@ -228,6 +234,9 @@ In addition the specific workflow parameters that are required are as follows:
                     </tr>
                     <tr>
                         <td>ServiceRequest (Category) = referral</td>
+                    </tr>
+					<tr>
+                        <td>ServiceRequest (Category) = outofareareferral</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>
@@ -433,11 +442,11 @@ Receive_Request
 									{ 
 										switch(ServiceRequest.Category.coding[1].code)  //https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
 										{
-											case "MutualAidRequest":
+											case "999to999MutualAidRequest":
 												RequestType = "Im Receiving a new Mutual Aid Request response";
-											case:"CallAssistRequest":
+											case:"999to999CallAssistRequest":
 												RequestType = "Im Receiving a new Call Assist Request response";
-											case:"OutOfArea":
+											case:"999to999OutOfArea":
 												RequestType = "Im Receiving a new Out of Area Request response";
 											default:
 												RequestType = "unknown"
@@ -464,11 +473,11 @@ Receive_Request
 									{ 
 										switch(ServiceRequest.Category.coding[1].code)  //https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
 										{
-											case "MutualAidRequest":
+											case "999to999MutualAidRequest":
 												RequestType = "Im Receiving a  Mutual Aid Request update response";
-											case:"CallAssistRequest":
+											case:"999to999CallAssistRequest":
 												RequestType = "Im Receiving a  Call Assist Request update response";
-											case:"OutOfArea":
+											case:"999to999OutOfArea":
 												RequestType = "Im Receiving a  Out of Area Request update response";
 											default:
 												RequestType = "unknown"
@@ -493,9 +502,9 @@ Receive_Request
 					{ 
 						switch(ServiceRequest.Category.coding[1].code)  //https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
 						{
-							case "MutualAidRequest":
+							case "999to999MutualAidRequest":
 								RequestType = "Im Receiving a new Mutual Aid Request rejection";
-							case:"CallAssistRequest":
+							case:"999to999CallAssistRequest":
 								RequestType = "Im Receiving a new Call Assist Request rejection";
 							default:
 								RequestType = "unknown"

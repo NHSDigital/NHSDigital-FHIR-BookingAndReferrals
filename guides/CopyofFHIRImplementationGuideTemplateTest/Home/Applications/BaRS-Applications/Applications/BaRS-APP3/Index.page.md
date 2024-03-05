@@ -11,18 +11,18 @@ topic: Application3
 <table>
 <thead>
 	<tr>
-		<th>Application Version</th>
-		<th>BaRS Core Version</th>
-		<th>BaRS Guide Version</th>
-		<th>BaRS API Specification Version</th>
+		<th data-no-sort="">Application Version</th>
+		<th data-no-sort="">Minimum Core Version</th>
+		<th data-no-sort="">Minimum Guide Version</th>
+		<th data-no-sort="">Minimum API Spec Version</th>
 	</tr>
 </thead>
 <tbody>
 	<tr>
 		<td>Application 3 v1.0.0</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">Core v1.0.0 and above</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">BaRS v1.4.0 and above</td>
-		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">API Spec v1.0.0 and above</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">v1.0.0</a></td>
 	</tr>
 </tbody>
 </table>
