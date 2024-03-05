@@ -23,15 +23,26 @@ The MessageHeader resource in the Interim Validation Response should have the fo
 ### ServiceRequest Resource
 The *ServiceRequest* reflects that sent by the Requester, and maintains the active state of the referral. The *ServiceRequest.status* at this point would stay as 'active'.
 
+There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
+1. Denotes the type of referral e.g. Transfer of care
+2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories, text:use-case categories}}
+
+
 ### Encounter Resource
 The Responder's current *Encounter* is the focus resource in the Interim Validation Response. This was originally the 'planned' Encounter created by the Responder in the synchronous response to the Validation Request. 
 
 This *Encounter* is used to represent the interaction between the patient and the Responder healthcare service provider. It links with numerous other resources, to reflect the activities performed in that encounter. 
 
-When sending an Interim Validation Response the Responder **must**:
+When sending an Interim Validation Response to convey that the Responder is starting the assessment, the Responder **must**:
 * Include the Responder's current *Encounter* as the focus resource of the Interim Validation Response
 * Include an *encounter.status* of 'in-progress' to be set on the Responder's current *Encounter*. This is to indicate to the Requester that the validation activity has started.
 * *encounter.reasonCode* to be included on the Responder's current *Encounter* to indicate that it is a response message (same code for both Interim and full Validation Response outcomes).
+
+When sending an Interim Validation Response to convey that the Responder is rejecting the Validation Request, the Responder **must**:
+* Include the Responder's current *Encounter* as the focus resource of the Interim Validation Response
+* Include an *encounter.status* of 'cancelled' to be set on the Responder's current *Encounter*. This is to indicate to the Requester that the Validation Request has been rejected.
+* *encounter.reasonCode* to be included on the Responder's current *Encounter* to indicate the reason for rejection.
 
 <br>
 <br>

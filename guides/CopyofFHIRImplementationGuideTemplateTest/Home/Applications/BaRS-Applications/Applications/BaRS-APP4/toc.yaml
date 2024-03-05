@@ -6,8 +6,8 @@
   filename: How-does-it-work.page.md
 - name: Payloads for Requestors
   filename: Payloads-for-Requestors.page.md
-- name: Validation Payload
-  filename: Validation-Payload.page.md
+- name: Validation Request Payload
+  filename: Validation-Request-Payload.page.md
 - name: Payloads for Responders
   filename: Payloads-for-Responders.page.md
 - name: Interim Validation Response Payload
