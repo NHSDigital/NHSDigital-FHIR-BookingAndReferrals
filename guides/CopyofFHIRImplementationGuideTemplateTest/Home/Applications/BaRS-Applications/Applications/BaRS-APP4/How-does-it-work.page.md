@@ -23,7 +23,8 @@ This details a 999 Ambulance Service Trust (AST) Referral into Clinical Assessme
 - If the 999 AST no longer requires the CAS to perform the validation, for example the patient calls back and the 999 AST decides to dispatch an ambulance, they may send a Cancellation.
 - Prior to the CAS consultation the case will typically be posted to a queue on the CAS system for prioritisation, based on the validation breach time in the referral. This is determined locally or nationally from the triage outcome codes.
 - The CAS Clinician will contact the patient, or their representative, utilising contact details in the referral message.
-- On commencement of the consultation the CAS system sends an Interim Validation Response back to the Sending 999 AST to inform them that the validation activity is in progress.
+- If the CAS clinician fails to contact the patient within an appropriate timescale, they can reject the validation request. This is undertaken by sending a Interim Validation Response to the 999 AST, which includes a CAS's Encounter status of 'cancelled' and a reason for rejection. On receipt of this rejection the 999 AST will resume ownership of the case for subsequent action.
+- If the CAS clinician successfully contacts the patient, on commencement of the consultation the CAS system sends an Interim Validation Response back to the Sending 999 AST to inform them that the validation activity is in progress.
 - The CAS clinician undertakes a consultation to validate the Sending Service's triage outcome. The consultation will be informed by the clinical information sent by the requesting service. The outcome of the validation will be recorded in the CAS system.
 - The outcome of the consultation under taken by the CAS clinician to validate the original 999 AST triage outcome, is sent to the Sending service in a Final Validation Response. This may include:
 	* An outcome that requires an upgraded ambulance response from the Sending 999 AST
@@ -80,6 +81,9 @@ In addition to that the specific workflow parameters that are required are as fo
                     </tr>
                     <tr>
                         <td>ServiceRequest (Category) = validation</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceRequest (Category) = 999casvalidation</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged</td>
@@ -160,6 +164,9 @@ In addition the specific workflow parameters that are required are as follows:
                     </tr>
                     <tr>
                         <td>ServiceRequest (Category) = validation</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceRequest (Category) = 999casvalidation</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged</td>
