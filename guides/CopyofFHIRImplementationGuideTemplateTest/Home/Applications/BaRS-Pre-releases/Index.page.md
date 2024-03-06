@@ -60,7 +60,7 @@ These guides are designed to be used in conjunction with the documentation for {
 	</tr>
 	<tr>
 		<td>Application 4 v1.1.0</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
 	</tr>
 	<tr>
 		<td>Application 5 v1.0.0-beta2</td>
@@ -70,7 +70,7 @@ These guides are designed to be used in conjunction with the documentation for {
 	</tr>
 	<tr>
 		<td>Application 6 v1.0.0-beta</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
 	</tr>
 	<tr>
 		<td></td>
