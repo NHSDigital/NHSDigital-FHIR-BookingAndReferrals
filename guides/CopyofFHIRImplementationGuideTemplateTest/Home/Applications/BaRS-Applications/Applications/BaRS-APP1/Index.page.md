@@ -38,11 +38,11 @@ This Application supports the use of the following use cases:
 * 111 (telephony) to UTC (Urgent Treatment Centre)
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to ED (Emergency Department)
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to UTC (Urgent Treatment Centre)
-* 999 Ambulance Service Trust (AST) to ED (Emergency Department)
-* 999 Ambulance Service Trust (AST) to  UTC (Urgent Treatment Centre)
+* AST (999 Ambulance Service Trust) to ED (Emergency Department)
+* AST (999 Ambulance Service Trust) to  UTC (Urgent Treatment Centre)
 * 111 (telephony) to SDEC (Same Day Emergency Care)
 * IUC CAS (Integrated Urgent Care Clinical Assessment Service) to SDEC (Same Day Emergency Care)
-* 999 Ambulance Service Trust (AST) to SDEC (Same Day Emergency Care)
+* AST (999 Ambulance Service Trust) to SDEC (Same Day Emergency Care)
 
 **note:** for use cases where the sending system is 111 Online, please see {{pagelink: application2, text:Bookings and Referrals into UEC Application 2}}
 
