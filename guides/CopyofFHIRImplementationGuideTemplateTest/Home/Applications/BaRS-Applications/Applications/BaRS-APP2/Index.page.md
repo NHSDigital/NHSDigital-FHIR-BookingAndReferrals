@@ -36,8 +36,8 @@ topic: Application2
 
 This Application supports the use of the following use cases:
 
-* 111 Online to ED (Emergency Department)
-* 111 Online to UTC (Urgent Treatment Centre)
+* 111 Online (NHS 111 Online - patient facing service) to ED (Emergency Department)
+* 111 Online (NHS 111 Online - patient facing service) to UTC (Urgent Treatment Centre)
 * S&R (Streaming and Redirection) to ED (Emergency Department)
 * S&R (Streaming and Redirection) to UTC (Urgent Treatment Centre)
 
