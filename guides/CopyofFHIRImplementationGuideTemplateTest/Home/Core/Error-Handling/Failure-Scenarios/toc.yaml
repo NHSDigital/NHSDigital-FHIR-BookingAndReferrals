@@ -7,7 +7,7 @@
 - name: Capability Statement
   filename: Capability-Statement.page.md
 - name: GET /MessageDefinition
-  filename: GET--MessageDefinition-duplicate-2.page.md
+  filename: GET--MessageDefinition.page.md
 - name: GET /Slots
   filename: GET--Slots.page.md
 - name: GET /Appointment
