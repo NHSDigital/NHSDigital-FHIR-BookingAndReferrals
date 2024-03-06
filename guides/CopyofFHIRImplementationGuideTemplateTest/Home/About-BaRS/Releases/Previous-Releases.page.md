@@ -24,13 +24,13 @@ Also this release of the BaRS marks the conclusion of the beta period for applic
 
 There has also been a number of minor bug fixes and corrections across all other applications
 
-A Clinical Safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new Hazards have been identified in this release. The latest version of the BaRS Clinical Safety Case and Hazard Log can be downloaded from the <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information" target="_blank">BaRS FHIR API onboarding support information page</a>. 
+A Clinical Safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new Hazards have been identified in this release. The latest version of the BaRS Clinical Safety Case and Hazard Log can be downloaded from the <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information" target="_blank">BaRS FHIR API onboarding support information page</a>.
+
+</div>
+</div>
 
 <hr>
 <br>
-
-</div>
-</div>
 
 <div class="bars-blg-expander">
 <div class="bars-blg-expander-entry" id="v1.3.0">
