@@ -21,6 +21,70 @@ This release marks the transition of application 6 from its alpha to its beta ph
 There has also been a few minor bug fixes and corrections across core and all other applications.
 
 A Clinical Safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new Hazards have been identified in this release. The latest version of the BaRS Clinical Safety Case and Hazard Log can be downloaded from the <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information" target="_blank">BaRS FHIR API onboarding support information page</a>. 
+<br>
+<hr>
+
+## Versioning Matrix
+
+<table>
+<thead>
+	<tr>
+		<th data-no-sort="">Application Version</th>
+		<th data-no-sort="">Minimum BaRS Guide Version</th>
+		<th data-no-sort="">Minimum Core Version</th>
+		<th data-no-sort="">Minimum API Spec version</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Application 1 v1.0.1</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">v1.1.0</a></td>
+		<td rowspan=7 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a></td>
+		<td rowspan=7 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">1.0.0</a></td>		
+	</tr>
+	<tr>
+		<td>Application 1 v1.0.3</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
+	</tr>
+	<tr>
+		<td>Application 2 v1.0.1</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">v1.1.0</a></td>
+	</tr>
+	<tr>
+		<td>Application 2 v1.0.3</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
+	</tr>
+	<tr>
+		<td>Application 3 v1.0.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
+	</tr>
+	<tr>
+		<td>Application 4 v1.0.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
+	</tr>
+	<tr>
+		<td>Application 4 v1.1.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
+	</tr>
+	<tr>
+		<td>Application 5 v1.0.0-beta2</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
+		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">v1.2.1</a></td>
+		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">1.1.0</a></td>
+	</tr>
+	<tr>
+		<td>Application 6 v1.0.0-beta</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</tbody>
+</table>
+
 
 <hr>
 <br>
