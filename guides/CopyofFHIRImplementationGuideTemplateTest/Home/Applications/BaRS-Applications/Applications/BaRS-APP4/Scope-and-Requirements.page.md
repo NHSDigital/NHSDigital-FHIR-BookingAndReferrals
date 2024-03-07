@@ -80,8 +80,8 @@ For this application we will be referring to the actors as 'Requester' and the '
 
 **Update Validation Request**
 *	The Requester **must** be capable of updating any Validation Request made by them, within the current consultation or after the consultation event
-*	The Requester **must** retrieve the Validation Request to be updated from the Responder prior to cancellation, to ensure they are working with the most up-to date version and it has not already been completed
-*	The Requester **must** provide visible confirmation of the status returned by the Responder to the end-user , i.e. whether the original Validation Request was successfully updated or not
+*	The Requester **must** retrieve the Validation Request to be updated from the Responder prior to update, to ensure they are working with the most up-to date version and the validation request has not already been completed, or is at a point in the workflow where it must not be updated
+*	The Requester **must** provide visible confirmation of the status returned by the Responder to the end-user, i.e. whether the original Validation Request was successfully updated or not
 *	If the update fails, the Responder **must** respond with the most appropriately aligned error. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail
 *	The Responder **must** store all previous versions of the Validation Request
 *	The Requester **must <ins>not</ins>** be required to inform the patient of the updating of the Validation Request.  Business/clinical responsibility for informing the patient must remain with the Requester
@@ -90,18 +90,18 @@ For this application we will be referring to the actors as 'Requester' and the '
 
 **Cancel Validation Request** 
 *	The Requester **must** be capable of cancelling any Validation Request made by them, within the current consultation or after the consultation event
-*	The Requester  **must** retrieve the Validation Request to be cancelled from the Responder prior to cancellation, to ensure they are working with the most up-to date version and it has not already been completed
-*	The Requester  **must** provide visible confirmation of the status returned by the Responder to the end user , i.e. whether the original Validation Request was successfully cancelled or not
+*	The Requester **must** retrieve the Validation Request to be cancelled from the Responder prior to cancellation, to ensure they are working with the most up-to date version and the validation request has not already been completed, or is at a point in the workflow where it must not be updated
+*	The Requester  **must** provide visible confirmation of the status returned by the Responder to the end user, i.e. whether the original Validation Request was successfully cancelled or not
 *	If the update fails the Responder **must** respond with the most appropriately aligned error 
 *	The Responder **must** store all previous versions of the Validation Request
-*	The Responder **must <ins>not</ins>** be required to inform the patient of the cancellation of the Validation Request.  Business/clinical responsibility for informing the patient must remain with the Requester
+*	The Responder **must <ins>not</ins>** be required to inform the patient of the cancellation of the Validation Request. Business/clinical responsibility for informing the patient must remain with the Requester
 
 **Interim Validation Response**
 *  The Responder **must** send an Interim Validation Response when the clinician starts the consultation in the CAS system. This **must not** be triggered by a clinician attempting to contact the patient or by a welfare call.
 *  The Requester **must** process the Interim Validation Response, update the case in the CAD and display the status change to the end user.
 
 **Validation Response**
-*  The Responder **must** send an full Validation Response when the clinician has completed the consultation in the CAS system.
+*  The Responder **must** send a full Validation Response when the clinician has completed the consultation in the CAS system.
 *  The Requester **must** process the Validation Response, update the case in the CAD and display the status change to the end user.
 * The status on the Validation Response **must** indicate to the end user if a dispatch is required or not.
 * The Requester **must** use status of the Validation Response to trigger system behaviour that ensures that cases that require a dispatch are acted on within an appropriate timescale, and cases that do not require a dispatch are closed
@@ -150,4 +150,4 @@ For this application we will be referring to the actors as 'Requester' and the '
 * Suppliers **must** adhere to the {{pagelink:core-NFR, text:non functional requirements}}
 <br>
 <br>
-<hr>s
+<hr>
