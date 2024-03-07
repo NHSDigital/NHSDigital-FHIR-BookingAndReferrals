@@ -30,6 +30,7 @@ A Clinical Safety assessment of the scope of this release has determined that it
 </div>
 
 <hr>
+
 <br>
 
 <div class="bars-blg-expander">
