@@ -106,7 +106,7 @@ ONLY)
 <details>
   <summary>> <b class="barslink">Service Request</b></summary>
       <p>
-        <p>A resource to carry a request for a service to be performed, in this case an Ambulance Request. This Resource is the focus of the BaRS Ambulance Request interaction.</p>
+        <p>A resource to carry a request for a service to be performed and the associated use case. This Resource is the focus of the BaRS Referral Request interaction.</p>
         {{tree:https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral      , hybrid}}
         <p>
 
