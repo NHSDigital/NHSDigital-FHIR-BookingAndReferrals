@@ -3,7 +3,7 @@ topic: trn-app6
 ---
 <a href="#" onclick="history.back()">back</a>
 
-## Referrals from an AST Computer Aided Dispatch system (CAD) to an AST CAD (Application 6) Change Log
+## Referrals into an Ambulance Service Trust (Application 6) Change Log
 
 <br>
 This page will list all updates to BaRS Application 6
