@@ -1,5 +1,5 @@
 ---
-topic: TRN-API-1.2.0
+topic: TRN-API-global
 ---
 
 ## {{page-title}}
