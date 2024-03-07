@@ -83,11 +83,12 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
 - The referral Sender will capture the patient's baseline demographics where possible. This may be followed up by a Personal Demographics Service (PDS) search later in the call cycle.
 
 ### Complete Triage
-- The referral Sender will complete a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch (CAD) system, using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. *This is the point at which the Referral Sender AST will make a BaRS referral for non-life threatening emergencies; all subsequent information captured will be communicated in BaRS Referral updates (see Sending a BaRS Referral below)*
+- The referral Sender will complete a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch (CAD) system, using an approved Clinical Decision Support System (CDSS), such as NHS Pathways or AMPDS. *This is the point at which the Referral Sender AST will make a BaRS referral for non-life threatening emergencies; all subsequent information captured will be communicated in BaRS Referral updates (see Sending a BaRS Referral below)*
 
 ### Sending a BaRS Referral
 - The referral Receiver is identified based on nationally agreed polygons that set geographic boundaries of responsibility for each AST. Service discovery will use these polygons to ascertain the ServiceID of the referral Receiver.
 - The Service ID is used to query the BaRS Endpoint Catalogue to identify the referral Receiver's CAD system's endpoint details
+- The sender will check that the Receiver supports the intended Referral use case before sending.
 - The referral Sender will send the BaRS Referral to the referral Receiver, which includes information required by the referral Receiver to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
 
 ### Create Case
@@ -95,6 +96,9 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
 
 ### Acknowledge Receipt
 - The referral Receiver will send an acknowledgement back to the referral Sender, when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
+
+### Status Update (Referral Response)
+- The referral Receiver will send a series of status updates back to the referral Sender, to support tracking the progress of the case.
 
 ### Continue updates
 - If additional or changed information about the case is captured by the referral Sender, subsequent to sending the BaRS Referral, they may send a BaRS Referral Update to ensure that the referral Receiver has the most up to date information.

@@ -85,6 +85,7 @@ When a the Receiver processes information in a Location resource:
 *  They **should** consume and populate **all** address fields sent, into their system
 *  They **must** display **all** address fields sent by the Sender
 
+*Note: The Patient Address is communicated in in the Patient resource and would only be replicated in the Location resource if it is also a secondary location e.g. Rendezvous point*
 
 ### CarePlan Resource
 The CarePlan resource is used in a Referral Request to communicate the Sender's triage outcome and any associated clinical information, based on the assessment performed by the Sender. The Receiver will utilise the detail in this resource to review what the previous assessment ascertained about the patient, and to inform any subsequent action.
@@ -216,9 +217,9 @@ We have published examples of [Pre Triage Sieve](https://simplifier.net/NHSBooki
 
 The Condition resource is used to encapsulate the overall 'problem' the referral intends to resolve for the patient. The detail provided here underpins the rationale for the CarePlan and is a central resource for the Receiver looking for information about the patient and reason for referral.
 
-The Condition resources is used to transfer the Presenting complaint. This is also referred to as:
+The Condition resource is used to transfer the Presenting complaint. This is also referred to as:
 * The Reason for Call (text)
-* Whats the problem? (text)
+* What's the problem? (text)
 
 The key information about the 'problem' is comprised of two components within this Application, condition.category and condition.code. The category is used to qualify the code value, providing additional context to interpret the issue identified. For example, in this Application, the category will stipulate this is a 'presenting complaint', highlighting the provenance of the 'problem' for the Receiver to start their consultation. This is in addition to other specific status fields on the resource.
 
@@ -229,7 +230,7 @@ This resource is used to record the details of current and historical procedures
 The Procedure resource is used to communicate that Cardio Pulmonary Resuscitation by a bystander is being undertaken, and when it started.
 
 ### Task
-The Task is used to direct the next action(s) required by the Sender making the referral. Task supports in fulfilling Careplan, which also references it. The narrative within the payload starts with the assessment performed by the Sender (Encounter), identifying a 'problem' (Condition) which a plan of care (CarePlan) is established to address. The Sender is unable to support the plan of care so transitions responsibility, via a referral (ServiceRequest), while directing the next requested action (Task).
+The Task is used to direct the next action(s) required by the Sender making the referral, when the assessment has been undertaken without using NHS Pathways or AMPDS CDSS. Task supports in fulfilling Careplan, which also references it. The narrative within the payload starts with the assessment performed by the Sender (Encounter), identifying a 'problem' (Condition) which a plan of care (CarePlan) is established to address. The Sender is unable to support the plan of care so transitions responsibility, via a referral (ServiceRequest), while directing the next requested action (Task).
 
 This Application utilises two elements within Task to direct the activity and time-frame, using *Task.code* and *Task.restriction.period*.
 
