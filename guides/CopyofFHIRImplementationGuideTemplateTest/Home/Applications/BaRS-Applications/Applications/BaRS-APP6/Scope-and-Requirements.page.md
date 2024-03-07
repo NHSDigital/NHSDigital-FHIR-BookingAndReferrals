@@ -26,7 +26,7 @@ The payloads and workflow have been designed to support these services. Other {{
 
 **Referral** 
 * A referral Sender **must** interpret the Message Definition returned by the Receiver to check what use cases are supported before attempting to send a referral.
-* Referral Sender **must** ONLY send a use case specific referral that match the use context supported by the Receiver i.e. MessageDeinition.useContext where the system value = usecases-categories-bars is mutualaidrequest or callassistrequest or outofareareferral.  
+* Referral Sender **must** ONLY send a use case specific referral that matches the intended use context and is supported by the Receiver i.e. MessageDefinition.useContext where the system value = usecases-categories-bars is mutualaidrequest or callassistrequest or outofareareferral.  
 * A referral is a request for care on behalf of an individual from one service to another 
 * The referral can be sent without having to establish the capacity the service offers
 * The referral Sender **must** have the capability to send a referral at points in the call cycle that are appropriate for the acuity of the case
@@ -82,7 +82,7 @@ The payloads and workflow have been designed to support these services. Other {{
 **Update referral**
 *	The referral Sender **must** be capable of updating any referral made by them, within the current consultation or after the consultation event
 *   The referral Sender **must** send a referral update each time critical information is added to the case
-*	The referral Sender **must** retrieve the referral to be updated from the referral Receiver prior to update to ensure they are working with the most up-to date version and it has not already been completed
+*	The referral Sender **must** retrieve the referral to be updated from the referral Receiver prior to update to ensure they are working with the most up-to date version and the referral has not already been been completed, or is at a point in the workflow where it it must not be updated
 *	The referral Sender **must** provide visible confirmation to the end user of the status returned by the referral Receiver, i.e. whether the original referral was successfully updated or not
 * Where the update was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 * Where the update was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail. 
@@ -149,15 +149,6 @@ The payloads and workflow have been designed to support these services. Other {{
 <br>
 <br>
 
-### Population of address fields
-Consistent population of address fields can improve interoperability by reducing the erroneous rejection of cases where the address is correct but information is in a different address field than is expected by the receiver. The FHIR address fields used in this BaRS application are:
-* **Patient.address**
-* **IncidentLocation.address**
-* **Location.address**
-
-This will be discussed with suppliers, providers and FHIR experts, as part of the alpha review, and agreed guidance incorporated into the beta version of this application.
-<br>
-<br>
 ### Audit
 * Sufficient information around any activity through the API and subsequent BaRS workflow **must** be persisted to aid support incidents and audit requirements
 <br>
