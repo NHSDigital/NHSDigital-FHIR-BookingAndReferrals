@@ -12,7 +12,7 @@
 				<code value="M"/> 
 				<display value="Male"/> 
 			</coding> 
-			<text value="Birth Sex"/> 
+			<text value="Male"/> 
 		</code> 
         <subject>
 			<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
