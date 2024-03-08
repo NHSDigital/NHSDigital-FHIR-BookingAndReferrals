@@ -26,10 +26,10 @@ The payload and workflow have been designed to support this service. Other {{pag
 
 **Constraints**
 - All Service IDs in First of Type (FoT) will be those from the Urgent and Emergency Care (UEC) Directory of Services (DoS) 
-- No guidance is provided on the display of referral information beyond the {{pagelink:principles_prerequesites, text:Principles for rendering BaRS Payload}}.
+- No guidance is provided on the display of referral information beyond the {{pagelink:principles_prerequesites, text:Principles for rendering BaRS Payload}}
 - Consent within BaRS will be for Direct-Care only 
-- Certificates for Receiving messages to use nhs.uk domains only.
-- Receiving endpoints are to be internet facing.
+- Certificates for Receiving messages to use nhs.uk domains only
+- Receiving endpoints are to be internet facing
 - Clincial Constraints exist - See Hazard Log
 - No element level 'updates' to requests are supported. A new request must be generated to change information in the referral request
 - Reduce Scope and Requirements for beta phase to support delivery timeline
