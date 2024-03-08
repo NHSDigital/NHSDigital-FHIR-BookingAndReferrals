@@ -12,10 +12,11 @@ These guides are designed to be used in conjunction with the documentation for {
 
 
 
-| Application                                                                 |  Use Cases                                                     | Current Release | API Specification | Core Version |
+| Application  |  Use Cases  | Current Release | API Specification | Core Version |
 | ----------------------------------------------------------------------------|--------------------------------------------------------------- | --------------- | --------------- | --------------- |    
-| {{pagelink:application5, text: Referrals into Pharmacy (Application 5)}}      | <p>GP to Pharmacy CPCS Minor Illness<br> | 1.0.0-beta.2     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">Core v1.2.0 and above</a> |
-| {{pagelink:application6, text: Referrals into an Ambulance Service Trust (Application 6)}} | <p>CAD to CAD Out of Area Referral<br>CAD to CAD Call Assist Request<br>CAD to CAD Mutual Aid Request | 1.0.0-beta    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a>  | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">Core v1.2.1 and above</a> |
+| {{pagelink:application5, text: Referrals into Pharmacy (Application 5)}}      | <p>GP to Pharmacy CPCS Minor Illness<br> | 1.0.0-beta.3     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">Core v1.1.0 and above</a> |
+| {{pagelink:application6, text: Referrals into an Ambulance Service Trust (Application 6)}} | <p>CAD to CAD Out of Area Referral<br>CAD to CAD Call Assist Request<br>CAD to CAD Mutual Aid Request | 1.0.0-beta    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a>  | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">Core v1.1.0 and above</a> |
+
 
 
 <hr>
@@ -63,15 +64,15 @@ These guides are designed to be used in conjunction with the documentation for {
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 5 v1.0.0-beta2</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
-		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">v1.2.1</a></td>
+		<td>Application 5 v1.0.0-beta3</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
+		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.4.0" target="_blank">v1.1.0</a></td>
 		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">1.1.0</a></td>
 	</tr>
 	<tr>
 		<td>Application 6 v1.0.0-beta</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
-	</tr>
+    </tr>
 	<tr>
 		<td></td>
 		<td></td>
