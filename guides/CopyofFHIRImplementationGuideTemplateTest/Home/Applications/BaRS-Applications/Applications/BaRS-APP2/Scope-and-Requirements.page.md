@@ -79,7 +79,7 @@ The payloads and workflow have been designed to support these services. Other {{
 **Booking** 
 * The booking Receiver **must** accept the booking request regardless of whether the patient is not known to the service provider
 * The booking Receiver **must** accept potential patients who do <ins>not</ins> have a national validated identifier e.g. NHS Number.
-* Where a national indentifer is included, it **must** be 'traced and verified', otherwise, the referral Sender **must** <ins>not</ins> include the national indentifer in the request
+* Where a national indentifier is included, it **must** be 'traced and verified', otherwise, the referral Sender **must** <ins>not</ins> include the national indentifer in the request
 * Where the booking was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 * Where the booking was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 * The booking Sender **must** send accompanying clinical information in a BaRS referral request
