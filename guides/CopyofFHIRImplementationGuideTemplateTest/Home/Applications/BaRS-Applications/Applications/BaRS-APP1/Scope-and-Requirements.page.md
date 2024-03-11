@@ -86,7 +86,7 @@ The payloads and workflow have been designed to support these services. Other {{
 **Booking** 
 * The booking Receiver **must** accept the booking request regardless of whether the patient is known to the service provider
 * The booking Receiver **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number.
-* Where a national identifer is included, it **must** be 'traced and verified', otherwise, the referral Sender **must <ins>not</ins>** include the national indentifer in the request
+* Where a national identifier is included, it **must** be 'traced and verified', otherwise, the referral Sender **must <ins>not</ins>** include the national indentifier in the request
 * Where the booking was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 * Where the booking was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
 * If included in the synchronous HTTP response, the booking Sender **must** make available the human readable identifier for the booking to the end user
@@ -126,7 +126,7 @@ The payloads and workflow have been designed to support these services. Other {{
 **Referral** 
 * The referral Receiver **must** accept the referral request regardless of whether the patient is known to the service provider
 * The referral Receiver **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number.
-* Where a national identifer is included, it **must** be 'traced and verified', otherwise, the referral Sender **must <ins>not</ins>** include in the request
+* Where a national identifier is included, it **must** be 'traced and verified', otherwise, the referral Sender **must <ins>not</ins>** include in the request
 * Any new or existing safeguarding concern, recorded as part of the assessment, **must** be included in the referral Sender's request
 * The referral Receiver **must** clearly identify any included safeguarding concern to the end user
 * The referral Receiver **must** accurately represent information made by the Sender to the end user
