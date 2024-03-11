@@ -6,7 +6,7 @@ TOPIC: APP5-ScopeAndRequirements
 
 ### Scope Overview
 This BaRS Application (Referrals into Pharmacy Application 5) supports the following use case ONLY:
-- GP to Pharmacy CPCS (Community Pharmacist Consultation Service) for Minor Illness Service
+- GP to Pharmacy - Pharmacy First (for Minor Illness Service)
 
 The payload and workflow have been designed to support this service. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
 
