@@ -25,11 +25,6 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
 	<!-- This list is intended to support all Use Case Categories supported within BaRS -->
-	
-
-	
-	
-	
 	<concept>
         <code value="111toedreferral" />
         <display value="111-ED Referral" />
