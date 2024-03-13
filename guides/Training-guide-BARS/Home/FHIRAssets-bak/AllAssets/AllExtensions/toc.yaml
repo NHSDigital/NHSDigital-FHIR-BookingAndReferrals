@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: CDSS Extension
+  filename: CDSSExtension.guide.md
+- name: Location Extension
+  filename: LocationExtension.guide.md
