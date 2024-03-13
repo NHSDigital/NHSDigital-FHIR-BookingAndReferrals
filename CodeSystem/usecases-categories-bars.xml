@@ -6,11 +6,11 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="usecases-categories-bars"/>
     </identifier>
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
     <name value="usecasescategoriesbars"/>
     <title value="Use Cases Categories BARS"/>
     <status value="active"/>
-    <date value="2024-02-23"/>
+    <date value="2024-03-13"/>
     <publisher value="NHS England"/>
     <contact>
         <name value="NHS England" />
@@ -21,11 +21,75 @@
         </telecom>
     </contact>
     <description value="Use Cases Categories in BaRS"/>
-    <copyright value="Copyright &#169; 2023 NHS England" />
+    <copyright value="Copyright &#169; 2024 NHS England" />
     <caseSensitive value="true"/>
     <content value="complete"/>
 	<!-- This list is intended to support all Use Case Categories supported within BaRS -->
+	<concept>
+        <code value="111toedreferral" />
+        <display value="111-ED Referral" />
+    </concept>
+	<concept>
+        <code value="111toutcreferral" />
+        <display value="111-UTC Referral" />
+    </concept>
+	<concept>
+        <code value="castoedreferral" />
+        <display value="CAS-ED Referral" />
+    </concept>
     <concept>
+        <code value="castoutcreferral" />
+        <display value="CAS-UTC Referral" />
+    </concept>
+    <concept>
+        <code value="999toedreferral" />
+        <display value="999-ED Referral" />
+    </concept>
+    <concept>
+        <code value="999toutcreferral" />
+        <display value="999-UTC Referral" />
+    </concept>
+    <concept>
+        <code value="111tosdecreferral" />
+        <display value="111-SDEC Referral" />
+    </concept>
+    <concept>
+        <code value="castosdecreferral" />
+        <display value="CAS-SDEC Referral" />
+    </concept>
+    <concept>
+        <code value="999tosdecreferral" />
+        <display value="999-SDEC Referral" />
+    </concept>
+    <concept>
+        <code value="111onlinetoedreferral" />
+        <display value="111 Online-ED Referral" />
+    </concept>
+    <concept>
+        <code value="111onlinetoutcreferral" />
+        <display value="111 Online-UTC Referral" />
+    </concept>
+    <concept>
+        <code value="sandrtoedreferral" />
+        <display value="S&R-ED Referral" />
+    </concept>
+    <concept>
+        <code value="sandrtoutcreferral" />
+        <display value="S&R-UTC Referral" />
+    </concept>	
+	<concept>
+        <code value="999tocasreferral" />
+        <display value="999-CAS Referral" />
+    </concept>
+    <concept>
+        <code value="999tofallsvalidation" />
+        <display value="999-Falls Validation" />
+    </concept>
+    <concept>
+        <code value="999tocasvalidation" />
+        <display value="999-CAS Validation" />
+    </concept>
+	<concept>
         <code value="referraltopharmacy" />
         <display value="Referral to Pharmacy" />
     </concept>
@@ -40,13 +104,5 @@
     <concept>
         <code value="999to999callassistrequest" />
         <display value="999-999 Call Assist Request" />
-    </concept>
-    <concept>
-        <code value="999fallsvalidation" />
-        <display value="999-Falls Validation" />
-    </concept>
-    <concept>
-        <code value="999casvalidation" />
-        <display value="999-CAS Validation" />
     </concept>
 </CodeSystem>
