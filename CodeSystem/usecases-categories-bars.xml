@@ -25,57 +25,114 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
 	<!-- This list is intended to support all Use Case Categories supported within BaRS -->
+	
+
+	
+	
+	
 	<concept>
         <code value="111toedreferral" />
         <display value="111-ED Referral" />
+    </concept>
+	<concept>
+        <code value="111toedbooking" />
+        <display value="111-ED Booking" />
     </concept>
 	<concept>
         <code value="111toutcreferral" />
         <display value="111-UTC Referral" />
     </concept>
 	<concept>
+        <code value="111toutcbooking" />
+        <display value="111-UTC Booking" />
+    </concept>
+	<concept>
         <code value="castoedreferral" />
         <display value="CAS-ED Referral" />
+    </concept>
+	<concept>
+        <code value="castoedbooking" />
+        <display value="CAS-ED Booking" />
     </concept>
     <concept>
         <code value="castoutcreferral" />
         <display value="CAS-UTC Referral" />
     </concept>
     <concept>
+        <code value="castoutcbooking" />
+        <display value="CAS-UTC Booking" />
+    </concept>
+    <concept>
         <code value="999toedreferral" />
         <display value="999-ED Referral" />
+    </concept>
+    <concept>
+        <code value="999toedbooking" />
+        <display value="999-ED Booking" />
     </concept>
     <concept>
         <code value="999toutcreferral" />
         <display value="999-UTC Referral" />
     </concept>
     <concept>
+        <code value="999toutcbooking" />
+        <display value="999-UTC Booking" />
+    </concept>
+    <concept>
         <code value="111tosdecreferral" />
         <display value="111-SDEC Referral" />
+    </concept>
+    <concept>
+        <code value="111tosdecbooking" />
+        <display value="111-SDEC Booking" />
     </concept>
     <concept>
         <code value="castosdecreferral" />
         <display value="CAS-SDEC Referral" />
     </concept>
     <concept>
+        <code value="castosdecbooking" />
+        <display value="CAS-SDEC Booking" />
+    </concept>
+    <concept>
         <code value="999tosdecreferral" />
         <display value="999-SDEC Referral" />
+    </concept>
+    <concept>
+        <code value="999tosdecbooking" />
+        <display value="999-SDEC Booking" />
     </concept>
     <concept>
         <code value="111onlinetoedreferral" />
         <display value="111 Online-ED Referral" />
     </concept>
     <concept>
+        <code value="111onlinetoedbooking" />
+        <display value="111 Online-ED Booking" />
+    </concept>
+    <concept>
         <code value="111onlinetoutcreferral" />
         <display value="111 Online-UTC Referral" />
+    </concept>
+    <concept>
+        <code value="111onlinetoutcbooking" />
+        <display value="111 Online-UTC Booking" />
     </concept>
     <concept>
         <code value="sandrtoedreferral" />
         <display value="S&R-ED Referral" />
     </concept>
     <concept>
+        <code value="sandrtoedbooking" />
+        <display value="S&R-ED Booking" />
+    </concept>
+    <concept>
         <code value="sandrtoutcreferral" />
         <display value="S&R-UTC Referral" />
+    </concept>
+    <concept>
+        <code value="sandrtoutcbooking" />
+        <display value="S&R-UTC Booking" />
     </concept>	
 	<concept>
         <code value="999tocasreferral" />
