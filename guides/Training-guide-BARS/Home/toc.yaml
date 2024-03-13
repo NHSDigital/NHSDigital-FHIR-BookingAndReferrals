@@ -1,5 +1,5 @@
 - name: Index
-  filename: Index.guide.md
+  filename: Index.page.md
 - name: About BaRS
   filename: About-BaRS
 - name: Core
