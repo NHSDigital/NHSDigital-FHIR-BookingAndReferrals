@@ -1,5 +1,5 @@
 ---
-topic: core-ErrorHandling-1.0.0
+topic: core-ErrorHandling-1.1.0
 ---
 
 # {{page-title}}

@@ -1,5 +1,5 @@
 ---
-topic: Core-StandardPattern-1.0.0
+topic: Core-StandardPattern-1.1.0
 ---
 
 ## {{page-title}}

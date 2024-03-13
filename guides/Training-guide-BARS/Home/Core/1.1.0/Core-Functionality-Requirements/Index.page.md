@@ -1,5 +1,5 @@
 ---
-topic: core-FunctionalityRequirements-1.0.0
+topic: core-FunctionalityRequirements-1.1.0
 ---
 
 # {{page-title}}
