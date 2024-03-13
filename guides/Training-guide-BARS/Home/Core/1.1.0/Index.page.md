@@ -1,5 +1,5 @@
 ---
-topic: design-core
+topic: design-core-1.1.0
 ---
 
 # BaRS Core
@@ -11,7 +11,3 @@ You will find here a set of documentation, specifications and services that desc
 <hr>
 
 {{index:current}}
-
-{{pagelink:design-core-1.0.0, text:1.0.0}}
-
-{{pagelink:design-core-1.1.0, text:1.1.0}}
