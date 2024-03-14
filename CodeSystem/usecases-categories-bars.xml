@@ -6,11 +6,11 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="usecases-categories-bars"/>
     </identifier>
-    <version value="1.2.0"/>
+    <version value="1.3.0"/>
     <name value="usecasescategoriesbars"/>
     <title value="Use Cases Categories BARS"/>
     <status value="active"/>
-    <date value="2024-03-13"/>
+    <date value="2024-03-14"/>
     <publisher value="NHS England"/>
     <contact>
         <name value="NHS England" />
@@ -26,135 +26,87 @@
     <content value="complete"/>
 	<!-- This list is intended to support all Use Case Categories supported within BaRS -->
 	<concept>
-        <code value="111toedreferral" />
-        <display value="111-ED Referral" />
+        <code value="a1t1" />
+        <display value="App 1 Type 1" />
     </concept>
 	<concept>
-        <code value="111toedbooking" />
-        <display value="111-ED Booking" />
+        <code value="a1t2" />
+        <display value="App 1 Type 2" />
     </concept>
 	<concept>
-        <code value="111toutcreferral" />
-        <display value="111-UTC Referral" />
+        <code value="a1t3" />
+        <display value="App 1 Type 3" />
+    </concept>
+    <concept>
+        <code value="a1t4" />
+        <display value="App 1 Type 4" />
+    </concept>
+    <concept>
+        <code value="a1t5" />
+        <display value="App 1 Type 5" />
+    </concept>
+    <concept>
+        <code value="a1t6" />
+        <display value="App 1 Type 6" />
+    </concept>
+    <concept>
+        <code value="a1t7" />
+        <display value="App 1 Type 7" />
+    </concept>
+    <concept>
+        <code value="a1t8" />
+        <display value="App 1 Type 8" />
+    </concept>
+    <concept>
+        <code value="a1t9" />
+        <display value="App 1 Type 9" />
+    </concept>
+    <concept>
+        <code value="a2t1" />
+        <display value="App 2 Type 1" />
+    </concept>
+    <concept>
+        <code value="a2t2" />
+        <display value="App 2 Type 2" />
+    </concept>
+    <concept>
+        <code value="a2t3" />
+        <display value="App 2 Type 3" />
+    </concept>
+    <concept>
+        <code value="a2t4" />
+        <display value="App 2 Type 4" />
     </concept>
 	<concept>
-        <code value="111toutcbooking" />
-        <display value="111-UTC Booking" />
+        <code value="a3t1" />
+        <display value="App 3 Type 1" />
+    </concept>
+    <concept>
+        <code value="a4t1" />
+        <display value="App 4 Type 1" />
+    </concept>
+    <concept>
+        <code value="a4t2" />
+        <display value="App 4 Type 2" />
     </concept>
 	<concept>
-        <code value="castoedreferral" />
-        <display value="CAS-ED Referral" />
-    </concept>
-	<concept>
-        <code value="castoedbooking" />
-        <display value="CAS-ED Booking" />
-    </concept>
-    <concept>
-        <code value="castoutcreferral" />
-        <display value="CAS-UTC Referral" />
-    </concept>
-    <concept>
-        <code value="castoutcbooking" />
-        <display value="CAS-UTC Booking" />
-    </concept>
-    <concept>
-        <code value="999toedreferral" />
-        <display value="999-ED Referral" />
-    </concept>
-    <concept>
-        <code value="999toedbooking" />
-        <display value="999-ED Booking" />
-    </concept>
-    <concept>
-        <code value="999toutcreferral" />
-        <display value="999-UTC Referral" />
-    </concept>
-    <concept>
-        <code value="999toutcbooking" />
-        <display value="999-UTC Booking" />
-    </concept>
-    <concept>
-        <code value="111tosdecreferral" />
-        <display value="111-SDEC Referral" />
-    </concept>
-    <concept>
-        <code value="111tosdecbooking" />
-        <display value="111-SDEC Booking" />
-    </concept>
-    <concept>
-        <code value="castosdecreferral" />
-        <display value="CAS-SDEC Referral" />
-    </concept>
-    <concept>
-        <code value="castosdecbooking" />
-        <display value="CAS-SDEC Booking" />
-    </concept>
-    <concept>
-        <code value="999tosdecreferral" />
-        <display value="999-SDEC Referral" />
-    </concept>
-    <concept>
-        <code value="999tosdecbooking" />
-        <display value="999-SDEC Booking" />
-    </concept>
-    <concept>
-        <code value="111onlinetoedreferral" />
-        <display value="111 Online-ED Referral" />
-    </concept>
-    <concept>
-        <code value="111onlinetoedbooking" />
-        <display value="111 Online-ED Booking" />
-    </concept>
-    <concept>
-        <code value="111onlinetoutcreferral" />
-        <display value="111 Online-UTC Referral" />
-    </concept>
-    <concept>
-        <code value="111onlinetoutcbooking" />
-        <display value="111 Online-UTC Booking" />
-    </concept>
-    <concept>
-        <code value="sandrtoedreferral" />
-        <display value="S&R-ED Referral" />
-    </concept>
-    <concept>
-        <code value="sandrtoedbooking" />
-        <display value="S&R-ED Booking" />
-    </concept>
-    <concept>
-        <code value="sandrtoutcreferral" />
-        <display value="S&R-UTC Referral" />
-    </concept>
-    <concept>
-        <code value="sandrtoutcbooking" />
-        <display value="S&R-UTC Booking" />
-    </concept>	
-	<concept>
-        <code value="999tocasreferral" />
-        <display value="999-CAS Referral" />
-    </concept>
-    <concept>
-        <code value="999tofallsvalidation" />
-        <display value="999-Falls Validation" />
-    </concept>
-    <concept>
-        <code value="999tocasvalidation" />
-        <display value="999-CAS Validation" />
+        <code value="a5t1" />
+        <display value="App 5 Type 1" />
     </concept>
 	<concept>
         <code value="referraltopharmacy" />
-        <display value="Referral to Pharmacy" />
+        <display value="Referral to Pharmacy - Deprecated" />
     </concept>
 	<concept>
-        <code value="999to999outofareareferral" />
-        <display value="999-999 Out of Area Referral" />
+        <code value="a6t1" />
+        <display value="App 6 Type 1" />
     </concept>
     <concept>
-        <code value="999to999mutualaidrequest" />
-        <display value="999-999 Mutual Aid Request" />
+        <code value="a6t2" />
+        <display value="App 6 Type 2" />
     </concept>
     <concept>
-        <code value="999to999callassistrequest" />
-        <display value="999-999 Call Assist Request" />
+        <code value="a6t3" />
+        <display value="App 6 Type 3" />
     </concept>
 </CodeSystem>
