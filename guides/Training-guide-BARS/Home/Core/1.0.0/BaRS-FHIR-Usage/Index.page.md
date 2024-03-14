@@ -1,5 +1,5 @@
 ---
-topic: core-FHIRUsage
+topic: core-FHIRUsage-1.0.0
 ---
 
 # {{page-title}}

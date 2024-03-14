@@ -1,5 +1,5 @@
 ---
-topic: core-EndToEndWorkflow
+topic: core-EndToEndWorkflow-1.0.0
 ---
 
 # {{page-title}}
