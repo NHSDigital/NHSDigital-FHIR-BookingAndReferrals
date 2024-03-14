@@ -6,11 +6,11 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="usecases-categories-bars"/>
     </identifier>
-    <version value="1.1.0"/>
+    <version value="1.3.0"/>
     <name value="usecasescategoriesbars"/>
     <title value="Use Cases Categories BARS"/>
     <status value="active"/>
-    <date value="2024-02-23"/>
+    <date value="2024-03-14"/>
     <publisher value="NHS England"/>
     <contact>
         <name value="NHS England" />
@@ -21,32 +21,92 @@
         </telecom>
     </contact>
     <description value="Use Cases Categories in BaRS"/>
-    <copyright value="Copyright &#169; 2023 NHS England" />
+    <copyright value="Copyright &#169; 2024 NHS England" />
     <caseSensitive value="true"/>
     <content value="complete"/>
 	<!-- This list is intended to support all Use Case Categories supported within BaRS -->
-    <concept>
-        <code value="referraltopharmacy" />
-        <display value="Referral to Pharmacy" />
+	<concept>
+        <code value="a1t1" />
+        <display value="App 1 Type 1" />
     </concept>
 	<concept>
-        <code value="999to999outofareareferral" />
-        <display value="999-999 Out of Area Referral" />
+        <code value="a1t2" />
+        <display value="App 1 Type 2" />
+    </concept>
+	<concept>
+        <code value="a1t3" />
+        <display value="App 1 Type 3" />
     </concept>
     <concept>
-        <code value="999to999mutualaidrequest" />
-        <display value="999-999 Mutual Aid Request" />
+        <code value="a1t4" />
+        <display value="App 1 Type 4" />
     </concept>
     <concept>
-        <code value="999to999callassistrequest" />
-        <display value="999-999 Call Assist Request" />
+        <code value="a1t5" />
+        <display value="App 1 Type 5" />
     </concept>
     <concept>
-        <code value="999fallsvalidation" />
-        <display value="999-Falls Validation" />
+        <code value="a1t6" />
+        <display value="App 1 Type 6" />
     </concept>
     <concept>
-        <code value="999casvalidation" />
-        <display value="999-CAS Validation" />
+        <code value="a1t7" />
+        <display value="App 1 Type 7" />
+    </concept>
+    <concept>
+        <code value="a1t8" />
+        <display value="App 1 Type 8" />
+    </concept>
+    <concept>
+        <code value="a1t9" />
+        <display value="App 1 Type 9" />
+    </concept>
+    <concept>
+        <code value="a2t1" />
+        <display value="App 2 Type 1" />
+    </concept>
+    <concept>
+        <code value="a2t2" />
+        <display value="App 2 Type 2" />
+    </concept>
+    <concept>
+        <code value="a2t3" />
+        <display value="App 2 Type 3" />
+    </concept>
+    <concept>
+        <code value="a2t4" />
+        <display value="App 2 Type 4" />
+    </concept>
+	<concept>
+        <code value="a3t1" />
+        <display value="App 3 Type 1" />
+    </concept>
+    <concept>
+        <code value="a4t1" />
+        <display value="App 4 Type 1" />
+    </concept>
+    <concept>
+        <code value="a4t2" />
+        <display value="App 4 Type 2" />
+    </concept>
+	<concept>
+        <code value="a5t1" />
+        <display value="App 5 Type 1" />
+    </concept>
+	<concept>
+        <code value="referraltopharmacy" />
+        <display value="Referral to Pharmacy - Deprecated" />
+    </concept>
+	<concept>
+        <code value="a6t1" />
+        <display value="App 6 Type 1" />
+    </concept>
+    <concept>
+        <code value="a6t2" />
+        <display value="App 6 Type 2" />
+    </concept>
+    <concept>
+        <code value="a6t3" />
+        <display value="App 6 Type 3" />
     </concept>
 </CodeSystem>
