@@ -10,7 +10,7 @@ The endpoint receives only POST requests of bundle type 'message', with the requ
 
 You must implement a $process-message endpoint to be compliant with BaRS because it is used for initial requests (booking, service request etc.) but also for responses (validation outcome response etc.).
 
-Please see the {{pagelink:Core-StandardPattern, text: Standard Patterns}} for generic guidance for processing messages.
+Please see the {{pagelink:Core-StandardPattern-1.0.3, text: Standard Patterns}} for generic guidance for processing messages.
 
 <br>
 <hr> 

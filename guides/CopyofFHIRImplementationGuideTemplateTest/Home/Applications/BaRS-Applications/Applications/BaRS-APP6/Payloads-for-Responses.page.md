@@ -13,7 +13,7 @@ This section provides guidance on the use of key resources, for the Receiver to 
 <br>
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader, text:Standard Pattern - Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.3, text:Standard Pattern - Message Header}}. 
 
 The MessageHeader resource in the Referral Response should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
@@ -29,7 +29,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 
 1. Denotes the type of referral e.g. Transfer of care 
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
-https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars)  e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories, text:use-case categories}}
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars)  e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.3, text:use-case categories}}
 
 ### Encounter Resource
 The Responder's current *Encounter* is the focus resource in the Referral Response. This was originally the 'planned' Encounter created by the Receiver in the synchronous response to the Referral Request. 

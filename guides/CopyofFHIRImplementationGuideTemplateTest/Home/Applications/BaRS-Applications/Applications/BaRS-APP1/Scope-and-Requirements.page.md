@@ -173,11 +173,11 @@ The payloads and workflow have been designed to support these services. Other {{
 <br>
 
 ### Error Handling 
-* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling, text:error handling guidance}} 
+* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling-1.1.3, text:error handling guidance}} 
 <br>
 <br>
 ### Non Functional 
-* Suppliers **must** adhere to the {{pagelink:core-NFR, text:non functional requirements}}
+* Suppliers **must** adhere to the {{pagelink:core-NFR-1.1.3, text:non functional requirements}}
 
 <br>
 <br>

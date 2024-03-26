@@ -12,6 +12,6 @@ When a request is received against the $process-message endpoint, the MessageHea
 
 The receiver interprets the request, engages the processing and synchronously feeds back a response.
 
-Please see the {{pagelink:Core-StandardPattern, text: Standard Patterns}} for generic guidance for processing messages.
+Please see the {{pagelink:Core-StandardPattern-1.1.3, text: Standard Patterns}} for generic guidance for processing messages.
 
 <br>

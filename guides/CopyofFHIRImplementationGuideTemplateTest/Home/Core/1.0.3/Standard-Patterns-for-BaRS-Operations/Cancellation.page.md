@@ -14,7 +14,7 @@ A prerequisite when performing a cancellation of any request is to perform a rea
 ## Cancellation Referral Request Payload
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.0.3, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 When cancelling a referral, in conjunction with the guidance provided under the Standard Patterns, the three important elements which drive workflow **must** be used as follows: 
 * **eventCoding** - this **must** be the same code as used in the request.
@@ -286,7 +286,7 @@ The below diagram details the Cancellation Referral Request
 ## Cancellation Booking Request Payload
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used.  
+{{pagelink:core-SPMessageHeader-1.0.3, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used.  
 
 When cancelling a booking, in conjunction with the guidance provided under the Standard Patterns, the three important elements which drive workflow **must** be used as follows: 
 * **eventCoding** - this **must** be the same code as used in the request.
