@@ -162,7 +162,7 @@ When a service is chosen, the "Service ID" field in the DOS data will be used as
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -236,9 +236,9 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern, text:standard pattern}}.
+The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern-1.1.3, text:standard pattern}}.
 
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
