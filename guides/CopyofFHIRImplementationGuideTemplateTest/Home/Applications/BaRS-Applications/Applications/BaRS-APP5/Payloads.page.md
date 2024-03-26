@@ -5,7 +5,7 @@ topic: APP5-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.1.3, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
