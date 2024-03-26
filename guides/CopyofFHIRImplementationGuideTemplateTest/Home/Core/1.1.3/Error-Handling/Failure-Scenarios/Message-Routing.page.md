@@ -1,5 +1,5 @@
 ---
-topic: ErrorHandling-MessageRouting-1.1.3
+topic: Core-ErrorHandling-MessageRouting-1.1.3
 ---
 
 ## Endpoint Catalogue - Message routing.
