@@ -33,10 +33,10 @@ All {{pagelink:core-Security-1.1.3, text:security}} is provided through our plat
 * for Receivers accepting requests, the BaRS API secures the connection with the Receiver using TLS MA, using an [NHS Root CA issued certificate](https://digital.nhs.uk/services/path-to-live-environments/live-environment#rootca-and-subca-certificates). The HTTP header values (as described above) are also passed through. This provides the Receiver with sufficient information to accept or reject the request without having to inspect the payload body. 
 
 ##### Error Handling 
-{{core-failure_scenarios-1.1.3, text:Error handling}} is an important part of the standard for two key reasons:
+{{pagelink:core-failure_scenarios-1.1.3, text:Error handling}} is an important part of the standard for two key reasons:
 
 * to ensure workflow is as smooth and seamless as possible, the error responses returned **must** be clear to allow the appropriate next action to take place, for example, to include a missing element of information (highlighted by the error response).
-* there are several levels of interactions occurring from the Sender, through BaRS API to the Receiver and clearly identifying where the fault lies is important for swift resolution. All implementations **must** adhere to the {{core-failure_scenarios-1.1.3, text:error handling guidance}} which is part of the {{pagelink:assure, text:assurance}} process.
+* there are several levels of interactions occurring from the Sender, through BaRS API to the Receiver and clearly identifying where the fault lies is important for swift resolution. All implementations **must** adhere to the {{pagelink:core-failure_scenarios-1.1.3, text:error handling guidance}} which is part of the {{pagelink:assure, text:assurance}} process.
 
 #### Build
 ##### Environments

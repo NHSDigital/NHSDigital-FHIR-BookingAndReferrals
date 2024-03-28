@@ -75,14 +75,14 @@ For this application we will be referring to the actors as 'Requester' and the '
 * The Responder **must** clearly identify any included safeguarding concern to the end user
 * The Responder **must** accurately represent information made by the Sender to the end user
 * The Requester **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user
-* Where the Validation Request was <ins>not</ins> successful, the Responder **must** send an appropriate response. See {{core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
-* Where the Validation Request was <ins>not</ins> successful, the Requester **must** present an appropriate message to the end user. See {{core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
+* Where the Validation Request was <ins>not</ins> successful, the Responder **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
+* Where the Validation Request was <ins>not</ins> successful, the Requester **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
 
 **Update Validation Request**
 *	The Requester **must** be capable of updating any Validation Request made by them, within the current consultation or after the consultation event
 *	The Requester **must** retrieve the Validation Request to be updated from the Responder prior to update, to ensure they are working with the most up-to date version and the validation request has not already been completed, or is at a point in the workflow where it must not be updated
 *	The Requester **must** provide visible confirmation of the status returned by the Responder to the end-user, i.e. whether the original Validation Request was successfully updated or not
-*	If the update fails, the Responder **must** respond with the most appropriately aligned error. See {{core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
+*	If the update fails, the Responder **must** respond with the most appropriately aligned error. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
 *	The Responder **must** store all previous versions of the Validation Request
 *	The Requester **must <ins>not</ins>** be required to inform the patient of the updating of the Validation Request.  Business/clinical responsibility for informing the patient must remain with the Requester
 *  The Requester  **should not** send updates after receiving an Interim Response
