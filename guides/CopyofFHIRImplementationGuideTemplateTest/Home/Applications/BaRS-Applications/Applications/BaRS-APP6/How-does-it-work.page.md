@@ -95,7 +95,7 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
 - The referral Receiver's CAD will create a new case (Encounter) on receipt of the BaRS Referral and populate it with the patient and clinical details provided in the referral
 
 ### Acknowledge Receipt
-- The referral Receiver will send an acknowledgement back to the referral Sender, when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
+- The referral Receiver will send an acknowledgement back to the referral Sender, when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
 
 ### Status Update (Referral Response)
 - The referral Receiver will send a series of status updates back to the referral Sender, to support tracking the progress of the case.
@@ -103,7 +103,7 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
 ### Continue updates
 - If additional or changed information about the case is captured by the referral Sender, subsequent to sending the BaRS Referral, they may send a BaRS Referral Update to ensure that the referral Receiver has the most up to date information.
 - If the referral Sender needs to cancel a Referral, for example the patient calls back and says they do not require an ambulance, they need to send a Cancellation.
-- On receipt of a Referral Update, the referral Receiver will send an acknowledgement back to the Sending AST on when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
+- On receipt of a Referral Update, the referral Receiver will send an acknowledgement back to the Sending AST on when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
 
 ### Manage Stack
 - The referral Receiver will manage the case in accordance with the Ambulance Response Programme (ARP) Priority Level. This may include:
