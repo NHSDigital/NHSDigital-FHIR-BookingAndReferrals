@@ -18,7 +18,7 @@ topic: design-core
 </thead>
 <tbody>
 	<tr>
-		<td>Core Version 1.2.1</td>
+		<td>Core Version 1.1.2</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">BaRS v1.4.0 and above</a></td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a></td>
 	</tr>
