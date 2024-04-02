@@ -88,7 +88,7 @@ The initial preview (alpha) documentation of the core and first Application (111
 	<tr>
 		<td>Application 5 v1.0.0-beta3</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
-		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">v1.2.1</a></td>
+		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">v1.1.2</a></td>
 		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">1.1.0</a></td>
 	</tr>
 	<tr>
