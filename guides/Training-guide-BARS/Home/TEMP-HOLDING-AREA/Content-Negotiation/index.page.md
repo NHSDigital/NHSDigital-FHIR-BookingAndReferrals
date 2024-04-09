@@ -1,7 +1,7 @@
 ---
-topic: version-negotiation
+topic: content-negotiation
 ---
-# {{page-title}}
+# Content Negotiation
 
 ## Introduction
 

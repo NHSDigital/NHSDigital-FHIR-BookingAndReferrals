@@ -1,3 +1,7 @@
+---
+topic: content-negotiation-Sender-MessageDefinition
+---
+
 # {{page-title}}
 
 Upon Receiving a searchset bundle containing MessageDefinitions from a Receiver the most appropriate message definition(s) need to be ascertained.

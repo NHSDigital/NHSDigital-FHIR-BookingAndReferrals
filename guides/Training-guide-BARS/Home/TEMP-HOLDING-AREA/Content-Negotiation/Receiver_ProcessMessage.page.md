@@ -1,3 +1,6 @@
+---
+topic: content-negotiation-Receiver-Process-Message
+---
 # {{page-title}}
 
 Upon Receiving a message, along with the existing validation and checks present within the rest of BaRS Core and the relevant application; the Receiver should check that the use case category is correct in serviceRequest.category.

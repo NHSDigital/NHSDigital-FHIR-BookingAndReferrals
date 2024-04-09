@@ -1,3 +1,7 @@
+---
+topic: content-negotiation-mechanism
+---
+
 # {{page-title}}
 
 ## Identifying Capabilities 
