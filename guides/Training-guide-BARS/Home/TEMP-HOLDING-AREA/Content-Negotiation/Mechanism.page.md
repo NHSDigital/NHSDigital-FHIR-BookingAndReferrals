@@ -48,6 +48,11 @@ Another capability described within the CapabilityStatement is the definition of
 				}
 	]
 ```
+
+### The receivers responsibility
+
+The receiver at this level only needs to evaluate the Accept Header to ensure there is no major version discrepancy. A 406 response with the appropriate OprationOutcome should be given if this is the case. 
+
 ## Identifying MessageDefinitions
 
 A receivers MessageDefinitions will contain several identifiers that will allow a Sender to ascertain whether their use cases workflow can be completed beyond what the CapabilityStatement has already confirmed. The Message Definition will also contain a version for version negotiation. 
@@ -71,3 +76,5 @@ The Service describes if the MessageDefinition is applicable for this service. T
 
 ### Version
 The same SemVer rules are applied to the MessageDefinition versions. It could be the case that multiple MessageDefinitions are returned and in this scenario a Sender should select the closest version to their own from a Minor Revision and Patch perspective. If a Major version difference is detected then the Sender cannot continue unless another option is available in the response. 
+
+The receiver at this level only needs to evaluate the Accept Header, again, here to ensure there is no major version discrepancy, and also the service Id in the use context to ensure the correct MessageDefinitions are returned. This may already be taken care of in the logic handling the NHSD-Target-Identifier, however as they are contextually different fields, it is emphasized in this section of the guide. A 404 should be given, with an appropriate OperationOutcome if the context is incorrect.

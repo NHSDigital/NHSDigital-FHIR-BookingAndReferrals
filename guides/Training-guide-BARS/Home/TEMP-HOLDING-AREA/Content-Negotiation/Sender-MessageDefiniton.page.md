@@ -47,11 +47,11 @@ MessageDefinition Content_Negotiation_Client_MessageDefinition()
 		// Context
 		foreach(Identifier in MessageDefinition.useContext )
 		{
-			if(system == "https://fhir.nhs.uk/CodeSystem/usecase-categories-bars" && code == ClientUseCaseCategory)
+			if(Identifier.system == "https://fhir.nhs.uk/CodeSystem/usecase-categories-bars" && Identifier.code == ClientUseCaseCategory)
 			{compatible = true;}
 			else{compatible = false; break;}
 
-			if(system == "https://fhir.nhs.uk/CodeSystem/dos-id" && code == Service)
+			if(Identifier.system == "https://fhir.nhs.uk/CodeSystem/dos-id" && Identifier.code == Service)
 			{compatible = true;}
 			else{compatible = false; break;}
 		}
