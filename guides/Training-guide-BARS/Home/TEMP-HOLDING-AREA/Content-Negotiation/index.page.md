@@ -1,6 +1,7 @@
 ---
 topic: version-negotiation
 ---
+# {{page-title}}
 
 ## Introduction
 

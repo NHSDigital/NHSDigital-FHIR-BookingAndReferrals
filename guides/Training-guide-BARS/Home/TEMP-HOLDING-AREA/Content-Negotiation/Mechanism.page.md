@@ -1,3 +1,5 @@
+# {{page-title}}
+
 ## Identifying Capabilities 
 
 A particular workflow may leverage an API capability that is not always implemented by a receiver. For example GET /ServiceRequest. The GET /metadata response provides the ability to define what is and is not available. For example, the following entry would be present under the rest.resource element, where the mode is defined as "server", confirming the server can handle the requests required.
@@ -51,12 +53,12 @@ Another capability described within the CapabilityStatement is the definition of
 A receivers MessageDefinitions will contain several identifiers that will allow a Sender to ascertain whether their use cases workflow can be completed beyond what the CapabilityStatement has already confirmed. The Message Definition will also contain a version for version negotiation. 
 Along with the purpose of the MessageDefinitions purpose of defining the construct of the message, Content negotiation can be completed. Example of identifiers are as follows:
 
-<fix this up>
-
 * Name or URL in MessageDefinition.url / MessageDefinition.name : https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request
 * Use case in  MessageDefinition.useContext.code[]: https://fhir.nhs.uk/CodeSystem/usecases-categories-bars.
 * Service in MessageDefinition.useContext.code[]: https://fhir.nhs.uk/CodeSystem/dos-id
 * Version in MessageDefinition.version
+
+The Name or URL define the type of message being sent. The Service id is confirmation of the correct Service. The Use Case Category code(s) define the care setting context required to ensure the message is actionable by the service. The Version allows for Version negotiation. All of these items need to be checked. There may be variations of the same message definition for a given service based on these variables.
 
 ### useContext
 

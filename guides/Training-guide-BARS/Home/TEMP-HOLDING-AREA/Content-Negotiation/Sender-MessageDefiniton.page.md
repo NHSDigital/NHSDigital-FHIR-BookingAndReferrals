@@ -1,15 +1,24 @@
+# {{page-title}}
+
+Upon Receiving a searchset bundle containing MessageDefinitions from a Receiver the most appropriate message definition(s) need to be ascertained.
+The resource versions, useContexts and message types all need to be evaluated.
+
+The below pseudo code gives an example of how this should be carried out, adhering to the rules defined in the Mechanisms section.
+
 ``` c#
-MessageDefinition Version_negotiation_Client_MessageDefinition()
+MessageDefinition Content_Negotiation_Client_MessageDefinition()
 {
 	var ClientUseCaseCategory = "A1T1";
-	var ClientVersion = "1.0.3";
+	var ClientApplicationVersion = "1.0.3";
+	var CoreVersion = "1.1.0";
 	var Service = GetDoSid();
-	var DesiredMessagetype = "https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request"
+	var DesiredMessagetype = "https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request";
 	
 	// GET /MessageDefinitions + Query Param
 	ResponseMessageDefinitions = GetMessageDefinition(
 		NHSD-Target-Identifier = Service,
-		context = ClientUseCaseCategory + Service
+		context = ClientUseCaseCategory + Service,
+		AcceptHeader += CoreVersion;
 	);
 	
 	foreach(MessageDefinition in ResponseMessageDefinitions)
@@ -21,11 +30,11 @@ MessageDefinition Version_negotiation_Client_MessageDefinition()
 		//Versioning
 		var compatible = false;
 		
-		if (MessageDefinition.version == ClientVersion)
+		if (MessageDefinition.version == ClientApplicationVersion)
 		{
 			compatible = true;
 		}
-		else if(MessageDefinition.version.MajorVersion > ClientVersion.MajorVersion)
+		else if(MessageDefinition.version.MajorVersion > ClientApplicationVersion.MajorVersion)
 		{
 			compatible = false;
 			break; //Version is incompatible.
