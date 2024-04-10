@@ -3,10 +3,10 @@
 - name: Mechanism
   filename: Mechanism.page.md
 - name: Workflow
-  filename: workflow.page.md
+  filename: Workflow.page.md
 - name: Sender MessageDefiniton 
   filename: Sender-MessageDefinition.page.md
 - name: Sender CapabilityStatement 
   filename: Sender-CapabilityStatement.page.md
-- name: Sender $process-message 
-  filename: Sender-ProcessMessage.page.md
+- name: Receiver $process-message 
+  filename: Receiver-ProcessMessage.page.md
