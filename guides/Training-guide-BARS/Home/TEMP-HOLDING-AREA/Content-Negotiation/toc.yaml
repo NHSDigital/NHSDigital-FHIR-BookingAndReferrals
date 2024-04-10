@@ -1,0 +1,12 @@
+- name: Index
+  filename: index.page.md
+- name: Mechanism
+  filename: Mechanism.page.md
+- name: Workflow
+  filename: workflow.page.md
+- name: Sender MessageDefiniton 
+  filename: Sender-MessageDefinition.page.md
+- name: Sender CapabilityStatement 
+  filename: Sender-CapabilityStatement.page.md
+- name: Sender $process-message 
+  filename: Sender-ProcessMessage.page.md
