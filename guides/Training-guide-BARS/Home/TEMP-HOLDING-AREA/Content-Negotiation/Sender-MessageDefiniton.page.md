@@ -1,5 +1,5 @@
 ---
-topic: content-negotiation-Sender-MessageDefinition
+topic: core-content-negotiation-Sender-MessageDefinition
 ---
 
 # {{page-title}}

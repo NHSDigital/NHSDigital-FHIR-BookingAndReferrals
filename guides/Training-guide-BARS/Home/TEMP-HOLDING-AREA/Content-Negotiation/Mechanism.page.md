@@ -1,5 +1,5 @@
 ---
-topic: content-negotiation-mechanism
+topic: core-content-negotiation-mechanism
 ---
 
 # {{page-title}}

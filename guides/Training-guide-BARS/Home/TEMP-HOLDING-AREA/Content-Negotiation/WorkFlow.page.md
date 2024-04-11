@@ -1,3 +1,7 @@
+---
+topic: core-content-negotiation-workflow
+---
+
 # {{page-title}}
 
 The following sequences give a basic overview of the roles of both the Sender and the Receiver for Content Negotiation:

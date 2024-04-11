@@ -1,4 +1,8 @@
-# DocumentReference
+---
+topic: core-document-reference-Receiver
+---
+
+# {{page-title}}
 
 ## Creating a DocumentReference.
 

@@ -1,18 +1,8 @@
-# DocumentReference
+---
+topic: core-document-reference-Sender
+---
 
-## Introduction
-
-In version 1.1.0 of the BaRS API Specification, functionality was added to accommodate the use of pointers (DocumentReference resources), to locate existing bookings and referrals.
-
-The FHIR DocumentReference resource allows you to reference and locate clinical documents or resources. This section will walk you through the process of using a FHIR DocumentReference to find a resource's location and retrieve it.
-
-The BaRS API acts as a gateway to the National Record Locator FHIR API for BaRS enabled Services. In the image below the BaRS API is interacted with by Consumers and Producers.
-* Consumer - Queries the API for existing DocumentReferences for use in finding existing Bookings and Referrals. This is usually a BaRS [Sender](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=current#Core-functionality-requirements).
-* Producer - Posts and maintains DocumentReferences for Bookings and Referrals that they have received. This is invariably the BaRS [Receiver](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=current#Core-functionality-requirements).
-
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/DocumentReference/NRLF Via BaRS-1.1.0.svg" width="1200"></img>
-
-## Retrieving a DocumentReference.
+# {{page-title}}
 
 ### Step 1: Understand the Document Reference Resource
 The Document Reference resource in FHIR represents a reference to a clinical document or resource. It contains metadata about the document, such as its type, author, and creation date, subject (the patients NHS number), as well as a reference to the actual document's location (URL) and markers for how the method needed to retrieve it. 
