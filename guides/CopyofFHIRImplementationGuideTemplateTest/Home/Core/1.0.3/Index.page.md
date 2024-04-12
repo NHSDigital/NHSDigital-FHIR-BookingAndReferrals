@@ -10,3 +10,4 @@ You will find here a set of documentation, specifications and services that desc
 
 <hr>
 
+{{index:current}}
