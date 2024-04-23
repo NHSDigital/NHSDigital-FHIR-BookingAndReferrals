@@ -1,5 +1,5 @@
 ---
-topic: content-negotiation-mechanism
+topic: core-content-negotiation-mechanism
 ---
 
 # {{page-title}}
@@ -72,7 +72,7 @@ The Name or URL define the type of message being sent. The Service id is confirm
 ### useContext
 
 #### use case
-The Use-Case-Category is a codeset that defines the use case for the message, this is defined in the Application the use case is within. A Sender using a particular use case will look for its corresponding code for that use case in this identifier. The Senders subsequent message request will also have this code. This code can also be included in the context query parameter for GET /MessageDefinition to assist in filtering, though the CapabilityStatement will confirm if this is the case or not. It should be evaluated in either eventuality.
+The Use-Case-Category is a codeset that defines the use case for the message, this is defined in the Application the use case is within. A Sender using a particular use case will look for its corresponding code for that use case in this identifier. The Senders subsequent message request will also have this code. This code can also be included in the context query parameter for GET /MessageDefinition to assist in filtering, though the CapabilityStatement will confirm if this is the case or not. It should be evaluated in either eventuality. Display names for these codes should never be surfaced to an end user, these are metadata.
 
 #### Service
 

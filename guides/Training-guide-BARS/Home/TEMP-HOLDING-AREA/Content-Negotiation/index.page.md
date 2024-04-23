@@ -1,6 +1,7 @@
 ---
-topic: content-negotiation
+topic: core-content-negotiation
 ---
+
 # Content Negotiation
 
 ## Introduction
@@ -12,7 +13,7 @@ Information obtained from GET /metadata and GET /MessageDefinition will provide 
 ## Core vs Application
 Within BaRS Core defines the version negotiation, leveraging the accept header completed using SemVer.
 
-The Applications, also using semver, defines the content negotiation and, though employs a similar version negotiation paradigm, is not the same as Core.
+The Applications, also using semver, define the content negotiation and, though they employ a similar version negotiation paradigm, are not the same as Core.
 
 These two things combined ensure a Sender and a Receiver are fully compatible within a given workflow.
 
