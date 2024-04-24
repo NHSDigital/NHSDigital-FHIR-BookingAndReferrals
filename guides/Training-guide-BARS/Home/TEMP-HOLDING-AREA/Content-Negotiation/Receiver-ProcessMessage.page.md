@@ -1,5 +1,5 @@
 ---
-topic: content-negotiation-Receiver-Process-Message
+topic: core-content-negotiation-Receiver-Process-Message
 ---
 # {{page-title}}
 
