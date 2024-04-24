@@ -1,5 +1,5 @@
 ---
-topic: design-core-1.1.3
+topic: design-core-1.0.3
 ---
 
 # BaRS Core 1.0.3
