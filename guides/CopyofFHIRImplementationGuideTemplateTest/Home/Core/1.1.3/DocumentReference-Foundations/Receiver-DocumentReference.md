@@ -1,5 +1,5 @@
 ---
-topic: core-document-reference-Receiver
+topic: core-document-reference-Receiver-1.1.3
 ---
 
 # {{page-title}}

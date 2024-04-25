@@ -1,3 +1,7 @@
+---
+topic: core-Security-Auth-1.1.3
+---
+
 ## Authorisation
 
 BaRS will use several HTTP headers to facilitate authorisation. Although optional, receivers can expect these to be present for each request (excluding /metadata and /MessageDefinition), where applicable, to enforce access control. These will be in addition to the X-Request-ID and the X-Correlation-ID headers. If the information in these headers is available in the sending system, they'll be included in the request.

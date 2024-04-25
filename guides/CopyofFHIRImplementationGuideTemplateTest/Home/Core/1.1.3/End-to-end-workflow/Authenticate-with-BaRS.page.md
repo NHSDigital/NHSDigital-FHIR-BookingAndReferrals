@@ -1,3 +1,7 @@
+---
+topic: core-EndToEndWorkflow-BaRSAuth-1.1.3
+---
+
 ## Authenticate with BaRS
 
 The sender must have already [connected with our platform](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/application-restricted-restful-apis-signed-jwt-authentication) in order to generate an access token to make a request of the BaRS API. The sender generates and signs a JWT and sends this request to the BaRS token endpoint which provides an access token to be used to interact with the BaRS API. 

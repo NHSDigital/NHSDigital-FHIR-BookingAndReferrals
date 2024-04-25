@@ -1,3 +1,7 @@
+---
+topic: core-FHIRUsage-Process-Message-1.0.3
+---
+
 ## $process-message 
 
 This specific FHIR operation enables the exchange of complex composites whilst maintaining the principles of REST. The $process-message endpoint will be called at various stages in any of the workflows outlined to fulfil requests such as:

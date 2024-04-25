@@ -1,3 +1,7 @@
+---
+topic: core-document-reference-interface-1.0.3
+---
+
 ## Interface
 
 ### Introduction

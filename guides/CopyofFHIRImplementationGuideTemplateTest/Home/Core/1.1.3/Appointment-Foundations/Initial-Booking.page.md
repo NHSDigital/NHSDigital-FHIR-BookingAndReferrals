@@ -1,3 +1,6 @@
+---
+topic: core-foundation-appointment-booking-1.1.3
+---
 
 ## Appointment Resource
 

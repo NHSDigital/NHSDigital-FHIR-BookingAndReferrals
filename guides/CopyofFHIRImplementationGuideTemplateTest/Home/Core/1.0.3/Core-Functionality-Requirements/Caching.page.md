@@ -1,3 +1,7 @@
+---
+topic: core-FunctionalityRequirements-Caching-1.0.3
+---
+
 ### Caching
 
 - The local caching of retrieved metadata (Capability Statements and Message Definitions) requests is permitted to improve performance
