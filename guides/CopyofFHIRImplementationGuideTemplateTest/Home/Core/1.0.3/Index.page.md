@@ -52,6 +52,15 @@ For more detail please visit the {{pagelink:core-FunctionalityRequirements-1.0.3
 <hr>
 <br>
 
+# Content Negotiation
+
+Content Negotiation within BaRS leverages multiple variables within the CapabilityStatement and MessageDefinition to ensure that a Sender and a Receiver are Compatible. Though some of this is possible due to the Versioning Negotiation, Content Negotiation further builds on that concept with the capabilities published by the server and the identification of message definitions and use cases therein to ensure a workflow can be completed. 
+
+For more detail please visit the {{pagelink:core-content-negotiation, text: Content Negotiation section}} 
+
+<hr>
+<br>
+
 # BaRS FHIR usage
 BaRS uses [FHIR](https://digital.nhs.uk/services/fhir-uk-core) to achieve interoperability between healthcare IT systems. This section explains how BaRS makes use of some key FHIR concepts which need to be understood by developers implementing the standard.  
 
