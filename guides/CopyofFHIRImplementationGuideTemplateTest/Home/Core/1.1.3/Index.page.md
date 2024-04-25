@@ -58,7 +58,6 @@ For more detail please visit the {{pagelink:core-content-negotiation, text: Cont
 <hr>
 <br>
 
-
 # BaRS FHIR usage
 BaRS uses [FHIR](https://digital.nhs.uk/services/fhir-uk-core) to achieve interoperability between healthcare IT systems. This section explains how BaRS makes use of some key FHIR concepts which need to be understood by developers implementing the standard.  
 
@@ -105,6 +104,31 @@ Most implementations of the BaRS that are applying the standard to support a par
 In order to establish a guarantee of compatibility between different solutions compliant with the standard, **all** implementations **must** support all the underlying foundational operations and patterns.
 
 For more detail please visit the {{pagelink:Core-StandardPattern-1.1.3, text: Standard Patterns for BaRS Operations section}} 
+
+<hr>
+<br>
+
+# Foundations - Appointment
+
+There are 4 capabilities that are required surrounding appointments. This section will provide information on how to meet them.
+
+* The ability to book an appointment.
+* The ability to cancel an appointment.
+* The ability to update an appointment.
+* The ability to rebook an appointment.
+
+For more detail please visit the {{pagelink:core-foundation-appointment-1.1.3, text: Appointment Foundations section}} 
+
+<hr>
+<br>
+
+# Foundations - DocumentReference
+
+In version 1.1.0 of the BaRS API Specification, functionality was added to accommodate the use of pointers (DocumentReference resources), to locate existing bookings and referrals.
+
+The FHIR DocumentReference resource allows you to reference and locate clinical documents or resources. This section will walk you through the process of using a FHIR DocumentReference to find a resource's location and retrieve it.
+
+For more detail please visit the {{pagelink:core-document-reference-1.1.3, text: DocumentReference Foundations section}} 
 
 <hr>
 <br>
