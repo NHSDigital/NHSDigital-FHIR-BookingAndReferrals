@@ -1,5 +1,25 @@
 - name: Index
   filename: Index.page.md
+- name: 
+  filename: End-to-end-workflow
+- name: 
+  filename: Core-Functionality-Requirements
+- name: 
+  filename: BaRS-FHIR-Usage
+- name: 
+  filename: Security-and-Authorisation
+- name: 
+  filename: Error-Handling
+- name: 
+  filename: Transactional-integrity
+- name: 
+  filename: Non-Functional-Requirements
+- name: 
+  filename: Standard-Patterns-for-BaRS-Operations
+- name: 
+  filename: DocumentReference-Foundations
+- name: 
+  filename: Appointment-Foundations
 - name: Core functionality requirements
   filename: Core-functionality-requirements.page.md
 - name: BaRS FHIR usage

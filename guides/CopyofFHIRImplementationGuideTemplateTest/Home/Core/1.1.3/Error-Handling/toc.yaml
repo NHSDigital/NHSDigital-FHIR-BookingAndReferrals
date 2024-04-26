@@ -2,6 +2,8 @@
   filename: Failure-Scenarios
 - name: Index
   filename: Index.page.md
+- name: Introduction
+  filename: Introduction.page.md
 - name: Overview
   filename: Overview.page.md
 - name: BaRS interactions (sending)
