@@ -1,3 +1,7 @@
+---
+topic: core-ErrorHandling-OpOut-1.0.3
+---
+
 ### OperationOutcome Example
 
 <json>

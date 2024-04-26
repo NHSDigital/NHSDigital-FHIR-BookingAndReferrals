@@ -1,3 +1,7 @@
+---
+topic: core-ErrorHandling-Overview-1.0.3
+---
+
 ### Overview
 
 Error codes (HTTP Response codes) can be caused by any of the three parties involved in a transaction using the Booking and Referral API. Error codes will be accompanied by a OperationOutcome FHIR resource where possible.  Error codes and their relative operation outcome codes are meant for developer use only - they should not be presented to end-users. Instead, sending applications should interpret the two codes and provide user-friendly resolution steps on failure. Sender and receiver systems should record the detailed error codes in local logs in order to support service incident investigation. There are scenarios where an operation outcome may not be applicable or available. A HTTP Response code should always be returned.

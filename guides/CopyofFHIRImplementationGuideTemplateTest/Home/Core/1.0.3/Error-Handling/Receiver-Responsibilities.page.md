@@ -1,3 +1,7 @@
+---
+topic: core-ErrorHandling-RecResp-1.0.3
+---
+
 ### Receiver responsibilities
 
 - Receiving APIs should adhere to the HTTP Response code and Operational Outcome code paradigm described above in the event that an error response needs to be returned

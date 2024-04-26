@@ -1,3 +1,7 @@
+---
+topic: Core-TransactionalIntegrity-Onward-1.1.3
+---
+
 ## Onward Referrals 
 
 The X-Correlation-ID is retained in all interactions. This is beneficial for logging and auditing as using the X-Correlation-ID you can see all interactions for this encounter.

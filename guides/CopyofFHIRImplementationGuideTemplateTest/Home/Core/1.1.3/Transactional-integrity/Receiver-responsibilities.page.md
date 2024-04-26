@@ -1,3 +1,7 @@
+---
+topic: Core-TransactionalIntegrity-Receiver-1.1.3
+---
+
 ## Receiver responsibilities
 
 - return the  X-Request-ID and X-Correlation-ID in responses at ALL times, where possible
