@@ -72,10 +72,12 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&bull;{{pagelink:Core-TransactionalIntegrity-Receiver-1.1.3 , text:Receiver responsibilities}}
 &nbsp;&nbsp;&bull;{{pagelink:Core-TransactionalIntegrity-Sender-1.1.3 , text:Sender responsibilities}}
 &nbsp;&nbsp;&bull;{{pagelink:core-TIFailureScenarios-1.1.3 , text:Failure Scenarios}}
-&nbsp;&nbsp;&bull;{{pagelink:core-NFR-1.1.3 , text:Non functional Requirements}}
+
+&nbsp;&bull;{{pagelink:core-NFR-1.1.3 , text:Non functional Requirements}}
 &nbsp;&nbsp;&bull;{{pagelink:core-NFR-Requirements-1.1.3 , text:Requirements}}
 &nbsp;&nbsp;&bull;{{pagelink:core-NFR-Processing-Time-1.1.3 , text:Processing Times}}
-&nbsp;&nbsp;&bull;{{pagelink:Core-StandardPattern-1.1.3 , text:Standard Patterns for BaRS Operations}}
+
+&nbsp;&bull;{{pagelink:Core-StandardPattern-1.1.3 , text:Standard Patterns for BaRS Operations}}
 &nbsp;&nbsp;&bull;{{pagelink:core-SPComposites-1.1.3 , text:Standard Pattern for Composites}}
 &nbsp;&nbsp;&bull;{{pagelink:core-SPMessageHeader-1.1.3 , text:Message Headers}}
 &nbsp;&nbsp;&bull;{{pagelink:core-SPCancellation-1.1.3 , text:Cancellation}}
