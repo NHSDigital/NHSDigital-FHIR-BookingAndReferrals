@@ -1,3 +1,7 @@
+---
+topic: core-FHIRUsage-JourneyID-1.1.3
+---
+
 ## {{page-title}}
 
 The Journey ID uses the episodeOfCare resource.

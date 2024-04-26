@@ -1,3 +1,7 @@
+---
+topic: core-Security-Sender-1.1.3
+---
+
 ## Sender
 
 The BaRS standard uses an [application-restricted](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#application-restricted-apis) security model and [security pattern](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/application-restricted-restful-apis-signed-jwt-authentication#how-this-pattern-works) as opposed to a [user-restricted security](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#user-restricted-apis) model. This means the application is authenticated as opposed to the end-user using it. The high level steps for a sending application are defined below:

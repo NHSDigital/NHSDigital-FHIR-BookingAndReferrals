@@ -1,3 +1,7 @@
+---
+topic: core-NFR-Processing-Time-1.0.3
+---
+
 ## {{page-title}}
 
 The following Processing time SLAs describe the need for APIs to respond to a request within an acceptable time frame. This time frame should be measured from when a request is received and does not include the transport time.

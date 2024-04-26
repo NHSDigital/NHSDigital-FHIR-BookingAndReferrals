@@ -1,3 +1,7 @@
+---
+topic: core-FHIRUsage-bundle-1.0.3
+---
+
 ## Bundle
 
 The use of the FHIR bundle in BaRS primarily supports the use of $process-message. It is also used as follows:

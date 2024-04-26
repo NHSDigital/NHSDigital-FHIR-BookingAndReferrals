@@ -1,3 +1,7 @@
+---
+topic: core-FHIRUsage-REST-1.1.3
+---
+
 ## REST 
 
 FHIR is often associated with REST (REpresentational State Transfer) as a primary method of exchange. BaRS uses REST for many of the benefits it offers - 

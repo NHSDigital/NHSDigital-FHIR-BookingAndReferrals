@@ -6,3 +6,5 @@
   filename: Releases
 - name: Versioning
   filename: Versioning.guide.md
+- name: Content Negotiation
+  filename: Content-Negotiation

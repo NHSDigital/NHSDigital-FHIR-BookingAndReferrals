@@ -1,3 +1,7 @@
+---
+topic: Core-TransactionalIntegrity-retry-1.1.3
+---
+
 ## Definition of a retry
 
 In this context a retry is an attempt to send the same message, without any changes following a failure. This means:

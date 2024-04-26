@@ -1,3 +1,7 @@
+---
+topic: core-FunctionalityRequirements-All-1.0.3
+---
+
 ### All
 
 - Provide Capability Statement 

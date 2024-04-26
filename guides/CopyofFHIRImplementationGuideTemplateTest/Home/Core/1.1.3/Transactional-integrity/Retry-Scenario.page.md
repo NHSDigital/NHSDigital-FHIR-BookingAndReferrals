@@ -1,3 +1,7 @@
+---
+topic: Core-TransactionalIntegrity-Retry-1.1.3
+---
+
 ## Retry scenario
 
 Should a request fail for any reason and the sender not receive a response (in any of the above scenarios) the sender is to retry the request, retaining the same X-Request-ID and X-Correlation-ID as the initial attempt. This allows the receiver to identify whether it has already processed this message or not.
