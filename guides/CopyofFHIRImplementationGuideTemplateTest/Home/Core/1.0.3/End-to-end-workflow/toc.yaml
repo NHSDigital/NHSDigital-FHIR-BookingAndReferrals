@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Introduction
+  filename: Introduction.page.md
 - name: Service Discovery
   filename: Service-Discovery.page.md
 - name: Authenticate with BaRS
