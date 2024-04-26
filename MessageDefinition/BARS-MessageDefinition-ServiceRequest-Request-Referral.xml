@@ -4,7 +4,7 @@
 	<name value="BARS Message Definition ServiceRequest - Request Referral"/>
 	<title value="BARS Message Definition ServiceRequest - Request Referral"/>
 	<status value="active"/>
-	<date value="2024-02-26"/>
+	<date value="2024-04-26"/>
 	<!-- This is the version number of Application 6 (currently in development on Simplifier) -->
 	<version value="1.0.0-beta"/>
 	<eventCoding>
@@ -29,7 +29,7 @@
 		<code>
 			<!--  Use cases supported by this MessageDefinition for Application 6  -->
 			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="999to999mutualaidrequest"/>
+			<code value="a6t3"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
@@ -41,7 +41,7 @@
 	<useContext>
 		<code>
 			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="999to999outofareareferral"/>
+			<code value="a6t2"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
@@ -53,7 +53,7 @@
 	<useContext>
 		<code>
 			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="999to999callassistrequest"/>
+			<code value="a6t1"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>

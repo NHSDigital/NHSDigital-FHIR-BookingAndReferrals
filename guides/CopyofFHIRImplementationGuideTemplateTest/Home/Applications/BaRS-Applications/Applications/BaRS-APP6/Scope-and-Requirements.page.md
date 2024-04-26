@@ -26,8 +26,8 @@ The payloads and workflow have been designed to support these services. Other {{
 
 **Referral** 
 * A referral Sender **must** interpret the Message Definition returned by the Receiver to check what use cases are supported before attempting to send a referral.
-* Referral Sender **must** ONLY send a use case specific referral that matches the intended use context and is supported by the Receiver i.e. MessageDefinition.useContext where the system value = usecases-categories-bars is mutualaidrequest or callassistrequest or outofareareferral.  
-* A referral is a request for care on behalf of an individual from one service to another 
+* Referral Sender **must** ONLY send a use case specific referral that matches the intended use context and is supported by the Receiver i.e. MessageDefinition.useContext where the system value = usecases-categories-bars is mutualaidrequest(a6t3) or callassistrequest(a6t2) or outofareareferral(a6t1).  
+* A referral is a request for care on behalf of an individual from one service to another
 * The referral can be sent without having to establish the capacity the service offers
 * The referral Sender **must** have the capability to send a referral at points in the call cycle that are appropriate for the acuity of the case
 * The referral Sender **must** include incident location information

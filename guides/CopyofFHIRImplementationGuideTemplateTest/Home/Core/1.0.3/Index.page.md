@@ -11,6 +11,7 @@ You will find here a set of documentation, specifications and services that desc
 <details>
 <summary>> <b class="barslink">Expand for full Core directory</b></summary>
 
+
 &bull;{{pagelink:design-core-1.0.3 , text: Core 1.0.3}}
 
 &nbsp;&bull;{{pagelink:core-EndToEndWorkflow-1.0.3 , text:End to end workflow}}

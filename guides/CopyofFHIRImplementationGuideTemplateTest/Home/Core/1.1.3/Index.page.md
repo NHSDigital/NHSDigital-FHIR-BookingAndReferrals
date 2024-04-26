@@ -11,6 +11,7 @@ You will find here a set of documentation, specifications and services that desc
 <details>
 <summary>> <b class="barslink">Expand for full Core directory</b></summary>
 
+
 &bull;{{pagelink:design-core-1.1.3 , text: Core 1.1.3}}
 
 &nbsp;&bull;{{pagelink:core-EndToEndWorkflow-1.1.3 , text:End to end workflow}}
@@ -93,7 +94,6 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&bull;{{pagelink:core-document-reference-Sender-1.1.3 , text:Sender}}
 &nbsp;&nbsp;&bull;{{pagelink:core-document-reference-Receiver-1.1.3 , text:Receiver}}
 &nbsp;&nbsp;&bull;{{pagelink:core-document-reference-interface-1.1.3 , text:Interface}}
- 
    
 
 </details>
