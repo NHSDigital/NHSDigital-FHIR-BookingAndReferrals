@@ -157,7 +157,7 @@ In addition to that the specific workflow parameters that are required are as fo
                         <td>ServiceRequest (Category) = referral</td>
                     </tr>
 					<tr>
-                        <td>ServiceRequest (Category) = outofareareferral</td>
+                        <td>ServiceRequest (Category) = a6t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>
@@ -240,7 +240,7 @@ In addition the specific workflow parameters that are required are as follows:
                         <td>ServiceRequest (Category) = referral</td>
                     </tr>
 					<tr>
-                        <td>ServiceRequest (Category) = outofareareferral</td>
+                        <td>ServiceRequest (Category) = a6t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>
