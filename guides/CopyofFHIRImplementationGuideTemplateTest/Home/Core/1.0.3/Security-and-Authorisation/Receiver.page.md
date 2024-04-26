@@ -1,3 +1,7 @@
+---
+topic: core-Security-Receiver-1.0.3
+---
+
 ## Receiver
 
 BaRS will utilise TLS-MA (Mutual Authentication) to communicate with receiving endpoints. Receiving endpoints will require a certificate under the NHS Root CA to facilitate TLS-MA.

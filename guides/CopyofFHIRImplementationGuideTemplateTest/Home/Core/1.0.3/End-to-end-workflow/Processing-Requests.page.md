@@ -1,3 +1,7 @@
+---
+topic: core-EndToEndWorkflow-Processing-1.0.3
+---
+
 ## {{page-title}}
 
 For GET requests (reads) the receiver honours what is being asked for by generating and synchronously sending a response, for example the server Capability Statement on a GET /metadata request. Any failure during processing must initiate an error response back to the Sender. 

@@ -1,3 +1,8 @@
+---
+topic: core-EndToEndWorkflow-HTTPResponseHeader-1.1.3
+---
+
+
 ## {{page-title}}
 
 Responses to requests in the BaRS standard need not include anymore than Headers required by the HTTP protocol and the Transaction Integrity Headers listed above. Senders should not expect or require anymore than this in a synchronous HTTP response.

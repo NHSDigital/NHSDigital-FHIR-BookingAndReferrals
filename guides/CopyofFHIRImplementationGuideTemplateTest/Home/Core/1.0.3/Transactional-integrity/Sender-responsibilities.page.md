@@ -1,3 +1,7 @@
+---
+topic: Core-TransactionalIntegrity-Sender-1.0.3
+---
+
 ## Sender responsibilities
 
 The frequency of retries and the duration of a retry period depends on the scenario and should not disrupt workflow. Exponential backoff is considered best practice however it is at the discretion of the sender to define how many times a retry is attempted.

@@ -1,3 +1,7 @@
+---
+topic: core-ErrorHandling-IntS-1.1.3
+---
+
 ## {{page-title}}
 
 In the event of an error; the BaRS API always responds with an HTTP response code (issue.code) and an OperationOutcome code (issue.details.code) within an OperationOutcome FHIR Resource - conditioned on it being reached successfully. Assuming the sender's access token (obtained from the Oauth 2 endpoint) is accepted and the request is valid, the BaRS API processes the request. Depending on the operation, BaRS proxies the request to the receiver. Depending on where in this flow the error occurs, the OperationOutcome codes is prefixed with one of the following three items,  indicating where the cause of the error resides:

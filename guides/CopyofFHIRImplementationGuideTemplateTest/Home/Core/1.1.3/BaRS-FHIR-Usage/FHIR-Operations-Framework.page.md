@@ -1,3 +1,7 @@
+---
+topic: core-FHIRUsage-FHIR-Operations-1.1.3
+---
+
 ## FHIR Operations framework 
 
 Performing the required steps in workflow using simple CRUD operations on single resources can be complex and relies on prior knowledge or dictates explicit rules around workflow in any given system, for example: a patient must exist before a service request can be made. In order to support complex workflows that utilise composites of resources, simple CRUD operations on sinlge resources would breach some core principles of ReST (e.g. inabililty to maintain stateless communication for example). Therefore BaRS utilises the FHIR operations framework which:

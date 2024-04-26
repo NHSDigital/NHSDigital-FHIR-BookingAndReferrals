@@ -1,3 +1,7 @@
+---
+topic: core-ErrorHandling-Examples-1.1.3
+---
+
 ### Example errors
 
 The table below contains some further examples of error codes, their associated Operation Outcomes codes and and potential diagnostics texts.

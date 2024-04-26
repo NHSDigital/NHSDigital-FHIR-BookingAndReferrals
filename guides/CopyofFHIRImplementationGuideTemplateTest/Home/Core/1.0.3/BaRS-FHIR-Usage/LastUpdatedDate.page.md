@@ -1,3 +1,7 @@
+---
+topic: core-FHIRUsage-LastUpdated-1.0.3
+---
+
 ## {{page-title}}
 
 Every resource will include a lastUpdated date in the meta tag. This is to be used for tracking and updating.
