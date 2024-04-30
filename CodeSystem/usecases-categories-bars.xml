@@ -26,71 +26,71 @@
   <!-- This list is intended to support all Use Case Categories supported within BaRS -->
   <concept>
     <code value="a1t1" />
-    <display value="App 1 Type 1" />
+    <display value="111 - ED" />
   </concept>
   <concept>
     <code value="a1t2" />
-    <display value="App 1 Type 2" />
+    <display value="111 - UTC" />
   </concept>
   <concept>
     <code value="a1t3" />
-    <display value="App 1 Type 3" />
+    <display value="CAS - ED" />
   </concept>
   <concept>
     <code value="a1t4" />
-    <display value="App 1 Type 4" />
+    <display value="CAS - UTC" />
   </concept>
   <concept>
     <code value="a1t5" />
-    <display value="App 1 Type 5" />
+    <display value="999 - ED" />
   </concept>
   <concept>
     <code value="a1t6" />
-    <display value="App 1 Type 6" />
+    <display value="999 - UTC" />
   </concept>
   <concept>
     <code value="a1t7" />
-    <display value="App 1 Type 7" />
+    <display value="111 - SDEC" />
   </concept>
   <concept>
     <code value="a1t8" />
-    <display value="App 1 Type 8" />
+    <display value="CAS - SDEC" />
   </concept>
   <concept>
     <code value="a1t9" />
-    <display value="App 1 Type 9" />
+    <display value="999 - SDEC" />
   </concept>
   <concept>
     <code value="a2t1" />
-    <display value="App 2 Type 1" />
+    <display value="111 Online - ED" />
   </concept>
   <concept>
     <code value="a2t2" />
-    <display value="App 2 Type 2" />
+    <display value="111 Online - UTC" />
   </concept>
   <concept>
     <code value="a2t3" />
-    <display value="App 2 Type 3" />
+    <display value="S and R - ED" />
   </concept>
   <concept>
     <code value="a2t4" />
-    <display value="App 2 Type 4" />
+    <display value="S and R - UTC" />
   </concept>
   <concept>
     <code value="a3t1" />
-    <display value="App 3 Type 1" />
+    <display value="999 - CAS Referral" />
   </concept>
   <concept>
     <code value="a4t1" />
-    <display value="App 4 Type 1" />
+    <display value="999 - CAS Validation" />
   </concept>
   <concept>
     <code value="a4t2" />
-    <display value="App 4 Type 2" />
+    <display value="999 - Falls" />
   </concept>
   <concept>
     <code value="a5t1" />
-    <display value="App 5 Type 1" />
+    <display value="GP to Pharmacy CPCS Minor Illness" />
   </concept>
   <concept>
     <code value="referraltopharmacy" />
@@ -98,14 +98,14 @@
   </concept>
   <concept>
     <code value="a6t1" />
-    <display value="App 6 Type 1" />
+    <display value="CAD to CAD Out of Area Referral" />
   </concept>
   <concept>
     <code value="a6t2" />
-    <display value="App 6 Type 2" />
+    <display value="CAD to CAD Call Assist Request" />
   </concept>
   <concept>
     <code value="a6t3" />
-    <display value="App 6 Type 3" />
+    <display value="CAD to CAD Mutual Aid Request" />
   </concept>
 </CodeSystem>
