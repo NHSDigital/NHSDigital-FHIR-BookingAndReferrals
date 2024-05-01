@@ -1,5 +1,7 @@
 - name: index
   filename: index.page.md
+- name: Introduction
+  filename: Introduction.page.md
 - name: Standard Pattern For Composites
   filename: Standard-Pattern-For-Composites.page.md
 - name: Message Headers
