@@ -96,7 +96,7 @@
           </coding>
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="999casvalidation" />
+						<code value="a4t1" />
 						<display value="999-CAS Validation" />
 					</coding>
         </category>
@@ -309,7 +309,7 @@
           </outcomeCodeableConcept>
           <outcomeCodeableConcept>
             <coding>
-              <system value="https://fhir.nhs.uk/CodeSystem/arp-priority-code" />
+              <system value="https://fhir.nhs.uk/CodeSystem/arp-priority-codes" />
               <code value="C2" />
               <display value="Cat2 Emergency" />
             </coding>

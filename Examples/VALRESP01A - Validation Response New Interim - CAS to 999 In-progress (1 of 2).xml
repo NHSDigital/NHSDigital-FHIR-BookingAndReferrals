@@ -92,7 +92,7 @@
           </coding>
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="999casvalidation" />
+						<code value="a4t1" />
 						<display value="999-CAS Validation" />
 					</coding>
         </category>
