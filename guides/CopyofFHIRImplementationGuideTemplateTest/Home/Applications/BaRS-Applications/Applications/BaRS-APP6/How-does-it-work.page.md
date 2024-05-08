@@ -358,7 +358,7 @@ Receive_Request
 										RequestType = "Im Receiving a new Mutual Aid Request";
 									case:"a6t2":
 										RequestType = "Im Receiving a new Call Assist Request";
-									case:"a5t1":
+									case:"a6t1":
 										RequestType = "Im Receiving a new Out of Area Request";
 								}									
 							}

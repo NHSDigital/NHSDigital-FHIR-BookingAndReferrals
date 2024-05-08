@@ -20,8 +20,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. GP to Pharmacy CPCS Minor Illness. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories, text:use-case categories}}
-
+). e.g. GP to Pharmacy CPCS Minor Illness. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.0, text:use-case categories}}
 
 ### Encounter Resource
 The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 
