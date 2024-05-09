@@ -5,7 +5,7 @@
 	<title value="BARS Message Definition ServiceRequest - Request - Cancelled"/>
 	<status value="active"/>
 	<date value="2023-10-16"/>
-	<!-- This is the version number of Application 6 (currently in development on Simplifier) -->
+	<!-- This is the version number of Application (currently in development on Simplifier) -->
 	<version value="1.0.0"/>
 	<eventCoding>
 		<system value="https://fhir.nhs.uk/CodeSystem/message-events-bars"/>
@@ -26,9 +26,10 @@
 	</useContext>
 	<useContext>
 		<code>
-			<!--  Use cases supported by this MessageDefinition for Application 6  -->
+			<!--  Use cases supported by this MessageDefinition for Application  -->
 			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
 			<code value="a1t1"/>
+			<display value="111 - ED" />
 		</code>
 		<valueCodeableConcept>
 			<coding>
