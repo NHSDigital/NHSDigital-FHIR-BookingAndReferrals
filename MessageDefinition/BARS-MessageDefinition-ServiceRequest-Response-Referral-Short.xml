@@ -28,7 +28,7 @@
 		<code>
 			<!--  Use cases supported by this MessageDefinition Application 6-->
 			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="999to999mutualaidrequest"/>
+			<code value="a6t3"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>

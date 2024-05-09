@@ -4,7 +4,7 @@
 	<name value="BaRS FHIR Server CapabilityStatement"/>
 	<status value="active"/>
 	<!-- This is the version of BaRS Core -->
-	<version value="1.2.2"/>
+	<version value="1.1.0"/>
 	<experimental value="false"/>
 	<date value="2024-01-09"/>
 	<publisher value="NHS England"/>
