@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="ca337cfa-f564-4948-97bf-4134968caba6" />
     <meta>
-        <versionId value="1.0.0" />
+        <versionId value="1.0.0-beta" />
         <lastUpdated value="2023-12-26T15:30:00.8185338+00:00" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
     </meta>
@@ -91,7 +91,7 @@
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
 						<code value="a6t3" />
-						<display value="999-999 Mutual Aid Request" />
+						<display value="CAD to CAD Mutual Aid Request" />
 					</coding>
 					<text value="Please can you spare a Paramedic closer than 20 mins?" />
                 </category>
