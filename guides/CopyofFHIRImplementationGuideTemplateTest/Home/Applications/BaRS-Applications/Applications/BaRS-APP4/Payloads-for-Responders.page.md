@@ -26,7 +26,7 @@ The *ServiceRequest* reflects that sent by the Requester, and maintains the acti
 There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
-https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.3, text:use-case categories}}
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.3, text:use-case categories}}
 
 
 ### Encounter Resource
