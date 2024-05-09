@@ -22,6 +22,8 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
 ). e.g. GP to Pharmacy CPCS Minor Illness. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.3, text:use-case categories}}
 
+*Please note that the use-case category 'referraltopharmacy' is now deprecated to allow for more granular use cases.*
+
 ### Encounter Resource
 The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 
 
