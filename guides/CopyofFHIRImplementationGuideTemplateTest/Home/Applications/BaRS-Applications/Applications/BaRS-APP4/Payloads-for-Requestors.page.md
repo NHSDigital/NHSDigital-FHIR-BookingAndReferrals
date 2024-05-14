@@ -24,7 +24,7 @@ The 'focus' resource in a Validation Request is the ServiceRequest resource. Whe
 There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
-https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.3, text:use-case categories}}
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. 999- CAS Validation. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.3, text:use-case categories}}
 
 Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time by which the receiving service must complete the validation (validation breach time).
 
