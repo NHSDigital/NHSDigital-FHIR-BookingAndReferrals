@@ -8,7 +8,7 @@ topic: APP4-HowDoesItWork
 This section describes how the primary operations used in this application work. The following  diagram illustrates the workflow and interactions of a request from an 999 AST to a CAS to clinically validate an agreed cohort of ambulance triage outcomes (usually C3/C4), and the subsequent response(s):
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ValidationRequestSimplified-1.0.0.svg" width="1000"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ValidationRequestSimplified-1.1.0.svg" width="1000"></img></a>
 
 
 This details a 999 Ambulance Service Trust (AST) Referral into Clinical Assessment Service (CAS) for Validation:
