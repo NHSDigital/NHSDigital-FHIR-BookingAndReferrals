@@ -5,8 +5,8 @@ topic: core-FHIRUsage-Time-1.1.3
 ## {{page-title}}
 
 * All times MUST be in FHIR Instant format (```YYYY-MM-DDThh:mm:ss.sssssss+zz:zz```) 
-  * e.g. ```YearMonth-DayTHours:Minutes:Seconds.milliseconds+OffsetFromUTC``` 
-  * e.g. ```201502-07T13:28:17.2398742+02:00```
+  * e.g. ```Year-Month-DayTHours:Minutes:Seconds.milliseconds+OffsetFromUTC``` 
+  * e.g. ```2015-02-07T13:28:17.2398742+02:00```
   * *except* where specifically defined otherwise
 * All times can have up to seven digits resolution for milliseconds
 * All times SHOULD be converted to UTC from local times (if not stored locally in UTC) before being included in any messages, this means the offset should be zero
