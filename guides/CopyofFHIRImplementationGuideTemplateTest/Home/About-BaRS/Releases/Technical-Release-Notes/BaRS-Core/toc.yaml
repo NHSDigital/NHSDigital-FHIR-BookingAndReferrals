@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: Global
-  filename: Global.page.md
 - name: 1.1.3
   filename: 1.1.3.page.md
 - name: 1.0.3
