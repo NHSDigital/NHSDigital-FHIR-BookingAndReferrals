@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="79120f41-a431-4f08-bcc5-1e67006fcae0" />
   <meta>
-    <versionId value="1.1.0" />
+    <versionId value="1.0.0" />
     <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
   </meta>
@@ -88,6 +88,11 @@
             <!--   Important for driving workflow, determining the type of referral being requested   -->
             <display value="Transfer of Care" />
           </coding>
+					<coding><!--       Use case category      -->
+						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+						<code value="a3t1" />
+						<display value="999-CAS Referral" />
+					</coding>
         </category>
         <subject>
           <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
