@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="dcd2aaa9-efe2-4df2-bb34-ad4ee9a41f28" />
     <meta>
-        <versionId value="1.0.0" />
+        <versionId value="1.0.0-beta" />
         <lastUpdated value="2023-12-26T15:30:00.8185338+00:00" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
     </meta>

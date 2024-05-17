@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="79120f41-a431-4f08-bcc5-1e67006fcae0" />
   <meta>
-    <versionId value="1.1.0" />
+    <versionId value="1.0.0" />
     <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
   </meta>
@@ -188,6 +188,11 @@
             <!--    Important for driving workflow, determining the type of referral being requested    -->
             <display value="Transfer of Care" />
           </coding>
+					<coding><!--       Use case category      -->
+						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+						<code value="a1t1" />
+						<display value="111 - ED" />
+					</coding>
         </category>
         <subject>
           <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
@@ -214,6 +219,11 @@
         <supportingInfo>
           <reference value="urn:uuid:41e591ab-d333-4fb8-87b4-d35f740b6bfc" />
           <display value="Rejected Services - Patient Choice in Service Selection - Flag" />
+        </supportingInfo>
+		  <!--       Booking linked to the referral       -->
+		<supportingInfo>
+          <reference value="Appointment/3cac9cde-a262-42b3-bcf1-215ab79c3e37" />
+          <display value="Booking" />
         </supportingInfo>
         <patientInstruction value="ADVICE GIVEN: If there are any new symptoms, or if the condition gets worse, changes or you have any other concerns, call us back." />
       </ServiceRequest>
@@ -697,8 +707,8 @@
         <code>
           <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/safeguarding-codes-bars" />
-            <code value="U" />
-            <display value="Unspecified Safeguarding Concern Identified" />
+            <code value="836881000000105" />
+            <display value="Child is cause for safeguarding concern (finding)" />
           </coding>
         </code>
         <subject>
@@ -927,32 +937,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:f2d2a6f8-1ef5-40a6-a697-849bb1264a91" />
-    <resource>
-      <Observation>
-        <meta>
-          <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        </meta>
-        <status value="final" />
-        <code>
-          <text value="Patient Reported Symptoms" />
-        </code>
-        <encounter>
-          <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
-        </encounter>
-        <effectiveDateTime value="2021-10-23" />
-        <performer>
-          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
-        </performer>
-        <note>
-          <authorString value="Mrs Julie Jones" />
-          <text value="Chest pain on and off for several days. Advised to contact 111" />
-        </note>
-      </Observation>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="urn:uuid:e53b2595-7875-4687-80e9-23a0c8cb8ea0" />
     <resource>
       <Observation>
@@ -974,10 +958,6 @@
         <performer>
           <reference value="urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56" />
         </performer>
-        <note>
-          <authorString value="BLAKE, Marcy" />
-          <text value="The patient wishes to not be admitted to hospital unless deemed completely necessary. They have long term conditions which are better managed at home" />
-        </note>
       </Observation>
     </resource>
   </entry>
@@ -1016,7 +996,7 @@
             <item>
               <linkId value="SourceURL" />
               <answer>
-                <valueUri value="http://www.healthcaregateway.co.uk/mig/patNatNo-4563225478" />
+                <valueUri value="http://www.healthcaregateway.co.uk/mig/" />
               </answer>
             </item>
           </item>
@@ -1031,7 +1011,7 @@
             <item>
               <linkId value="SourceURL" />
               <answer>
-                <valueUri value="http://www.graphnet.co.uk/record/NHSNo-4563225478" />
+                <valueUri value="http://www.graphnet.co.uk/" />
               </answer>
             </item>
           </item>

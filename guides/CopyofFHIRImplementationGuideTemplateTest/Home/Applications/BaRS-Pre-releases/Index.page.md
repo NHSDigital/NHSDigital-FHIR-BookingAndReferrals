@@ -14,10 +14,12 @@ These guides are designed to be used in conjunction with the documentation for {
 
 | Application  |  Use Cases  | Current Release | API Specification | Core Version |
 | ----------------------------------------------------------------------------|--------------------------------------------------------------- | --------------- | --------------- | --------------- |    
-| {{pagelink:application5, text: Referrals into Pharmacy (Application 5)}}      | <p>GP to Pharmacy CPCS Minor Illness<br> | 1.0.0-beta.3     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">Core v1.1.0 and above</a> |
+| {{pagelink:application5, text: Referrals into Pharmacy (Application 5)}}      | <p>Primary Care to Community Pharmacy (Pharmacy First)<br> | 1.0.0-beta.3     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">Core v1.1.0 and above</a> |
 | {{pagelink:application6, text: Referrals into an Ambulance Service Trust (Application 6)}} | <p>CAD to CAD Out of Area Referral<br>CAD to CAD Call Assist Request<br>CAD to CAD Mutual Aid Request | 1.0.0-beta    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">API Spec v1.1.0 and above</a>  | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">Core v1.1.0 and above</a> |
 
+## Beta Deployment Guide
 
+Our Beta Deployment Guide can be found here {{pagelink:betadeploymentguide}}.
 
 <hr>
 

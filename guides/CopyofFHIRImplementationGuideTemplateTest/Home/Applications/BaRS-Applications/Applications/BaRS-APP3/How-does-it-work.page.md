@@ -51,9 +51,9 @@ In addition to that the specific workflow parameters that are required are as fo
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan=6>Referral Request (New)</td>
-                        <td rowspan=6>POST /$process-message{servicerequest-request}</td>
-                        <td rowspan=6>ServiceRequest (active)</td>
+                        <td rowspan=7>Referral Request (New)</td>
+                        <td rowspan=7>POST /$process-message{servicerequest-request}</td>
+                        <td rowspan=7>ServiceRequest (active)</td>
                         <td>MessageHeader (EventCoding) = servicerequest-request</td>
                     </tr>
                     <tr>
@@ -64,6 +64,9 @@ In addition to that the specific workflow parameters that are required are as fo
                     </tr>
                     <tr>
                         <td>ServiceRequest (Category) = referral</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceRequest (Category) = a3t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>
@@ -131,9 +134,9 @@ In addition the specific workflow parameters that are required are as follows:
                         <td>n/a</td>
                     </tr>
                     <tr>
-                        <td rowspan=8>Referral Request (Cancel)</td>
-                        <td rowspan=8>POST /$process-message{servicerequest-request}</td>
-                        <td rowspan=8>ServiceRequest (revoked)</td>
+                        <td rowspan=9>Referral Request (Cancel)</td>
+                        <td rowspan=9>POST /$process-message{servicerequest-request}</td>
+                        <td rowspan=9>ServiceRequest (revoked)</td>
                         <td>MessageHeader (EventCoding) = servicerequest-request</td>
                     </tr>
                     <tr>
@@ -144,6 +147,9 @@ In addition the specific workflow parameters that are required are as follows:
                     </tr>
                     <tr>
                         <td>ServiceRequest (Category) = referral</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceRequest (Category) = a3t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>

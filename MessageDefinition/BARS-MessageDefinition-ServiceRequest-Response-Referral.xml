@@ -28,7 +28,8 @@
 		<code>
 			<!--  Use cases supported by this MessageDefinition for Application 6  -->
 			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="999to999mutualaidrequest"/>
+			<code value="a6t3"/>
+			<display value="CAD to CAD Mutual Aid Request" />
 		</code>
 		<valueCodeableConcept>
 			<coding>

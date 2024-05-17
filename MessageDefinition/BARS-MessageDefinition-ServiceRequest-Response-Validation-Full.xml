@@ -24,6 +24,20 @@
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
+	<useContext>
+		<code>
+			<!--  Use cases supported by this MessageDefinition for Application 6  -->
+			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+			<code value="a4t1"/>
+			<display value="999-CAS Validation" />
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
+				<code value="positive"/>
+			</coding>
+		</valueCodeableConcept>
+	</useContext>
 	<focus>
 		<code value="Bundle"/>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage"/>

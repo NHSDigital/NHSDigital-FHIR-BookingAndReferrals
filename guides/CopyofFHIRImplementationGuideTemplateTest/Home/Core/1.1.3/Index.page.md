@@ -74,12 +74,12 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPMessageHeader-1.1.3 , text:Message Headers}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPCancellation-1.1.3 , text:Cancellation}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPUseCaseCategories-1.1.3 , text:Use Case Categories}}</br>
-&nbsp;&nbsp;&bull; {{pagelink:core-foundation-appointment-1.1.3 , text:Foundations - Appointments}}</br>
+&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-1.1.3 , text:Foundations - Appointments}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-foundation-appointment-booking-1.1.3 , text:Booking}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-foundation-appointment-update-1.1.3 , text:Updates}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-foundation-appointment-cancel-1.1.3 , text:Cancellations}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-foundation-appointment-rebook-1.1.3 , text:Rebook}}</br>
-&nbsp;&nbsp;&bull; {{pagelink:core-document-reference-1.1.3 , text:Foundations - Pointers}}</br>
+&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-1.1.3 , text:Foundations - Pointers}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-document-reference-Sender-1.1.3 , text:Sender}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-document-reference-Receiver-1.1.3 , text:Receiver}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-document-reference-interface-1.1.3 , text:Interface}}</br>
@@ -192,7 +192,7 @@ There are 4 capabilities that are required surrounding appointments. This sectio
 * The ability to update an appointment.
 * The ability to rebook an appointment.
 
-For more detail please visit the {{pagelink:core-foundation-appointment-1.1.3, text: Appointment Foundations section}} 
+For more detail please visit the {{pagelink:core-StandardPattern-appointment-1.1.3, text: Appointment Foundations section}} 
 
 <hr>
 <br>
@@ -203,7 +203,7 @@ In version 1.1.0 of the BaRS API Specification, functionality was added to accom
 
 The FHIR DocumentReference resource allows you to reference and locate clinical documents or resources. This section will walk you through the process of using a FHIR DocumentReference to find a resource's location and retrieve it.
 
-For more detail please visit the {{pagelink:core-document-reference-1.1.3, text: DocumentReference Foundations section}} 
+For more detail please visit the {{pagelink:core-StandardPattern-document-reference-1.1.3, text: DocumentReference Foundations section}} 
 
 <hr>
 <br>

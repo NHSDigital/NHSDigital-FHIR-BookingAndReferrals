@@ -199,7 +199,7 @@ The response to this request will be the requested ServiceRequest resource which
 
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
-As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed, **should** be include. This is always defined within the relevent message definition.
+As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed, **should** be include. This is always defined within the relevant message definition.
 
 If the update-to-cancel is taking place as part of a re-referral routine, once the cancellation is complete, the new referral message can be sent. This step in the workflow would follow the same process as 'Make a referral' detailed above.
 
@@ -354,11 +354,11 @@ Receive_Request
 							{ 
 								switch(ServiceRequest.Category.coding[1].code)  //https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
 								{
-									case "MutualAidRequest":
+									case "a6t3":
 										RequestType = "Im Receiving a new Mutual Aid Request";
-									case:"CallAssistRequest":
+									case:"a6t2":
 										RequestType = "Im Receiving a new Call Assist Request";
-									case:"OutOfArea":
+									case:"a6t1":
 										RequestType = "Im Receiving a new Out of Area Request";
 								}									
 							}
@@ -402,11 +402,11 @@ Receive_Request
 							{ 
 								switch(ServiceRequest.Category.coding[1].code)  //https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
 								{
-									case "MutualAidRequest":
+									case "a6t3":
 										RequestType = "Im Receiving a new Mutual Aid Request update";
-									case:"CallAssistRequest":
+									case:"a6t2":
 										RequestType = "Im Receiving a new Call Assist Request update";
-									case:"OutOfArea":
+									case:"a6t1":
 										RequestType = "Im Receiving a new Out of Area Request update";
 								}									
 							}
@@ -446,11 +446,11 @@ Receive_Request
 									{ 
 										switch(ServiceRequest.Category.coding[1].code)  //https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
 										{
-											case "999to999MutualAidRequest":
+											case "a6t3":
 												RequestType = "Im Receiving a new Mutual Aid Request response";
-											case:"999to999CallAssistRequest":
+											case:"a6t2":
 												RequestType = "Im Receiving a new Call Assist Request response";
-											case:"999to999OutOfArea":
+											case:"a6t1":
 												RequestType = "Im Receiving a new Out of Area Request response";
 											default:
 												RequestType = "unknown"
@@ -477,11 +477,11 @@ Receive_Request
 									{ 
 										switch(ServiceRequest.Category.coding[1].code)  //https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
 										{
-											case "999to999MutualAidRequest":
+											case "a6t3":
 												RequestType = "Im Receiving a  Mutual Aid Request update response";
-											case:"999to999CallAssistRequest":
+											case:"a6t2":
 												RequestType = "Im Receiving a  Call Assist Request update response";
-											case:"999to999OutOfArea":
+											case:"a6t1":
 												RequestType = "Im Receiving a  Out of Area Request update response";
 											default:
 												RequestType = "unknown"
@@ -506,9 +506,9 @@ Receive_Request
 					{ 
 						switch(ServiceRequest.Category.coding[1].code)  //https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
 						{
-							case "999to999MutualAidRequest":
+							case "a6t3":
 								RequestType = "Im Receiving a new Mutual Aid Request rejection";
-							case:"999to999CallAssistRequest":
+							case:"a6t2":
 								RequestType = "Im Receiving a new Call Assist Request rejection";
 							default:
 								RequestType = "unknown"
