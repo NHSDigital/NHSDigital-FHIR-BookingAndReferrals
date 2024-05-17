@@ -4,9 +4,8 @@ Get /Slots has added complexity compared to previous endpoints in this section. 
 ### Rules
 * Schedule:actor:HealthcareService - Must be included.
   * For current use cases this will likely match the value in the NHSD-Target-Identifier header. This may not always be the case in future.
-* _include - There is a minimum of the following 3 _includes required for current Applications.
+* _include - There is a minimum of the following 2 _includes required for current Applications.
   * Slot:schedule
-  * Schedule:actor:Practitioner
   * Schedule:actor:HealthcareService
 * start - The start parameter must be used twice, and adds the need for handling problematic requests with its use (too wide a time frame, as an example).
   * Must use the [FHIR instant](https://www.hl7.org/fhir/datatypes.html#primitive) format which includes and offset.
