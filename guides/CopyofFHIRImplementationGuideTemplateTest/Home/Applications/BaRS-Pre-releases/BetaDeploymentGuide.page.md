@@ -2,15 +2,15 @@
 topic: betadeploymentguide
 ---
 
-# Beta deployment guide
+# Beta Deployment Guide
 
 
 > ℹ️ **Important:** This page is intended as guidance for all parties involved in BaRS Beta deployments. For guidance on stable (V1.0 and above) deployments see {{pagelink:deploy, text:deploy}}.
 
 
-BaRS Applications (the application of the standard to one or more use cases) are being developed following the agile methodology specified in the <a href="https://www.gov.uk/service-manual" target="_blank"> Government Digital Services (GDS) Service Manual</a>. The methodology specifies a <a href= https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works> Beta Phase </a> which is intended as an opportunity to test, learn and iterate the standard collaboratively, first with test, and then with real patient data. This is prior to the publication of a stable (V1.0 and above) version of the standard for widespread use.   
+BaRS Applications (the application of the standard to one or more use cases) are being developed following the agile methodology specified in the <a href="https://www.gov.uk/service-manual" target="_blank"> Government Digital Services (GDS) Service Manual</a>. The methodology specifies a <a href= "https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works" target="_blank"> Beta Phase </a> which is intended as an opportunity to test, learn and iterate the standard collaboratively, first with test, and then with real patient data. This is prior to the publication of a stable (V1.0 and above) version of the standard for widespread use.   
 
-Every BaRS Application needs to be proven in use in a Beta phase. During this Beta phase, clinical system suppliers, healthcare providers and NHS England (policy and strategy and the BaRS team) need to work together to deliver specific activities and with the agreed roles and responsibilities described in this document.  
+Every BaRS Application needs to be proven in use in a Beta Phase. During this phase, healthcare IT system suppliers, healthcare providers and NHS England (policy and strategy and the BaRS team) need to work together to deliver specific activities and with the agreed roles and responsibilities described in this document.  
 
 ## Who this page is for
 
@@ -19,7 +19,7 @@ This guide describes the key tasks, agreed roles and responsibilities and ways o
 It is applicable to the following:  
 
 - Healthcare providers  
-- Clinical system suppliers    
+- Healthcare IT system suppliers    
 - BaRS team (NHS England)  
 - NHS England Policy and Strategy team (the business area relevant to the use case) 
 
@@ -46,7 +46,7 @@ Each organisation will endeavour to maintain their development cadence. This is 
 
 ## Acceptance criteria 
 
-The Public Beta minimum acceptance criteria for each BaRS Application is determined by the Service Risk Level. This has been agreed with NHS England Clinical Safety Group and recorded in the BaRS Clinical Risk Management Plan. A summary is outlined below. You can find the Service Risk Level for each BaRS application in the <a href= https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works> Clinical Safety Case (Appendix A - BaRS Applications) </a>.
+The Public Beta minimum acceptance criteria for each BaRS Application is determined by the Service Risk Level. This has been agreed with NHS England Clinical Safety Group and recorded in the BaRS Clinical Risk Management Plan. A summary is outlined below. You can find the Service Risk Level for each BaRS application in the <a href= "https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works" target="_blank"> Clinical Safety Case (Appendix A - BaRS Applications) </a>.
  
 
 | Acceptance Criteria                                                                 | Service Risk Level Low | Service Risk Level Medium | Service Risk Level High |
@@ -66,7 +66,7 @@ Completed a minimum number of agreed referrals in line with the BaRS clinical ri
 
 The following activities will form the BaRS Application Beta phase:
 
-### Business Change
+### Business change
 
 As the aim of the BaRS is to enable digitisation of referral workflows, the provider will need to undertake business change activities to achieve the full benefits of adopting a BaRS conformant solution. This may include:
 
@@ -76,7 +76,7 @@ As the aim of the BaRS is to enable digitisation of referral workflows, the prov
 - Updating any reporting requirements
 - Creation, and updating, of information governance and data protection policies
 - Undertaking benefits analysis and realization activities e.g.:
-    -  identifying any system configuration requirements or additional developments to maximise efficiencies locally 
+    -  identifying any system configuration requirements or additional developments to maximise local efficiencies 
 
 ### Private Beta testing
 
@@ -92,11 +92,11 @@ Public Beta is a period of running the BaRS conformant solutions (sender and rec
 
 Prior to beginning the Public Beta period, end-to-end ‘smoke testing’ - testing of mission-critical processes, is undertaken on the providers’ production environments, using test patient data. Care must be taken at this stage to limit impact on the live services. The testing must be carried out in live but the service cannot technically go live (and deal with patients) until all functional tests in the Test Plan have been completed successfully.
 
-Evaluation of the Public Beta phase, led by the NHS England BaRS Team will inform any amendments to the Beta standard. Following the required updates, the standard will be uplifted to a ‘live’ (1.0) version.
+Evaluation of the Public Beta phase, led by the NHS England BaRS Team will inform any amendments to the Beta standard. Following the required updates, the standard will be uplifted to a ‘stable’ (1.0) version.
 
-### Public Beta to provider adoption of V1.0 (Stable) Standard
+### Public Beta to provider adoption of V1.0 (stable) Standard
 
-Once a stable version of a BaRS application is published (version 1.0 and above) and NHS England has agreed for progression to full rollout, system suppliers should agree a schedule for development and subsequent rollout with NHS England and individual Providers, This will be in line with national and regional policy abd may include compliance dates to align with the Information Standards Notice or appropriate procurement frameworks.
+Once a stable version of a BaRS application is published (version 1.0 and above) and NHS England has agreed for progression to full rollout, system suppliers should agree a schedule for development and subsequent rollout with NHS England and individual providers.This will be in line with national and regional policy and may include compliance dates to align with the Information Standards Notice or appropriate procurement frameworks.
 
 For Providers that have participated in the Beta phase, further change and training activities may be required alongside testing prior to implementing the uplifted 1.0 and above version of the standard. This should be agreed with system suppliers. The supplier should uplift and deploy this version within 3 months of publication.
 
@@ -130,7 +130,7 @@ The suppliers are responsible for:
 - Participating in regular conference calls to discuss any matters arising from the testing
 - Attending an end of Beta retrospective
 - Once version 1.0 of the BaRS Application is published the supplier should uplift and deploy this version within 3 months of publication
-- Reporting Live incidents to National Service Desk [link](ssd.nationalservicedesk@nhs.net) - who will involve the BaRS Programme, if required.
+- Reporting Live incidents to <a href=" https://digital.nhs.uk/services/spine/spine-mini-service-provider-for-personal-demographics-service/service-management-live-service" target="_blank">National Service Desk </a> who will involve the BaRS Programme, if required.
 
 ##### Core staff that should be involved:
 
@@ -154,7 +154,7 @@ The Providers are responsible for:
 - Reporting any issues identified during the testing in a timely fashion with the supporting information e.g. call reports and call recordings where appropriate
 - Participating in regular conference calls to discuss matters arising from the testing
 - Reviewing and updating their Information Governance transparency information
-- Completing Beta exit report [link to template]
+- Completing Beta exit report
 - Participating in Beta retrospective with supplier and BaRS team
 - Reporting Live incidents to suppliers through the usual service management agreement.
 
@@ -220,49 +220,52 @@ During the Beta phase queries and issues will be managed and resolved in the fol
 
 | Key | Description |
 |-----|-------------|
-| R   | Responsible for ensuring task reaches completion |
-| A   | Accountable for successful delivery of the task  |
+| R   | Responsible: Responsible for ensuring task reaches completion |
+| A   | Accountable: Accountable for successful delivery of the task  |
 | S   | Supporting: Provides support to responsible members |
 | C   | Consulted: Gives advice to responsible members  |
 | I   | Informed: Kept informed about the task progress and decisions |
 
 ### Project Tasks
 
-| Project Tasks                   | Clinical System Supplier | Healthcare Provider | BaRS Team | NHSE Policy & Strategy |
-|---------------------------------|--------------------------|---------------------|-----------|------------------------|
-| **Beta Coordination**            |                          |                     |           |                        |
-| Beta coordination                | R                        | R                   | S         | A                      |
-| **Software Development**         |                          |                     |           |                        |
-| Continuous development in line with the BaRS | R            | C                   | S         | A                      |
-| **Governance**                   |                          |                     |           |                        |
-| DCB 0129 compliance              | R                        | I                   | R         | A                      |
-| Clinical governance including DCB 0160 | C                 | R                   | I         | A                      |
-| Information governance           | S                        | R                   | S         | A                      |
-| Beta acceptance criteria met     | C                        | R                   | R         | A                      |
-| **Beta Environments**            |                          |                     |           |                        |
-| Provide Private Beta (UAT) environment | S                  | R                   | S         | A                      |
-| Provide Public Beta environment (Live) | S                 | R                   | S         | A                      |
-| Install and update software      | A                        | R                   | S         | I                      |
-| Configuration                    | R                        | C                   | S         | A                      |
-| **Beta Testing**                 |                          |                     |           |                        |
-| Private Beta test scripts        | S                        | R                   | S         | A                      |
-| Private Beta testing             | R                        | R                   | S         | A                      |
-| Public Beta smoke testing        | R                        | R                   | S         | A                      |
-| **Issue Management**             |                          |                     |           |                        |
-| Issue management                 | R                        | R                   | R         | I                      |
-| Issue resolution                 | R                        | R                   | R         | I                      |
-| **Business Change**              |                          |                     |           |                        |
-| Business change activities       | S                        | R                   | S         | A                      |
-| **Lessons Learned**              |                          |                     |           |                        |
-| Lessons learned process          | S                        | S                   | R         | A                      |
-| BaRS (Standard) development      |                          |                     |           |                        |
-| Continuous development of the Standard | S                 | S                   | R         | A                      |
-| **Public Beta Service Management** |                        |                     |           |                        |
-| Incident reporting               | I                        | R                   | S         | A                      |
-| Incident management              | S                        | S                   | S         | A/R                    |
-| Incident resolution              | R                        | R                   | R         | A                      |
-| **NHSE Policy & Strategy**       |                          |                     |           |                        |
-| Service design and related policy changes | N/A            | C                   | I         | R/A                    |
-| Implementation plan beyond Beta  | C                        | C                   | I         | R/A                    |
-| Benefits management beyond Beta  | N/A                      | C                   | I         | R/A                    |
-| Policy support for Healthcare Providers | N/A               | C                   | I         | R/A                    |
+| Project Tasks                                           | Clinical System Supplier | Healthcare Provider | BaRS Team | NHSE Policy & Strategy |
+|---------------------------------------------------------|--------------------------|---------------------|-----------|------------------------|
+| **Beta coordination**                                   |                          |                     |           |                        |
+| Beta coordination                                       | R                        | R                   | S         | A                      |
+| **Software development**                                |                          |                     |           |                        |
+| Continuous development in line with the BaRS            | R                        | C                   | S         | A                      |
+| **Solutions assurance**                                 |                          |                     |           |                        |
+| Approval of evidence | R            | C                   | R         | A                      |
+| Issuance of Technical Conformance Certificate | I | C | R | A |
+| **Governance**                                          |                          |                     |           |                        |
+| DCB 0129 compliance                                     | R                        | I                   | R         | A                      |
+| Clinical governance including DCB 0160                  | C                        | R                   | I         | A                      |
+| Information governance                                  | S                        | R                   | S         | A                      |
+| Beta acceptance criteria met                            | C                        | R                   | R         | A                      |
+| **Beta environments**                                   |                          |                     |           |                        |
+| Provide private Beta (UAT) environment                  | S                        | R                   | S         | A                      |
+| Provide Public Beta environment (Live)                  | S                        | R                   | S         | A                      |
+| Install and update software                             | A                        | R                   | S         | I                      |
+| Configuration                                           | R                        | C                   | S         | A                      |
+| **Beta testing**                                        |                          |                     |           |                        |
+| Private Beta test scripts                               | S                        | R                   | S         | A                      |
+| Private Beta testing                                    | R                        | R                   | S         | A                      |
+| Public Beta smoke testing                               | R                        | R                   | S         | A                      |
+| **Issue management**                                    |                          |                     |           |                        |
+| Issue management                                        | R                        | R                   | R         | I                      |
+| Issue resolution                                        | R                        | R                   | R         | I                      |
+| **Business change**                                     |                          |                     |           |                        |
+| Business change activities                              | S                        | R                   | S         | A                      |
+| **Lessons learned**                                     |                          |                     |           |                        |
+| Lessons learned process                                 | S                        | S                   | R         | A                      |
+| **BaRS (Standard) development**                         |                          |                     |           |                        |
+| Continuous development of the Standard                  | S                        | S                   | R         | A                      |
+| **Public Beta service management**                      |                          |                     |           |                        |
+| Incident reporting                                      | I                        | R                   | S         | A                      |
+| Incident management                                     | S                        | S                   | S         | A/R                    |
+| Incident resolution                                     | R                        | R                   | R         | A                      |
+| **NHSE Policy & Strategy**                              |                          |                     |           |                        |
+| Service design and related policy changes               | N/A                      | C                   | I         | R/A                    |
+| Implementation plan beyond Beta                         | C                        | C                   | I         | R/A                    |
+| Benefits management beyond Beta                         | N/A                      | C                   | I         | R/A                    |
+| Policy support for Healthcare Providers                 | N/A                      | C                   | I         | R/A                    |
