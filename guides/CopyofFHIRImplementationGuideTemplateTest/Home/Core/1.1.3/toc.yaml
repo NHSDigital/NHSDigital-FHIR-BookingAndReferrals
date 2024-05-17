@@ -17,9 +17,9 @@
 - name: 
   filename: Standard-Patterns-for-BaRS-Operations
 - name: 
-  filename: DocumentReference-Foundations
+  filename: DocumentReference-StandardPattern
 - name: 
-  filename: Appointment-Foundations
+  filename: Appointment-StandardPattern
 - name: Core functionality requirements
   filename: Core-functionality-requirements.page.md
 - name: BaRS FHIR usage
