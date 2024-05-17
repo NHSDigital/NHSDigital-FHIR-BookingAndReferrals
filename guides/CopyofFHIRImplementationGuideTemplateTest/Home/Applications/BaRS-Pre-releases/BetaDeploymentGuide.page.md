@@ -2,10 +2,10 @@
 topic: betadeploymentguide
 ---
 
-# Beta Deployment Guide
+# Beta deployment guide
 
 
-> ℹ️ **Important:** This page is intended as guidance for all parties involved in BaRS Beta deployments. For guidance on stable (V1.0 and above) deployments see [deploy](deploy).
+> ℹ️ **Important:** This page is intended as guidance for all parties involved in BaRS Beta deployments. For guidance on stable (V1.0 and above) deployments see {{pagelink:deploy, text:deploy}}.
 
 
 BaRS Applications (the application of the standard to one or more use cases) are being developed following the agile methodology specified in the <a href="https://www.gov.uk/service-manual" target="_blank"> Government Digital Services (GDS) Service Manual</a>. The methodology specifies a <a href= https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works> Beta Phase </a> which is intended as an opportunity to test, learn and iterate the standard collaboratively, first with test, and then with real patient data. This is prior to the publication of a stable (V1.0 and above) version of the standard for widespread use.   
@@ -213,3 +213,56 @@ During the Beta phase queries and issues will be managed and resolved in the fol
 - Daily calls during the initial period of Public Beta
 - Weekly calls during later weeks of Public Beta
 - End of Public Beta supplier and provider retrospective
+
+## RASCI Matrix  
+
+### Key
+
+| Key | Description |
+|-----|-------------|
+| R   | Responsible for ensuring task reaches completion |
+| A   | Accountable for successful delivery of the task  |
+| S   | Supporting: Provides support to responsible members |
+| C   | Consulted: Gives advice to responsible members  |
+| I   | Informed: Kept informed about the task progress and decisions |
+
+### Project Tasks
+
+| Project Tasks                   | Clinical System Supplier | Healthcare Provider | BaRS Team | NHSE Policy & Strategy |
+|---------------------------------|--------------------------|---------------------|-----------|------------------------|
+| **Beta Coordination**            |                          |                     |           |                        |
+| Beta coordination                | R                        | R                   | S         | A                      |
+| **Software Development**         |                          |                     |           |                        |
+| Continuous development in line with the BaRS | R            | C                   | S         | A                      |
+| **Governance**                   |                          |                     |           |                        |
+| DCB 0129 compliance              | R                        | I                   | R         | A                      |
+| Clinical governance including DCB 0160 | C                 | R                   | I         | A                      |
+| Information governance           | S                        | R                   | S         | A                      |
+| Beta acceptance criteria met     | C                        | R                   | R         | A                      |
+| **Beta Environments**            |                          |                     |           |                        |
+| Provide Private Beta (UAT) environment | S                  | R                   | S         | A                      |
+| Provide Public Beta environment (Live) | S                 | R                   | S         | A                      |
+| Install and update software      | A                        | R                   | S         | I                      |
+| Configuration                    | R                        | C                   | S         | A                      |
+| **Beta Testing**                 |                          |                     |           |                        |
+| Private Beta test scripts        | S                        | R                   | S         | A                      |
+| Private Beta testing             | R                        | R                   | S         | A                      |
+| Public Beta smoke testing        | R                        | R                   | S         | A                      |
+| **Issue Management**             |                          |                     |           |                        |
+| Issue management                 | R                        | R                   | R         | I                      |
+| Issue resolution                 | R                        | R                   | R         | I                      |
+| **Business Change**              |                          |                     |           |                        |
+| Business change activities       | S                        | R                   | S         | A                      |
+| **Lessons Learned**              |                          |                     |           |                        |
+| Lessons learned process          | S                        | S                   | R         | A                      |
+| BaRS (Standard) development      |                          |                     |           |                        |
+| Continuous development of the Standard | S                 | S                   | R         | A                      |
+| **Public Beta Service Management** |                        |                     |           |                        |
+| Incident reporting               | I                        | R                   | S         | A                      |
+| Incident management              | S                        | S                   | S         | A/R                    |
+| Incident resolution              | R                        | R                   | R         | A                      |
+| **NHSE Policy & Strategy**       |                          |                     |           |                        |
+| Service design and related policy changes | N/A            | C                   | I         | R/A                    |
+| Implementation plan beyond Beta  | C                        | C                   | I         | R/A                    |
+| Benefits management beyond Beta  | N/A                      | C                   | I         | R/A                    |
+| Policy support for Healthcare Providers | N/A               | C                   | I         | R/A                    |
