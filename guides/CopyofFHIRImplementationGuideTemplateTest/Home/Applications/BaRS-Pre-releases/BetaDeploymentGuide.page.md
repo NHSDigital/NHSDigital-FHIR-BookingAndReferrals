@@ -78,7 +78,7 @@ As the aim of the BaRS is to enable digitisation of referral workflows, the prov
 - Undertaking benefits analysis and realization activities e.g.:
     -  identifying any system configuration requirements or additional developments to maximise local efficiencies 
 
-### Private beta Testing
+### Private Beta Testing
 
 The provider works alongside their supplier throughout the beta phases with support from NHS England, including the BaRS team. See roles and responsibilities for each group [link] below.
 
@@ -230,37 +230,37 @@ During the beta phase queries and issues will be managed and resolved in the fol
 
 | Project Tasks                                           | Clinical System Supplier | Healthcare Provider | BaRS Team | NHSE Policy & Strategy |
 |---------------------------------------------------------|--------------------------|---------------------|-----------|------------------------|
-| **Beta coordination**                                   |                          |                     |           |                        |
+| **Beta Coordination**                                   |                          |                     |           |                        |
 | Beta coordination                                       | R                        | R                   | S         | A                      |
-| **Software development**                                |                          |                     |           |                        |
+| **Software Development**                                |                          |                     |           |                        |
 | Continuous development in line with the BaRS            | R                        | C                   | S         | A                      |
-| **Solutions assurance**                                 |                          |                     |           |                        |
-| Approval of evidence | R            | C                   | R         | A                      |
-| Issuance of Technical Conformance Certificate | I | C | R | A |
+| **Solutions Assurance**                                 |                          |                     |           |                        |
+| Approval of evidence | R            | I                  | R         | A                      |
+| Issuance of Technical Conformance Certificate | C | I | R | A |
 | **Governance**                                          |                          |                     |           |                        |
 | DCB 0129 compliance                                     | R                        | I                   | R         | A                      |
 | Clinical governance including DCB 0160                  | C                        | R                   | I         | A                      |
 | Information governance                                  | S                        | R                   | S         | A                      |
 | Beta acceptance criteria met                            | C                        | R                   | R         | A                      |
-| **Beta environments**                                   |                          |                     |           |                        |
+| **Beta Environments**                                   |                          |                     |           |                        |
 | Provide private beta (UAT) environment                  | S                        | R                   | S         | A                      |
 | Provide public beta environment (Live)                  | S                        | R                   | S         | A                      |
 | Install and update software                             | A                        | R                   | S         | I                      |
 | Configuration                                           | R                        | C                   | S         | A                      |
-| **Beta testing**                                        |                          |                     |           |                        |
+| **Beta Testing**                                        |                          |                     |           |                        |
 | Private beta test scripts                               | S                        | R                   | S         | A                      |
 | Private beta testing                                    | R                        | R                   | S         | A                      |
 | Public beta smoke testing                               | R                        | R                   | S         | A                      |
-| **Issue management**                                    |                          |                     |           |                        |
+| **Issue Management**                                    |                          |                     |           |                        |
 | Issue management                                        | R                        | R                   | R         | I                      |
 | Issue resolution                                        | R                        | R                   | R         | I                      |
-| **Business change**                                     |                          |                     |           |                        |
+| **Business Change**                                     |                          |                     |           |                        |
 | Business change activities                              | S                        | R                   | S         | A                      |
-| **Lessons learned**                                     |                          |                     |           |                        |
+| **Lessons Learned**                                     |                          |                     |           |                        |
 | Lessons learned process                                 | S                        | S                   | R         | A                      |
-| **BaRS (Standard) development**                         |                          |                     |           |                        |
+| **BaRS (Standard) Development**                         |                          |                     |           |                        |
 | Continuous development of the Standard                  | S                        | S                   | R         | A                      |
-| **Public beta service management**                      |                          |                     |           |                        |
+| **Public Beta Service Management**                      |                          |                     |           |                        |
 | Incident reporting                                      | I                        | R                   | S         | A                      |
 | Incident management                                     | S                        | S                   | S         | A/R                    |
 | Incident resolution                                     | R                        | R                   | R         | A                      |
