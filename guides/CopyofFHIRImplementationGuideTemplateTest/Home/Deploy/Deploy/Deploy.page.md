@@ -1,5 +1,7 @@
 ## {{page-title}}
 
+> ℹ️ **Important:** This page is intended as guidance for all parties involved in deployments of BaRS stable releases (V1.0 and above). For guidance for Beta deployments see the {{pagelink:Home/Applications/BaRS-Pre-releases/BetaDeploymentGuide.page.md text: Beta Deployment Guide}}.
+
 Implementing a solution requires good knowledge of the environment being deployed to, allowing a plan to be established to check all conditions are met for success. This section covers deployment, along with the necessary checks to prove functionality, to fully test end-to-end capable {{pagelink:Home/Build/Testing-and-Environments, text:environments}}. 
 
 When deploying a solution there are many threads to pull together. The developed solution is one part of this but the local environment it is to be deployed into must also be prepared, as well as  confirming workflow and functionality behave as expected. The fundamental steps will include completing {{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text:BaRS Onboarding}}, upgrading solutions, configuration and testing.
