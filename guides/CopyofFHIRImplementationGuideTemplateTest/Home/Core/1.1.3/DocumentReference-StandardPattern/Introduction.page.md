@@ -1,5 +1,5 @@
 ---
-topic: core-document-reference-Introduction-1.1.3
+topic: core-StandardPattern-document-reference-Introduction-1.1.3
 ---
 
 # DocumentReference

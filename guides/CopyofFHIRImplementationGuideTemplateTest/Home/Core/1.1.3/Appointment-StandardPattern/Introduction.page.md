@@ -1,5 +1,5 @@
 ---
-topic: core-foundation-appointment-Introduction-1.1.3
+topic: core-StandardPattern-appointment-Introduction-1.1.3
 ---
 
 # Appointments

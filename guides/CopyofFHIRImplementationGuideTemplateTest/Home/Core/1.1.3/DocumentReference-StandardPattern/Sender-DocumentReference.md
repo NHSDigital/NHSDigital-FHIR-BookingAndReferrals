@@ -1,5 +1,5 @@
 ---
-topic: core-document-reference-Sender-1.1.3
+topic: core-StandardPattern-document-reference-Sender-1.1.3
 ---
 
 # {{page-title}}
