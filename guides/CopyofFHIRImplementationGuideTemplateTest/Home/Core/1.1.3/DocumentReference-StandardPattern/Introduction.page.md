@@ -4,6 +4,10 @@ topic: core-document-reference-Introduction-1.1.3
 
 # DocumentReference
 
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Release information</b>
+<p>This Section of the Implementation Guide is currently a preview, in an Alpha state and subject to change.</p>
+</div>
+
 ## Introduction
 
 In version 1.1.0 of the BaRS API Specification, functionality was added to accommodate the use of pointers (DocumentReference resources), to locate existing bookings and referrals.

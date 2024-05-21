@@ -4,6 +4,10 @@ topic: core-foundation-appointment-Introduction-1.1.3
 
 # Appointments
 
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Release information</b>
+<p>This Section of the Implementation Guide is currently a preview, in an Alpha state and subject to change.</p>
+</div>
+
 ## Introduction 
 
 There are 4 capabilities that are required surrounding appointments. This section will provide information on how to meet them.
