@@ -1,10 +1,10 @@
 ---
-topic: core-document-reference-Introduction-1.1.3
+topic: core-StandardPattern-document-reference-Introduction-1.1.3
 ---
 
 # DocumentReference
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Release information</b>
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b>Important:  Release information</b>
 <p>This Section of the Implementation Guide is currently a preview, in an Alpha state and subject to change.</p>
 </div>
 
