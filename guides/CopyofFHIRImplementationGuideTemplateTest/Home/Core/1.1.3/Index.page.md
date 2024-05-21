@@ -183,7 +183,7 @@ For more detail please visit the {{pagelink:Core-StandardPattern-1.1.3, text: St
 <hr>
 <br>
 
-# Foundations - Appointment
+# Standrad Pattern - Appointment
 
 There are 4 capabilities that are required surrounding appointments. This section will provide information on how to meet them.
 
@@ -192,18 +192,18 @@ There are 4 capabilities that are required surrounding appointments. This sectio
 * The ability to update an appointment.
 * The ability to rebook an appointment.
 
-For more detail please visit the {{pagelink:core-StandardPattern-appointment-1.1.3, text: Appointment Foundations section}} 
+For more detail please visit the {{pagelink:core-StandardPattern-appointment-1.1.3, text: Appointment Standrad Pattern section}} 
 
 <hr>
 <br>
 
-# Foundations - DocumentReference
+# Standrad Pattern - DocumentReference
 
 In version 1.1.0 of the BaRS API Specification, functionality was added to accommodate the use of pointers (DocumentReference resources), to locate existing bookings and referrals.
 
 The FHIR DocumentReference resource allows you to reference and locate clinical documents or resources. This section will walk you through the process of using a FHIR DocumentReference to find a resource's location and retrieve it.
 
-For more detail please visit the {{pagelink:core-StandardPattern-document-reference-1.1.3, text: DocumentReference Foundations section}} 
+For more detail please visit the {{pagelink:core-StandardPattern-document-reference-1.1.3, text: DocumentReference Standrad Pattern section}} 
 
 <hr>
 <br>
