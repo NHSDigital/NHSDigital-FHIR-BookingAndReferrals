@@ -74,12 +74,12 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPMessageHeader-1.1.3 , text:Message Headers}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPCancellation-1.1.3 , text:Cancellation}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPUseCaseCategories-1.1.3 , text:Use Case Categories}}</br>
-&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-1.1.3 , text:StandardPattern - Appointments}}</br>
+&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-1.1.3 , text:Standard Pattern - Appointments}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-booking-1.1.3 , text:Booking}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-update-1.1.3 , text:Updates}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-cancel-1.1.3 , text:Cancellations}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-rebook-1.1.3 , text:Rebook}}</br>
-&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-1.1.3 , text:Standard Patterns - DocumentReference}}</br>
+&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-1.1.3 , text:Standard Pattern - DocumentReference}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-Sender-1.1.3 , text:Sender}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-Receiver-1.1.3 , text:Receiver}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-interface-1.1.3 , text:Interface}}</br>
