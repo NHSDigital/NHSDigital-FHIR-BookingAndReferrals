@@ -10,6 +10,7 @@ This page is intended as guidance for all parties involved in BaRS beta deployme
 </p>
 </div>
 
+
 BaRS Applications (the application of the standard to one or more use cases) are being developed following the agile methodology specified in the <a href="https://www.gov.uk/service-manual" target="_blank"> Government Digital Services (GDS) Service Manual</a>. The methodology specifies a <a href= "https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works" target="_blank"> beta phase </a> which is intended as an opportunity to test, learn and iterate the standard collaboratively, first with test, and then with real patient data. This is prior to the publication of a stable (V1.0 and above) version of the standard for widespread use.   
 
 Every BaRS Application needs to be proven in use in a beta phase. During this phase, healthcare IT system suppliers, healthcare providers and NHS England (policy and strategy and the BaRS team) need to work together to deliver specific activities and with the agreed roles and responsibilities described in this document.  
