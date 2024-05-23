@@ -2,7 +2,7 @@
 
 This page defines the foreseen failure scenarios within the BaRS standard and its implementations. The scenarios are broken down by endpoint and describe which HTTP Status Code, BaRS HTTP Error Code and FHIR issue.code to use for each eventuality. In any case, the diagnostics text should reflect the scenarios given and not necessarily be used verbatim.
 
-The rationale, described in the {{pagelink:Home/Design/Core/Error-handling.page.md}} section is that as much information on the nature of the failure as possible is provided in a standard way.
+The rationale, described in the {{pagelink:core-ErrorHandling-1.1.3}} section is that as much information on the nature of the failure as possible is provided in a standard way.
 
 Each scenario has a Source to state whether it is the Proxy or the Receiver which is generating the error. In scenarios where a SEND prefix is provided, the sender is not adhering to the API specification in one way or another.
 
