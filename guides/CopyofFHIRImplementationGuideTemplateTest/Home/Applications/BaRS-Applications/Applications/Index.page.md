@@ -69,13 +69,13 @@ These guides are designed to be used in conjunction with the documentation for {
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 5 v1.0.0-beta3</td>
+		<td>Application 5 v1.0.0-beta4</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
 		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.4.0" target="_blank">v1.1.0</a></td>
 		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">1.1.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 6 v1.0.0-beta</td>
+		<td>Application 6 v1.0.0-beta1</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
     </tr>
 	<tr>
