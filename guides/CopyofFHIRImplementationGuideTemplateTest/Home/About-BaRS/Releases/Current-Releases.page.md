@@ -1,4 +1,4 @@
-## Current Release (1.6.0)
+## Current Release 1.6.0
 
 Product Link           | Version | Handle  | Phase    | State           | Release Date | Stability  | Change Log Link
 -----------------------|---------|---------|----------|-----------------|--------------|------------|-----------------

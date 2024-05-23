@@ -5,7 +5,7 @@ topic: betadeploymentguide
 # Beta Deployment Guide
 
 
-> ℹ️ **Important:** This page is intended as guidance for all parties involved in BaRS beta deployments. For guidance on stable (V1.0 and above) deployments see {{pagelink:deploy, text:deploy}}.
+> **Important:** This page is intended as guidance for all parties involved in BaRS beta deployments. For guidance on stable (V1.0 and above) deployments see {{pagelink:deploy}}.
 
 
 BaRS Applications (the application of the standard to one or more use cases) are being developed following the agile methodology specified in the <a href="https://www.gov.uk/service-manual" target="_blank"> Government Digital Services (GDS) Service Manual</a>. The methodology specifies a <a href= "https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works" target="_blank"> beta phase </a> which is intended as an opportunity to test, learn and iterate the standard collaboratively, first with test, and then with real patient data. This is prior to the publication of a stable (V1.0 and above) version of the standard for widespread use.   
