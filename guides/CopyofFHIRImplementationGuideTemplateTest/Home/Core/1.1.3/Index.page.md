@@ -102,7 +102,7 @@ This section covers the core elements of workflow outlined within the Booking an
     - refer without booking
     - book without referring
 
-For more detail please visit the {{pagelink:core-EndToEndWorkflow-1.1.3, text: End to End Workflow section}} 
+For more detail please visit the {{pagelink:core-EndToEndWorkflow-1.1.3, text: End to End Workflow}} section.
 
 <hr>
 <br>
@@ -119,7 +119,7 @@ This list of functionality will expand in later versions of BaRS.
 
 There are requirements in each of the central areas of functionality which every BaRS Application must adopt:
 
-For more detail please visit the {{pagelink:core-FunctionalityRequirements-1.1.3, text: Core Functionality Requirements section}} 
+For more detail please visit the {{pagelink:core-FunctionalityRequirements-1.1.3, text: Core Functionality Requirements}} section.
 
 <hr>
 <br>
@@ -128,7 +128,7 @@ For more detail please visit the {{pagelink:core-FunctionalityRequirements-1.1.3
 
 Content Negotiation within BaRS leverages multiple variables within the CapabilityStatement and MessageDefinition to ensure that a Sender and a Receiver are Compatible. Though some of this is possible due to the Versioning Negotiation, Content Negotiation further builds on that concept with the capabilities published by the server and the identification of message definitions and use cases therein to ensure a workflow can be completed. 
 
-For more detail please visit the {{pagelink:core-content-negotiation, text: Content Negotiation section}} 
+For more detail please visit the {{pagelink:core-content-negotiation, text: Content Negotiation}} section.
 
 <hr>
 <br>
@@ -136,14 +136,14 @@ For more detail please visit the {{pagelink:core-content-negotiation, text: Cont
 # BaRS FHIR usage
 BaRS uses [FHIR](https://digital.nhs.uk/services/fhir-uk-core) to achieve interoperability between healthcare IT systems. This section explains how BaRS makes use of some key FHIR concepts which need to be understood by developers implementing the standard.  
 
-For more detail please visit the {{pagelink:core-FHIRUsage-1.1.3, text: BaRS FHIR usage section}} 
+For more detail please visit the {{pagelink:core-FHIRUsage-1.1.3, text: BaRS FHIR usage}} section.
 
 <hr>
 <br>
 
 # Security and Authorisation
 
-For more detail on Security and Authorisation, please visit the {{pagelink:core-Security-1.1.3, text: Security and Authorisation section}} 
+For more detail on Security and Authorisation, please visit the {{pagelink:core-Security-1.1.3, text: Security and Authorisation}} section.
 
 <hr>
 <br>
@@ -151,7 +151,7 @@ For more detail on Security and Authorisation, please visit the {{pagelink:core-
 # Error Handling
 There are multiple points where an error may occur to prevent booking and referral operations from completing successfully. This section provides error handling guidance for BaRS and its associated API. For More Detail on error handling, there is specific information on failure scenarios available in the {{pagelink:core-failure_scenarios-1.1.3}} section in addition to information included on this page.
 
-For more detail please visit the {{pagelink:core-ErrorHandling-1.1.3, text: Error Handling section}} 
+For more detail please visit the {{pagelink:core-ErrorHandling-1.1.3, text: Error Handling}} section.
 
 <hr>
 <br>
@@ -159,7 +159,7 @@ For more detail please visit the {{pagelink:core-ErrorHandling-1.1.3, text: Erro
 # Transactional Integrity
 Transactional integrity is employed to ensure data integrity is maintained between two parties. It helps ensure that the success or failure of a message is known and can be confirmed. 
 
-For more detail please visit the {{pagelink:Core-TransactionalIntegrity-1.1.3, text:Transactional Integrity section}} 
+For more detail please visit the {{pagelink:Core-TransactionalIntegrity-1.1.3, text:Transactional Integrity}} section.
 
 <hr>
 <br>
@@ -168,7 +168,7 @@ For more detail please visit the {{pagelink:Core-TransactionalIntegrity-1.1.3, t
 
 The non functional requirements apply to all APIs designed to receive requests from BaRS. This includes sender systems receiving asynchronous responses and feedback, as well as receiving systems. All items detailed will be adhered to.
 
-For more detail please visit the {{pagelink:core-NFR-1.1.3, text: Non Functional Requirements section}} 
+For more detail please visit the {{pagelink:core-NFR-1.1.3, text: Non Functional Requirements}} section.
 
 <hr>
 <br>
@@ -178,7 +178,7 @@ Most implementations of the BaRS that are applying the standard to support a par
 
 In order to establish a guarantee of compatibility between different solutions compliant with the standard, **all** implementations **must** support all the underlying foundational operations and patterns.
 
-For more detail please visit the {{pagelink:Core-StandardPattern-1.1.3, text: Standard Patterns for BaRS Operations section}} 
+For more detail please visit the {{pagelink:Core-StandardPattern-1.1.3, text: Standard Pattern - Composite Messages}} section.
 
 <hr>
 <br>
@@ -192,7 +192,7 @@ There are 4 capabilities that are required surrounding appointments. This sectio
 * The ability to update an appointment.
 * The ability to rebook an appointment.
 
-For more detail please visit the {{pagelink:core-StandardPattern-appointment-1.1.3, text: Appointment Standard Pattern section}} 
+For more detail please visit the {{pagelink:core-StandardPattern-appointment-1.1.3, text: Appointment Standard Pattern}} section.
 
 <hr>
 <br>
@@ -203,7 +203,7 @@ In version 1.1.0 of the BaRS API Specification, functionality was added to accom
 
 The FHIR DocumentReference resource allows you to reference and locate clinical documents or resources. This section will walk you through the process of using a FHIR DocumentReference to find a resource's location and retrieve it.
 
-For more detail please visit the {{pagelink:core-StandardPattern-document-reference-1.1.3, text: DocumentReference Standard Pattern section}} 
+For more detail please visit the {{pagelink:core-StandardPattern-document-reference-1.1.3, text: DocumentReference Standard Pattern}} section.
 
 <hr>
 <br>
