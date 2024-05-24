@@ -38,7 +38,7 @@ A particular workflow may leverage an API capability that is not always implemen
 				}
 ```
 
-Another capability described within the CapabilityStatement is the definition of what MessageDefinitions are supported by the receiver, prior to a GET /MessageDefinition request which will define the message definitions themselves. This will be an array under messaging.supportedMessage. This also defines if they are a sender of the defined message type of a receiver. 
+Another capability described within the CapabilityStatement is the definition of what MessageDefinitions are supported by the Receiver, prior to a GET /MessageDefinition request which will define the message definitions themselves. This will be an array under messaging.supportedMessage. This also defines if they are a Sender of the defined message type or a Receiver. 
 
 ```json
 	"supportedMessage": [
@@ -55,12 +55,11 @@ Another capability described within the CapabilityStatement is the definition of
 
 ### The receivers responsibility
 
-The receiver at this level only needs to evaluate the Accept Header to ensure there is no major version discrepancy. A 406 response with the appropriate OprationOutcome should be given if this is the case. 
+The receiver at this level only needs to evaluate the Accept Header to ensure there is no major version discrepancy. A 406 HTTP response with the appropriate OprationOutcome should be given if this is the case. 
 
 ## Identifying MessageDefinitions
 
-A receivers MessageDefinitions will contain several identifiers that will allow a Sender to ascertain whether their use cases workflow can be completed beyond what the CapabilityStatement has already confirmed. The Message Definition will also contain a version for version negotiation. 
-Along with the purpose of the MessageDefinitions purpose of defining the construct of the message, Content negotiation can be completed. Example of identifiers are as follows:
+A Receiver's MessageDefinitions will contain several identifiers that will allow a Sender to ascertain whether their use-case workflow can be completed, beyond what the CapabilityStatement has already confirmed, supporting Content negotiation. The Message Definition will also contain a version number for version negotiation, along with the fundamental intent of the MessageDefinitions, defining the construct of the message (payload) a Sender must build. Example of identifiers are as follows:
 
 * Name or URL in MessageDefinition.url / MessageDefinition.name : https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request
 * Use case in  MessageDefinition.useContext.code[]: https://fhir.nhs.uk/CodeSystem/usecases-categories-bars.
@@ -72,13 +71,13 @@ The Name or URL define the type of message being sent. The Service id is confirm
 ### useContext
 
 #### use case
-The Use-Case-Category is a codeset that defines the use case for the message, this is defined in the Application the use case is within. A Sender using a particular use case will look for its corresponding code for that use case in this identifier. The Senders subsequent message request will also have this code. This code can also be included in the context query parameter for GET /MessageDefinition to assist in filtering, though the CapabilityStatement will confirm if this is the case or not. It should be evaluated in either eventuality. Display names for these codes should never be surfaced to an end user, these are metadata.
+The Use-Case-Category is a codeSystem that defines the use case for the message, this is defined under the Application the use case is within. A Sender, wanting to build a message for a particular use case, will look for its corresponding code, from the identifier codeSystem, and include it in the subsequent message request they build. This code can also be included in the context query parameter for GET /MessageDefinition, to assist in filtering. Display names for these codes should never be surfaced to an end user, these are metadata, for background processing.
 
 #### Service
 
-The Service describes if the MessageDefinition is applicable for this service. This is something that should be implied by the query parameter for GET /MessageDefinition, which acts as a filter. This capability is already described here <link this>.
+The Service describes if the MessageDefinition is applicable for this service. This is something that should be implied by the query parameter for GET /MessageDefinition, which acts as a filter. This capability is already described <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/MessageDefinition" target="_blank">here</a>.
 
 ### Version
 The same SemVer rules are applied to the MessageDefinition versions. It could be the case that multiple MessageDefinitions are returned and in this scenario a Sender should select the closest version to their own from a Minor Revision and Patch perspective. If a Major version difference is detected then the Sender cannot continue unless another option is available in the response. 
 
-The receiver at this level only needs to evaluate the Accept Header, again, here to ensure there is no major version discrepancy, and also the service Id in the use context to ensure the correct MessageDefinitions are returned. This may already be taken care of in the logic handling the NHSD-Target-Identifier, however as they are contextually different fields, it is emphasized in this section of the guide. A 404 should be given, with an appropriate OperationOutcome if the context is incorrect.
+The receiver at this level only needs to evaluate the Accept Header, again, here to ensure there is no major version discrepancy, and also the service Id in the use context to ensure the correct MessageDefinitions are returned. This may already be taken care of in the logic handling the NHSD-Target-Identifier, however as they are contextually different fields, it is emphasised in this section of the guide. A 404 HTTP response should be given, with an appropriate OperationOutcome, if the context is incorrect.
