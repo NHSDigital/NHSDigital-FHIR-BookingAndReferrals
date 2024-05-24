@@ -2,7 +2,7 @@
 topic: core-content-negotiation-Sender-Metadata
 ---
 # {{page-title}}
-Upon Receiving a CapabilityStatement in response to GET /metadata from the receiver, the sender needs to confirm the Receiver is capable of completing the desired workflow. This means it must contain all the required functions in the mode of server, at a compatible version, supporting the MessageDefinitions defined by the applications. 
+Upon Receiving a CapabilityStatement in response to GET /metadata from the receiver, the Sender needs to confirm the Receiver is capable of completing the desired workflow. This means it must contain all the required functions in the mode of server, at a compatible version, supporting the MessageDefinitions defined by the applications. 
 
 The below pseudo code gives an example of how to accomplish this.
 
