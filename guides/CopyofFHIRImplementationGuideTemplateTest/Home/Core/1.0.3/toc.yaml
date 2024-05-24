@@ -15,7 +15,7 @@
 - name: 
   filename: Non-Functional-Requirements
 - name: 
-  filename: Standard-Patterns-for-BaRS-Operations
+  filename: Standard-Pattern-Composite-Messages
 - name: Core functionality requirements
   filename: Core-functionality-requirements.page.md
 - name: BaRS FHIR usage

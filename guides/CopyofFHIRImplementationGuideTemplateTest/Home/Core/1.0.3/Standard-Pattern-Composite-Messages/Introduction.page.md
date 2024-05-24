@@ -2,7 +2,7 @@
 topic: Core-StandardPattern-Introduction-1.0.3
 ---
 
-# Standard Patterns for BaRS Operations
+# Standard Pattern - Composite Messages
 
 Most implementations of the BaRS that are applying the standard to support a particular use case or operational workflow will follow the same basic set of foundational operations with little deviation. 
 
