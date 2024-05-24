@@ -21,6 +21,6 @@ The response to the GET /MessageDefinition is evaluated by the sender. The norma
 
 ## $process-message
 
-The sending system sends a Service/Booking request and the receiver checks the use case category to ensure that service can accept it as per the MessageDefinition associated with the service. The normal Version header checks occur.  
+The sending system sends a ServiceRequest/Booking request and the Receiver checks the use case category code to ensure that service can accept it as per the MessageDefinition associated with the service. The normal Version header checks occur.  
 
 <a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMapReferralRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/SequenceDiagrams/ContentNegotiation/ContentNegotiation-process-message.1.0.0.svg" width="1200"></img></a>
