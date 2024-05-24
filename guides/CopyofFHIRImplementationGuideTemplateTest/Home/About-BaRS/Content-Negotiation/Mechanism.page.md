@@ -38,7 +38,7 @@ A particular workflow may leverage an API capability that is not always implemen
 				}
 ```
 
-Another capability described within the CapabilityStatement is the definition of what MessageDefinitions are supported by the receiver, prior to a GET /MessageDefinition request which will define the message definitions themselves. This will be an array under messaging.supportedMessage. This also defines if they are a sender of the defined message type or a receiver. 
+Another capability described within the CapabilityStatement is the definition of what MessageDefinitions are supported by the Receiver, prior to a GET /MessageDefinition request which will define the message definitions themselves. This will be an array under messaging.supportedMessage. This also defines if they are a Sender of the defined message type or a Receiver. 
 
 ```json
 	"supportedMessage": [
