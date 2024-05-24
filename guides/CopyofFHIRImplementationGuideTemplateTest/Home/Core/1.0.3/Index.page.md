@@ -69,7 +69,7 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&bull; {{pagelink:core-NFR-1.0.3 , text:Non functional Requirements}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-NFR-Requirements-1.0.3 , text:Requirements}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-NFR-Processing-Time-1.0.3 , text:Processing Times}}</br>
-&nbsp;&nbsp;&bull; {{pagelink:Core-StandardPattern-1.0.3 , text:Standard Patterns for BaRS Operations}}</br>
+&nbsp;&nbsp;&bull; {{pagelink:Core-StandardPattern-1.0.3 , text:Standard Pattern - Composite Messages}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPComposites-1.0.3 , text:Standard Pattern for Composites}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPMessageHeader-1.0.3 , text:Message Headers}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPCancellation-1.0.3 , text:Cancellation}}</br>
@@ -165,7 +165,7 @@ For more detail please visit the {{pagelink:core-NFR-1.0.3, text: Non Functional
 <hr>
 <br>
 
-# Standard Patterns for BaRS Operations
+# Standard Pattern - Composite Messages
 Most implementations of the BaRS that are applying the standard to support a particular use case or operational workflow will follow the same basic set of foundational operations with little deviation. 
 
 In order to establish a guarantee of compatibility between different solutions compliant with the standard, **all** implementations **must** support all the underlying foundational operations and patterns.
