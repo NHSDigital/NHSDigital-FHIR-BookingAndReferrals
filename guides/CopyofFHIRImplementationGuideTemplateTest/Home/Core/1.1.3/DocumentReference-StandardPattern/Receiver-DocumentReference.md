@@ -102,5 +102,5 @@ A DocumentReference can be updated by performing a DELETE request with the resou
 **Note**: You can only delete DocumentReference resources that you own and that you created.
 
 <a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/DocumentReference/BaRS_NRL_Write_Sequence-1.1.0.svg" target="_blank">
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/DocumentReference/BaRS_NRL_Write_Sequence-1.1.0.svg" ></img>
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/DocumentReference/BaRS_NRL_Write_Sequence-1.1.0.svg" ></img></a>
 
