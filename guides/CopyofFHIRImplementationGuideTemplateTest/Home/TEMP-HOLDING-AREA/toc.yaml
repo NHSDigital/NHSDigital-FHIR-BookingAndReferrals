@@ -1,7 +1,5 @@
 - name: BARS Message Definition ServiceRequest - Request Referral
   filename: BARS-Message-Definition-ServiceRequest---Request-Referral.page.md
-- name: Index
-  filename: Index.guide.md
 - name: All Payloads
   filename: All-Payloads
 - name: Index
