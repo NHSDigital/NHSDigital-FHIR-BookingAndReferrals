@@ -1,0 +1,28 @@
+- name: Index
+  filename: Index.page.md
+- name: Introduction
+  filename: Introduction.page.md
+- name: Service Discovery
+  filename: Service-Discovery.page.md
+- name: Authenticate with BaRS
+  filename: Authenticate-with-BaRS.page.md
+- name: BaRS FHIR API
+  filename: BaRS-FHIR-API.page.md
+- name: HTTP Header
+  filename: HTTP-Header.page.md
+- name: Routing
+  filename: Routing.page.md
+- name: Authentication and Authorisation
+  filename: Authentication-and-Authorisation.page.md
+- name: Transactional Integrity
+  filename: transactional-Integrity.page.md
+- name: HTTP Response Headers
+  filename: HTTP-Response-Headers.page.md
+- name: Processing Requests
+  filename: Processing-Requests.page.md
+- name: Responses
+  filename: Responses.page.md
+- name: Reversing Roles
+  filename: Reversing-Roles.page.md
+- name: Asynchronous Workflow
+  filename: Asynchronous-Workflow.page.md
