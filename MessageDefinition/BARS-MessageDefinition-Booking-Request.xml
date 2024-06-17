@@ -4,7 +4,7 @@
 	<name value="BARS Message Definition Booking - Request"/>
 	<title value="BARS Message Definition Booking - Request"/>
 	<status value="active"/>
-	<date value="2023-10-16"/>
+	<date value="2024-06-17"/>
 	<!-- This is the version number of Application 1 -->
 	<version value="1.0.0"/>
 	<eventCoding>
@@ -74,7 +74,7 @@
 	</focus>
 	<focus>
 		<code value="Consent"/>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
 		<min value="0"/>
 		<max value="*"/>
 	</focus>

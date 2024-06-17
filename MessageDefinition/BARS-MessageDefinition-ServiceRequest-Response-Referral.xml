@@ -4,7 +4,7 @@
 	<name value="BARS Message Definition ServiceRequest - Response Referral"/>
 	<title value="BARS Message Definition ServiceRequest - Response Referral"/>
 	<status value="active"/>
-	<date value="2023-10-16"/>
+	<date value="2024-06-17"/>
 	<!-- This is the version number of Application 6 (currently in development on Simplifier) -->
 	<version value="1.0.0-beta"/>
 	<eventCoding>
@@ -70,7 +70,7 @@
 	</focus>
 	<focus>
 		<code value="CarePlan"/>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
 		<min value="0"/>
 		<max value="1"/>
 	</focus>
@@ -130,13 +130,13 @@
 	</focus>
 	<focus>
 		<code value="QuestionnaireResponse"/>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
 		<min value="0"/>
 		<max value="*"/>
 	</focus>
 	<focus>
 		<code value="Consent"/>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
 		<min value="1"/>
 		<max value="*"/>
 	</focus>
@@ -160,7 +160,7 @@
 	</focus>
 	<focus>
 		<code value="Task"/>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/Task"/>
 		<min value="0"/>
 		<max value="*"/>
 	</focus>

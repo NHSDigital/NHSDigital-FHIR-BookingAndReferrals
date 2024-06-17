@@ -127,7 +127,7 @@
       <CarePlan>
         <meta>
           <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
         </meta>
         <status value="completed" />
         <intent value="plan" />
@@ -601,7 +601,7 @@
       <Consent>
         <meta>
           <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Consent" />
         </meta>
         <status value="active" />
         <scope>

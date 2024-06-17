@@ -3,7 +3,6 @@
   <meta>
     <lastUpdated value="2023-12-28T15:23:30+00:00" />
     <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
   </meta>
   <status value="active" />
   <category>

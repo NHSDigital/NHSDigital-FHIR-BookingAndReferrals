@@ -153,7 +153,7 @@
       <CarePlan>
         <meta>
           <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
         </meta>
         <status value="completed" />
         <intent value="plan" />
@@ -183,7 +183,7 @@
 	<Task xmlns="http://hl7.org/fhir">
         <meta>
           <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Task" />
         </meta>	
 		<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
 		<status value="requested" />
@@ -561,7 +561,7 @@
       <Consent>
         <meta>
           <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Consent" />
         </meta>
         <status value="active" />
         <scope>
