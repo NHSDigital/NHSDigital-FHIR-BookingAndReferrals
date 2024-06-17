@@ -6,13 +6,13 @@
   <name value="BARSMessageHeaderServiceRequestResponse" />
   <title value="BARS MessageHeader - ServiceRequest-Response" />
   <status value="active" />
-  <date value="2023-03-08" />
+  <date value="2024-06-17" />
   <description value="BARSMessageHeader ServiceRequest Response profile" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="MessageHeader" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
   <derivation value="constraint" />
   <differential>
     <element id="MessageHeader.event[x].system">
