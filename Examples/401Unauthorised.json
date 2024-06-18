@@ -3,7 +3,7 @@
   "id":"58977ddf-a021-46c4-bbb2-a7fa662f48e0",
   "meta": {
     "profile": [
-      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"
+      "http://hl7.org/fhir/StructureDefinition/OperationOutcome"
     ]
   },
   "issue": [
