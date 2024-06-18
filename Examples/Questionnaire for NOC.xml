@@ -2,7 +2,7 @@
 	<id value="81599e54-c713-4f3e-bca9-90225657f18d" />
 	<meta>
 		<lastUpdated value="2023-12-20T12:15:30.8185338+00:00" />
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+		<profile value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
 	</meta>
 	<identifier>
 		<value value="bf28a7e8-ae92-4e86-8c0f-ac3144f81bf6" />
