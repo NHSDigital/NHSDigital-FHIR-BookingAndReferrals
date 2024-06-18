@@ -13,55 +13,55 @@
 	</eventCoding>
 	<useContext>
 		<code>
-			<!-- We are expecting the UseContext to be a DOS ID -->
-			<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
-			<code value="dos-id"/>
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<!-- We are expecting the UseContext to be a DOS ID -->
+				<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
+				<code value="dos-id"/>
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
 	<!-- Application 6 supports multiple use-case categories, hence three being displayed here. Applications will have a mixture of single or multiple use-case categoreis supported. If a supplier solution supports multiple Applications (1,3,6, etc.), it would be expected each Application would have a different MessageDefinition, even if the Application versions were currently the same. Application versions will diverge and it would be coincidence for them to be the same.  -->
 	<useContext>
 		<code>
-			<!--  Use cases supported by this MessageDefinition for Application 6  -->
-			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="a6t3"/>
-			<display value="CAD to CAD Mutual Aid Request" />
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<!--  Use cases supported by this MessageDefinition for Application 6  -->
+				<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+				<code value="a6t3"/>
+				<display value="CAD to CAD Mutual Aid Request" />
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
 	<useContext>
 		<code>
-			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="a6t2"/>
-			<display value="CAD to CAD Call Assist Request" />
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+				<code value="a6t2"/>
+				<display value="CAD to CAD Call Assist Request" />
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
 	<useContext>
 		<code>
-			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="a6t1"/>
-			<display value="CAD to CAD Out of Area Request" />
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+				<code value="a6t1"/>
+				<display value="CAD to CAD Out of Area Request" />
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
