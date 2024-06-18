@@ -19,8 +19,8 @@
 		<valueCodeableConcept>
 			<coding>
 				<!-- We are expecting the UseContext to be a DOS ID -->
-			<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
-			<code value="dos-id"/>
+				<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
+				<code value="dos-id"/>
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
