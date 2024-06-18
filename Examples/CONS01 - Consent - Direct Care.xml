@@ -2,7 +2,7 @@
   <id value="8fc39b95-89a6-45fb-914f-1458a10e9e14" />
   <meta>
     <lastUpdated value="2021-11-26T15:00:00+00:00" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Consent" />
   </meta>
   <status value="active" />
   <scope>

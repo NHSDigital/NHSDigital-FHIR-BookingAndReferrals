@@ -203,7 +203,7 @@
             <CarePlan>
                 <meta>
                     <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
+                    <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
                 </meta>
                 <status value="active" />
                 <intent value="plan" />
@@ -695,7 +695,7 @@
 			<Task xmlns="http://hl7.org/fhir">
 				<meta>
 				  <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-				  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task" />
+				  <profile value="http://hl7.org/fhir/StructureDefinition/Task" />
 				</meta>	
 				<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
 				<status value="requested" />
@@ -762,7 +762,7 @@
 				<id value="81599e54-c713-4f3e-bca9-90225657f18d" />
 				<meta>
 					<lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+					<profile value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
 				</meta>
 				<identifier>
 					<value value="bf28a7e8-ae92-4e86-8c0f-ac3144f81bf6" />
@@ -935,7 +935,7 @@
 			<QuestionnaireResponse>
 				<meta>
 					<lastUpdated value="2023-12-26T15:00:00.8185338+00:00"/>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
 				</meta>
 				<extension url="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-reason">
 					<valueCodeableConcept>
@@ -978,7 +978,7 @@
 				<id value="9749ae76-28f7-4b8a-863f-aba64d19d678" />
 				<meta>
 					<lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire" />
+					<profile value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
 				</meta>
 				<identifier>
 					<value value="76b4622b-2b8b-4f24-aee5-2631c7695594" />
@@ -1077,7 +1077,7 @@
 			<QuestionnaireResponse>
 				<meta>
 					<lastUpdated value="2023-12-26T15:00:00.8185338+00:00"/>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
 				</meta>
 				<extension url="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-reason">
 					<valueCodeableConcept>
@@ -1141,7 +1141,7 @@
             <Consent>
                 <meta>
                     <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
+                    <profile value="http://hl7.org/fhir/StructureDefinition/Consent" />
                 </meta>
                 <status value="active" />
                 <scope>

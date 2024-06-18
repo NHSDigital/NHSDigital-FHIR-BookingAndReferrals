@@ -162,7 +162,7 @@
         <id value="91607239-b002-470a-8709-6b25bd50fdd1" />
         <meta>
           <lastUpdated value="2021-11-26T15:15:15.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
         </meta>
         <status value="completed" />
         <intent value="plan" />
@@ -539,7 +539,6 @@
         <meta>
           <lastUpdated value="2021-11-26T15:17:00.8185338+00:00" />
           <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
         </meta>
         <status value="active" />
         <category>
@@ -575,7 +574,6 @@
         <meta>
           <lastUpdated value="2021-11-26T15:17:00.8185338+00:00" />
           <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
         </meta>
         <status value="active" />
         <category>
@@ -796,7 +794,7 @@
         <id value="1e91008e-96d0-438b-873c-c6d2c007fc29" />
         <meta>
           <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
+          <profile value="http://hl7.org/fhir/StructureDefinition/Consent" />
         </meta>
         <status value="active" />
         <scope>
