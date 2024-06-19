@@ -14,28 +14,28 @@
 	<useContext>
 		<!-- We are expecting the UseContext to be a DOS ID -->
 		<code>
-			<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
-			<code value="dos-id"/>
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
+				<code value="dos-id"/>
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
 	<!-- Applications will have a mixture of single or multiple use-case categoreis supported. If a supplier solution supports multiple Applications (1,3,6, etc.), it would be expected each Application would have a different MessageDefinition, even if the Application versions were currently the same. Application versions will diverge and it would be coincidence for them to be the same.  -->
 	<useContext>
 		<code>
-			<!--  Use cases supported by this MessageDefinition for Application 4  -->
-			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="a4t1"/>
-			<display value="999-CAS Validation" />
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<!--  Use cases supported by this MessageDefinition for Application 4  -->
+				<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+				<code value="a4t1"/>
+				<display value="999-CAS Validation" />
 			</coding>
 		</valueCodeableConcept>
 	</useContext>

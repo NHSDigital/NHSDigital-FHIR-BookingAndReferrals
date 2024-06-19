@@ -14,13 +14,13 @@
 	<useContext>
 		<!-- We are expecting the UseContext to be a DOS ID -->
 		<code>
-			<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
-			<code value="dos-id"/>
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
+				<code value="dos-id"/>
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
