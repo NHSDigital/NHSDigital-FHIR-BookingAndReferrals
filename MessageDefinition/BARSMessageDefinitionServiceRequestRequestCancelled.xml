@@ -4,7 +4,7 @@
 	<name value="BARS Message Definition ServiceRequest - Request - Cancelled"/>
 	<title value="BARS Message Definition ServiceRequest - Request - Cancelled"/>
 	<status value="active"/>
-	<date value="2023-10-16"/>
+	<date value="2024-06-17"/>
 	<!-- This is the version number of Application (currently in development on Simplifier) -->
 	<version value="1.0.0"/>
 	<eventCoding>
@@ -14,27 +14,27 @@
 	<useContext>
 		<!-- We are expecting the UseContext to be a DOS ID -->
 		<code>
-			<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
-			<code value="dos-id"/>
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<system value="https://fhir.nhs.uk/CodeSystem/dos-id"/>
+				<code value="dos-id"/>
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
 	<useContext>
 		<code>
-			<!--  Use cases supported by this MessageDefinition for Application  -->
-			<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
-			<code value="a1t1"/>
-			<display value="111 - ED" />
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="workflow"/>
 		</code>
 		<valueCodeableConcept>
 			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
-				<code value="positive"/>
+				<!--  Use cases supported by this MessageDefinition for Application  -->
+				<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+				<code value="a1t1"/>
+				<display value="111 - ED" />
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
