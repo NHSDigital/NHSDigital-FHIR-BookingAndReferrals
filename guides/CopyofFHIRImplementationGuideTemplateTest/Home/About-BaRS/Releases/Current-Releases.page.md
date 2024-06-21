@@ -13,6 +13,7 @@ Implementation Guide   | 1.7.0   | v1      | Live     | Current Release | @@@@@@
 {{pagelink:application4, text:BaRS-APP4}}   | 1.1.1   | v1      | Live     | Current Release | 21/05/2024   | Stable |{{pagelink:trn-app4,text:BaRS APP4 Change Log}}
 {{pagelink:application5, text:BaRS-APP5}}   | 1.0.0-beta.4  | beta      | Live     | Current Release | 21/05/2024   | Pre-Release |{{pagelink:trn-app5,text:BaRS APP5 Change Log}}
 {{pagelink:application6, text:BaRS-APP6}}   | 1.0.0-beta.1 | beta      | Live     | Current Release | 21/05/2024   | Pre-Release |{{pagelink:trn-app6,text:BaRS APP6 Change Log}}
+{{pagelink:application7, text:BaRS-APP7}}   | 1.0.0-alpha | alpha      | Live     | Current Release | 30/08/2024   | Pre-Release |{{pagelink:trn-app7,text:BaRS APP7 Change Log}}
 
 ### Overview of the release
 
