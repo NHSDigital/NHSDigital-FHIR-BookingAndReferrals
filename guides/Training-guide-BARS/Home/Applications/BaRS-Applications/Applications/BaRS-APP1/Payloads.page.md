@@ -6,7 +6,7 @@ topic: APP1-Payloads
 The specific guidance around the use of key FHIR resources is described below. 
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.1.3, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 The MessageHeader resource for the Booking Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'booking-request'
@@ -22,6 +22,12 @@ The MessageHeader resource for the Referral Request should have the following re
 
 ### ServiceRequest Resource
 The primary resource in a referral is the ServiceRequest resource. When the request 'message bundle' is created by the Sender and processed by the Receiver, this is the starting point from which the referral is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail. A key point when a Sender builds the referral FHIR 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource. 
+
+There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
+1. Denotes the type of referral e.g. Transfer of care
+2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
+). e.g. 111 - ED. 999 - UTC, CAS - SEDEC. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.3, text:use-case categories}}
 
 An important function of the ServiceRequest resource is to link the booking and referral when they are related in a workflow. If the booking is successfully made before the referral, the Sender will have the *Appointment.Id* value (from the synchronous HTTP response) and this **must** be included as a relative reference, under *ServiceRequest.supportingInfo*, in the referral request. The element *ServiceRequest.supportingInfo* **may** also be used to provide reference to other resources in the request i.e. Rejected Services. This is outlined in the element guidance below.
 

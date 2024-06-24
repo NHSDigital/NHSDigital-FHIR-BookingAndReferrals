@@ -12,10 +12,10 @@ Each current and available version of Core can be found below.
 
 <hr>
 
-{{pagelink:design-core-1.0.0, text:1.0.0}}
+{{pagelink:design-core-1.0.3, text:1.0.3}}
 
 <hr>
 
-{{pagelink:design-core-1.1.0, text:1.1.0}}
+{{pagelink:design-core-1.1.3, text:1.1.3}}
 
 <hr>
