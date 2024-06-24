@@ -1,4 +1,13 @@
+---
+topic: deploy
+---
 ## {{page-title}}
+
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b>
+<p>
+This page is intended as guidance for all parties involved in deployments of BaRS stable releases (V1.0 and above). For guidance for Beta deployments see the {{pagelink:Home/Applications/BaRS-Pre-releases/BetaDeploymentGuide.page.md, text:Beta Deployment Guide}}.
+</p>
+</div>
 
 Implementing a solution requires good knowledge of the environment being deployed to, allowing a plan to be established to check all conditions are met for success. This section covers deployment, along with the necessary checks to prove functionality, to fully test end-to-end capable {{pagelink:Home/Build/Testing-and-Environments, text:environments}}. 
 

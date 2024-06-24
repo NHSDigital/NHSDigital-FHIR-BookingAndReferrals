@@ -1,4 +1,0 @@
-## {{page-title}}
-
-<br>
-<hr>
