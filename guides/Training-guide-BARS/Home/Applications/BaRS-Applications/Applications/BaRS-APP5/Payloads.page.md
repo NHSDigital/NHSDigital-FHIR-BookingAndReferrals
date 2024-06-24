@@ -5,7 +5,7 @@ topic: APP5-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.1.3, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -15,6 +15,14 @@ The MessageHeader resource for the Referral Request should have the following re
 
 ### ServiceRequest Resource
 The 'focus' resource in a referral is the ServiceRequest resource. When the request 'message bundle' is created by the Sender and processed by the Receiver, this is the starting point from which the referral is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail. A key point when a Sender builds the referral FHIR 'message bundle' is to ensure the *MessageHeader.focus* references the ServiceRequest resource. 
+
+There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
+1. Denotes the type of referral e.g. Transfer of care
+2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
+). e.g. GP to Pharmacy CPCS Minor Illness. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.3, text:use-case categories}}
+
+*Please note that the use-case category 'referraltopharmacy' is now deprecated to allow for more granular use cases.*
 
 ### Encounter Resource
 The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 

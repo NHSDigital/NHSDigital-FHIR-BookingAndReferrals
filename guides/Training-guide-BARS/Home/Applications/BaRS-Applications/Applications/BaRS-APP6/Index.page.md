@@ -22,7 +22,7 @@ topic: Application6
 </thead>
 <tbody>
 	<tr>
-		<td>Application 6 v1.0.0-beta</td>
+		<td>Application 6 v1.0.0-beta.1</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.4.0" target="_blank">v1.1.0</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a></td>

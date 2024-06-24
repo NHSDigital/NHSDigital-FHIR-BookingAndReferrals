@@ -4,7 +4,7 @@ topic: trn-app4
 
 <a href="#" onclick="history.back()">back</a>
 
-## Validation into CAS (application 4) Change Log
+## Validation into CAS (Application 4) Change Log
 
 <br>
 This page will list all updates to the BaRS Application 4. 
