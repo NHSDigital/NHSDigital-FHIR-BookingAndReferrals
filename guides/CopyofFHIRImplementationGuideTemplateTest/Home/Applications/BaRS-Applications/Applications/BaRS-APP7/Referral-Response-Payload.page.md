@@ -1,5 +1,5 @@
 ---
-topic: 111-ED-ReferralResponsePayload
+topic: APP7-ReferralResponsePayload
 ---
 
 ### Payload for a referral response, using Service Request
