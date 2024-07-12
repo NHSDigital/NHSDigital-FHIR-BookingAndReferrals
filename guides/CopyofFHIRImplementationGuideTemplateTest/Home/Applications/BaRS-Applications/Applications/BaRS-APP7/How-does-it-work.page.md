@@ -12,6 +12,10 @@ This section describes how the primary operations used in this Application works
 
 To support the workflows for this Application of the standard the operations that need to be supported are:
 
+Standard patterns for appointment operations: {{page:Home/Core/1.1.3/Appointment-StandardPattern/Index.page.md}}
+
+
+
 ### Search for slots
 
 During a referral workflow where booking is required, there are two separate processes that need to be undertaken sequentially. The first is to search for slots and once a slot has been selected, a booking can be made. 
