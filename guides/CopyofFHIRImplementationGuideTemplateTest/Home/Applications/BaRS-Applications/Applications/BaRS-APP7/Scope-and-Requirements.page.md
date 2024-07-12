@@ -5,16 +5,8 @@ topic: APP7-ScopeAndRequirements
 ## {{page-title}}
 
 ### Scope Overview
-This BaRS Application (Application 1) covers only use cases:
-* 111 (telephony) to ED
-* 111 (telephony) to UTC
-* IUC CAS to ED
-* IUC CAS to UTC
-* AST to ED (Pathways only)
-* AST to UTC (Pathways only)
-* 111 to SDEC
-* CAS to SDEC
-* AST to SDEC (Pathways only)
+This BaRS Application (Application 7) covers only use cases:
+* Appointments for Patient Facing Services to GP Practice
 
 The payloads and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
 
@@ -35,34 +27,18 @@ The payloads and workflow have been designed to support these services. Other {{
 * The slot the booking is made against may also indicate the type of booking e.g. face-to-face or over the phone and the role of the person who will engage with the individual on behalf of the service
 * Bookings are an administrative aspect of the workflow and **should <ins>not</ins>** contain clinically pertinent information
 
-**Referral**
-* A referral is a request for care on behalf of an individual from one service to another 
-* The referral can be sent without having to establish the capacity the service offers
-* The referral will contain primarily clinical information, indicating the need of the individual and **should** state the anticipated action required by the Receiving service
-* A referral can be made independent of booking but, where a booking is made as part of the same workflow, they **must** be linked
-* Supporting information, other than the assessment, is expected to be included in a referral, if collected, including:
-    * new or existing safeguarding concerns
-    * locally held Special Patient Notes
-    * external information sources used during initial assessment prior to referral
-    * list of any services rejected prior to the Receiving service being selected, including reason for rejection 
-
-
 **API-M**
 * All requests and response associated with BaRS must occur through the BaRS API Proxy
 
 **Constraints**
-* Supporting use of NHS Pathways and NHS Pathways Clinical Content Support (PaCCS) Clinical Decision Support Systems only
-* All Service IDs in First of Type (FoT) will be those of Urgent and Emergency Care (UEC) Directory of Services (DoS) 
-* DoS 'attributes' for controlling Booking into services are to remain honoured (see "how does it work" section below for more information)
-* No guidance provided on display of referral information beyond the {{pagelink:principles_prerequesites, text:Principles for rendering BaRS Payload}}.
+
 * No additional guidance provided on Slot display for Booking 
 * Consent within BaRS will be for Direct-Care only 
 * Certificates for Receiving messages to use nhs.uk domains only.
 * Receiving endpoints are to be internet facing.
 * Limited Search Slot parameters for Booking - Schedule.actor:healthcareService, Start (range), (slot) status
 * Clincial Constraints exist - See Hazard Log
-* No element level 'updates' to requests. A new request must be generated to change information in a booking or referral request
-
+* No element level 'updates' to requests. A new request must be generated to change information in a booking
 
 ### Requirements
 
@@ -111,48 +87,6 @@ The payloads and workflow have been designed to support these services. Other {{
 *	The booking Sender **must** provide visible confirmation to the end user of the status returned by the Receiver, indicating whether the original booking was successfully cancelled and the new booking made 
 *	The booking Receiver **must <ins>not</ins>** be required to inform the patient of the cancellation, incurred as part of the rebooking process. Business/clinical responsibility for informing the patient must remain with the booking Sender
 *   The new booking **must <ins>not</ins>** link to any originally linked referral, rather a new referral **must** be made and the original 'revoked'
-
-**Booking outside assessment outcome timeframe** 
-* The booking Sender **must** allow clinical users to book outside the assessment outcome timeframe
-* The booking Sender **must** present a notification to non-clinical users and prompt to seek clinical approval to book outside the assessment outcome timeframe
-* The booking Sender **must** store sufficient audit information to show where a patient has been booked outside their assessment outcome timeframe
-
-**Referral requires booking (Require-Booking services)** 
-* The booking Sender **must** stop the end users from making a referral if no booking has been made when the “RequireBooking” service attribute is present against the DoS service
-* The booking Sender **must** present an appropriate warning message to the end user, indicating the specific service requirements
-* The booking Sender **must** allow the referral to be sent when a booking is made
-* The end user **must** be allowed to select an alternative service, if they are unable to proceed with "RequireBooking" service
-
-**Referral** 
-* The referral Receiver **must** accept the referral request regardless of whether the patient is known to the service provider
-* The referral Receiver **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number.
-* Where a national identifier is included, it **must** be 'traced and verified', otherwise, the referral Sender **must <ins>not</ins>** include in the request
-* Any new or existing safeguarding concern, recorded as part of the assessment, **must** be included in the referral Sender's request
-* The referral Receiver **must** clearly identify any included safeguarding concern to the end user
-* The referral Receiver **must** accurately represent information made by the Sender to the end user
-* The referral Sender **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user
-* Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
-* Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
-* The referral Sender **must** include reference to any accompanying BaRS booking related to the referral
-  * The referral Sender's request **must** be referenced in the BaRS booking request (where the referral is made first in the workflow)
-  * The referral Receiver **must** link the explicitly related booking and referral requests
-* Update to amend a referral request is <ins>not</ins> supported. If a referral Sender wishes to change information in a request they **must** follow the re-refer workflow
-
-**Cancel referral** 
-*	The referral Sender **must** be capable of cancelling any referral made by them, within the current consultation or after the consultation event
-*	The referral Sender **must** retrieve the referral to be cancelled from the referral Receiver prior to cancellation to ensure they are working with the most up-to date version and it has not already been completed
-*	The referral Sender **must** provide visible confirmation to the end user of the status returned by the referral Receiver, i.e. whether the original referral was successfully cancelled or not
-*	If the update fails the referral Receiver **must** respond with the most appropriately aligned error 
-*	The referral Receiver **must** store all previous versions of the referral
-*	The referral Receiver **must <ins>not</ins>** be required to inform the patient of the cancellation of the referral.  Business/clinical responsibility for informing the patient must remain with the referral Sender
-*	Any booking, sent as part of a referral, **should** be decoupled from the referral when cancelled. It **may** be linked in any subsequent re-refer workflow
-
-**Re-refer** 
-*	The referral Sender **must** be capable of re-referring within the current consultation or after the consultation event
-*	If a callback occurs, after the consultation has been completed, prior to attempting a re-refer the patient **should** be reassessed 
-*	The referral Sender **should** revoke the original referral prior to making a new re-referral, whether within the current consultation or after the consultation event
-*	The referral Sender **must** provide visible confirmation to the end user of the status returned by the Receiver, i.e. whether the original referral was successfully revoked and the new referral made 
-*	The referral Receiver **must <ins>not</ins>** be required to inform the patient of the cancellation, incurred as part of the re-refer process.  Business/clinical responsibility for informing the patient must remain with the referral Sender
 
 **Contacts** 
 * A minimum of one contact (patient or third party) with a contact method (phone, email, etc.) of <ins>phone</ins> **must** be provided in booking and referral requests
