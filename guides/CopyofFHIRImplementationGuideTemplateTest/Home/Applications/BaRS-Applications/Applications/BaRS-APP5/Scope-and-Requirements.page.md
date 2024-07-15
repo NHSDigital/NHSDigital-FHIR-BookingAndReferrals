@@ -47,13 +47,13 @@ The payload and workflow have been designed to support this service. Other {{pag
 - Any new or existing Individual Requirements e.g. needle phobia, wheelchair access etc., recorded as part of the assessment, **must** be included in the referral Sender's request
 - The referral Receiver **must** clearly identify any included Individual Requirements to the end user
 - The referral Receiver **must** accurately represent information made by the Sender to the end user 
-- The referral Receiver **must** display the Sender organisation name and identifier, if provided
+- The referral Receiver **must** display the Sender organisation name and identifier (This organisation may **<ins>not</ins>** be the patient's register GP Surgery.)
 - The referral Sender **must** include the Pharmacy Service that the request is intended for (from the defined list)
 - The referral Sender **must** indicate consent to share (for Direct Care) to the Receiver 
 - The referral Sender **should** indicate the urgency (providing timeframe within which included actions are expected to take place) of the request to the Receiver 
 - The referral Sender **must** indicate novel medications, established during the latest assessment and not available on existing records, to the Receiver 
 - The referral Sender **must** indicate novel allergies, established during the latest assessment and not available on existing records, to the Receiver 
-- The referral Sender **must** indicate localised Special Patient Notes (SPNs) to the Receiver 
+- The referral Sender **must** indicate localised Special Patient Notes (SPNs) to the Receiver, if they hold them for the patient
 - The referral Sender **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user so they can share with the patient/third party
 - Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
 - Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
