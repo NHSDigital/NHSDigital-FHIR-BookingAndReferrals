@@ -5,7 +5,7 @@ Follow this **Quick Start Guide** to best understand how to approach BaRS:
 ### Discover 
 We recommend reading the following documentation as part of the discovery stage to inform planning: 
 
-* {{pagelink:definitions_key_terms, text:definition of key terms}}  
+* {{pagelink:definitions_key_terms, text:Definition of key terms}}  
 * {{pagelink:design-core, text:BaRS Core}} 
 * {{pagelink:applications, text:BaRS Applications}}
 * [BaRS FHIR API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0)

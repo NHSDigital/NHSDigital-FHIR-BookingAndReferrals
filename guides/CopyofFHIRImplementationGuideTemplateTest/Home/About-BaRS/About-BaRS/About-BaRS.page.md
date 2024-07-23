@@ -101,6 +101,4 @@ BaRS will have Core Payload Definitions that will relate to all BaRS Application
 A BaRS Application consists of implementation guidance that describes how a supplier builds a BaRS conformant solution for a **specific workflow** using the BaRS toolbox. This corresponds to the **Full recipe** for a specific cake, potentially for a 
 specific occasion.
 
-
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/RecipeAnalogy-1.0.0.svg)
 <hr>
