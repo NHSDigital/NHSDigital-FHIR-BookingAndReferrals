@@ -1,8 +1,9 @@
-<Flag>
+<Flag xmlns="http://hl7.org/fhir">
   <id value="3c55a29d-fbad-4962-9a29-7c9ef8e9b6ec" />
   <meta>
     <lastUpdated value="2021-10-11T15:23:30+00:00" />
     <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
   </meta>
   <status value="active" />
   <category>

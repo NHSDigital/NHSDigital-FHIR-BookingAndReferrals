@@ -3,6 +3,7 @@
   <meta>
     <lastUpdated value="2021-10-11T15:23:30+00:00" />
     <profile value="http://hl7.org/fhir/StructureDefinition/Flag" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Flag" />
   </meta>
   <status value="active" />
   <category>
@@ -22,10 +23,10 @@
   <subject>
     <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
   </subject>
-  <encounter>
-    <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
-  </encounter>
   <period>
     <start value="2022-01-01" />
   </period>
+  <encounter>
+    <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+  </encounter>
 </Flag>

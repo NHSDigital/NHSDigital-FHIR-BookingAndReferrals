@@ -94,11 +94,12 @@
             <!--   Important for driving workflow, determining the type of referral being requested   -->
             <display value="For Validation" />
           </coding>
-					<coding><!--       Use case category      -->
-						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="a4t1" />
-						<display value="999-CAS Validation" />
-					</coding>
+          <coding>
+            <!--       Use case category      -->
+            <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+            <code value="a4t1" />
+            <display value="999-CAS Validation" />
+          </coding>
         </category>
         <subject>
           <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
@@ -264,20 +265,20 @@
         <id value="68d3c42e-f76e-4f66-9498-d96e1040c81c" />
         <meta>
           <lastUpdated value="2021-11-26T15:25:00.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
         </meta>
         <status value="active" />
         <intent value="plan" />
         <subject>
           <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
         </subject>
-        <period>
-          <start value="2021-11-26T15:00:00+00:00" />
-        </period>
         <encounter>
           <!--    New Encounter    -->
           <reference value="urn:uuid:b83d13e2-8c2e-422c-88ac-63b8e86a4413" />
         </encounter>
+        <period>
+          <start value="2021-11-26T15:00:00+00:00" />
+        </period>
         <activity>
           <outcomeCodeableConcept>
             <coding>
@@ -357,8 +358,8 @@
           <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
             <valueCodeableConcept>
               <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland" />
-                <code value="01" />
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                <code value="number-present-and-verified" />
                 <display value="Number present and verified" />
               </coding>
             </valueCodeableConcept>
@@ -635,7 +636,7 @@
         <id value="1e91008e-96d0-438b-873c-c6d2c007fc29" />
         <meta>
           <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/Consent" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
         </meta>
         <status value="active" />
         <scope>

@@ -82,15 +82,18 @@
         <!--       required and always set to 'plan'      -->
         <intent value="plan" />
         <category>
-          <coding><!--       workflow category      -->
+          <coding>
+            <!--       workflow category      -->
             <system value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
-            <code value="referral" /><!--    Important for driving workflow, determining the type of referral being requested    -->
+            <code value="referral" />
+            <!--    Important for driving workflow, determining the type of referral being requested    -->
             <display value="Transfer of Care" />
           </coding>
-          <coding><!--       Use case category      -->
+          <coding>
+            <!--       Use case category      -->
             <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
             <code value="referraltopharmacy" />
-			<display value="Referral to Pharmacy" />
+            <display value="Referral to Pharmacy" />
           </coding>
         </category>
         <subject>
@@ -101,7 +104,7 @@
         </encounter>
         <occurrencePeriod>
           <start value="2023-06-26T11:30:00+00:00" />
-		  <end value="2023-06-27T11:30:00+00:00" />
+          <end value="2023-06-27T11:30:00+00:00" />
         </occurrencePeriod>
         <authoredOn value="2023-06-26T11:30:00+00:00" />
         <requester>
@@ -153,7 +156,7 @@
       <CarePlan>
         <meta>
           <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CarePlan" />
         </meta>
         <status value="completed" />
         <intent value="plan" />
@@ -163,82 +166,82 @@
         <encounter>
           <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
         </encounter>
-		<addresses> 
-			<reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4"/>
-		</addresses> 
+        <addresses>
+          <reference value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
+        </addresses>
         <activity>
-			<reference> 
-				<reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0"/>
-			</reference> 
-			<outcomeCodeableConcept>
+          <outcomeCodeableConcept>
             <text value="Who is this query about constipation about?: An adult or child over 10 years old\n Do you have constipation and any of the following apply to you?: None of the above\n\n Symptoms: 2/7 hx constipation\n\n Self-care / medication already tried: None\n\n Patient concerns: Unable to pass stool dor 2/7; straining.\n" />
           </outcomeCodeableConcept>
+          <reference>
+            <reference value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
+          </reference>
         </activity>
       </CarePlan>
     </resource>
   </entry>
   <entry>
-	<fullUrl value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
-	<resource>
-	<Task xmlns="http://hl7.org/fhir">
+    <fullUrl value="urn:uuid:d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
+    <resource>
+      <Task xmlns="http://hl7.org/fhir">
+        <id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
         <meta>
           <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/Task" />
-        </meta>	
-		<id value="d0f8ec8e-0602-4d02-af8a-7b3cb72be5c0" />
-		<status value="requested" />
-		<intent value="order" />
-		<code>
-			<coding>
-				<system value="http://snomed.info/sct" />
-				<code value="1577041000000109" />
-				<display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
-			</coding>
-		</code>
-		<description value="Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient."/> 
-		<authoredOn value="2023-06-26T11:30:00.259000+00:00" />
-		</Task>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Task" />
+        </meta>
+        <status value="requested" />
+        <intent value="order" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1577041000000109" />
+            <display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
+          </coding>
+        </code>
+        <description value="Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient." />
+        <authoredOn value="2023-06-26T11:30:00.259000+00:00" />
+      </Task>
     </resource>
   </entry>
   <entry>
-	<fullUrl value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
-	<resource>  
-	<Condition xmlns="http://hl7.org/fhir">
+    <fullUrl value="urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
+    <resource>
+      <Condition xmlns="http://hl7.org/fhir">
+        <id value="4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
         <meta>
           <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        </meta>	
-		<id value="4b816945-a51b-47c4-9efd-4d7f94c8e8b4" />
-		<clinicalStatus>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
-				<code value="active" />
-			</coding>
-		</clinicalStatus>
-		<verificationStatus>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
-				<code value="provisional" />
-			</coding>
-		</verificationStatus>
-		<category>
-			<coding>
-				<system value="http://snomed.info/sct" />
-				<code value="33962009" />
-				<display value="Presenting complaint" />
-			</coding>
-		</category>
-		<code>
-			<text value="Vomiting" />
-		</code>
-		<subject>
-			<reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
-		</subject>
-		<encounter> 
-			<reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"/> 
-		</encounter>
-		<onsetDateTime value="2023-06-26" />
-	</Condition>
+        </meta>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+            <code value="active" />
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+            <code value="provisional" />
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="33962009" />
+            <display value="Presenting complaint" />
+          </coding>
+        </category>
+        <code>
+          <text value="Vomiting" />
+        </code>
+        <subject>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+        <encounter>
+          <reference value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d" />
+        </encounter>
+        <onsetDateTime value="2023-06-26" />
+      </Condition>
     </resource>
   </entry>
   <entry>
@@ -273,8 +276,8 @@
           <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
             <valueCodeableConcept>
               <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland" />
-                <code value="01" />
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                <code value="number-present-and-verified" />
                 <display value="Number present and verified" />
               </coding>
             </valueCodeableConcept>
@@ -561,7 +564,7 @@
       <Consent>
         <meta>
           <lastUpdated value="2023-06-26T11:30:00.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/Consent" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent" />
         </meta>
         <status value="active" />
         <scope>
