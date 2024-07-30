@@ -1,42 +1,42 @@
-	<Location>
-		<meta>
-			<lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-			<profile value="https://fhir.hl7.org.uk/StructureDefinition/BARSLocation-incident-location" />
-		</meta>
-		<extension url="https://fhir.nhs.uk/StructureDefinition/LocationExtension">
-			<extension url="UPRN">
-				<valueString value="0008755622" />
-			</extension>
-			<extension url="eastings">
-				<valueString value="0.368598" />
-			</extension>
-			<extension url="northings">
-				<valueString value="0.409257" />
-			</extension>
-			<extension url="accuracy">
-				<valueString value="80" />
-			</extension>
-			<extension url="what3words">
-				<valueString value="noted.bunch.ballots" />
-			</extension>
-		</extension>
-		<name value="Ladybridge Hall" />
-		<address>
-			<line value="399 Chorley New Road" />
-			<city value="Greater Manchester" />
-			<postalCode value="BL1 5DD" />
-			<country value="UK" />
-		</address>
-		<position>
-			<longitude value="53.578960" />
-			<latitude value="-2.4757443" />
-		</position>
-		<type>
-			<coding>
-				<system value="https://fhir.nhs.uk/CodeSystem/location-types-bars" />
-				<code value="ILOC" />
-				<display value="Incident Location" />
-			</coding>
-		</type>
-	</Location>
+<Location xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/BARSLocation-incident-location" />
+  </meta>
+  <extension url="https://fhir.nhs.uk/StructureDefinition/LocationExtension">
+    <extension url="UPRN">
+      <valueString value="0008755622" />
+    </extension>
+    <extension url="eastings">
+      <valueString value="0.368598" />
+    </extension>
+    <extension url="northings">
+      <valueString value="0.409257" />
+    </extension>
+    <extension url="accuracy">
+      <valueString value="80" />
+    </extension>
+    <extension url="what3words">
+      <valueString value="noted.bunch.ballots" />
+    </extension>
+  </extension>
+  <name value="Ladybridge Hall" />
+  <type>
+    <coding>
+      <system value="https://fhir.nhs.uk/CodeSystem/location-types-bars" />
+      <code value="ILOC" />
+      <display value="Incident Location" />
+    </coding>
+  </type>
+  <address>
+    <line value="399 Chorley New Road" />
+    <city value="Greater Manchester" />
+    <postalCode value="BL1 5DD" />
+    <country value="UK" />
+  </address>
+  <position>
+    <longitude value="53.578960" />
+    <latitude value="-2.4757443" />
+  </position>
+</Location>

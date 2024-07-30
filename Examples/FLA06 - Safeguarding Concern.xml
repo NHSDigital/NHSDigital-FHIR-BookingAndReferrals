@@ -1,4 +1,4 @@
-<Flag>
+<Flag xmlns="http://hl7.org/fhir">
   <id value="01dcdcbb-93c0-4418-a5f5-d8b2573d4854" />
   <meta>
     <lastUpdated value="2021-10-11T15:23:30+00:00" />
