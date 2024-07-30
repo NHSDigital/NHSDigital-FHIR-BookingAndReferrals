@@ -8,7 +8,7 @@ topic: APP4-HowDoesItWork
 This section describes how the primary operations used in this application work. The following  diagram illustrates the workflow and interactions of a request from an 999 AST to a CAS to clinically validate an agreed cohort of ambulance triage outcomes (usually C3/C4), and the subsequent response(s):
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ValidationRequestSimplified-1.0.0.svg" width="1000"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ValidationRequestSimplified-1.1.0.svg" width="1000"></img></a>
 
 
 This details a 999 Ambulance Service Trust (AST) Referral into Clinical Assessment Service (CAS) for Validation:
@@ -45,7 +45,7 @@ To support the workflows for this application of the standard the operations tha
 
 ## Make a Validation Request
 
-Making a Validation Request for this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
+Making a Validation Request for this application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Validation}}
 <p>
@@ -83,7 +83,7 @@ In addition to that the specific workflow parameters that are required are as fo
                         <td>ServiceRequest (Category) = validation</td>
                     </tr>
                     <tr>
-                        <td>ServiceRequest (Category) = 999casvalidation</td>
+                        <td>ServiceRequest (Category) = a4t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged</td>
@@ -119,9 +119,9 @@ X-Correlation-Id = <GUID_000002>
 
 ## Cancel Validation Request
 
-To cancel a Validation Request this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as described on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned or completed. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a Validation Request this application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as described on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned or completed. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern, text:standard pattern}}.
+The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern-1.1.3, text:standard pattern}}.
 
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
@@ -166,7 +166,7 @@ In addition the specific workflow parameters that are required are as follows:
                         <td>ServiceRequest (Category) = validation</td>
                     </tr>
                     <tr>
-                        <td>ServiceRequest (Category) = 999casvalidation</td>
+                        <td>ServiceRequest (Category) = a4t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged</td>

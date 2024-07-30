@@ -1,3 +1,7 @@
+---
+topic: definitions_key_terms
+---
+
 # {{page-title}}
 
 The Booking and Referral Standard (BaRS) deals with 'bookings' and 'referrals' as they relate to a patient's journey. In the context of BaRS, we use these terms to mean the following: 
@@ -18,6 +22,6 @@ When a booking is made in conjunction with a referral, the receiving service mus
 ## Referral
 A referral is a request for a care service, other than a specific diagnostic investigation or diagnostic procedure, to be provided for a patient.
 
-The information included in the referral is primarily clinical and must allow the receiver to understand the reason for referral and detail of assessment by the sending service. This is key for patient care and experience as the patient transitions between services. 
+The information included in the referral is primarily clinical and must allow the receiver to understand the reason for the referral and the detail of any assessment carried out by the sending service. This is key for patient care and experience as the patient transitions between services. 
 
 The complete information transmitted in the referral depends on the use case. This is informed by user research and endorsed by specialist bodies in those fields. 

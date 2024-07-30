@@ -1,3 +1,7 @@
+---
+topic: assure_scal
+---
+
 ## SCAL - Supplier Conformance Assessment List 
 
 The process of assurance is driven through the SCAL. 

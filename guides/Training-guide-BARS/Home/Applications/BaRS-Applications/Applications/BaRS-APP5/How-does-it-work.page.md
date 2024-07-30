@@ -32,7 +32,7 @@ For this application the Service Type search will be used:
 
 #### Guidance on how to call the DoS API
 
-This API supports a search by location (e.g. the patient's current location).  Note that the DoS API used does not support the concept of searching for services that are open within a given timeframe, however the results from DOS include all opening times. The service search results should be filtered to those that are open in the timeframe required for the referral.  The filtered results should be displayed back to the user, in order to allow them to choose with the patient where they want to go.
+This API supports a search by location (e.g. the patient's current location).  
 
 The search parameters to be used are as follows:
 <p>
@@ -113,7 +113,11 @@ The search parameters to be used are as follows:
 <p>
 
 
-#### Guidance on service search and which services to display 
+#### Guidance on service search and which services to display to a user
+
+The DoS REST API service data includes the capacity status. The default capacity for services is Green (High) but this may be changed to Amber (Low) or Red (None) for a set period of time. Services which have a Red status will return; but these services <b>should not</b> be displayed as they have reported that they have little or no capacity to accept new patients, or may be temporarily closed.
+
+In addition, the DoS REST API does not support the concept of searching for services that are open within a given timeframe, however the results from DOS include all opening times. The service search results should be filtered to those that are open in the timeframe required for the referral. Instructions for each type of service is detailed in the table below.
 
 <div class="nhsd-m-emphasis-box">
     <div class="nhsd-a-box nhsd-a-box--border-grey">
@@ -128,14 +132,14 @@ The search parameters to be used are as follows:
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Community Pharmacy Consultation Service and Common Conditions Service</td>
-                        <td><b>Use Service Type ID 131- Pharmacy Urgent Meds Supply</b><br>Note this is labelled 'Pharmacy Urgent Meds Supply', but it is deemed appropriate to return one profile per Pharmacy that will do Pharmacy Urgent Meds Supply, CPCS and CCS.</br></td>
-                        <td>These services are time critical and the patient must be seen within 24 hours, and so any pharmacies closed now (or closing in the next 30 mins) <b>AND</b> not open in the next 24 hours should not be displayed to the user.<br>Discretion is permitted if the nearest pharmacy is open now but due to close soon.</br><br>If no pharmacies in the local area are open in the next 24 hours then a message needs to be clearly displayed to the user so they can consider other alternatives.  (Note this is a very unlikely scenario – but may happen in rural areas with only a few nearby Pharmacies or around bank holiday weekends).</br><br>Ensure the display clearly shows:</br><li>The opening times, to allow the user to provide opening times to the patient so that they can go to the pharmacy when it is open.</li><li>The phone number for the pharmacy; the user can give this to the patient so they can call and pre-arrange when to come in.</li>
+                        <td>Pharmacy First Service</td>
+                        <td><b>Use Service Type ID 131- Pharmacy Urgent Meds Supply</b><br>Note this is labelled 'Pharmacy Urgent Meds Supply', but it is deemed appropriate to return one profile per Pharmacy that will do the Pharmacy Urgent Meds Supply and Pharmacy First services.</br></td>
+                        <td>These services are time critical and the patient must be seen within 24 hours.  Therefore any pharmacies in the services returned that are:</br></br><li>closed now (or closing in the next 30 mins); and </li><li>not open in the next 24 hours</li><br> <b>should not </b> be displayed to the user.</br><br>Discretion is permitted if the nearest pharmacy is open now but due to close soon.</br><br>If no pharmacies in the local area are open in the next 24 hours then a message needs to be clearly displayed to the user so they can consider other alternatives.  (Note this is a very unlikely scenario – but may happen in rural areas with only a few nearby Pharmacies or around bank holiday weekends).</br><br>Ensure the display clearly shows:</br><li>The opening times, to allow the user to provide opening times to the patient so that they can go to the pharmacy when it is open.</li><li>The phone number for the pharmacy; the user can give this to the patient so they can call and pre-arrange when to come in.</li>
 </td>
                     </tr>
                     <tr>
                         <td>Blood Pressure Check Service</td>
-                        <td><b>Use Service Type ID 149 - Pharmacy Blood Pressure Check</b></td>
+                        <td><b>Use Service Type ID 148 - Pharmacy Blood Pressure Check</b></td>
                         <td>This service is not time critical and so all nearest services can be displayed to the user.<br>Ensure the display clearly shows:</br><li>The opening times, to allow the user to provide opening times to the patient so that they can go to the pharmacy when it is open.</li>
 <li>The phone number for the pharmacy, so the user can give this to the patient in case they want to call and pre-arrange when to come in.</li>
 						</td>
@@ -156,13 +160,12 @@ The search parameters to be used are as follows:
 <p></p>
 
 <p>
-
-When a service is chosen, the "Service ID" field in the DOS data will be used as the Receiver Service Identifier to then initiate the referral as per the following sections.
+The filtered results should be displayed back to the user, in order to allow them to choose with the patient where they want to go. When a service is chosen, the "Service ID" field in the DOS data will be used as the Receiver Service Identifier to then initiate the referral as per the following sections.
 </p>
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -200,7 +203,7 @@ In addition to that the specific workflow parameters that are required are as fo
                         <td>ServiceRequest (Category) = referral</td>
                     </tr>
 					<tr>
-                        <td>ServiceRequest (Category) = referraltopharmacy</td>
+                        <td>ServiceRequest (Category) = a5t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>
@@ -236,9 +239,9 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern, text:standard pattern}}.
+The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern-1.1.3, text:standard pattern}}.
 
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
@@ -283,7 +286,7 @@ In addition the specific workflow parameters that are required are as follows:
                         <td>ServiceRequest (Category) = referral</td>
                     </tr>
 					<tr>
-                        <td>ServiceRequest (Category) = referraltopharmacy</td>
+                        <td>ServiceRequest (Category) = a5t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>
