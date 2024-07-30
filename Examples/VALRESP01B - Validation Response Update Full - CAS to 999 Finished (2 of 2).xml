@@ -94,11 +94,12 @@
             <!--   Important for driving workflow, determining the type of referral being requested   -->
             <display value="For Validation" />
           </coding>
-					<coding><!--       Use case category      -->
-						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="a4t1" />
-						<display value="999-CAS Validation" />
-					</coding>
+          <coding>
+            <!--       Use case category      -->
+            <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+            <code value="a4t1" />
+            <display value="999-CAS Validation" />
+          </coding>
         </category>
         <subject>
           <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
@@ -236,13 +237,13 @@
         <subject>
           <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
         </subject>
-        <period>
-          <start value="2021-11-26T15:00:00+00:00" />
-        </period>
         <encounter>
           <!--    New Encounter    -->
           <reference value="urn:uuid:b83d13e2-8c2e-422c-88ac-63b8e86a4413" />
         </encounter>
+        <period>
+          <start value="2021-11-26T15:00:00+00:00" />
+        </period>
         <activity>
           <outcomeCodeableConcept>
             <coding>
