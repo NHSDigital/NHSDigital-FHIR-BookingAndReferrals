@@ -1,0 +1,29 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="response-outcome-codes" />
+  <url value="https://fhir.nhs.uk/CodeSystem/response-outcome-codes" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/response-outcome-codes" />
+    <value value="response-outcome-codes" />
+  </identifier>
+  <version value="1.0.0" />
+  <name value="response-outcome-codes" />
+  <title value="Response Outcome Codes" />
+  <status value="active" />
+  <date value="2024-08-01" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Response Outcome Codes from multiple services. These are EXAMPLE VALUES ONLY." />
+  <copyright value="Copyright © 2024 NHS England" />
+  <content value="complete" />
+  <concept>
+    <code value="PATLIFT" />
+    <display value="Patient has been lifted" />
+  </concept>
+</CodeSystem>
