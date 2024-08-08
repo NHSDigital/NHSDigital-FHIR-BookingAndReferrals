@@ -8,7 +8,7 @@ This section describes how the primary operations used in this Application works
 
 <br>
 
-<<-WORKFLOW-DIAGRAM-HERE->>
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/Booking-APP7-MVP-1.0.0-alpha.svg" width="1000"></img></a>
 
 To support the workflows for this Application of the standard the operations that need to be supported are:
 
@@ -139,6 +139,12 @@ X-Correlation-Id = <GUID_00002>
 ```
 
 ### Cancel a Booking
+
+This diagram illustrates the workflow and interactions of a booking cancellation process:
+
+<br>
+
+<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/BookingCancel-APP7-MVP-1.0.0-alpha.svg" width="1000"></img></a>
 
 To cancel a booking this Application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the booking from the **receiver** as it may have changed locally. This is done by performing a "GET Appointment by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
