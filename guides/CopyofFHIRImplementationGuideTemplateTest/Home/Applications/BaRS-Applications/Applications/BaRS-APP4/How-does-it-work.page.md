@@ -5,34 +5,42 @@ topic: APP4-HowDoesItWork
 # {{page-title}}
 
 
-This section describes how the primary operations used in this application work. The following  diagram illustrates the workflow and interactions of a request from an 999 AST to a CAS to clinically validate an agreed cohort of ambulance triage outcomes (usually C3/C4), and the subsequent response(s):
+This section describes how the primary operations used in this application work. The following diagrams illustrate the workflows and interactions of the following use cases :
+* 999 AST to CAS
+* 999 AST to Falls Lifting Service
+* 999 AST to Community Services (e.g 2-hour Urgent Community Response)
 <br>
 
 <img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ValidationRequestSimplified-1.1.0.svg" width="1000"></img></a>
 
 
-This details a 999 Ambulance Service Trust (AST) Referral into Clinical Assessment Service (CAS) for Validation:
+This details a 999 Ambulance Service Trust (Sender) Referral into the following Receiver services:
+* Clinical Assessment Service (CAS) for Validation
+* Falls Lifting Service
+* Community Service
 
-- Prior to making a Validation Request, the 999 AST will undertake a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch (CAD) system, using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. For cases with an ambulance disposition, local business rules will be applied to determine if the case meets the requirement for validation by a CAS clinician. This will usually be Ambulance Response Programme (ARP) priority C3 and C4 cases, but may include C2 segmentation cases, subject to local agreements between the 999 AST and the CAS.
-- For cases requiring clinical validation, a suitable CAS is identified based on the patient’s clinical need and location. Service discovery will use local directories or UEC DOS to ascertain the ServiceID
-- The Service ID is used to query the BaRS Endpoint Catalogue to identify the receiving CAS system's endpoint details.
-- The 999-AST will send the Validation Request to the CAS, which includes information required by a CAS Clinician to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
-- The CAS system will acknowledge the Validation Request on receipt.
-- On receipt of the Acknowledgment (synchronous response), the 999 AST CAD may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched within the time frame determined by the original triage outcome.
-- If additional or changed information about the case is captured by the 999 AST subsequent to sending the Validation Request, but prior to receiving an Interim or Final Validation Response, they may send a Validation Request Update to ensure that the CAS has the most up to date information.
-- If the 999 AST no longer requires the CAS to perform the validation, for example the patient calls back and the 999 AST decides to dispatch an ambulance, they may send a Cancellation.
-- Prior to the CAS consultation the case will typically be posted to a queue on the CAS system for prioritisation, based on the validation breach time in the referral. This is determined locally or nationally from the triage outcome codes.
-- The CAS Clinician will contact the patient, or their representative, utilising contact details in the referral message.
-- If the CAS clinician fails to contact the patient within an appropriate timescale, they can reject the validation request. This is undertaken by sending a Interim Validation Response to the 999 AST, which includes a CAS's Encounter status of 'cancelled' and a reason for rejection. On receipt of this rejection the 999 AST will resume ownership of the case for subsequent action.
-- If the CAS clinician successfully contacts the patient, on commencement of the consultation the CAS system sends an Interim Validation Response back to the Sending 999 AST to inform them that the validation activity is in progress.
-- The CAS clinician undertakes a consultation to validate the Sending Service's triage outcome. The consultation will be informed by the clinical information sent by the requesting service. The outcome of the validation will be recorded in the CAS system.
-- The outcome of the consultation under taken by the CAS clinician to validate the original 999 AST triage outcome, is sent to the Sending service in a Final Validation Response. This may include:
+
+- Prior to making a Validation Request, the Sender will undertake a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch (CAD) system, using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. For cases with an ambulance disposition, local business rules will be applied to determine if the case meets the requirement for validation by a CAS clinician, Falls Community service Healthcare Professional (HCP). For cases requiring clinical validation in a CAS, this will usually be Ambulance Response Programme (ARP) priority C3 and C4 cases, but may include C2 segmentation cases, subject to local agreements between the 999 AST and the CAS.
+- A suitable Receiver service is identified, based on the patient’s clinical need and location. Service discovery will use local directories or UEC DOS to ascertain the ServiceID
+- The Service ID is used to query the BaRS Endpoint Catalogue to identify the Receiver's endpoint details.
+- The Sender will send the Validation Request to the Receiver, which includes information required by an appropriate HCP to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
+- The Receiver will acknowledge the Validation Request on receipt.
+- On receipt of the Acknowledgment (synchronous response), the Sender may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched within the time frame determined by the original triage outcome.
+- If additional or changed information about the case is captured by the Sender subsequent to sending the Validation Request, but prior to receiving an Interim or Final Validation Response, they may send a Validation Request Update to ensure that the Receiver has the most up to date information.
+- If the Sender no longer requires the Receiver to perform the validation, for example the patient calls back and the 999 AST decides to dispatch an ambulance, they may send a Cancellation.
+- Prior to the consultation in the Receiver service the case will typically be posted to a queue on the Receiver system for prioritisation, based on the validation breach time in the referral. This is determined locally or nationally from the triage outcome codes.
+- The Receiver HCP will contact the patient, or their representative, utilising contact details in the referral message.
+- If the Receiver HCP fails to contact the patient within an appropriate timescale or they have insufficient capacity to action the request, they can reject the validation request. This is undertaken by sending a Interim Validation Response to the Sender, which includes a Receiver's Encounter status of 'cancelled' and a reason for rejection. On receipt of this rejection the Sender will resume ownership of the case for subsequent action.
+- If the Receiver HCP successfully contacts the patient, on commencement of the consultation the Receiver system sends an Interim Validation Response back to the Sender to inform them that the activity is in progress.
+- The Receiver HCP undertakes a consultation to validate the Sending Service's triage outcome, attempts to lift the patient or provides a 2-hour community response and records the outcome in the Receiver system.
+- The response outcome is sent to the Sending service in a Final Validation Response. This may include:
 	* An outcome that requires an upgraded ambulance response from the Sending 999 AST
 	* An outcome that requires an downgraded ambulance response from the Sending 999 AST
 	* An outcome that requires an unchanged ambulance response from the Sending 999 AST
 	* An outcome that can be met by the provision of care advice with or without an electronic prescription (Hear and Treat)
 	* An outcome that can be met by the onward referral to another service provider e.g. ED
-- On receipt of the Final Validation Response the 999 AST will update the case on the CAD and undertake the required action. This may include:
+	* A Local response outcome e.g. Patient lifted, no ambulance required
+- On receipt of the Final Validation Response the Sender will update the case on the CAD and undertake the required action. This may include:
 	* Moving the case from the pending stack to the dispatch stack and dispatching a resource within the timescales appropriate for the ARP Priority in the Final Validation Response.
 	* Closing the case if an ambulance is not required. 
 
