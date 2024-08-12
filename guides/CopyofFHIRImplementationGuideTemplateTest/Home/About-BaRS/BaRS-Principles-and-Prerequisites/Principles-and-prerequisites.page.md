@@ -17,7 +17,7 @@ This page describes BaRS principles and prerequisites for suppliers. Elements of
 11. Only workflows identified by research are supported by the standard
 12. Suppliers MUST support continuous development of the standard (see release management) 
 
-<BR>
+<br>
 
 **BaRS Prerequisites**
 
@@ -28,3 +28,11 @@ This page describes BaRS principles and prerequisites for suppliers. Elements of
 5. Systems SHOULD implement RESTful behaviour patterns
 6. System Suppliers MUST complete the {{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text:BaRS onboarding process}}
 7. Systems MUST support Service Discovery
+
+<br>
+
+**Incident management and incident reporting**
+
+1. It is expected that system suppliers that are compliant with the Booking and Referral Service have an incident management and reporting system or process in place.
+2. It is expected that BaRS compliant systems have a form of monitoring and alerting system in place.
+3. If after initial triage of an incident, an issue with the BaRS proxy or other up or downstream system is suspected it MUST be reported to the <a href="https://digital.nhs.uk/services/data-services-for-commissioners/incident-and-service-request-process#:~:text=Contact%20the%20National%20Service%20Desk,.nationalservicedesk%40nhs.net." target="_blank">NHS England National Service Desk (NSD)</a> as soon as possible.
