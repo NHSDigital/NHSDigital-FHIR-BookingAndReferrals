@@ -109,6 +109,7 @@ The *careplan.activity* holds the assessment information, whether it be coded or
 *  The Pathways triage outcome including, Symptom Group (SG),  Symptom Discriminator (SD) and Disposition (DX) codes, along with the Pathways consultation summary
 *  Further clinical narrative can also be included under additional instances of *careplan.activity.outcomeCodeableConcept.text*
 *  The Ambulance Response Programme (ARP) priority code
+* Response outcome codes can also be included under additional instances of *careplan.activity.outcomeCodeableConcept.coding* 
 
 The *CarePlan.period.start* is used to calculate the clock start time for dispatch and **must** be populated populated with the datetime of the identification of the dispatch code.
 *  If the Validation ARP code is the same or downgraded from the original 999 triage, this **must* be populated with the Requester's Clock start date/Time Definition as per the AmbSys specification.
