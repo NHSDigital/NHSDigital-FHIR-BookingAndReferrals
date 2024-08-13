@@ -80,6 +80,10 @@ These guides are designed to be used in conjunction with the documentation for {
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</a></td>
     </tr>
 	<tr>
+		<td>Application 7 v1.0.0-alpha</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.0" target="_blank">v1.8.0</a></td>
+    </tr>
+	<tr>
 		<td></td>
 		<td></td>
 		<td></td>
