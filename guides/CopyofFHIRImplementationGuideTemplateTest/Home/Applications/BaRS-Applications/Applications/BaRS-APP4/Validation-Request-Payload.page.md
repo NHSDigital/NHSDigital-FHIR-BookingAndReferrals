@@ -6,7 +6,7 @@ topic: APP4-ValidationPayload
 
 ### Payload for a Validation Request, using Service Request
 
-This payload is used to transmit all the necessary information that is required for a CAS to accept a patient referred into their service for validation.
+This payload is used to transmit all the necessary information that is required for a Responder to accept a patient referred into their service for validation.
 
 <br> 
  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i>
