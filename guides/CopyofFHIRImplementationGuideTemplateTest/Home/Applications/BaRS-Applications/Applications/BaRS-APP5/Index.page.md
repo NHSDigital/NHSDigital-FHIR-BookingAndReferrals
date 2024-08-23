@@ -17,9 +17,9 @@ topic: Application5
 </thead>
 <tbody>
 	<tr>
-		<td>Application 5 v1.0.0</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.4.0" target="_blank">v1.1.0</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.7.0" target="_blank">v1.7.0</td>
+		<td>Application 5 v1.1.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.8.0" target="_blank">v1.1.0</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.0" target="_blank">v1.8.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a></td>
 	</tr>
 </tbody>
@@ -34,6 +34,8 @@ topic: Application5
 This application supports the use of the following use cases:
 
 - Primary Care to Community Pharmacy (Pharmacy First)
+- Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP))
+- Primary Care to Pharmacy Blood Pressure Check Service
 
 ## Introduction
 
