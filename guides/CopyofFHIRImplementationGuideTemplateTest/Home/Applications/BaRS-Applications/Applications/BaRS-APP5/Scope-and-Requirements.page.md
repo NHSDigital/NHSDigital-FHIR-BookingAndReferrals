@@ -37,7 +37,7 @@ The payload and workflow have been designed to support this service. Other {{pag
 - Receiving endpoints are to be internet facing
 - Clincial Constraints exist - See Hazard Log
 - No element level 'updates' to requests are supported. A new request must be generated to change information in the referral request
-- Where an Online Consultation tool is used to refer, the referral must be verified by a human end-user before a request is made
+- Where an Online Consultation tool is used to refer, the referral must be verified by a human representative of the sending organisation before the request is made
 - Referrals to the Oral Contraception service must adhere to the [published policy specification](https://www.england.nhs.uk/long-read/nhs-pharmacy-contraception-service/) 
 - Referrals to the Blood Pressure service must adhere to the [published policy specification](https://www.england.nhs.uk/primary-care/pharmacy/pharmacy-services/nhs-community-pharmacy-blood-pressure-check-service/) 
 
