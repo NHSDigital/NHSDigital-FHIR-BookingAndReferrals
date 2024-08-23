@@ -64,7 +64,13 @@ Completed a minimum number of agreed referrals in line with the BaRS clinical ri
 
 ## Key Deployment Activities
 
-The following activities will form the BaRS Application beta phase:
+A Beta deployment closely mirrors a typical software deployment process but includes multiple opportunities for testing, learning, and iteration.
+
+The diagram below illustrates the steps and stages of the Beta deployment process, with detailed explanations provided in the section that follows.
+
+![Beta Deployment](
+https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/BetaDeployment-1.0.0.svg
+)
 
 ### Business Change
 
@@ -100,15 +106,15 @@ Once a stable version of a BaRS application is published (version 1.0 and above)
 
 For Providers that have participated in the beta phase, further change and training activities may be required alongside testing prior to implementing the uplifted 1.0 and above version of the standard. This should be agreed with system suppliers. The supplier should uplift and deploy this version within 3 months of publication.
 
-Providers implementing a system conformant with the live version of the BaRS application will also need to agree a deployment plan [link to deployment page in IGe] covering business change, training, and testing with their system suppliers.
+Providers implementing a system conformant with the live version of the BaRS application will also need to agree a {{pagelink:guides\CopyofFHIRImplementationGuideTemplateTest\Home\Deploy\Deploy\Deploy.page.md, text:deployment plan}} covering business change, training, and testing with their system suppliers.
 
 ### Roles and Responsibilities
 
-Roles and responsibilities for each party are described below. A ‘RASCI’ matrix can be found in Section 5.
+Roles and responsibilities for each party are described below. A ‘RASCI’ matrix can be found at the end of this page.
 
 Delivery partners and stakeholders must know what is expected of them during the beta Phase. This ensures the best chance of success and that time is not wasted through trial-and-error attempts.
 
-There is a requirement to cover these core roles for any beta Phase. There may be others involved or some individuals may perform multiple roles.
+These core roles must be covered for any Beta deployment. There may be others involved or some individuals may perform multiple roles.
 
 #### The Healthcare IT System Supplier
 
