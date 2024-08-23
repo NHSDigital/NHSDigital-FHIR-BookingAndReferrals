@@ -546,6 +546,13 @@
                     <system value="https://fhir.nhs.uk/id/ods-organization-code" />
                     <value value="RND" />
                 </identifier>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="788007007" />
+                        <display value="General practice service (qualifier value)" />
+                    </coding>
+                </type>
                 <name value="Sender Organization" />
             </Organization>
         </resource>

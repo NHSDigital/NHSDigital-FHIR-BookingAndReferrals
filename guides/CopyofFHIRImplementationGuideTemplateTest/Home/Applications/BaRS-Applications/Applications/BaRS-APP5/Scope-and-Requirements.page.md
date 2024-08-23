@@ -6,12 +6,9 @@ TOPIC: APP5-ScopeAndRequirements
 
 ### Scope Overview
 This BaRS Application (Referrals into Pharmacy Application 5) supports the following use case ONLY:
-- GP to Pharmacy - Pharmacy First (for Minor Illness Service)
-- GP to Pharmacy - Contraception Service (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP))
-- GP to Pharmacy - Blood Pressure Check Services 
-- GP Online Consultation to Pharmacy - Pharmacy First (for Minor Illness Service)
-- GP Online Consultation to Pharmacy - Contraception Service (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP))
-- GP Online Consultation to Pharmacy - Blood Pressure Check Services 
+- Primary Care to Community Pharmacy (Pharmacy First)
+- Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP))
+- Primary Care to Pharmacy Blood Pressure Check Service
 
 
 The payload and workflow have been designed to support this service. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
@@ -65,7 +62,7 @@ The payload and workflow have been designed to support this service. Other {{pag
 - The referral Sender **must** include the sending organisation type (organization.type in FHIR) to indicate the referral entry method into a Receiver
 - The referral Sender **should** include the Body Mass Index (BMI) of the patient being referred
 - The referral Sender **should** include the service type when requesting a Blood Pressure service e.g. single check or monitoring over a period (ABPM)
-- The referral Sender **should** include the current oral contraception medication a patient is prescribed when requesting a Oral Contraception service
+- The referral Sender **should** include the current oral contraception medication a patient is prescribed when requesting a Oral Contraception service, if requesting ongoing (repeat) supply
 - The referral Sender **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user so they can share with the patient/third party
 - Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
 - Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
