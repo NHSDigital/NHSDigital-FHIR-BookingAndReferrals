@@ -5,10 +5,25 @@ topic: APP4-HowDoesItWork
 # {{page-title}}
 
 
-This section describes how the primary operations used in this application work. The following diagrams illustrate the workflows and interactions of the following use cases :
+This section describes how the primary operations used in this application work.
+
+Application 4 supports complex workflows which include enabling the the Requester to:
+* Refer a patient for a specified activity to be carried out within a stated timescale (breach time)
+* Receive notification of if the referral has been rejected or accepted and is in progress (Interim Validation Response)
+* Retrieve the case by cancelling the referral
+* Receive an outcome response on completion of the activity by the Responder (Validation Response)
+
+It includes enabling the Responder to:
+* validate the request on receipt
+* accept or reject the request and notify the Requester (Interim Validation Response)
+* send a response outcome on completion of the agreed activity (Validation Response)
+
+The following diagrams illustrate the workflows and interactions of the following use cases which have been approved for this application :
 * 999 AST to CAS
 * 999 AST to Falls Lifting Service
 * 999 AST to Community Services (e.g 2-hour Urgent Community Response)
+
+
 <br>
 
 <img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ValidationRequestSimplified-1.1.0.svg" width="1000"></img></a>
@@ -25,23 +40,23 @@ This details a 999 Ambulance Service Trust (Requester) Referral into the followi
 - The Service ID is used to query the BaRS Endpoint Catalogue to identify the Receiver's endpoint details.
 - The Requester will send the Validation Request to the Responder, which includes information required by an appropriate HCP to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
 - The Responder will acknowledge the Validation Request on receipt.
-- On receipt of the Acknowledgment (synchronous response), the Requester may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched within the time frame determined by the original triage outcome.
-- If additional or changed information about the case is captured by the Requester subsequent to sending the Validation Request, but prior to receiving an Interim or Final Validation Response, they may send a Validation Request Update to ensure that the Responder has the most up to date information.
+- On receipt of the Acknowledgement (synchronous response), the Requester may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched within the time frame determined by the original triage outcome.
+- If additional or changed information about the case is captured by the Requester subsequent to sending the Validation Request, but prior to receiving an Interim Validation Response or Validation Response, they may send a Validation Request Update to ensure that the Responder has the most up to date information.
 - If the Requester no longer requires the Responder to perform the validation, for example the patient calls back and the 999 AST decides to dispatch an ambulance, they may send a Cancellation.
 - Prior to the consultation in the Responder service the case will typically be posted to a queue on the Responder's system for prioritisation, based on the validation breach time in the referral. This is determined locally or nationally from the triage outcome codes.
 - The Responder's HCP will contact the patient, or their representative, utilising contact details in the referral message.
 - If the Responder's HCP fails to contact the patient within an appropriate timescale or they have insufficient capacity to action the request, they can reject the validation request. This is undertaken by sending a Interim Validation Response to the Requester, which includes a Responder's Encounter status of 'cancelled' and a reason for rejection. On receipt of this rejection the Requester will resume ownership of the case for subsequent action.
 - If the Responder's HCP successfully contacts the patient, on commencement of the consultation the Responder system sends an Interim Validation Response back to the Requester to inform them that the activity is in progress.
 - The Responder's HCP undertakes a consultation to validate the Requester Service's triage outcome, attempts to lift the patient or provides a 2-hour community response, and records the outcome in the Responder system.
-- The response outcome is sent to the Requester service in a Final Validation Response. This may include:
+- The response outcome is sent to the Requester service in a Validation Response. This may include:
 	* An outcome that requires an upgraded ambulance response from the Sending 999 AST
 	* An outcome that requires an downgraded ambulance response from the Sending 999 AST
 	* An outcome that requires an unchanged ambulance response from the Sending 999 AST
 	* An outcome that can be met by the provision of care advice with or without an electronic prescription (Hear and Treat)
 	* An outcome that can be met by the onward referral to another service provider e.g. ED
-	* A Local response outcome e.g. Patient lifted, no ambulance required
-- On receipt of the Final Validation Response the Requester will update the case on the CAD and undertake the required action. This may include:
-	* Moving the case from the pending stack to the dispatch stack and dispatching a resource within the timescales appropriate for the ARP Priority in the Final Validation Response.
+	* An additional Local response outcome e.g. Patient lifted, no ambulance required
+- On receipt of the Validation Response the Requester will update the case on the CAD and undertake the required action. This may include:
+	* Moving the case from the pending stack to the dispatch stack and dispatching a resource within the timescales appropriate for the ARP Priority in the Validation Response.
 	* Closing the case if an ambulance is not required. 
 
 <br>
