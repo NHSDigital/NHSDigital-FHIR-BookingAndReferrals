@@ -106,9 +106,14 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-Sender-1.2.0 , text:Sender}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-Receiver-1.2.0 , text:Receiver}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-interface-1.2.0 , text:Interface}}</br>
+&nbsp;&nbsp;&bull; {{core-StandardPattern-Endpoints-1.2.0 , text:Standard Pattern - Endpoints}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-Endpoint-Introduction-1.2.0 , text:Introduction}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-Endpoint-Interface-1.2.0 , text:Interface}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{core-StandardPattern-Endpoint-Data-1.2.0 , text:Data Model}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-Endpoint-Sequences-1.2.0 , text:Sequences}}</br>
+
 
    
-
 </details>
 
 <hr>
@@ -227,6 +232,28 @@ In version 1.1.0 of the BaRS API Specification, functionality was added to accom
 The FHIR DocumentReference resource allows you to reference and locate clinical documents or resources. This section will walk you through the process of using a FHIR DocumentReference to find a resource's location and retrieve it.
 
 For more detail please visit the {{pagelink:core-StandardPattern-document-reference-1.2.0, text: DocumentReference Standard Pattern}} section.
+
+<hr>
+<br>
+
+
+# Standard Pattern - Endpoints
+
+
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information - Preview</b>
+<p>
+
+This version of core is strictly a preview of what is currently in development for 1.2.0 and should not be built against.
+
+</div>
+
+BaRS employs an endpoint catalogue to match Target Identifiers with a stored endpoint. Target Identifiers are provided in a header which is descripted in the [API Spec](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0) The following pages will describe how these entries can be managed, outside of the onboarding process.
+
+The BaRS endpoints will utilise not only service ids and a physical endpoint, but data describing the healthcare service, the provider of that service and the organization which manages and/or supplies the endpoint in question.
+
+BaRS will expose an interface to manage this information in the format of FHIR resources. Each resource will have a corresponding endpoint on the Proxy to assist in managing these endpoints.
+
+For more detail please visit the {{pagelink:core-StandardPattern-Endpoint-1.2.0, text: Endpoint Standard Pattern}} section.
 
 <hr>
 <br>
