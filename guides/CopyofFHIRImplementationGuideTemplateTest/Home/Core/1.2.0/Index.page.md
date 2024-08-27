@@ -253,7 +253,7 @@ The BaRS endpoints will utilise not only service ids and a physical endpoint, bu
 
 BaRS will expose an interface to manage this information in the format of FHIR resources. Each resource will have a corresponding endpoint on the Proxy to assist in managing these endpoints.
 
-For more detail please visit the {{pagelink:core-StandardPattern-Endpoint-1.2.0, text: Endpoint Standard Pattern}} section.
+For more detail please visit the {{pagelink:core-StandardPattern-Endpoints-1.2.0, text: Endpoint Standard Pattern}} section.
 
 <hr>
 <br>
