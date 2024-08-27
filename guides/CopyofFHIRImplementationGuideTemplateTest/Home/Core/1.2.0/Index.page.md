@@ -106,9 +106,14 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-Sender-1.2.0 , text:Sender}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-Receiver-1.2.0 , text:Receiver}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-document-reference-interface-1.2.0 , text:Interface}}</br>
+&nbsp;&nbsp;&bull; {{core-StandardPattern-Endpoints-1.2.0 , text:Standard Pattern - Endpoints}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-Endpoint-Introduction-1.2.0 , text:Introduction}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-Endpoint-Interface-1.2.0 , text:Interface}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{core-StandardPattern-Endpoint-Data-1.2.0 , text:Data Model}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-Endpoint-Sequences-1.2.0 , text:Sequences}}</br>
+
 
    
-
 </details>
 
 <hr>
