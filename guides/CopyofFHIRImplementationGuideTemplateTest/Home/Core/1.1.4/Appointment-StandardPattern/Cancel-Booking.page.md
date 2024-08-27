@@ -6,7 +6,7 @@ topic: core-StandardPattern-appointment-cancel-1.1.4
 
 To cancel an appointment:
 
-* Perofrm a GET operation using the id of the appointment to /Appointment[id]
+* Perform a GET operation using the id of the appointment to /Appointment[id]
 * Set the Appointment.status value to "cancelled"
 * Perform a PUT operation using the id of the appointment to /Appointment[id]
 
