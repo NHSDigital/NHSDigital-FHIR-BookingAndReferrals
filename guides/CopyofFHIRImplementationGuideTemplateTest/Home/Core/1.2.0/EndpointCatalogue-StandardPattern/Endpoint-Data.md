@@ -147,6 +147,10 @@ Describing Endpoints will be facilitated by the Organization, HealthcareService 
 </details>
 <p>
 
+## Entity Relationship Diagram
+
+<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMapEndpointCatalogue-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/EntityMaps/EntityMapEndpointCatalogue-1.0.0.svg" width="1200"></img></a>
+
 ## Examples
 
 ### Endpoint 

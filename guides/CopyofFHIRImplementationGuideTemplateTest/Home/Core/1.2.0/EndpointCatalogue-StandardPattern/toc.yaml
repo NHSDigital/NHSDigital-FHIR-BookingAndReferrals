@@ -6,3 +6,5 @@
   filename: Interface.md
 - name: Endpoint Data
   filename: Endpoint-Data.md
+- name: Sequences
+  filename: Sequences.md
