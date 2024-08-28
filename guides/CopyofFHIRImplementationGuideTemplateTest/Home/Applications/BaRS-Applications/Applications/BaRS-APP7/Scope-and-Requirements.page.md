@@ -5,7 +5,7 @@ topic: APP7-ScopeAndRequirements
 ## {{page-title}}
 
 ### Scope Overview
-This BaRS Application (Application 7) covers only use cases:
+This BaRS Application (Application 7) covers only use case:
 * Appointments for Patient Facing Services to GP Practice
 
 The payloads and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
@@ -37,13 +37,13 @@ The payloads and workflow have been designed to support these services. Other {{
 * Certificates for Receiving messages to use nhs.uk domains only.
 * Receiving endpoints are to be internet facing.
 * Limited Search Slot parameters for Booking - Schedule.actor:healthcareService, Start (range), (slot) status
-* Clincial Constraints exist - See Hazard Log
+* Clinical Constraints exist - See [Hazard Log](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#downloads)
 * No element level 'updates' to requests. A new request must be generated to change information in a booking
 
 ### Requirements
 
 **Service Discovery** 
-* The service **must** support a unique identifier which the Sender extracts to engage in booking and referral workflows
+* The service **must** support a unique identifier which the Sender extracts to engage in the booking workflow
 
 **Slot display** 
 * The schedule and related slot(s) **must** contain the actual geographic location (e.g address) of the booking, rather than generic details of the location of the overall service provider.
@@ -60,15 +60,10 @@ The payloads and workflow have been designed to support these services. Other {{
   * Booking Sender **must** handle a Slot response with FHIR resources not requested
 
 **Booking** 
-* The booking Receiver **must** accept the booking request regardless of whether the patient is known to the service provider
-* The booking Receiver **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number.
-* Where a national identifier is included, it **must** be 'traced and verified', otherwise, the referral Sender **must <ins>not</ins>** include the national indentifier in the request
+* Where a national identifier is included, it **must** be 'traced and verified', otherwise, the booking Sender **must <ins>not</ins>** include the national indentifier in the request
 * Where the booking was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
 * Where the booking was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
 * If included in the synchronous HTTP response, the booking Sender **must** make available the human readable identifier for the booking to the end user
-* The booking Sender **must** send accompanying clinical information in a BaRS referral request
-  * The booking Sender **must** reference the booking in the BaRS referral request (where the booking is made first in the workflow)
-  * The booking Receiver **must** link the explicitly related booking and referral requests 
 * Update to amend a booking request is **<ins>not</ins>** supported. If a booking Sender wishes to change information in a request they **must** follow the re-book workflow
 
 **Cancel booking** 
@@ -78,18 +73,16 @@ The payloads and workflow have been designed to support these services. Other {{
 *	If the cancellation fails the booking Receiver **must** respond with the most appropriately aligned error 
 *	The booking Receiver **must** store all previous versions of the booking, including cancellations
 *	The booking Receiver **must <ins>not</ins>** be required to inform the patient of the cancellation of the booking.  Business/clinical responsibility for informing the patient must remain with the booking Sender
-*	Any referral, sent as part of a booking, **should** be decoupled from the booking when cancelled and not be assumed to be a referral in its own right i.e. to ensure  'booking only' services are appropriately updated
 
 **Rebook** 
 *	The booking Sender **must** be capable of rebooking within the current consultation or after the consultation event
-*	If a callback occurs after the consultation has been completed, prior to attempting a rebook the patient **should** be reassessed 
+*	Prior to any rebook workflow being attempted, following a previously successful booking, the patient **should** be reassessed 
 *	The booking Sender **must** cancel the original booking prior to making the new booking, whether within the current consultation or after the consultation event
 *	The booking Sender **must** provide visible confirmation to the end user of the status returned by the Receiver, indicating whether the original booking was successfully cancelled and the new booking made 
 *	The booking Receiver **must <ins>not</ins>** be required to inform the patient of the cancellation, incurred as part of the rebooking process. Business/clinical responsibility for informing the patient must remain with the booking Sender
-*   The new booking **must <ins>not</ins>** link to any originally linked referral, rather a new referral **must** be made and the original 'revoked'
 
 **Contacts** 
-* A minimum of one contact (patient or third party) with a contact method (phone, email, etc.) of <ins>phone</ins> **must** be provided in booking and referral requests
+* A minimum of one contact (patient or third party) with a contact method (phone, email, etc.) of <ins>phone</ins> **must** be provided in booking requests
 * All contacts **must** have a rank associated with them
 * There **must** be only one contact with a rank of 1
 * All contacts **must** have at least one contact method (phone, email, etc.)

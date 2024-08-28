@@ -16,7 +16,7 @@ The MessageHeader resource for the Booking Request should have the following res
 
 
 ### Appointment 
-The primary resource in a booking is the Appointment resource. When the request 'message bundle' is created by the Sender and processed by the Receiver, this is the starting point from which the booking is understood. It provide either the detail or references to all key FHIR resources. When a Sender builds the booking FHIR 'message bundle' they **must** ensure the *MessageHeader.focus* references the Appointment resource. 
+The primary resource in a booking is the Appointment resource. When the request 'message bundle' is created by the Sender and processed by the Receiver, this is the starting point from which the booking is understood. It provides either the detail or references to all key FHIR resources. When a Sender builds the booking FHIR 'message bundle' they **must** ensure the *MessageHeader.focus* references the Appointment resource. 
 
 An important function of the Appointment resource is to link the booking and referral when they are related in a workflow. If the referral is successfully made before the booking, the Sender will have the *ServiceRequest.Id* value (from the synchronous HTTP response) and this **must** be included as a relative reference, under *Appointment.basedOn*, in the booking request. 
 

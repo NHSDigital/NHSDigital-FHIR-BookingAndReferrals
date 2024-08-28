@@ -4,7 +4,7 @@ topic: APP7-HowDoesItWork
 
 ## {{page-title}}
 
-This section describes how the primary operations used in this Application works. This diagram illustrates the workflow and interactions of a booking process:
+This section describes how the primary operations used in this Application work. This diagram illustrates the workflow and interactions of a booking process:
 
 <br>
 
@@ -146,14 +146,14 @@ This diagram illustrates the workflow and interactions of a booking cancellation
 
 <img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/BookingCancel-APP7-MVP-1.0.0-alpha.svg" width="1000"></img></a>
 
-To cancel a booking this Application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the booking from the **receiver** as it may have changed locally. This is done by performing a "GET Appointment by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a booking this Application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as described on the linked section, it is first necessary to retrieve the latest version of the booking from the **receiver** as it may have changed locally. This is done by performing a "GET Appointment by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
 The response to this request will be the requested Appointment resource which should be checked for its current status to ensure it does not already have a status of "cancelled". If not, this version of the Appointment should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.1.3, text:standard pattern}}.
 
 The message definition that defines this payload for this Application is: [BARS Message Definition - Cancel Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionbookingrequestcancelled)
 
 
-As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed. This is always defined within the relevent message definition.
+As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource is altered. Any resources that are mandated due to contextual, linking or referential integrity reasons play a supporting role, although any resources that include elements that are being changed are included too. This is always defined within the relevant message definition.
 
 In addition the specific workflow parameters that are required are as follows:
 
