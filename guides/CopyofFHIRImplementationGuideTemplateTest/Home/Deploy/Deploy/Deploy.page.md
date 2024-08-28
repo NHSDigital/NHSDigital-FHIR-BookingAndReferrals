@@ -59,6 +59,15 @@ The core steps to complete technical setup in an environment are:-
 
 Testing is an integral part of the BaRS development and implementation process. The testing process involves multiple stages, {{pagelink:Home\Build\Testing-and-Environments\Environments.page.md, text:environments}} and systems to ensure thorough validation and functionality.
 
+BaRS defined testing stages are outlined below:-
+
+| Testing Stage         | NHS Environment  | BaRS API (API-M)             | Solution Environment      | DoS (if required)       |
+|-----------------------|------------------|------------------------------|---------------------------|-------------------------|
+| API Spec 'Try this API'| Sandbox          | sandbox.api.service.nhs.uk    |                           |                         |
+| INT Development        | INT              | int.api.service.nhs.uk        | Development (supplier)    | UserTest                |
+| INT Assurance          | INT              | int.api.service.nhs.uk        | Development (supplier)    | UserTest                |
+| UAT Testing            | INT              | int.api.service.nhs.uk        | UAT (provider)            | UserTest                |
+| Technical Go Live      | Prod             | api.service.nhs.uk            | Production (provider)     | Production              |
 
 #### Test Plans
 
@@ -99,9 +108,19 @@ Afterward, the solution transitions from a 'project' phase to Business as Usual 
 
 Once in Production and running as business-as-usual (BAU), should an issue with the solution arise, service providers will be expected to follow their existing support processes with their supplier. After investigation, if the issue is thought to lie with the BaRS API or a third party supplier an incident can be raised with the National Service Desk - ssd.nationalservicedesk@nhs.net - who will involve the BaRS Programme, if required.
 
+#### DoS Leads
+If the provider operates within Urgent and Emergency Care (UEC), they are likely to have a UEC Directory of Services (DoS) entry. DoS leads must configure Service Providers who wish to use BaRS in the standard way, as the service dictates, but their DoS ID will also need to exist in the BaRS Endpoint Catalogue.
+
+Steps to configure the provider on the BaRS Endpoint Catalogue:- 
+* note the Service ID on DoS
+* Obtain API endpoint details for the service from the Supplier or Provider 
+* Email <bookingandreferralstandard@nhs.net> with both pieces of information from above, stating the environment to be configured (INT or Prod). You should include the proposed dates for testing (if known) to allow the urgency of the request to be set
+
+**NOTE** -  [CareConnect configuration](https://developer.nhs.uk/apis/uec-appointments/dep_dosoverview.html) must be maintained alongside the BaRS configuration. This is so senders who are not yet BaRS compliant can still work with CareConnect and GP Connect. 
+
 ## Roles and Responsibilities 
 
-Roles and responsibilities for each involved party are described below. A ‘RASCI’ matrix can be found at the end of this page.
+Roles and responsibilities for each involved party are described below.
 
 #### The Healthcare IT System Supplier
 
@@ -110,6 +129,7 @@ The suppliers are responsible for:
 - The primary relationship with the healthcare provider
 - Supporting business change activities including training, designing new workflow and procedures
 - Completing the development against the BaRS
+- Providing view access to any new user interface and functionality developed in order to support business change
 - Conducting testing in a non-production environment
 - Providing testing and training documentation required
 - Installing and updating software
@@ -150,3 +170,19 @@ The Providers are responsible for:
 - Information Governance Lead
 - Operational Lead
 - System User
+
+#### NHS England (BaRS Team)
+
+NHS England (BaRS Team) are responsible for:
+
+- The development of the Booking and Referral interoperability standard
+- Solutions assurance including:
+  - Approval of evidence provided as part of the BaRS Onboarding process
+  - Issuance of Technical Conformance Certificate prior to connection to BaRS Infrastructure
+- Compliance with DCB0129
+
+##### Core staff that should be involved:
+
+- Project Lead
+- Clinical Lead
+- Technical Lead
