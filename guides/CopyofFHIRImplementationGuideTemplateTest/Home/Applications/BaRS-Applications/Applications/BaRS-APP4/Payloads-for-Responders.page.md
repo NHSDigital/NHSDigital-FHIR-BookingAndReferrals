@@ -51,6 +51,11 @@ When sending an Interim Validation Response to convey that the Responder is reje
 ## Validation Response Payload
 This section provides guidance on the use of key resources, for the Responder to create a Validation Response to return to the original Requester. See [ServiceRequest - Response Validation Full](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-full) message definition for details of resources required for this payload.
 
+For example bundles see:
+* [VALRESP02 - Validation Response New Full - CAS to 999 Finished](https://simplifier.net/nhsbookingandreferrals/76a303c5-3260-4a80-96b9-5c7995514bc1)
+* [VALRESP03 - Validation Response New Full - CAS to 999 Finished Inc New CADid Cat 1-2](https://simplifier.net/nhsbookingandreferrals/256a050f-9896-4b32-95ff-62f044722c83)
+* [VALRESP04 - Validation Response - Falls to 999 Finished](https://simplifier.net/nhsbookingandreferrals/76a303c5-3260-4a80-96b9-5c7995514bd2)
+
 ### MessageHeader Resource
 For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.3, text:Standard Pattern - Message Header}} for more information. 
 
