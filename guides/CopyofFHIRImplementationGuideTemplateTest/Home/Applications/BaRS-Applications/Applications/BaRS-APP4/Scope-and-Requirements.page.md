@@ -41,17 +41,17 @@ For this application we will be referring to the actors as 'Requester' and the '
     * timing information to support the timely delivery of care and reporting
 
 **Validation Responses**
-* There are two supported Validation Responses in the workflow; Interim and Full
-* The Interim Response has 2 purposes: 
-    * Communication that the Validation Responder has started the assessment or response. 
+* There are two supported responses in the workflow; the Interim Validation Response and Validation Response.
+* The Interim Validation Response has 2 purposes: 
+    * Communication that the Responder has started the assessment or response. 
         * When a CAS clinician starts to assess the patient OR when a Falls or Community Service HCP accepts the case, an Interim Response **must** be sent to the Requester to covey that the status of the request has changed and is now 'in progress'
       
-    * Communication that the Validation Responder has rejected the Validation Request
+    * Communication that the Responder has rejected the Validation Request
         * When CAS clinician cannot undertake the validation request (e.g. they fail to contact the patient within an appropriate timescale) OR when a Flls or Community Service cannot accept a case, an Interim Response **must** be sent to the Requester to convey that the status of the request has changed and is now 'cancelled'. It **should** include a reason for rejection.
-        * On receipt of an Interim Response with an Encounter.status of 'cancelled' conveying the rejection of a Validation request, the Validation Requester *must* notify system users so they can take ownership of the case and perform the next activity.
-* The Full Response contains the Validation Outcome, raising, lowering or preserving, the original ambulance category established by the 999 service, and **must** be sent to the Requester
-* If a Validation Outcome raises the ambulance category to either a CAT 1 or CAT 2, the Responder **must** raise an ambulance with the Requesting 999 service using the existing CDA over ITK method
-	* The new ambulance request, raised via ITK, **must** be included in the Full Response as an additional entity (FHIR Encounter)
+        * On receipt of an Interim Response with an Encounter.status of 'cancelled' conveying the rejection of a Validation request, the Requester *must* notify system users so they can take ownership of the case and perform the next activity.
+* The Validation Response contains the validation outcome, raising, lowering or preserving, the original ambulance category established by the 999 service, and **must** be sent to the Requester
+* If a validation outcome raises the ambulance category to either a CAT 1 or CAT 2, the Responder **must** raise an ambulance with the Requesting 999 service using the existing CDA over ITK method
+	* The new ambulance request, raised via ITK, **must** be included in the Validation Response as an additional entity (FHIR Encounter)
 
 **API-M**
 * All requests and response associated with BaRS must occur through the BaRS API Proxy
