@@ -32,9 +32,9 @@ topic: Application7
 
 ## Use Cases Supported
 
-This Application supports the use of the following use cases:
+This Application supports the use of the following use case:
 
-* Appointments for Patient facing services into GP Practice
+* Appointments for Patient Facing Services (PFS) into GP Practice
 
 
 ## Introduction
@@ -42,12 +42,6 @@ This Application supports the use of the following use cases:
 ### Overview
 
 This page provides guidance for implementing the Booking and Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard.
-
-### Data model endorsements
-
-<p>
-
-TBC
 
 <p>
 <hr>
