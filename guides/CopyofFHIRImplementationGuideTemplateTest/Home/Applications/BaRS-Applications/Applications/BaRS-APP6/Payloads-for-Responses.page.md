@@ -10,6 +10,11 @@ topic: APP6-Responses
 This section provides guidance on the use of key resources, for the Receiver to create a Referral Response (Status update) to return to the Sender. See [ServiceRequest - Response](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-referral-short) message definition for details of resources required for this payload.
 
 *Note that Receivers will also have to build the capability to receive and process the Referral Request and Cancellation payloads*
+
+For Referral Response example bundles see:
+* [Referral Response - CAD to CAD Out of area](https://simplifier.net/nhsbookingandreferrals/dcd2aaa9-efe2-4df2-bb34-ad4ee9a41f28)
+* [Referral Response - CAD to CAD Mutual Aid request rejection](https://simplifier.net/nhsbookingandreferrals/ca337cfa-f564-4948-97bf-4134968caba6)
+* For additional example bundles please check [BaRS Example Bundles](https://teams.microsoft.com/l/message/19:775ed072-6a81-45d5-9e19-c38e108efe79_d86b2d01-da33-4982-8276-19d86a303b16@unq.gbl.spaces/1724861855443?context=%7B%22contextType%22%3A%22chat%22%7D)
 <br>
 
 ### MessageHeader Resource
