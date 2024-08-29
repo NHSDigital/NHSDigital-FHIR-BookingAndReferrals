@@ -5,6 +5,6 @@
 - name: Key Deployment Activities
   filename: KeyDeploymentActivities.page.md
 - name: Roles & Responsibilities
-  filename: RolesAndResponsibilities.page.md
+  filename: RolesAndResponsibilities.md
 - name: DoS Configuration
   filename: DirectoryOfServiceConfiguration.md
