@@ -1,12 +1,11 @@
 - name: Index
   filename: Index.page.md
-- name: Deploy
+- name: BaRS Deployment Guide
   filename: Deploy.page.md
-- name: Testing
-  filename: Testing.page.md
-- name: INT Environment
-  filename: INT-Environment.page.md
-- name: Moving to Production
-  filename: Moving-to-Production.page.md
-- name: Incident Management
-  filename: Incident-Management.page.md
+- name: Key Deployment Activities
+  filename: Key Deployment Activities.page.md
+- name: Roles and Responsibilities
+  filename: Roles and Responsibilities.page.md
+- name: Directory of Service (DoS) Configuration
+  filename: Directory of Service (DoS) Configuration.page.md
+
