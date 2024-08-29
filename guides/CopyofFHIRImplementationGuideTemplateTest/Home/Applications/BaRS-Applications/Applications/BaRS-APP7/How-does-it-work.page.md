@@ -4,7 +4,7 @@ topic: APP7-HowDoesItWork
 
 ## {{page-title}}
 
-This section describes how the primary operations used in this Application works. This diagram illustrates the workflow and interactions of a booking process:
+This section describes how the primary operations used in this Application work. This diagram illustrates the workflow and interactions of a booking process:
 
 <br>
 
@@ -153,7 +153,7 @@ The response to this request will be the requested Appointment resource which sh
 The message definition that defines this payload for this Application is: [BARS Message Definition - Cancel Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionbookingrequestcancelled)
 
 
-As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed. This is always defined within the relevent message definition.
+As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource is altered. Any resources that are mandated due to contextual, linking or referential integrity reasons play a supporting role, although any resources that include elements that are being changed are included too. This is always defined within the relevant message definition.
 
 In addition the specific workflow parameters that are required are as follows:
 
