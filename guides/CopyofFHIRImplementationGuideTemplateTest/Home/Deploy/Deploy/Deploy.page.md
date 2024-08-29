@@ -30,3 +30,5 @@ The core steps to complete technical setup in an environment are:-
 *This may be a local value or relate to a [directory of service](https://digital.nhs.uk/services/directory-of-services-dos)
 
 **NOTE** - The detail of installing and configuring a solution will differ considerably depending on the supplier and provider(s) involved.
+
+<br>

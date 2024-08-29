@@ -3,9 +3,9 @@
 - name: BaRS Deployment Guide
   filename: Deploy.page.md
 - name: Key Deployment Activities
-  filename: Key Deployment Activities.page.md
+  filename: KeyDeploymentActivities.page.md
 - name: Roles and Responsibilities
-  filename: Roles and Responsibilities.page.md
+  filename: RolesAndResponsibilities.page.md
 - name: Directory of Service (DoS) Configuration
-  filename: Directory of Service (DoS) Configuration.page.md
+  filename: DirectoryOfServiceConfiguration.page.md
 
