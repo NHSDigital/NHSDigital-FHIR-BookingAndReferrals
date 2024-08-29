@@ -3,7 +3,7 @@ topic: trn-app7
 ---
 <a href="#" onclick="history.back()">back</a>
 
-## Bookings for Patient facing services into GP Practice  (Application 7) Change Log
+## Appointments for Patient facing services into GP Practice  (Application 7) Change Log
 
 <br>
 This page will list all updates to BaRS Application 7
