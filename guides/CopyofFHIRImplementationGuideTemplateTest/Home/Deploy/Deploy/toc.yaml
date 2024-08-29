@@ -7,4 +7,4 @@
 - name: Roles & Responsibilities
   filename: RolesAndResponsibilities.page.md
 - name: DoS Configuration
-  filename: DirectoryOfServiceConfiguration.page.md
+  filename: DirectoryOfServiceConfiguration.md
