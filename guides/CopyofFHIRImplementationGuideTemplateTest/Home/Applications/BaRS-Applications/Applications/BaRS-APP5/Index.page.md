@@ -37,6 +37,8 @@ This application supports the use of the following use cases:
 - Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP))
 - Primary Care to Pharmacy Blood Pressure Check Service
 
+NB - 'Primary Care' currently includes GP Practice and Online Consultation, as described in the [BaRS Clinical Safety Case Report (CSCR)](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#downloads)
+
 ## Introduction
 
 ### Overview
