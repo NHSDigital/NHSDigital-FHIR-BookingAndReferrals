@@ -9,8 +9,14 @@ The below details the specific guidance around the use of resources required to 
 
 _Note that Requesters will also have to build the capability to receive and process the Validation Response payloads._
 
+For Example Validation Request bundles see:
+* [Validation Request - 999 to CAS New](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292db)
+* [Validation Request - 999 to CAS AMPDS](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292ba)
+* [Validation Request - 999 to CAS Update to lower priority](https://simplifier.net/nhsbookingandreferrals/baebe535-9d6c-4b0f-8bc6-8f4b157d44ac)
+* For additional example bundles please check [BaRS Example Bundles](https://teams.microsoft.com/l/message/19:775ed072-6a81-45d5-9e19-c38e108efe79_d86b2d01-da33-4982-8276-19d86a303b16@unq.gbl.spaces/1724861855443?context=%7B%22contextType%22%3A%22chat%22%7D)
+
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.3, text:Standard Pattern Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Validation Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -24,7 +30,7 @@ The 'focus' resource in a Validation Request is the ServiceRequest resource. Whe
 There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
-https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. 999- CAS Validation. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.3, text:use-case categories}}
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. 999- CAS Validation. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.4, text:use-case categories}}
 
 Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time by which the receiving service must complete the validation (validation breach time).
 
@@ -34,7 +40,7 @@ The Encounter is used to represent the interaction between a patient and healthc
 In the initial Validation Request, the Requester will include an Encounter resource as the carrier for the assessment, which established the need for the Validation Request. This encounter **should** include a local human readable reference to the Requester's assessment under *encounter.identifier*. Additionally, the *encounter.episodeOfCare* **must** be populated with a 'Journey ID' reference which can be used in subsequent referrals to allow the audit of the route a patient took through service providers to resolve their initial request for care. 
 
 
-When a Validation Request is made, the Responder **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Requester's request. This second Encounter resource is used to transfer the human readable reference of the newly created case, at the Responder end. This new 'planned' encounter will have an Identifier value, indicating *the Responder's* local human readable reference. (See the {{pagelink:APP3-EntityRelationshipDiagrams, text:Entity Relationship Diagram}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
+When a Validation Request is made, the Responder **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Requester's request. This second Encounter resource is used to transfer the human readable reference of the newly created case, at the Responder end. This new 'planned' encounter will have an Identifier value, indicating *the Responder's* local human readable reference. (See the {{pagelink:APP4-EntityRelationshipDiagrams, text:Entity Relationship Diagram}} for reference). The human readable (Identifier) reference is a useful link for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
 
 
 ### Location Resource ###
@@ -96,7 +102,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 
 ## Validation Cancellation Payload
 
-The ability to cancel a Validation Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.3, text:Standard Patterns - Cancellation}}.
+The ability to cancel a Validation Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.4, text:Standard Patterns - Cancellation}}.
 
 <br>
 

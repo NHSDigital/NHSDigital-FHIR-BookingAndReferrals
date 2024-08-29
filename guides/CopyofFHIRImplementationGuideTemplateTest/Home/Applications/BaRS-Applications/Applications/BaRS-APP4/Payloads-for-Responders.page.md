@@ -8,10 +8,16 @@ topic: APP4-ResponderPayloads
 This section provides guidance on the use of key resources, for the Responder to create an Interim Validation Response to return to the Requester. See [ServiceRequest - Response Validation Interim](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-interim) message definition for details of resources required for this payload.
 
 _Note that Responders will also have to build the capability to receive and process the Validation Request and Cancellation payloads_
+
+For Interim Validation Response example bundles see:
+* [Interim Validation Response - CAS to 999 In-progress](https://simplifier.net/nhsbookingandreferrals/b8465a28-89ce-4530-8234-6fbe4aef6001)
+* [Interim Validation Response - CAS to 999 Rejected](https://simplifier.net/nhsbookingandreferrals/b8465a28-89ce-4530-8234-6fbe4aef6002)
+* For additional example bundles please check [BaRS Example Bundles](https://teams.microsoft.com/l/message/19:775ed072-6a81-45d5-9e19-c38e108efe79_d86b2d01-da33-4982-8276-19d86a303b16@unq.gbl.spaces/1724861855443?context=%7B%22contextType%22%3A%22chat%22%7D)
+
 <br>
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.3, text:Standard Pattern - Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern - Message Header}}. 
 
 The MessageHeader resource in the Interim Validation Response should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
@@ -26,7 +32,7 @@ The *ServiceRequest* reflects that sent by the Requester, and maintains the acti
 There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
-https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.3, text:use-case categories}}
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.4, text:use-case categories}}
 
 
 ### Encounter Resource
@@ -51,8 +57,16 @@ When sending an Interim Validation Response to convey that the Responder is reje
 ## Validation Response Payload
 This section provides guidance on the use of key resources, for the Responder to create a Validation Response to return to the original Requester. See [ServiceRequest - Response Validation Full](https://simplifier.net/nhsbookingandreferrals/bars-messagedefinition-servicerequest-response-validation-full) message definition for details of resources required for this payload.
 
+For Validation Response
+example bundles see:
+* [Validation Response - CAS to 999 Finished](https://simplifier.net/nhsbookingandreferrals/76a303c5-3260-4a80-96b9-5c7995514bc1)
+* [Validation Response - CAS to 999 Finished Inc third encounter case ID for C1/C2 outcome](https://simplifier.net/nhsbookingandreferrals/256a050f-9896-4b32-95ff-62f044722c83)
+* [Validation Response - Falls to 999 Finished](https://simplifier.net/nhsbookingandreferrals/76a303c5-3260-4a80-96b9-5c7995514bd2)
+
+* For additional example bundles please check [BaRS Example Bundles](https://teams.microsoft.com/l/message/19:775ed072-6a81-45d5-9e19-c38e108efe79_d86b2d01-da33-4982-8276-19d86a303b16@unq.gbl.spaces/1724861855443?context=%7B%22contextType%22%3A%22chat%22%7D)
+
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.3, text:Standard Pattern - Message Header}} for more information. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern - Message Header}} for more information. 
 
 The MessageHeader resource in the Interim Validation Response should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
@@ -109,6 +123,7 @@ The *careplan.activity* holds the assessment information, whether it be coded or
 *  The Pathways triage outcome including, Symptom Group (SG),  Symptom Discriminator (SD) and Disposition (DX) codes, along with the Pathways consultation summary
 *  Further clinical narrative can also be included under additional instances of *careplan.activity.outcomeCodeableConcept.text*
 *  The Ambulance Response Programme (ARP) priority code
+* Response outcome codes can also be included under additional instances of *careplan.activity.outcomeCodeableConcept.coding* 
 
 The *CarePlan.period.start* is used to calculate the clock start time for dispatch and **must** be populated populated with the datetime of the identification of the dispatch code.
 *  If the Validation ARP code is the same or downgraded from the original 999 triage, this **must* be populated with the Requester's Clock start date/Time Definition as per the AmbSys specification.

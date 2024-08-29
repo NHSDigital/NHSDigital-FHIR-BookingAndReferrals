@@ -8,7 +8,7 @@ topic: trn-app6
 <br>
 This page will list all updates to BaRS Application 6
 <br>
-
+<br>
 <div class="imgHandshake">{{render:handshake}}</div> &nbsp; - Indicates a change inspired by provider or supplier feedback.
 <p>
 

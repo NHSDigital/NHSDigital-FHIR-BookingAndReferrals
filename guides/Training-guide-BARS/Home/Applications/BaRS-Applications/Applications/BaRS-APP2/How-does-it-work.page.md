@@ -13,7 +13,7 @@ To support the workflows for this Application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
+Making a referral for this Application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: {{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 
@@ -33,9 +33,9 @@ In addition to that the specific workflow parameters that are required are as fo
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan=6>Referral Request (New)</td>
-                        <td rowspan=6>POST /$process-message{servicerequest-request}</td>
-                        <td rowspan=6>ServiceRequest (active)</td>
+                        <td rowspan=7>Referral Request (New)</td>
+                        <td rowspan=7>POST /$process-message{servicerequest-request}</td>
+                        <td rowspan=7>ServiceRequest (active)</td>
                         <td>MessageHeader (EventCoding) = servicerequest-request</td>
                     </tr>
                     <tr>
@@ -46,6 +46,9 @@ In addition to that the specific workflow parameters that are required are as fo
                     </tr>
                     <tr>
                         <td>ServiceRequest (Category) = referral</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceRequest (Category) = a2t1</td>
                     </tr>
                     <tr>
                         <td>Encounter (Status) = triaged/finished</td>
@@ -137,7 +140,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:core-standardpattern, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:core-standardpattern-1.1.3, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: {{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 

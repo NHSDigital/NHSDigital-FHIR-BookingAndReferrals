@@ -89,8 +89,20 @@
     <display value="999 - Falls" />
   </concept>
   <concept>
+    <code value="a4t3" />
+    <display value="999 - Community Services" />
+  </concept>
+  <concept>
     <code value="a5t1" />
-    <display value="GP to Pharmacy CPCS Minor Illness" />
+    <display value="Primary Care to Pharmacy CPCS Minor Illness" />
+  </concept>
+  <concept>
+    <code value="a5t2" />
+    <display value="Primary Care to Pharmacy Oral Contraception" />
+  </concept>
+  <concept>
+    <code value="a5t3" />
+    <display value="Primary Care to Pharmacy Blood Pressure" />
   </concept>
   <concept>
     <code value="referraltopharmacy" />

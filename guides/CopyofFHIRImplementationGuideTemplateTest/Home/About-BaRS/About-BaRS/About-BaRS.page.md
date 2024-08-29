@@ -3,18 +3,18 @@
 The NHS Booking and Referral standard (known as BaRS) is a **framework standard** for interoperability.
 
 - BaRS offers a **universal** standard way to **digitise workflows** that support all cross service patient journeys in the NHS
-- It is based on FHIR R4 and fully supports UK Core
+- It is based on [FHIR R4]( https://hl7.org/fhir/R4/) and fully supports [UK Core]( https://simplifier.net/hl7fhirukcorer4)
 - It is a set of instructions, rules and guidance on how to use the building blocks of FHIR to **digitise workflows**
-- This provides a **framework** for vendors to build solutions in a way that **guarantees compatibility**
+- This provides a **framework** for suppliers to build solutions in a way that **guarantees compatibility**
 
-The majority of cross service flows in the NHS can be loosely defined as referrals however, there are many more formal definitions of referrals and BaRS is intended to support all of them and more. The primary goal is to create a framework that vendors can operate within to share information about a patient, with some sort of directive or request for further care or tasks. This can optionally be supported by an appointment (e.g. the reservation of resource for an event at a specific time/place). 
+The majority of cross service flows in the NHS can be loosely defined as referrals however, there are many more formal definitions of referrals and BaRS is intended to support all of them and more. The primary goal is to create a framework that suppliers can operate within to share information about a patient, with some sort of directive or request for further care or tasks. This can optionally be supported by an appointment (e.g. the reservation of resource for an event at a specific time/place). 
 
 
 ## Summary of the key features
 
 In order to achieve this, BaRS has adopted the approach of standardising everything that can and should be standardised whilst creating a safe space for solutions to have the necessary flexibility to support all flows whilst maintaining compatibility.
 
-There are three main "layers" that make up the framework within BaRS. 
+There are three main "layers" that make up the framework within BaRS: 
 
 The **first** is the transport layer (referred to as BaRS Core). This is all the things that define the way two systems "talk" to each other and this layer is absolutely standardised. All systems will implement these things exactly the same way. 
 
@@ -40,7 +40,7 @@ During the design and development of the standard, all key decisions are being t
 
 **Low Barrier to Entry**
 
-There is little point for a standard with the ambition and scope of BaRS being so difficult to implement that no one actually does. Therefore all decisions are made with the intention of making it as easy as possible for **all** vendors to build solutions quickly and easily.
+There is little point for a standard with the ambition and scope of BaRS being so difficult to implement that no one actually does. Therefore all decisions are made with the intention of making it as easy as possible for **all** suppliers to build solutions quickly and easily.
 
 **Any-to-Any Connectivity**
 
@@ -68,6 +68,7 @@ If you have come to this implementation guide directly it might be helpful to re
 
 It is common to use a recipe analogy to describe complex concepts. It is also possible to describe the payload entities within the BaRS standard using this analogy. In this analogy the recipe is for a specific cake which corresponds to a BaRS Application conformant solution developed by suppliers to enable the digitisation of a use case specific workflow.
 
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/RecipeAnalogy-1.0.0.svg)
 
 **Profiles**
 
@@ -89,7 +90,7 @@ Necessity is an additional layer of conformance and specifies if the population 
 
 **Implementation guidance**
 
-Implementation guidance is provided at several levels in the BaRS, for example, at the FHIR element, resource and bundle levels. It describes how these attributes should be populated to support the business process that the BaRS Application. It corresponds to the **Method**  in the recipe analogy, which also can be at the ingredient level or the recipe level.
+Implementation guidance is provided at several levels in the BaRS, for example, at the FHIR element, resource and bundle levels. It describes how these attributes should be populated to support the business process that is used in each BaRS Application. It corresponds to the **Method**  in the recipe analogy, which also can be at the ingredient level or the recipe level.
 
 **Core Payload definition**
 
@@ -100,6 +101,4 @@ BaRS will have Core Payload Definitions that will relate to all BaRS Application
 A BaRS Application consists of implementation guidance that describes how a supplier builds a BaRS conformant solution for a **specific workflow** using the BaRS toolbox. This corresponds to the **Full recipe** for a specific cake, potentially for a 
 specific occasion.
 
-
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/RecipeAnalogy-1.0.0.svg)
 <hr>

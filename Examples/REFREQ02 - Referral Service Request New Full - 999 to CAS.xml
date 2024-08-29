@@ -88,11 +88,12 @@
             <!--   Important for driving workflow, determining the type of referral being requested   -->
             <display value="Transfer of Care" />
           </coding>
-					<coding><!--       Use case category      -->
-						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-						<code value="a3t1" />
-						<display value="999-CAS Referral" />
-					</coding>
+          <coding>
+            <!--       Use case category      -->
+            <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
+            <code value="a3t1" />
+            <display value="999-CAS Referral" />
+          </coding>
         </category>
         <subject>
           <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
@@ -582,16 +583,16 @@
         <code>
           <text value="Patient Estimate Age" />
         </code>
+        <subject>
+          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
+        </subject>
+        <effectiveDateTime value="2021-11-26T15:00:00+00:00" />
         <valueQuantity>
           <value value="15.0" />
           <unit value="weeks" />
           <system value="https://ucum.org/trac" />
           <code value="week" />
         </valueQuantity>
-        <subject>
-          <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
-        </subject>
-        <effectiveDateTime value="2021-11-26T15:00:00+00:00" />
       </Observation>
     </resource>
   </entry>

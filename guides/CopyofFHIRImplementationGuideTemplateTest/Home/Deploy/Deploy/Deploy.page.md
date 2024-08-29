@@ -1,6 +1,13 @@
+---
+topic: deploy
+---
 ## {{page-title}}
 
-> ℹ️ **Important:** This page is intended as guidance for all parties involved in deployments of BaRS stable releases (V1.0 and above). For guidance for Beta deployments see the {{pagelink:Home/Applications/BaRS-Pre-releases/BetaDeploymentGuide.page.md text: Beta Deployment Guide}}.
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b>
+<p>
+This page is intended as guidance for all parties involved in deployments of BaRS stable releases (V1.0 and above). For guidance for Beta deployments see the {{pagelink:Home/Applications/BaRS-Pre-releases/BetaDeploymentGuide.page.md, text:Beta Deployment Guide}}.
+</p>
+</div>
 
 This page describes a typical process to deploy BaRS conformant systems with a stable release (v1.0 and above).   It outlines the tasks and responsibilities for healthcare providers, clinical system suppliers and NHS England. Please note: the deployment process will subject to supplier and provider agreed ways of working. 
 

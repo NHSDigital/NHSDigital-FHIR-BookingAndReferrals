@@ -87,8 +87,8 @@ The payloads and workflow have been designed to support these services. Other {{
 * The booking Receiver **must** accept the booking request regardless of whether the patient is known to the service provider
 * The booking Receiver **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number.
 * Where a national identifier is included, it **must** be 'traced and verified', otherwise, the referral Sender **must <ins>not</ins>** include the national indentifier in the request
-* Where the booking was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
-* Where the booking was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
+* Where the booking was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
+* Where the booking was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
 * If included in the synchronous HTTP response, the booking Sender **must** make available the human readable identifier for the booking to the end user
 * The booking Sender **must** send accompanying clinical information in a BaRS referral request
   * The booking Sender **must** reference the booking in the BaRS referral request (where the booking is made first in the workflow)
@@ -131,8 +131,8 @@ The payloads and workflow have been designed to support these services. Other {{
 * The referral Receiver **must** clearly identify any included safeguarding concern to the end user
 * The referral Receiver **must** accurately represent information made by the Sender to the end user
 * The referral Sender **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user
-* Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
-* Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:failure_scenarios, text:failure scenarios}} for more detail.
+* Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
+* Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail.
 * The referral Sender **must** include reference to any accompanying BaRS booking related to the referral
   * The referral Sender's request **must** be referenced in the BaRS booking request (where the referral is made first in the workflow)
   * The referral Receiver **must** link the explicitly related booking and referral requests
@@ -173,11 +173,11 @@ The payloads and workflow have been designed to support these services. Other {{
 <br>
 
 ### Error Handling 
-* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling, text:error handling guidance}} 
+* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling-1.1.3, text:error handling guidance}} 
 <br>
 <br>
 ### Non Functional 
-* Suppliers **must** adhere to the {{pagelink:core-NFR, text:non functional requirements}}
+* Suppliers **must** adhere to the {{pagelink:core-NFR-1.1.3, text:non functional requirements}}
 
 <br>
 <br>

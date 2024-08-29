@@ -5,7 +5,7 @@ topic: APP3-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader, text:Standard Pattern Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.3, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -17,6 +17,13 @@ The MessageHeader resource for the Referral Request should have the following re
 The 'focus' resource in a referral is the ServiceRequest resource. When the request 'message bundle' is created by the Sender and processed by the Receiver, this is the starting point from which the referral is understood. It provides either the detail or references to all key FHIR resources, for example, the Patient, Encounter and Careplan. The guidance for this resource below provides more granular, element level, detail.
 
 The *ServiceRequest.category* is important to denote the type of referral, which combined with the *MessageHeader.eventCoding* is key to drive workflow.
+
+There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
+1. Denotes the type of referral e.g. Transfer of care
+2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
+). e.g. 999-CAS Referral. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.3, text:use-case categories}}
+
 
 Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must call the patient by (call back time)
 
@@ -84,7 +91,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 
 ## Referral Cancellation Payload
 
-The ability to cancel a Referral Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation, text:Standard Patterns - Cancellation}}.
+The ability to cancel a Referral Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.3, text:Standard Patterns - Cancellation}}.
 
 <br>
 <hr>

@@ -16,6 +16,6 @@ When planning a project to build a BaRS solution, the inclusion of assurance mus
 
 The process of being assured via the SCAL can take between 2-4 weeks (average), from the point of the first complete submission. This allows some time in any plan for resubmissions after review by the Solution Assurance team.  
 
-It is advised the SCAL requirements are reviewed after reading the implementation guidance. The two combined will help build a backlog of requirements for the anticipated solution. For example, there is implementation guidance for {{pagelink:core-EHFailureScenarios, text:error handling}} while the SCAL highlights the expectation for logging and auditing of errors.
+It is advised the SCAL requirements are reviewed after reading the implementation guidance. The two combined will help build a backlog of requirements for the anticipated solution. For example, there is implementation guidance for {{pagelink:core-EHFailureScenarios-1.1.3, text:error handling}} while the SCAL highlights the expectation for logging and auditing of errors.
 
 Evidence, supporting the completion of the SCAL, can be gathered during testing with other supplier solutions or {{pagelink:Home/Build/Testing-and-Environments/TKW.page.md, text:Toolkit Workbench (TKW)}}. An ideal time to collect is during the end-to-end demonstration of the solution, a necessary part of assurance. The validation reports from TKW must also be submitted as part of the SCAL. 

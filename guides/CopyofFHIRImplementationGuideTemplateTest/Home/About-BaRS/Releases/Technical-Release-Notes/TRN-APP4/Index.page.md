@@ -4,13 +4,13 @@ topic: trn-app4
 
 <a href="#" onclick="history.back()">back</a>
 
-## Validation into CAS (application 4) Change Log
+## Validation into CAS (Application 4) Change Log
 
 <br>
 This page will list all updates to the BaRS Application 4. 
 <br>
 <br>
-<div class="imgHandshake">{{render:handshake}}</div> &nbsp; - Indicates a change inspired by provider or supplier feedback.
+<div class="imgHandshake">{{render:handshake}}</div> &nbsp; - Indicates a change inspired by provider or supplier feedback. 
 <p>
 
 

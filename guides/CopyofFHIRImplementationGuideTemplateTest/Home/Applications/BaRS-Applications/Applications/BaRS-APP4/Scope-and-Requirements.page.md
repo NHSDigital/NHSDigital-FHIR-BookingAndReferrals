@@ -7,12 +7,14 @@ topic: APP4-ScopeAndRequirements
 
 This BaRS Application (application 4) covers only use cases:
 * 999 Ambulance Service Trust (AST) Referral into Clinical Assessment Service (CAS) for Validation
+* 999 AST to Falls Lifting Service
+* 999 AST to Community Services (e.g 2-hour Urgent Community Response)
 
 
 The payloads and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
 
 <br>
-For this application we will be referring to the actors as 'Requester' and the 'Responder'. The Requester is the provider system that creates and sends the Validation Request to the Responder for completion. The Responder is the provider system that completes the validation request and responds back with the outcome of the assessment to the Requester. The table below summarises this.
+For this application we will be referring to the actors as 'Requester' and the 'Responder'. The Requester is the provider system that creates and sends the Validation Request to the Responder for completion. The Responder is the provider system that completes the validation request and responds back with the outcome of the assessment or action to the Requester. The table below summarises this.
 <br>
 <br>
 <img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/ValidationActors.svg" width="500"></img></a>
@@ -28,7 +30,7 @@ For this application we will be referring to the actors as 'Requester' and the '
 * The service **must** be configured within the BaRS infrastructure (Endpoint Catalogue) before requests can be made to the service
 
 **Validation Request**
-* A Validation Request is a request for the clinical validation of a triage outcome from one service to another 
+* A Validation Request is a request for the clinical validation of a triage outcome from one service to another OR a request to a Falls or Community Service for an agreed response within a specified time frame.
 * The Validation Request can be sent without having to establish the capacity the service offers
 * The Validation Request  will contain primarily clinical information, indicating the need of the individual and **should** state the anticipated action required by the Responding service
 * Supporting information, other than the assessment, is expected to be included in a Validation Request, if collected, including:
@@ -39,16 +41,17 @@ For this application we will be referring to the actors as 'Requester' and the '
     * timing information to support the timely delivery of care and reporting
 
 **Validation Responses**
-* There are two supported Validation Responses in the workflow; Interim and Full
-* The Interim Response has 2 purposes: 
-    * Communication that the Validation Responder has started the assessment. 
-        * When a CAS clinician starts to assess the patient an Interim Response **must** be sent to the Requester to covey that the status of the request has changed and is now 'in progress'
-    * Communication that the Validation Responder has rejected the Validation Request
-        * When CAS clinician cannot undertake the validation request (e.g. they fail to contact the patient within an appropriate timescale) an Interim Response **must** be sent to the Requester to convey that the status of the request has changed and is now 'cancelled'. It **should** include a reason for rejection.
-        * On receipt of an Interim Response with an Encounter.status of 'cancelled' conveying the rejection of a Validation request, the Validation Requester *must* notify system users so they can take ownership of the case and perform the next activity.
-* The Full Response contains the Validation Outcome, raising, lowering or preserving, the original ambulance category established by the 999 service, and **must** be sent to the Requester
-* If a Validation Outcome raises the ambulance category to either a CAT 1 or CAT 2, the Responder **must** raise an ambulance with the Requesting 999 service using the existing CDA over ITK method
-	* The new ambulance request, raised via ITK, **must** be included in the Full Response as an additional entity (FHIR Encounter)
+* There are two supported responses in the workflow; the Interim Validation Response and Validation Response.
+* The Interim Validation Response has 2 purposes: 
+    * Communication that the Responder has started the assessment or response. 
+        * When a CAS clinician starts to assess the patient OR when a Falls or Community Service HCP accepts the case, an Interim Response **must** be sent to the Requester to covey that the status of the request has changed and is now 'in progress'
+      
+    * Communication that the Responder has rejected the Validation Request
+        * When CAS clinician cannot undertake the validation request (e.g. they fail to contact the patient within an appropriate timescale) OR when a Flls or Community Service cannot accept a case, an Interim Response **must** be sent to the Requester to convey that the status of the request has changed and is now 'cancelled'. It **should** include a reason for rejection.
+        * On receipt of an Interim Response with an Encounter.status of 'cancelled' conveying the rejection of a Validation request, the Requester *must* notify system users so they can take ownership of the case and perform the next activity.
+* The Validation Response contains the validation outcome, raising, lowering or preserving, the original ambulance category established by the 999 service, and **must** be sent to the Requester
+* If a validation outcome raises the ambulance category to either a CAT 1 or CAT 2, the Responder **must** raise an ambulance with the Requesting 999 service using the existing CDA over ITK method
+	* The new ambulance request, raised via ITK, **must** be included in the Validation Response as an additional entity (FHIR Encounter)
 
 **API-M**
 * All requests and response associated with BaRS must occur through the BaRS API Proxy
@@ -64,7 +67,7 @@ For this application we will be referring to the actors as 'Requester' and the '
 ## Requirements
 
 **Service Discovery** 
-* The service **must** support a unique identifier which the Sender extracts to engage in referral workflows
+* The service **must** support a unique identifier which the Requester extracts to engage in referral workflows
 
 **Validation Request**
 * The Responder **must** accept the Validation Request regardless of whether the patient is known to the service provider
@@ -75,14 +78,14 @@ For this application we will be referring to the actors as 'Requester' and the '
 * The Responder **must** clearly identify any included safeguarding concern to the end user
 * The Responder **must** accurately represent information made by the Sender to the end user
 * The Requester **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user
-* Where the Validation Request was <ins>not</ins> successful, the Responder **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
-* Where the Validation Request was <ins>not</ins> successful, the Requester **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
+* Where the Validation Request was <ins>not</ins> successful, the Responder **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.4, text:failure scenarios}} for more detail
+* Where the Validation Request was <ins>not</ins> successful, the Requester **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.4, text:failure scenarios}} for more detail
 
 **Update Validation Request**
 *	The Requester **must** be capable of updating any Validation Request made by them, within the current consultation or after the consultation event
 *	The Requester **must** retrieve the Validation Request to be updated from the Responder prior to update, to ensure they are working with the most up-to date version and the validation request has not already been completed, or is at a point in the workflow where it must not be updated
 *	The Requester **must** provide visible confirmation of the status returned by the Responder to the end-user, i.e. whether the original Validation Request was successfully updated or not
-*	If the update fails, the Responder **must** respond with the most appropriately aligned error. See {{pagelink:core-failure_scenarios-1.1.3, text:failure scenarios}} for more detail
+*	If the update fails, the Responder **must** respond with the most appropriately aligned error. See {{pagelink:core-failure_scenarios-1.1.4, text:failure scenarios}} for more detail
 *	The Responder **must** store all previous versions of the Validation Request
 *	The Requester **must <ins>not</ins>** be required to inform the patient of the updating of the Validation Request.  Business/clinical responsibility for informing the patient must remain with the Requester
 *  The Requester  **should not** send updates after receiving an Interim Response
@@ -97,11 +100,11 @@ For this application we will be referring to the actors as 'Requester' and the '
 *	The Responder **must <ins>not</ins>** be required to inform the patient of the cancellation of the Validation Request. Business/clinical responsibility for informing the patient must remain with the Requester
 
 **Interim Validation Response**
-*  The Responder **must** send an Interim Validation Response when the clinician starts the consultation in the CAS system. This **must not** be triggered by a clinician attempting to contact the patient or by a welfare call.
+*  The Responder **must** send an Interim Validation Response when the HCP starts the consultation in the Responder system. This **must not** be triggered by an HCP attempting to contact the patient or by a welfare call.
 *  The Requester **must** process the Interim Validation Response, update the case in the CAD and display the status change to the end user.
 
 **Validation Response**
-*  The Responder **must** send a full Validation Response when the clinician has completed the consultation in the CAS system.
+*  The Responder **must** send a full Validation Response when the clinician has completed the consultation, or completed the agreed response, in the Responder system.
 *  The Requester **must** process the Validation Response, update the case in the CAD and display the status change to the end user.
 * The status on the Validation Response **must** indicate to the end user if a dispatch is required or not.
 * The Requester **must** use status of the Validation Response to trigger system behaviour that ensures that cases that require a dispatch are acted on within an appropriate timescale, and cases that do not require a dispatch are closed
@@ -143,11 +146,11 @@ For this application we will be referring to the actors as 'Requester' and the '
 <br>
 <br>
 ### Error Handling 
-* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling-1.1.3, text:error handling guidance}} 
+* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling-1.1.4, text:error handling guidance}} 
 <br>
 <br>
 ### Non Functional 
-* Suppliers **must** adhere to the {{pagelink:core-NFR-1.1.3, text:non functional requirements}}
+* Suppliers **must** adhere to the {{pagelink:core-NFR-1.1.4, text:non functional requirements}}
 <br>
 <br>
 <hr>

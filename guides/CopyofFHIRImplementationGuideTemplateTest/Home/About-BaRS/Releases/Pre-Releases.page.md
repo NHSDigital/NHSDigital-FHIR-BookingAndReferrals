@@ -56,21 +56,21 @@ The initial preview (alpha) documentation of the core and first Application (111
 </thead>
 <tbody>
 	<tr>
-		<td>Application 1 v1.0.1</td>
+		<td>Application 1 v1.0.5</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">v1.1.0</a></td>
 		<td rowspan=7 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a></td>
 		<td rowspan=7 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">1.0.0</a></td>		
 	</tr>
 	<tr>
-		<td>Application 1 v1.0.3</td>
+		<td>Application 1 v1.0.5</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 2 v1.0.1</td>
+		<td>Application 2 v1.0.5</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">v1.1.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 2 v1.0.3</td>
+		<td>Application 2 v1.0.5</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
 	<tr>
@@ -86,13 +86,13 @@ The initial preview (alpha) documentation of the core and first Application (111
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 5 v1.0.0-beta3</td>
+		<td>Application 5 v1.0.0-beta.4</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
 		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">v1.1.2</a></td>
 		<td rowspan=2 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">1.1.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 6 v1.0.0-beta</td>
+		<td>Application 6 v1.0.0-beta.1</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
 	<tr>

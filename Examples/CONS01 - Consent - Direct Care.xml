@@ -1,4 +1,4 @@
-<Consent>
+<Consent xmlns="http://hl7.org/fhir">
   <id value="8fc39b95-89a6-45fb-914f-1458a10e9e14" />
   <meta>
     <lastUpdated value="2021-11-26T15:00:00+00:00" />

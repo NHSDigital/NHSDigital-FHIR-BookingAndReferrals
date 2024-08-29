@@ -4,12 +4,9 @@ topic: Application5
 
 # Referrals into Pharmacy (Application 5)
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This guide is currently under development <hr><p> This is a preview of a developing guide for information only. With the exception of those involved in developing solutions for the first of type (private beta), It is not intended to be used until the completed v1.0.0 documentation for this application is released <p> If you are interested in developing a BaRS compliant solution right now for the use cases covered by this application, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch.
-<p>
-
-<b>Versioning information</b>
-<p>
-<table>
+ <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important: Versioning information</b> 
+ <p>
+ <table>
 <thead>
 	<tr>
 		<th data-no-sort="">Application Version</th>
@@ -20,9 +17,9 @@ topic: Application5
 </thead>
 <tbody>
 	<tr>
-		<td>Application 5 v1.0.0-beta3</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/End-to-end-workflow?version=1.4.0" target="_blank">v1.1.0</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</td>
+		<td>Application 5 v1.1.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.8.0" target="_blank">v1.1.0</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.0" target="_blank">v1.8.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a></td>
 	</tr>
 </tbody>
@@ -37,6 +34,10 @@ topic: Application5
 This application supports the use of the following use cases:
 
 - Primary Care to Community Pharmacy (Pharmacy First)
+- Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP))
+- Primary Care to Pharmacy Blood Pressure Check Service
+
+NB - 'Primary Care' currently includes GP Practice and Online Consultation, as described in the [BaRS Clinical Safety Case Report (CSCR)](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#downloads)
 
 ## Introduction
 
