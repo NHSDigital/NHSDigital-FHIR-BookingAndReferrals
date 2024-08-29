@@ -60,7 +60,7 @@ The payloads and workflow have been designed to support these services. Other {{
   * Booking Sender **must** handle a Slot response with FHIR resources not requested
 
 **Booking** 
-* Where a national identifier is included, it **must** be 'traced and verified', otherwise, the referral Sender **must <ins>not</ins>** include the national indentifier in the request
+* Where a national identifier is included, it **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified' or 'Number present but not traced', otherwise, the referral Sender **must <ins>not</ins>** include it in the request
 * Where the booking was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.4, text:failure scenarios}} for more detail.
 * Where the booking was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.4, text:failure scenarios}} for more detail.
 * If included in the synchronous HTTP response, the booking Sender **must** make available the human readable identifier for the booking to the end user
