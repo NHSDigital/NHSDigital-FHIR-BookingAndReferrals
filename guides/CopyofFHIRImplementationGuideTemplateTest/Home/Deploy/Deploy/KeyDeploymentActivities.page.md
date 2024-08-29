@@ -34,7 +34,7 @@ The core steps to complete technical setup in an environment are:
 **NOTE** - The detail of installing and configuring a solution will differ considerably depending on the supplier and provider(s) involved.
 
 ## Testing
-Testing is an integral part of the BaRS development and implementation process. The testing process involves multiple stages, {{pagelink:Home\Build\Testing-and-Environments\Environments.page.md, text:environments}} and systems to ensure thorough validation and functionality.
+Testing is an integral part of the BaRS development and implementation process. The testing process involves multiple stages, {{pagelink:Home/Build/Testing-and-Environments/Environments.page.md, text:environments}} and systems to ensure thorough validation and functionality.
 
 There are numerous stages, environments, and systems involved. NHS England (BaRS) defines the testing stages as outlined below:
 
@@ -87,4 +87,5 @@ Afterward, the solution transitions from a 'project' phase to Business as Usual 
 
 Once in Production and running as business-as-usual (BAU), should an issue with the solution arise, service providers will be expected to follow their existing support processes with their supplier. After investigation, if the issue is thought to lie with the BaRS API or a third party supplier an incident can be raised with the National Service Desk - ssd.nationalservicedesk@nhs.net - who will involve the BaRS Programme, if required.
 
+<br>
 
