@@ -67,11 +67,17 @@ Completed a minimum number of agreed referrals in line with the BaRS clinical ri
 
 ## Key Deployment Activities
 
-The following activities will form the BaRS Application beta phase:
+A Beta deployment closely mirrors a typical software deployment process but includes multiple opportunities for testing, learning, and iteration.
+
+The diagram below illustrates the steps and stages of the Beta deployment process, with detailed explanations provided in the section that follows.
+
+![Beta Deployment](
+https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/BetaDeployment-1.0.0.svg
+)
 
 ### Business Change
 
-As the aim of the BaRS is to enable digitisation of referral workflows, the provider will need to undertake business change activities to achieve the full benefits of adopting a BaRS conformant solution. This may include:
+To fully realise the benefits of adopting a BaRS-conformant solution and digitising workflows, providers must carry out business change activities. **Note**: Providers will need access to review the supplier's developed solution, including the user interface and any new functionality, to effectively design the 'future state'. 
 
 - Updating workflows and standard operating procedures
 - Staff training and communications plans
@@ -121,6 +127,7 @@ The suppliers are responsible for:
 - Providing key contacts throughout the beta process
 - Supporting business change activities including training, designing new workflow and procedures
 - Completing the development against the BaRS
+- Providing view access to any new user interface and functionality developed in order to support business change
 - Further development changes throughout the duration of the beta
 - Conducting testing in a non-production environment
 - Providing testing and training documentation required to complete beta
