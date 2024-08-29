@@ -243,7 +243,7 @@ For more detail please visit the {{pagelink:core-StandardPattern-document-refere
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information - Preview</b>
 <p>
 
-This version of core is strictly a preview of what is currently in development for 1.2.0 and should not be built against.
+This version of core is strictly a preview of what is currently in development for 1.2.0-alpha and <b>should notbe built against</b> .
 
 </div>
 
