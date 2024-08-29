@@ -4,7 +4,7 @@ topic: design-core-1.2.0
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information</b>
 <p>
 
-This version of core is strictly a preview of what is currently in development for 1.2.0 and should not be built against.
+This version of core is strictly a preview of what is currently in development for 1.2.0-alpha and should not be built against.
 
 <table>
 <thead>
