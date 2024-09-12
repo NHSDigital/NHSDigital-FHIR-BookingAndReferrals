@@ -8,13 +8,13 @@ topic: TRN-API-global
 
 | Change                                         | BaRS Version | Description                                                                                                                              | Impact                                                   |
 |------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <div class="imgHandshake">{{render:handshake}} The DoS ID examples updated to https| 1.8.0      | The https://fhir.nhs.uk/Id/dos-service-id examples now correcly show as https.  | <mark style="background-color: Yellow">correction</mark>    |
-| <div class="imgHandshake">{{render:handshake}} | 1.8.0 | The example deviceName element in NHSD-Requesting-Software now shows correctly as an Object as defined by the schema | <mark style="background-color: Yellow">correction</mark>    |
+| <div class="imgHandshake">{{render:handshake}}</div> -  The DoS ID examples updated to https| 1.8.0      | The https://fhir.nhs.uk/Id/dos-service-id examples now correcly show as https.  | <mark style="background-color: Yellow">correction</mark>    |
+| <div class="imgHandshake">{{render:handshake}}</div>  | 1.8.0 | The example deviceName element in NHSD-Requesting-Software now shows correctly as an Object as defined by the schema | <mark style="background-color: Yellow">correction</mark>    |
 | Resilience to Endpoint Catalogue               | 1.5.0        | The proxies mechanism for obtaining Target Endpoints has been updated to allow for more resilience in the event of a dependency failure. | <mark style="background-color: Yellow">correction</mark> |
 | Modifications to allow for future enhancements | 1.5.0        | The proxy has been modified to allow further endpoints and resources more easily in the future.                                          | <mark style="background-color: Yellow">correction</mark> |
 | Publication of the 1.2.0 Specification         | 1.5.0        | 1.2.0 Specification (alpha) launched                                                                                                     | <mark style="background-color: Green">Addition</mark>    |
 | Improvement to DocumentReference Schema   | 1.5.0 | the DocumentReference Schemas have been flattend for easier consumption | <mark style="background-color: Yellow">correction</mark>    |
-| Corrections to example references containing http. <div class="imgHandshake">{{render:handshake}}</div> &nbsp;   | 1.5.0 | Several references to http://fhir.nhs.uk have been corrected to "https". | <mark style="background-color: Yellow">correction</mark>    |
+| <div class="imgHandshake">{{render:handshake}}</div> - Corrections to example references containing http.  | 1.5.0 | Several references to http://fhir.nhs.uk have been corrected to "https". | <mark style="background-color: Yellow">correction</mark>    |
 
 This Section will list all updates to the BaRS API Specification within the 1.2.0 minor release, published for BaRS 1.5.0.
 
