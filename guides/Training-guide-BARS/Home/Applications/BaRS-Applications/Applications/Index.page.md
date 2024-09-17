@@ -127,15 +127,16 @@ These guides are designed to be used in conjunction with the documentation for {
 | Application Version     | Minimum BaRS Guide Version | Minimum Core Version | Minimum API Spec version |
 |-------------------------|----------------------------|----------------------|--------------------------|
 | Application 1 v1.0.1     | [v1.1.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0) | [v1.0.0](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0) | [1.0.0](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0) |
-| Application 1 v1.0.3     | [v1.4.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0) | *rowspan 7*               | *rowspan 7*               |
+| Application 1 v1.0.3     | [v1.4.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0) |              |                |
 | Application 2 v1.0.1     | [v1.1.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0) |                          |                          |
 | Application 6 v1.0.0-beta.1 | [v1.5.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0) |                          |                          |
 
 <div class="assets" title="Versions">
+
 | Application Version     | Minimum BaRS Guide Version | Minimum Core Version | Minimum API Spec version |
 |-------------------------|----------------------------|----------------------|--------------------------|
 | Application 1 v1.0.1     | [v1.1.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0) | [v1.0.0](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0) | [1.0.0](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0) |
-| Application 1 v1.0.3     | [v1.4.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0) | *rowspan 7*               | *rowspan 7*               |
-| Application 2 v1.0.1     | [v1.1.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0) |                          |                          |
-| Application 6 v1.0.0-beta.1 | [v1.5.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0) |                          |                          |
+| Application 1 v1.0.3     | [v1.4.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0) |  -              |  -             |
+| Application 2 v1.0.1     | [v1.1.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0) |  -                        |  -                        |
+| Application 6 v1.0.0-beta.1 | [v1.5.0](https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0) |    -                      |   -                       |
 </div>
