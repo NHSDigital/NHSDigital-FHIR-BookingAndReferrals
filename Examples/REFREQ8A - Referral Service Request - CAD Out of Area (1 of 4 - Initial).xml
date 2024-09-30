@@ -220,39 +220,6 @@ Message 1 - Intital Message
             </Encounter>
         </resource>
     </entry>
-	<entry>
-        <!--   3A  --> 
-        <fullUrl value="urn:uuid:8c63d621-4d86-4f57-8699-e8e22d499884" />
-        <resource>
-            <Encounter> <!-- Receiver Encounter -->
-                <meta>
-                    <lastUpdated value="2023-12-26T15:00:00.8185338+00:00" />
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
-                </meta>
-                <identifier>
-                    <system value="https://sender.url/Id/case-number" />
-                    <!--   Set by the receiver who is passing the business case number value   -->
-                    <value value="receiver1234" />
-                </identifier>
-                <status value="planned" />
-                <class>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
-                    <code value="EMER" />
-                    <display value="emergency" />
-                </class>
-                <subject>
-                    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8" />
-                </subject>
-                <episodeOfCare>
-                    <!--       Resource reference to an EpisodeOfCare Journey ID       -->   
-                    <reference value="EpisodeOfCare/d877b820-e72b-44d1-a627-195f54bfc606" />
-                </episodeOfCare>
-                <period>
-                    <start value="2023-12-26T15:00:00+00:00" />
-                </period>
-            </Encounter>
-        </resource>
-    </entry>
     <entry>
         <!--  4   -->
         <fullUrl value="urn:uuid:68d3c42e-f76e-4f66-9498-d96e1040c81c" />
