@@ -1,23 +1,11 @@
 <Location xmlns="http://hl7.org/fhir">
-  <id value="f4f5c6b7-ca4e-489b-8840-d5465361e41f" />
+  <id value="455c6ece-b0fd-4c1d-b29b-5a6a8e7dd076" />
   <meta>
-    <lastUpdated value="2021-11-26T15:00:00.8185338+00:00" />
+    <lastUpdated value="2024-10-13T15:00:00.8185338+00:00" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/BARSLocation-incident-location" />
   </meta>
   <extension url="https://fhir.nhs.uk/StructureDefinition/LocationExtension">
-    <extension url="UPRN">
-      <valueString value="0008755622" />
-    </extension>
-    <extension url="eastings">
-      <valueString value="0.368598" />
-    </extension>
-    <extension url="northings">
-      <valueString value="0.409257" />
-    </extension>
-    <extension url="accuracy">
-      <valueString value="80" />
-    </extension>
     <extension url="what3words">
       <valueString value="noted.bunch.ballots" />
     </extension>
@@ -26,8 +14,8 @@
   <type>
     <coding>
       <system value="https://fhir.nhs.uk/CodeSystem/location-types-bars" />
-      <code value="ILOC" />
-      <display value="Incident Location" />
+      <code value="OLOC" />
+      <display value="Other Location" />
     </coding>
   </type>
   <address>
