@@ -1,0 +1,30 @@
+<Location xmlns="http://hl7.org/fhir">
+  <id value="2dec9a44-1778-4894-a3d5-c90172f5d581" />
+  <meta>
+    <lastUpdated value="2024-10-11T15:00:00.8185338+00:00" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/BARSLocation-incident-location" />
+  </meta>
+  <extension url="https://fhir.nhs.uk/StructureDefinition/LocationExtension">
+    <extension url="UPRN">
+      <valueString value="200002546857" />
+    </extension>
+  </extension>
+  <name value="Newlands Medical Centre" />
+  <type>
+    <coding>
+      <system value="https://fhir.nhs.uk/CodeSystem/location-types-bars" />
+      <code value="CLOC" />
+      <display value="Caller Location" />
+    </coding>
+  </type>
+  <address>
+    <line value="Newlands Medical Centre" />
+    <line value="315 Chorley New Road" />
+    <line value="Greater Manchester" />
+    <city value="Bolton" />
+    <district value="Greater Manchester" />
+    <postalCode value="BL1 5BP" />
+    <country value="UK" />
+  </address> 
+</Location>

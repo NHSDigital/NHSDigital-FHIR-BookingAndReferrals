@@ -1,0 +1,32 @@
+<Location xmlns="http://hl7.org/fhir">
+    <id value="903882c6-1cc2-4d01-ba92-e9c7bca837c2s" />
+	<meta>
+		<lastUpdated value="2023-12-26T15:00:04.8185338+00:00" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+    </meta>
+    <extension url="https://fhir.nhs.uk/StructureDefinition/LocationExtension">
+		<extension url="UPRN">
+			<valueString value="200002541286" />
+		</extension>
+		<extension url="what3words">
+			<valueString value="raft.metals.misty" />
+		</extension>
+    </extension>
+    <type>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/location-types-bars" />
+            <code value="RLOC" />
+            <display value="Rendezvous Location" />
+        </coding>
+    </type>
+    <address>
+        <line value="425 Chorley New Road" />
+        <line value="Markland Hill" />
+        <line value="Bolton" />
+        <line value="Greater Manchester" />
+        <city value="Bolton" />
+        <district value="Greater Manchester" />
+        <postalCode value="BL1 5DH" />
+        <country value="UK" />
+        </address>
+</Location>
