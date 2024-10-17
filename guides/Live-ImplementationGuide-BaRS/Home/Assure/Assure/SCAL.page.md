@@ -12,7 +12,7 @@ An **end-to-end real-time demonstration** of the solution will be required as pa
 
 The SCAL is completed [online](https://digital.nhs.uk/developer/guides-and-documentation/digital-onboarding). There is further guidance on how to complete the SCAL below. 
 
-Request for an **Account Manager** to be set up by sending an email to the BaRS Team <bookingandreferralstandard@nhs.net>, including details of your Organisation, Product and which {{pagelink:Applications, text:BaRS Application}} you are undertaking, and you will be prompted to create an account with [Digital Onboarding Services](https://onboarding.prod.api.platform.nhs.uk/) via a link. 
+When you are ready to start the assurance process, send an email to the BaRS Team <bookingandreferralstandard@nhs.net>, including details of your Organisation, Product and which {{pagelink:Applications, text:BaRS Application}} you are undertaking, and you will be prompted to create an account with [Digital Onboarding Services](https://onboarding.prod.api.platform.nhs.uk/) via a link. 
 
 ### Planning your assurance
 
