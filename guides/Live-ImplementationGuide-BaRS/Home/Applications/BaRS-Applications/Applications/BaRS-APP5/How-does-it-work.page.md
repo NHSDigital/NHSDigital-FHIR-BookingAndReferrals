@@ -263,7 +263,7 @@ In addition the specific workflow parameters that are required are as follows:
                 <tbody>
                     <tr>
                         <td>Get Referral</td>
-                        <td>GET /ServiceRequest{id}</td>
+                        <td>GET /ServiceRequest/{id}</td>
                         <td>n/a</td>
                         <td>n/a</td>
                     </tr>
