@@ -56,7 +56,43 @@ Once all requested tests have been completed, the Validation Report can be downl
 
 The TKW will respond to the scenarios outlined below. It does not hold the state of any prior request (unless specified in the Stateful scenarios) and the specific 'sentinel' values (in bold) must be used to elicit the required response where stated. 
 
-NB: where 'Any' NHSD-Target-Identifier is specified, only those highlighted in this table will work for TKW. Any of the NHSD-Target-Identifiers configured for TKW. 
+NB: where 'Any' NHSD-Target-Identifier is specified, only those highlighted in "UserTest DoS Services" table below will work for TKW.
+
+NB: the endpoints for TKW are case sensitive eg use the following
+/metadata
+/MessageDefinition
+/$process-message
+/Slot
+/Appointment
+
+#### Headers
+
+The follow is a list of headers needed for the requests, these follow the patern needed by BARS as follows {{pagelink:Home/Applications/BaRS-Core/End-to-end-workflow, text:Headers}}
+
+
+| Name | Value |
+|-----|-----|
+| X-Request-Id |Guid|
+| X-Correlation-Id  | Guid|
+| NHSD-Target-Identifier | Base64 encoded json varies depending on test (Sentinel Value) else use a value from the "UserTest DoS Services" table below |
+| NHSD-End-User-Organisation  | Base64 encoded json |
+|||
+
+
+<details>
+    <summary><b>Example cURL Request</b></summary>
+    <pre><code>
+        bash
+        curl --location 'https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4/metadata' \
+        --header 'X-Request-Id: 99672436-ae1e-42e4-81a6-5a298563ccfa' \
+        --header 'X-Correlation-Id: f44f6c3c-fdd5-4c8c-a091-d825eca1d763' \
+        --header 'NHSD-Target-Identifier: eyJzeXN0ZW0iOiJodHRwczovL2ZoaXIubmhzLnVrL0lkL2Rvcy1zZXJ2aWNlLWlkIiwidmFsdWUiOiIyMDAwMDcyNDg5In0=' \
+        --header 'NHSD-End-User-Organisation: ewogICJyZXNvdXJjZVR5cGUiOiAiT3JnYW5pemF0aW9uIiwKICAiaWRlbnRpZmllciI6IFsKICAgIHsKICAgICAgInZhbHVlIjogIldBU1AiLAogICAgICAic3lzdGVtIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvb2RzLW9yZ2FuaXphdGlvbi1jb2RlIgogICAgfQogIF0sCiAgIm5hbWUiOiAiTXkgc2VydmljZSBwcm92aWRlciBuYW1lIgp9' \
+        --header 'Authorization: Bearer yourBearerToken'
+    </code></pre>
+</details>
+
+
 
 | Suite                 | Test          | BaRS Application   | Sentinel Element                      | Sentinel Value   | Comment   |
 |-----------------------|---------------|--------------------|---------------------------------------|------------------|-----------|
@@ -64,27 +100,27 @@ NB: where 'Any' NHSD-Target-Identifier is specified, only those highlighted in t
 ||CS for Referral receiver|111-ED, 999-CAS|NHSD Target Identifier (HTTP Header)|2000076289|Returns CS for Referral receiver service|
 ||CS for Validation sender|999-CAS|NHSD Target Identifier (HTTP Header)|1374839566|Returns CS for Validation sender service (accepting interim and full validation responses)|
 ||CS for any other receiving service|BaRS Core|NHSD Target Identifier (HTTP Header)|Any (see comment)|Any NHSD Target Identifier other than those a predefined response is set for (see above)|
-|MessageDef|MD for Booking and Referral receiver|111-ED|context (parameter)|2000011147|Returns MD for Booking and Referral receiver service|
-||MD for Referral receiver|111-ED, 999-CAS|context (parameter)|2000076289 |Returns MD for Referral receiver service|
-||MD for Validation receiver|999-CAS|context (parameter)|2000003366|Returns MD for Validation receiver service|
-||MD for Validation sender|999-CAS|context (parameter)|1374839566|Returns MD for Validation sender service (accepting interim and full validation responses)|
-||MD for any other receiving service|BaRS Core|context (parameter)|Any (see comment)|Any 'context' parameter other than those a predefined response is set for (see above)|
-||MD failed request - HTTP 401|BaRS Core|context (parameter)|FAIL0401|
-||MD failed request - HTTP 404|BaRS Core|context (parameter)|FAIL0404|
-||MD for invalid MessageDefs|BaRS Core|context (parameter)|2000071898|Returns invalid MessageDefintions (includes Invoice resource) for any workflow|
-|Booking|Search for free Slots|BaRS Core|Schedule.actor:HealthcareService (parameter)|2000072489||
-||Search for free and busy Slots |BaRS Core|Schedule.actor:HealthcareService (parameter)|2000072489|Must include the parameter 'status=free,busy' or 'status=busy,free'|
-||Return no Slots|BaRS Core|Schedule.actor:HealthcareService (parameter)|2000073917||
-||Return mandatory Slot response|BaRS Core |Schedule.actor:HealthcareService (parameter)|1503499715|This will only include Slot, Schedule and HealthcareService|
-||Slot search failed request - HTTP 408|BaRS Core|Schedule.actor:HealthcareService (parameter)|2000081230|HealthcareService = 2000081230|
-||New booking for verified patient |BaRS Core|Patient.identifier (NHS No)|9658499007|The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7 in HTTP synchronous response|
-||Get Booking|BaRS Core|n/a||The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7|
-||Cancel Booking|BaRS Core|n/a||The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7 (assumed cancel is for this appointment)|
-||New booking for a patient with no NHS No.|BaRS Core|Patient.identifier (NHS No)|blank (no NHS No.)|The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7|
-||New booking failed request - HTTP 404|BaRS Core|Patient.identifier (NHS No)|9658499015||
-||New booking failed request - HTTP 409|BaRS Core|Patient.identifier (NHS No)|9658499023||
-||New booking failed request - HTTP 422|BaRS Core|Patient.identifier (NHS No)|9658499031||
-||Get booking failed request - HTTP 501|BaRS Core|n/a||GET must be for Appointment Id 0d440c22-7f25-4c6c-905d-2213d197d02a|
+|MessageDef|MD for Booking and Referral receiver|111-ED|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000011147|2000011147|Returns MD for Booking and Referral receiver service|
+||MD for Referral receiver|111-ED, 999-CAS|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000076289 |2000076289 |Returns MD for Referral receiver service|
+||MD for Validation receiver|999-CAS|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000003366|2000003366|Returns MD for Validation receiver service|
+||MD for Validation sender|999-CAS|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|1374839566|1374839566|Returns MD for Validation sender service (accepting interim and full validation responses)|
+||MD for any other receiving service|BaRS Core|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000076288|Any (see comment)|Any 'context' parameter other than those a predefined response is set for (see above)|
+||MD failed request - HTTP 401|BaRS Core|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|FAIL0401|FAIL0401|
+||MD failed request - HTTP 404|BaRS Core|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|FAIL0404|FAIL0404|
+||MD for invalid MessageDefs|BaRS Core|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000071898|2000071898|Returns invalid MessageDefintions (includes Invoice resource) for any workflow|
+|Booking|Search for free Slots|BaRS Core|(parameter) Schedule.actor%3AHealthcareService eg.start=ge2020-10-31T18%3A45%3A39%2B00&end=le2024-11-04T19%3A00%3A38%2B00&Schedule.actor%3AHealthcareService=2000072489&status=busy%2Cfree |2000072489||
+||Search for free and busy Slots |BaRS Core|(parameter) as above but with status=busy%2Cfree|2000072489|Must include the parameter 'status=free,busy' or 'status=busy,free'|
+||Return no Slots|BaRS Core|(parameter) as above but &Schedule.actor%3AHealthcareService=2000073917|2000073917||
+||Return mandatory Slot response|BaRS Core |(parameter) as above but &Schedule.actor%3AHealthcareService=1503499715|1503499715|This will only include Slot, Schedule and HealthcareService|
+||Slot search failed request - HTTP 408|BaRS Core|(parameter) as above but &Schedule.actor%3AHealthcareService=2000081230|2000081230||
+||New booking for verified patient |BaRS Core|use body from [Booking Request New Full](https://simplifier.net/nhsbookingandreferrals/777a156c-af3c-4748-a8a3-7e95e4b0df9a) replace `\<value value="9476719931" \/>` with 9658499007|9658499007 |The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7 in HTTP synchronous response|
+||Get Booking|BaRS Core|/Appointment use any NHSD Target Identifier as above||The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7|
+||Cancel Booking|BaRS Core|use body from [Booking Request Cancelled](https://simplifier.net/NHSBookingandReferrals/446053f9-047a-4c67-b021-58871edb4414/~xml)||The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7 (assumed cancel is for this appointment)|
+||New booking for a patient with no NHS No.|BaRS Core|use body from [Booking Request New Full](https://simplifier.net/nhsbookingandreferrals/777a156c-af3c-4748-a8a3-7e95e4b0df9a) remove the whole "Extension-UKCore-NHSNumberVerificationStatus" section |blank (no NHS No.)|The returned Appointment Id = ce1c4ced-2a84-4198-9982-9caf894d0bb7|
+||New booking failed request - HTTP 404|BaRS Core|use body from [Booking Request New Full](https://simplifier.net/nhsbookingandreferrals/777a156c-af3c-4748-a8a3-7e95e4b0df9a) replace `\<value value="9476719931" \/>` with 9658499015|9658499015||
+||New booking failed request - HTTP 409|BaRS Core|use body from [Booking Request New Full](https://simplifier.net/nhsbookingandreferrals/777a156c-af3c-4748-a8a3-7e95e4b0df9a) replace `\<value value="9476719931" \/>` with 9658499023|9658499023||
+||New booking failed request - HTTP 422|BaRS Core|use body from [Booking Request New Full](https://simplifier.net/nhsbookingandreferrals/777a156c-af3c-4748-a8a3-7e95e4b0df9a) replace `\<value value="9476719931" \/>` with 9658499031|9658499031||
+||Get booking failed request - HTTP 501|BaRS Core|/Appointment/0d440c22-7f25-4c6c-905d-2213d197d02a||GET must be for Appointment Id 0d440c22-7f25-4c6c-905d-2213d197d02a|
 |Referral|New referral for a verified patient|111-ED, 999-CAS|Patient.identifier (NHS No)|9658499058|The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0|
 ||Get Referral|111-ED, 999-CAS|n/a||The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0|
 ||Cancel Referral|111-ED, 999-CAS|n/a||The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0 (assumed revoke is for this Service Request)|
