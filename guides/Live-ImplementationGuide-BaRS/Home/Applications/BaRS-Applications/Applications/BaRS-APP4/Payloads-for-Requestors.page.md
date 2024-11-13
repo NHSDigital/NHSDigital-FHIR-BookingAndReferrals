@@ -13,7 +13,7 @@ For Example Validation Request bundles see:
 * [Validation Request - 999 to CAS New](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292db)
 * [Validation Request - 999 to CAS AMPDS](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292ba)
 * [Validation Request - 999 to CAS Update to lower priority](https://simplifier.net/nhsbookingandreferrals/baebe535-9d6c-4b0f-8bc6-8f4b157d44ac)
-* For additional example bundles please check [BaRS Example Bundles](https://teams.microsoft.com/l/message/19:775ed072-6a81-45d5-9e19-c38e108efe79_d86b2d01-da33-4982-8276-19d86a303b16@unq.gbl.spaces/1724861855443?context=%7B%22contextType%22%3A%22chat%22%7D)
+* For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)
 
 ### MessageHeader Resource
 For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern Message Header}}. 
@@ -91,7 +91,7 @@ When a BaRS Responder processes information in a Flag resource;
 The Observation resource is used to carry assertions supporting the assessment performed by the Requester. Requesters **should** add clinical notes to the Careplan resource rather than Observation, especially where they expect a Responder to act upon the information. 
 
 There are specific instances where an Observation **must** be used to convey information and [examples](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Observation&sortBy=DisplayName) are provided below to aid development: 
-* Where Birth Sex is communicated it **must** be transferred in a Validation Request using Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcorepatient). 
+* Where Birth Sex is communicated it **must** be transferred in a Validation Request using Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcore-observation). 
 * Where Estimated Age is communicated it **must** be conveyed in an Observation.
 
 ### Consent 

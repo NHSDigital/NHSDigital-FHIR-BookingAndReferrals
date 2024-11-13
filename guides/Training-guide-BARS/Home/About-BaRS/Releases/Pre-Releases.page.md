@@ -45,7 +45,7 @@ The initial preview (alpha) documentation of the core and first Application (111
 
 ## Versioning Matrix
 
-<table>
+<table class="regular">
 <thead>
 	<tr>
 		<th data-no-sort="">Application Version</th>
