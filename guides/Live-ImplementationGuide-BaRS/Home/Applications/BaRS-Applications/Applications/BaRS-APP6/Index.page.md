@@ -70,4 +70,5 @@ For the CAD to CAD use case, the data model was agreed by the CAD to CAD Referen
 * National Information Governance Group
 * National Directors of Operations Group (NDOG)
 
-<hr>
+For more information see {{pagelink: application6, text:Referrals into an Ambulance Service Trust(Application 6}} 
+<hr />

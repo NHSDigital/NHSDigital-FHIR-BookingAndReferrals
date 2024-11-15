@@ -2,7 +2,7 @@
 topic: Application2
 ---
 
-# Bookings and Referrals into UEC Application 2
+# Bookings and Referrals into UEC (Application 2)
 
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important: Versioning information</b>
 <p>
@@ -55,5 +55,7 @@ This page provides guidance for implementing the Booking and Referral Standard (
 The referral information data model is based on user research with NHS 111 service providers, 999 Ambulance Service Trusts and clinical and administrative Emergency Department staff.  We carried out this research in parallel with the Professional Records Standards Body (PRSB) who examined the wider brief of 'referrals from NHS 111 to any other care setting'. 
 
 We worked alongside PRSB to ensure data transferred from 111 to ED is clinically relevant and safe. PRSB have defined and endorsed an information model which works for both the senders (111) and receivers (ED) when referrals are made between the respective services. This endorsement provides the necessary confidence that solutions built to the standard will be both fit for purpose and safe. 
-<p>
-<hr>
+</p>
+
+For more information see {{pagelink: application2, text:Bookings and Referrals into UEC Application 2}} 
+<hr />
