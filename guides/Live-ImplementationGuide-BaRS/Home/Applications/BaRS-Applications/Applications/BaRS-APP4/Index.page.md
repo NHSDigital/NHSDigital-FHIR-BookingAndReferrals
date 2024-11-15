@@ -52,4 +52,5 @@ For the validation request into a CAS from a 999 AST use case, the data model wa
 
 The minor extension to the data model to support the secondary use cases was endorsed by the relevant NHSE policy team clinical stakeholders.
 
-<hr>
+For more information see {{pagelink: application4, text:Referral into UEC for Validation (Application 4}} 
+<hr />
