@@ -1,4 +1,4 @@
-## Current Release 1.8.0
+## Current Release 1.8.1
 
 Product Link           | Version | Handle  | Phase    | State           | Release Date | Stability  | Change Log Link
 -----------------------|---------|---------|----------|-----------------|--------------|------------|-----------------
@@ -7,7 +7,7 @@ Implementation Guide   | 1.8.0   | v1      | Live     | Current Release | 29/08/
 {{pagelink:design-core-1.1.4, text:BaRS Core}}              | 1.1.4   | v1      | Live     | Current Release | 29/08/2024   | Stable     |{{pagelink:trn-core, text: BaRS Core Change Log}}
 [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0)    | 1.1.0   | v1      | Live     | Current Release | 01/04/2023   | Stable     |{{pagelink:trn-api}}
 {{pagelink: build-testing, text: TKW}}  | 1.0.11   | v1      | Live     | Current Release | 29/07/2024   | Stable     |{{pagelink:trn-tkw}}
-{{pagelink:application1, text:BaRS-APP1}}   | 1.0.5   | v1      | Live     | Current Release | 29/08/2024   | Stable     |{{pagelink:trn-app1,text:BaRS APP1 Change Log}}
+{{pagelink:application1, text:BaRS-APP1}}   | 1.0.6   | v1      | Live     | Current Release | 29/08/2024   | Stable     |{{pagelink:trn-app1,text:BaRS APP1 Change Log}}
 {{pagelink:application2, text:BaRS-APP2}}   | 1.0.5   | v1      | Live     | Current Release | 29/08/2024   | Stable     |{{pagelink:trn-app2,text:BaRS APP2 Change Log}}
 {{pagelink:application3, text:BaRS-APP3}}   | 1.0.1   | v1      | Live     | Current Release | 21/05/2024   | Stable |{{pagelink:trn-app3,text:BaRS APP3 Change Log}}
 {{pagelink:application4, text:BaRS-APP4}}   | 1.2.0   | v1      | Live     | Current Release | 29/08/2024   | Stable |{{pagelink:trn-app4,text:BaRS APP4 Change Log}}
@@ -18,11 +18,8 @@ Implementation Guide   | 1.8.0   | v1      | Live     | Current Release | 29/08/
 
 ### Overview of the release
 
-This release of the BaRS marks the introduction of Pre-Release - Application 7 and Core 1.2-alpha.  There have been updates to Application 5 and Application 4 to include new use cases now supported by them.
+Addition of use case categories to all BaRS Applications.
 
-There have also been a number of patch releases for Applications 1,2,6 including bug fixes and corrections to the guide.
-
-A Clinical Safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new Hazards have been identified in this release. The latest version of the BaRS Clinical Safety Case and Hazard Log can be downloaded from the <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information" target="_blank">BaRS FHIR API onboarding support information page</a>. 
 <br>
 <hr>
 
