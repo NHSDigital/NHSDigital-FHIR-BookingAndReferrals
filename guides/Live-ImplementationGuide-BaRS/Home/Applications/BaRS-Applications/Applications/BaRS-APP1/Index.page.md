@@ -19,7 +19,7 @@ topic: Application1
 </thead>
 <tbody>
 	<tr>
-		<td>Application 1 v1.0.5</td>
+		<td>Application 1 v1.0.6</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">v1.1.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">v1.0.0</a></td>
@@ -34,15 +34,18 @@ topic: Application1
 
 This Application supports the use of the following use cases:
 
-* 111 (telephony) to ED (Emergency Department)
-* 111 (telephony) to UTC (Urgent Treatment Centre)
-* IUC CAS (Integrated Urgent Care Clinical Assessment Service) to ED (Emergency Department)
-* IUC CAS (Integrated Urgent Care Clinical Assessment Service) to UTC (Urgent Treatment Centre)
-* AST (999 Ambulance Service Trust) to ED (Emergency Department)
-* AST (999 Ambulance Service Trust) to  UTC (Urgent Treatment Centre)
-* 111 (telephony) to SDEC (Same Day Emergency Care)
-* IUC CAS (Integrated Urgent Care Clinical Assessment Service) to SDEC (Same Day Emergency Care)
-* AST (999 Ambulance Service Trust) to SDEC (Same Day Emergency Care)
+| Use Case                                                                                       | Code |
+|------------------------------------------------------------------------------------------------|------|
+| 111 (telephony) to ED (Emergency Department)                                                   | A1T1 |
+| 111 (telephony) to UTC (Urgent Treatment Centre)                                               | A1T2 |
+| IUC CAS (Integrated Urgent Care Clinical Assessment Service) to ED (Emergency Department)      | A1T3 |
+| IUC CAS (Integrated Urgent Care Clinical Assessment Service) to UTC (Urgent Treatment Centre)  | A1T4 |
+| AST (999 Ambulance Service Trust) to ED (Emergency Department)                                 | A1T5 |
+| AST (999 Ambulance Service Trust) to  UTC (Urgent Treatment Centre)                            | A1T6 |
+| 111 (telephony) to SDEC (Same Day Emergency Care)                                              | A1T7 |
+| IUC CAS (Integrated Urgent Care Clinical Assessment Service) to SDEC (Same Day Emergency Care) | A1T8 |
+| AST (999 Ambulance Service Trust) to SDEC (Same Day Emergency Care)                            | A1T9 |
+
 
 **note:** for use cases where the sending system is 111 Online, please see {{pagelink: application2, text:Bookings and Referrals into UEC Application 2}}
 
