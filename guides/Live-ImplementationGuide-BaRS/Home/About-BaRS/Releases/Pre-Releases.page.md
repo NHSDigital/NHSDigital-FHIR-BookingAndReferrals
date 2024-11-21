@@ -88,6 +88,9 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.0" target="_blank">v1.8.0</a></td>
 	</tr>
 	<tr>
+		<td>Application 2 v1.0.6</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.0" target="_blank">v1.8.1</a></td>
+	</tr>
 		<td>Application 3 v1.0.0</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
