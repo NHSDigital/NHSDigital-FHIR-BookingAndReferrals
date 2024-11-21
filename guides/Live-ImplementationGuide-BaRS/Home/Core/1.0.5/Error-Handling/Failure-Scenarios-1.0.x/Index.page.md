@@ -1,3 +1,3 @@
 ---
-topic: core-failure_scenarios-1.0.4
+topic: core-failure_scenarios-1.0.5
 ---

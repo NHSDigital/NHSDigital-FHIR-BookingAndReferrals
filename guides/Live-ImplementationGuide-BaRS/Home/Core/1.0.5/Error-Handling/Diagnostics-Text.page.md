@@ -1,5 +1,5 @@
 ---
-topic: core-ErrorHandling-Diag-1.0.4
+topic: core-ErrorHandling-Diag-1.0.5
 ---
 
 ### Diagnostics text

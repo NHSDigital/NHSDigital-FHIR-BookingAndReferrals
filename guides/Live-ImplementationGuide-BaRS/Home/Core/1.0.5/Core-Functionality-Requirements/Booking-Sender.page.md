@@ -1,5 +1,5 @@
 ---
-topic: core-FunctionalityRequirements-BookingSender-1.0.4
+topic: core-FunctionalityRequirements-BookingSender-1.0.5
 ---
 
 ### Booking Sender 

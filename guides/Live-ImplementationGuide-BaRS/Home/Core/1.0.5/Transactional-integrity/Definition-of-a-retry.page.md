@@ -1,5 +1,5 @@
 ---
-topic: Core-TransactionalIntegrity-retry-1.0.4
+topic: Core-TransactionalIntegrity-retry-1.0.5
 ---
 
 ## Definition of a retry

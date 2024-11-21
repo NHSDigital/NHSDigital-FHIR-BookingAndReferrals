@@ -1,5 +1,5 @@
 ---
-topic: core-NFR-Processing-Time-1.0.4
+topic: core-NFR-Processing-Time-1.0.5
 ---
 
 ## {{page-title}}

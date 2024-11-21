@@ -1,5 +1,5 @@
 ---
-topic: Core-StandardPattern-Introduction-1.0.4
+topic: Core-StandardPattern-Introduction-1.0.5
 ---
 
 # Standard Pattern - Composite Messages
