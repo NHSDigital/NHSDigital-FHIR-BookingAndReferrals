@@ -26,7 +26,7 @@ The workflow and payload elements can be predefined or completely dynamic, enabl
 
 The documentation for BaRS is separated into three groups (or "products"):
 
-- {{pagelink:design-core}} is the foundation containing all the things *everyone* has to do regardless of what flows BaRS is being used to support
+- {{pagelink:design-core-1.0.5}} is the foundation containing all the things *everyone* has to do regardless of what flows BaRS is being used to support
 
 - {{pagelink:Applications}}, *apply* the standard to a specific problem and build on this to support specific use cases
 
@@ -68,7 +68,7 @@ If you have come to this implementation guide directly it might be helpful to re
 
 It is common to use a recipe analogy to describe complex concepts. It is also possible to describe the payload entities within the BaRS standard using this analogy. In this analogy the recipe is for a specific cake which corresponds to a BaRS Application conformant solution developed by suppliers to enable the digitisation of a use case specific workflow.
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/RecipeAnalogy-1.0.0.svg)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/General/RecipeAnalogy-1.0.0.svg)
 
 **Profiles**
 

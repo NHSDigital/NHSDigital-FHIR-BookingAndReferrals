@@ -8,7 +8,7 @@ This section describes how the primary operations used in this Application work.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/Booking-APP7-MVP-1.0.0-alpha.svg" width="1000"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/Booking-APP7-MVP-1.0.0-alpha.svg" width="1000"></img></a>
 
 To support the workflows for this Application of the standard the operations that need to be supported are:
 
@@ -78,7 +78,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.1.4, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.1.5, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: [BARS Message Definition - Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-booking-request)
 
@@ -144,11 +144,11 @@ This diagram illustrates the workflow and interactions of a booking cancellation
 
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/BookingCancel-APP7-MVP-1.0.0-alpha.svg" width="1000"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/BookingCancel-APP7-MVP-1.0.0-alpha.svg" width="1000"></img></a>
 
-To cancel a booking this Application follows the {{pagelink:core-standardpattern-1.1.4, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the booking from the **receiver** as it may have changed locally. This is done by performing a "GET Appointment by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a booking this Application follows the {{pagelink:core-standardpattern-1.1.5, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the booking from the **receiver** as it may have changed locally. This is done by performing a "GET Appointment by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested Appointment resource which should be checked for its current status to ensure it does not already have a status of "cancelled". If not, this version of the Appointment should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.1.4, text:standard pattern}}.
+The response to this request will be the requested Appointment resource which should be checked for its current status to ensure it does not already have a status of "cancelled". If not, this version of the Appointment should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.1.5, text:standard pattern}}.
 
 The message definition that defines this payload for this Application is: [BARS Message Definition - Cancel Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionbookingrequestcancelled)
 
@@ -269,7 +269,7 @@ Receive_Request
 		if(Bundle.meta.versionID is null)
 			OperationOutcome.issue.code = "invariant"
 			throw exception with "REC_BAD_REQUEST"
-			then return with HTTP.ResponseCode 422
+			then return with HTTP.ResponseCode 400
 		else if!(Bundle.meta.versionID in versionID.supported)
 			OperationOutcome.issue.code = "not-supported"
 			throw exception with "REC_UNPROCESSABLE_ENTITY"

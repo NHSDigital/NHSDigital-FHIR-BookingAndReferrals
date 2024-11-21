@@ -8,7 +8,7 @@ topic: APP3-HowDoesItWork
 This section describes how the primary operations used in this application work. The below diagram illustrates the workflow and interactions of a Referral request.
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ReferraltoCASSimplified-1.0.0.svg" width="1100"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/ReferraltoCASSimplified-1.0.0.svg" width="1100"></img></a>
 
 
 This workflow details a referral into a CAS from a 999 Ambulance Service Trust (AST) for consultation:
@@ -30,7 +30,7 @@ To support the workflows for this application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.1.4, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.1.5, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -102,9 +102,9 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this application follows the {{pagelink:Core-StandardPattern-1.1.4, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this application follows the {{pagelink:Core-StandardPattern-1.1.5, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, the referral **sender** must perform a read of the referral to be cancelled, from the referral **receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern-1.1.4, text:standard pattern}}.
+The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern-1.1.5, text:standard pattern}}.
 
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
@@ -129,7 +129,7 @@ In addition the specific workflow parameters that are required are as follows:
                 <tbody>
                     <tr>
                         <td>Get Referral</td>
-                        <td>GET /ServiceRequest{id}</td>
+                        <td>GET /ServiceRequest/{id}</td>
                         <td>n/a</td>
                         <td>n/a</td>
                     </tr>
@@ -235,7 +235,7 @@ Receive_Request
 		if(Bundle.meta.versionID is null)
 			OperationOutcome.issue.code = "invariant"
 			throw exception with "REC_BAD_REQUEST"
-			then return with HTTP.ResponseCode 422
+			then return with HTTP.ResponseCode 400
 		else if!(Bundle.meta.versionID in versionID.supported)
 			OperationOutcome.issue.code = "not-supported"
 			throw exception with "REC_UNPROCESSABLE_ENTITY"
@@ -395,5 +395,5 @@ Receive_Request
 <hr>
 
 <!--
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/WorkflowStatus-1.0.0.png)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/WorkflowStatus-1.0.0.png)
 -->

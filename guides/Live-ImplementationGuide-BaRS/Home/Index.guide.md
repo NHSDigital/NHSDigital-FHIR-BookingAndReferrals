@@ -8,7 +8,7 @@ For more information on the NHS England programme delivering the standard please
 You can use this guide to support your analysis and define the scope of your solution. However, as a developer, you may wish to start with the following:
 
 * {{pagelink:about_bars, text:About BaRS and quick start guide}} 
-* {{pagelink:design-core-1.1.4, text:End to end workflow }} 
+* {{pagelink:design-core-1.1.5, text:End to end workflow }} 
 * {{pagelink:Home/Applications/BaRS-Applications, text:BaRS Applications}} 
 * {{pagelink:build-testing, text:Tooling}} 
 
@@ -18,8 +18,8 @@ You can use this guide to support your analysis and define the scope of your sol
 The guide is divided into a number of sections:
 
 * {{pagelink:about_bars}} provides essential background and guiding principles along with prerequisites
-* {{pagelink:design-core, text:BaRS Core}} provides a core set of functionality across version of Core
-* {{pagelink:applications,text:BaRS Applications}} that provide implementation guides for Released and Pre-Released applications of BaRS
+* {{pagelink:design-core-1.1.5, text:BaRS Core}} provides a core set of functionality across version of Core
+* {{pagelink:Home/Applications/BaRS-Applications,text:BaRS Application summaries}} that provide implementation guides for Released and Pre-Released applications of BaRS
 * {{pagelink:build-testing}} provides information about testing and environments
 * {{pagelink:assure}} describes guidance for the assurance process
 * {{pagelink:deploy}} provides the deployment toolkit

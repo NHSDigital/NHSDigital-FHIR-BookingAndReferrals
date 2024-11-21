@@ -7,13 +7,13 @@ topic: APP1-HowDoesItWork
 This section describes how the primary operations used in this Application works. This diagram illustrates the workflow and interactions of a referral request and booking process:
 <br>
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/ReferralRequestandBookingSimplified-1.0.1.svg)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/ReferralRequestandBookingSimplified-1.0.1.svg)
 
 To support the workflows for this Application of the standard the operations that need to be supported are:
 
 ### Make a Referral
 
-Making a referral for this Application follows the {{pagelink:core-SPComposites-1.1.4, text:standard pattern for BaRS composite operations}}.
+Making a referral for this Application follows the {{pagelink:core-SPComposites-1.1.5, text:standard pattern for BaRS composite operations}}.
 
 The message definition that defines this payload for this Application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 
@@ -86,9 +86,9 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-SPComposites-1.1.4, text:standard pattern for BaRS composite operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the referral from the **receiver** as it may have changed locally. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this Application follows the {{pagelink:core-SPComposites-1.1.5, text:standard pattern for BaRS composite operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the referral from the **receiver** as it may have changed locally. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.1.4, text:standard pattern}}.
+The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.1.5, text:standard pattern}}.
 
 The message definition that defines this payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
@@ -111,7 +111,7 @@ In addition the specific workflow parameters that are required are as follows:
                 <tbody>
                     <tr>
                         <td>Get Referral</td>
-                        <td>GET /ServiceRequest{id}</td>
+                        <td>GET /ServiceRequest/{id}</td>
                         <td>n/a</td>
                         <td>n/a</td>
                     </tr>
@@ -249,7 +249,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.1.4, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.1.5, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: [BARS Message Definition - Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-booking-request)
 
@@ -310,9 +310,9 @@ X-Correlation-Id = <GUID_00002>
 ```
 ### Cancel a Booking
 
-To cancel a booking this Application follows the {{pagelink:core-standardpattern-1.1.4, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the booking from the **receiver** as it may have changed locally. This is done by performing a "GET Appointment by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a booking this Application follows the {{pagelink:core-standardpattern-1.1.5, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the booking from the **receiver** as it may have changed locally. This is done by performing a "GET Appointment by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested Appointment resource which should be checked for its current status to ensure it does not already have a status of "cancelled". If not, this version of the Appointment should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.1.4, text:standard pattern}}.
+The response to this request will be the requested Appointment resource which should be checked for its current status to ensure it does not already have a status of "cancelled". If not, this version of the Appointment should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.1.5, text:standard pattern}}.
 
 The message definition that defines this payload for this Application is: [BARS Message Definition - Cancel Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionbookingrequestcancelled)
 
@@ -633,7 +633,7 @@ Receive_Request
 <br><br>
 
 <!--
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/WorkflowStatus-1.0.0.png)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/WorkflowStatus-1.0.0.png)
 -->
 
 ### How bookings and referrals map to services in UEC workflows
@@ -730,7 +730,7 @@ To achieve this, a "service attribute" is configurable against services. This wi
 
 An example workflow showing how this might be implemented is illustrated below:
 
-![Booking only workflow](https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/WorkFlows/DOS-bookingattribute-workflow-1.0.1.svg)
+![Booking only workflow](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/DOS-bookingattribute-workflow-1.0.1.svg)
 
 ##### Example xml returned:
 

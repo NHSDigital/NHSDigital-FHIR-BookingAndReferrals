@@ -5,7 +5,7 @@ topic: APP3-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.5, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -22,7 +22,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. 999-CAS Referral. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.4, text:use-case categories}}
+). e.g. 999-CAS Referral. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.5, text:use-case categories}}
 
 
 Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must call the patient by (call back time)
@@ -80,7 +80,7 @@ When a BARS Receiver processes information in a Flag resource;
 The Observation resource is used to carry assertions supporting the assessment performed by the Sender. Senders **should** add clinical notes to the Careplan resource rather than Observation, especially where they expect a Receiver to act upon the information. 
 
 There are specific instances where an Observation **must** be used to convey information and [examples](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Observation&sortBy=DisplayName) are provided to aid development: 
-* Where Birth Sex is communicated it **must** be transferred in a referral using Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcorepatient). 
+* Where Birth Sex is communicated it **must** be transferred in a referral using Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcore-observation). 
 * Where Estimated Age is communicated it **must** be conveyed in an Observation.
 
 ### Consent 
@@ -91,7 +91,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 
 ## Referral Cancellation Payload
 
-The ability to cancel a Referral Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.4, text:Standard Patterns - Cancellation}}.
+The ability to cancel a Referral Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.5, text:Standard Patterns - Cancellation}}.
 
 <br>
 <hr>

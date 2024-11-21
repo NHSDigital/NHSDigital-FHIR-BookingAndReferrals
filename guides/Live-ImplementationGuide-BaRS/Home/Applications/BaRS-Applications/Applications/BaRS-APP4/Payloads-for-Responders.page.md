@@ -12,12 +12,12 @@ _Note that Responders will also have to build the capability to receive and proc
 For Interim Validation Response example bundles see:
 * [Interim Validation Response - CAS to 999 In-progress](https://simplifier.net/nhsbookingandreferrals/b8465a28-89ce-4530-8234-6fbe4aef6001)
 * [Interim Validation Response - CAS to 999 Rejected](https://simplifier.net/nhsbookingandreferrals/b8465a28-89ce-4530-8234-6fbe4aef6002)
-* For additional example bundles please check [BaRS Example Bundles](https://teams.microsoft.com/l/message/19:775ed072-6a81-45d5-9e19-c38e108efe79_d86b2d01-da33-4982-8276-19d86a303b16@unq.gbl.spaces/1724861855443?context=%7B%22contextType%22%3A%22chat%22%7D)
+* For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)
 
 <br>
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern - Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.5, text:Standard Pattern - Message Header}}. 
 
 The MessageHeader resource in the Interim Validation Response should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
@@ -32,7 +32,7 @@ The *ServiceRequest* reflects that sent by the Requester, and maintains the acti
 There are two *coding* entries within *ServiceRequest.category* which are key to driving workflow:
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
-https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.4, text:use-case categories}}
+https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.5, text:use-case categories}}
 
 
 ### Encounter Resource
@@ -63,10 +63,10 @@ example bundles see:
 * [Validation Response - CAS to 999 Finished Inc third encounter case ID for C1/C2 outcome](https://simplifier.net/nhsbookingandreferrals/256a050f-9896-4b32-95ff-62f044722c83)
 * [Validation Response - Falls to 999 Finished](https://simplifier.net/nhsbookingandreferrals/76a303c5-3260-4a80-96b9-5c7995514bd2)
 
-* For additional example bundles please check [BaRS Example Bundles](https://teams.microsoft.com/l/message/19:775ed072-6a81-45d5-9e19-c38e108efe79_d86b2d01-da33-4982-8276-19d86a303b16@unq.gbl.spaces/1724861855443?context=%7B%22contextType%22%3A%22chat%22%7D)
+* For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern - Message Header}} for more information. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.5, text:Standard Pattern - Message Header}} for more information. 
 
 The MessageHeader resource in the Interim Validation Response should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
@@ -146,7 +146,7 @@ When a BaRS Requester processes information in a *Flag* resource in a Validation
 The *Observation* resource is used to carry assertions supporting the assessment performed by the Responder. Responders **should** add clinical notes to the *CarePlan* resource rather than *Observation*, especially where they expect a Requester to act upon the information. 
 
 There are specific instances where an Observation **must** be used to convey information and [examples](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Observation&sortBy=DisplayName) are provided to aid development: 
-* Where Birth Sex is communicated it **must** be transferred in a Validation Response using Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcorepatient). 
+* Where Birth Sex is communicated it **must** be transferred in a Validation Response using Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcore-observation). 
 * Where Estimated Age is communicated it **must** be conveyed in an Observation.
 
 ### Consent 

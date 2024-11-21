@@ -17,9 +17,9 @@ topic: Application4
 </thead>
 <tbody>
 	<tr>
-		<td>Application 4 v1.2.0</td>
+		<td>Application 4 v1.2.1</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.0" target="_blank">v1.8.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.0" target="_blank">v1.8.1</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">v1.0.0</a></td>
 	</tr>
 </tbody>
@@ -33,11 +33,12 @@ topic: Application4
 
 This application supports the use of the following use cases:
 
-* 999 Ambulance Service Trust (AST) validation request to Clinical Assessment Service (CAS)
+| Use Case                                                                                              | Code |
+|-------------------------------------------------------------------------------------------------------|------|
+| 999 Ambulance Service Trust (AST) validation request to Clinical Assessment Service (CAS)             | A4T1 |
+| 999 AST to Falls Lifting Service - (Application v1.2.0 and above)                                     | A4T2 |
+| 999 AST to Community Services (e.g 2-hour Urgent Community Response) - (Application v1.2.0 and above) | A4T3 |
 
-And from v1.2.0:
-* 999 AST to Falls Lifting Service
-* 999 AST to Community Services (e.g 2-hour Urgent Community Response)
 
 </br>
 </br>
@@ -52,4 +53,5 @@ For the validation request into a CAS from a 999 AST use case, the data model wa
 
 The minor extension to the data model to support the secondary use cases was endorsed by the relevant NHSE policy team clinical stakeholders.
 
-<hr>
+For more information see {{pagelink: application4, text:Referral into UEC for Validation (Application 4}} 
+<hr />

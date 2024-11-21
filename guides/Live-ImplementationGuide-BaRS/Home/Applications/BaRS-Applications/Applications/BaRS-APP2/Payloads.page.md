@@ -6,7 +6,7 @@ topic: APP2-Payloads
 The specific guidance around the use of key FHIR resources is described below. 
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader-1.1.4, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.1.5, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 The MessageHeader resource for the Booking Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'booking-request'
@@ -27,7 +27,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. 111 Online - ED, S&R - UTC. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.4, text:use-case categories}}
+). e.g. 111 Online - ED, S&R - UTC. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.5, text:use-case categories}}
 
 An important function of the ServiceRequest resource is to link the booking and referral when they are related in a workflow. If the booking is successfully made before the referral, the Sender will have the *Appointment.Id* value and this **must** be included as a relative reference, under *ServiceRequest.supportingInfo*, in the referral request. The element *ServiceRequest.supportingInfo* **may** also be used to provide referrence to other resources in the request i.e. Rejected Services. This is outlined in the element guidance below.
 
@@ -63,7 +63,7 @@ When a BARS Receiver processes information in a Flag resource;
 The Observation resource is used to carry assertions supporting the assessment performed by the Sender. In the BaRS UEC Applications, Senders **should** add clinical notes to the Careplan resource rather than Observation, especially where they expect a Receiver to act upon the information. 
 
 There are specific instances where an Observation **must** be used to convey information and [exmaples](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Observation&sortBy=DisplayName) are provided to aid development: 
-* Birth Sex **must** be transfered in a referral using Observation. This information **should** only be transferred when considered clincally relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcorepatient). 
+* Birth Sex **must** be transfered in a referral using Observation. This information **should** only be transferred when considered clincally relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcore-observation). 
 * Estimated Age **must** be conveyed in an Observation.
 
 ### QuestionnaireResponse 

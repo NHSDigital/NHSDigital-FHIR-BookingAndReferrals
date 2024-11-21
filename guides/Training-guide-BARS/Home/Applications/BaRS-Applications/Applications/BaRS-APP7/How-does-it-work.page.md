@@ -111,7 +111,7 @@ In addition the specific workflow parameters that are required are as follows:
                 <tbody>
                     <tr>
                         <td>Get Referral</td>
-                        <td>GET /ServiceRequest{id}</td>
+                        <td>GET /ServiceRequest/{id}</td>
                         <td>n/a</td>
                         <td>n/a</td>
                     </tr>
@@ -433,7 +433,7 @@ Receive_Request
 		if(Bundle.meta.versionID is null)
 			OperationOutcome.issue.code = "invariant"
 			throw exception with "REC_BAD_REQUEST"
-			then return with HTTP.ResponseCode 422
+			then return with HTTP.ResponseCode 400
 		else if!(Bundle.meta.versionID in versionID.supported)
 			OperationOutcome.issue.code = "not-supported"
 			throw exception with "REC_UNPROCESSABLE_ENTITY"

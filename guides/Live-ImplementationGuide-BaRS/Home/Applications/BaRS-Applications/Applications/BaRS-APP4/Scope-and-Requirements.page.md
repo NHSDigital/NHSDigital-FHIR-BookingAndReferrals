@@ -17,7 +17,7 @@ The payloads and workflow have been designed to support these services. Other {{
 For this application we will be referring to the actors as 'Requester' and the 'Responder'. The Requester is the provider system that creates and sends the Validation Request to the Responder for completion. The Responder is the provider system that completes the validation request and responds back with the outcome of the assessment or action to the Requester. The table below summarises this.
 <br>
 <br>
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/ValidationActors.svg" width="500"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/General/ValidationActors.svg" width="500"></img></a>
 <br>
 <br>
 
@@ -78,14 +78,14 @@ For this application we will be referring to the actors as 'Requester' and the '
 * The Responder **must** clearly identify any included safeguarding concern to the end user
 * The Responder **must** accurately represent information made by the Sender to the end user
 * The Requester **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user
-* Where the Validation Request was <ins>not</ins> successful, the Responder **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.4, text:failure scenarios}} for more detail
-* Where the Validation Request was <ins>not</ins> successful, the Requester **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.4, text:failure scenarios}} for more detail
+* Where the Validation Request was <ins>not</ins> successful, the Responder **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.1.5, text:failure scenarios}} for more detail
+* Where the Validation Request was <ins>not</ins> successful, the Requester **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.1.5, text:failure scenarios}} for more detail
 
 **Update Validation Request**
 *	The Requester **must** be capable of updating any Validation Request made by them, within the current consultation or after the consultation event
 *	The Requester **must** retrieve the Validation Request to be updated from the Responder prior to update, to ensure they are working with the most up-to date version and the validation request has not already been completed, or is at a point in the workflow where it must not be updated
 *	The Requester **must** provide visible confirmation of the status returned by the Responder to the end-user, i.e. whether the original Validation Request was successfully updated or not
-*	If the update fails, the Responder **must** respond with the most appropriately aligned error. See {{pagelink:core-failure_scenarios-1.1.4, text:failure scenarios}} for more detail
+*	If the update fails, the Responder **must** respond with the most appropriately aligned error. See {{pagelink:core-failure_scenarios-1.1.5, text:failure scenarios}} for more detail
 *	The Responder **must** store all previous versions of the Validation Request
 *	The Requester **must <ins>not</ins>** be required to inform the patient of the updating of the Validation Request.  Business/clinical responsibility for informing the patient must remain with the Requester
 *  The Requester  **should not** send updates after receiving an Interim Response
@@ -146,11 +146,11 @@ For this application we will be referring to the actors as 'Requester' and the '
 <br>
 <br>
 ### Error Handling 
-* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling-1.1.4, text:error handling guidance}} 
+* Suppliers **must** adhere to the {{pagelink:core-ErrorHandling-1.1.5, text:error handling guidance}} 
 <br>
 <br>
 ### Non Functional 
-* Suppliers **must** adhere to the {{pagelink:core-NFR-1.1.4, text:non functional requirements}}
+* Suppliers **must** adhere to the {{pagelink:core-NFR-1.1.5, text:non functional requirements}}
 <br>
 <br>
 <hr>

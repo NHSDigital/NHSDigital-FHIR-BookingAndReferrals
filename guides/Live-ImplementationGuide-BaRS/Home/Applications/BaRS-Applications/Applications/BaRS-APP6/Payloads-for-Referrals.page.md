@@ -14,10 +14,10 @@ The below details the specific guidance around the use of resources required to 
 For example Referral bundles please see:
 * [Referral Request - CAD to CAD Out of area](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292ba-duplicate-3)
 * [Referral Request - CAD to CAD Mutual aid request](https://simplifier.net/nhsbookingandreferrals/c4b190d6-9623-4235-859d-e3d4c09d5658)
-* For additional example bundles please check [BaRS Example Bundles](https://teams.microsoft.com/l/message/19:775ed072-6a81-45d5-9e19-c38e108efe79_d86b2d01-da33-4982-8276-19d86a303b16@unq.gbl.spaces/1724861855443?context=%7B%22contextType%22%3A%22chat%22%7D)
+* For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.5, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -32,7 +32,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.4, text:use-case categories}}
+). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.5, text:use-case categories}}
 
 Additionally, the *ServiceRequest.category.text* **must** be populated with details about the service request when the request is to support the Call Assist or Mutual Aid use cases.
 
@@ -134,7 +134,7 @@ When a the Receiver processes information in a Flag resource;
 The Observation resource is used to carry assertions supporting the assessment performed by the Sender. Senders **should** add clinical notes to the Careplan resource rather than Observation, especially where they expect a Receiver to act upon the information. 
 
 There are specific instances where an Observation **must** be used to convey information and [examples](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Observation&sortBy=DisplayName) are provided below to aid development: 
-* Where Birth Sex is communicated it **must** be transferred in a Referral Request using an Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcorepatient). 
+* Where Birth Sex is communicated it **must** be transferred in a Referral Request using an Observation. This information **should** only be transferred when considered clinically relevant and it is not considered as demographic information, as administrative gender would be. It **should <ins>not</ins>** be included as an extension on the patient resource, as described in [UK Core](https://simplifier.net/hl7fhirukcorer4/ukcore-observation). 
 * Where Estimated Age is communicated it **must** be conveyed in an Observation.
 
 ### Consent 
@@ -251,7 +251,7 @@ In this application it is used to transfer Call Log information and Crew Notes.
 
 ## Referral Cancellation Payload
 
-The ability to cancel a referral is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.4, text:Standard Patterns - Cancellation}}.
+The ability to cancel a referral is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.5, text:Standard Patterns - Cancellation}}.
 
 <br>
 <hr>    
