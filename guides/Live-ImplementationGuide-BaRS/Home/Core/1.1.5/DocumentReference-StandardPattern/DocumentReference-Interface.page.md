@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-document-reference-interface-1.1.4
+topic: core-StandardPattern-document-reference-interface-1.1.5
 ---
 
 ## Interface

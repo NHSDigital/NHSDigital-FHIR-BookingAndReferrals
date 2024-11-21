@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-appointment-booking-1.1.4
+topic: core-StandardPattern-appointment-booking-1.1.5
 ---
 
 ## Appointment Resource

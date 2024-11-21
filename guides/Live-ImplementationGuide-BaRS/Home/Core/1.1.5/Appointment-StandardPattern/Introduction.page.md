@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-appointment-Introduction-1.1.4
+topic: core-StandardPattern-appointment-Introduction-1.1.5
 ---
 
 # Standard Pattern - Appointments
@@ -23,7 +23,7 @@ The following table describes how the BaRS API accomodates these 4 capabilities 
 
 | Capability | Endpoint | VERB | Description |
 |------------|-----------|-----|--------------|
-| List   | /DocumentReference  | GET   | Using the {{pagelink:core-StandardPattern-document-reference-Introduction-1.1.4, text:DocumentReference}} pattern, a list of existing appointments for a patient can be viewed.  |
+| List   | /DocumentReference  | GET   | Using the {{pagelink:core-StandardPattern-document-reference-Introduction-1.1.5, text:DocumentReference}} pattern, a list of existing appointments for a patient can be viewed.  |
 | View   | /Appointment/[id]  | GET   | This action, using the id from the List capability, will allow that specific Appointment Resource to be [retrieved](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/Appointment). |
 | Get Slots   | /Slots   | GET   | Obtain a list of available booking slots from a specified receiving system using the [GET /Slots endpoint](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/Slot)  |
 | Book | /Appointment or /$process-message | POST | This will invariably be a POST operation however the method for booking will depend on the BaRS Application/use case.|

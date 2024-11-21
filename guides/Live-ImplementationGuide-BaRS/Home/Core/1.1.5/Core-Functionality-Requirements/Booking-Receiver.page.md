@@ -1,5 +1,5 @@
 ---
-topic: core-FunctionalityRequirements-BookingReceiver-1.1.4
+topic: core-FunctionalityRequirements-BookingReceiver-1.1.5
 ---
 
 ### Booking Receiver 
