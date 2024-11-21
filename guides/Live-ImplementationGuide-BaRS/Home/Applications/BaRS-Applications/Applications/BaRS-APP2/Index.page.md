@@ -20,7 +20,7 @@ topic: Application2
 </thead>
 <tbody>
 	<tr>
-		<td>Application 2 v1.0.5</td>
+		<td>Application 2 v1.0.6</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">v1.1.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">v1.0.0</a></td>
@@ -36,10 +36,13 @@ topic: Application2
 
 This Application supports the use of the following use cases:
 
-* 111 Online (NHS 111 Online - patient facing service) to ED (Emergency Department)
-* 111 Online (NHS 111 Online - patient facing service) to UTC (Urgent Treatment Centre)
-* S&R (Streaming and Redirection) to ED (Emergency Department)
-* S&R (Streaming and Redirection) to UTC (Urgent Treatment Centre)
+| Use Case                                                                              | Code |
+|---------------------------------------------------------------------------------------|------|
+| 111 Online (NHS 111 Online - patient facing service) to ED (Emergency Department)     | A2T1 |
+| 111 Online (NHS 111 Online - patient facing service) to UTC (Urgent Treatment Centre) | A2T2 |
+| S&R (Streaming and Redirection) to ED (Emergency Department)                          | A2T3 |
+| S&R (Streaming and Redirection) to UTC (Urgent Treatment Centre)                      | A2T4 |
+
 
 **note:** for use cases where the sending system is a 111 telephony service, please see {{pagelink: application1, text:Bookings and Referrals into UEC Application 1}}
 
