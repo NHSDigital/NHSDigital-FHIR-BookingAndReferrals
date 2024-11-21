@@ -1,5 +1,5 @@
 ---
-topic: core-Security-Receiver-1.2.0
+topic: core-Security-Receiver-1.2.1
 ---
 
 ## Receiver

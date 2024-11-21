@@ -1,5 +1,5 @@
 ---
-topic: core-FunctionalityRequirements-ReferralReceiver-1.2.0
+topic: core-FunctionalityRequirements-ReferralReceiver-1.2.1
 ---
 
 ### Referral Receiver

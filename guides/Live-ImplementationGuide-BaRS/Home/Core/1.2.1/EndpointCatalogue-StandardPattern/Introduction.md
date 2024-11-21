@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-Endpoint-Introduction-1.2.0
+topic: core-StandardPattern-Endpoint-Introduction-1.2.1
 ---
 
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information - Preview</b>

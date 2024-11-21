@@ -1,5 +1,5 @@
 ---
-topic: core-Security-Auth-1.2.0
+topic: core-Security-Auth-1.2.1
 ---
 
 ## Authorisation

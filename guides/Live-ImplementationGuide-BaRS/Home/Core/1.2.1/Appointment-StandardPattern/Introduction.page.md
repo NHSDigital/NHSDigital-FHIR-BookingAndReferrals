@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-appointment-Introduction-1.2.0
+topic: core-StandardPattern-appointment-Introduction-1.2.1
 ---
 
 # Standard Pattern - Appointments

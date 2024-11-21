@@ -1,5 +1,5 @@
 ---
-topic: core-ErrorHandling-SendResp-1.2.0
+topic: core-ErrorHandling-SendResp-1.2.1
 ---
 
 ### Sender responsibilities

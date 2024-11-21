@@ -1,5 +1,5 @@
 ---
-topic: Core-TransactionalIntegrity-Initial-1.2.0
+topic: Core-TransactionalIntegrity-Initial-1.2.1
 ---
 
 ## Initial Request

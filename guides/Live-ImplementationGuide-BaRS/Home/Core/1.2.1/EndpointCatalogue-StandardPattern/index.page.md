@@ -1,3 +1,3 @@
 ---
-topic: core-StandardPattern-Endpoints-1.2.0
+topic: core-StandardPattern-Endpoints-1.2.1
 ---

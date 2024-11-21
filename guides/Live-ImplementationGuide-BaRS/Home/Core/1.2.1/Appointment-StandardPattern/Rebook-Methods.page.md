@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-appointment-rebook-1.2.0
+topic: core-StandardPattern-appointment-rebook-1.2.1
 ---
 
 ### Rebook

@@ -1,3 +1,3 @@
 ---
-topic: Core-TransactionalIntegrity-1.2.0
+topic: Core-TransactionalIntegrity-1.2.1
 ---

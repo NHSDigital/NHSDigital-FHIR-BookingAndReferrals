@@ -1,5 +1,5 @@
 ---
-topic: core-EndToEndWorkflow-API-1.2.0
+topic: core-EndToEndWorkflow-API-1.2.1
 ---
 
 ## BaRS FHIR API

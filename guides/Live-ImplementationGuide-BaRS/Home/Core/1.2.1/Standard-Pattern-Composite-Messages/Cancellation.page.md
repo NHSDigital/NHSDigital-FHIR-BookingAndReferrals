@@ -1,5 +1,5 @@
 ---
-topic: core-SPCancellation-1.2.0
+topic: core-SPCancellation-1.2.1
 ---
 
 
@@ -9,12 +9,12 @@ The ability to reverse a digital request, by performing a cancellation, whether 
 
 Cancellation, for any referral type or booking, is a stripped back request, containing only the specific resources a Receiver requires to the fulfil the request. There are separate MessageDefinitions involved when engaged in [referral](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionservicerequestrequestcancelled/~json) and [booking](https://simplifier.net/NHSBookingandReferrals/MessageDefinition-BARSMessageDefinitionBookingRequestCancelled/~json) cancellation workflows.
 
-A prerequisite when performing a cancellation of any request is to perform a read (GET) of either the booking or referral to be cancelled. The Sender **must** only make a cancellation request if the entity has a status which means it is still current; 'active' in the case of a referral (ServiceRequest) and 'booked' for a booking (Appointment). This ensures the Sender has the latest version of the entity they are about to change or, if it is no longer current (because its been actioned by the Receiver), allows the Sender to advise the end user so an alternative (often manual) workflow can be started. The Receiver **must not** process a cancellation request for a booking or referral which is not current, instead they **must** return an appropriate {{pagelink:core-ErrorHandling-1.2.0, text:error}} response.
+A prerequisite when performing a cancellation of any request is to perform a read (GET) of either the booking or referral to be cancelled. The Sender **must** only make a cancellation request if the entity has a status which means it is still current; 'active' in the case of a referral (ServiceRequest) and 'booked' for a booking (Appointment). This ensures the Sender has the latest version of the entity they are about to change or, if it is no longer current (because its been actioned by the Receiver), allows the Sender to advise the end user so an alternative (often manual) workflow can be started. The Receiver **must not** process a cancellation request for a booking or referral which is not current, instead they **must** return an appropriate {{pagelink:core-ErrorHandling-1.2.1, text:error}} response.
 
 ## Cancellation Referral Request Payload
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader-1.2.0, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.2.1, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 When cancelling a referral, in conjunction with the guidance provided under the Standard Patterns, the three important elements which drive workflow **must** be used as follows: 
 * **eventCoding** - this **must** be the same code as used in the request.
@@ -286,7 +286,7 @@ The below diagram details the Cancellation Referral Request
 ## Cancellation Booking Request Payload
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader-1.2.0, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used.  
+{{pagelink:core-SPMessageHeader-1.2.1, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used.  
 
 When cancelling a booking, in conjunction with the guidance provided under the Standard Patterns, the three important elements which drive workflow **must** be used as follows: 
 * **eventCoding** - this **must** be the same code as used in the request.

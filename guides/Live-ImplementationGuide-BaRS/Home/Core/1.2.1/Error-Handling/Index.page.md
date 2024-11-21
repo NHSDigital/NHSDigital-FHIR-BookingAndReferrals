@@ -1,4 +1,4 @@
 ---
-topic: core-ErrorHandling-1.2.0
+topic: core-ErrorHandling-1.2.1
 ---
 

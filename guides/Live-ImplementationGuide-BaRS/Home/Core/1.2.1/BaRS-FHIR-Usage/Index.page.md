@@ -1,4 +1,4 @@
 ---
-topic: core-FHIRUsage-1.2.0
+topic: core-FHIRUsage-1.2.1
 ---
 
