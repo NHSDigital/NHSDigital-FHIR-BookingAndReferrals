@@ -1,0 +1,13 @@
+- name: Index
+  filename: index.page.md
+- name: Introduction
+  filename: Introduction.page.md
+- name: Initial Booking
+  filename: Initial-Booking.page.md
+- name: Update a Booking
+  filename: Update-Existing-Booking.page.md
+- name: Cancel a Booking
+  filename: Cancel-Booking.page.md
+- name: Rebook Methods 
+  filename: Rebook-Methods.page.md
+

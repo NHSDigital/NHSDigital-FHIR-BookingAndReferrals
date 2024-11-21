@@ -1,9 +1,15 @@
 - name: Index
   filename: Index.page.md
+- name: 1.2.1-alpha
+  filename: 1.2.1-alpha.page.md
+- name: 1.1.5
+  filename: 1.1.5.page.md
+- name: 1.0.5
+  filename: 1.0.5.page.md
 - name: 1.1.4
   filename: 1.1.4.page.md
 - name: 1.0.4
-  filename: 1.1.4.page.md
+  filename: 1.0.4.page.md
 - name: 1.2.0-alpha
   filename: 1.2.0-alpha.page.md
 - name: 1.1.3

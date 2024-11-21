@@ -43,7 +43,7 @@ This Application supports the use of the following use case:
 
 ### Overview
 
-This page provides guidance for implementing the Booking and Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard.
+This page provides guidance for implementing the Booking and Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.0.5, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard.
 
 
 For more information see {{pagelink: application7, text:Bookings and Referrals into GP (Application 7}} 
