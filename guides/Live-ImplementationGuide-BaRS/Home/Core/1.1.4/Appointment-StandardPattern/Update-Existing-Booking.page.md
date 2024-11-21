@@ -69,4 +69,4 @@ Request Body
 	]
 }
 ```
-<a href="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/SequenceDiagrams/BaRS_Foundation_Update.drawio.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/SequenceDiagrams/BaRS_Foundation_Update.drawio.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/SequenceDiagrams/BaRS_Foundation_Update.drawio.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/SequenceDiagrams/BaRS_Foundation_Update.drawio.svg" width="1200"></img></a>
