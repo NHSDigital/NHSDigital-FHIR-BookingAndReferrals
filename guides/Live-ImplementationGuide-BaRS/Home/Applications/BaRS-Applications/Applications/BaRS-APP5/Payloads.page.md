@@ -5,7 +5,7 @@ topic: APP5-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader-1.1.4, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.1.5, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -20,7 +20,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. GP to Pharmacy CPCS Minor Illness. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.4, text:use-case categories}}
+). e.g. GP to Pharmacy CPCS Minor Illness. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.5, text:use-case categories}}
 
 *Please note that the use-case category 'referraltopharmacy' is now deprecated to allow for more granular use cases.*
 

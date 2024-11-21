@@ -16,7 +16,7 @@ For Example Validation Request bundles see:
 * For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.4, text:Standard Pattern Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.5, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Validation Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -102,7 +102,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 
 ## Validation Cancellation Payload
 
-The ability to cancel a Validation Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.4, text:Standard Patterns - Cancellation}}.
+The ability to cancel a Validation Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.5, text:Standard Patterns - Cancellation}}.
 
 <br>
 

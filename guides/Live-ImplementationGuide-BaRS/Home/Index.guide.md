@@ -8,7 +8,7 @@ For more information on the NHS England programme delivering the standard please
 You can use this guide to support your analysis and define the scope of your solution. However, as a developer, you may wish to start with the following:
 
 * {{pagelink:about_bars, text:About BaRS and quick start guide}} 
-* {{pagelink:design-core-1.1.4, text:End to end workflow }} 
+* {{pagelink:design-core-1.1.5, text:End to end workflow }} 
 * {{pagelink:Home/Applications/BaRS-Applications, text:BaRS Applications}} 
 * {{pagelink:build-testing, text:Tooling}} 
 
