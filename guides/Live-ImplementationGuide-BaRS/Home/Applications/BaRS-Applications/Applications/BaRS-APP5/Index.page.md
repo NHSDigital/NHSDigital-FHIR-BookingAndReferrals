@@ -43,7 +43,7 @@ NB - 'Primary Care' currently includes GP Practice and Online Consultation, as d
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.0.5, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
 
 ### Data model endorsements
 

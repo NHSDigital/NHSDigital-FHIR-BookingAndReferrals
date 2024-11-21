@@ -18,7 +18,7 @@ You can use this guide to support your analysis and define the scope of your sol
 The guide is divided into a number of sections:
 
 * {{pagelink:about_bars}} provides essential background and guiding principles along with prerequisites
-* {{pagelink:design-core, text:BaRS Core}} provides a core set of functionality across version of Core
+* {{pagelink:design-core-1.1.5, text:BaRS Core}} provides a core set of functionality across version of Core
 * {{pagelink:applications,text:BaRS Application summaries}} that provide implementation guides for Released and Pre-Released applications of BaRS
 * {{pagelink:build-testing}} provides information about testing and environments
 * {{pagelink:assure}} describes guidance for the assurance process
