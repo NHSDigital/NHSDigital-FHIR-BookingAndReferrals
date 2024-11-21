@@ -13,7 +13,7 @@ To support the workflows for this Application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this Application follows the {{pagelink:core-standardpattern-1.1.4, text:standard pattern for BaRS operations}}.
+Making a referral for this Application follows the {{pagelink:core-standardpattern-1.1.5, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: {{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 
@@ -140,7 +140,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:core-standardpattern-1.1.4, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:core-standardpattern-1.1.5, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: {{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 
@@ -230,7 +230,7 @@ Receive_Request
 		if(Bundle.meta.versionID is null)
 			OperationOutcome.issue.code = "invariant"
 			throw exception with "REC_BAD_REQUEST"
-			then return with HTTP.ResponseCode 422
+			then return with HTTP.ResponseCode 400
 		else if!(Bundle.meta.versionID in versionID.supported)
 			OperationOutcome.issue.code = "not-supported"
 			throw exception with "REC_UNPROCESSABLE_ENTITY"

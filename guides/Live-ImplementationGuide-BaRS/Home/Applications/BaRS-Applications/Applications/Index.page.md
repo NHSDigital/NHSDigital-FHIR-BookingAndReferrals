@@ -13,7 +13,7 @@ This page provides a catalogue of implementation guides that have been developed
 
 
 
-These guides are designed to be used in conjunction with the documentation for {{pagelink:design-core}}.
+These guides are designed to be used in conjunction with the documentation for {{pagelink:design-core-1.0.5}}.
 
 
 
@@ -23,7 +23,7 @@ These guides are designed to be used in conjunction with the documentation for {
 | {{pagelink:application2, text: Booking and Referrals into UEC (Application 2)}} | <p>111 Online - ED <br>111 Online - UTC <br> S&R - ED <br> S&R - UTC <br> <p>               | 1.0.5           | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">v1.0.0</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a> |
 | {{pagelink:application3, text: Referral into UEC (Application 3)}} | <p>999-CAS Referral<br> | 1.0.1     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">v1.0.0</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a> |
 | {{pagelink:application4, text: Referral into UEC for Validation (Application 4)}} | <p>999-CAS Validation<br> <p>999 AST to Falls Lifting Service<br> <p>999 AST to Community Services <br> | 1.2.0     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">v1.0.0</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a> |
-| {{pagelink:application5, text: Referrals into Pharmacy (Application 5)}}      | <p>Primary Care to Community Pharmacy (Pharmacy First)<br> <p>Primary Care to Pharmacy Contraception (Oral Contraception) <br> <p>Primary Care to Pharmacy Blood Pressure Check Service<br> | 1.1.0     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a> | {{pagelink:design-core-1.1.3, text:v1.1.0}} |
+| {{pagelink:application5, text: Referrals into Pharmacy (Application 5)}}      | <p>Primary Care to Community Pharmacy (Pharmacy First)<br> <p>Primary Care to Pharmacy Contraception (Oral Contraception) <br> <p>Primary Care to Pharmacy Blood Pressure Check Service<br> | 1.1.0     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a> | {{pagelink:design-core-1.1.5, text:v1.1.0}} |
 
 
 <hr>
