@@ -25,7 +25,7 @@ This version of core is strictly a preview of what is currently in development f
 </div>
 
 
-# BaRS Core 1.2.0-alpha
+# BaRS Core 1.2.1-alpha
 
 BaRS consists of BaRS Core that provides a core set of functionality and BaRS Applications that provide distinct functionality for each use case.
 
