@@ -4,7 +4,7 @@ This section outlines the typical activities involved in a BaRS deployment.
 The diagram below highlights the common process steps, with further details provided in the subsequent section.
 
  ![Deployment](
-https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/General/Deployment-1.0.0.svg
+https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/General/Deployment-1.0.0.svg
 )
 ## Business Change
 To realise the desired benefits of BaRS, the organisation must undertake business change activities. Providers will require view access of the developed user interface and any new functionality to design the future state processes.

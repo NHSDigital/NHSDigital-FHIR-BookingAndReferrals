@@ -18,4 +18,4 @@ The BaRS API acts as a gateway to the National Record Locator FHIR API for BaRS 
 * Consumer - Queries the API for existing DocumentReferences for use in finding existing Bookings and Referrals. This is usually a BaRS [Sender](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=current#Core-functionality-requirements).
 * Producer - Posts and maintains DocumentReferences for Bookings and Referrals that they have received. This is invariably the BaRS [Receiver](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=current#Core-functionality-requirements).
 
-<img src="https://raw.githubusercontent.com/NHSDigital/booking-and-referral-media/master/src/images/DocumentReference/NRLF Via BaRS-1.1.0.svg" width="1200"></img>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/DocumentReference/NRLF Via BaRS-1.1.0.svg" width="1200"></img>
