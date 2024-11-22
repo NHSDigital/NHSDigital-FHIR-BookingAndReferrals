@@ -48,6 +48,13 @@ Example:
 --header 'use-context: a1t1|booked|booking-request|new'
 ```
 
+This header is applicable to the following endpoints:
+ * /metadata
+ * /MessageDefinition
+ * /$process-message
+ * /Slots
+ * /Appointment
+ * /ServiceRequest
 
 <hr>
 <br>
