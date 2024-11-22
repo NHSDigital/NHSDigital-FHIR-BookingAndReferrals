@@ -16,7 +16,7 @@ A prerequisite when performing a cancellation of any request is to perform a rea
 ### MessageHeader Resource
 {{pagelink:core-SPMessageHeader-1.1.5, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
-When cancelling a referral, in conjunction with the guidance provided under the Standard Patterns, the three important elements which drive workflow **must** be used as follows: 
+When cancelling a referral, in conjunction with the guidance provided under the Standard Patterns, the four important elements which drive workflow **must** be used as follows: 
 * **eventCoding** - this **must** be the same code as used in the request.
 * **reasonCode** - a cancellation follows an initial request, therefore, this **must** always be 'update' for cancellation.
 * **definition** - cancellation has a unique [MessageDefinition](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=MessageDefinition&sortBy=DisplayName) the request **must** adhere to.
