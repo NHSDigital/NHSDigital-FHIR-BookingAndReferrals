@@ -12,6 +12,8 @@
   filename: HTTP-Header.page.md
 - name: Routing
   filename: Routing.page.md
+- name: Logging
+  filename: Logging.page.md
 - name: Authentication and Authorisation
   filename: Authentication-and-Authorisation.page.md
 - name: Transactional Integrity
