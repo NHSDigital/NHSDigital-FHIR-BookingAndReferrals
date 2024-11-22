@@ -13,13 +13,14 @@ topic: core-EndToEndWorkflow-Logging-1.0.5
 
 This header is for usage statistics for the BaRS Proxy for NHS England. It consists of a composite of 4 values from within the payload, in order. The sender MUST include this information. The receiver MUST ignore this header. The elements are:
 
-The elements are for a ServiceRequest are:
+The elements for a ServiceRequest are:
 
-* ServiceRequest.category.coding.code (both usecases-categories-bars and message-category-servicerequest, in that order)
+* ServiceRequest.category.coding.code (usecases-categories-bars)
+* ServiceRequest.category.coding.code (message-category-servicerequest)
 * MessageHeader.eventCoding.code (message-event-bars)
 * MessageHeader.reason.coding.code (message-reason-bars)
 
-The elements are for an Appointment are:
+The elements for an Appointment are:
 
 * Appointent.serviceCategory.coding (usecases-categories-bars)
 * Appointment.status
