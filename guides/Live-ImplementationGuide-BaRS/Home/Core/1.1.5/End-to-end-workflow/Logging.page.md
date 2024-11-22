@@ -1,5 +1,5 @@
 ---
-topic: core-EndToEndWorkflow-Logging-1.0.5
+topic: core-EndToEndWorkflow-Logging-1.1.5
 ---
 
 ## {{page-title}}
