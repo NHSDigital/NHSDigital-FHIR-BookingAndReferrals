@@ -16,7 +16,7 @@ This section covers the core elements of workflow outlined within the Booking an
     - book without referring
 
 
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/CoreWorkflowBaRS-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/CoreWorkflowBaRS-1.0.0.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CoreWorkflowBaRS-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CoreWorkflowBaRS-1.0.0.svg" width="1200"></img></a>
 
 <hr>
 <br>
