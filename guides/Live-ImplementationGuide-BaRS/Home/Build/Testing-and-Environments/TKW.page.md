@@ -68,6 +68,7 @@ NB: where 'Any' NHSD-Target-Identifier is specified, only those highlighted in t
 ||MD for Referral receiver|111-ED, 999-CAS|context (parameter)|2000076289 |Returns MD for Referral receiver service|
 ||MD for Validation receiver|999-CAS|context (parameter)|2000003366|Returns MD for Validation receiver service|
 ||MD for Validation sender|999-CAS|context (parameter)|1374839566|Returns MD for Validation sender service (accepting interim and full validation responses)|
+||MD for Out-of-Area CAD Referral receiver|CAD-CAD|context (parameter)|2000159909|Returns MD for Out-of-Area CAD-CAD Referral receiver service|
 ||MD for any other receiving service|BaRS Core|context (parameter)|Any (see comment)|Any 'context' parameter other than those a predefined response is set for (see above)|
 ||MD failed request - HTTP 401|BaRS Core|context (parameter)|FAIL0401|
 ||MD failed request - HTTP 404|BaRS Core|context (parameter)|FAIL0404|
@@ -91,6 +92,7 @@ NB: where 'Any' NHSD-Target-Identifier is specified, only those highlighted in t
 ||New referral for a patient with no NHS No.|111-ED, 999-CAS|n/a||The returned Service Request Id = 79120f41-a431-4f08-bcc5-1e67006fcae0|
 ||New referral failed request - HTTP 400|111-ED, 999-CAS|Patient.identifier (NHS No)|9658499066|Request must be for a patient with NHS No - 9658499066 and returns 400|
 ||New referral failed request - HTTP 500|111-ED, 999-CAS|Patient.identifier (NHS No)|9658499074|Request must be for a patient with NHS No - 9658499074 and returns 500|
+||New referral for Out-of-Area CAD referral|CAD-CAD|NHSD Target Identifier (HTTP Header)|2000159910|Request will be validated for against the Application6 Out-of-Area CAD-CAD use-case|
 ||Get Referral - HTTP 405|111-ED, 999-CAS|n/a||GET must be for ServiceRequest Id 61215702-0049-4d76-9807-2123f0a6ca15 and returns 405|
 ||Get Referral - HTTP 429|111-ED, 999-CAS|n/a||GET must be for ServiceRequest Id 9d280ad9-6dda-46d2-a75e-f5b47b2f4e87 and returns 429|
 ||Get Referral - HTTP 503|111-ED, 999-CAS|n/a||GET must be for ServiceRequest Id 4d65ddaa-4d09-41cd-87c9-aeb9c0c96352 and returns 503|
@@ -127,6 +129,8 @@ The sentinel values linked to [UserTest DoS](https://usertest.directoryofservice
 |2000076289|**TESTING ONLY** BaRS Test Service (TKW 8)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
 |2000003366|**TESTING ONLY** BaRS Test Service (TKW 9)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
 |2000071898|**TESTING ONLY** BaRS Test Service (TKW 12)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
+|2000159909|**TESTING ONLY** BaRS Test Service (TKW 13)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
+|2000159910|**TESTING ONLY** BaRS Test Service (TKW 14)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
 
 **INT Test Patient (traceable on SPINE)**
 
