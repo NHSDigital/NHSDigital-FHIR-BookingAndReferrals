@@ -7,7 +7,7 @@ Message definition includes only one additional parameter and therefore there ar
 
 ### Interactions
 
-  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/FailureScenarios/MessageDefinition-FailureScenarios-1.0.0.svg)
+  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/FailureScenarios/MessageDefinition-FailureScenarios-1.0.0.svg)
   
 ### Errors by parameter
 

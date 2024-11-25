@@ -12,7 +12,7 @@ Entity maps detail the relationship of the resources and elements within resourc
 The below diagram details the ServiceRequest - Referral Request - 999 AST referral to CAS
 <br>
 <br>
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/EntityMaps/EntityMap9sToCASReferralRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/EntityMaps/EntityMap9sToCASReferralRequest-1.0.0.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/EntityMaps/EntityMap9sToCASReferralRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/EntityMaps/EntityMap9sToCASReferralRequest-1.0.0.svg" width="1200"></img></a>
 <br>
 <br>
 <br>
@@ -20,7 +20,7 @@ The below diagram details the ServiceRequest - Referral Request - 999 AST referr
 The below diagram details the Cancellation Request - Referral Request - 999 AST referral to CAS
 <br>
 <br>
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" width="1200"></img></a>
 
 <br>
 

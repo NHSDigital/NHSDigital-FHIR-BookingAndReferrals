@@ -72,7 +72,7 @@ A Beta deployment closely mirrors a typical software deployment process but incl
 The diagram below illustrates the steps and stages of the Beta deployment process, with detailed explanations provided in the section that follows.
 
 ![Beta Deployment](
-https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/General/BetaDeployment-1.0.0.svg
+https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/General/BetaDeployment-1.0.0.svg
 )
 
 ### Business Change

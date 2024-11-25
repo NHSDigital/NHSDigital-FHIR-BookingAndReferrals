@@ -86,19 +86,19 @@ The Booking and Referrals standard implements version negotiation in 3 steps. Ea
 APIs should have the ability to route traffic based on the version header as shown below. This is to ensure that major version differences (breaking changes) can be negotiated as shown in the second diagram.
 
 
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images//Versioning/API_Proxies-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/Versioning/API_Proxies-1.1.0.svg" width="800"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images//Versioning/API_Proxies-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/Versioning/API_Proxies-1.1.0.svg" width="800"></img></a>
 
 API Versioning between entities is fairly loose, only the major versioning differences would case a failure. with the exception of new endpoints which will be gated by minor versioning. The diagram below shows desired behavior in all versioning negotiations at the API.
 
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images//Versioning/API_Interactions-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/Versioning/API_Interactions-1.1.0.svg" width="1800"/></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images//Versioning/API_Interactions-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/Versioning/API_Interactions-1.1.0.svg" width="1800"/></img></a>
 
 
 ### CapabilityStatement (step 2)
 
 The CapabilityStatement, coupled with the Accept header can define what version of Core the receiver is using. This ties in with the API spec which the CapabilityStatement mimics in terms of functions/features. The capability statement will return a list of message definitions for a given endpoint.
 
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images//Versioning/CapabilityStatement-1.1.0.svg" target="_blank">
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/Versioning/CapabilityStatement-1.1.0.svg" width="1200"/></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images//Versioning/CapabilityStatement-1.1.0.svg" target="_blank">
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/Versioning/CapabilityStatement-1.1.0.svg" width="1200"/></img></a>
 
 ### MessageDefinition (step 3)
 
@@ -108,6 +108,6 @@ For example, a service could service multiple applications covered by a single m
 
 This is describes version control at the BaRS use case level.
 
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images//Versioning/MessageDefinition-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/Versioning/MessageDefinition-1.1.0.svg" width="1700"/></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images//Versioning/MessageDefinition-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/Versioning/MessageDefinition-1.1.0.svg" width="1700"/></img></a>
 
 
