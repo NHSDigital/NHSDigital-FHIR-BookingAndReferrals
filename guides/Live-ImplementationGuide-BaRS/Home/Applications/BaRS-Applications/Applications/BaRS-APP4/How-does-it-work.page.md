@@ -26,7 +26,7 @@ The following diagrams illustrate the workflows and interactions of the followin
 
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/ValidationRequestSimplified-1.1.0.svg" width="1000"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/ValidationRequestSimplified-1.1.0.svg" width="1000"></img></a>
 
 
 This details a 999 Ambulance Service Trust (Requester) Referral into the following Responder services:

@@ -68,7 +68,7 @@ If you have come to this implementation guide directly it might be helpful to re
 
 It is common to use a recipe analogy to describe complex concepts. It is also possible to describe the payload entities within the BaRS standard using this analogy. In this analogy the recipe is for a specific cake which corresponds to a BaRS Application conformant solution developed by suppliers to enable the digitisation of a use case specific workflow.
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/General/RecipeAnalogy-1.0.0.svg)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/General/RecipeAnalogy-1.0.0.svg)
 
 **Profiles**
 

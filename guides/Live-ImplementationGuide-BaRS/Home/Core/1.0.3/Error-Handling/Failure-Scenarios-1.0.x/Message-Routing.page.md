@@ -8,7 +8,7 @@ topic: Core-ErrorHandling-MessageRouting-1.0.3
 
 Below is a diagram of error locations coupled with scenarios with regards to the routing of messages by the proxy using the Endpoint Catalogue. The below diagram is generic and not specific to any particular API endpoint. Most requests will be subject to the errors that can be encountered during message routing.
 
-  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/FailureScenarios/EndpointCatalogue-FailureScenarios-1.0.0.svg)
+  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/FailureScenarios/EndpointCatalogue-FailureScenarios-1.0.0.svg)
 
 ### SEND at the API
 The SEND prefix indicates an issue caught before any internal routing or processing occurs, it communicates a problem with the format of the request, not adhering to the API Spec as an example.

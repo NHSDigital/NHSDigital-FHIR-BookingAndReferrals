@@ -17,7 +17,7 @@ The payloads and workflow have been designed to support these services. Other {{
 For this application we will be referring to the actors as 'Requester' and the 'Responder'. The Requester is the provider system that creates and sends the Validation Request to the Responder for completion. The Responder is the provider system that completes the validation request and responds back with the outcome of the assessment or action to the Requester. The table below summarises this.
 <br>
 <br>
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/General/ValidationActors.svg" width="500"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/General/ValidationActors.svg" width="500"></img></a>
 <br>
 <br>
 

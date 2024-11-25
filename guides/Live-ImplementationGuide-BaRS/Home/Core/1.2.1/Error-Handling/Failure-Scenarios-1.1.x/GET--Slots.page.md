@@ -17,7 +17,7 @@ Get /Slots has added complexity compared to previous endpoints in this section. 
 
 ### Interaction  
 
-  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/FailureScenarios/Slot-FailureScenarios-1.0.0.svg)
+  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/FailureScenarios/Slot-FailureScenarios-1.0.0.svg)
   
 ### Errors by parameter
 **Schedule:actor:HealthcareService**
