@@ -8,6 +8,7 @@ topic: TRN-API-global
 
 | Change                                         | BaRS Version | Description                                                                                                                              | Impact                                                   |
 |------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+|  Addition of the use-context HTTP header  | 1.8.1   | A new header to assist in {{pagelink:core-EndToEndWorkflow-Logging-1.0.5, text: audting and logging}}  | <mark style="background-color: Green">Addition</mark> |
 | <div class="imgHandshake">{{render:handshake}}</div> -  The DoS ID examples updated to https| 1.8.0      | The https://fhir.nhs.uk/Id/dos-service-id examples now correcly show as https.  | <mark style="background-color: Yellow">correction</mark>    |
 | <div class="imgHandshake">{{render:handshake}}</div>  | 1.8.0 | The example deviceName element in NHSD-Requesting-Software now shows correctly as an Object as defined by the schema | <mark style="background-color: Yellow">correction</mark>    |
 | Resilience to Endpoint Catalogue               | 1.5.0        | The proxies mechanism for obtaining Target Endpoints has been updated to allow for more resilience in the event of a dependency failure. | <mark style="background-color: Yellow">correction</mark> |
