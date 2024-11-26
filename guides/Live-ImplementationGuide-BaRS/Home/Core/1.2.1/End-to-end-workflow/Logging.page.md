@@ -4,7 +4,7 @@ topic: core-EndToEndWorkflow-Logging-1.2.1
 
 ## {{page-title}}
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information - Preview</b>
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information - Preview</b> </div>
 <p>
 
 | Header                 | Requirement            | Description                                                  | Value                      |
