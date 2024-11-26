@@ -35,9 +35,9 @@ This application supports the use of the following use cases:
 
 | Use Case                                                                                              | Name | Code |
 |-------------------------------------------------------------------------------------------------------|------|------|
-| 999 Ambulance Service Trust (AST) validation request to Clinical Assessment Service (CAS)             |		| A4T1 |
-| 999 AST to Falls Lifting Service - (Application v1.2.0 and above)                                     |		| A4T2 |
-| 999 AST to Community Services (e.g 2-hour Urgent Community Response) - (Application v1.2.0 and above) |		| A4T3 |
+| 999 Ambulance Service Trust (AST) validation request to Clinical Assessment Service (CAS)             | 999-CAS Validation | A4T1 |
+| 999 AST to Falls Lifting Service - (Application v1.2.0 and above)                                     | 999 - Falls	| A4T2 |
+| 999 AST to Community Services (e.g 2-hour Urgent Community Response) - (Application v1.2.0 and above) | 999-Community Services		| A4T3 |
 
 
 </br>

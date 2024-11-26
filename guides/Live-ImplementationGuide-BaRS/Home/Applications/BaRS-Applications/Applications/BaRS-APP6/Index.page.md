@@ -41,9 +41,9 @@ This application supports the use of the following use cases:
 
 | Use Case                        | Name |  Code |
 |---------------------------------|------|-------|
-| CAD to CAD Out of Area Referral |		| A6T1 |
-| CAD to CAD Call Assist Request  |		| A6T2 |
-| CAD to CAD Mutual Aid Request   |		| A6T3 |
+| CAD to CAD Out of Area Referral |	CAD to CAD Out of Area Referral | A6T1 |
+| CAD to CAD Call Assist Request  | CAD to CAD Call Assist Request | A6T2 |
+| CAD to CAD Mutual Aid Request   | CAD to CAD Mutual Aid Request | A6T3 |
 
 </br>
 </br>
