@@ -92,7 +92,7 @@
                         <!--        Use case category       -->
                         <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
                         <code value="a5t2" />
-                        <display value="Primary Care to Pharmacy Oral Contraception" />
+                        <display value="Primary Care to Pharmacy Contraception" />
                     </coding>
                 </category>
                 <subject>

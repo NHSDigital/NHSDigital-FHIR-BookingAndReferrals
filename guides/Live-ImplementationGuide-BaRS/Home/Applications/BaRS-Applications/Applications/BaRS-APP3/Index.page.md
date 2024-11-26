@@ -35,9 +35,10 @@ topic: Application3
 
 
 This application supports the following:
-|Use case                                                                        |Code|
-|--------------------------------------------------------------------------------|----|
-| 999 Ambulance Service Trust (AST) referral to Clinical Assessment Service (CAS)|A3T1|
+
+|Use case                                                                        | Name | Code|
+|--------------------------------------------------------------------------------|------|------|
+| 999 Ambulance Service Trust (AST) referral to Clinical Assessment Service (CAS)| 999 to CAS referral 	| A3T1 |
 
 </br>
 </br>
