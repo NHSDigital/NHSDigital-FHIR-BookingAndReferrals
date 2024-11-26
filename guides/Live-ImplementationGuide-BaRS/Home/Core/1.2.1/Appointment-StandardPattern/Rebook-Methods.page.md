@@ -104,4 +104,4 @@ Using PATCH:
 }
 ```
 
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/SequenceDiagrams/BaRS_Foundation_ReBook.drawio.svg" ></img>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_ReBook.drawio.svg" ></img>

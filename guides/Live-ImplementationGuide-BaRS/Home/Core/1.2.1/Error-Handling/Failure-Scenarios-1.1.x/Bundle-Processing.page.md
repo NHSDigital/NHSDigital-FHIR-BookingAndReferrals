@@ -20,7 +20,7 @@ Below is a simplified example of how how to handle the Transaction Integrity HTT
 ```
 **Visual**
 
-  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/FailureScenarios/HTTP-Header-logic-1.0.0.svg)
+  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/FailureScenarios/HTTP-Header-logic-1.0.0.svg)
 
 
 | HTTP Status Code | HTTP Error Code | issue Code | Scenario                                                          |
@@ -116,7 +116,7 @@ Many scenarios are covered by this one example, the full pseudo code can be loca
 
 **Visual**
 
-  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/FailureScenarios/WorkflowVariable-FailureScenarios-1.0.0.svg)
+  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/FailureScenarios/WorkflowVariable-FailureScenarios-1.0.0.svg)
 
 | HTTP Status Code | HTTP Error Code | issue Code | Scenario                                                                            |
 |------------------|-----------------|------------|-------------------------------------------------------------------------------------|
@@ -168,7 +168,7 @@ if (Message == "update")
 ```
 **Visual**
 
-  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/FailureScenarios/DataConflict-FailureScenarios-1.0.0.svg)
+  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/FailureScenarios/DataConflict-FailureScenarios-1.0.0.svg)
 
 
 
@@ -233,7 +233,7 @@ Receive_Request
 		if(Bundle.meta.versionID is null)
 			OperationOutcome.issue.code = "invariant"
 			throw exception with "REC_BAD_REQUEST"
-			then return with HTTP.ResponseCode 422
+			then return with HTTP.ResponseCode 400
 		else if!(Bundle.meta.versionID in versionID.supported)
 			OperationOutcome.issue.code = "not-supported"
 			throw exception with "REC_UNPROCESSABLE_ENTITY"

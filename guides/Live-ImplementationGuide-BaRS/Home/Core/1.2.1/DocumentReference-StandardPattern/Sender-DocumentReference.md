@@ -108,6 +108,6 @@ Once you have retrieved the resource, you can process it according to your requi
 
 **Note**: It's important to consider the security and privacy aspects when working with clinical documents and resources. Ensure that you adhere to applicable regulations and best practices to protect patient data.
 
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/DocumentReference/BaRS_NRL_Search_Sequence-1.1.0.svg" target="_blank">
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/DocumentReference/BaRS_NRL_Search_Sequence-1.1.0.svg" ></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/BaRS_NRL_Search_Sequence-1.1.0.svg" target="_blank">
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/BaRS_NRL_Search_Sequence-1.1.0.svg" ></img></a>
 

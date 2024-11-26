@@ -6,4 +6,4 @@ GET /metadata is the only Endpoint which does not need a Target identifier. Not 
 
 ### interactions
 
-  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/FailureScenarios/metadata-FailureScenarios-1.0.0.svg)
+  ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/FailureScenarios/metadata-FailureScenarios-1.0.0.svg)

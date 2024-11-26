@@ -19,6 +19,6 @@ The method for the initial booking of an appointment depends on the Application 
 * Send a Request to book an appointment in that slot
 
 
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/SequenceDiagrams/BaRS_Foundation_Book.drawio.svg" ></img>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Book.drawio.svg" ></img>
 
 

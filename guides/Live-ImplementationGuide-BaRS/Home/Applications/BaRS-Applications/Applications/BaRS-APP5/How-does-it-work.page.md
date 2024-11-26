@@ -7,7 +7,7 @@ topic: APP5-HowDoesItWork
 This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a referral request:
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/GPtoPharmacyCPCS-1.0.0-beta.1.svg" width="1500"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/GPtoPharmacyCPCS-1.0.0-beta.1.svg" width="1500"></img></a>
 
 
 To support the workflows for this application of the standard the operations that need to be supported are:
@@ -571,5 +571,5 @@ Receive_Request
 <hr>
 
 <!--
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/WorkflowStatus-1.0.0.png)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/WorkflowStatus-1.0.0.png)
 -->

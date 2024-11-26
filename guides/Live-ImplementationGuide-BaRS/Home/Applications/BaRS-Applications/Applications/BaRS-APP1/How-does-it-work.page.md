@@ -7,7 +7,7 @@ topic: APP1-HowDoesItWork
 This section describes how the primary operations used in this Application works. This diagram illustrates the workflow and interactions of a referral request and booking process:
 <br>
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/ReferralRequestandBookingSimplified-1.0.1.svg)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/ReferralRequestandBookingSimplified-1.0.1.svg)
 
 To support the workflows for this Application of the standard the operations that need to be supported are:
 
@@ -433,7 +433,7 @@ Receive_Request
 		if(Bundle.meta.versionID is null)
 			OperationOutcome.issue.code = "invariant"
 			throw exception with "REC_BAD_REQUEST"
-			then return with HTTP.ResponseCode 422
+			then return with HTTP.ResponseCode 400
 		else if!(Bundle.meta.versionID in versionID.supported)
 			OperationOutcome.issue.code = "not-supported"
 			throw exception with "REC_UNPROCESSABLE_ENTITY"
@@ -633,7 +633,7 @@ Receive_Request
 <br><br>
 
 <!--
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/WorkflowStatus-1.0.0.png)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/WorkflowStatus-1.0.0.png)
 -->
 
 ### How bookings and referrals map to services in UEC workflows
@@ -730,7 +730,7 @@ To achieve this, a "service attribute" is configurable against services. This wi
 
 An example workflow showing how this might be implemented is illustrated below:
 
-![Booking only workflow](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/DOS-bookingattribute-workflow-1.0.1.svg)
+![Booking only workflow](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/DOS-bookingattribute-workflow-1.0.1.svg)
 
 ##### Example xml returned:
 

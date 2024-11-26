@@ -8,7 +8,7 @@ topic: APP3-HowDoesItWork
 This section describes how the primary operations used in this application work. The below diagram illustrates the workflow and interactions of a Referral request.
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/ReferraltoCASSimplified-1.0.0.svg" width="1100"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/ReferraltoCASSimplified-1.0.0.svg" width="1100"></img></a>
 
 
 This workflow details a referral into a CAS from a 999 Ambulance Service Trust (AST) for consultation:
@@ -395,5 +395,5 @@ Receive_Request
 <hr>
 
 <!--
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/WorkFlows/WorkflowStatus-1.0.0.png)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/WorkflowStatus-1.0.0.png)
 -->

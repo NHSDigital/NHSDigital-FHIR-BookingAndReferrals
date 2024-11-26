@@ -278,7 +278,7 @@ This payload is used to transmit all the necessary information that is required 
 <br>
 The below diagram details the Cancellation Referral Request 
 <br>
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/EntityMaps/EntityMapCancellationReferralRequest-1.1.0.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/EntityMaps/EntityMapCancellationReferralRequest-1.1.0.svg" width="1200"></img></a>
 <br>
 <br>
 <hr>
@@ -532,7 +532,7 @@ This payload is used to transmit all the necessary information that is required 
 The below diagram details the Cancellation Booking Request 
 <br>
 <br>
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/EntityMaps/EntityMapCancellationBookingRequest-1.1.0.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/EntityMaps/EntityMap9sToCASCancellationRequest-1.0.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/EntityMaps/EntityMapCancellationBookingRequest-1.1.0.svg" width="1200"></img></a>
 <br>
 <br>
 <hr>

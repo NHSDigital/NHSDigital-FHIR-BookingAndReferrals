@@ -8,7 +8,7 @@ When a message is received, the X-Request-ID and X-Correlation-ID header values 
 
 If a message fails due to a message with the same header ids having already been processed, the response must be a 409, REC_CONFLICT with an OperationOutcome.issue.code of 'duplicate' as seen below.
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/TransactionIntegrity/Initial-failure-scenario-1.0.0.svg)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/TransactionIntegrity/Initial-failure-scenario-1.0.0.svg)
 
 <br>
 
@@ -126,7 +126,7 @@ If a message fails due to a message with the same header ids having already been
 
 In the event of a timeout, a retry attempt is made after a suitable amount of time to ensure the message was received. The same X-Request-ID and X-Correlation-ID must be used. Should a 409 REC_CONFLICT response be received with a OperationOutcome.issue.code of "duplicate", then this can be used as confirmation that the message was received.
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/TransactionIntegrity/Timeout-Failure-Scenario-1.0.0.svg)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/TransactionIntegrity/Timeout-Failure-Scenario-1.0.0.svg)
 
 
 ### 408 Outcome
@@ -243,7 +243,7 @@ In the event of a timeout, a retry attempt is made after a suitable amount of ti
 
 If the processing of a message is not completed prior to the initial retry, the receiver must respond with a 425 REC_TOO_EARLY response, to indicate the initial message is still processing. The receipt is then unconfirmed and the sender can retry after a suitable amount of time until they receive a desired response.
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/TransactionIntegrity/Initial-failure-scenario-solution-1.0.0.svg)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/TransactionIntegrity/Initial-failure-scenario-solution-1.0.0.svg)
 
 
 ### 408 Outcome
@@ -419,4 +419,4 @@ The scenarios above describe the response where a message is successful. If a me
 The relevant 4xx or 5xx response is what the sender receives as a response, ensuring the correct reason for a failure is communicated.
 
 
-![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-images/images/TransactionIntegrity/Post-409-FailureScenario-2-1.0.0.svg)
+![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/TransactionIntegrity/Post-409-FailureScenario-2-1.0.0.svg)
