@@ -92,7 +92,7 @@
                         <!--        Use case category       -->
                         <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
                         <code value="a5t3" />
-                        <display value="Primary Care to Pharmacy Blood Pressure" />
+                        <display value="Primary Care to Pharmacy Blood Pressure Check Service" />
                     </coding>
                 </category>
                 <subject>

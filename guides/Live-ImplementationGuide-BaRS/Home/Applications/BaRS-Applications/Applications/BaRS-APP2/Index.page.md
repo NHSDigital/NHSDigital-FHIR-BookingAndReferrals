@@ -36,12 +36,13 @@ topic: Application2
 
 This Application supports the use of the following use cases:
 
-| Use Case                                                                              | Code |
-|---------------------------------------------------------------------------------------|------|
-| 111 Online (NHS 111 Online - patient facing service) to ED (Emergency Department)     | A2T1 |
-| 111 Online (NHS 111 Online - patient facing service) to UTC (Urgent Treatment Centre) | A2T2 |
-| S&R (Streaming and Redirection) to ED (Emergency Department)                          | A2T3 |
-| S&R (Streaming and Redirection) to UTC (Urgent Treatment Centre)                      | A2T4 |
+| Use Case                                                                              | Name | Code |
+|---------------------------------------------------------------------------------------|-------|------|
+| 111 Online (NHS 111 Online - patient facing service) to ED (Emergency Department)     | 111 Online to ED | A2T1 |
+| 111 Online (NHS 111 Online - patient facing service) to UTC (Urgent Treatment Centre) | 111 Online to UTC | A2T2 |
+| S&R (Streaming and Redirection) to ED (Emergency Department)                          | S&R to ED	| A2T3 |
+| S&R (Streaming and Redirection) to UTC (Urgent Treatment Centre)                      | S&R to UTC | A2T4 |
+
 
 
 **note:** for use cases where the sending system is a 111 telephony service, please see {{pagelink: application1, text:Bookings and Referrals into UEC Application 1}}
