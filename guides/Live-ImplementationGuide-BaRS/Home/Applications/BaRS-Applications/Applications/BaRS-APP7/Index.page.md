@@ -36,9 +36,9 @@ topic: Application7
 
 This Application supports the use of the following use case:
 
-| Use Case                                                        | Code |
-|-----------------------------------------------------------------|------|
-| Appointments for Patient Facing Services (PFS) into GP Practice | A7T1 |
+| Use Case                                                        | Name |  Code |
+|-----------------------------------------------------------------|-------|------|
+| Appointments for Patient Facing Services (PFS) into GP Practice |	PFS to Primary Care	| A7T1 | 
 
 
 

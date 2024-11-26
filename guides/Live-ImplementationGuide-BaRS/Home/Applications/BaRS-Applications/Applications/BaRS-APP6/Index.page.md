@@ -39,12 +39,11 @@ This application supports the use of the following use cases:
 
 *Note: when this application is used for Referrals from an AST Computer Aided Dispatch system (CAD) to an AST CAD it is known as 'CAD to CAD'*
 
-| Use Case                        | Code |
-|---------------------------------|------|
-| CAD to CAD Out of Area Referral | A6T1 |
-| CAD to CAD Call Assist Request  | A6T2 |
-| CAD to CAD Mutual Aid Request   | A6T3 |
-
+| Use Case                        | Name |  Code |
+|---------------------------------|------|-------|
+| CAD to CAD Out of Area Referral |	CAD to CAD Out of Area Referral | A6T1 |
+| CAD to CAD Call Assist Request  | CAD to CAD Call Assist Request | A6T2 |
+| CAD to CAD Mutual Aid Request   | CAD to CAD Mutual Aid Request | A6T3 |
 
 </br>
 </br>

@@ -1,382 +1,390 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="777a156c-af3c-4748-a8a3-7e95e4b0df9a" />
-  <meta>
-    <versionId value="1.1.0" />
-    <lastUpdated value="2021-10-11T15:01:31.8185338+00:00" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-  </meta>
-  <type value="message" />
-  <timestamp value="2021-10-11T12:15:10+00:00" />
-  <entry>
-    <fullUrl value="urn:uuid:c5957fdd-097b-409d-a406-49c52ceef2cd" />
-    <resource>
-      <MessageHeader>
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-booking-request" />
-        </meta>
-        <eventCoding>
-          <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
-          <code value="booking-request" />
-        </eventCoding>
-        <destination>
-          <endpoint value="https://fhir.nhs.uk/Id/dos-service-id|111111111" />
-          <receiver>
-            <reference value="urn:uuid:43a42f7a-a6f2-42a5-a8f0-fc85abf8c3fa" />
-          </receiver>
-        </destination>
-        <sender>
-          <reference value="urn:uuid:6324587b-eb70-4333-9db2-22d48f64c9ba" />
-        </sender>
-        <source>
-          <name value="My organisation name" />
-          <software value="My software name" />
-          <version value="2.1.45" />
-          <contact>
-            <system value="phone" />
-            <value value="+44 (0113) 123 4567" />
-          </contact>
-          <endpoint value="https://fhir.nhs.uk/Id/dos-service-id|2222222222" />
-        </source>
-        <reason>
-          <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/message-reason-bars" />
-            <code value="new" />
-          </coding>
-        </reason>
-        <focus>
-          <!--     Appointment     -->
-          <reference value="urn:uuid:aca94bdb-2e38-4399-9ece-2ba083ce65b5" />
-        </focus>
-        <definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
-      </MessageHeader>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:aca94bdb-2e38-4399-9ece-2ba083ce65b5" />
-    <resource>
-      <Appointment>
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/Appointment" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
-        </meta>
-        <status value="booked" />
-        <description value="Reason for calling-" />
-        <start value="2021-10-12T12:30:30+00:00" />
-        <end value="2021-10-12T12:40:30+00:00" />
-        <slot>
-          <reference value="urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda" />
-        </slot>
-        <created value="2021-10-11T15:01:30+00:00" />
-        <participant>
-          <actor>
-            <reference value="urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2" />
-          </actor>
-          <status value="accepted" />
-        </participant>
-      </Appointment>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2" />
-    <resource>
-      <Patient>
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        </meta>
-        <!--       added EthnicCategory extension       -->
-        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
-          <valueCodeableConcept>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory" />
-              <code value="A" />
-              <display value="British, Mixed British" />
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <!--       added Religion extension       -->
-        <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
-              <code value="1041" />
-              <display value="Roman Catholic Church" />
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <identifier>
-          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
-            <valueCodeableConcept>
-              <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
-                <code value="number-present-and-verified" />
-                <display value="Number present and verified" />
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="9476719931" />
-        </identifier>
-        <name>
-          <use value="official" />
-          <text value="Mr Peter Chalmers" />
-          <family value="Chalmers" />
-          <given value="Peter" />
-          <prefix value="Mr" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1974-12-25" />
-        <address>
-          <use value="home" />
-          <text value="123 High Street, Leeds LS1 4HR" />
-          <line value="123 High Street" />
-          <line value="Leeds" />
-          <city value="Leeds" />
-          <postalCode value="LS1 4HR" />
-        </address>
-        <contact>
-          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
-            <valuePositiveInt value="1" />
-          </extension>
-          <relationship>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
-              <code value="ONESELF" />
-			  <display value="self" />
-            </coding>
-          </relationship>
-          <telecom>
-            <system value="phone" />
-            <value value="01138698975" />
-            <use value="home" />
-            <rank value="2" />
-          </telecom>
-          <telecom>
-            <system value="phone" />
-            <value value="07736312544" />
-            <use value="mobile" />
-            <rank value="1" />
-          </telecom>
-          <telecom>
-            <system value="email" />
-            <value value="jjones@hotmail.co.uk" />
-            <use value="home" />
-            <rank value="1" />
-          </telecom>
-        </contact>
-        <contact>
-          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
-            <valuePositiveInt value="2" />
-          </extension>
-          <relationship>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
-              <code value="NEPHEW" />
-            </coding>
-          </relationship>
-          <name>
-            <family value="Grayson" />
-            <given value="Jack" />
-          </name>
-          <telecom>
-            <system value="phone" />
-            <value value="0789 1234567" />
-            <rank value="1" />
-          </telecom>
-          <gender value="male" />
-        </contact>
-        <communication>
-          <language>
-            <coding>
-              <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
-              <code value="en" />
-              <display value="English" />
-            </coding>
-          </language>
-          <preferred value="true" />
-        </communication>
-        <generalPractitioner>
-          <reference value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
-        </generalPractitioner>
-      </Patient>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85" />
-    <resource>
-      <Organization>
-        <meta>
-          <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        </meta>
-        <identifier>
-          <system value="https://fhir.nhs.uk/id/ods-organization-code" />
-          <value value="G82080" />
-        </identifier>
-        <name value="Patient's Surgery" />
-      </Organization>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda" />
-    <resource>
-      <Slot>
-        <id value="da83ae28-46f0-4aad-9c54-dcad462cafcb" />
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/Slot" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
-        </meta>
-        <serviceCategory>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/service-category" />
-            <code value="14" />
-            <display value="Emergency Department" />
-          </coding>
-        </serviceCategory>
-        <appointmentType>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0276" />
-            <code value="EMERGENCY" />
-            <display value="Emergency appointment" />
-          </coding>
-        </appointmentType>
-        <schedule>
-          <reference value="urn:uuid:3a62607b-df65-4932-940c-14262787f62d" />
-        </schedule>
-        <status value="busy" />
-        <start value="2021-10-06T10:00:00.000+00:00" />
-        <end value="2021-10-06T11:00:00.000+00:00" />
-      </Slot>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:3a62607b-df65-4932-940c-14262787f62d" />
-    <resource>
-      <Schedule>
-        <id value="7e8c4baa-b7a7-4a7c-bb8c-8c8426ad7781" />
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/Schedule" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule" />
-        </meta>
-        <identifier>
-          <system value="https://system.supplier.co.uk/Diary/id" />
-          <value value="8622dfdb-dc6a-47b6-b3a7-2eb2829db287" />
-        </identifier>
-        <actor>
-          <!--  HealthcareService  -->
-          <reference value="urn:uuid:e5fd53eb-7b1d-496d-bbf8-5c9dc7bd761b" />
-        </actor>
-        <actor>
-          <!--  PractitionerRole  -->
-          <reference value="urn:uuid:52428e73-0a5c-455d-8ff5-cd080e557082" />
-        </actor>
-        <actor>
-          <!--  Practitioner  -->
-          <reference value="urn:uuid:6daaadd8-56e0-4d74-8350-1632331c5452" />
-        </actor>
-      </Schedule>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:e5fd53eb-7b1d-496d-bbf8-5c9dc7bd761b" />
-    <resource>
-      <HealthcareService>
-        <id value="5088769a-491e-463f-a167-fff78bb472d9" />
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
-        </meta>
-        <identifier>
-          <system value="https://system.supplier.co.uk/My/Healthcare/Services" />
-          <value value="100" />
-        </identifier>
-        <location>
-          <reference value="urn:uuid:860e4c37-4e36-45fb-8fca-41132cd937a5" />
-        </location>
-        <name value="Healthcare Service Name" />
-      </HealthcareService>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:6daaadd8-56e0-4d74-8350-1632331c5452" />
-    <resource>
-      <Practitioner>
-        <id value="cad5a61c-3797-4f26-8921-ae4bc7f75eb6" />
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        </meta>
-        <name>
-          <family value="Bloggs" />
-          <given value="Joe" />
-          <prefix value="Dr" />
-        </name>
-      </Practitioner>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:52428e73-0a5c-455d-8ff5-cd080e557082" />
-    <resource>
-      <PractitionerRole>
-        <id value="6bea99e7-b97f-4ee1-980d-05f997afff4f" />
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        </meta>
-        <code>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/practitioner-role" />
-            <code value="doctor" />
-            <display value="Doctor" />
-          </coding>
-        </code>
-      </PractitionerRole>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:860e4c37-4e36-45fb-8fca-41132cd937a5" />
-    <resource>
-      <Location>
-        <id value="d23eac9a-12e7-46c5-8781-c3c1d9b1d3c5" />
-        <meta>
-          <lastUpdated value="2021-10-11T15:01:30.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-        </meta>
-        <name value="Healthcare Service Location" />
-        <position>
-          <longitude value="143.20196" />
-          <latitude value="-37.22866" />
-        </position>
-      </Location>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:43a42f7a-a6f2-42a5-a8f0-fc85abf8c3fa" />
-    <resource>
-      <Organization>
-        <meta>
-          <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        </meta>
-        <name value="ORIGINAL Receiving/performing Organization" />
-      </Organization>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:6324587b-eb70-4333-9db2-22d48f64c9ba" />
-    <resource>
-      <Organization>
-        <meta>
-          <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        </meta>
-        <name value="ORIGINAL Sender Organization" />
-      </Organization>
-    </resource>
-  </entry>
+	<id value="777a156c-af3c-4748-a8a3-7e95e4b0df9a"/>
+	<meta>
+		<versionId value="1.1.0"/>
+		<lastUpdated value="2021-10-11T15:01:31.8185338+00:00"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage"/>
+	</meta>
+	<type value="message"/>
+	<timestamp value="2021-10-11T12:15:10+00:00"/>
+	<entry>
+		<fullUrl value="urn:uuid:c5957fdd-097b-409d-a406-49c52ceef2cd"/>
+		<resource>
+			<MessageHeader>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-booking-request"/>
+				</meta>
+				<eventCoding>
+					<system value="https://fhir.nhs.uk/CodeSystem/message-events-bars"/>
+					<code value="booking-request"/>
+				</eventCoding>
+				<destination>
+					<endpoint value="https://fhir.nhs.uk/Id/dos-service-id|111111111"/>
+					<receiver>
+						<reference value="urn:uuid:43a42f7a-a6f2-42a5-a8f0-fc85abf8c3fa"/>
+					</receiver>
+				</destination>
+				<sender>
+					<reference value="urn:uuid:6324587b-eb70-4333-9db2-22d48f64c9ba"/>
+				</sender>
+				<source>
+					<name value="My organisation name"/>
+					<software value="My software name"/>
+					<version value="2.1.45"/>
+					<contact>
+						<system value="phone"/>
+						<value value="+44 (0113) 123 4567"/>
+					</contact>
+					<endpoint value="https://fhir.nhs.uk/Id/dos-service-id|2222222222"/>
+				</source>
+				<reason>
+					<coding>
+						<system value="https://fhir.nhs.uk/CodeSystem/message-reason-bars"/>
+						<code value="new"/>
+					</coding>
+				</reason>
+				<focus>
+					<!--     Appointment     -->
+					<reference value="urn:uuid:aca94bdb-2e38-4399-9ece-2ba083ce65b5"/>
+				</focus>
+				<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request"/>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:aca94bdb-2e38-4399-9ece-2ba083ce65b5"/>
+		<resource>
+			<Appointment>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment"/>
+				</meta>
+				<status value="booked"/>
+				<serviceCategory>
+					<coding>
+						<!--        Use case category       -->
+						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+						<code value="a1t1"/>
+						<display value="111 to ED"/>
+					</coding>
+				</serviceCategory>
+				<description value="Reason for calling-"/>
+				<start value="2021-10-12T12:30:30+00:00"/>
+				<end value="2021-10-12T12:40:30+00:00"/>
+				<slot>
+					<reference value="urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda"/>
+				</slot>
+				<created value="2021-10-11T15:01:30+00:00"/>
+				<participant>
+					<actor>
+						<reference value="urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2"/>
+					</actor>
+					<status value="accepted"/>
+				</participant>
+			</Appointment>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2"/>
+		<resource>
+			<Patient>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
+				</meta>
+				<!--       added EthnicCategory extension       -->
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory"/>
+							<code value="A"/>
+							<display value="British, Mixed British"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<!--       added Religion extension       -->
+				<extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
+							<code value="1041"/>
+							<display value="Roman Catholic Church"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<identifier>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+								<code value="number-present-and-verified"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="9476719931"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Mr Peter Chalmers"/>
+					<family value="Chalmers"/>
+					<given value="Peter"/>
+					<prefix value="Mr"/>
+				</name>
+				<gender value="male"/>
+				<birthDate value="1974-12-25"/>
+				<address>
+					<use value="home"/>
+					<text value="123 High Street, Leeds LS1 4HR"/>
+					<line value="123 High Street"/>
+					<line value="Leeds"/>
+					<city value="Leeds"/>
+					<postalCode value="LS1 4HR"/>
+				</address>
+				<contact>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+						<valuePositiveInt value="1"/>
+					</extension>
+					<relationship>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+							<code value="ONESELF"/>
+							<display value="self"/>
+						</coding>
+					</relationship>
+					<telecom>
+						<system value="phone"/>
+						<value value="01138698975"/>
+						<use value="home"/>
+						<rank value="2"/>
+					</telecom>
+					<telecom>
+						<system value="phone"/>
+						<value value="07736312544"/>
+						<use value="mobile"/>
+						<rank value="1"/>
+					</telecom>
+					<telecom>
+						<system value="email"/>
+						<value value="jjones@hotmail.co.uk"/>
+						<use value="home"/>
+						<rank value="1"/>
+					</telecom>
+				</contact>
+				<contact>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank">
+						<valuePositiveInt value="2"/>
+					</extension>
+					<relationship>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+							<code value="NEPHEW"/>
+						</coding>
+					</relationship>
+					<name>
+						<family value="Grayson"/>
+						<given value="Jack"/>
+					</name>
+					<telecom>
+						<system value="phone"/>
+						<value value="0789 1234567"/>
+						<rank value="1"/>
+					</telecom>
+					<gender value="male"/>
+				</contact>
+				<communication>
+					<language>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+							<code value="en"/>
+							<display value="English"/>
+						</coding>
+					</language>
+					<preferred value="true"/>
+				</communication>
+				<generalPractitioner>
+					<reference value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85"/>
+				</generalPractitioner>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c8c21609-cb27-4958-8eb2-37c76f3def85"/>
+		<resource>
+			<Organization>
+				<meta>
+					<lastUpdated value="2021-10-11T15:23:30.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/id/ods-organization-code"/>
+					<value value="G82080"/>
+				</identifier>
+				<name value="Patient's Surgery"/>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda"/>
+		<resource>
+			<Slot>
+				<id value="da83ae28-46f0-4aad-9c54-dcad462cafcb"/>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/Slot"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot"/>
+				</meta>
+				<serviceCategory>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/service-category"/>
+						<code value="14"/>
+						<display value="Emergency Department"/>
+					</coding>
+				</serviceCategory>
+				<appointmentType>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+						<code value="EMERGENCY"/>
+						<display value="Emergency appointment"/>
+					</coding>
+				</appointmentType>
+				<schedule>
+					<reference value="urn:uuid:3a62607b-df65-4932-940c-14262787f62d"/>
+				</schedule>
+				<status value="busy"/>
+				<start value="2021-10-06T10:00:00.000+00:00"/>
+				<end value="2021-10-06T11:00:00.000+00:00"/>
+			</Slot>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:3a62607b-df65-4932-940c-14262787f62d"/>
+		<resource>
+			<Schedule>
+				<id value="7e8c4baa-b7a7-4a7c-bb8c-8c8426ad7781"/>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/Schedule"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Schedule"/>
+				</meta>
+				<identifier>
+					<system value="https://system.supplier.co.uk/Diary/id"/>
+					<value value="8622dfdb-dc6a-47b6-b3a7-2eb2829db287"/>
+				</identifier>
+				<actor>
+					<!--  HealthcareService  -->
+					<reference value="urn:uuid:e5fd53eb-7b1d-496d-bbf8-5c9dc7bd761b"/>
+				</actor>
+				<actor>
+					<!--  PractitionerRole  -->
+					<reference value="urn:uuid:52428e73-0a5c-455d-8ff5-cd080e557082"/>
+				</actor>
+				<actor>
+					<!--  Practitioner  -->
+					<reference value="urn:uuid:6daaadd8-56e0-4d74-8350-1632331c5452"/>
+				</actor>
+			</Schedule>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:e5fd53eb-7b1d-496d-bbf8-5c9dc7bd761b"/>
+		<resource>
+			<HealthcareService>
+				<id value="5088769a-491e-463f-a167-fff78bb472d9"/>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService"/>
+				</meta>
+				<identifier>
+					<system value="https://system.supplier.co.uk/My/Healthcare/Services"/>
+					<value value="100"/>
+				</identifier>
+				<location>
+					<reference value="urn:uuid:860e4c37-4e36-45fb-8fca-41132cd937a5"/>
+				</location>
+				<name value="Healthcare Service Name"/>
+			</HealthcareService>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6daaadd8-56e0-4d74-8350-1632331c5452"/>
+		<resource>
+			<Practitioner>
+				<id value="cad5a61c-3797-4f26-8921-ae4bc7f75eb6"/>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"/>
+				</meta>
+				<name>
+					<family value="Bloggs"/>
+					<given value="Joe"/>
+					<prefix value="Dr"/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:52428e73-0a5c-455d-8ff5-cd080e557082"/>
+		<resource>
+			<PractitionerRole>
+				<id value="6bea99e7-b97f-4ee1-980d-05f997afff4f"/>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"/>
+				</meta>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/practitioner-role"/>
+						<code value="doctor"/>
+						<display value="Doctor"/>
+					</coding>
+				</code>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:860e4c37-4e36-45fb-8fca-41132cd937a5"/>
+		<resource>
+			<Location>
+				<id value="d23eac9a-12e7-46c5-8781-c3c1d9b1d3c5"/>
+				<meta>
+					<lastUpdated value="2021-10-11T15:01:30.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location"/>
+				</meta>
+				<name value="Healthcare Service Location"/>
+				<position>
+					<longitude value="143.20196"/>
+					<latitude value="-37.22866"/>
+				</position>
+			</Location>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:43a42f7a-a6f2-42a5-a8f0-fc85abf8c3fa"/>
+		<resource>
+			<Organization>
+				<meta>
+					<lastUpdated value="2021-10-11T15:23:30.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+				</meta>
+				<name value="ORIGINAL Receiving/performing Organization"/>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6324587b-eb70-4333-9db2-22d48f64c9ba"/>
+		<resource>
+			<Organization>
+				<meta>
+					<lastUpdated value="2021-10-11T15:23:30.8185338+00:00"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+				</meta>
+				<name value="ORIGINAL Sender Organization"/>
+			</Organization>
+		</resource>
+	</entry>
 </Bundle>
