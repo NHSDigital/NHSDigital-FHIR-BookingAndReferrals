@@ -58,6 +58,42 @@ The TKW will respond to the scenarios outlined below. It does not hold the state
 
 NB: where 'Any' NHSD-Target-Identifier is specified, only those highlighted in "UserTest DoS Services" table below will work for TKW.
 
+NB: the endpoints for TKW are case sensitive eg use the following
+/metadata
+/MessageDefinition
+/$process-message
+/Slot
+/Appointment
+/ServiceRequest
+
+#### Headers
+
+The follow is a list of headers needed for the requests, these follow the patern needed by BARS as follows {{pagelink:Home/Applications/BaRS-Core/End-to-end-workflow, text:Headers}}
+
+
+| Name | Value | example |
+|-----|-----|---------|
+| X-Request-Id | guid | 74c2b045-9b7d-4b78-aeee-642f6332e3c9 |
+| X-Correlation-Id  | guid | 0598efa7-fff0-4ade-9af8-3f46b4124151 |
+| NHSD-Target-Identifier | Base64 encoded json varies depending on test (Sentinel Value) else use a value from the "UserTest DoS Services" table below | {"system":"https://fhir.nhs.uk/Id/dos-service-id","value":"2000011147"} *<span style="color: orange">( Must be Base64 encoded! )</span>* |
+| NHSD-End-User-Organisation  | Base64 encoded json | {"resourceType":"Organization","identifier":[{"value":"WASP","system":"https://fhir.nhs.uk/Id/ods-organization-code"}],"name":"My service provider name"} *<span style="color: orange">( Must be Base64 encoded! )</span>* |
+||||
+
+
+<details>
+    <summary><b>Example cURL Request</b></summary>
+    <pre><code>
+        bash
+        curl --location 'https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4/metadata' \
+        --header 'X-Request-Id: 99672436-ae1e-42e4-81a6-5a298563ccfa' \
+        --header 'X-Correlation-Id: f44f6c3c-fdd5-4c8c-a091-d825eca1d763' \
+        --header 'NHSD-Target-Identifier: eyJzeXN0ZW0iOiJodHRwczovL2ZoaXIubmhzLnVrL0lkL2Rvcy1zZXJ2aWNlLWlkIiwidmFsdWUiOiIyMDAwMDcyNDg5In0=' \
+        --header 'NHSD-End-User-Organisation: ewogICJyZXNvdXJjZVR5cGUiOiAiT3JnYW5pemF0aW9uIiwKICAiaWRlbnRpZmllciI6IFsKICAgIHsKICAgICAgInZhbHVlIjogIldBU1AiLAogICAgICAic3lzdGVtIjogImh0dHBzOi8vZmhpci5uaHMudWsvSWQvb2RzLW9yZ2FuaXphdGlvbi1jb2RlIgogICAgfQogIF0sCiAgIm5hbWUiOiAiTXkgc2VydmljZSBwcm92aWRlciBuYW1lIgp9' \
+        --header 'Authorization: Bearer yourBearerToken'
+    </code></pre>
+</details>
+
+
 | Suite                 | Test          | BaRS Application   | Sentinel Element / Hints                      | Sentinel Value   | Comment   |
 |-----------------------|---------------|--------------------|---------------------------------------|------------------|-----------|
 |Capability|CS for Booking and Referral receiver|111-ED|NHSD Target Identifier (HTTP Header)|2000011147|Returns CS for Booking and Referral receiver service|
