@@ -94,14 +94,12 @@ The follow is a list of headers needed for the requests, these follow the patern
 </details>
 
 
-
 | Suite                 | Test          | BaRS Application   | Sentinel Element / Hints                      | Sentinel Value   | Comment   |
 |-----------------------|---------------|--------------------|---------------------------------------|------------------|-----------|
 |Capability|CS for Booking and Referral receiver|111-ED|NHSD Target Identifier (HTTP Header)|2000011147|Returns CS for Booking and Referral receiver service|
 ||CS for Referral receiver|111-ED, 999-CAS|NHSD Target Identifier (HTTP Header)|2000076289|Returns CS for Referral receiver service|
 ||CS for Validation sender|999-CAS|NHSD Target Identifier (HTTP Header)|1374839566|Returns CS for Validation sender service (accepting interim and full validation responses)|
 ||CS for any other receiving service|BaRS Core|NHSD Target Identifier (HTTP Header)|Any (see comment)|Any NHSD Target Identifier other than those a predefined response is set for (see above)|
-
 |MessageDef|MD for Booking and Referral receiver|111-ED|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000011147|2000011147|Returns MD for Booking and Referral receiver service|
 ||MD for Referral receiver|111-ED, 999-CAS|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000076289 |2000076289 |Returns MD for Referral receiver service|
 ||MD for Validation receiver|999-CAS|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000003366|2000003366|Returns MD for Validation receiver service|
