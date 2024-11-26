@@ -35,6 +35,7 @@ This application supports the use of the following use cases:
 
 | Use Case                                                                                                                                                                      | Name |  Code |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|-------|
+| Temporary Primary Care to Community Pharmacy (Pharmacy First)                                                                                                                           | Primary Care to Community Pharmacy (Pharmacy First)| referraltopharmacy |
 | Primary Care to Community Pharmacy (Pharmacy First)                                                                                                                           | Primary Care to Community Pharmacy (Pharmacy First)| A5T1 |
 | Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP)) | Primary Care to Pharmacy Contraception | A5T2 |
 | Primary Care to Pharmacy Blood Pressure Check Service                                                                                                                         | Primary Care to Pharmacy Blood Pressure Check Service | A5T3 |
