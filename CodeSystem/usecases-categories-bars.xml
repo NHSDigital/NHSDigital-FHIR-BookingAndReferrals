@@ -26,87 +26,87 @@
   <!-- This list is intended to support all Use Case Categories supported within BaRS -->
   <concept>
     <code value="a1t1" />
-    <display value="111 - ED" />
+    <display value="111 to ED" />
   </concept>
   <concept>
     <code value="a1t2" />
-    <display value="111 - UTC" />
+    <display value="111 to UTC" />
   </concept>
   <concept>
     <code value="a1t3" />
-    <display value="CAS - ED" />
+    <display value="IUC CAS to ED" />
   </concept>
   <concept>
     <code value="a1t4" />
-    <display value="CAS - UTC" />
+    <display value="IUC CAS to UTC" />
   </concept>
   <concept>
     <code value="a1t5" />
-    <display value="999 - ED" />
+    <display value="999 to ED" />
   </concept>
   <concept>
     <code value="a1t6" />
-    <display value="999 - UTC" />
+    <display value="999 to UTC" />
   </concept>
   <concept>
     <code value="a1t7" />
-    <display value="111 - SDEC" />
+    <display value="111 to SDEC" />
   </concept>
   <concept>
     <code value="a1t8" />
-    <display value="CAS - SDEC" />
+    <display value="IUC CAS to SDEC" />
   </concept>
   <concept>
     <code value="a1t9" />
-    <display value="999 - SDEC" />
+    <display value="999 to SDEC" />
   </concept>
   <concept>
     <code value="a2t1" />
-    <display value="111 Online - ED" />
+    <display value="111 Online to ED" />
   </concept>
   <concept>
     <code value="a2t2" />
-    <display value="111 Online - UTC" />
+    <display value="111 Online to UTC" />
   </concept>
   <concept>
     <code value="a2t3" />
-    <display value="S and R - ED" />
+    <display value="S&R to ED" />
   </concept>
   <concept>
     <code value="a2t4" />
-    <display value="S and R - UTC" />
+    <display value="S&R to UTC" />
   </concept>
   <concept>
     <code value="a3t1" />
-    <display value="999 - CAS Referral" />
+    <display value="999 to CAS Referral" />
   </concept>
   <concept>
     <code value="a4t1" />
-    <display value="999 - CAS Validation" />
+    <display value="999 to CAS Validation" />
   </concept>
   <concept>
     <code value="a4t2" />
-    <display value="999 - Falls" />
+    <display value="999 to Falls" />
   </concept>
   <concept>
     <code value="a4t3" />
-    <display value="999 - Community Services" />
+    <display value="999 to Community Services" />
   </concept>
   <concept>
     <code value="a5t1" />
-    <display value="Primary Care to Pharmacy CPCS Minor Illness" />
+    <display value="Primary Care to Community Pharmacy" />
   </concept>
   <concept>
     <code value="a5t2" />
-    <display value="Primary Care to Pharmacy Oral Contraception" />
+    <display value="Primary Care to Pharmacy Contraception" />
   </concept>
   <concept>
     <code value="a5t3" />
-    <display value="Primary Care to Pharmacy Blood Pressure" />
+    <display value="Primary Care to Pharmacy Blood Pressure Check Service" />
   </concept>
   <concept>
     <code value="referraltopharmacy" />
-    <display value="Referral to Pharmacy - Deprecated" />
+    <display value="Primary Care to Pharmacy to Deprecated" />
   </concept>
   <concept>
     <code value="a6t1" />
@@ -119,5 +119,9 @@
   <concept>
     <code value="a6t3" />
     <display value="CAD to CAD Mutual Aid Request" />
+  </concept>
+  <concept>
+    <code value="a7t1" />
+    <display value="PFS to Primary Care" />
   </concept>
 </CodeSystem>

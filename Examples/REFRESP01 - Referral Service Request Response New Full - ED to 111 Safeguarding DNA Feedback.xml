@@ -88,7 +88,7 @@
 					<coding><!--       Use case category      -->
 						<system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
 						<code value="a1t1" />
-						<display value="111 - ED" />
+						<display value="111 to ED" />
 					</coding>
         </category>
         <subject>
