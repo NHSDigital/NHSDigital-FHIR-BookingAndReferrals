@@ -33,11 +33,11 @@ topic: Application5
 
 This application supports the use of the following use cases:
 
-| Use Case                                                                                                                                                                      | Code |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| Primary Care to Community Pharmacy (Pharmacy First)                                                                                                                           | A5T1 |
-| Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP)) | A5T2 |
-| Primary Care to Pharmacy Blood Pressure Check Service                                                                                                                         | A5T3 |
+| Use Case                                                                                                                                                                      | Name |  Code |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|-------|
+| Primary Care to Community Pharmacy (Pharmacy First)                                                                                                                           |		| A5T1 |
+| Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP)) |		| A5T2 |
+| Primary Care to Pharmacy Blood Pressure Check Service                                                                                                                         |		| A5T3 |
 
 
 NB - 'Primary Care' currently includes GP Practice and Online Consultation, as described in the [BaRS Clinical Safety Case Report (CSCR)](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#downloads)
