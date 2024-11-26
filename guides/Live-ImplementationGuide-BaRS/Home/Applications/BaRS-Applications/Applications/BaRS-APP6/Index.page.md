@@ -22,7 +22,7 @@ topic: Application6
 </thead>
 <tbody>
 	<tr>
-		<td>Application 6 v1.0.0-beta.2</td>
+		<td>Application 6 v1.0.0-beta.3</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.4.0" target="_blank">v1.1.0</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.5.0" target="_blank">v1.5.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a></td>
@@ -39,9 +39,12 @@ This application supports the use of the following use cases:
 
 *Note: when this application is used for Referrals from an AST Computer Aided Dispatch system (CAD) to an AST CAD it is known as 'CAD to CAD'*
 
-* CAD to CAD Out of Area Referral
-* CAD to CAD Call Assist Request
-* CAD to CAD Mutual Aid Request
+| Use Case                        | Code |
+|---------------------------------|------|
+| CAD to CAD Out of Area Referral | A6T1 |
+| CAD to CAD Call Assist Request  | A6T2 |
+| CAD to CAD Mutual Aid Request   | A6T3 |
+
 
 </br>
 </br>
@@ -50,7 +53,7 @@ This application supports the use of the following use cases:
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.0.5, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
 
 </br>
 </br>
@@ -70,4 +73,5 @@ For the CAD to CAD use case, the data model was agreed by the CAD to CAD Referen
 * National Information Governance Group
 * National Directors of Operations Group (NDOG)
 
-<hr>
+For more information see {{pagelink: application6, text:Referrals into an Ambulance Service Trust(Application 6}} 
+<hr />

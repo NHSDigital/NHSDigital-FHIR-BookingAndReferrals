@@ -34,8 +34,11 @@ topic: Application3
 ## Use cases supported
 
 
-This application supports the following use case:
-* 999 Ambulance Service Trust (AST) referral to Clinical Assessment Service (CAS)
+This application supports the following:
+|Use case                                                                        |Code|
+|--------------------------------------------------------------------------------|----|
+| 999 Ambulance Service Trust (AST) referral to Clinical Assessment Service (CAS)|A3T1|
+
 </br>
 </br>
 
@@ -51,4 +54,5 @@ The referral information data model is based on user research with NHS 111 servi
 
 For the Referral into a CAS from a 999 AST use case, the data model was endorsed by NHS England following consultation with the [Association of Ambulance Chief Executives (AACE)](https://aace.org.uk/),  National Ambulance Information Group (NAIG), National Ambulance Services Medical Directors' Group (NASMeD) and National Ambulance Digital Leaders Group (NADLG)
 
-<hr>
+For more information see {{pagelink: application3, text:Referral into UEC Application 3}} 
+<hr />

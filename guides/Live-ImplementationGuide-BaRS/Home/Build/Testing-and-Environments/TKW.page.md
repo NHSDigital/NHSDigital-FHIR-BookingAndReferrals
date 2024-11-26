@@ -101,6 +101,7 @@ The follow is a list of headers needed for the requests, these follow the patern
 ||CS for Referral receiver|111-ED, 999-CAS|NHSD Target Identifier (HTTP Header)|2000076289|Returns CS for Referral receiver service|
 ||CS for Validation sender|999-CAS|NHSD Target Identifier (HTTP Header)|1374839566|Returns CS for Validation sender service (accepting interim and full validation responses)|
 ||CS for any other receiving service|BaRS Core|NHSD Target Identifier (HTTP Header)|Any (see comment)|Any NHSD Target Identifier other than those a predefined response is set for (see above)|
+
 |MessageDef|MD for Booking and Referral receiver|111-ED|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000011147|2000011147|Returns MD for Booking and Referral receiver service|
 ||MD for Referral receiver|111-ED, 999-CAS|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000076289 |2000076289 |Returns MD for Referral receiver service|
 ||MD for Validation receiver|999-CAS|(parameter) context=https://fhir.nhs.uk/Id/dos-service-id\|2000003366|2000003366|Returns MD for Validation receiver service|
@@ -148,6 +149,7 @@ The follow is a list of headers needed for the requests, these follow the patern
 ||Safeguarding DNA Response|111-ED|use body from [VALREQ03 Validation Service Req](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292ba) replace `<value value="3478526985" />` with 9658499163|9658499163|Accept a Response flow for failed Safeguarding|
 ||Safeguarding DNA Response - HTTP 401|111-ED|use body from [VALREQ03 Validation Service Req](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292ba) replace `<value value="3478526985" />` with 9658499171|9658499171|Accept a Response flow for failed Safeguarding and returns a 401|
 
+
 **UserTest DoS Services**
 
 The sentinel values linked to [UserTest DoS](https://usertest.directoryofservices.nhs.uk/app/controllers/home/home.php) services can be found by searching with the following criteria.
@@ -164,6 +166,8 @@ The sentinel values linked to [UserTest DoS](https://usertest.directoryofservice
 |2000076289|**TESTING ONLY** BaRS Test Service (TKW 8)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
 |2000003366|**TESTING ONLY** BaRS Test Service (TKW 9)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
 |2000071898|**TESTING ONLY** BaRS Test Service (TKW 12)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
+|2000159909|**TESTING ONLY** BaRS Test Service (TKW 13)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
+|2000159910|**TESTING ONLY** BaRS Test Service (TKW 14)|LS1 4AP|NoseBleed without Injury|Pathways answers to obtain outcome (No, Yes, No, Yes)|
 
 **INT Test Patient (traceable on SPINE)**
 
