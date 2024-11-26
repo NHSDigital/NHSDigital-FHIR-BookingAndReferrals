@@ -5,7 +5,7 @@ TOPIC: APP5-ScopeAndRequirements
 ## {{page-title}}
 
 ### Scope Overview
-This BaRS Application (Referrals into Pharmacy Application 5) supports the following use case ONLY:
+This BaRS Application (Referrals into Community Pharmacy, Application 5) supports the following use case(s) ONLY:
 - Primary Care to Community Pharmacy (Pharmacy First)
 - Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP))
 - Primary Care to Pharmacy Blood Pressure Check Service
