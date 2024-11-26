@@ -92,7 +92,7 @@
             <!--       Use case category      -->
             <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
             <code value="a3t1" />
-            <display value="999-CAS Referral" />
+            <display value="999 to CAS referral" />
           </coding>
         </category>
         <subject>

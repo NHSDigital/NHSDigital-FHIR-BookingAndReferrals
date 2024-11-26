@@ -98,7 +98,7 @@
             <!--       Use case category      -->
             <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
             <code value="a4t2" />
-            <display value="999 - Falls" />
+            <display value="999 to CAS Validation" />
           </coding>
         </category>
         <subject>

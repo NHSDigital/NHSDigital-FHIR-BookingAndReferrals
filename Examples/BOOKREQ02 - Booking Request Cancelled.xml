@@ -62,6 +62,14 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
         </meta>
         <status value="cancelled" />
+        <serviceCategory>
+          <coding>
+            <!--        Use case category       -->
+            <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars"/>
+            <code value="a1t1"/>
+            <display value="111 to ED"/>
+          </coding>
+        </serviceCategory>
         <description value="Reason for calling-" />
         <start value="2021-10-12T12:30:30+00:00" />
         <end value="2021-10-12T12:40:30+00:00" />
