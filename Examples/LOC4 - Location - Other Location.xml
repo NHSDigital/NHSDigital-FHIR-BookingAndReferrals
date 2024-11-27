@@ -3,7 +3,6 @@
   <meta>
     <lastUpdated value="2024-10-13T15:00:00.8185338+00:00" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
-    <profile value="https://fhir.hl7.org.uk/StructureDefinition/BARSLocation-incident-location" />
   </meta>
   <extension url="https://fhir.nhs.uk/StructureDefinition/LocationExtension">
     <extension url="what3words">
