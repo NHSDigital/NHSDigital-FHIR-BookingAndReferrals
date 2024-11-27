@@ -92,6 +92,8 @@ The follow is a list of headers needed for the requests, these follow the patern
         --header 'Authorization: Bearer yourBearerToken'
     </code></pre>
 </details>
+<br/>
+<hr/>
 
 
 ## Capability
