@@ -68,7 +68,7 @@ NB: the endpoints for TKW are case sensitive eg use the following
 
 #### Headers
 
-The follow is a list of headers needed for the requests, these follow the patern needed by BARS as follows {{pagelink:Home/Applications/BaRS-Core/End-to-end-workflow, text:Headers}}
+The follow is a list of headers needed for the requests, these follow the patern needed by BARS as follows {{pagelink:core-EndToEndWorkflow-HTTPHeader-1.2.1, text:Headers}}
 
 
 | Name | Value | example |
