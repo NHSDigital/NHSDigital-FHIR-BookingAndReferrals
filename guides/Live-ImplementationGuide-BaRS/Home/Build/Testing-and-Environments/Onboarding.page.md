@@ -14,12 +14,13 @@ BaRS is based on internet-first principles and there is no requirement for [Heal
 
 ### Sender
 Prerequiste steps to follow - 
-* [Create Developer account](https://portal.developer.nhs.uk/create-a-developer-account)
-* Sign in, create a team by selecting "**My teams**", and then "**+ New Team**":
+* [Create Developer account](https://digital.nhs.uk/developer) click Create account
+* Sign in, select **environment access** from the top
+{{render:Onboarding Dev Account Title.png}}
+
+* create a team by selecting "**My teams**", and then "**+ New Team**":
 
 {{render:Onboarding Dev Account.png}}
-
-{{render:Onboarding Dev Account Title.png}}
 
 * Assign members to your Team
 * Create an App
