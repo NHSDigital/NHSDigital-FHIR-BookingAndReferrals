@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="BARSServiceRequest-request-validation" />
   <url value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-validation" />
-  <version value="1.0.2" />
+  <version value="1.0.3" />
   <name value="BARSServiceRequestRequestValidation" />
   <title value="BARS ServiceRequest-Request Validation" />
   <status value="active" />
-  <date value="2022-04-20" />
+  <date value="2025-02-18" />
   <description value="BARS ServiceRequest-request Validation profile" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -23,14 +23,6 @@
       <path value="ServiceRequest.category" />
       <min value="1" />
       <max value="1" />
-    </element>
-    <element id="ServiceRequest.category.coding.system">
-      <path value="ServiceRequest.category.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/message-category-servicerequest" />
-    </element>
-    <element id="ServiceRequest.category.coding.code">
-      <path value="ServiceRequest.category.coding.code" />
-      <fixedCode value="validation" />
     </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
