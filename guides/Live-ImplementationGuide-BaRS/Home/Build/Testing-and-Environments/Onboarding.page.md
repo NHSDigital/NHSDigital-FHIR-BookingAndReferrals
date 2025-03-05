@@ -15,12 +15,12 @@ BaRS is based on internet-first principles and there is no requirement for [Heal
 ### Sender
 * [Follow the steps here to get set up](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-login-separate-authentication-and-authorisation#step-1-register-your-application-with-nhs-login)
 
-The sender will also need to trust the Certificate Authorities mentioned below. For INT this will downloadable from http://pki.nhs.uk/int/G2/auth/NHSINTAuthG2.crt 
+The sender will also need to trust the Certificate Authorities mentioned below. For INT this will be downloadable from http://pki.nhs.uk/int/G2/auth/NHSINTAuthG2.crt 
 ( you can examine the .cer file if you have one )
 ```
 openssl x509 -in barsintreceiver.cer -text -noout
 ```
-Here are some commands that might help to get the Root CA and chain
+### Some commands that might help to get the Root CA and chain
 
 To get a cert from an endpoint
 ```
@@ -30,7 +30,15 @@ Then to list info from the .pem
 ```
 openssl x509 -in server-cert.pem -text -noout
 ```
-This command will display the information needed to download the Certificate chain.
+
+You can use the output from this command to get the full CA chain.
+
+```
+sudo cp ca-chain.pem /usr/local/share/ca-certificates/ sudo update-ca-certificates
+```
+
+This will ensure that your system trusts the certificates issued by the CA.
+
 
 ### Receiver 
 BaRS will utilise TLS-MA to communicate with Receiving endpoints. Receiving endpoints will require a certificate under the NHS Root CA to facilitate TLS-MA.
@@ -98,14 +106,17 @@ openssl pkcs12 -export -out barsintreceiver.pfx -inkey barsintreceiver.key -in b
 
 You will be prompted for a password for your .pfx file. You will need to use this password along with the .pfx file.
 
-### Retrieve Certificate Using curl
+Once you have the *.pfx file you can use it the following way (C# example, Other launguages will vary but be similar)
 
-You can retrieve the certificate from an HTTPS endpoint using the following curl command:
+``` c#
 
-```
-curl -v --insecure --output cert.pem https://<your-endpoint>
-```
-
-This command will save the certificate to a file named `cert.pem`. You can then examine the certificate using the following command:
+// Configure Kestrel to use the certificate
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080, listenOptions =>
+    {
+        listenOptions.UseHttps(certPath, certPassword);
+    });
 });
+
 ```
