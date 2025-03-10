@@ -1,5 +1,5 @@
 ---
-topic: APP4-ValidationPayload
+topic: APP4-ValidationRequestPayload
 ---
 
 ## {{page-title}}
