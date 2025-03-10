@@ -73,7 +73,7 @@ NHSD-Target-Identifier = {Receiver Service Identifier}
 X-Request-Id = <GUID_000001>
 X-Correlation-Id = <GUID_000002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
-NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
+NHSD-Requesting-Practitioner = {FHIR PractitionerRole (Base64 Encoded)} 
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
@@ -158,7 +158,7 @@ NHSD-Target-Identifier = {Receiver Service Identifier}
 X-Request-Id = <GUID_107>
 X-Correlation-Id = <GUID_108>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
-NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
+NHSD-Requesting-Practitioner = {FHIR PractitionerRole (Base64 Encoded)} 
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
@@ -176,7 +176,7 @@ NHSD-Target-Identifier = {Receiver Service Identifier}
 X-Request-Id = <GUID_000003>
 X-Correlation-Id = <GUID_000002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
-NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
+NHSD-Requesting-Practitioner = {FHIR PractitionerRole (Base64 Encoded)} 
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
@@ -232,7 +232,7 @@ NHSD-Target-Identifier = {Receiver Service Identifier}
 X-Request-Id = <GUID_00001>
 X-Correlation-Id = <GUID_00002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
-NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
+NHSD-Requesting-Practitioner = {FHIR PractitionerRole (Base64 Encoded)} 
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
@@ -298,7 +298,7 @@ NHSD-Target-Identifier = {Receiver Service Identifier}
 X-Request-Id = <GUID_00003>
 X-Correlation-Id = <GUID_00002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
-NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
+NHSD-Requesting-Practitioner = {FHIR PractitionerRole (Base64 Encoded)} 
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
@@ -374,7 +374,7 @@ NHSD-Target-Identifier = {Receiver Service Identifier}
 X-Request-Id = <GUID_00004>
 X-Correlation-Id = <GUID_00002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
-NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
+NHSD-Requesting-Practitioner = {FHIR PractitionerRole (Base64 Encoded)} 
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
@@ -392,7 +392,7 @@ NHSD-Target-Identifier = {Receiver Service Identifier}
 X-Request-Id = <GUID_00006>
 X-Correlation-Id = <GUID_00002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
-NHSD-Requesting-Practitioner = {FHIR Practitioner (Base64 Encoded)} 
+NHSD-Requesting-Practitioner = {FHIR PractitionerRole (Base64 Encoded)} 
 NHSD-Requesting-Software =  {FHIR Device (Base64 Encoded)}
 ```
 
