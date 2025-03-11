@@ -194,8 +194,8 @@
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="1577041000000109" />
-            <display value="Community Pharmacist Consultation Service for minor illness (procedure)" />
+            <code value="2140231000000104" />
+            <display value="Referral to Community Pharmacy Pharmacy First Service (procedure)" />
           </coding>
         </code>
         <description value="Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient." />
