@@ -17,7 +17,7 @@ For example Referral bundles please see:
 * For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.5, text:Standard Pattern Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.6, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -32,7 +32,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.5, text:use-case categories}}
+). e.g. Out of area, Mutual Aid or Call Assist. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.1.6, text:use-case categories}}
 
 Additionally, the *ServiceRequest.category.text* **must** be populated with details about the service request when the request is to support the Call Assist or Mutual Aid use cases.
 
@@ -251,7 +251,7 @@ In this application it is used to transfer Call Log information and Crew Notes.
 
 ## Referral Cancellation Payload
 
-The ability to cancel a referral is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.5, text:Standard Patterns - Cancellation}}.
+The ability to cancel a referral is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.6, text:Standard Patterns - Cancellation}}.
 
 <br>
 <hr>    

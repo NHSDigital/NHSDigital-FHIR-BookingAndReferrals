@@ -13,7 +13,7 @@ To support the workflows for this Application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this Application follows the {{pagelink:core-standardpattern-1.1.5, text:standard pattern for BaRS operations}}.
+Making a referral for this Application follows the {{pagelink:core-standardpattern-1.1.6, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: {{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 
@@ -140,7 +140,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:core-standardpattern-1.1.5, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:core-standardpattern-1.1.6, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this Application is: {{link:https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral}}
 
