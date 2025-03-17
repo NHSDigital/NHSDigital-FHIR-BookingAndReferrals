@@ -49,7 +49,7 @@ Each organisation will endeavour to maintain their development cadence. This is 
 
 ## Acceptance Criteria 
 
-The public beta minimum acceptance criteria for each BaRS Application is determined by the Service Risk Level. This has been agreed with NHS England Clinical Safety Group and recorded in the BaRS Clinical Risk Management Plan. A summary is outlined below. You can find the Service Risk Level for each BaRS application in the <a href= "https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works" target="_blank"> Clinical Safety Case (Appendix A - BaRS Applications) </a>.
+The public beta minimum acceptance criteria for each BaRS Application is determined by the Service Risk Level. This has been agreed with NHS England Clinical Safety Group and recorded in the BaRS Clinical Risk Management Plan. A summary is outlined below. You can find the Service Risk Level for each BaRS application in the <a href= "https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#hazard-log-and-clinical-safety-case-report-cscr-" target="_blank"> Hazard log and clinical safety case report </a>.
  
 
 | Acceptance Criteria                                                                 | Service Risk Level Low | Service Risk Level Medium | Service Risk Level High |
@@ -89,7 +89,7 @@ To fully realise the benefits of adopting a BaRS-conformant solution and digitis
 
 ### Private Beta Testing
 
-The provider works alongside their supplier throughout the beta phases with support from NHS England, including the BaRS team. See roles and responsibilities for each group [link] below.
+The provider works alongside their supplier throughout the beta phases with support from NHS England, including the BaRS team. See roles and responsibilities for each group below.
 
 Private beta (also referred to as User Acceptance Testing (UAT)) is a period where providers undertake end-to-end testing of their BaRS conformant solutions, using agreed test scripts, on a non-production or testing environment configured in the same way as the provider’s planned production (live) environment. All workflows documented in the Test Plan must be tested (and pass) within the UAT environment before any upgrades and configuration to the production environment can take place. Test issues are managed to resolution which may result in an update to the BaRS, the supplier’s BaRS conformant solution and/or the provider’s system configuration, depending on the root cause of the issue.
 
