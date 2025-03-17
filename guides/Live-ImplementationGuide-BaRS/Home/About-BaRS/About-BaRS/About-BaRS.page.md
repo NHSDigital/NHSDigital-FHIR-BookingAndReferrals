@@ -26,7 +26,7 @@ The workflow and payload elements can be predefined or completely dynamic, enabl
 
 The documentation for BaRS is separated into three groups (or "products"):
 
-- {{pagelink:design-core-1.0.5}} is the foundation containing all the things *everyone* has to do regardless of what flows BaRS is being used to support
+- {{pagelink:design-core-1.0.6}} is the foundation containing all the things *everyone* has to do regardless of what flows BaRS is being used to support
 
 - {{pagelink:Applications}}, *apply* the standard to a specific problem and build on this to support specific use cases
 
