@@ -55,7 +55,7 @@ Another capability described within the CapabilityStatement is the definition of
 
 ### The receivers responsibility
 
-The receiver at this level only needs to evaluate the Accept Header to ensure there is no major version discrepancy. A 406 HTTP response with the appropriate OprationOutcome should be given if this is the case. 
+The receiver at this level only needs to evaluate the Accept Header to ensure there is no major version discrepancy. A 406 HTTP response with the appropriate OperationOutcome should be given if this is the case. 
 
 ## Identifying MessageDefinitions
 
