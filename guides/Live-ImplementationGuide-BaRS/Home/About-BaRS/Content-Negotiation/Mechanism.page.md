@@ -55,15 +55,15 @@ Another capability described within the CapabilityStatement is the definition of
 
 ### The receivers responsibility
 
-The receiver at this level only needs to evaluate the Accept Header to ensure there is no major version discrepancy. A 406 HTTP response with the appropriate OprationOutcome should be given if this is the case. 
+The receiver at this level only needs to evaluate the Accept Header to ensure there is no major version discrepancy. A 406 HTTP response with the appropriate OperationOutcome should be given if this is the case. 
 
 ## Identifying MessageDefinitions
 
 A Receiver's MessageDefinitions will contain several identifiers that will allow a Sender to ascertain whether their use-case workflow can be completed, beyond what the CapabilityStatement has already confirmed, supporting Content negotiation. The Message Definition will also contain a version number for version negotiation, along with the fundamental intent of the MessageDefinitions, defining the construct of the message (payload) a Sender must build. Example of identifiers are as follows:
 
-* Name or URL in MessageDefinition.url / MessageDefinition.name : https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request
-* Use case in  MessageDefinition.useContext.code[]: https://fhir.nhs.uk/CodeSystem/usecases-categories-bars.
-* Service in MessageDefinition.useContext.code[]: https://fhir.nhs.uk/CodeSystem/dos-id
+* Name or URL in MessageDefinition.url / MessageDefinition.name : <div style="display: inline">https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request
+* Use case in  MessageDefinition.useContext.code[]: <div style="display: inline">https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
+* Service in MessageDefinition.useContext.code[]: <div style="display: inline">https://fhir.nhs.uk/CodeSystem/dos-id
 * Version in MessageDefinition.version
 
 The Name or URL define the type of message being sent. The Service id is confirmation of the correct Service. The Use Case Category code(s) define the care setting context required to ensure the message is actionable by the service. The Version allows for Version negotiation. All of these items need to be checked. There may be variations of the same message definition for a given service based on these variables.
