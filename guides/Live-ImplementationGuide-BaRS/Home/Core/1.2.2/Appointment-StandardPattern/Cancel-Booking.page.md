@@ -6,9 +6,9 @@ topic: core-StandardPattern-appointment-cancel-1.2.2
 
 To cancel an appointment:
 
-* Perform a GET operation using the id of the appointment to /Appointment[id]
+* Perform a GET operation using the id of the appointment to /Appointment/{id}
 * Set the Appointment.status value to "cancelled"
-* Perform a PUT operation using the id of the appointment to /Appointment[id]
+* Perform a PUT operation using the id of the appointment to /Appointment/{id} or POST against /$process-message, with a corresponding FHIR bundle (BaRS Applications only)
 
 resource returned:
 ```json
@@ -108,3 +108,5 @@ Request body:
 ```
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Cancel.drawio.svg" ></img>
+
+Once the appointment is cancelled, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.2.2, text: here}}.

@@ -6,11 +6,11 @@ topic: core-StandardPattern-appointment-update-1.2.2
 
 To update an appointment:
 
-* Perofrm a GET operation using the id of the appointment to /Appointment[id]
+* Perform a GET operation using the id of the appointment to /Appointment/{id}
 * Ammend or append the resource as required.
-* Perform a PUT operation using the id of the appointment to /Appointment[id]
+* Perform a PUT operation using the id of the appointment to /Appointment/{id} or POST against /$process-message, with a corresponding FHIR bundle (BaRS Applications only)
 
-In this example a placeholder was created, and an update when the slot is selected. This is a hypothetical scenario.
+In this example a placeholder was created, and updated when the slot is selected. This is a hypothetical scenario.
 
 resource returned:
 ```json
@@ -70,3 +70,5 @@ Request Body
 }
 ```
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Update.drawio.svg" ></img>
+
+Once the appointment is updated, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.2.2, text: here}}.

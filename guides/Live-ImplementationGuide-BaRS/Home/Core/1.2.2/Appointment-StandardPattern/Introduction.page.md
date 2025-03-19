@@ -10,27 +10,30 @@ topic: core-StandardPattern-appointment-Introduction-1.2.2
 
 ## Introduction 
 
-There are 4 capabilities that are required surrounding appointments. This section will provide information on how to meet them using the Appointment Resource.
+The [BaRS API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) suite can be used where there is no specific use-case supported by the {{pagelink:Home/Applications/BaRS-Applications, text:Applications}} to fulfil generic Appointment workflows. This section outlines the functionality supported, workflows involved and how these correspond with the [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0). 
+
+This includes using {{pagelink:core-StandardPattern-document-reference-1.1.6, text: DocumentReference Standard Pattern}} to write pointers for Appointments to a central respository, commonly referred to as the Registry. 
+
+There are four functions that are required surrounding appointments. This section will provide information on how to meet them using the Appointment Resource.
 
 * The ability to book an appointment.
 * The ability to cancel an appointment.
 * The ability to update an appointment.
 * The ability to rebook an appointment.
 
-## interface
+## Interface
 
-The following table describes how the BaRS API accomodates these 4 capabilities using the /Appointment endpoint and the /Appointment/[id] endpoint
+The following table describes how the BaRS API accomodates these four capabilities using the [/Appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#post-/Appointment) endpoint and the [/Appointment/{id}](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) endpoint
 
 | Capability | Endpoint | VERB | Description |
 |------------|-----------|-----|--------------|
-| List   | /DocumentReference  | GET   | Using the {{pagelink:core-StandardPattern-document-reference-Introduction-1.1.4, text:DocumentReference}} pattern, a list of existing appointments for a patient can be viewed.  |
-| View   | /Appointment/[id]  | GET   | This action, using the id from the List capability, will allow that specific Appointment Resource to be [retrieved](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/Appointment). |
-| Get Slots   | /Slots   | GET   | Obtain a list of available booking slots from a specified receiving system using the [GET /Slots endpoint](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/Slot)  |
-| Book | /Appointment or /$process-message | POST | This will invariably be a POST operation however the method for booking will depend on the BaRS Application/use case.|
-| [Cancel](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) | /Appointment[id] | PUT| The cancel of a booking will be setting the status of the appointment to "cancelled" |
-| [Update](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) | /Appointment[id] | PUT / PATCH| An update to an appointment will be a direct update to the existing resource |
-| Rebook | Composite of Cancel and then Book | Composite | requesting a new booking and then cancelling the existing booking will constitute a rebook |
+| List   | /DocumentReference  | GET   | Using the {{pagelink:core-StandardPattern-document-reference-Introduction-1.1.6, text:DocumentReference}} pattern, a list of existing appointments for a patient can be viewed with the central Registry.  |
+| View   | /Appointment/{id}  | GET   | This action, using the id from the List capability, will allow that specific Appointment Resource to be [retrieved](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment) from the healthcare service who owns it. |
+| Get Slots   | /Slots   | GET   | Obtain a list of available booking slots from a specified receiving system using the [GET /Slots endpoint](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Slot)  |
+| Book | /Appointment or /$process-message | POST | This will be a POST operation, with a BaRS Application /$process-message is typically used, outside of supported use cases /Appointment is adopted.|
+| [Cancel](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) | /Appointment/{id} | PUT| The cancel of a booking will be setting the status of the appointment to "cancelled". Cancel is also possible using /$process-message |
+| [Update](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) | /Appointment/{id} | PUT / PATCH| An update to an appointment will be a direct update to the existing resource |
+| Rebook | Composite of Cancel and then Book | Composite | Requesting a new booking and then cancelling the existing one will constitute a rebook |
 
-The specification for these operations can be found [here](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0)
 
 In line with the BaRS standard all operations used to modify a resource must be preceded by a read of the resource by means of a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment/-id-) operation.

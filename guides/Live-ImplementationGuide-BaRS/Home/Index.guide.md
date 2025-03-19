@@ -10,6 +10,7 @@ You can use this guide to support your analysis and define the scope of your sol
 * {{pagelink:about_bars, text:About BaRS and quick start guide}} 
 * {{pagelink:design-core-1.1.6, text:End to end workflow }} 
 * {{pagelink:Home/Applications/BaRS-Applications, text:BaRS Applications}} 
+* {{pagelink:core-StandardPattern-appointment-1.2.2, text: Standard Appointment Management (use-case agnostic)}}
 * {{pagelink:build-testing, text:Tooling}} 
 
 <br>
