@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-Endpoint-Data-1.2.2
+topic: core-StandardPattern-Endpoint-Data-1.2.3
 ---
 
 # Payloads for Creating or modifying an endpoint

@@ -1,3 +1,3 @@
 ---
-topic: Core-StandardPattern-1.2.2
+topic: Core-StandardPattern-1.2.3
 ---

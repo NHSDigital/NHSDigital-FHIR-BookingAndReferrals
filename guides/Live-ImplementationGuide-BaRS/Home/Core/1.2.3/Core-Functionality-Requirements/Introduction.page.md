@@ -1,5 +1,5 @@
 ---
-topic: core-FunctionalityRequirements-Introduction-1.2.2
+topic: core-FunctionalityRequirements-Introduction-1.2.3
 ---
 
 # Core Functionality Requirements

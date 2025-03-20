@@ -1,5 +1,5 @@
 ---
-topic: core-SPUseCaseCategories-1.2.2
+topic: core-SPUseCaseCategories-1.2.3
 ---
 
 # {{page-title}}

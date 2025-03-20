@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-appointment-cancel-1.2.2
+topic: core-StandardPattern-appointment-cancel-1.2.3
 ---
 
 ### Cancel
@@ -109,4 +109,4 @@ Request body:
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Cancel.drawio.svg" ></img>
 
-Once the appointment is cancelled, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.2.2, text: here}}.
+Once the appointment is cancelled, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.2.3, text: here}}.

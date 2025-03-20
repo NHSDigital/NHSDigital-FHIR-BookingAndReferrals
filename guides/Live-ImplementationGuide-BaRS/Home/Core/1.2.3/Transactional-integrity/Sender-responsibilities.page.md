@@ -1,5 +1,5 @@
 ---
-topic: Core-TransactionalIntegrity-Sender-1.2.2
+topic: Core-TransactionalIntegrity-Sender-1.2.3
 ---
 
 ## Sender responsibilities
