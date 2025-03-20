@@ -1,5 +1,5 @@
 ---
-topic: Core-TransactionalIntegrity-Introduction-1.2.2
+topic: Core-TransactionalIntegrity-Introduction-1.2.3
 ---
 
 ## Transactional Integrity

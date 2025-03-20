@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-document-reference-Receiver-1.2.2
+topic: core-StandardPattern-document-reference-Receiver-1.2.3
 ---
 
 # {{page-title}}

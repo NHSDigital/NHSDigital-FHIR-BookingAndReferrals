@@ -1,5 +1,5 @@
 ---
-topic: core-FHIRUsage-Framework-1.2.2
+topic: core-FHIRUsage-Framework-1.2.3
 ---
 
 ## Frameworks

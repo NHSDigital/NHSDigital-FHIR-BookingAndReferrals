@@ -1,5 +1,5 @@
 ---
-topic: core-ErrorHandling-Examples-1.2.2
+topic: core-ErrorHandling-Examples-1.2.3
 ---
 
 ### Example errors

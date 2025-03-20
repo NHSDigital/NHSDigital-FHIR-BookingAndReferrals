@@ -1,5 +1,5 @@
 ---
-topic: core-Security-Sender-1.2.2
+topic: core-Security-Sender-1.2.3
 ---
 
 ## Sender

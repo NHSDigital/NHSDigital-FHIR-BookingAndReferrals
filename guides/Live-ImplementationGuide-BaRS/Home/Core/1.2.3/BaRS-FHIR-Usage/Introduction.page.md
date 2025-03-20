@@ -1,5 +1,5 @@
 ---
-topic: core-FHIRUsage-Introduction-1.2.2
+topic: core-FHIRUsage-Introduction-1.2.3
 ---
 
 # BaRS FHIR Usage

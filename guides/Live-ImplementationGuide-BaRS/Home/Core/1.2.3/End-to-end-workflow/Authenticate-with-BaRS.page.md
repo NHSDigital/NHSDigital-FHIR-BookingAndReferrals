@@ -1,5 +1,5 @@
 ---
-topic: core-EndToEndWorkflow-BaRSAuth-1.2.2
+topic: core-EndToEndWorkflow-BaRSAuth-1.2.3
 ---
 
 ## Authenticate with BaRS

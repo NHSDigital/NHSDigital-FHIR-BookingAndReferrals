@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-appointment-booking-1.2.2
+topic: core-StandardPattern-appointment-booking-1.2.3
 ---
 
 ## Appointment Resource
@@ -19,6 +19,6 @@ The method for the initial booking of an appointment depends on the {{pagelink:H
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Book.drawio.svg" ></img>
 
-Once the appointment is created, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.2.2, text: here}}.
+Once the appointment is created, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.2.3, text: here}}.
 
 

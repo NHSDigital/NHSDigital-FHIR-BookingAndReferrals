@@ -1,5 +1,5 @@
 ---
-topic: core-SPComposites-1.2.2
+topic: core-SPComposites-1.2.3
 ---
 
 ## {{page-title}}
