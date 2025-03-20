@@ -1,5 +1,5 @@
 ---
-topic: core-FHIRUsage-Time-1.2.2
+topic: core-FHIRUsage-Time-1.2.3
 ---
 
 ## {{page-title}}

@@ -1,4 +1,4 @@
 ---
-topic: core-NFR-1.2.2
+topic: core-NFR-1.2.3
 ---
 

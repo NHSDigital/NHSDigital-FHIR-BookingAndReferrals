@@ -1,5 +1,5 @@
 ---
-topic: core-ErrorHandling-RecResp-1.2.2
+topic: core-ErrorHandling-RecResp-1.2.3
 ---
 
 ### Receiver responsibilities

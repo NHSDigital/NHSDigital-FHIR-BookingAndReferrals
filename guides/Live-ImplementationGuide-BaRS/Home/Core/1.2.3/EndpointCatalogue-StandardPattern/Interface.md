@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-Endpoint-Interface-1.2.2
+topic: core-StandardPattern-Endpoint-Interface-1.2.3
 ---
 
 # Interface

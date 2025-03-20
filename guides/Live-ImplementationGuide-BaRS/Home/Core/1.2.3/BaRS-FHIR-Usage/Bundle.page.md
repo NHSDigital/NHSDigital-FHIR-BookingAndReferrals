@@ -1,5 +1,5 @@
 ---
-topic: core-FHIRUsage-bundle-1.2.2
+topic: core-FHIRUsage-bundle-1.2.3
 ---
 
 ## Bundle

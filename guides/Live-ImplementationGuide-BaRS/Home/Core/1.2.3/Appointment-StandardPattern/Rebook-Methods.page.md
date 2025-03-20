@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-appointment-rebook-1.2.2
+topic: core-StandardPattern-appointment-rebook-1.2.3
 ---
 
 ### Rebook
@@ -105,4 +105,4 @@ Using PATCH:
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_ReBook.drawio.svg" ></img>
 
-Once the appointment is rebooked, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.2.2, text: here}}.
+Once the appointment is rebooked, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.2.3, text: here}}.

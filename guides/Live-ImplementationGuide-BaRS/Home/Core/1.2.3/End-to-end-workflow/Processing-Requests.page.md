@@ -1,5 +1,5 @@
 ---
-topic: core-EndToEndWorkflow-Processing-1.2.2
+topic: core-EndToEndWorkflow-Processing-1.2.3
 ---
 
 
@@ -19,6 +19,6 @@ The Receiver interprets the request, engages the processing and synchronously fe
 
 When processing the body (the FHIR bundle or payload) of the request, the Receiver can implement business logic, determining the type of payload and whether a request is valid or not, by using the guidance under the payload sections of each Application. This guidance stiplates the business requirement of each element of the payload, allowing a Receiver to determine elements which are mandated, required, optional or forbidden. The 'Necessity' column, of the tables within each Application payload section, indicates these buisness level requirements and aligns with defintions under [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
-Please see the {{pagelink:Core-StandardPattern-1.2.2, text: Standard Patterns}} for generic guidance for processing messages.
+Please see the {{pagelink:Core-StandardPattern-1.2.3, text: Standard Patterns}} for generic guidance for processing messages.
 
 <br>
