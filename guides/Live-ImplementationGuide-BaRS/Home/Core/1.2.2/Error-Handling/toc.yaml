@@ -1,7 +1,7 @@
 - name: 
   filename: Failure-Scenarios-1.1.x
 - name: Index
-  filename: Index.page.md
+  filename: Index.page
 - name: Introduction
   filename: Introduction.page.md
 - name: Overview
