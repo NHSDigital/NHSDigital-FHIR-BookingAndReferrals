@@ -17,7 +17,7 @@ This section defines the failure scenarios for GET /Appointment. There are two w
 ### Errors by parameter
 **path id in GET /Appointment{id}**
 
-| HTTP Status Code | HTTP Error Code  | issue Code | Scenario                                                                                      | Source   |
+| HTTP Status Code | HTTP Error Code  | Issue Code | Scenario                                                                                      | Source   |
 |------------------|------------------|------------|-----------------------------------------------------------------------------------------------|----------|
 | 400              | SEND_BAD_REQUEST | required   | The parameter value was not included in the request.                                          | API      |
 | 400              | REC_BAD_REQUEST  | required   | The parameter value was not included in the request.                                          | Receiver |

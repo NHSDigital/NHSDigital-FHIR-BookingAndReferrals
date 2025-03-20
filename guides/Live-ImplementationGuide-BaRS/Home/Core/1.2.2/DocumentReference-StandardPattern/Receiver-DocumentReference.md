@@ -104,3 +104,4 @@ A DocumentReference can be updated by performing a DELETE request with the resou
 <a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/BaRS_NRL_Write_Sequence-1.1.0.svg" target="_blank">
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/BaRS_NRL_Write_Sequence-1.1.0.svg" ></img></a>
 
+.
