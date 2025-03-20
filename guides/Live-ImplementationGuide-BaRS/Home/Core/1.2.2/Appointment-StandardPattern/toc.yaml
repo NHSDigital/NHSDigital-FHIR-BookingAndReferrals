@@ -1,5 +1,5 @@
 - name: Index
-  filename: index.page.md
+  filename: index.page
 - name: Introduction
   filename: Introduction.page.md
 - name: Initial Booking
