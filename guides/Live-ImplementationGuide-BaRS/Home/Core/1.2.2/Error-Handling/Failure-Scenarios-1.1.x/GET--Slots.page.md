@@ -22,7 +22,7 @@ Get /Slots has added complexity compared to previous endpoints in this section. 
 ### Errors by parameter
 **Schedule:actor:HealthcareService**
 
-| HTTP Status Code | HTTP Error Code                     | issue Code        | Scenario                                                                                                    | Source           |
+| HTTP Status Code | HTTP Error Code                     | Issue Code        | Scenario                                                                                                    | Source           |
 |------------------|-------------------------------------|-------------------|-------------------------------------------------------------------------------------------------------------|------------------|
 | 400              | SEND_BAD_REQUEST / REC_BAD_REQUEST? | required          | The parameter value was not included in the request. (This parameter is not currently marked as required. ) | API and Receiver |
 | 400              | REC_BAD_REQUEST                     | value / invariant | The parameter value was incorrect or wrong.                                                                 | Receiver         |

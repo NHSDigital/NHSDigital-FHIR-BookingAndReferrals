@@ -1,5 +1,5 @@
 - name: index
-  filename: index.page
+  filename: index.page.md
 - name: Introduction
   filename: Introduction.page.md
 - name: Standard Pattern For Composites
