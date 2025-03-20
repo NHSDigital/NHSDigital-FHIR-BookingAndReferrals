@@ -25,7 +25,7 @@ This version of core is strictly a preview of what is currently in development f
 </div>
 
 
-# BaRS Core 1.2.1-alpha
+# BaRS Core 1.2.2-alpha
 
 BaRS consists of BaRS Core that provides a core set of functionality and BaRS Applications that provide distinct functionality for each use case.
 
@@ -34,7 +34,7 @@ You will find here a set of documentation, specifications and services that desc
 <details>
 <summary>> <b class="barslink">Expand for full Core directory</b></summary>
 
-&bull; {{pagelink:design-core-1.2.2 , text: Core 1.2.1}}</br>
+&bull; {{pagelink:design-core-1.2.2 , text: Core 1.2.2}}</br>
 &nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-1.2.2 , text:End to end workflow}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.2.2 , text:Service Discovery}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-BaRSAuth-1.2.2 , text:Authenticate with BaRS}}</br>
