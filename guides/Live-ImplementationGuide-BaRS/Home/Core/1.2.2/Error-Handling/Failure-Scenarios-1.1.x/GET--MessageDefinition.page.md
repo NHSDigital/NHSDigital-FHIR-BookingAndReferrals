@@ -13,7 +13,7 @@ Message definition includes only one additional parameter and therefore there ar
 
 **context**
 
-| HTTP Status Code | HTTP Error Code  | issue Code | Scenario                                         | Source   |
+| HTTP Status Code | HTTP Error Code  | Issue Code | Scenario                                         | Source   |
 |------------------|------------------|------------|--------------------------------------------------|----------|
 | 400              | SEND_BAD_REQUEST | required   | no context parameter was given.                  | API      |
 | 400              | REC_BAD_REQUEST  | required   | no context parameter was given.                  | Receiver |

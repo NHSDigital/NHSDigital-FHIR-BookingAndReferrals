@@ -25,3 +25,5 @@ Here a Receiving system is creating a resource related to an endpoint.
 Here a Receiving system is updating a resource related to an endpoint.
 
 <a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/EPC-Sequence-Receiver-Update-Abstract.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/EPC-Sequence-Receiver-Update-Abstract.svg" width="1200"></img></a>
+
+.

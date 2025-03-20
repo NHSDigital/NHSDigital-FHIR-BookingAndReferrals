@@ -32,3 +32,4 @@ BaRS employs an endpoint catalogue to match Target Identifiers with a stored end
 The BaRS endpoints will utilise not only service ids and a physical endpoint, but data describing the healthcare service, the provider of that service and the organization which manages and/or supplies the endpoint in question. This information will be stored using 3 FHIR resources which appropriately describe [Endpoints](http://hl7.org/fhir/R4/endpoint.html), [HealthcareServices](http://hl7.org/fhir/R4/healthcareservice.html) and [Organizations](http://hl7.org/fhir/R4/organization.html).
 
 BaRS will expose an interface to manage this information for each of these resources. Each resource will have a corresponding endpoint on the Proxy to assist in managing these endpoints.
+

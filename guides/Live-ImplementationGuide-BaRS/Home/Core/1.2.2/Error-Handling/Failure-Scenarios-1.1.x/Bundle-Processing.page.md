@@ -23,7 +23,7 @@ Below is a simplified example of how how to handle the Transaction Integrity HTT
   ![BaRS FHIR API end-to-end process](https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/FailureScenarios/HTTP-Header-logic-1.0.0.svg)
 
 
-| HTTP Status Code | HTTP Error Code | issue Code | Scenario                                                          |
+| HTTP Status Code | HTTP Error Code | Issue Code | Scenario                                                          |
 |------------------|-----------------|------------|-------------------------------------------------------------------|
 | 400              | REC_BAD_REQUEST | invalid    | The request headers are not valid.                                |
 | 400              | REC_BAD_REQUEST | required   | The request headers are not present.                              |
