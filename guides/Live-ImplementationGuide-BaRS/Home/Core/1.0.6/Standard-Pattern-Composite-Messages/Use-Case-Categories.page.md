@@ -7,6 +7,7 @@ topic: core-SPUseCaseCategories-1.0.6
 ## What are use case categories?
 
 Use case categories define the specific type of referral being requested.  The type is categorised at the service level.  A BaRS Application can support multiple use cases; a use case can only ever belong to one BaRS Application.  For instance, in Application 6 there are three defined use cases: Out of Area, Mutual Aid and Call Assist.  All of these use cases relate to referrals between Ambulance Service Trusts but the workflow, timeframes and responses are not universal across all three scenarios.  
+
 The BaRS use case categories are defined in the BARS CodeSystem (https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars).  All BaRS compliant solutions must adopt use case categories.
 
 ## How to use BaRS use case categories
