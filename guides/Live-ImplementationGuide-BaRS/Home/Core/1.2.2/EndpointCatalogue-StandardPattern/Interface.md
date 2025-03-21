@@ -255,6 +255,7 @@ The Interface for managing the 3 resources relating to an "endpoint" is detailed
 
 This table describes the parameters currently defined for the Paths defined in the interface table above.
 
+
 <table><thead>
   <tr>
     <th>API Path</th>

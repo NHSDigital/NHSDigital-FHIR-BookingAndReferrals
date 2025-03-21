@@ -111,3 +111,5 @@ Once you have retrieved the resource, you can process it according to your requi
 <a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/BaRS_NRL_Search_Sequence-1.1.0.svg" target="_blank">
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/BaRS_NRL_Search_Sequence-1.1.0.svg" ></img></a>
 
+.
+

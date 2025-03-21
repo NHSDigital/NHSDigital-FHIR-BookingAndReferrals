@@ -12,8 +12,6 @@ Describing Endpoints will be facilitated by the Organization, HealthcareService 
 *  An Endpoint belongs to a HealthcareService.
 	* Multiple Endpoints of the same type are not permitted for a HealthcareService
 
-
-
 <details>
   <summary>> <b class="barslink">Organization</b></summary>
       <p>              
