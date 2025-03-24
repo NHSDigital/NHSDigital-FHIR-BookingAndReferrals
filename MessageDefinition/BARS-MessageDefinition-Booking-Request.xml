@@ -2,11 +2,11 @@
   <id value="95b337c0-9644-4b5e-accf-246636e55905" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
   <!-- This is the version number of Application 1 -->
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="BARS Message Definition Booking - Request" />
   <title value="BARS Message Definition Booking - Request" />
   <status value="active" />
-  <date value="2023-10-16" />
+  <date value="2025-03-24" />
   <useContext>
     <!-- We are expecting the UseContext to be a DOS ID -->
     <code>
@@ -15,7 +15,7 @@
     </code>
     <valueCodeableConcept>
       <coding>
-        <system value="https://fhir.nhs.uk/CodeSystem/dos-id" />
+        <system value="https://fhir.nhs.uk/Id/dos-service-id" />
         <code value="dos-id" />
       </coding>
     </valueCodeableConcept>
