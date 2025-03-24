@@ -2,11 +2,11 @@
   <id value="2a2ff4ff-47cd-4094-a95e-e8179e6f48b8" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral" />
   <!-- This is the version number of Application 6 (currently in development on Simplifier) -->
-  <version value="1.0.0-beta" />
+  <version value="1.1.0-beta" />
   <name value="BARS Message Definition ServiceRequest - Response Referral" />
   <title value="BARS Message Definition ServiceRequest - Response Referral" />
   <status value="active" />
-  <date value="2023-10-16" />
+  <date value="2025-03-24" />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
@@ -15,7 +15,7 @@
     <valueCodeableConcept>
       <coding>
         <!-- We are expecting the UseContext to be a DOS ID -->
-        <system value="https://fhir.nhs.uk/CodeSystem/dos-id" />
+        <system value="https://fhir.nhs.uk/Id/dos-service-id" />
         <code value="dos-id" />
       </coding>
     </valueCodeableConcept>

@@ -2,11 +2,11 @@
   <id value="15b429dc-2464-42ca-b401-4c2a5e8320bb" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim" />
   <!-- This is the version number of Application 4 -->
-  <version value="1.1.0" />
+  <version value="1.2.0" />
   <name value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <title value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <status value="active" />
-  <date value="2024-06-17" />
+  <date value="2025-03-24" />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
@@ -15,7 +15,7 @@
     <valueCodeableConcept>
       <coding>
         <!--  We are expecting the UseContext to be a DOS ID  -->
-        <system value="https://fhir.nhs.uk/CodeSystem/dos-id" />
+        <system value="https://fhir.nhs.uk/Id/dos-service-id" />
         <code value="dos-id" />
       </coding>
     </valueCodeableConcept>
