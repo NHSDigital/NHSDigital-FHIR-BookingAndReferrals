@@ -2,7 +2,7 @@
   <id value="15b429dc-2464-42ca-b401-4c2a5e8320bb" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim" />
   <!-- This is the version number of Application 4 -->
-  <version value="1.2.0" />
+  <version value="1.1.0" />
   <name value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <title value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <status value="active" />
