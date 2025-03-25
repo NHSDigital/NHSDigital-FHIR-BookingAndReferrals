@@ -2,7 +2,7 @@
   <id value="11882ae2-211f-49ee-acbe-e319304d80cd" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-cancelled" />
   <!-- This is the version number of Application (currently in development on Simplifier) -->
-  <version value="1.1.0" />
+  <version value="1.0.0" />
   <name value="BARS Message Definition ServiceRequest - Request - Cancelled" />
   <title value="BARS Message Definition ServiceRequest - Request - Cancelled" />
   <status value="active" />

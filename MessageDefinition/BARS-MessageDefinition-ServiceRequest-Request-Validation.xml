@@ -2,7 +2,7 @@
   <id value="7731af63-04ed-47d9-8f05-e510dece3b3f" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-validation" />
   <!-- This is the version number of Application 4 -->
-  <version value="1.2.0" />
+  <version value="1.1.0" />
   <name value="BARS Message Definition ServiceRequest - Request Validation" />
   <title value="BARS Message Definition ServiceRequest - Request Validation" />
   <status value="active" />

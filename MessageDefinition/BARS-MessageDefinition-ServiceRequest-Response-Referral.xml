@@ -2,7 +2,7 @@
   <id value="2a2ff4ff-47cd-4094-a95e-e8179e6f48b8" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral" />
   <!-- This is the version number of Application 6 (currently in development on Simplifier) -->
-  <version value="1.1.0-beta" />
+  <version value="1.0.0-beta" />
   <name value="BARS Message Definition ServiceRequest - Response Referral" />
   <title value="BARS Message Definition ServiceRequest - Response Referral" />
   <status value="active" />
