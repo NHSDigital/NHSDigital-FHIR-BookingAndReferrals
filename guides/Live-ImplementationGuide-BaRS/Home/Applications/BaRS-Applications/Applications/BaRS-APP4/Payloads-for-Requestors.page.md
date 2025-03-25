@@ -10,7 +10,7 @@ The below details the specific guidance around the use of resources required to 
 _Note that Requesters will also have to build the capability to receive and process the Validation Response payloads._
 
 For Example Validation Request bundles see:
-* [Validation Request - 999 to CAS New](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292db)
+* [Validation Request - 999 to CAS New](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292ba-duplicate-8)
 * [Validation Request - 999 to CAS AMPDS](https://simplifier.net/nhsbookingandreferrals/86e3371d-1c15-4862-9552-d9560f8292ba)
 * [Validation Request - 999 to CAS Update to lower priority](https://simplifier.net/nhsbookingandreferrals/baebe535-9d6c-4b0f-8bc6-8f4b157d44ac)
 * For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)

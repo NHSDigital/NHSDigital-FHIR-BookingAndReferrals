@@ -6,7 +6,7 @@
   <name value="BARS Message Definition Booking - Request - Cancelled" />
   <title value="BARS Message Definition Booking - Request - Cancelled" />
   <status value="active" />
-  <date value="2024-06-17" />
+  <date value="2025-03-24" />
   <useContext>
     <!-- We are expecting the UseContext to be a DOS ID -->
     <code>
@@ -15,7 +15,7 @@
     </code>
     <valueCodeableConcept>
       <coding>
-        <system value="https://fhir.nhs.uk/CodeSystem/dos-id" />
+        <system value="https://fhir.nhs.uk/Id/dos-service-id" />
         <code value="dos-id" />
       </coding>
     </valueCodeableConcept>

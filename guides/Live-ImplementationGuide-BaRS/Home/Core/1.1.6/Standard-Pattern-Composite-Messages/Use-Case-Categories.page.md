@@ -20,7 +20,8 @@ The use case category is used in the initial content negotiation phase:
 When a Sender makes a request for MessageDefinitions, the MessageDefinitions returned by the Receiver will contain a use case category code (from the use case categories code system) under Message.Definition.useContext.code.  The Sender **must** read this field to verify the Receiver supports the use case workflow they require.  The use case category code will also be included in:
 * the Sender's service request under ServiceRequest.category
 * the Sender’s booking request under Appointment.ServiceCategory
- If this is not a use case supported by the Receiver, they will respond with an error (Operation Outcome).
+
+If this is not a use case supported by the Receiver, they will respond with an error (Operation Outcome).
  
 The sequence of events occurs as follows:
 * the Sender requests the MessageDefinitions 
