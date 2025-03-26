@@ -63,7 +63,7 @@ A Receiver's MessageDefinitions will contain several identifiers that will allow
 
 * Name or URL in MessageDefinition.url / MessageDefinition.name : <div style="display: inline">https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request
 * Use case in  MessageDefinition.useContext.code[]: <div style="display: inline">https://fhir.nhs.uk/CodeSystem/usecases-categories-bars
-* Service in MessageDefinition.useContext.code[]: <div style="display: inline">https://fhir.nhs.uk/CodeSystem/dos-id
+* Service in MessageDefinition.useContext.code[]: <div style="display: inline">https://fhir.nhs.uk/Id/dos-service-id
 * Version in MessageDefinition.version
 
 The Name or URL define the type of message being sent. The Service id is confirmation of the correct Service. The Use Case Category code(s) define the care setting context required to ensure the message is actionable by the service. The Version allows for Version negotiation. All of these items need to be checked. There may be variations of the same message definition for a given service based on these variables.

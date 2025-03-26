@@ -55,7 +55,7 @@ MessageDefinition Content_Negotiation_Client_MessageDefinition()
 			{compatible = true;}
 			else{compatible = false; break;}
 
-			if(Identifier.system == "https://fhir.nhs.uk/CodeSystem/dos-id" && Identifier.code == Service)
+			if(Identifier.system == "https://fhir.nhs.uk/Id/dos-service-id" && Identifier.code == Service)
 			{compatible = true;}
 			else{compatible = false; break;}
 		}

@@ -41,7 +41,7 @@ This Message Definition is built with the following specific values:
 | status                 | 1..1        | active                                              |                                                  |
 | date                   | 1..1        | Date last   changed                                 |                                                  |
 | useContext             | 1..1        |                                                     | We   are expecting the UseContext to be a DOS ID |
-| useContext.code.system | 1..1        | https://fhir.nhs.uk/CodeSystem/dos-id               |                                                  |
+| useContext.code.system | 1..1        | https://fhir.nhs.uk/Id/dos-service-id               |                                                  |
 | useContext.code.code   | 1..1        | dos-id                                              |                                                  |
 | event.system           | 1..1        | https://fhir.nhs.uk/CodeSystem/message-events-bars  |                                                  |
 | event.code             | 1..1        | servicerequest-request                              |                                                  |
