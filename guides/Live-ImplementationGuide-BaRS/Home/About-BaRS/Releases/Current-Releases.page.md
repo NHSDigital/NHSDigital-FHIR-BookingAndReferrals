@@ -19,7 +19,10 @@ Implementation Guide   | 1.8.2   | v1      | Live     | Current Release | 26/11/
 
 ### Overview of the release
 
-Bug fixes and corrections. 
+Release 1.8.2 includes development of the Appointment Management Foundation guidance {{pagelink:core-StandardPattern-appointment-1.1.6,text:Appointment Management Foundation}} guidance and supporting changes to the API specification.
+There have been improvements to use context http header guidance and developer onboarding advice, alongside bug fixes and corrections throughout the guide. Application 5 TKW changes have been included.
+ 
+A clinical safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new hazards have been identified in this release. The latest version of the BaRS clinical safety case and hazard log can be downloaded from the <a href= "https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#hazard-log-and-clinical-safety-case-report-cscr-" target="_blank"> BaRS FHIR API onboarding support information page </a>.
 
 <br>
 <hr>
