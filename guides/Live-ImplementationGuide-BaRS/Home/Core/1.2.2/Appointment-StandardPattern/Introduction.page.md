@@ -10,9 +10,15 @@ topic: core-StandardPattern-appointment-Introduction-1.2.2
 
 ## Introduction 
 
-The [BaRS API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) suite can be used where there is no specific use-case supported by the {{pagelink:Home/Applications/BaRS-Applications, text:Applications}} to fulfil generic Appointment workflows. This section outlines the functionality supported, workflows involved and how these correspond with the [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0). 
+The [BaRS API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) suite can be used where there is no specific use-case supported by the {{pagelink:Home/Applications/BaRS-Applications, text:Applications}} to fulfil generic Appointment workflows, referred to as Appointment Management Foundation. This section outlines the functionality supported, workflows involved and how these correspond with the [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0). 
 
-This includes using {{pagelink:core-StandardPattern-document-reference-1.1.6, text: DocumentReference Standard Pattern}} to write pointers for Appointments to a central respository, commonly referred to as the Registry. 
+This includes using {{pagelink:core-StandardPattern-document-reference-1.2.2, text: DocumentReference Standard Pattern}} to write pointers for Appointments to a central respository, commonly referred to as the Registry. 
+
+The Appointment Management Foundation is based on {{pagelink:design-core-1.2.2, text:BaRS Core}} and an understanding of the central tenets is essential before beginning. This includes: - 
+* {{pagelink:core-EndToEndWorkflow-1.2.2, text:End to end workflow }} - how Senders and Receivers, interacting through the central Proxy, negotiate compatibility and engage
+* {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.2.2, text:Service Discovery }} - every workflow must include the resolution of a receiving Service Identifier 
+* {{pagelink:core-Security-1.2.2, text:Authentication and Authorisation }} - the central Proxy will handle Authentication but Authorisation is handled by Receivers
+* {{pagelink:onboarding, text:Onboarding to environments }} - getting access to the central Proxy. This differs for Senders (OAuth) and Receivers (mTLS)
 
 There are four functions that are required surrounding appointments. This section will provide information on how to meet them using the Appointment Resource.
 
