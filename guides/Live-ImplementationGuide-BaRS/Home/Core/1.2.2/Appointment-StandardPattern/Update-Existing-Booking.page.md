@@ -6,9 +6,9 @@ topic: core-StandardPattern-appointment-update-1.2.2
 
 To update an appointment:
 
-* Perform a GET operation using the id of the appointment to /Appointment/{id}
-* Ammend or append the resource as required.
-* Perform a PUT operation using the id of the appointment to /Appointment/{id} or POST against /$process-message, with a corresponding FHIR bundle (BaRS Applications only)
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
+* Amend or append the resource as required.
+* Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 In this example a placeholder was created, and updated when the slot is selected. This is a hypothetical scenario.
 
