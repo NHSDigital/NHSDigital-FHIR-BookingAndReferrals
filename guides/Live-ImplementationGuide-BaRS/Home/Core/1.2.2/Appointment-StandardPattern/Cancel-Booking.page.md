@@ -6,9 +6,9 @@ topic: core-StandardPattern-appointment-cancel-1.2.2
 
 To cancel an appointment:
 
-* Perform a GET operation using the id of the appointment to /Appointment/{id}
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 * Set the Appointment.status value to "cancelled"
-* Perform a PUT operation using the id of the appointment to /Appointment/{id} or POST against /$process-message, with a corresponding FHIR bundle (BaRS Applications only)
+* Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 resource returned:
 ```json

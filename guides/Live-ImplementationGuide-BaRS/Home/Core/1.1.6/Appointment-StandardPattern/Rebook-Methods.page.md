@@ -30,13 +30,13 @@ Use the cancel method described above.
 The method for the subsequent booking of an appointment depends on the Application specific guidance within BaRS. The only difference would be the Appointment Resource would include Appointment.replaces referencing the previous appointment for provenance.
 Alternatively, rebooking an appointment can be used outside of use-cases supported by a BaRS Application, to fulfil a generic Appointment workflow, either way, the typical sequence of events using PUT or POST is:
 
-* Select the service to book an appointment with. 
-* Confirm BaRS Capabilities.
-* Request Available slots.
+* {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.1.6, text:Select the service}}  to book an appointment with. 
+* Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/metadata).
+* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/Slot).
 * Select a slot.
-* Perform a GET operation using the id of the appointment to /Appointment/{id}
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 * Set the Appointment.status value to "cancelled"
-* Perform a PUT operation using the id of the appointment to /Appointment/{id} or POST against /$process-message, with a corresponding FHIR bundle (BaRS Applications only)
+* Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 Request Body
 
@@ -78,13 +78,13 @@ Request Body
 
 Using PATCH:
 
-* Select the service to book an appointment with. 
-* Confirm BaRS Capabilities.
-* Request Available slots.
+* {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.1.6, text:Select the service}}  to book an appointment with. 
+* Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/metadata).
+* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/Slot).
 * Select a slot.
-* Perform a GET operation using the id of the appointment to /Appointment/{id}
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 * Set the Appointment.status value to "cancelled"
-* Perform a PATCH operation using the id of the appointment to /Appointment/{id}
+* Perform a [PATCH](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#patch-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 ```json
 {
