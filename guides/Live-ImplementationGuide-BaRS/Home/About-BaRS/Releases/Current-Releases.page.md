@@ -6,7 +6,7 @@ Implementation Guide   | 1.8.2   | v1      | Live     | Current Release | 01/04/
 [FHIR Package](https://simplifier.net/packages/uk.nhsdigital.bars.r4/1.35.0) | 1.35.0| v1      | Live     | Current Release | 01/04/2025  | Stable     |
 {{pagelink:design-core-1.1.6, text:BaRS Core}}              | 1.1.6   | v1      | Live     | Current Release | 01/04/2025   | Stable     |{{pagelink:trn-core, text: BaRS Core Change Log}}
 [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0)    | 1.1.0   | v1      | Live     | Current Release | 01/04/2025  | Stable     |{{pagelink:trn-api}}
-{{pagelink: build-testing, text: TKW}}  | 1.0.18   | v1      | Live     | Current Release | 01/04/2025   | Stable     |{{pagelink:trn-tkw}}
+{{pagelink: build-testing, text: TKW}}  | 1.0.19   | v1      | Live     | Current Release | 28/03/2025   | Stable     |{{pagelink:trn-tkw}}
 {{pagelink:application1, text:BaRS-APP1}}   | 1.0.7   | v1      | Live     | Current Release | 01/04/2025   | Stable     |{{pagelink:trn-app1,text:BaRS APP1 Change Log}}
 {{pagelink:application2, text:BaRS-APP2}}   | 1.0.7   | v1      | Live     | Current Release | 01/04/2025   | Stable     |{{pagelink:trn-app2,text:BaRS APP2 Change Log}}
 {{pagelink:application3, text:BaRS-APP3}}   | 1.0.3   | v1      | Live     | Current Release | 01/04/2025   | Stable |{{pagelink:trn-app3,text:BaRS APP3 Change Log}}
