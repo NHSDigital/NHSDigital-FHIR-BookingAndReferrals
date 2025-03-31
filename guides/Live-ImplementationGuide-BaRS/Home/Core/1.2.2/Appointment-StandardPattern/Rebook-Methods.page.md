@@ -53,7 +53,7 @@ Request Body
 	"status": "booked",
     "slot": [
         {
-            "reference": "urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda"
+            "reference": "Slot/deb4c4b3-870b-4599-84df-5e54cef7afda"
         }
     ],
 	"description": "Reason for calling",
@@ -63,14 +63,14 @@ Request Body
 	"participant": [
 		{
 			"actor": {
-				"reference": "urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2"
+				"reference": "Patient/788660eb-d2c9-4773-abd4-318484673fb2"
 			},
 			"status": "accepted"
 		}
 	],
     "replaces": [
 		{
-			"reference": "urn:uuid:aca94bdb-2e38-4399-9ece-2ba083ce65b5"
+			"reference": "Appointment/aca94bdb-2e38-4399-9ece-2ba083ce65b5"
 		}		
 	]
 }
@@ -93,7 +93,7 @@ Using PATCH:
 	"status": "booked",
     "slot": [
         {
-            "reference": "urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda"
+            "reference": "Slot/deb4c4b3-870b-4599-84df-5e54cef7afda"
         }
     ],
 	"description": "Reason for calling",
