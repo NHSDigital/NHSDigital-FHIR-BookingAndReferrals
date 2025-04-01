@@ -24,7 +24,7 @@ resource returned:
 	"status": "booked",
     "slot": [
         {
-            "reference": "urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda"
+            "reference": "Slot/deb4c4b3-870b-4599-84df-5e54cef7afda"
         }
     ],
 	"description": "Reason for calling",
@@ -34,7 +34,7 @@ resource returned:
 	"participant": [
 		{
 			"actor": {
-				"reference": "urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2"
+				"reference": "Patient/788660eb-d2c9-4773-abd4-318484673fb2"
 			},
 			"status": "accepted"
 		}
@@ -56,7 +56,7 @@ Request body:
 	"status": "cancelled",
     "slot": [
         {
-            "reference": "urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda"
+            "reference": "Slot/deb4c4b3-870b-4599-84df-5e54cef7afda"
         }
     ],
 	"description": "Reason for calling",
@@ -66,7 +66,7 @@ Request body:
 	"participant": [
 		{
 			"actor": {
-				"reference": "urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2"
+				"reference": "Patient/788660eb-d2c9-4773-abd4-318484673fb2"
 			},
 			"status": "accepted"
 		}
@@ -89,7 +89,7 @@ Request body:
 	"status": "entered-in-error",
     "slot": [
         {
-            "reference": "urn:uuid:deb4c4b3-870b-4599-84df-5e54cef7afda"
+            "reference": "Slot/deb4c4b3-870b-4599-84df-5e54cef7afda"
         }
     ],
 	"description": "Reason for calling",
@@ -99,7 +99,7 @@ Request body:
 	"participant": [
 		{
 			"actor": {
-				"reference": "urn:uuid:788660eb-d2c9-4773-abd4-318484673fb2"
+				"reference": "Patient/788660eb-d2c9-4773-abd4-318484673fb2"
 			},
 			"status": "accepted"
 		}
