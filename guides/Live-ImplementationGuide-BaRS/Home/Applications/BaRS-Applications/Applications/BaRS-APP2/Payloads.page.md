@@ -76,7 +76,7 @@ The extension *questionnaireresponse-reason* **must** be populated to indicate w
 Using a nested set of *questionnaireResponse.item*, *questionnaireResponse.linkId* and *questionnaireResponse.answer* complex structured data can be generated and processed, by the Sender and Receiver, respectively. The element guidance for this resource below goes into detail but, essentially, the *item* and *linkId* can be continually nested to convey various types of information. The *item* indicates a new element, *linkId* provide the number of elements (within the *item*) and *answer* contains any the value, supported by many different data types.
 
 ### Consent 
-In the BaRS UEC Applications the level of consent is stipulated to be for 'Direct Care' only. A referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/nhsbookingandreferrals/consent-example) provided under the BaRS FHIR assets. 
+In the BaRS UEC Applications the level of consent is stipulated to be for 'Direct Care' only. A referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 
 
 <hr>
 
