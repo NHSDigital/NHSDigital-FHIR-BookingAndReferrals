@@ -11,7 +11,7 @@ _Note that Responders will also have to build the capability to receive and proc
 
 For Interim Validation Response example bundles see:
 * [Interim Validation Response - CAS to 999 In-progress](https://simplifier.net/nhsbookingandreferrals/b8465a28-89ce-4530-8234-6fbe4aef6001)
-* [Interim Validation Response - CAS to 999 Rejected](https://simplifier.net/nhsbookingandreferrals/b8465a28-89ce-4530-8234-6fbe4aef6002)
+* [Interim Validation Response - CAS to 999 Rejected](https://simplifier.net/NHSBookingandReferrals/b8465a28-89ce-4530-8234-6fbe4aef6001-duplicate-2/~json)
 * For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)
 
 <br>
