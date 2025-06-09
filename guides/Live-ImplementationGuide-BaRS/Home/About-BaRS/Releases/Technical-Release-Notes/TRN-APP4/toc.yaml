@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: 1.2.3
+  filename: 1.2.3.page.md
 - name: 1.2.2
   filename: 1.2.2.page.md
 - name: 1.2.1
