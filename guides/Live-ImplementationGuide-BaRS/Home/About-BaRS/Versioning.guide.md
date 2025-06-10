@@ -24,7 +24,7 @@ The extensions ALPHA, BETA or RC (Release Candidate) will be used to indicate th
 An appreciation of the components involved in a released version must be understood when building solutions. These separate components come together under the umbrella of a given overall version but the components themselves are also versioned. This published implementation guide denotes the 'overall version' referenced. 
 
 Components involved in an overall version:- 
-* **{{pagelink:design-core-1.0.6, text:Core}}**: BaRS Core components - API Spec, Endpoint Catalogue etc.
+* **{{pagelink:design-core-1.0.7, text:Core}}**: BaRS Core components - API Spec, Endpoint Catalogue etc.
 * **[Package](https://simplifier.net/NHSBookingandReferrals/~packages)**: FHIR package
 * **{{pagelink:applications, text:Application}}**: the use cases i.e. '111 to ED'
 * **{{pagelink:fhir_assets, text:FHIR Assets}}**: MessageDefinitions and profiles
