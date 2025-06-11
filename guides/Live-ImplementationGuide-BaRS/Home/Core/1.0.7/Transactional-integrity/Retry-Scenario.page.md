@@ -1,5 +1,5 @@
 ---
-topic: Core-TransactionalIntegrity-Retry-1.0.7
+topic: Core-TransactionalIntegrity-RetryScenario-1.0.7
 ---
 
 ## Retry scenario
