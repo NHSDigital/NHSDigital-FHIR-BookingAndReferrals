@@ -32,14 +32,12 @@ This section describes how the primary operations used in this application work.
 ### Out of area calls
 
 Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service Trust (AST) outside of the geographic area of the incident (the Call Receiving AST) for the following reasons:
-* The BT Intelligent Routing Platform (IRP) re-routes the call if the AST in the geographic area of the incident (the Home AST) has insufficient Call Handlers available to answer the call within a given time frame
-    * The Home AST has a 'buddying' arrangement with an out-of-area AST to take their calls under defined circumstances (e.g. system downtime, periods of surge)
-    * A third party caller calls about a patient in another area
-    * Calls where the incident is on the boundary between two ASTs
+- The Home AST has arrangements with out of area ASTs to take their calls when needed
+- A third party caller calls about a patient in another area
+- Calls where the incident is on the boundary between two ASTs
     
 ### Call Assist Requests
-- A Home AST may request support from a Supporting AST when they cannot send a resource to an incident within their geographic boundary of responsibility
-- The Supporting AST may accept or reject this request
+A Home AST may request support from a Supporting AST when they cannot send a resource to an incident within their geographic boundary of responsibility. The Supporting AST may accept or reject this request.
 - If the Supporting AST rejects the request, the Home AST will make alternative arrangements
 - If the Supporting AST accepts the request:
     - the Supporting AST is responsible for dispatching an appropriate resource within the time frame specified by the ARP Priority code
@@ -47,14 +45,13 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
     
 ### Mutual Aid Requests
 
-- A Home AST may request support from a Supporting AST when they cannot meet all of the resource requirements for an incident within their geographic boundary of responsibility.
-- The Supporting AST may accept or reject this request
+A Home AST may request support from a Supporting AST when they cannot meet all of the resource requirements for an incident within their geographic boundary of responsibility. The Supporting AST may accept or reject this request.
 - If the Supporting AST rejects the request, the Home AST will make alternative arrangements
 - If the Supporting AST accepts the request:
     - the Supporting AST is responsible for dispatching the requested resource within the time frame specified in the request
     - The Home AST remains responsible for the case and for dispatching the resources not specified in the request
     
-    Note: The BaRS Referral may be used to support single patient Mutual aid requests. It is not intended to replace processes relating to Mutual Aid Requests to support Major Incidents with multiple patients.
+Note: The BaRS Referral may be used to support single patient Mutual aid requests. It is not intended to replace processes relating to Mutual Aid Requests to support Major Incidents with multiple patients.
     
 </br>
 
