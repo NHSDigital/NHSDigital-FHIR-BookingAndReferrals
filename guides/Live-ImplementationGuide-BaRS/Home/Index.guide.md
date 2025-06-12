@@ -26,6 +26,6 @@ The guide is divided into a number of sections:
 * {{pagelink:deploy}} provides the deployment toolkit
 * {{pagelink:fhir_assets}}, a link to the complete directory of FHIR assets
 * {{pagelink:help}} provides a link to support requests
-
+* {{pagelink:ReportanIncident}} describes how to report a live service incident for suppliers and providers live with BaRS
 
 
