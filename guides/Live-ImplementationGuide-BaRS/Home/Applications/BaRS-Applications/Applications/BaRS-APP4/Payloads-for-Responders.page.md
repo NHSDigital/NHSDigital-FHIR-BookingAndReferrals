@@ -125,7 +125,7 @@ The *careplan.activity* holds the assessment information, whether it be coded or
 *  The Ambulance Response Programme (ARP) priority code
 * Response outcome codes can also be included under additional instances of *careplan.activity.outcomeCodeableConcept.coding* 
 
-The *CarePlan.period.start* is used to calculate the clock start time for dispatch and **must** be populated populated with the datetime of the identification of the dispatch code.
+The *CarePlan.period.start* is used to calculate the clock start time for dispatch and **must** be populated populated with the dateTime of the identification of the dispatch code.
 *  If the Validation ARP code is the same or downgraded from the original 999 triage, this **must* be populated with the Requester's Clock start date/Time Definition as per the AmbSys specification.
 *  If the Validation ARP code is upgraded from the original 999 triage this **must** be populated with the Dispatch/Disposition code identification date/time determined by the CAS
 
