@@ -328,8 +328,8 @@ Message 2 - First update
                         <coding>
                             <!--         Emergency contact person        -->
                             <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
-                            <code value="EP" />
-                            <display value="Emergency contact person" />
+                            <code value="C" />
+                            <display value="Emergency Contact" />
                         </coding>
                     </relationship>
                     <name>
