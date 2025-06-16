@@ -119,7 +119,7 @@ For this application we will be referring to the actors as 'Requester' and the '
 **Timings**
 *  The Requester **must** send the Clock start date/Time (T5). Definition as per AmbSys specification
 *  The Requester **must** send the validation breach time
-*  The Responder **must** send the dispatch (or disposition) code identification datetime in the **Validation Response**:
+*  The Responder **must** send the dispatch (or disposition) code identification dateTime in the **Validation Response**:
     - If the Validation ARP code is the same or downgraded from the original 999 triage, this **must** be populated with the original 999 Clock start date/Time (T5).
     - If the Validation ARP code is upgraded from the original 999 triage this **must** be populated with the Dispatch/Disposition code identification date/time determined by the CAS
 
