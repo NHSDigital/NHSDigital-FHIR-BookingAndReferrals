@@ -5,7 +5,7 @@ topic: APP3-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.1.6, text:Standard Pattern Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.3.0, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -22,7 +22,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. 999-CAS Referral. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.6, text:use-case categories}}
+). e.g. 999-CAS Referral. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.7, text:use-case categories}}
 
 
 Additionally, the *ServiceRequest.occurrencePeriod* **must** be populated with the time that the receiving service must call the patient by (call back time)
@@ -91,7 +91,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 
 ## Referral Cancellation Payload
 
-The ability to cancel a Referral Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.1.6, text:Standard Patterns - Cancellation}}.
+The ability to cancel a Referral Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.3.0, text:Standard Patterns - Cancellation}}.
 
 <br>
 <hr>

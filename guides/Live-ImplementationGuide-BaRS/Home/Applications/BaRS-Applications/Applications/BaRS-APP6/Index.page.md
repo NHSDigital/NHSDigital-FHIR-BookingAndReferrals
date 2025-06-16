@@ -22,9 +22,9 @@ topic: Application6
 </thead>
 <tbody>
 	<tr>
-		<td>Application 6 v1.0.0-beta.4</td>
+		<td>Application 6 v1.0.0-beta.5</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.8.2" target="_blank">v1.1.x</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.8.2</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.9.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a></td>
 	</tr>
 </tbody>
@@ -52,7 +52,7 @@ This application supports the use of the following use cases:
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.0.6, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.0.7, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
 
 </br>
 </br>

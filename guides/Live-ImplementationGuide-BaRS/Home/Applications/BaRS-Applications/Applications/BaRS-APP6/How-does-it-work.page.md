@@ -10,16 +10,16 @@ This section describes how the primary operations used in this application work.
 * CAD to CAD Mutual Aid Request
 
 <br>
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfArea-1.0.1.svg" target="_blank>">
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfArea-1.0.1.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfArea-1.0.2.svg" target="_blank>">
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfArea-1.0.2.svg" width="1200"></img></a>
 
 <br>
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADCallAssist-1.0.1.svg" target="_blank>">
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADCallAssist-1.0.1.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADCallAssist-1.0.2.svg" target="_blank>">
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADCallAssist-1.0.2.svg" width="1200"></img></a>
 
 <br>
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADMutualAid-1.0.1.svg" target="_blank>">
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADMutualAid-1.0.1.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADMutualAid-1.0.2.svg" target="_blank>">
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADMutualAid-1.0.2.svg" width="1200"></img></a>
 
 ### Actors
 
@@ -32,14 +32,12 @@ This section describes how the primary operations used in this application work.
 ### Out of area calls
 
 Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service Trust (AST) outside of the geographic area of the incident (the Call Receiving AST) for the following reasons:
-* The BT Intelligent Routing Platform (IRP) re-routes the call if the AST in the geographic area of the incident (the Home AST) has insufficient Call Handlers available to answer the call within a given time frame
-    * The Home AST has a 'buddying' arrangement with an out-of-area AST to take their calls under defined circumstances (e.g. system downtime, periods of surge)
-    * A third party caller calls about a patient in another area
-    * Calls where the incident is on the boundary between two ASTs
+- The Home AST has arrangements with out of area ASTs to take their calls when needed
+- A third party caller calls about a patient in another area
+- Calls where the incident is on the boundary between two ASTs
     
 ### Call Assist Requests
-- A Home AST may request support from a Supporting AST when they cannot send a resource to an incident within their geographic boundary of responsibility
-- The Supporting AST may accept or reject this request
+A Home AST may request support from a Supporting AST when they cannot send a resource to an incident within their geographic boundary of responsibility. The Supporting AST may accept or reject this request.
 - If the Supporting AST rejects the request, the Home AST will make alternative arrangements
 - If the Supporting AST accepts the request:
     - the Supporting AST is responsible for dispatching an appropriate resource within the time frame specified by the ARP Priority code
@@ -47,14 +45,13 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
     
 ### Mutual Aid Requests
 
-- A Home AST may request support from a Supporting AST when they cannot meet all of the resource requirements for an incident within their geographic boundary of responsibility.
-- The Supporting AST may accept or reject this request
+A Home AST may request support from a Supporting AST when they cannot meet all of the resource requirements for an incident within their geographic boundary of responsibility. The Supporting AST may accept or reject this request.
 - If the Supporting AST rejects the request, the Home AST will make alternative arrangements
 - If the Supporting AST accepts the request:
     - the Supporting AST is responsible for dispatching the requested resource within the time frame specified in the request
     - The Home AST remains responsible for the case and for dispatching the resources not specified in the request
     
-    Note: The BaRS Referral may be used to support single patient Mutual aid requests. It is not intended to replace processes relating to Mutual Aid Requests to support Major Incidents with multiple patients.
+Note: The BaRS Referral may be used to support single patient Mutual aid requests. It is not intended to replace processes relating to Mutual Aid Requests to support Major Incidents with multiple patients.
     
 </br>
 
@@ -95,7 +92,7 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
 - The referral Receiver's CAD will create a new case (Encounter) on receipt of the BaRS Referral and populate it with the patient and clinical details provided in the referral
 
 ### Acknowledge Receipt
-- The referral Receiver will send an acknowledgement back to the referral Sender, when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.1.6, text:failure scenarios}} for more detail.
+- The referral Receiver will send an acknowledgement back to the referral Sender, when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.3.0, text:failure scenarios}} for more detail.
 
 ### Status Update (Referral Response)
 - The referral Receiver will send a series of status updates back to the referral Sender, to support tracking the progress of the case.
@@ -103,7 +100,7 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
 ### Continue updates
 - If additional or changed information about the case is captured by the referral Sender, subsequent to sending the BaRS Referral, they may send a BaRS Referral Update to ensure that the referral Receiver has the most up to date information.
 - If the referral Sender needs to cancel a Referral, for example the patient calls back and says they do not require an ambulance, they need to send a Cancellation.
-- On receipt of a Referral Update, the referral Receiver will send an acknowledgement back to the Sending AST on when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.1.6, text:failure scenarios}} for more detail.
+- On receipt of a Referral Update, the referral Receiver will send an acknowledgement back to the Sending AST on when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.3.0, text:failure scenarios}} for more detail.
 
 ### Manage Stack
 - The referral Receiver will manage the case in accordance with the Ambulance Response Programme (ARP) Priority Level. This may include:
@@ -121,7 +118,7 @@ To support the workflows for this application of the standard the operations tha
 
 ## Make a Referral
 
-Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.1.6, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}}.
 
 The message definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -193,9 +190,9 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this application follows the {{pagelink:Core-StandardPattern-1.1.6, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as described on the linked section, the referral **Sender** must perform a read of the referral to be cancelled, from the referral **Receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **Receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as described on the linked section, the referral **Sender** must perform a read of the referral to be cancelled, from the referral **Receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **Receiving** system's corresponding API endpoint (via the BaRS proxy).
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern-1.1.6, text:standard pattern}}.
+The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern-1.3.0, text:standard pattern}}.
 
 The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 

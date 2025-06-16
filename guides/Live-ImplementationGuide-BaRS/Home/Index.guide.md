@@ -8,9 +8,9 @@ For more information on the NHS England programme delivering the standard please
 You can use this guide to support your analysis and define the scope of your solution. However, as a developer, you may wish to start with the following:
 
 * {{pagelink:about_bars, text:About BaRS and quick start guide}} 
-* {{pagelink:design-core-1.1.6, text:End to end workflow }} 
+* {{pagelink:design-core-1.3.0, text:End to end workflow }} 
 * {{pagelink:Home/Applications/BaRS-Applications, text:BaRS Applications}} 
-* {{pagelink:core-StandardPattern-appointment-1.2.2, text:Standard Appointment Management (use-case agnostic)}}
+* {{pagelink:core-StandardPattern-appointment-1.3.0, text:Standard Appointment Management (use-case agnostic)}}
 * {{pagelink:build-testing, text:Tooling}} 
 
 <br>
@@ -19,13 +19,13 @@ You can use this guide to support your analysis and define the scope of your sol
 The guide is divided into a number of sections:
 
 * {{pagelink:about_bars}} provides essential background and guiding principles along with prerequisites
-* {{pagelink:design-core-1.1.6, text:BaRS Core}} provides a core set of functionality across version of Core
+* {{pagelink:design-core-1.3.0, text:BaRS Core}} provides a core set of functionality across version of Core
 * {{pagelink:Home/Applications/BaRS-Applications,text:BaRS Application summaries}} provides links to implementation guides for released BaRS applications
 * {{pagelink:build-testing}} provides information about testing and environments
 * {{pagelink:assure}} describes guidance for the assurance process
 * {{pagelink:deploy}} provides the deployment toolkit
 * {{pagelink:fhir_assets}}, a link to the complete directory of FHIR assets
 * {{pagelink:help}} provides a link to support requests
-
+* {{pagelink:ReportanIncident}} describes how to report a live service incident for suppliers and providers live with BaRS
 
 

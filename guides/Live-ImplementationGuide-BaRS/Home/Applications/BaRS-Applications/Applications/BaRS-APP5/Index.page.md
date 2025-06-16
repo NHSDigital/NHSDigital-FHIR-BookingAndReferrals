@@ -17,9 +17,9 @@ topic: Application5
 </thead>
 <tbody>
 	<tr>
-		<td>Application 5 v1.1.2</td>
+		<td>Application 5 v1.1.3</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.8.2" target="_blank">v1.1.x</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.8.2</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.9.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a></td>
 	</tr>
 </tbody>
@@ -47,7 +47,7 @@ NB - 'Primary Care' currently includes GP Practice and Online Consultation, as d
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.0.6, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.0.7, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
 
 ### Data model endorsements
 

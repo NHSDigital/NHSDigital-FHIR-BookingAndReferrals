@@ -1,0 +1,58 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agency-types-bars" />
+  <url value="https://fhir.nhs.uk/CodeSystem/agency-types-bars" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
+    <value value="agency-types-bars" />
+  </identifier>
+  <version value="1.0.0" />
+  <name value="agencytypesbars" />
+  <title value="Agency Types BARS" />
+  <status value="active" />
+  <date value="2025-06-03" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="england.interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Agency Types in BaRS" />
+  <copyright value="Copyright © 2025 NHS England" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="CI" />
+    <display value="Coastguard" />
+  </concept>
+  <concept>
+    <code value="DI" />
+    <display value="Doctor" />
+  </concept>
+  <concept>
+    <code value="FI" />
+    <display value="Fire service" />
+  </concept>
+  <concept>
+    <code value="FHI" />
+    <display value="Full Hazardous Area Response Team" />
+  </concept>
+  <concept>
+    <code value="RI" />
+    <display value="Hazardous Area Response Team" />
+  </concept>
+  <concept>
+    <code value="HI" />
+    <display value="Hospital" />
+  </concept>
+  <concept>
+    <code value="PI" />
+    <display value="Police" />
+  </concept>
+  <concept>
+    <code value="OSI" />
+    <display value="Other service" />
+  </concept>
+</CodeSystem>

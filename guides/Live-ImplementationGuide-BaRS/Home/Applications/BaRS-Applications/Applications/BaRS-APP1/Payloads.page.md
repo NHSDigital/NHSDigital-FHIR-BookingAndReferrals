@@ -6,7 +6,7 @@ topic: APP1-Payloads
 The specific guidance around the use of key FHIR resources is described below. 
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader-1.1.6, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.3.0, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 The MessageHeader resource for the Booking Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'booking-request'
@@ -27,7 +27,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. 111 - ED. 999 - UTC, CAS - SEDEC. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.6, text:use-case categories}}
+). e.g. 111 - ED. 999 - UTC, CAS - SEDEC. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.0.7, text:use-case categories}}
 
 An important function of the ServiceRequest resource is to link the booking and referral when they are related in a workflow. If the booking is successfully made before the referral, the Sender will have the *Appointment.Id* value (from the synchronous HTTP response) and this **must** be included as a relative reference, under *ServiceRequest.supportingInfo*, in the referral request. The element *ServiceRequest.supportingInfo* **may** also be used to provide reference to other resources in the request i.e. Rejected Services. This is outlined in the element guidance below.
 
@@ -77,7 +77,7 @@ The extension *questionnaireresponse-reason* **must** be populated to indicate w
 Using a nested set of *questionnaireResponse.item*, *questionnaireResponse.linkId* and *questionnaireResponse.answer* complex structured data can be generated and processed, by the Sender and Receiver, respectively. The element guidance for this resource below goes into detail but, essentially, the *item* and *linkId* can be continually nested to convey various types of information. The *item* indicates a new element, *linkId* provide the number of elements (within the *item*) and *answer* contains any the value, supported by many different data types.
 
 ### Consent 
-In the BaRS UEC Applications the level of consent is stipulated to be for 'Direct Care' only. A referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/nhsbookingandreferrals/consent-example) provided under the BaRS FHIR assets. 
+In the BaRS UEC Applications the level of consent is stipulated to be for 'Direct Care' only. A referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 
 
 <hr>
 

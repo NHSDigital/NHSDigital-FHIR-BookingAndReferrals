@@ -62,8 +62,8 @@
                     <code value="ok" />
                 </response>
                 <focus>
-                    <!--      ServiceRequest      -->
-                    <reference value="urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c" />
+                    <!--      Receiver Encounter      -->
+                    <reference value="urn:uuid:eba5ef44-5fdc-4d4f-b025-24db80e9b906" />
                 </focus>
 			<definition value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-response-short" />
             </MessageHeader>
@@ -166,7 +166,7 @@
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
                 </meta>
                 <identifier>
-                    <system value="https://sender.url/Id/case-number" />
+                    <system value="https://receiver.url/Id/case-number" />
                     <!--  Set by the receiver who is passing the business case number value  -->
                     <value value="reciever1234" />
                 </identifier>
