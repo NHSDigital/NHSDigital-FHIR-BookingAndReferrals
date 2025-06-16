@@ -83,9 +83,9 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Initial-1.3.0 , text:Initial Request}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Update-1.3.0 , text:Sending an update}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Feedback-1.3.0 , text:Feedback (response) requests}}</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Retry-1.3.0 , text:Retry Scenario}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-RetryScenario-1.3.0 , text:Retry Scenario}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Onward-1.3.0 , text:Onwards Referrals}}</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-retry-1.3.0 , text:Definition of a Retry}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-RetryDefinition-1.3.0 , text:Definition of a Retry}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Receiver-1.3.0 , text:Receiver responsibilities}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:Core-TransactionalIntegrity-Sender-1.3.0 , text:Sender responsibilities}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-TIFailureScenarios-1.3.0 , text:Failure Scenarios}}</br>
