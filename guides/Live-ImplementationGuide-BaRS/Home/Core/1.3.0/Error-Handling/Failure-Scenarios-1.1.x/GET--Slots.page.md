@@ -8,7 +8,7 @@ Get /Slots has added complexity compared to previous endpoints in this section. 
   * Slot:schedule
   * Schedule:actor:HealthcareService
 * start - The start parameter must be used twice, and adds the need for handling problematic requests with its use (too wide a time frame, as an example).
-  * Must use the [FHIR instant](https://www.hl7.org/fhir/datatypes.html#primitive) format which includes and offset.
+  * Must use the [FHIR dateTime](https://www.hl7.org/fhir/datatypes.html#primitive) format which includes an offset.
   * Must be UTC
   * Must have a greater than and a less than.
 * status - The status parameter must be used.
