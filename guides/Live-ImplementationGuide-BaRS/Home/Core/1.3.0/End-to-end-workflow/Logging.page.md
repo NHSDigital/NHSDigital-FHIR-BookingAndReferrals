@@ -22,7 +22,7 @@ The elements for a ServiceRequest are:
 
 The elements for an Appointment are:
 
-* Appointent.serviceCategory.coding (usecases-categories-bars)
+* Appointment.serviceCategory.coding (usecases-categories-bars)
 * Appointment.status
 * MessageHeader.eventCoding.code (message-event-bars)
 * MessageHeader.reason.coding.code (message-reason-bars)
@@ -42,7 +42,7 @@ Example:
 ### Booking
 
 ```
- Appointent.serviceCategory.coding[usecases-categories-bars] | Appointment.status | MessageHeader.eventCoding.code | MessageHeader.reason.coding.code 
+ Appointment.serviceCategory.coding[usecases-categories-bars] | Appointment.status | MessageHeader.eventCoding.code | MessageHeader.reason.coding.code 
 ```
 Example:
 ```
