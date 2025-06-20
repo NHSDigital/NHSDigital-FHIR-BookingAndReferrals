@@ -483,9 +483,9 @@
                     <relationship>
                         <coding>
                             <!--        Emergency contact person       -->
-                            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
-                            <code value="ECON" />
-                            <display value="emergency contact" />
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+                            <code value="C" />
+                            <display value="Emergency Contact" />
                         </coding>
                     </relationship>
                     <name>

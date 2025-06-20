@@ -3,7 +3,7 @@
 Product Link           | Version | Handle  | Phase    | State           | Release Date | Stability  | Change Log Link
 -----------------------|---------|---------|----------|-----------------|--------------|------------|-----------------
 Implementation Guide   | 1.9.0   | v1      | Live     | Current Release | 02/07/2025 | Stable     |{{pagelink:trn-General}}
-[FHIR Package](https://simplifier.net/packages/uk.nhsdigital.bars.r4/1.35.0) | 1.35.0| v1      | Live     | Current Release | 01/04/2025  | Stable     |
+[FHIR Package](https://simplifier.net/packages/uk.nhsdigital.bars.r4/1.35.0) | 1.36.0| v1      | Live     | Current Release | 02/07/2025  | Stable     |
 {{pagelink:design-core-1.1.6, text:BaRS Core}}              | 1.3.0   | v1      | Live     | Current Release | 02/07/2025   | Stable     |{{pagelink:trn-core, text: BaRS Core Change Log}}
 [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0)    | 1.3.0   | v1      | Live     | Current Release | 02/07/2025  | Stable     |{{pagelink:trn-api}}
 {{pagelink: build-testing, text: TKW}}  | 1.0.19   | v1      | Live     | Current Release | 28/03/2025   | Stable     |{{pagelink:trn-tkw}}
@@ -19,8 +19,7 @@ Implementation Guide   | 1.9.0   | v1      | Live     | Current Release | 02/07/
 
 ### Overview of the release
 
-Release 1.9.0 includes development of the {{pagelink:, text:}} guidance and supporting changes to the cancellation workflows, introduces a search capability to the Implementation Guide and....
-There have been improvements Application 6 use-case descriptons alongside bug fixes and corrections throughout the guide. 
+Release 1.9.0 includes development of changes and guidance to the cancellation workflows {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}} to support searches with demographics.  Following user feedback, it also introduces a search capability to the Implementation Guide and simplifies versioning by reducing the concurrent versions of Core from three to two: 1.0.7 and 1.3.0.  There have been improvements to Help and Support, Application 6 use-case descriptions alongside bug fixes and corrections throughout the guide. 
  
 A clinical safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new hazards have been identified in this release. The latest version of the BaRS clinical safety case and hazard log can be downloaded from the <a href= "https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#hazard-log-and-clinical-safety-case-report-cscr-" target="_blank"> BaRS FHIR API onboarding support information page </a>.
 
