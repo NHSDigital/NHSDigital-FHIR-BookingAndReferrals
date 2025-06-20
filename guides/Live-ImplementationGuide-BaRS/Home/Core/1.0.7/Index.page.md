@@ -11,7 +11,7 @@ You will find here a set of documentation, specifications and services that desc
 <details>
 <summary>> <b class="barslink">Expand for full Core directory</b></summary>
 
-&bull; {{pagelink:design-core-1.0.7 , text: Core 1.0.6}}</br>
+&bull; {{pagelink:design-core-1.0.7 , text: Core 1.0.7}}</br>
 &nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-1.0.7 , text:End to end workflow}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.0.7 , text:Service Discovery}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-BaRSAuth-1.0.7 , text:Authenticate with BaRS}}</br>
