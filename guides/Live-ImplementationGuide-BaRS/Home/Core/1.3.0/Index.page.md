@@ -3,9 +3,6 @@ topic: design-core-1.3.0
 ---
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information</b>
 <p>
-
-This version of core is strictly a preview of what is currently in development for 1.2.2-alpha and should not be built against.
-
 <table>
 <thead>
 	<tr>
@@ -16,9 +13,9 @@ This version of core is strictly a preview of what is currently in development f
 </thead>
 <tbody>
 	<tr>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/1.2.2" target="_blank">v1.2.2-alpha</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/1.3.0" target="_blank">v1.3.0</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.8.2</td>
-		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0" target="_blank">v1.2.0</a></td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0" target="_blank">v1.3.0</a></td>
 	</tr>
 </tbody>
 </table>
@@ -34,7 +31,7 @@ You will find here a set of documentation, specifications and services that desc
 <details>
 <summary>> <b class="barslink">Expand for full Core directory</b></summary>
 
-&bull; {{pagelink:design-core-1.3.0 , text: Core 1.2.2}}</br>
+&bull; {{pagelink:design-core-1.3.0 , text: Core 1.3.0}}</br>
 &nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-1.3.0 , text:End to end workflow}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.3.0 , text:Service Discovery}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-BaRSAuth-1.3.0 , text:Authenticate with BaRS}}</br>
@@ -243,7 +240,7 @@ For more detail please visit the {{pagelink:core-StandardPattern-document-refere
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information - Preview</b>
 <p>
 
-This version of core is strictly a preview of what is currently in development for 1.2.0 and should not be built against.
+This version of core is strictly a preview of what is currently in development for 1.3.0 and should not be built against.
 
 </div>
 
