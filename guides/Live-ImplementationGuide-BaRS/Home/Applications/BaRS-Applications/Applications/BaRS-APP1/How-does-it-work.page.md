@@ -90,7 +90,7 @@ To cancel a referral this Application follows the {{pagelink:core-SPCancellation
 
 The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
-If the update-to-cancel is taking place as part of a re-referral routine, once the cancellation is complete, the new referral request can be sent. This step in the workflow would follow the same process as 'Make a referral' detailed above.
+If the update-to-cancel is taking place as part of a re-referral routine, once the cancellation is complete, the new referral request can be sent. This step in the workflow would follow the same process as 'Make a Referral' detailed above.
 
 In addition, the specific workflow parameters that are required are as follows:
 
