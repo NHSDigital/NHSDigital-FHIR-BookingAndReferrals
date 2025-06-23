@@ -2,7 +2,7 @@
 topic: design-core-1.0.7
 ---
 
-# BaRS Core 1.0.6
+# BaRS Core 1.0.7
 
 BaRS consists of BaRS Core that provides a core set of functionality and BaRS Applications that provide distinct functionality for each use case.
 
