@@ -1,5 +1,5 @@
 <a name="top"></a>
-## How to use this implementation guide
+## How to use this Implementation Guide
 
 This section provides a generated <a href="#P1">site map</a> of this implementation guide. 
 
