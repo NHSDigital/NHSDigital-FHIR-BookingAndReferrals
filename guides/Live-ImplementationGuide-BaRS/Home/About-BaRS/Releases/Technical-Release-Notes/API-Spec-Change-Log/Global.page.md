@@ -8,6 +8,9 @@ topic: TRN-API-global
 
 | Change                                         | BaRS Version | Description                                                                                                                              | Impact                                                   |
 |------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| <div class="imgHandshake">{{render:handshake}}</div> - Additional patient demographic parameters added to GET /Appointment | 1.9.0      | Patient demographic parameters (Name, Date of Birth and Address) added to support patient lookup for cancellation and update workflows.  | <mark style="background-color: Green">Addition</mark>    |
+| <div class="imgHandshake">{{render:handshake}}</div> -  - Additional patient demographic parameters added to GET /ServiceRequest | 1.9.0      | Patient demographic parameters (Name, Date of Birth and Address) added to support patient lookup for cancellation and update workflows.  | <mark style="background-color: Green">Addition</mark>    |
+| Fixed incorrect character display on GET /Slot description | 1.9.0      | Character display for a double quote was displaying oddly.   | <mark style="background-color: Yellow">correction</mark>   |
 |  Removal of use-context HTTP header  | 1.8.2   |Restricted the use of the use-context header to non-write operations  | <mark style="background-color: Yellow">correction</mark>  |
 |  Improvments to header documentation   | 1.8.2   |Added better explanations for most of the headers needed  | <mark style="background-color: Green">Addition</mark> |
 |  Addition of the use-context HTTP header  | 1.8.1   | A new header to assist in {{pagelink:core-EndToEndWorkflow-Logging-1.0.5, text: audting and logging}}  | <mark style="background-color: Green">Addition</mark> |
@@ -19,45 +22,4 @@ topic: TRN-API-global
 | Improvement to DocumentReference Schema   | 1.5.0 | the DocumentReference Schemas have been flattend for easier consumption | <mark style="background-color: Yellow">correction</mark>    |
 | <div class="imgHandshake">{{render:handshake}}</div> - Corrections to example references containing http.  | 1.5.0 | Several references to http://fhir.nhs.uk have been corrected to "https". | <mark style="background-color: Yellow">correction</mark>    |
 
-This Section will list all updates to the BaRS API Specification within the 1.2.0 minor release, published for BaRS 1.5.0.
-
-### Publication of the 1.2.0 API Specification (in development)
-
-The API Spec landing page will now have the an additional version to select to view. At present this will present 1.0.0, 1.1.0 and 1.2.0, with links to each specification. 1.1 and 1.2.0 are currently in development.
-
-### Endpoint Catalogue
-
-**EndpointCatalogue related Endpoints have been added to the specification in preparation for future use cases.** 
-
-The following endpoints are now available in the 1.2.0 specification. These endpoints will be used in future use cases and future iterations of current use cases.
-
-* GET /Endpoint
-* GET /HealthcareService
-* GET /Organization
-* GET /Endpoint/[id]
-* GET /HealthcareService/[id]
-* GET /Organization/[id]
-* PUT /Endpoint/[id]
-* PUT /HealthcareService/[id]
-* PUT /Organization/[id]
-* DELETE /Endpoint/[id]
-* DELETE /HealthcareService/[id]
-* DELETE /Organization/[id]
-
-### Appointment
-
-The following endpoints have been provisionally added to the 1.2.0 specification. These endpoints will be used in future use cases and future iterations of current use cases.
-
-* POST /Appointment/[id]
-* PUT /Appointment/[id]
-* PATCH /Appointment/[id]
-* DELETE /Appointment/[id]
-
-### ServiceRequest
-
-The following endpoints have been provisionally added to the 1.2.0 specification. These endpoints will be used in future use cases and future iterations of current use cases.
-
-* POST /Appointment/[id]
-* PUT /Appointment/[id]
-* PATCH /Appointment/[id]
-* DELETE /Appointment/[id]
+### Previous Releases
