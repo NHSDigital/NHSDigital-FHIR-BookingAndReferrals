@@ -29,7 +29,7 @@ This section describes how the primary operations used in this application work.
 | Call Assist Request  | Home AST            | Supporting AST     |
 | Mutual Aid Request   | Home AST            | Supporting AST     |
 
-### Out of area calls
+### Out of Area calls
 
 Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service Trust (AST) outside of the geographic area of the incident (the Call Receiving AST) for the following reasons:
 - The Home AST has arrangements with out of area ASTs to take their calls when needed
@@ -41,7 +41,7 @@ A Home AST may request support from a Supporting AST when they cannot send a res
 - If the Supporting AST rejects the request, the Home AST will make alternative arrangements
 - If the Supporting AST accepts the request:
     - the Supporting AST is responsible for dispatching an appropriate resource within the time frame specified by the ARP Priority code
-    - The Home AST may close the case on their CAD
+    - the Home AST may close the case on their CAD
     
 ### Mutual Aid Requests
 
