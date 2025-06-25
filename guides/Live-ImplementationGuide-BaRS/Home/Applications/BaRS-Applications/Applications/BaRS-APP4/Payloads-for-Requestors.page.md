@@ -102,7 +102,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 
 ## Validation Cancellation Payload
 
-The ability to cancel a Validation Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.3.0, text:Standard Patterns - Cancellation}}.
+The ability to cancel a Validation Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.3.0, text:Standard Patterns - Cancellation}}. A Validation can be considered a type of 'referral' when reading the guidance.
 
 <br>
 

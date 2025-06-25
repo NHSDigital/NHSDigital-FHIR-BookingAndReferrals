@@ -29,7 +29,7 @@ This section describes how the primary operations used in this application work.
 | Call Assist Request  | Home AST            | Supporting AST     |
 | Mutual Aid Request   | Home AST            | Supporting AST     |
 
-### Out of area calls
+### Out of Area calls
 
 Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service Trust (AST) outside of the geographic area of the incident (the Call Receiving AST) for the following reasons:
 - The Home AST has arrangements with out of area ASTs to take their calls when needed
@@ -41,7 +41,7 @@ A Home AST may request support from a Supporting AST when they cannot send a res
 - If the Supporting AST rejects the request, the Home AST will make alternative arrangements
 - If the Supporting AST accepts the request:
     - the Supporting AST is responsible for dispatching an appropriate resource within the time frame specified by the ARP Priority code
-    - The Home AST may close the case on their CAD
+    - the Home AST may close the case on their CAD
     
 ### Mutual Aid Requests
 
@@ -49,7 +49,7 @@ A Home AST may request support from a Supporting AST when they cannot meet all o
 - If the Supporting AST rejects the request, the Home AST will make alternative arrangements
 - If the Supporting AST accepts the request:
     - the Supporting AST is responsible for dispatching the requested resource within the time frame specified in the request
-    - The Home AST remains responsible for the case and for dispatching the resources not specified in the request
+    - the Home AST remains responsible for the case and for dispatching the resources not specified in the request
     
 Note: The BaRS Referral may be used to support single patient Mutual aid requests. It is not intended to replace processes relating to Mutual Aid Requests to support Major Incidents with multiple patients.
     
@@ -120,7 +120,7 @@ To support the workflows for this application of the standard the operations tha
 
 Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}}.
 
-The message definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
+The Message Definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
 
 In addition to that the specific workflow parameters that are required are as follows:
@@ -190,15 +190,11 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as described on the linked section, the referral **Sender** must perform a read of the referral to be cancelled, from the referral **Receiver**, prior to cancellation to ensure they are working with the most up-to date information and it has not already been actioned. This is done by performing a "GET ServiceRequest by ID" call to the **Receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked" or "completed". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:core-standardpattern-1.3.0, text:standard pattern}}.
+The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
-The message definition that defines this payload for this application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
-
-As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed, **should** be include. This is always defined within the relevant message definition.
-
-If the update-to-cancel is taking place as part of a re-referral routine, once the cancellation is complete, the new referral message can be sent. This step in the workflow would follow the same process as 'Make a referral' detailed above.
+If the update-to-cancel is taking place as part of a re-referral routine, once the cancellation is complete, the new referral request can be sent. This step in the workflow would follow the same process as 'Make a Referral' detailed above.
 
 In addition the specific workflow parameters that are required are as follows:
 

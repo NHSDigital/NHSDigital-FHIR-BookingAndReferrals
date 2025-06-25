@@ -15,7 +15,7 @@ To support the workflows for this Application of the standard the operations tha
 
 Making a referral for this Application follows the {{pagelink:core-SPComposites-1.3.0, text:standard pattern for BaRS composite operations}}.
 
-The message definition that defines this payload for this Application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
+The Message Definition that defines this payload for this Application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 
 
 
@@ -86,15 +86,13 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-SPComposites-1.3.0, text:standard pattern for BaRS composite operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the referral from the **receiver** as it may have changed locally. This is done by performing a "GET ServiceRequest by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
 
-The response to this request will be the requested ServiceRequest resource which should be checked for its current status to ensure it does not already have a status of "revoked". If not, this version of the ServiceRequest should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern}}.
+The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
-The message definition that defines this payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
+If the update-to-cancel is taking place as part of a re-referral routine, once the cancellation is complete, the new referral request can be sent. This step in the workflow would follow the same process as 'Make a Referral' detailed above.
 
-As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed. This is always defined within the relevent message definition.
-
-In addition the specific workflow parameters that are required are as follows:
+In addition, the specific workflow parameters that are required are as follows:
 
 <div class="nhsd-m-emphasis-box">
     <div class="nhsd-a-box nhsd-a-box--border-grey">
@@ -251,7 +249,7 @@ X-Correlation-Id = <GUID_00002>
 
 Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}}.
 
-The message definition that defines this payload for this Application is: [BARS Message Definition - Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-booking-request)
+The Message Definition that defines this payload for this Application is: [BARS Message Definition - Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-booking-request)
 
 In addition to that the specific workflow parameters that are required are as follows:
 
@@ -310,14 +308,12 @@ X-Correlation-Id = <GUID_00002>
 ```
 ### Cancel a Booking
 
-To cancel a booking this Application follows the {{pagelink:core-standardpattern-1.3.0, text:standard pattern for BaRS operations}} with an additional step. Before beginning the standard pattern as descbribed on the linked section, it is first necessary to retrieve the latest version of the booking from the **receiver** as it may have changed locally. This is done by performing a "GET Appointment by ID" call to the **receiving** system's corresponding API endpoint (via the BaRS proxy).
+To cancel a booking this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
 
-The response to this request will be the requested Appointment resource which should be checked for its current status to ensure it does not already have a status of "cancelled". If not, this version of the Appointment should be used when re-submitting the modified resource in the POST bundle as described in the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern}}.
+The Message Definition that defines the payload for this Application is: [BARS Message Definition - Cancel Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionbookingrequestcancelled)
 
-The message definition that defines this payload for this Application is: [BARS Message Definition - Cancel Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionbookingrequestcancelled)
+If the update-to-cancel is taking place as part of a re-book routine, once the cancellation is complete, the new booking request can be sent. This step in the workflow would follow the same process as 'Make a Booking' detailed above.
 
-
-As a general principle, when performing an update type of operation (of which cancellation is a special case), only the focus resource, any resources that are mandated due to contextual, linking or referential integrity reasons and any resources that include elements that are being changed. This is always defined within the relevent message definition.
 
 In addition the specific workflow parameters that are required are as follows:
 

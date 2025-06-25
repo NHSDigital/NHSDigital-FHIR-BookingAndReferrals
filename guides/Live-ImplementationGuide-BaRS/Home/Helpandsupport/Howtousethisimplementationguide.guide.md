@@ -1,8 +1,11 @@
 <a name="top"></a>
-## How to use this implementation guide
+## How to use this Implementation Guide
 
 This section provides a generated <a href="#P1">site map</a> of this implementation guide. 
 
+## Searching the Implementation Guide
+
+A search feature is provided in the Implementation Guide to help find, and navigate to, specific content.  Please note that results appear in date order and may reference earlier versions of the Implementation Guide.  Always check that the result navigates you to the version you need.
 
 ## Intended Audience
 
