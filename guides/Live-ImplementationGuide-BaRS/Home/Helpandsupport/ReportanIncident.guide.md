@@ -8,7 +8,7 @@ If you are using BaRS in a live environment, then follow the guidance below if y
 
 ### How to contact the National Service Desk 
 
-Email: [ssd.nationalservicedesk@nhs.net](ssd.nationalservicedesk@nhs.net)
+Email: ssd.nationalservicedesk@nhs.net
 
 Telephone: 0300 303 5035 
 
