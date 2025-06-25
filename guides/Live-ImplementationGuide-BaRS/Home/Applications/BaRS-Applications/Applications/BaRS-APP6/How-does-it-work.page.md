@@ -49,7 +49,7 @@ A Home AST may request support from a Supporting AST when they cannot meet all o
 - If the Supporting AST rejects the request, the Home AST will make alternative arrangements
 - If the Supporting AST accepts the request:
     - the Supporting AST is responsible for dispatching the requested resource within the time frame specified in the request
-    - The Home AST remains responsible for the case and for dispatching the resources not specified in the request
+    - the Home AST remains responsible for the case and for dispatching the resources not specified in the request
     
 Note: The BaRS Referral may be used to support single patient Mutual aid requests. It is not intended to replace processes relating to Mutual Aid Requests to support Major Incidents with multiple patients.
     
