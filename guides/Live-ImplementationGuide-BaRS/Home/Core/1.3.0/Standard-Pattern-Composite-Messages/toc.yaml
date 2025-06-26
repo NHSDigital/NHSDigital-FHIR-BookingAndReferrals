@@ -8,5 +8,7 @@
   filename: Message-Headers.page.md
 - name: Cancellation
   filename: Cancellation.page.md
+- name: Find Resource
+  filename: Find-Resource.page.md
 - name: Use Case Categories
   filename: Use-Case-Categories.page.md
