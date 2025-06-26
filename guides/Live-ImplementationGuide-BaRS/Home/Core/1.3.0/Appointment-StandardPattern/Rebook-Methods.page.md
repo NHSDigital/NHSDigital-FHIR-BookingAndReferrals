@@ -34,7 +34,7 @@ Alternatively, rebooking an appointment can be used outside of use-cases support
 * Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/metadata).
 * [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Slot).
 * Select a slot.
-* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, the read can be undertaken with [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment), using the {{pagelink:core-SPCancellation-1.3.0, text:patient information}}, and selecting the .id by the matching the required resource. NB: If a match cannot be performed, using this method, manual processes should be engaged.
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, the read can be undertaken with [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment), using the {{pagelink:core-SPFindResource-1.3.0, text:find resource}} workflow, and selecting the .id by the matching the required resource. NB: If a match cannot be performed, using this method, manual processes should be engaged.
 * Set the Appointment.status value to "cancelled"
 * Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 

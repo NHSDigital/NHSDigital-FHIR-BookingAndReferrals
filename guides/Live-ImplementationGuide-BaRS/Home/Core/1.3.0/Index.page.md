@@ -93,6 +93,7 @@ You will find here a set of documentation, specifications and services that desc
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPComposites-1.3.0 , text:Standard Pattern for Composites}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPMessageHeader-1.3.0 , text:Message Headers}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPCancellation-1.3.0 , text:Cancellation}}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPFindResource-1.3.0, text:Find Resource Id}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-SPUseCaseCategories-1.3.0 , text:Use Case Categories}}</br>
 &nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-1.3.0 , text:Standard Pattern - Appointments}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-StandardPattern-appointment-booking-1.3.0 , text:Booking}}</br>
