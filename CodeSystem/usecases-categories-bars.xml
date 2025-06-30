@@ -70,11 +70,11 @@
   </concept>
   <concept>
     <code value="a2t3" />
-    <display value="S&R to ED" />
+    <display value="S and R to ED" />
   </concept>
   <concept>
     <code value="a2t4" />
-    <display value="S&R to UTC" />
+    <display value="S and R to UTC" />
   </concept>
   <concept>
     <code value="a3t1" />
