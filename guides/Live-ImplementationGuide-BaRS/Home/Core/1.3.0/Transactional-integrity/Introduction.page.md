@@ -6,7 +6,7 @@ topic: Core-TransactionalIntegrity-Introduction-1.3.0
 
 Transactional integrity is employed to ensure data integrity is maintained between two parties. It helps ensure that the success or failure of a message is known and can be confirmed. 
 
-There are two existing header items for requests currently available to allow BaRS to meet transactional integrity requirements. They are listed below with their intended uses. The [BaRS API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0) contains example values for these entries.
+There are two existing header items for requests currently available to allow BaRS to meet transactional integrity requirements. They are listed below with their intended uses. The [BaRS API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0) contains example values for these entries.
 
 | Header           | Requirement  | Description                                                                                                                                   | Value                      |
 |------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|

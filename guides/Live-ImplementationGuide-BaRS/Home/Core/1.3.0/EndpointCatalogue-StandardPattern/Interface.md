@@ -4,7 +4,7 @@ topic: core-StandardPattern-Endpoint-Interface-1.3.0
 
 # Interface
 
-The Interface for managing the 3 resources relating to an "endpoint" is detailed below and is part of the [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0) for Core 1.2.0 and above. 
+The Interface for managing the 3 resources relating to an "endpoint" is detailed below and is part of the [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0) for Core 1.2.0 and above. 
 
 ## Request and Response 
 

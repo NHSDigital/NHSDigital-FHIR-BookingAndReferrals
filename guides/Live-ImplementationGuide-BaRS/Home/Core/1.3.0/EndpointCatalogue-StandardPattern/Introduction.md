@@ -27,7 +27,7 @@ This version of core is strictly a preview of what is currently in development f
 
 # Standard Pattern - Endpoints
 
-BaRS employs an endpoint catalogue to match Target Identifiers with a stored endpoint. Target Identifiers are provided in a header which is descripted in the [API Spec](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0) The following pages will describe how these entries can be managed, outside of the onboarding process.
+BaRS employs an endpoint catalogue to match Target Identifiers with a stored endpoint. Target Identifiers are provided in a header which is descripted in the [API Spec](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0) The following pages will describe how these entries can be managed, outside of the onboarding process.
 
 The BaRS endpoints will utilise not only service ids and a physical endpoint, but data describing the healthcare service, the provider of that service and the organization which manages and/or supplies the endpoint in question. This information will be stored using 3 FHIR resources which appropriately describe [Endpoints](http://hl7.org/fhir/R4/endpoint.html), [HealthcareServices](http://hl7.org/fhir/R4/healthcareservice.html) and [Organizations](http://hl7.org/fhir/R4/organization.html).
 

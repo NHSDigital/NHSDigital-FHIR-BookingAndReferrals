@@ -6,9 +6,9 @@ topic: core-StandardPattern-appointment-update-1.3.0
 
 To update an appointment:
 
-* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, the read can be undertaken with [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment), using the {{pagelink:core-SPFindResource-1.3.0, text:find resource}} workflow, and selecting the .id by the matching the required resource. NB: If a match cannot be performed, using this method, manual processes should be engaged.
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, the read can be undertaken with [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment), using the {{pagelink:core-SPFindResource-1.3.0, text:find resource}} workflow, and selecting the .id by the matching the required resource. NB: If a match cannot be performed, using this method, manual processes should be engaged.
 * Amend or append the resource as required.
-* Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
+* Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 In this example a placeholder was created, and updated when the slot is selected. This is a hypothetical scenario.
 
