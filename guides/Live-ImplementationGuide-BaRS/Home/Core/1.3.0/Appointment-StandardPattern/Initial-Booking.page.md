@@ -9,13 +9,13 @@ Below are examples of each of the described interactions. The appointment resour
 Any operations that modify an existing resource must perform a read before a write.  GET /Appointment/\{id\}
 
 ### Book
-The method for the initial booking of an appointment depends on the {{pagelink:Home/Applications/BaRS-Applications, text:Application}} specific guidance within BaRS. Within BaRS Applications, making a booking will involve building a FHIR bundle and making a POST to the [$process-message](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#post-/$process-message) endpoint. Alternatively, booking an appointment can be used outside of use-cases supported by a BaRS Application, to fulfil a generic Appointment Management Foundation workflow against the discete [booking endpoints](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#post-/Appointment), either way, the typical sequence of events is:
+The method for the initial booking of an appointment depends on the {{pagelink:Home/Applications/BaRS-Applications, text:Application}} specific guidance within BaRS. Within BaRS Applications, making a booking will involve building a FHIR bundle and making a POST to the [$process-message](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/$process-message) endpoint. Alternatively, booking an appointment can be used outside of use-cases supported by a BaRS Application, to fulfil a generic Appointment Management Foundation workflow against the discete [booking endpoints](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/Appointment), either way, the typical sequence of events is:
 
 * {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.3.0, text:Select the service}} to book an appointment with. 
-* Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/metadata).
-* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Slot).
+* Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/metadata).
+* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Slot).
 * Select a slot.
-* Send a Request to [book an appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#post-/Appointment) in that slot
+* Send a Request to [book an appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/Appointment) in that slot
 
 Request Body
 

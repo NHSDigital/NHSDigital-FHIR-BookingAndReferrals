@@ -8,7 +8,7 @@ We recommend reading the following documentation as part of the discovery stage 
 * {{pagelink:definitions_key_terms, text:Definition of key terms}}  
 * {{pagelink:design-core-1.0.7, text:BaRS Core}} 
 * {{pagelink:applications, text:BaRS Applications}}
-* [BaRS FHIR API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0)
+* [BaRS FHIR API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0)
 
 ### Onboarding
 {{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text:Onboarding}} with our platform is a self-service process. This step is required to make requests of the BaRS API and have requests forwarded to your endpoint, as a Receiver. This **must** occur on both Integration (INT) and Production environments. The {{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text: full step-by-step onboarding guide}} can be followed by any solution on either environment. 
@@ -25,7 +25,7 @@ BaRS includes several {{pagelink:applications, text:BaRS Application (use cases)
 
 
 ### API Spec
-The BaRS [API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0) provides detail of the structure of endpoints. The specification allows you to 'Try this API', calling endpoints to view anticipated responses. This is a purely technical document and must be read in conjunction with implementation guidance to build a compliant solution. 
+The BaRS [API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0) provides detail of the structure of endpoints. The specification allows you to 'Try this API', calling endpoints to view anticipated responses. This is a purely technical document and must be read in conjunction with implementation guidance to build a compliant solution. 
 
 ### Security
 All {{pagelink:core-Security-1.0.7, text:security}} is provided through our platform. There are two methods for securing interactions via BaRS API:

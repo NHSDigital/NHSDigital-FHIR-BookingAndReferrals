@@ -15,7 +15,7 @@ topic: design-core-1.3.0
 	<tr>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/1.3.0" target="_blank">v1.3.0</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.8.2</td>
-		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0" target="_blank">v1.3.0</a></td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">v1.3.0</a></td>
 	</tr>
 </tbody>
 </table>
@@ -245,7 +245,7 @@ This version of core is strictly a preview of what is currently in development f
 
 </div>
 
-BaRS employs an endpoint catalogue to match Target Identifiers with a stored endpoint. Target Identifiers are provided in a header which is descripted in the [API Spec](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0) The following pages will describe how these entries can be managed, outside of the onboarding process.
+BaRS employs an endpoint catalogue to match Target Identifiers with a stored endpoint. Target Identifiers are provided in a header which is descripted in the [API Spec](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0) The following pages will describe how these entries can be managed, outside of the onboarding process.
 
 The BaRS endpoints will utilise not only service ids and a physical endpoint, but data describing the healthcare service, the provider of that service and the organization which manages and/or supplies the endpoint in question.
 

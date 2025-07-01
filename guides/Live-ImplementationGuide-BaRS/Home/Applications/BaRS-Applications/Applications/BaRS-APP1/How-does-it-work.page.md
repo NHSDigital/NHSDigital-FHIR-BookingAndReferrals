@@ -191,7 +191,7 @@ During a referral workflow where booking is required, there are two separate pro
 
 The first part of this process involves the **sender** making a request to the **receiver** for slots that match the search criteria. This is a "searching" request that requires the response body to include a "searchset" bundle resource.
 
-The search parameters are defined <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0#api-Slots-getSlots" target="_blank">on the BaRS API specification documentation</a>.
+The search parameters are defined <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.0.7#api-Slots-getSlots" target="_blank">on the BaRS API specification documentation</a>.
 
 
 
