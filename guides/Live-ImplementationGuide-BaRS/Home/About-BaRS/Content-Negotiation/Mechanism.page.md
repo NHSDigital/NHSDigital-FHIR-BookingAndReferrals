@@ -75,7 +75,7 @@ The Use-Case-Category is a codeSystem that defines the use case for the message,
 
 #### Service
 
-The Service describes if the MessageDefinition is applicable for this service. This is something that should be implied by the query parameter for GET /MessageDefinition, which acts as a filter. This capability is already described on the <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#get-/MessageDefinition" target="_blank">Get MessageDefinition</a> page.
+The Service describes if the MessageDefinition is applicable for this service. This is something that should be implied by the query parameter for GET /MessageDefinition, which acts as a filter. This capability is already described on the <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/MessageDefinition" target="_blank">Get MessageDefinition</a> page.
 
 ### Version
 The same SemVer rules are applied to the MessageDefinition versions. It could be the case that multiple MessageDefinitions are returned and in this scenario a Sender should select the closest version to their own from a Minor Revision and Patch perspective. If a Major version difference is detected then the Sender cannot continue unless another option is available in the response. 

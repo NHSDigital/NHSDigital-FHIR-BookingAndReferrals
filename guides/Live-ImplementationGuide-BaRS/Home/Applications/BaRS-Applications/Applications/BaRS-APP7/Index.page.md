@@ -22,9 +22,9 @@ topic: Application7
 <tbody>
 	<tr>
 		<td>Application 7 v1.0.0-alpha.4</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.8.2" target="_blank">v1.0.x</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.9.0</td>
-		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">v1.0.0</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.9.0" target="_blank">v1.0.x</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.9.0" target="_blank">v1.9.0</td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">v1.3.0</a></td>
 	</tr>
 </tbody>
 </table>

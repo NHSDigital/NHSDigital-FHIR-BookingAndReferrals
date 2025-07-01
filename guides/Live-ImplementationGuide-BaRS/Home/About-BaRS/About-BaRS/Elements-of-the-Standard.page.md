@@ -10,7 +10,7 @@ BaRS documentation is as follows:
 |----------------------------------|------------------------------------------------------------------------------------------------------------|
 | [BaRS homepage]( https://digital.nhs.uk/services/booking-and-referral-standard)                 | An overview of the BaRS   programme, the benefits of the standard and status of supplier development       |
 | Implementation guide (this site) | You will need to use both the BaRS Core page and the BaRS Applications page specific to your use case. |
-| [API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0)               | The specification for integrating   with optional BaRS central infrastructure                                      
+| [API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0)               | The specification for integrating   with optional BaRS central infrastructure                                      
 
 
  

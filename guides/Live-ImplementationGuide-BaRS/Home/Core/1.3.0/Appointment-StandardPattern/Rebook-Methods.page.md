@@ -31,12 +31,12 @@ The method for the subsequent booking of an appointment depends on the Applicati
 Alternatively, rebooking an appointment can be used outside of use-cases supported by a BaRS Application, to fulfil a generic Appointment workflow, either way, the typical sequence of events using PUT or POST is:
 
 * {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.3.0, text:Select the service}}  to book an appointment with. 
-* Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/metadata).
-* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Slot).
+* Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/metadata).
+* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Slot).
 * Select a slot.
-* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, the read can be undertaken with [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment), using the {{pagelink:core-SPFindResource-1.3.0, text:find resource}} workflow, and selecting the .id by the matching the required resource. NB: If a match cannot be performed, using this method, manual processes should be engaged.
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, the read can be undertaken with [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment), using the {{pagelink:core-SPFindResource-1.3.0, text:find resource}} workflow, and selecting the .id by the matching the required resource. NB: If a match cannot be performed, using this method, manual processes should be engaged.
 * Set the Appointment.status value to "cancelled"
-* Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
+* Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 Request Body
 
@@ -79,12 +79,12 @@ Request Body
 Using PATCH:
 
 * {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.3.0, text:Select the service}}  to book an appointment with. 
-* Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/metadata).
-* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Slot).
+* Confirm BaRS [Capabilities](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/metadata).
+* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Slot).
 * Select a slot.
-* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 * Set the Appointment.status value to "cancelled"
-* Perform a [PATCH](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#patch-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
+* Perform a [PATCH](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#patch-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 ```json
 {
