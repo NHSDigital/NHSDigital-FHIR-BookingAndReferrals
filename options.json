@@ -1,6 +1,6 @@
 {
     "strict-validation": false,
-    "ignore-folders": [],
+    "ignore-folders": ["./BaRS-Images"],
     "ignore-files": [],
 	"error-if-metaProfile-present": false
 }
