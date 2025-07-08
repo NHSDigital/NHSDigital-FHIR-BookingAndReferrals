@@ -1,6 +1,6 @@
 {
     "strict-validation": false,
-    "ignore-folders": ["/BaRS-Images"],
+    "ignore-folders": ["https://github.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/tree/refs/heads/Add-Options.Json-File/BaRS-Images"],
     "ignore-files": [],
 	"error-if-metaProfile-present": false
 }
