@@ -9,7 +9,7 @@
     "BaRS-Images/SequenceDiagrams",
     "BaRS-Images/TransactionIntegrity",
     "BaRS-Images/Versioning",
-    "/BaRS-Images/WorkFlows"
+    "BaRS-Images/WorkFlows"
     ],
     "ignore-files": [],
 	"error-if-metaProfile-present": false
