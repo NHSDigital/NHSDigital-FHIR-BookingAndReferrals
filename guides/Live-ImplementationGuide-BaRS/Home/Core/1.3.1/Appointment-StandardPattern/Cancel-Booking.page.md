@@ -4,17 +4,19 @@ topic: core-StandardPattern-appointment-cancel-1.3.1
 
 ### Cancel
 
-To cancel an appointment:
+Cancellation is documented for completeness. The technical functionality for cancellation mirrors that of {{pagelink:core-StandardPattern-appointment-update-1.3.1, text:Update}} booking.
 
-* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, the read can be undertaken with [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment), using the {{pagelink:core-SPFindResource-1.3.1, text:find resource}} workflow, and selecting the .id by the matching the required resource. NB: If a match cannot be performed, using this method, manual processes should be engaged.
-* Set the Appointment.status value to "cancelled"
+Steps to cancel:
+
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, a search of the Registry can be undertaken with [GET DocumentReference](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/DocumentReference) (searchset bundle) and selecting the Service and Appointment.id to create the read request of the Appointment resource by .id. NB: If a match cannot be performed using this method, the process of cancelling must be done manually.
+* Set the Appointment.status value to "cancelled". NB - It is also permissible to update .reasonCode in the request but no other element.
 * Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 resource returned:
 ```json
 {
 	"resourceType": "Appointment",
-    "id":"aca94bdb-2e38-4399-9ece-2ba083ce65b5"
+    "id":"aca94bdb-2e38-4399-9ece-2ba083ce65b5",
 	"meta": {
 		"lastUpdated": "2024-01-11T15:01:30.8185338+00:00",
 		"profile": [
@@ -46,7 +48,7 @@ Request body:
 ```json
 {
 	"resourceType": "Appointment",
-    "id":"aca94bdb-2e38-4399-9ece-2ba083ce65b5"
+    "id":"aca94bdb-2e38-4399-9ece-2ba083ce65b5",
 	"meta": {
 		"lastUpdated": "2024-01-11T16:01:30.8185338+00:00",
 		"profile": [
@@ -109,4 +111,4 @@ Request body:
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Cancel.drawio.svg" ></img>
 
-Once the appointment is cancelled, the Receiver is responsible for managing the pointer in the central Registry, as described {{pagelink:core-StandardPattern-document-reference-1.3.1, text: here}}.
+Once the appointment is cancelled, the Receiver is responsible for managing the pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-1.3.1, text: Document Reference Standard Pattern}}.

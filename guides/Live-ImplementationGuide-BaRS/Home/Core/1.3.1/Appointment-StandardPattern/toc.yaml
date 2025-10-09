@@ -8,6 +8,7 @@
   filename: Update-Existing-Booking.page.md
 - name: Cancel a Booking
   filename: Cancel-Booking.page.md
-- name: Rebook Methods 
+- name: Reschedule a Booking 
+  filename: Reschedule-Existing-Booking.page.md
+- name: Rebook Methods
   filename: Rebook-Methods.page.md
-
