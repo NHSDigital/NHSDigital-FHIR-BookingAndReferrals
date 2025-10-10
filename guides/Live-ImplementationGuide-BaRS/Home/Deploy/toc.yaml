@@ -1,2 +1,4 @@
 - name: Deploy
   filename: Deploy
+- name: Technical deployment
+  filename: Technical deployment
