@@ -92,7 +92,7 @@ Note: The BaRS Referral may be used to support single patient Mutual aid request
 - The referral Receiver's CAD will create a new case (Encounter) on receipt of the BaRS Referral and populate it with the patient and clinical details provided in the referral
 
 ### Acknowledge Receipt
-- The referral Receiver will send an acknowledgement back to the referral Sender, when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.3.0, text:failure scenarios}} for more detail.
+- The referral Receiver will send an acknowledgement back to the referral Sender, when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.3.1, text:failure scenarios}} for more detail.
 
 ### Status Update (Referral Response)
 - The referral Receiver will send a series of status updates back to the referral Sender, to support tracking the progress of the case.
@@ -100,7 +100,7 @@ Note: The BaRS Referral may be used to support single patient Mutual aid request
 ### Continue updates
 - If additional or changed information about the case is captured by the referral Sender, subsequent to sending the BaRS Referral, they may send a BaRS Referral Update to ensure that the referral Receiver has the most up to date information.
 - If the referral Sender needs to cancel a Referral, for example the patient calls back and says they do not require an ambulance, they need to send a Cancellation.
-- On receipt of a Referral Update, the referral Receiver will send an acknowledgement back to the Sending AST on when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.3.0, text:failure scenarios}} for more detail.
+- On receipt of a Referral Update, the referral Receiver will send an acknowledgement back to the Sending AST on when it has successfully processed the payload. If it fails to do this it will send a BaRS error code. See {{pagelink:core-failure_scenarios-1.3.1, text:failure scenarios}} for more detail.
 
 ### Manage Stack
 - The referral Receiver will manage the case in accordance with the Ambulance Response Programme (ARP) Priority Level. This may include:
@@ -118,7 +118,7 @@ To support the workflows for this application of the standard the operations tha
 
 ## Make a Referral
 
-Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.3.1, text:standard pattern for BaRS operations}}.
 
 The Message Definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -190,7 +190,7 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
+To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.1, text:standard pattern for BaRS cancellation}}. 
 
 The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 

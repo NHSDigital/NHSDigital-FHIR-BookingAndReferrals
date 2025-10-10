@@ -16,6 +16,6 @@ Each current and available version of Core can be found below.
 
 <hr>
 
-{{pagelink:design-core-1.3.0, text:1.3.0}}
+{{pagelink:design-core-1.3.1, text:1.3.1}}
 
 <hr>

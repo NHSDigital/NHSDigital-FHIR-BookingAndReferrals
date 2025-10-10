@@ -78,7 +78,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.3.1, text:standard pattern for BaRS operations}}.
 
 The Message Definition that defines this payload for this Application is: [BARS Message Definition - Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-booking-request)
 
@@ -146,7 +146,7 @@ This diagram illustrates the workflow and interactions of a booking cancellation
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/BookingCancel-APP7-MVP-1.0.0-alpha.svg" width="1000"></img></a>
 
-To cancel a booking this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
+To cancel a booking this Application follows the {{pagelink:core-SPCancellation-1.3.1, text:standard pattern for BaRS cancellation}}. 
 
 The Message Definition that defines the payload for this Application is: [BARS Message Definition - Cancel Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionbookingrequestcancelled)
 
