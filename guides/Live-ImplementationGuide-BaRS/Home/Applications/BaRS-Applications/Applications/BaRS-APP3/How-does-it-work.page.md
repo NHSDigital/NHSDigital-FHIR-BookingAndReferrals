@@ -30,7 +30,7 @@ To support the workflows for this application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.3.1, text:standard pattern for BaRS operations}}.
 
 The Message Definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -102,7 +102,7 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
+To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.1, text:standard pattern for BaRS cancellation}}. 
 
 The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 

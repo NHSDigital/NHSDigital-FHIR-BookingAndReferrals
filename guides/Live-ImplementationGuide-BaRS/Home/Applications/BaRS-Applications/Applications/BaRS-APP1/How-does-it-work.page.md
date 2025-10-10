@@ -13,7 +13,7 @@ To support the workflows for this Application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this Application follows the {{pagelink:core-SPComposites-1.3.0, text:standard pattern for BaRS composite operations}}.
+Making a referral for this Application follows the {{pagelink:core-SPComposites-1.3.1, text:standard pattern for BaRS composite operations}}.
 
 The Message Definition that defines this payload for this Application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 
@@ -86,7 +86,7 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
+To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.1, text:standard pattern for BaRS cancellation}}. 
 
 The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
@@ -247,7 +247,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.3.0, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.3.1, text:standard pattern for BaRS operations}}.
 
 The Message Definition that defines this payload for this Application is: [BARS Message Definition - Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-booking-request)
 
@@ -308,7 +308,7 @@ X-Correlation-Id = <GUID_00002>
 ```
 ### Cancel a Booking
 
-To cancel a booking this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
+To cancel a booking this Application follows the {{pagelink:core-SPCancellation-1.3.1, text:standard pattern for BaRS cancellation}}. 
 
 The Message Definition that defines the payload for this Application is: [BARS Message Definition - Cancel Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-barsmessagedefinitionbookingrequestcancelled)
 
