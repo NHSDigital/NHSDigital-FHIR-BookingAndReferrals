@@ -49,7 +49,7 @@ Once all requested tests have been completed, the Validation Report can be downl
 
 - from the top menu, select 'Download Reports'
 - then click on the button 'Download Reports' (this packages the report and makes it available to download locally)
-- from the top me, select 'Receiver Reports'
+- from the top menu, select 'Receiver Reports'
 - click on the hyperlink of the required report to download locally (.zip format)
 
 ### Scenarios
