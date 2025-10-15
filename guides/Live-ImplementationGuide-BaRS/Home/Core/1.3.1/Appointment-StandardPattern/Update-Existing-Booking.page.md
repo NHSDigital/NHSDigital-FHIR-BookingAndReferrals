@@ -6,8 +6,8 @@ topic: core-StandardPattern-appointment-update-1.3.1
 
 Steps to update:
 
-* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, a search of the Registry can be undertaken with [GET DocumentReference](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/DocumentReference) (searchset bundle) and selecting the Service and Appointment.id to create the read request of the Appointment resource by .id. NB: If a match cannot be performed using this method, the processing of updating must be done manually.
-* Update the Appointment resource as required. There is only currently support to alter .status and .reasonCode. NB: The .slot element of the resource must not be updated, if an alternative slot is required either the {{pagelink:core-StandardPattern-appointment-reschedule-1.3.1, text:Reschedule}} or {{pagelink:core-StandardPattern-appointment-rebook-1.3.1, text:Rebook}} processes must be followed.
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment/-id-) operation using the .id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, a search of the Registry can be undertaken following the {{pagelink:core-StandardPattern-document-reference-Sender-1.3.1, text: Document Reference Standard Pattern - Sender}}. NB: If a match cannot be obtained using this method the process of updating must be performed manually
+* Update the Appointment resource as required. There is only currently support to alter .status and .reasonCode. NB: The .slot element of the resource must not be updated, if an alternative slot is required either the {{pagelink:core-StandardPattern-appointment-reschedule-1.3.1, text:Reschedule}} or {{pagelink:core-StandardPattern-appointment-rebook-1.3.1, text:Rebook}} processes must be followed
 * Perform a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#put-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
 
 resource returned:
@@ -79,5 +79,3 @@ Request Body
 }
 ```
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Update.drawio.svg" ></img>
-
-Once the appointment is updated, the Receiver is responsible for managing the pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-1.3.1, text: Document Reference Standard Pattern}}.
