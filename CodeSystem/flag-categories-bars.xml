@@ -60,4 +60,8 @@
     <code value="API" />
     <display value="Additional Patient Information" />
   </concept>
+  <concept>
+    <code value="CW" />
+    <display value="Call Warning" />
+  </concept>
 </CodeSystem>
