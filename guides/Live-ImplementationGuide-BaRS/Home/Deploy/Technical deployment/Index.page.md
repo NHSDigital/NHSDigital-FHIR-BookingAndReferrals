@@ -1,6 +1,5 @@
 ---
 topic: technical deployment
 ---
-#  Index
 
 
