@@ -10,12 +10,12 @@ topic: core-StandardPattern-document-reference-Introduction-1.3.1
 
 ## Introduction
 
-In version 1.1.0 of the BaRS API Specification, functionality was added to accommodate the use of pointers (DocumentReference resources), to locate existing bookings and referrals.
+There is functionality in BaRS to accommodate the use of pointers (DocumentReference resources), to locate existing bookings and referrals from a central Registy.
 
-The FHIR DocumentReference resource allows you to reference and locate clinical documents or resources. This section will walk you through the process of using a FHIR DocumentReference to find a resource's location and retrieve it.
+This section will walk you through the process of using FHIR DocumentReferences, from the central Registry, to find and retrieve bookings and referrals held at Receiver services.
 
-The BaRS API acts as a gateway to the National Record Locator FHIR API for BaRS enabled Services. In the image below the BaRS API is interacted with by Consumers and Producers.
-* Consumer - Queries the API for existing DocumentReferences for use in finding existing Bookings and Referrals. This is usually a BaRS [Sender](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=current#Core-functionality-requirements).
-* Producer - Posts and maintains DocumentReferences for Bookings and Referrals that they have received. This is invariably the BaRS [Receiver](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=current#Core-functionality-requirements).
+The BaRS API acts as a gateway to the National Record Locator (NRL) FHIR API, for BaRS enabled Services. In the image below the BaRS API is called by Consumers and Producers.
+* Consumer - Queries the API for existing DocumentReferences for use in finding existing Bookings and Referrals. Usually a BaRS [Sender](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/1.3.0/Core-Functionality-Requirements).
+* Producer - Posts and maintains DocumentReferences for Bookings and Referrals that they have received. Usually a BaRS [Receiver](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/1.3.0/Core-Functionality-Requirements).
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/NRLF Via BaRS-1.1.0.svg" width="1200"></img>
