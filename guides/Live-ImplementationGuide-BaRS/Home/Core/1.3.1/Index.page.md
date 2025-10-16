@@ -22,7 +22,7 @@ topic: design-core-1.3.1
 </div>
 
 
-# BaRS Core 1.3.0
+# BaRS Core 1.3.1
 
 BaRS consists of BaRS Core that provides a core set of functionality and BaRS Applications that provide distinct functionality for each use case.
 
@@ -211,12 +211,13 @@ For more detail please visit the {{pagelink:Core-StandardPattern-1.3.1, text: St
 
 # Standard Pattern - Appointment
 
-There are 4 capabilities that are required surrounding appointments. This section will provide information on how to meet them.
+The key capabilities surrounding appointments are listed below. This section will provide information on how to meet them.
 
-* The ability to book an appointment.
-* The ability to cancel an appointment.
-* The ability to update an appointment.
-* The ability to rebook an appointment.
+* book 
+* update
+* cancel
+* reschedule
+* rebook
 
 For more detail please visit the {{pagelink:core-StandardPattern-appointment-1.3.1, text: Appointment Standard Pattern}} section.
 
