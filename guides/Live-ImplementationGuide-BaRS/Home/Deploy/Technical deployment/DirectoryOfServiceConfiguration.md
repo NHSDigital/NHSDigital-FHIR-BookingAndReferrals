@@ -1,5 +1,7 @@
 ## {{page-title}}
 
+**Note:** <span style="color:red">**Receiver Firewall Amendments**</span> - Requests from the BaRS API Proxy will originate from **INT** on **35.197.254.55** & **35.246.55.143** and **PROD** on **34.89.0.111** & **34.89.69.6**.
+
 If the provider operates within Urgent and Emergency Care (UEC), they are likely to have a UEC Directory of Services (DoS) entry. DoS leads must configure Service Providers who wish to use BaRS in the standard way, as the service dictates, but their DoS ID will also need to exist in the BaRS Endpoint Catalogue.
 Steps to configure the provider on the BaRS Endpoint Catalogue:-
 - note the Service ID on DoS

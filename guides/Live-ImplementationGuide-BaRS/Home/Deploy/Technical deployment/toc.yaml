@@ -1,6 +1,8 @@
 - name: Index
   filename: Index.page.md
 - name: Technical deployment
-  filename: Technical deployment.page.md
+  filename: Technicaldeployment.page.md
 - name: DoS Configuration
   filename: DirectoryOfServiceConfiguration.md
+- name: Firewall exceptions
+  filename: Firewallexceptions.md
