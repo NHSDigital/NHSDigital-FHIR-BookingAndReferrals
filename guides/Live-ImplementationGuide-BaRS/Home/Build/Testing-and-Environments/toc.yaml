@@ -4,5 +4,9 @@
   filename: Environments.page.md
 - name: Onboarding
   filename: Onboarding.page.md
+- name: Sender Onboarding
+  filename: SenderOnboarding.page.md
+- name: Receiver Onboarding
+  filename: ReceiverOnboarding.page.md
 - name: TKW
   filename: TKW.page.md
