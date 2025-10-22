@@ -22,6 +22,17 @@ resource returned:
 		]
 	},
 	"status": "booked",
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "165342003",
+					"display": "Patient declined laboratory test (situation)"
+				}
+			]
+		}
+	],
 	"description": "Reason for calling",
 	"created": "2024-10-08T15:01:30+00:00",
 	"participant": [
@@ -53,8 +64,8 @@ Request Body
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "65363002",
-					"display": "Otitis media (disorder)"
+					"code": "165332000",
+					"display": "Laboratory test requested (situation)"
 				}
 			]
 		}

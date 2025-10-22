@@ -213,6 +213,7 @@ For more detail please visit the {{pagelink:Core-StandardPattern-1.3.1, text: St
 
 The key capabilities surrounding appointments are listed below. This section will provide information on how to meet them.
 
+* view 
 * book 
 * update
 * cancel

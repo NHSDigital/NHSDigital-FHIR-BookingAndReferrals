@@ -83,6 +83,16 @@ The third identifier (currently optional) relates to the product-id, system '*ht
 	}
 ```
 
+**context:** MUST include a period set to the Appointment start and end times.
+
+```json
+"context": {
+  "period": {
+    "start": "2025-02-12T12:30:30+00:00",
+    "end": "2025-02-12T12:40:30+00:00"
+  }
+}
+```
 
 ### Step 3: Save and Transmit the DocumentReference (pointer)
 Once all the necessary fields are populated, perform a [POST](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/DocumentReference) of the DocumentReference to the /DocumentReference endpoint on the BaRS proxy. This will create a DocumentReference in the NRL.

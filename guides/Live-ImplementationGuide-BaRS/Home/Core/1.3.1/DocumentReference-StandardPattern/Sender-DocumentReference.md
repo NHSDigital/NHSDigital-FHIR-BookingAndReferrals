@@ -82,6 +82,17 @@ The third identifier (currently optional) relates to the product-id, system '*ht
 	}
 ```
 
+**context:** includes a period set to the Appointment start and end times.
+
+```json
+"context": {
+  "period": {
+    "start": "2025-02-12T12:30:30+00:00",
+    "end": "2025-02-12T12:40:30+00:00"
+  }
+}
+```
+
 ### Step 4: Retrieve the booking or referral
 The booking or referral resource can be retrieved by making a GET request for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/ServiceRequest/-id-). 
 
@@ -89,7 +100,7 @@ The two key values required to make the request are the first two identifiers in
 
 For BaRS, a GET of the relevant resource using the Target Identifiers. In this simplified example, the identifier containing the service id is used in the NHSD-Target-Identifier header, instructing the BaRS proxy to route to the request to that target  **note**: The header is not base64Encoded in this example:
 
-```bash
+```
 cURL --location 'https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4/Appointment/8c63d621-4d86-4f57-8699-e8e22d49935d' \
 --header 'X-Request-ID: {{X-Request-ID}}' \
 --header 'X-Correlation-ID: {{X-Correlation-ID}}' \
