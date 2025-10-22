@@ -13,7 +13,16 @@ Steps to Reschedule:
 * Select a new slot
 * Update the resource with the new slot. NB: Only the .slot element of the resource must be updated
 * Perform a [PATCH](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#patch-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
-* Once processed, the Receiver of the booking must [update (PUT)](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#put-/DocumentReference/-id-) the pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-Receiver-1.3.1, text: Document Reference Standard Pattern - Receiver}}
+* Once processed, the Receiver of the booking must [update (PUT)](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#put-/DocumentReference/-id-) the pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-Receiver-1.3.1, text: Document Reference Standard Pattern - Receiver}}. The principle update to the pointer is to change the .context element to alter the slot time - 
+
+```json
+"context": {
+  "period": {
+    "start": "2025-02-12T12:30:30+00:00",
+    "end": "2025-02-12T12:40:30+00:00"
+  }
+}
+```
 
 
 In this example the Appointment resource is with the existing slot, and updated with the newly selected slot. 
@@ -82,4 +91,4 @@ Request Body
 	]
 }
 ```
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Update.drawio.svg" ></img>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_Reschedule.drawio.svg" ></img>

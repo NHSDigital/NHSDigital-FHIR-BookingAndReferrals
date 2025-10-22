@@ -27,7 +27,7 @@ topic: Application5
 
 </div>
 
-
+Any suppliers building to this application (Application 5) must engage with NHS England's Pharmacy First/DSIC teams prior to building application 5.
 
 ## Use Cases Supported
 
