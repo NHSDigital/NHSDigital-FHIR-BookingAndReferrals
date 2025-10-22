@@ -23,6 +23,7 @@ The Appointment Management Foundation is based on {{pagelink:design-core-1.3.1, 
 The key functions surrounding appointment bookings are listed below. This section will provide information on how to meet them using the Appointment Resource.
 
 The ability to -
+* view
 * book 
 * update
 * cancel
