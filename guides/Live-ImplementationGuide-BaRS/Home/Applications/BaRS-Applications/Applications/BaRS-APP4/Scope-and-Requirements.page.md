@@ -72,6 +72,7 @@ For this application we will be referring to the actors as 'Requester' and the '
 **Validation Request**
 * The Responder **must** accept the Validation Request regardless of whether the patient is known to the service provider
 * The Responder **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number
+* Where a national identifier is included, it **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified' or 'Number present but not traced', otherwise, the referral Sender **must <ins>not</ins>** include it in the request
 * The Requester **must** send incident location information as part of their request
 * The Requester **must** send scene safety information as part of their request
 * Any new or existing safeguarding concern, recorded as part of the assessment, **must** be included in the Validation Request

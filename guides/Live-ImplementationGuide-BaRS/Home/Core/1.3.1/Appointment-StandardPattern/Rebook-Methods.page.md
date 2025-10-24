@@ -13,7 +13,7 @@ Steps to perform a rebook:
 
 * {{pagelink:core-StandardPattern-appointment-cancel-1.3.1, text:Cancel existing booking}}
 * {{pagelink:core-StandardPattern-appointment-booking-1.3.1, text:Rebook, following the initial booking workflow}}
-* Once processed, the Receiver of the new booking must makes a [POST](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/DocumentReference) request to create a new pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-Receiver-1.3.1, text: Document Reference Standard Pattern - Receiver}}
+* Once processed, the Receiver of the new booking must make a [POST](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/DocumentReference) request to create a new pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-Receiver-1.3.1, text: Document Reference Standard Pattern - Receiver}}
 
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/SequenceDiagrams/BaRS_Foundation_ReBook.drawio.svg" ></img>

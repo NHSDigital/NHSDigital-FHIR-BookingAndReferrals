@@ -135,7 +135,7 @@ The search parameters to be used are as follows:
                     </tr>
                     <tr>
                         <td>Blood Pressure Check Service</td>
-                        <td><b>Use Service Type ID 149 - Pharmacy Blood Pressure Check</b></td>
+                        <td><b>Use Service Type ID 148 - Pharmacy Blood Pressure Check</b></td>
                         <td>This service is not time critical and so all nearest services can be displayed to the user.<br>Ensure the display clearly shows:</br><li>The opening times, to allow the user to provide opening times to the patient so that they can go to the pharmacy when it is open.</li>
 <li>The phone number for the pharmacy, so the user can give this to the patient in case they want to call and pre-arrange when to come in.</li>
 						</td>

@@ -79,7 +79,7 @@ The payloads and workflow have been designed to support these services. Other {{
 **Booking** 
 * The booking Receiver **must** accept the booking request regardless of whether the patient is not known to the service provider
 * The booking Receiver **must** accept potential patients who do <ins>not</ins> have a national validated identifier e.g. NHS Number.
-* Where a national indentifier is included, it **must** be 'traced and verified', otherwise, the referral Sender **must** <ins>not</ins> include the national indentifer in the request
+* Where a national identifier is included, it **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified' or 'Number present but not traced', otherwise, the referral Sender **must <ins>not</ins>** include it in the request
 * Where the booking was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.3.1, text:failure scenarios}} for more detail.
 * Where the booking was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.3.1, text:failure scenarios}} for more detail.
 * The booking Sender **must** send accompanying clinical information in a BaRS referral request
@@ -104,7 +104,7 @@ The payloads and workflow have been designed to support these services. Other {{
 **Referral** 
 * The referral Receiver **must** accept the referral request regardless of whether the patient is not known to the service provider
 * The referral Receiver **must** accept potential patients who do <ins>not</ins> have a national validated identifier e.g. NHS Number.
-* Where a national indentifer is included, it **must** be 'traced and verified', otherwise, the referral Sender **must** <ins>not</ins> include in the request
+* Where a national identifier is included, it **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified' or 'Number present but not traced', otherwise, the referral Sender **must <ins>not</ins>** include it in the request
 * Any new or existing safeguarding concern, recorded as part of the assessment, **must** be included in the referral Sender's request
 * The referral Receiver **must** clearly identify any included safeguarding concern to the end user
 * The referral Receiver **must** accurately represent information made by the Sender to the end user
