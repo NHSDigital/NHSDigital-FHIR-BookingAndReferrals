@@ -19,7 +19,7 @@ topic: Application4
 	<tr>
 		<td>Application 4 v2.0.0</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.8.2" target="_blank">v1.0.x</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.10s.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.10.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.0.7" target="_blank">v1.0.0</a></td>
 	</tr>
 </tbody>
