@@ -49,6 +49,7 @@ The payloads and workflow have been designed to support these services. Other {{
 **Referral Request**
 * The referral Receiver **must** accept the referral request regardless of whether the patient is known to the service provider
 * The referral Receiver **must** accept potential patients who do **<ins>not</ins>** have a national validated identifier e.g. NHS Number.
+* Where a national identifier is included, it **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified' or 'Number present but not traced', otherwise, the referral Sender **must <ins>not</ins>** include it in the request
 * The referral Sender **must** send incident location information as part of their request
 * The referral Sender **should** send scene safety information as part of their request
 * Any new or existing safeguarding concern, recorded as part of the assessment, **must** be included in the referral Sender's request
