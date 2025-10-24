@@ -18,7 +18,7 @@ If undertaking a booking within the context of an Application, the guidance stat
 * [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/Slot)
 * Select a slot
 * Perform a [POST](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/Appointment) operation to complete the booking NB: the returned Appointment.id for future operations
-* Once processed, the Receiver of the booking must makes a [POST](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/DocumentReference) request to create a pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-Receiver-1.3.1, text: Document Reference Standard Pattern - Receiver}}
+* Once processed, the Receiver of the booking must make a [POST](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#post-/DocumentReference) request to create a pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-Receiver-1.3.1, text: Document Reference Standard Pattern - Receiver}}
 
 Request Body
 
