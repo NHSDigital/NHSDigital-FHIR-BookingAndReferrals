@@ -6,7 +6,7 @@ topic: prereleases
 
 This section contains implementation guides for applications that are currently in a pre-release state.
 
-They are offered as a preview of a developing guide for information only. They are not intended to be used until the completed v1.0.0 version of a guide is released<p> If you are interested in developing a BaRS compliant solution right now for a use case covered by one of these guides, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch
+They are offered as a preview of a developing guide for information only. They are not intended to be used until the completed v1.0.0 version of a guide is released.<p> If you are interested in developing a BaRS compliant solution right now for a use case covered by one of these guides, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch.
 
 These guides are designed to be used in conjunction with the documentation for {{pagelink:design-core}}.
 
@@ -14,7 +14,7 @@ These guides are designed to be used in conjunction with the documentation for {
 
 | Application  |  Use Cases  | Current Release | API Specification | Core Version |
 | ----------------------------------------------------------------------------|--------------------------------------------------------------- | --------------- | --------------- | --------------- |    
-| {{pagelink:application6, text: Referrals into an Ambulance Service Trust (Application 6)}} | <p>CAD to CAD Out of Area Referral<br>CAD to CAD Call Assist Request<br>CAD to CAD Mutual Aid Request | 1.0.0-beta.5    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">API Spec v1.3.0 and above</a>  | {{pagelink:design-core-1.1.4, text:Core v1.3.0 and above}} |
+| {{pagelink:application6, text: Referrals into an Ambulance Service Trust (Application 6)}} | <p>CAD to CAD Out of Area Referral<br>CAD to CAD Call Assist Request<br>CAD to CAD Mutual Aid Request | 1.0.0-beta.6    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">API Spec v1.3.0 and above</a>  | {{pagelink:design-core-1.1.4, text:Core v1.3.0 and above}} |
 | {{pagelink:application7, text: Bookings into GP Practice (Application 7)}} | <p>Appointments for Patient facing services into GP Practice | 1.0.0-alpha.4    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">API Spec v1.3.0 and above</a>  | {{pagelink:design-core-1.1.4, text:Core v1.3.0 and above}} |
 
 

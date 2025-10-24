@@ -16,6 +16,7 @@ Before starting implementation, we recommend reading the following information:
 <br>
 <hr>
 <br>
+
 The implementation guide is divided into sections:
 
 * {{pagelink:about_bars}} provides essential background and guiding principles along with prerequisites
