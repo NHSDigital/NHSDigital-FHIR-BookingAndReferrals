@@ -1,67 +1,8 @@
 # {{page-title}}
 
-The NHS Booking and Referral standard (known as BaRS) is a **framework standard** for interoperability.
-
-- BaRS offers a **universal** standard way to **digitise workflows** that support all cross service patient journeys in the NHS
-- It is based on [FHIR R4]( https://hl7.org/fhir/R4/) and fully supports [UK Core]( https://simplifier.net/hl7fhirukcorer4)
-- It is a set of instructions, rules and guidance on how to use the building blocks of FHIR to **digitise workflows**
-- This provides a **framework** for suppliers to build solutions in a way that **guarantees compatibility**
-
-The majority of cross service flows in the NHS can be loosely defined as referrals however, there are many more formal definitions of referrals and BaRS is intended to support all of them and more. The primary goal is to create a framework that suppliers can operate within to share information about a patient, with some sort of directive or request for further care or tasks. This can optionally be supported by an appointment (e.g. the reservation of resource for an event at a specific time/place). 
-
-
-## Summary of the key features
-
-In order to achieve this, BaRS has adopted the approach of standardising everything that can and should be standardised whilst creating a safe space for solutions to have the necessary flexibility to support all flows whilst maintaining compatibility.
-
-There are three main "layers" that make up the framework within BaRS: 
-
-The **first** is the transport layer (referred to as BaRS Core). This is all the things that define the way two systems "talk" to each other and this layer is absolutely standardised. All systems will implement these things exactly the same way. 
-
-**Second** there is the "workflow" layer. This allows a specific BaRS compliant solution to support a particular patient journey. The *way* a workflow is articulated is standardised and each particular workflow is made up of a combination of underlying standard operations (defined in the "transport layer") in a particular sequence.
-
-**Third** there is the Payload layer. The "payloads" are collections of FHIR resources that make up the set of information that is required for the receiving system to complete or deliver the intended service or task that is being requested.
-
-The workflow and payload elements can be predefined or completely dynamic, enabled by the inbuilt content negotiation mechanism, as required by the needs of each specific use case and the sophistication of the systems implementing compliant solutions.
-
-The documentation for BaRS is separated into three groups (or "products"):
-
-- {{pagelink:design-core-1.0.7}} is the foundation containing all the things *everyone* has to do regardless of what flows BaRS is being used to support
-
-- {{pagelink:Applications}}, *apply* the standard to a specific problem and build on this to support specific use cases
-
-- {{pagelink:prereleases}}, this is the same as above but for applications that are in a *pre-release* state, so not generally available until private/public beta is complete.
-
-<br>
-
-## Foundation Principles
-
-During the design and development of the standard, all key decisions are being tested against a set of foundation principles. These were set out at the beginning as a way to ensure that the vision for BaRS is delivered and all decisions are guided by this vision.
-
-**Low Barrier to Entry**
-
-There is little point for a standard with the ambition and scope of BaRS being so difficult to implement that no one actually does. Therefore all decisions are made with the intention of making it as easy as possible for **all** suppliers to build solutions quickly and easily.
-
-**Any-to-Any Connectivity**
-
-From the beginning it has been very important to ensure that all solutions are easily scalable and it is possible to interoperate with another system without any prior knowledge or pre-configuration inplace. So that all interactions are:
-
-- live and "on-the-fly"
-- all information is available in realtime from the source
-- there is no prior knowledge required for transmission
-- there is no requirement for anything to use "point-to-point" interactions (although this approach is supported when approriate)
-
-**Universality**
-
-The primary vision for BaRS has always been to create one standard way of supporting movement of patients and their information accross services. Therefore all decisions have this idea at their heart. Research has allowed us to model the primary, high level steps as a sequence of discrete uncoupled processes that are the same every time these flows happen. 
-
-Additionally, in order to support all possible variations of these flows, the receiver *must* dictate the "payload". 
-
-Rather than the traditional approach of the sender sending everything they know, for the reciever to have to filter out everything they do not need to know, the reciever gets to state what they need to know to do the thing that is being requested of them. No more, no less.
-
-Finally, all decisions are tested against as many obscure and exotic "what-if" scenarios as possible. The intention is to avoid building a standard that only works in one care setting but not another.
-
-If you have come to this implementation guide directly it might be helpful to read some information about the program that is responsible for developing and maininting this standard, please see here: [Booking and Referral Standard (BaRS)](https://digital.nhs.uk/services/booking-and-referral-standard "Booking and Referral Standard (BaRS)") 
+The NHS Booking and Referral standard (BaRS) Implementation Guide is intended as a resource to support product and development teams in their BaRS development journey.  You can find out more about what BaRS is, how it works, who it's for and which system suppliers are already assured or working on their development on the [BaRS NHS Service Catalogue](https://digital.nhs.uk/services/booking-and-referral-standard) pages.
+ 
+This section provides information to help you use the Implementation Guide.
 
 
 ## Combining the elements together
