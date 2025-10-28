@@ -143,7 +143,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 ### Questionnaire
 A Questionnaire is an organised collection of questions intended to solicit information from patients, providers or other individuals involved in the healthcare domain. They may be simple flat lists of questions or can be hierarchically organised in groups and sub-groups, each containing questions. The Questionnaire defines the questions to be asked, how they are ordered and grouped, any intervening instructional text and what the constraints are on the allowed answers. The results of a Questionnaire can be communicated using the QuestionnaireResponse resource.
 
-The Questionnaire resource is used to covey the Pre Triage Sieve and the potential responses as detailed below:
+The Questionnaire resource is used to convey the Pre Triage Sieve and the potential responses as detailed below:
 #### Pre Triage Sieve
 
 | Question                 | Answer| Code                  |
