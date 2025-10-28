@@ -17,9 +17,9 @@ topic: Application5
 </thead>
 <tbody>
 	<tr>
-		<td>Application 5 v1.1.3</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.8.2" target="_blank">v1.1.x</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.8.2" target="_blank">v1.9.0</td>
+		<td>Application 5 v1.1.4</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.10.0" target="_blank">v1.1.x</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a></td>
 	</tr>
 </tbody>
@@ -27,7 +27,13 @@ topic: Application5
 
 </div>
 
-Any suppliers building to this application (Application 5) must engage with NHS England's Pharmacy First/Digital Services for Integrated Care teams prior to building Application 5.
+ <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important: Notice for suppliers</b> 
+ <p>
+ Any suppliers building to this application (Application 5) must engage with NHS England's Pharmacy First/Digital Services for Integrated Care teams prior to building Application 5.
+ </p>
+
+</div>
+
 
 ## Use Cases Supported
 
