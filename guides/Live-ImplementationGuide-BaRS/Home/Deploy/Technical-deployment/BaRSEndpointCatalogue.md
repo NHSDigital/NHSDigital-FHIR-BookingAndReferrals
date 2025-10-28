@@ -14,7 +14,7 @@ The BaRS Proxy uses the ServiceId in the HTTP Header to reference the BaRS Endpo
 
 * Obtain the service's URL endpoint details from the Receiving supplier or provider.  The endpoint will need to be certified and meet the criteria for connection to the BaRS Proxy.  More details are available in [Connecting as a receiver](https://simplifier.net/guide/nhsbookingandreferralstandard/Home\Build\Testing-and-Environments\Connect-as-a-receiver.page.md) 
 
-* Email bookingandreferralstandard@nhs.net with the serviceid and endpoint details.  State the environment to be configured, INT or PROD, and include planned dates for testing.
+* Email: <england.bookingandreferralstandard@nhs.net> with the ServiceId and endpoint details.  State the environment to be configured, INT or PROD, and include planned dates for testing.
 
 **Note**: CareConnect configuration must be maintained alongside the BaRS configuration. This is so senders who are not yet BaRS compliant can still work with CareConnect and GP Connect.
 

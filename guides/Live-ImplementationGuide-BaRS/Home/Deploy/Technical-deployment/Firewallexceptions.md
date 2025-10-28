@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-BaRS receivers need to configure firewall exceptions for both Integration and Production environments.  
+BaRS receivers need to configure firewall exceptions for both Integration (INT) and Production (PROD) environments.  
 
 Requests from the BaRS API Proxy will originate from:
 

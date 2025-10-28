@@ -6,6 +6,9 @@ topic: Connect-as-a-receiver
 
 BaRS uses TLS-MA to communicate with Receiving endpoints. Receiving endpoints need a certificate under the NHS Root CA to facilitate TLS-MA.  The receiver needs to follow these steps to access Integration (INT) and Production (PROD) environments.
 
+<br> 
+
+
 ### How to connect to the BaRS proxy as a Receiver:
 
 Step 1: Apply for your domain [apply for a new nhs.uk domain](https://digital.nhs.uk/services/networking-addressing/apply-for-an-nhs.uk-domain-for-websites-and-web-applications).  You must complete Section 5: For website or application records visible on the public internet.
@@ -22,12 +25,14 @@ Step 3: Create a Certificate Signing Request (*.csr). This is the file you will 
 openssl genpkey -algorithm RSA -out private.key -aes256
 ```
 Create the *.csr, use the following command:</br>
-**Note:** <small>_Generate the CSR with only the common name field populated, which must match the FQDN. All other fields can remain blank. The email field MUST be blank. Please note FQDNs MUST be in the .nhs.uk domain as we can only issue certificates in this domain._</small>
+
 ```
 openssl req -new -key private.key -out request.csr
 ```
-
+**Note:** <small>_Generate the CSR with only the common name field populated, which must match the FQDN. All other fields can remain blank. The email field MUST be blank. Please note FQDNs MUST be in the .nhs.uk domain as we can only issue certificates in this domain._</small>
 Step 4: Send the .csr file to be signed by NHS England and get the client certificate. To do this, follow these environment specific steps:
+
+<br> 
 
 #### Client certificate: Integration (INT)
 
@@ -38,12 +43,15 @@ In the form:
 * Select Create/renew a certificate only (No endpoint)
 * Specify Integration environment
 * FQDN must match your domain and CN on the cert e.g. '**BaRS-INT-\<ODS Code\>.\<Supplier name\>.thirdparty.nhs.uk**'
-* In Additional comments/notes, state ‘BaRS’ certificate request
-Add ‘N/A’ in the Party Key field because there is no relation to SDS endpoints
+* In "Additional comments/notes" state ‘BaRS’ certificate request
+*Add ‘N/A’ in the "Existing party key" field because there is no relation to SDS endpoints.
 
 Step 2: Receive certificate from ITOC
 
 Step 3: Email <england.bookingandreferralstandard@nhs.net> with Receiver URL for BaRS/API-M to add to the Endpoint Catalogue
+
+<br> 
+
 
 #### Client certificate: Production (PROD)
 
@@ -61,6 +69,9 @@ Step 2: Receive certificate from DIR Team
 Step 3: Email <england.bookingandreferralstandard@nhs.net> with Receiver URL for BaRS/API-M to add to the Endpoint Catalogue
 
 Step 4: Make changes to your [firewall exceptions](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Deploy/Technical-deployment\Firewallexceptions) to receive messages from the BaRS proxy.
+
+<br> 
+
 
 #### Installing and configuring your application to use the certificate
 Step 1: INT and PROD copy the cert text inlcuding `-----BEGIN CERTIFICATE` as the first line and `END CERTIFICATE-----` as the last. Save this text locally as a file called barsinreceiver.cer (change the name to suit).
