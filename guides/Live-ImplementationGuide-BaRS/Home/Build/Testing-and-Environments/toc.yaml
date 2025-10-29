@@ -4,9 +4,9 @@
   filename: Environments.page.md
 - name: Connecting to environments
   filename: Onboarding.page.md
-- name: Connect as a Sender
+- name: Connect as a sender
   filename: Connect-as-a-sender.page.md
-- name: Connect as a Receiver
+- name: Connect as a receiver
   filename: Connect-as-a-receiver.page.md
 - name: TKW
   filename: TKW.page.md
