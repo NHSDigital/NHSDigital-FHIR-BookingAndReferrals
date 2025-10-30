@@ -1,3 +1,7 @@
+---
+topic: configure-endpoint-catalogue
+---
+
 ## {{page-title}}
 
 Every service receiving messages through BaRS will need their ServiceId and endpoint added to the BaRS Endpoint Catalogue.  This enables the BaRS Proxy to direct messages to the service.  
@@ -16,6 +20,6 @@ The BaRS Proxy uses the ServiceId in the HTTP Header to reference the BaRS Endpo
 
 * Email: <england.bookingandreferralstandard@nhs.net> with the ServiceId and endpoint details.  State the environment to be configured, INT or PROD, and include planned dates for testing.
 
-**Note**: CareConnect configuration must be maintained alongside the BaRS configuration. This is so senders who are not yet BaRS compliant can still work with CareConnect and GP Connect.
+**Note**: CareConnect configuration must be maintained alongside the BaRS configuration. This is to ensure senders who are not yet BaRS compliant can still work with CareConnect and GP Connect.
 
 <br>
