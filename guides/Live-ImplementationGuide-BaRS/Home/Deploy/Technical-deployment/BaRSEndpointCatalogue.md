@@ -1,3 +1,7 @@
+---
+topic: configure-endpoint-catalogue
+---
+
 ## {{page-title}}
 
 Every service receiving messages through BaRS will need their ServiceId and endpoint added to the BaRS Endpoint Catalogue.  This enables the BaRS Proxy to direct messages to the service.  
