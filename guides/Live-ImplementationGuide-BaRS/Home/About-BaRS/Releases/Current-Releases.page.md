@@ -19,7 +19,7 @@ Implementation Guide   | 1.10.0   | v1      | Live     | Current Release | 12/11
 
 ### Overview of the release
 
-Release 1.10.0 includes a change to the accepted multiple NHS number verification statuses across BaRS, seeing a major version increment for Applications 1-4. The Appointment Management Foundation Standard has been revised and simplified, including extending the use Document Reference Standard Pattern to update the Registry (National Record Locator), alongside bug fixes and corrections throughout the guide.
+Release 1.10.0 includes a change to the accepted multiple NHS number verification statuses across BaRS, seeing a major version increment for Applications 1, 2, 3 & 4. The Appointment Management Foundation Standard has been revised and simplified, including extending the use Document Reference Standard Pattern to update the Registry (National Record Locator), alongside bug fixes and corrections throughout the guide.
 There have been further minor changes to the current beta, Application 6, following discussion with the BaRS Community involved, and the scope and responsibilities during Assurance have been described.
 Finally, following user feedback, the content in About BaRS, steps for technical deployment and instructions for connecting to our environments are restructured and simplified.
  
