@@ -38,7 +38,7 @@ The second identifier of note is the Receiving service who own the resource. The
 	}
 ```
 
-The third identifier (currently optional) relates to the product-id, system '*https://fhir.nhs.uk/id/product-id*'. This is forth coming functionality and further detail on its utility will follow but [working documentation] (https://github.com/NHSDigital/nhse-epr-integration/blob/main/pages/appendix1.md) is being actively updated.
+The third identifier (currently optional) relates to the product-id, system '*https://fhir.nhs.uk/id/product-id*'. This is forthcoming functionality and further detail on its utility will follow but [working documentation] (https://github.com/NHSDigital/nhse-epr-integration/blob/main/pages/appendix1.md) is being actively updated.
 
 ```json
 "identifier": [
@@ -110,7 +110,7 @@ A DocumentReference can be updated by performing a [PUT](https://digital.nhs.uk/
 ### Delete a DocumentReference
 A DocumentReference can be removed by performing a [DELETE](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#delete-/DocumentReference/-id-) request to the /DocumentReference endpoint on the BaRS proxy with the appropriate DocumentReference.id. A Read operation must be performed prior to this to ensure that the action is appropriate.
 
-**Note**: A Receiver can only delete DocumentReference resources that they created and own.
+**Note**: A Receiver can only delete DocumentReference resources they created and own.
 
 <a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/BaRS_NRL_Write_Sequence-1.1.0.svg" target="_blank">
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/DocumentReference/BaRS_NRL_Write_Sequence-1.1.0.svg" ></img></a>

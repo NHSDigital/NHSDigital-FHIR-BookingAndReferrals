@@ -10,7 +10,7 @@ The FHIR DocumentReference resource represents a reference to a clinical documen
 ### Step 2: Search for the booking or referral pointer (DocumentReference)
 FHIR DocumentReference resources holding pointers for BaRS bookings and referrals are stored in a central Registry, within NRL (National Record Locator), as decribed above, and interrogated through the [BaRS API DocumentReference](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0#get-/DocumentReference).
 
-To find a booking or referral location, you need to search for the appropriate DocumentReference resource from the Registry, using search parameters. It is mandatory to include the subject:identifier (the patient's NHS number), other parameters can be used to filter the response further e.g type of document (booking and referral). 
+To find a booking or referral location, you need to search for the appropriate DocumentReference resource from the Registry, using search parameters. It is mandatory to include the subject:identifier (the patient's NHS number). Other parameters can be used to filter the response further e.g type of document (booking and referral). 
 
 ### Step 3: Inspect the booking or referral pointer (DocumentReference)
 Once you retrieve the Document Reference(s) (pointers) from the search, inspect the returned resources to identify the one you need. Look for relevant metadata, as described below, to confirm the correct resource.
@@ -37,7 +37,7 @@ The second identifier, required to make the subsequent request for the booking o
 	}
 ```
 
-The third identifier (currently optional) relates to the product-id, system '*https://fhir.nhs.uk/id/product-id*'. This is forth coming functionality and further detail on its utility will follow but [working documentation] (https://github.com/NHSDigital/nhse-epr-integration/blob/main/pages/appendix1.md) is being actively updated.
+The third identifier (currently optional) relates to the product-id, system '*https://fhir.nhs.uk/id/product-id*'. This is forthcoming functionality and further detail on its utility will follow but [working documentation] (https://github.com/NHSDigital/nhse-epr-integration/blob/main/pages/appendix1.md) is being actively updated.
 
 ```json
 "identifier": [
