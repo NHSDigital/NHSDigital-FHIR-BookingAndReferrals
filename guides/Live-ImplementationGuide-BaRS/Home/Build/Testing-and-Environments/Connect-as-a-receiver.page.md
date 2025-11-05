@@ -70,7 +70,7 @@ Step 2: Receive certificate from DIR Team
 
 Step 3: Email <england.bookingandreferralstandard@nhs.net> with Receiver URL for BaRS/API-M to add to the Endpoint Catalogue
 
-Step 4: Make changes to your {{pagelink:firewall-exceptions, text: firewall exceptions}} to receive messages from the BaRS proxy.
+Step 4: Make changes to your {{pagelink:firewall-exceptions, text:firewall exceptions}} to receive messages from the BaRS proxy.
 
 <br> 
 
