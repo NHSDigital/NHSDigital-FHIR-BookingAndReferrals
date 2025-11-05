@@ -6,7 +6,7 @@ The assurance process ensures solutions adhere to the Standard and are compatibl
 
 The purpose of assurance is to:
 * Validate conformance to the requirements and specifications of the Standard
-* Assess higher-risk and/or complex workflow scenarios, ensuring patient safety and technical and clinical readiness
+* Assess higher-risk and/or complex workflow scenarios, to ensure technical and clinical readiness
 * Serve as a final quality assurance checkpoint prior to deployment to Production
 
 There are limitations to this (self) assurance process, which does **not** extend to: 
