@@ -21,6 +21,6 @@ This is an abbreviated deployment guide, focused exclusively on the technical st
 
 \* If a Sender is to receive an asynchronous response from the Receiver, as part of the defined workflow, they will also require a Service profile. This will need configuration in the {{pagelink:configure-endpoint-catalogue, text:Endpoint Catalogue}} too.
 
-NB- These steps apply to connecting and configuring systems to both the Integration (INT) and Production (PROD) environment.
+NB- These steps apply to connecting and configuring systems to both the Integration (INT) and Production (PROD) environments.
 
 <br>

@@ -1,3 +1,7 @@
+---
+topic: firewall-exceptions
+---
+
 ## {{page-title}}
 
 BaRS receivers need to configure firewall exceptions for both Integration (INT) and Production (PROD) environments.  
