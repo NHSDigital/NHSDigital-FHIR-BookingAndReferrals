@@ -5,12 +5,12 @@ topic: core-StandardPattern-document-reference-Introduction-1.3.1
 # Standard Pattern - DocumentReference
 
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b>Important:  Release information</b>
-<p>This Section of the Implementation Guide is currently a preview, in an Alpha state and subject to change. There is only currently support for Appointment (booking) pointers.</p>
+<p>This section of the Implementation Guide is currently a preview, in an Alpha state and subject to change. There is currently only support for Appointment (booking) pointers.</p>
 </div>
 
 ## Introduction
 
-There is functionality in BaRS to accommodate the use of pointers (DocumentReference resources), to locate existing bookings and referrals from a central Registy.
+There is functionality in BaRS to accommodate the use of pointers (DocumentReference resources), to locate existing bookings and referrals from a central Registry.
 
 This section will walk you through the process of using FHIR DocumentReferences, from the central Registry, to find and retrieve bookings and referrals held at Receiver services.
 

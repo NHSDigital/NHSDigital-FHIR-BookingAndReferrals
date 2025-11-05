@@ -11,7 +11,7 @@ BaRS uses TLS-MA to communicate with Receiving endpoints. Receiving endpoints ne
 
 ### How to connect to the BaRS proxy as a Receiver:
 
-Step 1: Apply for your domain [apply for a new nhs.uk domain](https://digital.nhs.uk/services/networking-addressing/apply-for-an-nhs.uk-domain-for-websites-and-web-applications).  You must complete Section 5: For website or application records visible on the public internet.
+Step 1: Apply for your domain [apply for a new nhs.uk domain](https://digital.nhs.uk/services/networking-addressing/apply-for-an-nhs.uk-domain-for-websites-and-web-applications).  You must complete Section 5: For domain names visible only on the public internet 
 
 Step 2: Request a certificate under the NHS Root CA. The FQDN must be an nhs.uk address.
 There are different certificate chains for INT and PROD:
@@ -30,6 +30,7 @@ Create the *.csr, use the following command:</br>
 openssl req -new -key private.key -out request.csr
 ```
 **Note:** <small>_Generate the CSR with only the common name field populated, which must match the FQDN. All other fields can remain blank. The email field MUST be blank. Please note FQDNs MUST be in the .nhs.uk domain as we can only issue certificates in this domain._</small>
+
 Step 4: Send the .csr file to be signed by NHS England and get the client certificate. To do this, follow these environment specific steps:
 
 <br> 
@@ -60,21 +61,22 @@ Step 3: Email <england.bookingandreferralstandard@nhs.net> with Receiver URL for
 Step 1: Send the .csr to <dir@nhs.net>, indicating this is for a BaRS Receiver endpoint
 
 Formats for FQDN on PROD:
+
 * Supplier hosted (multi-tenanted) solutions ‘**BaRS-PROD-\<ODS Code\>.\<Supplier name\>.thirdparty.nhs.uk**’
 
-* Service Provider  hosted (on-premise) solutions‘**BaRS-PROD-\<ODS Code\>.\<Provider name\>.nhs.uk**’
+* Service Provider  hosted (on-premise) solutions ‘**BaRS-PROD-\<ODS Code\>.\<Provider name\>.nhs.uk**’
 
 Step 2: Receive certificate from DIR Team
 
 Step 3: Email <england.bookingandreferralstandard@nhs.net> with Receiver URL for BaRS/API-M to add to the Endpoint Catalogue
 
-Step 4: Make changes to your [firewall exceptions](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Deploy/Technical-deployment\Firewallexceptions) to receive messages from the BaRS proxy.
+Step 4: Make changes to your {{pagelink:firewall-exceptions, text:firewall exceptions}} to receive messages from the BaRS proxy.
 
 <br> 
 
 
 #### Installing and configuring your application to use the certificate
-Step 1: INT and PROD copy the cert text inlcuding `-----BEGIN CERTIFICATE` as the first line and `END CERTIFICATE-----` as the last. Save this text locally as a file called barsinreceiver.cer (change the name to suit).
+Step 1: INT and PROD copy the cert text including `-----BEGIN CERTIFICATE` as the first line and `END CERTIFICATE-----` as the last. Save this text locally as a file called barsinreceiver.cer (change the name to suit).
 
 Step 2: Create a .pfx file so you can serve HTTPS (TLS) endpoints. You can use the command below to export a *.pfx file from the *.key file you made earlier (when you made the *.csr file) along with the *.cer file you were emailed.
 
@@ -86,7 +88,7 @@ Step 3: Create a password for your .pfx file.
 
 Step 4: Make configuration changes to reference the *.pfx file and password
 
-(C# example, Other launguages will vary but be similar)
+(C# example, Other languages will vary but be similar)
 
 ``` c#
 
