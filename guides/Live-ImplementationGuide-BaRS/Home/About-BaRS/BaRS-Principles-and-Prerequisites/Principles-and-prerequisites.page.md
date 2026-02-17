@@ -26,7 +26,7 @@ This page describes BaRS principles and prerequisites for suppliers. Elements of
 3. Systems MUST support JSON formats for all API interactions
 4. Systems SHOULD have a FHIR Server or FHIR functionality in place
 5. Systems SHOULD implement RESTful behaviour patterns
-6. System Suppliers MUST complete the {{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text:BaRS onboarding process}}
+6. System Suppliers MUST complete the {{pagelink:Testing-and-Environments, text:BaRS connecting to environments process}}
 7. Systems MUST support Service Discovery
 
 <br>
