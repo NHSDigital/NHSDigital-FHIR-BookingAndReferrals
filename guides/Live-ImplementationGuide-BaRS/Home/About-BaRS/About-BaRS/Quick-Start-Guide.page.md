@@ -11,7 +11,7 @@ We recommend reading the following documentation as part of the discovery stage 
 * [BaRS FHIR API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0)
 
 ### Onboarding
-{{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text:Onboarding}} with our platform is a self-service process. This step is required to make requests of the BaRS API and have requests forwarded to your endpoint, as a Receiver. This **must** occur on both Integration (INT) and Production environments. The {{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text: full step-by-step onboarding guide}} can be followed by any solution on either environment. 
+{{pagelink:Testing-and-Environments, text:Connecting to environments}} on our platform is a self-service process. This step is required to make requests of the BaRS API and have requests forwarded to your endpoint, as a Receiver. This **must** occur on both Integration (INT) and Production environments.  
 
 Full details of the security model adopted by the platform can be found under the [security](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/application-restricted-restful-apis-signed-jwt-authentication) section.
 
