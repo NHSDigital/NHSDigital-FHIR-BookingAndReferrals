@@ -1,32 +1,35 @@
 
 ### Booking and Referral Standard Implementation Guide
 
-This guidance takes you through how to implement the Booking and Referral Standard (BaRS) and gain accreditation. 
+Welcome to the BaRS Implementation guide.
 
-This guide is designed for anyone involved at any stage of going live with BaRS including developers, business analysts and product owners.
+Here you will find a step-by-step guide to help you prepare for implementing BaRS and complete the implementation process.
 
-Before starting implementation, we recommend reading the following information:
+Step 1: {{pagelink:Analysis, text:Analysis}}
+A group of pages to support you to understand what is required to implement BaRS successfully. 
+These include principles and prerequisites, infrastructure, roles and responsibilities and content negotiation.
 
-* {{pagelink:about_bars, text:About BaRS}} and {{pagelink:quick-start-guide, text:quick start guide}} 
-* {{pagelink:design-core-1.3.1, text:End to end workflow }} 
-* {{pagelink:Home/Applications/BaRS-Applications, text:BaRS Applications}} 
-* {{pagelink:core-StandardPattern-appointment-1.3.1, text:Standard Appointment Management (use-case agnostic)}}
-* {{pagelink:build-testing, text:Tooling}} 
+Step 2: {{pagelink:design-core-1.3.1, text:BaRS Core }}
+Familiarise yourself with the core elements of BaRS including end to end workflow, security and authorisation, and error handling.
 
-<br>
-<hr>
-<br>
+Step 3: {{pagelink:Home/Applications/BaRS-Applications, text:BaRS use cases and applications}} 
+Decide which use case and application will meet your needs by exploring workflows and payloads.
 
-The implementation guide is divided into sections:
+Step 4: {{pagelink:fhir_assets, text:FHIR Assets}} 
+Supporting information about the use of FHIR to implement the standard and gain access to BaRS FHIR assets including examples, bundles and CodeSystems.
 
-* {{pagelink:about_bars}} provides essential background and guiding principles along with prerequisites
-* {{pagelink:design-core-1.3.1, text:BaRS Core}} provides a core set of functionality across version of Core
-* {{pagelink:Home/Applications/BaRS-Applications,text:BaRS Application summaries}} provides links to implementation guides for released BaRS applications
-* {{pagelink:build-testing}} provides information about testing and environments
-* {{pagelink:assure}} describes guidance for the assurance process
-* {{pagelink:deploy}} provides the deployment toolkit
-* {{pagelink:fhir_assets}}, a link to the complete directory of FHIR assets
-* {{pagelink:help}} provides a link to support requests
-* {{pagelink:ReportanIncident}} describes how to report a live service incident for suppliers and providers live with BaRS
+Step 5: {{pagelink:build-testing, text:Testing and environments}}
+Understand how to connect to the BaRS environments; sandbox, integration and path to live. Find out how to access the testing tool (TKW). 
+
+Step 6: {{pagelink:assure, text:Gain Assurance}}
+Understand and complete the assurance process using the supplier conformance assessment list. Follow steps to create an account with the Digital Onboarding Service.
+
+Step 7: {{pagelink:deploy, text:Deployment Toolkit}}
+Use the deployment toolkit to carry out the necessary checks to prove functionality and to fully test end-to-end capable
+environments ready to go live. 
+
+
+For an overview of the booking and referrals standard visit the [NHSE website](https://digital.nhs.uk/services/booking-and-referral-standard). 
+
 
 
