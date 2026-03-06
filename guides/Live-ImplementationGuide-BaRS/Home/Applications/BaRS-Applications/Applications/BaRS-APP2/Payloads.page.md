@@ -57,7 +57,7 @@ When a BARS Receiver processes information in a Flag resource;
 
 * they **should** populate a flag in their system, if their solution supports that flag
 * they **must** display the information in the Flag resource in a way that supports the associated workflow (i.e. the relevant end users can see it an act upon it)
-* rendering of Flag information must be in line with the {{pagelink:Home/About-BaRS/BaRS-Principles-and-Prerequisites/Principles-for-rendering-BaRS-payloads.page.md, text:Principles for rendering BaRS Payload }}.
+* rendering of Flag information must be in line with the {{pagelink:Home/Analysis/BaRS-Principles-and-Prerequisites/Principles-for-rendering-BaRS-payloads.page.md, text:Principles for rendering BaRS Payload }}.
 
 ### Observation 
 The Observation resource is used to carry assertions supporting the assessment performed by the Sender. In the BaRS UEC Applications, Senders **should** add clinical notes to the Careplan resource rather than Observation, especially where they expect a Receiver to act upon the information. 
