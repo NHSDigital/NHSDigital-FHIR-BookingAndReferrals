@@ -22,11 +22,6 @@ Components of BaRS centralised infrastructure are as follows:
 
 
 
-The following components are in development:
-
-| Component | Description                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Registry  | A store of pointers to bookings   and referrals made through BaRS. Receivers will create and maintain the   status of any pointers for the lifecycle of the events they refer to. It is a   store of current active events and cannot be interrogated for historical   ones. Access to the registry will be controlled by authentication at the   API layer and authorisation to access the data will be delegated to the data   owner. |
-| Events    | Closely tied with the registry,   this will notify parties (directly related or interested 3rd parties) of   events occurring on pointers in the registry.                                                                                                                                                                                                                                                                              |
+                                                                                                                                                                                                                                                                         |
 
 <hr>

@@ -10,7 +10,7 @@ A group of pages to support you to understand what is required to implement BaRS
 These include principles and prerequisites, infrastructure, roles and responsibilities and content negotiation.
 
 Step 2: {{pagelink:design-core-1.3.1, text:BaRS Core }}
-Familiarise yourself with the core elements of BaRS including end to end workflow, security and authorisation, and error handling.
+Familiarise yourself with the core elements of BaRS including end-to-end workflow, security and authorisation, and error handling.
 
 Step 3: {{pagelink:Home/Applications/BaRS-Applications, text:BaRS use cases and applications}} 
 Decide which use case and Application will meet your needs by exploring workflows and payloads.
