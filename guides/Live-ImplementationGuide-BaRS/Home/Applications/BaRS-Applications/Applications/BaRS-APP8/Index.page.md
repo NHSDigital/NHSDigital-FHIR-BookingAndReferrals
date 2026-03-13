@@ -25,6 +25,7 @@ topic: Application8
 </tbody>
 </table>
 
+</div>
 
 ## Use Cases Supported
 
