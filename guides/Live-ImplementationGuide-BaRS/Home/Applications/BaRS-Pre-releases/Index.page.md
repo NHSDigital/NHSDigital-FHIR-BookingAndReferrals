@@ -14,7 +14,7 @@ These guides are designed to be used in conjunction with the documentation for {
 
 | Application  |  Use Cases  | Current Release | API Specification | Core Version |
 | ----------------------------------------------------------------------------|--------------------------------------------------------------- | --------------- | --------------- | --------------- |    
-| {{pagelink:application6, text: Referrals into an Ambulance Service Trust (Application 6)}} | <p>CAD to CAD Out of Area Referral<br>CAD to CAD Call Assist Request<br>CAD to CAD Mutual Aid Request | 1.0.0-beta.6    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">API Spec v1.3.0 and above</a>  | {{pagelink:design-core-1.1.4, text:Core v1.3.0 and above}} |
+| {{pagelink:application6, text: Referrals into an Ambulance Service Trust (Application 6)}} | <p>CAD to CAD Out of Area Referral<br>CAD to CAD Call Assist Request<br>CAD to CAD Mutual Aid Request | 1.0.0-beta.7    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">API Spec v1.3.0 and above</a>  | {{pagelink:design-core-1.1.4, text:Core v1.3.0 and above}} |
 | {{pagelink:application7, text: Bookings into GP Practice (Application 7)}} | <p>Appointments for Patient facing services into GP Practice | 1.0.0-alpha.4    | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">API Spec v1.3.0 and above</a>  | {{pagelink:design-core-1.1.4, text:Core v1.3.0 and above}} |
 | {{pagelink:application8, text: Referrals into a broker for Healthcare Service selection (Application 8)}} | <p>Advice and guidance referring into electronic Referral Service (eRS) | 1.0.0-alpha   | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">API Spec v1.3.0 and above</a>  | {{pagelink:design-core-1.1.4, text:Core v1.3.0 and above}} |
 
@@ -176,8 +176,8 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 6 v1.0.0-beta.6</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</a></td>
+		<td>Application 6 v1.0.0-beta.7</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
 	</tr>
 	<tr>
 		<td>Application 7 v1.0.0-alpha.4</td>
