@@ -1,7 +1,7 @@
 - name: Index
   filename: Index.guide.md
-- name: About BaRS
-  filename: About-BaRS
+- name: Analysis
+  filename: Analysis
 - name: Core
   filename: Core
 - name: Applications
