@@ -2,9 +2,14 @@
   filename: About-BaRS
 - name: BaRS Principles and Prerequisites
   filename: BaRS-Principles-and-Prerequisites
-- name: Releases
-  filename: Releases
-- name: Versioning
-  filename: Versioning.guide.md
 - name: Content Negotiation
   filename: Content-Negotiation
+- name: Infrastructure
+  filename: Infrastructure 
+- name: Releases
+  filename: Releases
+- name: Roles and responsibilities
+  filename: RolesAndResponsibilities.md
+- name: Versioning
+  filename: Versioning.guide.md
+

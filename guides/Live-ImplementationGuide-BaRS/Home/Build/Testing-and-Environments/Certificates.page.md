@@ -7,7 +7,7 @@ The BaRS API and supplier solution will be secured by HTTPS/TLS, for both inboun
 
 In order to establish a connection to and from any environment, a chain of trust must be set up using the certificates detailed below. 
 
-For information on obtaining certificates as a Receiver see the {{pagelink:onboarding}} section.
+For information on obtaining certificates as a Receiver see the {{pagelink:Testing-and-Environments, text: Connect as a receiver}} section.
 
 ## Inbound
 
