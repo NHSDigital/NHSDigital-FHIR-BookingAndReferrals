@@ -18,10 +18,6 @@ Components of BaRS centralised infrastructure are as follows:
 | Component             | Description  |
 |-----------------------|--------------|
 | BaRS  Proxy API       | Senders direct all requests to this Proxy API for all requests.  |   
-| Endpoint   catalogue  | A component that holds service identifiers and their corresponding physical addresses. It is capable of supporting national and local directory of services or even standalone   endpoints configured within a single system. Providers will be able to manag their endpoints via an API. |
-
-
-
-                                                                                                                                                                                                                                                                         |
+| Endpoint   catalogue  | A component that holds service identifiers and their corresponding physical addresses. It is capable of supporting national and local directory of services or even standalone   endpoints configured within a single system. Providers will be able to manage their endpoints via an API.                                                                                                                                                                                                    |
 
 <hr>
