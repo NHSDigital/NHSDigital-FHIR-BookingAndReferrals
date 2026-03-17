@@ -1,5 +1,5 @@
-- name: Index
-  filename: Index.guide.md  
+- name: Contact Us
+  filename: ContactUs.guide.md  
 - name: How to use this implementation guide
   filename: Howtousethisimplementationguide.guide.md
 - name: Glossary

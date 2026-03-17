@@ -4,7 +4,7 @@
   filename: BaRS-Principles-and-Prerequisites
 - name: Infrastructure
   filename: Infrastructure 
-- name: Roles and responsibilities
+- name: Roles and Responsibilities
   filename: RolesAndResponsibilities.md
 - name: Releases
   filename: Releases

@@ -1,9 +1,12 @@
+---
+topic: fhir_assets
+---
 
-## FHIR Assets
+## {{page-title}}
 
 </br>
 
-The complete directory of FHIR assets can be found on <a href="https://simplifier.net/NHSBookingandReferrals/~introduction" target="_blank">the simplifier project page</a>
+The complete directory of FHIR assets can be found on <a href="https://simplifier.net/NHSBookingandReferrals/~introduction" target="_blank">the Booking and Referrals simplifier project page</a>
 
 **Profiles**
 
@@ -33,8 +36,8 @@ Message definitions are a key aspect of BaRS. They define the content of payload
 
 **Application**
 
-BaRS Applications define workflows and payloads. They can support any number of use-cases with the same requirements. Suppliers build and are assured for specific Applications. As BaRS grows Applications are expected to include more use-cases, supporting re-use of both the BaRS Application and supplier development.    
+BaRS Applications define workflows and payloads. They can support any number of use-cases with the same requirements. Suppliers build and are assured for specific Applications. As BaRS grows, Applications are expected to include more use-cases, supporting re-use of both the BaRS Application and supplier development.    
 
-For further information and resouces regarding the FHIR standard see the [FHIR website](http://hl7.org/fhir/overview-dev.html).
+For further information and resources regarding the FHIR standard see the [FHIR website](http://hl7.org/fhir/R4/overview-dev.html).
 
 <hr>
