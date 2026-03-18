@@ -124,4 +124,16 @@
     <code value="a7t1" />
     <display value="Patient Facing Services to Primary Care" />
   </concept>
+   <concept>
+    <code value="a8t1" />
+    <display value="IAG to e-RS" />
+  </concept>
+   <concept>
+    <code value="a8t2" />
+    <display value="111 Online to e-RS" />
+  </concept>
+   <concept>
+    <code value="a8t3" />
+    <display value="nhs.uk to e-RS" />
+  </concept>
 </CodeSystem>

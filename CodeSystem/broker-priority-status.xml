@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="bars-broker-priority-status"/>
+    <url value="https://fhir.nhs.uk/CodeSystem/bars-broker-priority-status"/>
+    <identifier>
+        <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
+        <value value="bars-broker-priority-status"/>
+    </identifier>
+    <version value="1.0.0"/>
+    <name value="bars-broker-priority-status"/>
+    <title value="BARS Broker Priority status"/>
+    <status value="active"/>
+    <date value="2026-03-16"/>
+    <publisher value="NHS England"/>
+    <contact>
+        <name value="NHS England" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <description value="Broker Priority Status"/>
+    <copyright value="Copyright &#169; 2026 NHS England" />
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="2WW" />
+        <display value="Two week wait" />
+    </concept>
+    <concept>
+        <code value="U" />
+        <display value="Urgent" />
+    </concept>
+    <concept>
+        <code value="R" />
+        <display value="Routine" />
+    </concept>
+</CodeSystem>

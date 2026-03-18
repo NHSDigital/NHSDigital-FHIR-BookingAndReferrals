@@ -6,7 +6,7 @@
   <name value="BARS Message Definition ServiceRequest - Request Referral" />
   <title value="BARS Message Definition ServiceRequest - Request Referral" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2026-03-16" />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
@@ -183,7 +183,7 @@
     <code value="HealthcareService" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService" />
     <min value="1" />
-    <max value="1" />
+    <max value="*" />
   </focus>
   <focus>
     <code value="Condition" />
@@ -208,5 +208,11 @@
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
     <min value="0" />
     <max value="*" />
+  </focus>
+  <focus>
+    <code value="Device" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Device" />
+    <min value="0" />
+    <max value="1" />
   </focus>
 </MessageDefinition>
