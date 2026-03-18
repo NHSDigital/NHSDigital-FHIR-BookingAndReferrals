@@ -1,10 +1,10 @@
 - name: Contact Us
-  filename: ContactUs.guide.md  
-- name: How to use this implementation guide
-  filename: Howtousethisimplementationguide.guide.md
+  filename: ContactUs  
+- name: How to use this Implementation Guide
+  filename: HowToUseThisImplementationGuide
 - name: Glossary
-  filename: Glossary.guide.md
+  filename: Glossary
 - name: Downloads
-  filename: Downloads.guide.md
+  filename: Downloads
 - name: Report an Incident
-  filename: ReportanIncident.guide.md  
+  filename: ReportanIncident
