@@ -4,30 +4,30 @@ topic: Analysis
 
 # {{page-title}}
 
-The information in section will help you prepare to build, test and assure your product to use the Booking and Referral Standard.
+This section provides technical information to support suppliers in effectively implementing BaRS.  
 
 <hr>
 
-{{pagelink:Analysis-BaRS-Principles-and-Prerequisites, text:BaRS Principles and Prerequisites}}
+{{pagelink:principles_prerequesites, text:BaRS Principles and Prerequisites}}
 
 <hr>
 
-{{pagelink:Analysis-Infrastructure, text:Infrastructure}}
+{{pagelink:infrastructure, text:Infrastructure}}
 
 <hr>
 
-{{pagelink:Analysis-RolesAndResponsibilities, text:Roles and Responsibilities}}
+{{pagelink:roles-and-responsibilities, text:Roles and Responsibilities}}
 
 <hr>
 
-{{pagelink:Analysis-Releases, text:Releases}}
+{{pagelink:releases, text:Releases}}
 
 <hr>
 
-{{pagelink:Analysis-Versioning, text:Versioning}}
+{{pagelink:version-negotiation, text:Versioning}}
 
 <hr>
 
-{{pagelink:Analysis-Content-Negotiation, text:Content Negotiation}}
+{{pagelink:core-content-negotiation, text:Content Negotiation}}
 
 <hr>
