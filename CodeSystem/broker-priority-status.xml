@@ -8,32 +8,32 @@
     </identifier>
     <version value="1.0.0"/>
     <name value="bars-broker-priority-status"/>
-    <title value="BARS Broker Priority status"/>
+    <title value="BARS Broker Priority Status"/>
     <status value="active"/>
     <date value="2026-03-16"/>
     <publisher value="NHS England"/>
     <contact>
-        <name value="NHS England" />
+        <name value="NHS England"/>
         <telecom>
-            <system value="email" />
-            <value value="interoperabilityteam@nhs.net" />
-            <use value="work" />
+            <system value="email"/>
+            <value value="interoperabilityteam@nhs.net"/>
+            <use value="work"/>
         </telecom>
     </contact>
     <description value="Broker Priority Status"/>
-    <copyright value="Copyright &#169; 2026 NHS England" />
+    <copyright value="Copyright &#169; 2026 NHS England"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="2WW" />
-        <display value="Two week wait" />
+        <code value="2WW"/>
+        <display value="Two week wait"/>
     </concept>
     <concept>
-        <code value="U" />
-        <display value="Urgent" />
+        <code value="U"/>
+        <display value="Urgent"/>
     </concept>
     <concept>
-        <code value="R" />
-        <display value="Routine" />
+        <code value="R"/>
+        <display value="Routine"/>
     </concept>
 </CodeSystem>

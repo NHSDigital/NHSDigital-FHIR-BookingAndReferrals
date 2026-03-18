@@ -8,28 +8,28 @@
     </identifier>
     <version value="1.0.0"/>
     <name value="bars-broker-referral-letter-status"/>
-    <title value="BARS Broker Referral Letter status"/>
+    <title value="BARS Broker Referral Letter Status"/>
     <status value="active"/>
     <date value="2026-03-16"/>
     <publisher value="NHS England"/>
     <contact>
-        <name value="NHS England" />
+        <name value="NHS England"/>
         <telecom>
-            <system value="email" />
-            <value value="interoperabilityteam@nhs.net" />
-            <use value="work" />
+            <system value="email"/>
+            <value value="interoperabilityteam@nhs.net"/>
+            <use value="work"/>
         </telecom>
     </contact>
     <description value="Broker Referral Letter Status"/>
-    <copyright value="Copyright &#169; 2026 NHS England" />
+    <copyright value="Copyright &#169; 2026 NHS England"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="NEED_TO_ADD_LATER" />
-        <display value="Need to add later" />
+        <code value="NEED_TO_ADD_LATER"/>
+        <display value="Need to add later"/>
     </concept>
     <concept>
-        <code value="NOT_INTENDING_TO_ADD" />
-        <display value="Not intending to add" />
+        <code value="NOT_INTENDING_TO_ADD"/>
+        <display value="Not intending to add"/>
     </concept>
 </CodeSystem>
