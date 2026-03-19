@@ -7,16 +7,22 @@ topic: APP8-HowDoesItWork
 This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a referral request:
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/GPtoPharmacyCPCS-1.0.0-beta.1.svg" width="1500"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/Internal-Broker-IAG-To-e-RS-1.0.0-alpha.svg" width="1500"></img></a>
 
 
-To support the workflows for this application of the standard the operations that need to be supported are:
+To support the workflows for this Application of the Standard the operations that need to be supported are:
 
 <hr>
 
-### Directing the Referral without a Service Discovery step
+### Directing the Referral
 
-<Hard coded endpoint for eRS>
+The referral request is directed to a broker in this Application, rather than directly to a healthcare service expected to engage with the patient. The broker negotiates the next step in patient’s care journey with them, offering options and allowing the decide how to proceed. Service discovery still occurs during the assessment the Sender performs but instead of selecting a service at this stage, it is pushed to the broker.
+
+The Sender will establish the patient need, prepare a shortlist of healthcare services to support them and package these in the referral request. The request is from the Sender to the broker Receiver and then onto the selected healthcare service. 
+
+Directing the referral request will still engage the same BaRS mechanisms; utilising the NHSD-Target-Identifier. However, the Receiver is a consistent, known entity, rather than dynamically established during workflow.
+
+NB - The definition of the broker NHSD-Target-Identifier has not yet been agreed.
 
 ### Make a Referral
 
@@ -91,10 +97,6 @@ The HTTP response header would be:
 X-Request-Id = <GUID_000001>
 X-Correlation-Id = <GUID_000002>
 ```
-
-### Cancel a Referral
-
-<not support currently>
 
 
 ### Bundle Processing - detailed
