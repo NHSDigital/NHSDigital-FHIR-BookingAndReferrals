@@ -1,3 +1,7 @@
+---
+topic: roles-and-responsibilities
+---
+
 ## {{page-title}}
 
 Roles and responsibilities for each involved party are described below.

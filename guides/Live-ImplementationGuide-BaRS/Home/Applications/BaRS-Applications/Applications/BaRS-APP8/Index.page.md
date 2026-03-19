@@ -31,18 +31,23 @@ topic: Application8
 
 This application supports the use of the following use cases:
 
-| Use Case                                                                                                                                                                      | Name |  Code |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|-------|
-| Referrals from A&G into eRS                                                                                                                 | A&G to eRS | a8t1 |
+|Use case                                                                        | Name | Code|
+|--------------------------------------------------------------------------------|------|------|
+| Improved Advice and Guidance to electronic-Referral Service (e-RS)| IAG to e-RS  | A8T1 |
+| 111Online to electronic-Referral Service (e-RS)| 111online to e-RS  | A8T2 |
+| NHS.UK to electronic-Referral Service (e-RS)| nhs.uk to e-RS  | A8T3 |
 
 
 ## Introduction
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.0.7, text:BaRS Core implementation guide}} and API Specification when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.3.1, text:BaRS Core implementation guide}} and API Specification when developing to the standard. 
 
 ### Data model endorsements
 
-TBC
+NHS England teams within Referrals and Appointments, Digitial Urgent and Emergency Care and the National Pathway for Self-Referrals have co-produced the Application 8 standard to facilitate interoperability between existing systems for referral pathways.  
+
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.3.1, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard.
+
 <hr />

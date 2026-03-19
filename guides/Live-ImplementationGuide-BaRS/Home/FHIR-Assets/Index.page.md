@@ -6,7 +6,7 @@ topic: fhir_assets
 
 </br>
 
-The complete directory of FHIR assets can be found on <a href="https://simplifier.net/NHSBookingandReferrals/~introduction" target="_blank">the Booking and Referrals simplifier project page</a>
+The complete directory of FHIR assets can be found on [the Booking and Referrals simplifier project page](https://simplifier.net/NHSBookingandReferrals/~introduction).
 
 **Profiles**
 
