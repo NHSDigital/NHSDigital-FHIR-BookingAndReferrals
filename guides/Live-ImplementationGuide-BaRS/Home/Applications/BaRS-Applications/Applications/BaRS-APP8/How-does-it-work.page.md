@@ -16,13 +16,13 @@ To support the workflows for this Application of the Standard the operations tha
 
 ### Directing the Referral
 
-The referral request is directed to a broker in this Application, rather than directly to a healthcare service expected to engage with the patient. The broker negotiates the next step in patient’s care journey with them, offering options and allowing the decide how to proceed. Service discovery still occurs during the assessment the Sender performs but instead of selecting a service at this stage, it is pushed to the broker.
+The referral request is directed to a broker in this Application, rather than directly to the healthcare service expected to engage with the patient. The broker negotiates the next step in the patient’s care journey, offering optional healthcare services and allowing them to choose how to proceed. Service discovery still occurs during the assessment, undertaken by the Sender, but, instead of selecting a service at this stage, selection happens later in the workflow with the broker.
 
-The Sender will establish the patient need, prepare a shortlist of healthcare services to support them and package these in the referral request. The request is from the Sender to the broker Receiver and then onto the selected healthcare service. 
+The Sender will establish the patient need, prepare a shortlist of healthcare services to support them and package these in the referral request. The request is sent from the Sender to the broker (Receiver) and then onto the selected healthcare service (through [e-RS](https://digital.nhs.uk/services/e-referral-service) ). 
 
 Directing the referral request will still engage the same BaRS mechanisms; utilising the NHSD-Target-Identifier. However, the Receiver is a consistent, known entity, rather than dynamically established during workflow.
 
-NB - The definition of the broker NHSD-Target-Identifier has not yet been agreed.
+*NB - The definition of the broker NHSD-Target-Identifier has not yet been agreed.*
 
 ### Make a Referral
 
@@ -83,7 +83,7 @@ In addition to that the specific workflow parameters that are required are as fo
 Additionally the HTTP request header would be:
 
 ```
-NHSD-Target-Identifier = {Receiver Service Identifier}
+NHSD-Target-Identifier = {Receiver (Broker) Service Identifier}
 X-Request-Id = <GUID_000001>
 X-Correlation-Id = <GUID_000002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
@@ -324,6 +324,8 @@ Receive_Request
 }	
 
 ```
+
+*NB - Cancel and/or Update of the referral request are not yet supported in this Application*
 
 </details>
 <br>

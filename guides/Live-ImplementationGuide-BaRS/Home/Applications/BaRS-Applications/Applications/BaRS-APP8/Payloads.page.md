@@ -35,7 +35,7 @@ The CarePlan resource is used in a referral request to communicate the next step
 Careplan includes the shortlist of healthcare services, under CarePlan.activity.details.performer, for the broker to negotiate with the patient. 
 
 ### Device Resource 
-Device has been introduced in Application 8 because the Sender is not directing their request to a specific healthcare service but rather an internal broker. We are defining the broker (Receiver) as a FHIR Device. The broker is supporting the patient in their next step, choosing a healthcare service to undertake their care.
+Device has been introduced in Application 8 because the Sender is not directing their request to a specific healthcare service but rather an internal broker. We are defining the broker (Receiver) as a FHIR Device resource. The broker is supporting the patient in their next step, choosing a healthcare service to undertake their care.
 In the BaRS payload, the Device is consider the performer of this next step and this is reflected in the FHIR bundle narrative by referencing Device under ServiceRequest.performer (see {{pagelink:APP8-EntityRelationshipDiagram}}).
 
 ### Condition Resource 
