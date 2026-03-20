@@ -4,19 +4,31 @@ topic: APP8-HowDoesItWork
 
 ## {{page-title}}
 
-This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a referral request:
+This section describes how the primary operations used in this Application work. 
+
+This diagram illustrates the workflow and interactions of a referral request where healthcare options are offered to a patient by a clinician:
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/GPtoPharmacyCPCS-1.0.0-beta.1.svg" width="1500"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/Internal-Broker-IAG-To-e-RS-1.0.0-alpha.svg" width="1500"></img></a>
 
+The Application also supports a self-referral workflow:
+<br>
 
-To support the workflows for this application of the standard the operations that need to be supported are:
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/Internal-Broker-SelfReferral-To-e-RS-1.0.0-alpha.svg" width="1500"></img></a>
+
+To aid the workflows for this Application of the Standard the operations that need to be supported are:
 
 <hr>
 
-### Directing the Referral without a Service Discovery step
+### Directing the Referral
 
-<Hard coded endpoint for eRS>
+The referral request is directed to a broker in this Application, rather than directly to the healthcare service expected to engage with the patient. The broker negotiates the next step in the patient’s care journey, offering optional healthcare services and allowing them to choose how to proceed. Service discovery still occurs during the assessment, undertaken by the Sender, but, instead of selecting a service at this stage, selection happens later in the workflow with the broker.
+
+The Sender will establish the patient need, identify a specific service or prepare a shortlist of healthcare services to support them, and package these in the referral request. The request is sent from the Sender to the broker (Receiver) and then onto the selected healthcare service (through [e-RS](https://digital.nhs.uk/services/e-referral-service) ). 
+
+Directing the referral request will still engage the same BaRS mechanisms; utilising the NHSD-Target-Identifier. However, the Receiver is a consistent, known entity, rather than dynamically established during workflow.
+
+*NB - The definition of the broker NHSD-Target-Identifier has not yet been agreed.*
 
 ### Make a Referral
 
@@ -77,7 +89,7 @@ In addition to that the specific workflow parameters that are required are as fo
 Additionally the HTTP request header would be:
 
 ```
-NHSD-Target-Identifier = {Receiver Service Identifier}
+NHSD-Target-Identifier = {Receiver (Broker) Service Identifier}
 X-Request-Id = <GUID_000001>
 X-Correlation-Id = <GUID_000002>
 NHSD-End-User-Organisation = {FHIR Organisation (Base64 Encoded)}
@@ -91,10 +103,6 @@ The HTTP response header would be:
 X-Request-Id = <GUID_000001>
 X-Correlation-Id = <GUID_000002>
 ```
-
-### Cancel a Referral
-
-<not support currently>
 
 
 ### Bundle Processing - detailed
@@ -322,6 +330,8 @@ Receive_Request
 }	
 
 ```
+
+*NB - Cancel and/or Update of the referral request are not yet supported in this Application*
 
 </details>
 <br>

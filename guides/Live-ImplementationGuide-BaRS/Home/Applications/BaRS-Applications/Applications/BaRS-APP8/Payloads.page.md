@@ -20,34 +20,36 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. Primary Care to Community Pharmacy. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.3.1, text:use-case categories}}
-
-*Please note that the use-case category 'referraltopharmacy' is now deprecated to allow for more granular use cases.*
+). e.g. IAG to e-RS. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.3.1, text:use-case categories}}
 
 ### Encounter Resource
 The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 
 
 In the initial referral request, the Sender will include an Encounter resource as the container for their assessment, which established the need for the referral. This encounter **should** include a reference to the Sender's assessment under *encounter.identifier*. Additionally, the *encounter.episodeOfCare* **must** be populated with a 'Journey ID' reference which can be used in subsequent referrals to allow the audit of the route a patient took through service providers to resolve their initial request for care. 
 
-A second Encounter resource is used to transfer the human readable reference of the newly created referral, at the Receiver side. When a referral request is made, the Receiver **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Sender's request. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Receiver's local reference and human readable one, respectively. This secondary, 'planned', encounter is <ins>not</ins> mandatory (cardinality of 0..1), unlike the primary encounter resource (1..1) (See the {{pagelink:APP5-EntityRelationshipDiagram}} for reference). The human readable (Identifier) reference is intended to allow Senders to provide something to the patient which they can take between services to support consistent joined up care, although, it is also a useful link for the services themselves to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
+A second Encounter resource is used to transfer the human readable reference of the newly created referral, at the Receiver side. When a referral request is made, the Receiver **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response (200) to the Sender's request. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Receiver's local reference and human readable one, respectively. This secondary, 'planned', encounter is <ins>not</ins> mandatory (cardinality of 0..1), unlike the primary encounter resource (1..1) (See the {{pagelink:APP8-EntityRelationshipDiagram}} for reference). The human readable (Identifier) reference is intended to allow Senders to provide a reference to the patient which they can take between services to support consistent joined up care.  It is also useful for the services to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
 
 ### CarePlan Resource
 The CarePlan resource is used in a referral request to communicate the next steps in care, linking both the 'problem' identified (Condition resource, *careplan.addresses*), following the assessment performed by the Sender, and the required action to move the patient's issue to resolution (Task resource, *careplan.activity.reference*). The Receiver will utilise the detail in this resource to summarise what the previous assessment ascertained about the patient, to be used in any subsequent consultation with the patient. This overall clinical narrative and assessment output is included in this resource, under element *careplan.outcomeCodeableConcept.text*, as 'freetext'.
 
+Careplan includes the shortlist of healthcare services, under CarePlan.activity.details.performer, for the broker to negotiate with the patient. 
+
+### Device Resource 
+Device has been introduced in Application 8 because the Sender is not directing their request to a specific healthcare service but rather an internal broker. We are defining the broker (Receiver) as a FHIR Device resource. The broker is supporting the patient in their next step, choosing a healthcare service to undertake their care.
+In the BaRS payload, the Device is consider the performer of this next step and this is reflected in the FHIR bundle narrative by referencing Device under ServiceRequest.performer (see {{pagelink:APP8-EntityRelationshipDiagram}}).
+
 ### Condition Resource 
 The Condition resource is used to encapsulate the overall 'problem' the referral intends to resolve for the patient. The detail provided here underpins the rationale for the CarePlan and is a central resource for the Receiver looking for information about the patient and reason for referral.
 
-The key information about the 'problem' is comprised of two components within this Application, *condition.category* and *condition.code*. The category is used to qualify the code value, providing additional context to interpret the issue identified. For example, in this Application, the category will stipulate this is a 'presenting complaint', highlighting the provenance of the 'problem' for the Receiver to start their consultation. This is in addition to other specific status fields on the resource. 
+The key information about the 'problem' is comprised of two components, *condition.category* and *condition.code*. The category is used to qualify the code value, providing additional context to interpret the issue identified. For example, the category will stipulate this is a 'presenting complaint', highlighting the provenance of the 'problem' to the Receiver. 
 
 ### Task Resource
-The Task is used to direct the next action(s) required by the Sender making the referral. Task supports in fulfilling Careplan, which also references it. The narrative within the payload starts with the assessment performed by the Sender (*Encounter*), identifying a 'problem' (*Condition*) which a plan of care (*CarePlan*) is established to address. The Sender is unable to support the plan of care so transitions responsibility, via a referral (*ServiceRequest*), while directing the next requested action (*Task*).
-
-This Application utilises two elements within Task to direct the activity and timeframe, using *Task.code* and *Task.restriction*. The code will be a fixed value, indicating that a consultation is being request of the 'Community Pharmacist Consultation Service for minor illness' (Pharmacy First), dictating the action **should** take place within twenty-four hours, under the *restriction.period* element. The patient is responsible for attending the pharmacy so the timeframe is a guide, indicating when the request is expected to occur. The pharmacist will only contact the patient if they have concerns based on the referral content. 
+The Task is used to direct the next action(s) required by the Sender making the referral. Task supports in fulfilling Careplan.  The Careplan resource will reference the Task. The narrative within the payload starts with the assessment performed by the Sender (*Encounter*), identifying a 'problem' (*Condition*) which a plan of care (*CarePlan*) is established to address. The Sender is unable to support the plan of care so transitions responsibility, via a referral (*ServiceRequest*) to the broker, while directing the next requested action (*Task*).
 
 ### Flag Resource
 The Flag resource is used to communicate prospective warnings of potential issues when providing care to the patient. The population of the Flag Resource is optional as not all subjects will have relevant issues.
 
-BaRS Senders **should** populate Flag resources and **should** make adequate provision in their solution to support key flags in BaRS Application workflows, for example, Safeguarding, for this Application. When populating this resource, Senders **must** include both *flag.category* and *flag.code* values using the specific [BaRS CodeSystems](https://simplifier.net/nhsbookingandreferrals/~resources?category=CodeSystem&sortBy=DisplayName).
+BaRS Senders **should** populate Flag resources and **should** make adequate provision in their solution to support key flags in BaRS Application workflows, for example, Additional Patient Information. When populating this resource, Senders **must** include both *flag.category* and *flag.code* values using the specific [BaRS CodeSystems](https://simplifier.net/nhsbookingandreferrals/~resources?category=CodeSystem&sortBy=DisplayName).
 
 When a BARS Receiver processes information in a Flag resource;
 
