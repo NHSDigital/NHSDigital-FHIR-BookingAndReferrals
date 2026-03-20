@@ -4,13 +4,19 @@ topic: APP8-HowDoesItWork
 
 ## {{page-title}}
 
-This section describes how the primary operations used in this application work. This diagram illustrates the workflow and interactions of a referral request:
+This section describes how the primary operations used in this Application work. 
+
+This diagram illustrates the workflow and interactions of a referral request where healthcare options are offered to a patient by a clinician:
 <br>
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/Internal-Broker-IAG-To-e-RS-1.0.0-alpha.svg" width="1500"></img></a>
 
+The Application also supports a self-referral workflow:
+<br>
 
-To support the workflows for this Application of the Standard the operations that need to be supported are:
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/Internal-Broker-SelfReferral-To-e-RS-1.0.0-alpha.svg" width="1500"></img></a>
+
+To aid the workflows for this Application of the Standard the operations that need to be supported are:
 
 <hr>
 
