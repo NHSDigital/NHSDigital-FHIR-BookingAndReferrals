@@ -4,8 +4,8 @@ Product Link           | Version | Handle  | Phase    | State           | Releas
 -----------------------|---------|---------|----------|-----------------|--------------|------------|-----------------
 Implementation Guide   | 1.11.0   | v1      | Live     | Current Release | 26/03/2026 | Stable     |{{pagelink:trn-General}}
 [FHIR Package](https://simplifier.net/packages/uk.nhsdigital.bars.r4/1.38.0) | 1.38.0| v1      | Live     | Current Release | 26/03/2026  | Stable     |
-{{pagelink:design-core-1.3.1, text:BaRS Core}}              | 1.3.1   | v1      | Live     | Current Release | 12/11/2025   | Stable     |{{pagelink:trn-core, text: BaRS Core Change Log}}
-[API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_3_0)    | 1.3.0   | v1      | Live     | Current Release | 12/11/2025  | Stable     |{{pagelink:trn-api}}
+{{pagelink:design-core-1.4.0, text:BaRS Core}}              | 1.4.0   | v1      | Live     | Current Release | 26/03/2026   | Stable     |{{pagelink:trn-core, text: BaRS Core Change Log}}
+[API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_4_0)    | 1.4.0   | v1      | Live     | Current Release | 26/03/2026  | Stable     |{{pagelink:trn-api}}
 {{pagelink: build-testing, text: TKW}}  | 1.0.21   | v1      | Live     | Current Release | 12/11/2025   | Stable     |{{pagelink:trn-tkw}}
 {{pagelink:application1, text:BaRS-APP1}}   | 2.0.0   | v1      | Live     | Current Release | 12/11/2025   | Stable     |{{pagelink:trn-app1,text:BaRS APP1 Change Log}}
 {{pagelink:application2, text:BaRS-APP2}}   | 2.0.0   | v1      | Live     | Current Release | 12/11/2025   | Stable     |{{pagelink:trn-app2,text:BaRS APP2 Change Log}}
@@ -190,8 +190,8 @@ Table detailing active versions of the latest Applications in Production (or cur
 	<tr>
 		<td>Application 8 v1.0.0-alpha</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
-		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.11.0" target="_blank">v1.11.0</a></td>
-		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">1.3.0</a></td>
+		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.11.0" target="_blank">v1.4.0</a></td>
+		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">1.4.0</a></td>
 	</tr>
 	<tr>
 		<td></td>
