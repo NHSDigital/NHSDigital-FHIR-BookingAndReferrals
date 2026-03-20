@@ -5,7 +5,7 @@ topic: APP8-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader-1.3.1, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.4.0, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -20,7 +20,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. IAG to e-RS. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.3.1, text:use-case categories}}
+). e.g. IAG to e-RS. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.4.0, text:use-case categories}}
 
 ### Encounter Resource
 The Encounter is used to represent the interaction between a patient and healthcare service provider. It links with numerous other resources, to reflect the assessment performed. 

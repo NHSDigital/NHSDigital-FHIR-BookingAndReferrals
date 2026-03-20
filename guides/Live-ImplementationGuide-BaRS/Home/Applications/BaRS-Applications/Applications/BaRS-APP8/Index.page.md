@@ -42,12 +42,12 @@ This application supports the use of the following use cases:
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.3.1, text:BaRS Core implementation guide}} and API Specification when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.4.0, text:BaRS Core implementation guide}} and API Specification when developing to the standard. 
 
 ### Data model endorsements
 
 NHS England teams within Referrals and Appointments, Digitial Urgent and Emergency Care and the National Pathway for Self-Referrals have co-produced the Application 8 standard to facilitate interoperability between existing systems for referral pathways.  
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.3.1, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard.
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.4.0, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard.
 
 <hr />
