@@ -33,7 +33,7 @@ This application supports the use of the following use cases:
 
 |Use case                                                                        | Name | Code|
 |--------------------------------------------------------------------------------|------|------|
-| Improved Advice and Guidance to electronic-Referral Service (e-RS)| IAG to e-RS  | A8T1 |
+| Advice and Guidance to electronic-Referral Service (e-RS)| AG to e-RS  | A8T1 |
 | 111Online to electronic-Referral Service (e-RS)| 111online to e-RS  | A8T2 |
 | NHS.UK to electronic-Referral Service (e-RS)| nhs.uk to e-RS  | A8T3 |
 
@@ -47,7 +47,5 @@ This page provides guidance for implementing the Referral Standard (BaRS) specif
 ### Data model endorsements
 
 NHS England teams within Referrals and Appointments, Digitial Urgent and Emergency Care and the National Pathway for Self-Referrals have co-produced the Application 8 standard to facilitate interoperability between existing systems for referral pathways.  
-
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.4.0, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard.
 
 <hr />
