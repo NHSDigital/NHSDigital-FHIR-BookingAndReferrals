@@ -6,7 +6,7 @@
   <name value="BARS Message Definition ServiceRequest - Response Referral Short" />
   <title value="BARS Message Definition ServiceRequest - Response Referral Short" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2026-03-24" />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
@@ -29,8 +29,8 @@
       <coding>
         <!--  Use cases supported by this MessageDefinition Application -->
         <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-        <code value="a6t3" />
-        <display value="CAD to CAD Mutual Aid Request" />
+        <code value="a6t1" />
+        <display value="CAD to CAD Out of Area Referral" />
       </coding>
     </valueCodeableConcept>
   </useContext>
