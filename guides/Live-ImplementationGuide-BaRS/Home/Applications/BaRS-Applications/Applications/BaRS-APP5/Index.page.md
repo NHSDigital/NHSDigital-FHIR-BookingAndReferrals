@@ -17,9 +17,9 @@ topic: Application5
 </thead>
 <tbody>
 	<tr>
-		<td>Application 5 v1.1.4</td>
+		<td>Application 5 v1.2.0</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.10.0" target="_blank">v1.1.x</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.11.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0" target="_blank">v1.1.0</a></td>
 	</tr>
 </tbody>
@@ -30,6 +30,8 @@ topic: Application5
  <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important: Notice for suppliers</b> 
  <p>
  Any suppliers building to this application (Application 5) must engage with NHS England's Pharmacy First/Digital Services for Integrated Care teams prior to building Application 5.
+
+ The only use case suppliers can develop to in Application 5 is Primary Care to Community Pharmacy (Pharmacy First). 
  </p>
 
 </div>
@@ -39,12 +41,12 @@ topic: Application5
 
 This application supports the use of the following use cases:
 
-| Use Case                                                                                                                                                                      | Name |  Code |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|-------|
-| Deprecated -  Primary Care to Community Pharmacy (Pharmacy First)                                                                                                                 | Primary Care to Community Pharmacy | referraltopharmacy |
-| Primary Care to Community Pharmacy (Pharmacy First)                                                                                                                           | Primary Care to Community Pharmacy| A5T1 |
-| Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP)) | Primary Care to Pharmacy Contraception | A5T2 |
-| Primary Care to Pharmacy Blood Pressure Check Service                                                                                                                         | Primary Care to Pharmacy Blood Pressure Check Service | A5T3 |
+| Use Case                                                                                                                                                                      | Name |  Code |  Status |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|-------|-------|
+| Deprecated -  Primary Care to Community Pharmacy (Pharmacy First)                                                                                                                 | Primary Care to Community Pharmacy | referraltopharmacy |  Deprecated |
+| Primary Care to Community Pharmacy (Pharmacy First)                                                                                                                           | Primary Care to Community Pharmacy| A5T1 |  Live |
+| Primary Care to Pharmacy Contraception (Oral Contraception for supply of initial or repeat prescriptions for Combined Oral Contraceptive (COC) or Proestogen Only Pill (POP)) | Primary Care to Pharmacy Contraception | A5T2 |  Withdrawn |
+| Primary Care to Pharmacy Blood Pressure Check Service                                                                                                                         | Primary Care to Pharmacy Blood Pressure Check Service | A5T3 |  Withdrawn |
 
 
 NB - 'Primary Care' currently includes GP Practice and Online Consultation, as described in the [BaRS Clinical Safety Case Report (CSCR)](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#downloads)

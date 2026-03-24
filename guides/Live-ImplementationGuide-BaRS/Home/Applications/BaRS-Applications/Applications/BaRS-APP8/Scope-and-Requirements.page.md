@@ -5,12 +5,11 @@ TOPIC: APP8-ScopeAndRequirements
 ## {{page-title}}
 
 ### Scope Overview
+
 This BaRS Application (Referrals from Advice and Guidance to e-RS broker, Application 8) supports the following use case(s) ONLY:
-* Improved Advice and Guidance to electronic-Referral Service (e-RS)
+* Advice and Guidance to electronic-Referral Service (e-RS)
 * 111Online to electronic-Referral Service (e-RS)
 * NHS.UK to electronic-Referral Service (e-RS)
-
-
 
 The payload and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
 
@@ -55,7 +54,7 @@ The payload and workflow have been designed to support these services. Other {{p
 
 **Referral**
 - The referral Receiver **must** accept the referral request regardless of whether the patient is known to the service provider
-- The referral Receiver **must** only accept potential patients who do **<ins>have</ins>** a national validated identifier e.g. NHS Number
+- The referral Receiver **must** only accept potential patients who **<ins>have</ins>** a national validated identifier e.g. NHS Number
 - The national identifier  **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified'  otherwise, the referral Sender **must <ins>not</ins>** include it in the request
 - Any new or existing safeguarding concern, recorded as part of the assessment, **must** be included in the referral Sender's request
 - The referral Receiver **must** clearly identify any included safeguarding concern to the end user
@@ -64,7 +63,7 @@ The payload and workflow have been designed to support these services. Other {{p
 - Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.4.0, text:failure scenarios}} for more detail
 - Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.4.0, text:failure scenarios}} for more detail
 - The referral Sender **must** indicate consent to share (for Direct Care) to the Receiver 
-- The referral Sender **must** indicate the urgency (using the agreed codeset) of the request to the Receiver 
+- The referral Sender **must** indicate the urgency (using the [agreed codesystem](https://simplifier.net/nhsbookingandreferrals/bars-broker-priority-status)) of the request to the Receiver 
 
 
 ### Audit
