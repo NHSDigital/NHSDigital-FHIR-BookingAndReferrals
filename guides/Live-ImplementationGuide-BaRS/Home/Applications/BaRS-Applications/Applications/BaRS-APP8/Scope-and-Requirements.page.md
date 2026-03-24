@@ -5,12 +5,11 @@ TOPIC: APP8-ScopeAndRequirements
 ## {{page-title}}
 
 ### Scope Overview
-This BaRS Application (Referrals from Advice and Guidance to eRS broker, Application 8) supports the following use case(s) ONLY:
+
+This BaRS Application (Referrals from Advice and Guidance to e-RS broker, Application 8) supports the following use case(s) ONLY:
 * Advice and Guidance to electronic-Referral Service (e-RS)
 * 111Online to electronic-Referral Service (e-RS)
 * NHS.UK to electronic-Referral Service (e-RS)
-
-
 
 The payload and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
 

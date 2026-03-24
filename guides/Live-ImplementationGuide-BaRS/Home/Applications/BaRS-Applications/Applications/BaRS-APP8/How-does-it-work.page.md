@@ -9,7 +9,7 @@ This section describes how the primary operations used in this Application work.
 This diagram illustrates the workflow and interactions of a referral request where healthcare options are offered to a patient by a clinician:
 <br>
 
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/Internal-Broker-IAG-To-e-RS-1.0.0-alpha.svg" width="1500"></img></a>
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/Internal-Broker-AG-To-e-RS-1.0.0-alpha.svg" width="1500"></img></a>
 
 The Application also supports a self-referral workflow:
 <br>
