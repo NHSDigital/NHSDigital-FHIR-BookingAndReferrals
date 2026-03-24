@@ -162,7 +162,7 @@ When a service is chosen, the "Service ID" field in the DOS data will be used as
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:core-standardpattern-1.4.0, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:core-standardpattern-1.4.0, text:standard pattern for BaRS Composite Messages}}.
 
 The Message Definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
