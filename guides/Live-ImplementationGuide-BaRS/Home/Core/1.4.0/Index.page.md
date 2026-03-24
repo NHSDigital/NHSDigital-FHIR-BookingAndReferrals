@@ -13,7 +13,7 @@ topic: design-core-1.4.0
 </thead>
 <tbody>
 	<tr>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/1.3.1" target="_blank">v1.3.1</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/1.4.0" target="_blank">v1.4.0</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
@@ -22,7 +22,7 @@ topic: design-core-1.4.0
 </div>
 
 
-# BaRS Core 1.3.1
+# BaRS Core 1.4.0
 
 BaRS consists of BaRS Core that provides a core set of functionality and BaRS Applications that provide distinct functionality for each use case.
 
@@ -31,7 +31,7 @@ You will find here a set of documentation, specifications and services that desc
 <details>
 <summary>> <b class="barslink">Expand for full Core directory</b></summary>
 
-&bull; {{pagelink:design-core-1.4.0 , text: Core 1.3.1}}</br>
+&bull; {{pagelink:design-core-1.4.0 , text: Core 1.4.0}}</br>
 &nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-1.4.0 , text:End to end workflow}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-ServiceDiscovery-1.4.0 , text:Service Discovery}}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; {{pagelink:core-EndToEndWorkflow-BaRSAuth-1.4.0 , text:Authenticate with BaRS}}</br>
@@ -243,7 +243,7 @@ For more detail please visit the {{pagelink:core-StandardPattern-document-refere
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information - Preview</b>
 <p>
 
-This version of core is strictly a preview of what is currently in development for 1.3.1 and should not be built against.
+This version of core is strictly a preview of what is currently in development for 1.4.0 and should not be built against.
 
 </div>
 
