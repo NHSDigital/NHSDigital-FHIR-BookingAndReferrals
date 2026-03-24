@@ -24,14 +24,14 @@
 			<valueCoding>
 				<system value="http://snomed.info/sct"/>
 				<code value="78064003"/>
-				<display value="Breathing (observable entity)"/>
+				<display value="Breathing"/>
 			</valueCoding>
 		</answerOption>
 		<answerOption>
 			<valueCoding>
 				<system value="http://snomed.info/sct"/>
 				<code value="1023001"/>
-				<display value="Not Breathing (finding)"/>
+				<display value="Not Breathing"/>
 			</valueCoding>
 		</answerOption>
 	</item>
@@ -44,7 +44,7 @@
 			<operator value="="/>
 			<answerCoding>
 				<code value="78064003"/>
-				<display value="Breathing (observable entity)"/>
+				<display value="Breathing"/>
 			</answerCoding>
 		</enableWhen>
 		<required value="false"/>
@@ -72,7 +72,7 @@
 			<operator value="="/>
 			<answerCoding>
 				<code value="78064003"/>
-				<display value="Breathing (observable entity)"/>
+				<display value="Breathing"/>
 			</answerCoding>
 		</enableWhen>
 		<required value="false"/>
@@ -100,7 +100,7 @@
 			<operator value="="/>
 			<answerCoding>
 				<code value="78064003"/>
-				<display value="Breathing (observable entity)"/>
+				<display value="Breathing"/>
 			</answerCoding>
 		</enableWhen>
 		<required value="false"/>

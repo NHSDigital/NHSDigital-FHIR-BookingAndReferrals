@@ -30,7 +30,7 @@
       <valueCoding>
         <system value="http://snomed.info/sct" />
         <code value="78064003" />
-        <display value="Breathing (observable entity)" />
+        <display value="Breathing" />
       </valueCoding>
     </answer>
   </item>
