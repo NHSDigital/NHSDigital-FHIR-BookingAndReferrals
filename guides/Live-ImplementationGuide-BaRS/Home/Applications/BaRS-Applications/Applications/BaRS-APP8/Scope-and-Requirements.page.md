@@ -27,7 +27,7 @@ The payload and workflow have been designed to support these services. Other {{p
 - The referral can be sent without having to establish the capacity of the receiving service
 - The referral will contain primarily clinical information, indicating the need of the individual and **must** state the anticipated action required by the receiving service (see Task FHIR resource)
 - A list of healthcare services which can support the patient/client need are offered to the broker to direct the next step in care
-* Supporting information, other than the assessment, is expected to be included in a referral, if collected, including:
+- Supporting information, other than the assessment, is expected to be included in a referral, if collected, including:
     * new or existing safeguarding concerns
     * locally held Special Patient Notes
     * external information sources used during initial assessment prior to referral
