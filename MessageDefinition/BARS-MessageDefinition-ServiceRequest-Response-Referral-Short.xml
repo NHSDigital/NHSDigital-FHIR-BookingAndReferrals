@@ -71,7 +71,7 @@
   <focus>
     <code value="Organization" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-    <min value="1" />
+    <min value="2" />
     <max value="*" />
   </focus>
   <focus>
