@@ -34,7 +34,7 @@ This application supports the use of the following use cases:
 |Use case                                                                        | Name | Code|
 |--------------------------------------------------------------------------------|------|------|
 | Advice and Guidance to electronic-Referral Service (e-RS)| AG to e-RS  | A8T1 |
-| 111Online to electronic-Referral Service (e-RS)| 111online to e-RS  | A8T2 |
+| 111 Online to electronic-Referral Service (e-RS)| 111 online to e-RS  | A8T2 |
 | NHS.UK to electronic-Referral Service (e-RS)| nhs.uk to e-RS  | A8T3 |
 
 

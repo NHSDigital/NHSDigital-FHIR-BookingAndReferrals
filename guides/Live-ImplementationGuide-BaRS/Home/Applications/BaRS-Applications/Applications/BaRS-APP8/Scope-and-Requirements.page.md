@@ -6,9 +6,9 @@ TOPIC: APP8-ScopeAndRequirements
 
 ### Scope Overview
 
-This BaRS Application (Referrals from Advice and Guidance to e-RS broker, Application 8) supports the following use case(s) ONLY:
+This BaRS Application (Referrals into a broker for Healthcare Service selection, Application 8) supports the following use case(s) ONLY:
 * Advice and Guidance to electronic-Referral Service (e-RS)
-* 111Online to electronic-Referral Service (e-RS)
+* 111 Online to electronic-Referral Service (e-RS)
 * NHS.UK to electronic-Referral Service (e-RS)
 
 The payload and workflow have been designed to support these services. Other {{pagelink:applications, text:BaRS Applications}} offer scope for alternative use cases.
@@ -27,7 +27,7 @@ The payload and workflow have been designed to support these services. Other {{p
 - The referral can be sent without having to establish the capacity of the receiving service
 - The referral will contain primarily clinical information, indicating the need of the individual and **must** state the anticipated action required by the receiving service (see Task FHIR resource)
 - A list of healthcare services which can support the patient/client need are offered to the broker to direct the next step in care
-* Supporting information, other than the assessment, is expected to be included in a referral, if collected, including:
+- Supporting information, other than the assessment, is expected to be included in a referral, if collected, including:
     * new or existing safeguarding concerns
     * locally held Special Patient Notes
     * external information sources used during initial assessment prior to referral

@@ -78,7 +78,7 @@ X-Correlation-Id = <GUID_00002>
 
 ### Make a booking
 
-Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.4.0, text:standard pattern for BaRS operations}}.
+Making a booking for this Application follows the {{pagelink:Core-StandardPattern-1.4.0, text:standard pattern for BaRS Composite Messages}}.
 
 The Message Definition that defines this payload for this Application is: [BARS Message Definition - Booking Request](https://simplifier.net/nhsbookingandreferrals/messagedefinition-bars-messagedefinition-booking-request)
 
