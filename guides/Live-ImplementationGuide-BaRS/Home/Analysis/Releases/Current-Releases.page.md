@@ -22,7 +22,7 @@ Implementation Guide   | 1.11.0   | v1      | Live     | Current Release | 26/03
 
 Release 1.11.0 of the BaRS Implementation Guide introduces BaRS Application 8 "Referrals to a broker for Healthcare Service selection" as an alpha release.  BaRS Application 8 is designed to create interoperability for referrals between NHS England products.  The next phase of content and navigation changes in the Implementation Guide are delivered.  They are focussed on: the Home page, the Analysis section (formerly About BaRS) and relocation of content from this area.  These changes are based on user feedback. 
 
-Application 5 is updated with the withdrawl of use cases for GP to Blood Pressure Check Service and GP to Pharmacy Contraception (Oral Contraception).  Also included in this release are minor changes to BaRS Application 6 and bug fixes and corrections throughout the guide.
+Application 5 is updated with the withdrawal of use cases for GP to Blood Pressure Check Service and GP to Pharmacy Contraception (Oral Contraception).  Also included in this release are minor changes to BaRS Application 6 and bug fixes and corrections throughout the guide.
  
 A clinical safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new hazards have been identified in this release. The latest version of the BaRS clinical safety case and hazard log can be downloaded from the <a href= "https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#hazard-log-and-clinical-safety-case-report-cscr-" target="_blank"> BaRS FHIR API onboarding support information page </a>.
 
