@@ -42,7 +42,7 @@ This application supports the use of the following use cases:
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.4.0, text:BaRS Core implementation guide}} and API Specification when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.4.0, text:BaRS Core implementation guide}} and [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.0) when developing to the standard. 
 
 ### Data model endorsements
 
