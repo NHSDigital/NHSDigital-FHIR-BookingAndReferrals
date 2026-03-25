@@ -6,7 +6,7 @@ topic: APP8-HowDoesItWork
 
 This section describes how the primary operations used in this Application work. 
 
-This diagram illustrates the workflow and interactions of a referral request where healthcare options are offered to a patient by a clinician:
+This diagram illustrates the workflow and interactions of a referral request where a shortlist of healthcare service options are offered to a patient by a clinician:
 <br>
 
 <img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/Internal-Broker-AG-To-e-RS-1.0.0-alpha.svg" width="1500"></img></a>
@@ -26,20 +26,22 @@ The referral request is directed to a broker in this Application, rather than di
 
 The Sender will establish the patient need, identify a specific service or prepare a shortlist of healthcare services to support them, and package these in the referral request. The request is sent from the Sender to the broker (Receiver) and then onto the selected healthcare service (through [e-RS](https://digital.nhs.uk/services/e-referral-service) ). 
 
+Alternatively, where a self-referral workflow is undertaken, the steps are the same but only one healthcare service option is included in the referral request. 
+
 Directing the referral request will still engage the same BaRS mechanisms; utilising the NHSD-Target-Identifier. However, the Receiver is a consistent, known entity, rather than dynamically established during workflow.
 
 *NB - The definition of the broker NHSD-Target-Identifier has not yet been agreed.*
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:core-standardpattern-1.4.0, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:core-standardpattern-1.4.0, text:standard pattern for BaRS Composite Messages}}.
 
 The Message Definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
 
 <hr>
 
-In addition to that the specific workflow parameters that are required are as follows:
+In addition, the specific workflow parameters that are required are as follows:
 
 <div class="nhsd-m-emphasis-box">
     <div class="nhsd-a-box nhsd-a-box--border-grey">
