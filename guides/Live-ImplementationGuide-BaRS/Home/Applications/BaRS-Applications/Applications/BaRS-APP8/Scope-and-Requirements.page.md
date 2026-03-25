@@ -55,7 +55,7 @@ The payload and workflow have been designed to support these services. Other {{p
 **Referral**
 - The referral Receiver **must** accept the referral request regardless of whether the patient is known to the service provider
 - The referral Receiver **must** only accept potential patients who **<ins>have</ins>** a national validated identifier e.g. NHS Number
-- The national identifier  **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified'  otherwise, the referral Sender **must <ins>not</ins>** include it in the request
+- The national identifier  **must** have a [verification status](https://simplifier.net/hl7fhirukcorer4/valueset-ukcore-nhsnumberverificationstatus) of 'Number present and verified'.
 - Any new or existing safeguarding concern, recorded as part of the assessment, **must** be included in the referral Sender's request
 - The referral Receiver **must** clearly identify any included safeguarding concern to the end user
 - The referral Receiver **must** accurately represent information made by the Sender to the end user.

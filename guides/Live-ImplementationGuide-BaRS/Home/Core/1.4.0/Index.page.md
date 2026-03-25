@@ -14,7 +14,7 @@ topic: design-core-1.4.0
 <tbody>
 	<tr>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core/1.4.0" target="_blank">v1.4.0</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
 </tbody>
