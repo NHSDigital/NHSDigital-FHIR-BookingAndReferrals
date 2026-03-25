@@ -41,7 +41,7 @@ The Message Definition that defines this payload for this application is: {{link
 
 <hr>
 
-In addition to that the specific workflow parameters that are required are as follows:
+In addition, the specific workflow parameters that are required are as follows:
 
 <div class="nhsd-m-emphasis-box">
     <div class="nhsd-a-box nhsd-a-box--border-grey">
