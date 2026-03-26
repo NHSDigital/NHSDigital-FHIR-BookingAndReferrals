@@ -1,8 +1,10 @@
 - name: Index
-  filename: index.page.md
+  filename: Index.page.md
 - name: Introduction
   filename: Introduction.page.md
 - name: DocumentReferences for Senders
-  filename: Sender-DocumentReference.md
+  filename: Sender-DocumentReference.page.md
 - name: DocumentReferences for Receivers
-  filename: Receiver-DocumentReference.md
+  filename: Receiver-DocumentReference.page.md
+- name: 
+  filename: DocumentReference-Interface.page.md 
