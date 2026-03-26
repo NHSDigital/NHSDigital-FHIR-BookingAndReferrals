@@ -3,7 +3,7 @@
 - name: Mechanism
   filename: Mechanism.page.md
 - name: Workflow
-  filename: Workflow.page.md
+  filename: WorkFlow.page.md
 - name: Sender MessageDefiniton 
   filename: Sender-MessageDefinition.page.md
 - name: Sender CapabilityStatement 

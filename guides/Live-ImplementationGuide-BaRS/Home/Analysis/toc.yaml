@@ -1,11 +1,11 @@
-- name: Analysis
-  filename: Analysis
+- name: Index
+  filename: index.page.md
 - name: BaRS Principles and Prerequisites
   filename: BaRS-Principles-and-Prerequisites
 - name: Infrastructure
   filename: Infrastructure 
 - name: Roles and Responsibilities
-  filename: RolesAndResponsibilities.md
+  filename: RolesAndResponsibilities.page.md
 - name: Releases
   filename: Releases
 - name: Versioning
