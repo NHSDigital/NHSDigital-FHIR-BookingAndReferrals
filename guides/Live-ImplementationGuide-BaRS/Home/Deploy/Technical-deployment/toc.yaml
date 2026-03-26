@@ -3,8 +3,8 @@
 - name: Technical Deployment
   filename: TechnicalDeployment.page.md
 - name: DoS Configuration
-  filename: DirectoryOfServiceConfiguration.md
+  filename: DirectoryOfServiceConfiguration.page.md
 - name: BaRS Endpoint Catalogue
-  filename: BaRSEndpointCatalogue.md
+  filename: BaRSEndpointCatalogue.page.md
 - name: Firewall Exceptions
-  filename: FirewallExceptions.md
+  filename: FirewallExceptions.page.md
