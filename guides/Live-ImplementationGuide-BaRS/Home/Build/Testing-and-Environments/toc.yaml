@@ -8,5 +8,7 @@
   filename: Connect-as-a-sender.page.md
 - name: Connect as a receiver
   filename: Connect-as-a-receiver.page.md
+- name: Certificates
+  filename: Certificates.page.md
 - name: TKW
   filename: TKW.page.md
