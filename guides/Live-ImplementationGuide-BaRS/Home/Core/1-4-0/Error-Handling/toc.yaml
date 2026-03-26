@@ -20,7 +20,5 @@
   filename: BaRS-interactions--receiving.page.md
 - name: Receiver Responsibilities
   filename: Receiver-Responsibilities.page.md
-- name: OperationOutcome Example
-  filename: OperationOutcome-Example-duplicate-2.page.md
 - name: Failure Scenarios
   filename: Failure-Scenarios.page.md
