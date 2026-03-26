@@ -1,11 +1,9 @@
-- name: Analysis
-  filename: Analysis
 - name: BaRS Principles and Prerequisites
   filename: BaRS-Principles-and-Prerequisites
 - name: Infrastructure
   filename: Infrastructure 
 - name: Roles and Responsibilities
-  filename: RolesAndResponsibilities.md
+  filename: RolesAndResponsibilities.page.md
 - name: Releases
   filename: Releases
 - name: Versioning
