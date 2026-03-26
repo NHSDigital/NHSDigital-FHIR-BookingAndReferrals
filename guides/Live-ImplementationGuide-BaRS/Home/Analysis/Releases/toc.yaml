@@ -8,3 +8,7 @@
   filename: Previous-Releases.page.md
 - name:
   filename: Technical-Release-Notes
+- name:
+  filename: Compatibility-Matrix.page.md 
+- name:
+  filename: Pre-Releases.page.md
