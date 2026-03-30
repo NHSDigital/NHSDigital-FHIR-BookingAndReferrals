@@ -3,7 +3,7 @@
 
 Welcome to the BaRS Implementation guide.
 
-Here you will find a step-by-step guide to help you prepare for implementing BaRS and complete the assurance process.
+Here you will find a step-by-step testing process guide to help you prepare for implementing BaRS and complete the assurance process.
 
 Step 1: {{pagelink:Analysis, text:Analysis}}
 A group of pages to support you to understand what is required to implement BaRS successfully. 
