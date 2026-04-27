@@ -2,11 +2,12 @@
   <id value="15b429dc-2464-42ca-b401-4c2a5e8320bb" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-interim" />
   <!-- This is the version number of Application 4 -->
-  <version value="1.1.0" />
+  <version value="1.1.1" />
   <name value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <title value="BARS Message Definition ServiceRequest - Response Validation Interim" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2025-04-27" />
+  <description value="BaRS message definition for an interim ServiceRequest validation response used in Application 4 (999 to CAS Validation). The message SHALL include a message Bundle with a ServiceRequest validation response and essential supporting context, including Patient, two Encounters, involved Organisations, Practitioner and PractitionerRole resources, and optional HealthcareService, to support staged validation workflows prior to a final response." />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />

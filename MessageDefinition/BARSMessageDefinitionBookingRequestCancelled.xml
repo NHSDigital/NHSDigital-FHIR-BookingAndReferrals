@@ -2,11 +2,13 @@
   <id value="95b337c0-9644-4b5e-accf-246636e55905" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request-cancelled" />
   <!-- This is the version number of Application 1 -->
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="BARS Message Definition Booking - Request - Cancelled" />
   <title value="BARS Message Definition Booking - Request - Cancelled" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2026-04-27" />
+  <description
+    value="BaRS message definition for cancellation of a booking request in Application 1 (111 to ED). The message SHALL include a message Bundle with a booking-request MessageHeader, one Appointment indicating the cancelled booking, associated Patient details, and the Organisations involved in the booking workflow." />
   <useContext>
     <!-- We are expecting the UseContext to be a DOS ID -->
     <code>
