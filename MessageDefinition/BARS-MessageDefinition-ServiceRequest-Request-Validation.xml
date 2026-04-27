@@ -47,12 +47,6 @@
     <max value="1" />
   </focus>
   <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
     <code value="ServiceRequest" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-validation" />
     <min value="1" />

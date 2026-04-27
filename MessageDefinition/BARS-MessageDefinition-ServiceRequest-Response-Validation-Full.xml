@@ -7,6 +7,7 @@
   <title value="BARS Message Definition ServiceRequest - Response Validation Full" />
   <status value="active" />
   <date value="2026-04-27" />
+  <description value="BaRS ServiceRequest referral response (short) message definition for Application 6 CAD to CAD Out of Area Referral workflows." />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
