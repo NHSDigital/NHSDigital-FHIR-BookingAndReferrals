@@ -54,7 +54,7 @@
     </resource>
     <resource>
       <type value="Appointment" />
-      <Profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
       <interaction>
         <code value="read" />
       </interaction>

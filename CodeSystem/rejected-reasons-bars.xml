@@ -24,7 +24,6 @@
     <copyright value="Copyright &#169; 2022 NHS England" />
     <caseSensitive value="true"/>
     <content value="complete"/>
-	<!-- Rejected Reasons -->
     <concept>
         <code value="RRNA" />
         <display value="Requested resource not available within timescale" />
