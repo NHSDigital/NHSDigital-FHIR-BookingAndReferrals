@@ -1,6 +1,6 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="45bcbe62-718b-4874-a68c-b0fe39a76cf5" />
-  <url value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4'" />
+  <url value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4" />
   <!-- This is the version of BaRS Core -->
   <version value="1.1.0" />
   <name value="BaRS FHIR Server CapabilityStatement" />
@@ -40,17 +40,8 @@
       </service>
     </security>
     <resource>
-      <type value="CapabilityStatement" />
-      <interaction>
-        <code value="read" />
-      </interaction>
-      <interaction>
-        <code value="vread" />
-      </interaction>
-      <versioning value="no-version" />
-    </resource>
-    <resource>
       <type value="MessageDefinition" />
+      <profile value="http://hl7.org/fhir/StructureDefinition/MessageDefinition" />
       <interaction>
         <code value="search-type" />
       </interaction>
@@ -62,7 +53,8 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="Appointment" />
+      <type value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
+      <supportedProfile value="" />
       <interaction>
         <code value="read" />
       </interaction>
@@ -91,6 +83,9 @@
     </resource>
     <resource>
       <type value="ServiceRequest" />
+      <profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-validation" />
+      <supportedProfile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       <interaction>
         <code value="read" />
       </interaction>
@@ -114,6 +109,7 @@
     </resource>
     <resource>
       <type value="Slot" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
       <interaction>
         <code value="search-type" />
       </interaction>
