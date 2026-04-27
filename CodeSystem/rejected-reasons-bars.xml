@@ -21,7 +21,7 @@
         </telecom>
     </contact>
     <description value="Rejected Reasons BARS"/>
-    <copyright value="Copyright &#169; 2022 NHS England" />
+    <copyright value="Copyright © 2022 NHS England" />
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
