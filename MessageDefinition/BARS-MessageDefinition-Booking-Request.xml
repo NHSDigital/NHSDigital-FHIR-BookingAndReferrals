@@ -7,6 +7,8 @@
   <title value="BARS Message Definition Booking - Request" />
   <status value="active" />
   <date value="2025-03-24" />
+  <description
+    value="BARS booking request message definition used to request creation of a booking within BaRS." />
   <useContext>
     <!-- We are expecting the UseContext to be a DOS ID -->
     <code>
