@@ -1,0 +1,10 @@
+structuredefinitions/.simplifier/folder.settings.json
+.simplifier/folder.settings.json
+.idea/
+fhirpkg.lock.json
+Examples/org.hl7.fhir.validator.jar
+validation
+IOPS-validation
+validation-service-fhir-r4
+.simplifier/quality.control.result.json
+.env
