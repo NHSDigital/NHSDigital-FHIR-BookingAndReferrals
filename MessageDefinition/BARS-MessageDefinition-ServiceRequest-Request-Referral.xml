@@ -2,11 +2,12 @@
   <id value="11882ae2-211f-49ee-acbe-e319304d80cd" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-referral" />
   <!-- This is the version number of Application 6 (currently in development on Simplifier) -->
-  <version value="1.0.0-beta" />
+  <version value="1.0.1-beta" />
   <name value="BARS Message Definition ServiceRequest - Request Referral" />
   <title value="BARS Message Definition ServiceRequest - Request Referral" />
   <status value="active" />
-  <date value="2026-03-16" />
+  <date value="2026-04-27" />
+  <description value="Defines the structure and required resources for a ServiceRequest referral request message within the BaRS interoperability specification. This message supports CAD-to-CAD and emergency referral workflows, including patient, service request, encounter, and related clinical and operational context. The message is packaged as a FHIR Bundle (type = message) and includes a MessageHeader and associated clinical resources required to process a referral request." />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
@@ -68,12 +69,6 @@
   <focus>
     <code value="Bundle" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request" />
     <min value="1" />
     <max value="1" />
   </focus>

@@ -22,6 +22,10 @@
       <path value="Extension.extension" />
       <sliceName value="RequesterCDSSsoftware" />
     </element>
+    <element id="Extension.extension:RequesterCDSSsoftware.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
+    </element>
     <element id="Extension.extension:RequesterCDSSsoftware.url">
       <path value="Extension.extension.url" />
       <fixedUri value="RequesterCDSSsoftware" />
@@ -29,6 +33,10 @@
     <element id="Extension.extension:RequesterCDSSversion">
       <path value="Extension.extension" />
       <sliceName value="RequesterCDSSversion" />
+    </element>
+    <element id="Extension.extension:RequesterCDSSversion.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:RequesterCDSSversion.url">
       <path value="Extension.extension.url" />
