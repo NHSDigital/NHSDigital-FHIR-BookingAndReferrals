@@ -1,7 +1,6 @@
 {
   "strict-validation": false,
   "ignore-folders": [
-    "Examples",
     "BaRS-Images",
     "BaRS-Images/DocumentReference",
     "BaRS-Images/EntityMaps",
