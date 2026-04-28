@@ -6,7 +6,7 @@
     "dependencies": {
       "hl7.fhir.r4.core": "4.0.1",
       "uk.nhsdigital.r4": "2.11.0",
-      "fhir.r4.ukcore.stu2": "2.0.2"
+      "fhir.r4.ukcore.stu3.currentbuild ":"0.0.3-pre-release"
     },
   "fhirVersions": [
     "4.0.1"

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="BARSMessageHeaderBookingRequest" />
   <url value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-booking-request" />
-  <version value="1.0.1" />
+  <version value="1.1.1" />
   <name value="BARSMessageHeaderBookingRequest" />
   <title value="BARS MessageHeader - Booking-Request" />
   <status value="active" />
@@ -12,17 +12,18 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="MessageHeader" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader" />
   <derivation value="constraint" />
   <differential>
-    <element id="MessageHeader.event[x].system">
-      <path value="MessageHeader.event[x].system" />
+    <element id="MessageHeader.eventCoding">
+      <path value="MessageHeader.eventCoding" />
+    </element>
+    <element id="MessageHeader.eventCoding.system">
+      <path value="MessageHeader.eventCoding.system" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
     </element>
-    <element id="MessageHeader.event[x].code">
-      <path value="MessageHeader.event[x].code" />
-      <comment value="This will be a set of fixed values that are used to trigger use case specific processing when the bundle is received (refer to guidance for definitions etc..)" />
-      <min value="1" />
+    <element id="MessageHeader.eventCoding.code">
+      <path value="MessageHeader.eventCoding.code" />
       <fixedCode value="booking-request" />
     </element>
     <element id="MessageHeader.destination">
@@ -42,21 +43,9 @@
       <comment value="Reference to the Requester Organisation" />
       <min value="1" />
     </element>
-    <element id="MessageHeader.source.extension">
+    <element id="MessageHeader.source.extension:CDSSExtension">
       <path value="MessageHeader.source.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="MessageHeader.source.extension:myExtension">
-      <path value="MessageHeader.source.extension" />
-      <sliceName value="myExtension" />
-      <min value="0" />
+      <sliceName value="CDSSExtension" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/CDSSExtension" />

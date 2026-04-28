@@ -15,12 +15,16 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
   <derivation value="constraint" />
   <differential>
-    <element id="MessageHeader.event[x].system">
-      <path value="MessageHeader.event[x].system" />
+    <element id="MessageHeader.eventCoding">
+      <path value="MessageHeader.eventCoding" />
       <min value="1" />
     </element>
-    <element id="MessageHeader.event[x].code">
-      <path value="MessageHeader.event[x].code" />
+    <element id="MessageHeader.eventCoding.system">
+      <path value="MessageHeader.eventCoding.system" />
+      <min value="1" />
+    </element>
+    <element id="MessageHeader.eventCoding.code">
+      <path value="MessageHeader.eventCoding.code" />
       <min value="1" />
     </element>
     <element id="MessageHeader.destination">
@@ -39,21 +43,9 @@
       <path value="MessageHeader.sender.identifier.assigner.reference" />
       <min value="1" />
     </element>
-    <element id="MessageHeader.source.extension">
-      <path value="MessageHeader.source.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MessageHeader.source.extension:myExtension">
       <path value="MessageHeader.source.extension" />
       <sliceName value="myExtension" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/CDSSExtension" />

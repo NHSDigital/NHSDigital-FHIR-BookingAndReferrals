@@ -24,6 +24,10 @@
       <sliceName value="UPRN" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:UPRN.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
+    </element>
     <element id="Extension.extension:UPRN.url">
       <path value="Extension.extension.url" />
       <fixedUri value="UPRN" />
@@ -38,6 +42,10 @@
       <path value="Extension.extension" />
       <sliceName value="PAF" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:PAF.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:PAF.url">
       <path value="Extension.extension.url" />
@@ -54,6 +62,10 @@
       <sliceName value="eastings" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:eastings.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
+    </element>
     <element id="Extension.extension:eastings.url">
       <path value="Extension.extension.url" />
       <fixedUri value="eastings" />
@@ -68,6 +80,10 @@
       <path value="Extension.extension" />
       <sliceName value="northings" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:northings.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:northings.url">
       <path value="Extension.extension.url" />
@@ -84,6 +100,10 @@
       <sliceName value="what3words" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:what3words.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
+    </element>
     <element id="Extension.extension:what3words.url">
       <path value="Extension.extension.url" />
       <fixedUri value="what3words" />
@@ -98,6 +118,10 @@
       <path value="Extension.extension" />
       <sliceName value="accuracy" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:accuracy.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:accuracy.url">
       <path value="Extension.extension.url" />

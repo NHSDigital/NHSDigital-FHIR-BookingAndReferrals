@@ -15,15 +15,12 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
   <derivation value="constraint" />
   <differential>
-    <element id="MessageHeader.event[x].system">
-      <path value="MessageHeader.event[x].system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
-    </element>
-    <element id="MessageHeader.event[x].code">
-      <path value="MessageHeader.event[x].code" />
-      <comment value="This will be a set of fixed values that are used to trigger use case specific processing when the bundle is received (refer to guidance for definitions etc..)" />
-      <min value="1" />
-      <fixedCode value="servicerequest-response" />
+    <element id="MessageHeader.eventCoding">
+      <path value="MessageHeader.eventCoding" />
+      <fixedCoding>
+        <system value="https://fhir.nhs.uk/CodeSystem/message-events-bars" />
+        <code value="booking-request" />
+      </fixedCoding>
     </element>
     <element id="MessageHeader.destination">
       <path value="MessageHeader.destination" />
@@ -41,21 +38,9 @@
       <path value="MessageHeader.sender.identifier.assigner.reference" />
       <min value="1" />
     </element>
-    <element id="MessageHeader.source.extension">
-      <path value="MessageHeader.source.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MessageHeader.source.extension:myExtension">
       <path value="MessageHeader.source.extension" />
       <sliceName value="myExtension" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/CDSSExtension" />
