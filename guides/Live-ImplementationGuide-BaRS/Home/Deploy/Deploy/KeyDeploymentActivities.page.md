@@ -20,11 +20,11 @@ Business change activities will typically involve:
 - benefits management and realisation
 
 ## Solution Deployment and Configuration
-In almost all {{pagelink:applications, text:BaRS Applications}}, a solution will act as a Sender and Receiver and need to perform all {{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text:onboarding}} steps.
+In almost all {{pagelink:applications, text:BaRS Applications}}, a solution will act as a Sender and Receiver and need to perform all {{pagelink:Home/Build/Testing-and-Environments/Index.page.md, text:Connecting to environments}} steps.
 
 Onboarding must occur for each environment independently; the process is similar for each but the steps must be replicated.
 The core steps to complete technical setup in an environment are:
-- complete {{pagelink:Home/Build/Testing-and-Environments/Onboarding.page.md, text:onboarding}} for the desired environment
+- complete {{pagelink:Home/Build/Testing-and-Environments/Index.page.md, text:Connecting to environments}} for the desired environment
 - install supplier solution in the given Solution Environment (See Testing section)
 - perform any configuration steps to enable BaRS (and related workflows) in the solution
 - provide service identifier* to be configured in the Endpoint Catalogue (BaRS related component)

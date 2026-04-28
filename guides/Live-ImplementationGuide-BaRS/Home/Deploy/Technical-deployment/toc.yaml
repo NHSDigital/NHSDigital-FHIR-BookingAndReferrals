@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Technical Deployment
+  filename: TechnicalDeployment.page.md
+- name: DoS Configuration
+  filename: DirectoryOfServiceConfiguration.page.md
+- name: BaRS Endpoint Catalogue
+  filename: BaRSEndpointCatalogue.page.md
+- name: Firewall Exceptions
+  filename: FirewallExceptions.page.md

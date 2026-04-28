@@ -2,11 +2,12 @@
   <id value="95b337c0-9644-4b5e-accf-246636e55905" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-booking-request" />
   <!-- This is the version number of Application 1 -->
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="BARS Message Definition Booking - Request" />
   <title value="BARS Message Definition Booking - Request" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2026-04-27" />
+  <description value="BARS booking request message definition used to request creation of a booking within BaRS." />
   <useContext>
     <!-- We are expecting the UseContext to be a DOS ID -->
     <code>
@@ -41,12 +42,6 @@
   <focus>
     <code value="Bundle" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-booking-request" />
     <min value="1" />
     <max value="1" />
   </focus>

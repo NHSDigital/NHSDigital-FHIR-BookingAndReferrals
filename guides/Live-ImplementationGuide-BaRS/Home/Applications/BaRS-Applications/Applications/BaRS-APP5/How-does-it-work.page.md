@@ -135,7 +135,7 @@ The search parameters to be used are as follows:
                     </tr>
                     <tr>
                         <td>Blood Pressure Check Service</td>
-                        <td><b>Use Service Type ID 149 - Pharmacy Blood Pressure Check</b></td>
+                        <td><b>Use Service Type ID 148 - Pharmacy Blood Pressure Check</b></td>
                         <td>This service is not time critical and so all nearest services can be displayed to the user.<br>Ensure the display clearly shows:</br><li>The opening times, to allow the user to provide opening times to the patient so that they can go to the pharmacy when it is open.</li>
 <li>The phone number for the pharmacy, so the user can give this to the patient in case they want to call and pre-arrange when to come in.</li>
 						</td>
@@ -162,7 +162,7 @@ When a service is chosen, the "Service ID" field in the DOS data will be used as
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:core-standardpattern-1.3.0, text:standard pattern for BaRS operations}}.
+Making a referral for this application follows the {{pagelink:core-standardpattern-1.4.0, text:standard pattern for BaRS Composite Messages}}.
 
 The Message Definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -236,7 +236,7 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.3.0, text:standard pattern for BaRS cancellation}}. 
+To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.4.0, text:standard pattern for BaRS cancellation}}. 
 
 The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 

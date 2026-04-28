@@ -2,11 +2,12 @@
   <id value="15b429dc-2464-42ca-b401-4c2a5e8320aa" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-validation-full" />
   <!-- This is the version number of Application 4 -->
-  <version value="1.1.0" />
+  <version value="1.1.1" />
   <name value="BARS Message Definition ServiceRequest - Response Validation Full" />
   <title value="BARS Message Definition ServiceRequest - Response Validation Full" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2026-04-27" />
+  <description value="BaRS ServiceRequest referral response (short) message definition for Application 6 CAD to CAD Out of Area Referral workflows." />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
@@ -41,12 +42,6 @@
   <focus>
     <code value="Bundle" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-response" />
     <min value="1" />
     <max value="1" />
   </focus>

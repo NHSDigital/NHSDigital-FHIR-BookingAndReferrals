@@ -4,7 +4,7 @@ topic: Application7
 
 # Bookings and Referrals into GP (Application 7)
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This guide is currently under development <hr><p> This is a preview of a developing guide for information only. With the exception of those involved in developing solutions for the first of type (private beta), It is not intended to be used until the completed v1.0.0 documentation for this application is released <p> If you are interested in developing a BaRS compliant solution right now for the use cases covered by this application, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> This guide is currently under development <hr><p> This is a preview of a developing guide for information only. With the exception of those involved in developing solutions for the first of type (private beta), it is not intended to be used until the completed v1.0.0 documentation for this Application is released <p> If you are interested in developing a BaRS compliant solution right now for the use cases covered by this Application, please use the contact form <a href="https://digital.nhs.uk/services/booking-and-referral-standard/enquiry-form" target="_blank">here</a> and the team will be in touch
 
 <p>
 

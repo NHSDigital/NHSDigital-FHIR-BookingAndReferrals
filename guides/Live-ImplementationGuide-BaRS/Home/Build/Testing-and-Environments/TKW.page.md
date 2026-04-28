@@ -4,7 +4,7 @@
 
 TKW - Toolkit Workbench - is a tool to assist development and assurance of supplier solutions to meet BaRS (Booking and Referral Standard) requirements.
 
-The tool supports testing of key high-level workflows e.g. a booking routine, including some of asynchronous ones, but is also capable of inspecting low level technical requirements. It reports the output in Validation Reports which clearly indicates to the reader where and why a test has failed. In addition, it supports consistent error states which are often difficult to create but required for development and assurance. 
+The tool supports testing of key high-level workflows e.g. a booking routine, including some asynchronous ones, and is also capable of inspecting low level technical requirements. It reports the output in Validation Reports which indicate where and why a test has failed. In addition, it supports consistent error states which are often difficult to create but are required for development and assurance. 
 
 The BaRS TKW tooling is embedded into the INT environment, encompassing all the same end-to-end BaRS infrastructure that is mirrored in Production, rather than being downloaded and used in isolation. This ensures the same steps to deploy solutions to Production are followed during deployment to INT, and allowing testing of requests/responses to occur under Production-like conditions. Similarly, we're able to incorporate other key components, similar to those used in Production workflows, such as the [UserTest Directory of Services (DoS)](https://usertest.directoryofservices.nhs.uk/app/controllers/home/home.php). In the current {{pagelink:Applications, text:BaRS Applications}}, the TKW tool relies on values in the UserTest DoS to elicit particular behavioural responses. The Sender will populate what are termed 'sentinel' values, such as the NHSD-Target-Identifier, with a particular value and TKW will respond with a certain Capability Statement, MessageDefinition etc. (See the 'Scenarios' section for detail).
 
@@ -49,7 +49,7 @@ Once all requested tests have been completed, the Validation Report can be downl
 
 - from the top menu, select 'Download Reports'
 - then click on the button 'Download Reports' (this packages the report and makes it available to download locally)
-- from the top me, select 'Receiver Reports'
+- from the top menu, select 'Receiver Reports'
 - click on the hyperlink of the required report to download locally (.zip format)
 
 ### Scenarios
@@ -68,7 +68,7 @@ NB: the endpoints for TKW are case sensitive eg use the following
 
 #### Headers
 
-The follow is a list of headers needed for the requests, these follow the pattern needed by BARS as follows {{pagelink:core-EndToEndWorkflow-HTTPHeader-1.3.0, text:Headers}}
+The follow is a list of headers needed for the requests, these follow the pattern needed by BARS as follows {{pagelink:core-EndToEndWorkflow-HTTPHeader-1.4.0, text:Headers}}
 
 
 | Name | Value | example |

@@ -5,7 +5,7 @@ topic: APP5-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-{{pagelink:core-SPMessageHeader-1.3.0, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
+{{pagelink:core-SPMessageHeader-1.4.0, text:Standard Patterns for BaRS Operations}} explains in detail how the **MessageHeader** resource **must** be used. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -20,7 +20,7 @@ There are two *coding* entries within *ServiceRequest.category* which are key to
 1. Denotes the type of referral e.g. Transfer of care
 2. Denotes the use case and must be populated with the relevant use case from [use-case CodeSystem](
 https://simplifier.net/nhsbookingandreferrals/usecases-categories-bars
-). e.g. Primary Care to Community Pharmacy. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.3.0, text:use-case categories}}
+). e.g. Primary Care to Community Pharmacy. Please refer to the guidance in {{pagelink:core-SPUseCaseCategories-1.4.0, text:use-case categories}}
 
 *Please note that the use-case category 'referraltopharmacy' is now deprecated to allow for more granular use cases.*
 
@@ -53,7 +53,7 @@ When a BARS Receiver processes information in a Flag resource;
 
 * they **should** populate a flag in their system, if their solution supports that flag
 * they **must** display the information in the Flag resource in a way that supports the associated workflow (i.e. the relevant end users can see it and act upon it)
-* rendering of Flag information must be in line with the {{pagelink:Home/About-BaRS/BaRS-Principles-and-Prerequisites/Principles-for-rendering-BaRS-payloads.page.md, text:Principles for rendering BaRS Payload }}.
+* rendering of Flag information must be in line with the {{pagelink:Home/Analysis/BaRS-Principles-and-Prerequisites/Principles-for-rendering-BaRS-payloads.page.md, text:Principles for rendering BaRS Payloads }}.
 
 ### Consent 
 In the BaRS UEC Applications the level of consent is stipulated to be for 'Direct Care' only. A referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 

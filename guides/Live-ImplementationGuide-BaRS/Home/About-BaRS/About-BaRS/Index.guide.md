@@ -1,3 +1,0 @@
----
-topic: about_bars
----

@@ -2,11 +2,12 @@
   <id value="11882ae2-211f-49ee-acbe-e319304d80cd" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-request-cancelled" />
   <!-- This is the version number of Application (currently in development on Simplifier) -->
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="BARS Message Definition ServiceRequest - Request - Cancelled" />
   <title value="BARS Message Definition ServiceRequest - Request - Cancelled" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2026-04-27" />
+  <description value="BaRS message definition for cancellation of a previously submitted ServiceRequest. The message SHALL include a message Bundle with a ServiceRequest cancellation request, associated Patient details, and the Organisations involved in the referral workflow." />
   <useContext>
     <!-- We are expecting the UseContext to be a DOS ID -->
     <code>
@@ -41,12 +42,6 @@
   <focus>
     <code value="Bundle" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-request" />
     <min value="1" />
     <max value="1" />
   </focus>

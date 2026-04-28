@@ -1,9 +1,12 @@
 {
-  "updated": "2023-11-28T16:19:18.890182+00:00",
+  "updated": "2026-04-28T01:41:20.9831831+01:00",
   "dependencies": {
-    "uk.nhsdigital.r4": "2.5.0",
     "hl7.fhir.r4.core": "4.0.1",
-    "fhir.r4.ukcore.stu3.currentbuild": "0.22.0-pre-release"
+    "uk.nhsdigital.r4.test": "2.18.13-prerelease",
+    "fhir.r4.ukcore.stu3.currentbuild": "0.28.0-pre-release",
+    "hl7.fhir.uv.xver-r5.r4": "0.1.0",
+    "hl7.terminology.r4": "7.1.0",
+    "hl7.fhir.uv.extensions.r4": "5.2.0"
   },
   "missing": {}
 }

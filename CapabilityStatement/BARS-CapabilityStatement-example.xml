@@ -1,12 +1,13 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="45bcbe62-718b-4874-a68c-b0fe39a76cf5" />
-  <url value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4'" />
+  <url value="https://int.api.service.nhs.uk/booking-and-referral/FHIR/R4" />
   <!-- This is the version of BaRS Core -->
-  <version value="1.1.0" />
-  <name value="BaRS FHIR Server CapabilityStatement" />
+  <version value="1.2.0" />
+  <name value="BaRSFHIRServerCapabilityStatement" />
+  <title value="BaRS FHIR Server CapabilityStatement" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2024-01-09" />
+  <date value="2026-04-27" />
   <publisher value="NHS England" />
   <contact>
     <name value="System Administrator" />
@@ -18,7 +19,7 @@
   <description value="Sample capability statement showing new MessageDefinition structure, modify this Capability Statement to reflect what your system is capable of." />
   <kind value="instance" />
   <software>
-    <name value="NHS Digital" />
+    <name value="NHS England" />
     <version value="1.2.0" />
   </software>
   <implementation>
@@ -41,6 +42,7 @@
     </security>
     <resource>
       <type value="CapabilityStatement" />
+      <profile value="http://hl7.org/fhir/StructureDefinition/CapabilityStatement" />
       <interaction>
         <code value="read" />
       </interaction>
@@ -51,6 +53,7 @@
     </resource>
     <resource>
       <type value="MessageDefinition" />
+      <profile value="http://hl7.org/fhir/StructureDefinition/MessageDefinition" />
       <interaction>
         <code value="search-type" />
       </interaction>
@@ -63,6 +66,7 @@
     </resource>
     <resource>
       <type value="Appointment" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
       <interaction>
         <code value="read" />
       </interaction>
@@ -91,6 +95,9 @@
     </resource>
     <resource>
       <type value="ServiceRequest" />
+      <profile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-validation" />
+      <supportedProfile value="https://fhir.nhs.uk/StructureDefinition/BARSServiceRequest-request-referral" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       <interaction>
         <code value="read" />
       </interaction>
@@ -114,6 +121,7 @@
     </resource>
     <resource>
       <type value="Slot" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
       <interaction>
         <code value="search-type" />
       </interaction>
@@ -122,7 +130,7 @@
       <searchInclude value="Schedule:actor:Practitioner" />
       <searchInclude value="Schedule:actor:PractitionerRole" />
       <searchInclude value="Schedule:actor:HealthcareService" />
-      <searchInclude value="HealthcareService.providedBy" />
+      <searchInclude value="HealthcareService:organization" />
       <searchInclude value="HealthcareService:location" />
       <searchParam>
         <name value="start" />
@@ -133,7 +141,7 @@
         <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="Schedule.actor:HealthcareService" />
+        <name value="specialty" />
         <type value="token" />
       </searchParam>
     </resource>
@@ -161,6 +169,7 @@
     </security>
     <resource>
       <type value="Appointment" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Appointment" />
       <interaction>
         <code value="read" />
       </interaction>
@@ -189,6 +198,7 @@
     </resource>
     <resource>
       <type value="ServiceRequest" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
       <interaction>
         <code value="read" />
       </interaction>
@@ -212,6 +222,7 @@
     </resource>
     <resource>
       <type value="Slot" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot" />
       <interaction>
         <code value="search-type" />
       </interaction>
@@ -231,8 +242,8 @@
         <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="Schedule.actor:HealthcareService" />
-        <type value="token" />
+        <name value="schedule" />
+        <type value="reference" />
       </searchParam>
     </resource>
     <interaction>

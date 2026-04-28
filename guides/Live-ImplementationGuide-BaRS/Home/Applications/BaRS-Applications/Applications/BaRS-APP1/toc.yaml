@@ -12,3 +12,7 @@
   filename: Booking-Request-Payload.page.md
 - name: Entity Relationship Diagrams
   filename: Entity-Relationship-Diagrams.page.md
+- name:
+  filename: Referral-Response-Payload.page.md
+- name:
+  filename: Service-Request2.page.md

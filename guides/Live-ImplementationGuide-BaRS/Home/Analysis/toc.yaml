@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: BaRS Principles and Prerequisites
+  filename: BaRS-Principles-and-Prerequisites
+- name: Infrastructure
+  filename: Infrastructure 
+- name: Roles and Responsibilities
+  filename: RolesAndResponsibilities.page.md
+- name: Releases
+  filename: Releases
+- name: Versioning
+  filename: Versioning.guide.md
+- name: Content Negotiation
+  filename: Content-Negotiation

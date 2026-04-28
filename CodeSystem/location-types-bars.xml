@@ -24,20 +24,29 @@
     <copyright value="Copyright &#169; 2021 NHS Digital" />
     <caseSensitive value="true"/>
     <content value="complete"/>
+     <concept>
+        <code value="CLOC" />
+        <display value="Caller Location" />
+    </concept>
+    <concept>
+        <code value="HLOCFR" />
+        <display value="Helimed From Location" />
+    </concept> 
+    <concept>
+        <code value="HLOCTO" />
+        <display value="Helimed To Location" />
+    </concept> 
     <concept>
         <code value="ILOC" />
         <display value="Incident Location" />
     </concept>
     <concept>
-        <code value="CLOC" />
-        <display value="Caller Location" />
+        <code value="OLOC" />
+        <display value="Other Location" />
     </concept>
     <concept>
         <code value="RLOC" />
         <display value="Rendezvous Location" />
     </concept>
-	<concept>
-        <code value="OLOC" />
-        <display value="Other Location" />
-    </concept>
+
 </CodeSystem>

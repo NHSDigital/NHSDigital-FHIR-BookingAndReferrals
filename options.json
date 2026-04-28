@@ -1,7 +1,8 @@
 {
-    "strict-validation": false,
-    "ignore-folders": ["Examples",
-        "BaRS-Images",
+  "strict-validation": false,
+  "ignore-folders": [
+    "Examples",
+    "BaRS-Images",
     "BaRS-Images/DocumentReference",
     "BaRS-Images/EntityMaps",
     "BaRS-Images/FailureScenarios",
@@ -11,7 +12,10 @@
     "BaRS-Images/TransactionIntegrity",
     "BaRS-Images/Versioning",
     "BaRS-Images/WorkFlows"
-    ],
-    "ignore-files": [],
-	"error-if-metaProfile-present": false
+  ],
+  "ignore-files": [],
+  "error-if-metaProfile-present": false
 }
+
+
+ 

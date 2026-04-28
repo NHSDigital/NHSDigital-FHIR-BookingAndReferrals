@@ -2,11 +2,12 @@
   <id value="c925d2af-2903-4760-a6fc-31fb315dd310" />
   <url value="https://fhir.nhs.uk/MessageDefinition/bars-message-servicerequest-response-referral-short" />
   <!-- This is the version number of Application (currently in development on Simplifier) -->
-  <version value="1.0.0-beta" />
+  <version value="1.0.1-beta" />
   <name value="BARS Message Definition ServiceRequest - Response Referral Short" />
   <title value="BARS Message Definition ServiceRequest - Response Referral Short" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2026-04-27" />
+  <description value="BaRS ServiceRequest referral response (short) message definition for Application 6 CAD to CAD Out of Area Referral workflows." />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
@@ -29,8 +30,8 @@
       <coding>
         <!--  Use cases supported by this MessageDefinition Application -->
         <system value="https://fhir.nhs.uk/CodeSystem/usecases-categories-bars" />
-        <code value="a6t3" />
-        <display value="CAD to CAD Mutual Aid Request" />
+        <code value="a6t1" />
+        <display value="CAD to CAD Out of Area Referral" />
       </coding>
     </valueCodeableConcept>
   </useContext>
@@ -41,12 +42,6 @@
   <focus>
     <code value="Bundle" />
     <profile value="https://fhir.nhs.uk/StructureDefinition/BARSBundleMessage" />
-    <min value="1" />
-    <max value="1" />
-  </focus>
-  <focus>
-    <code value="MessageHeader" />
-    <profile value="https://fhir.nhs.uk/StructureDefinition/BARSMessageHeader-servicerequest-response" />
     <min value="1" />
     <max value="1" />
   </focus>
@@ -71,7 +66,7 @@
   <focus>
     <code value="Organization" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-    <min value="1" />
+    <min value="2" />
     <max value="*" />
   </focus>
   <focus>
