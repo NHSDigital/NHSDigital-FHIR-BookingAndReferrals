@@ -21,10 +21,10 @@ topic: Application8
 </thead>
 <tbody>
 	<tr>
-		<td>Application 8 v1.0.0-alpha</td>
+		<td>Application 8 v1.0.0-alpha.2</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.11.1" target="_blank">v1.1.x</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.1" target="_blank">v1.11.1</td>
-		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">v1.1.0</a></td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1" target="_blank">v1.4.x</a></td>
 	</tr>
 </tbody>
 </table>

@@ -180,10 +180,14 @@ Table detailing active versions of the latest Applications in Production (or cur
 	</tr>
 	<tr>
 		<td>Application 5 v1.2.0</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.11.1</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
 	</tr>
 	<tr>
 		<td>Application 6 v1.0.0-beta.7</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
+	</tr>
+	<tr>
+		<td>Application 6 v1.0.0-beta.8</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.1" target="_blank">v1.11.1</a></td>
 	</tr>
 	<tr>
@@ -194,9 +198,13 @@ Table detailing active versions of the latest Applications in Production (or cur
 	</tr>
 	<tr>
 		<td>Application 8 v1.0.0-alpha</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
+		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.11.0" target="_blank">v1.4.0</a></td>
+		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1" target="_blank">1.4.x</a></td>
+	</tr>
+	<tr>
+		<td>Application 8 v1.0.0-alpha.2</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.1" target="_blank">v1.11.1</a></td>
-		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.11.1" target="_blank">v1.1.0</a></td>
-		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">1.1.0</a></td>
 	</tr>
 	<tr>
 		<td></td>
