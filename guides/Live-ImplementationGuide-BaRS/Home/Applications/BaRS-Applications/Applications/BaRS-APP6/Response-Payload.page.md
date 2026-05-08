@@ -10,8 +10,9 @@ This payload is used to communicate the following:
 * Business acknowledgement of the receipt and progression of a case through status updates
     * When a case has been accepted and is waiting for a resource to be allocated
     * When a case has a resource allocated
+    * When a case has a resource arrive 
     * When a resource for a case is cancelled
-    * When a resource has cleared the scene
+    * When a resource has completed the case
     * When a case has been rejected by the Receiver (Mutual Aid Request and Call Assist Request   
 ONLY)
 
