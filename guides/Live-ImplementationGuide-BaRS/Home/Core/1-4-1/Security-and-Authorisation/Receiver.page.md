@@ -8,9 +8,9 @@ BaRS will utilise TLS-MA (Mutual Authentication) to communicate with receiving e
 
 - The receiver will need to request a certificate under the NHS Root CA
     - There are two different certificate chains for INT and Prod
-    - INT Certificate chains, which are superceded from 4/06/2024, can be found [here](https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates)
-    - Prod Certificate chains,which expire from 4/06/2024, can be found [here](https://digital.nhs.uk/services/path-to-live-environments/live-environment)
-    - **Current** INT Certificate chains  can be found [here](https://pki.nhs.uk/G2Transition/)
+    - INT Certificate chains, which are superseded from 4/06/2024, can be found [here](https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates)
+    - Prod Certificate chains, which expire from 4/06/2024, can be found [here](https://digital.nhs.uk/services/path-to-live-environments/live-environment)
+    - **Current** INT Certificate chains can be found [here](https://pki.nhs.uk/G2Transition/)
     - **Current** Prod Certificate chains can be found [here](https://pki.nhs.uk/G2Transition/)
 
 - The receiving endpoint will present the certificate obtained for TLS-MA
@@ -25,7 +25,7 @@ In production there is a naming convention that must be adhered to. In INT the n
 
 - ==BaRS-< ODSCode >.< OrganisationName >.nhs.uk== , BaRS is always the application name.
 
-Once you have you have your domain registered you can then begin the process to obtain your certificate by generating a certificate request.
+Once you have your domain registered you can then begin the process to obtain your certificate by generating a certificate request.
 
 Certificate requests will need to be signed for your endpoint. Note that the FQDN is equal to the certificate name (CN) by convention.
 
