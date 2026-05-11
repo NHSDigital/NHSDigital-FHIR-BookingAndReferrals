@@ -49,7 +49,7 @@ The Task is used to direct the next action(s) required by the Sender making the 
 ### Flag Resource
 The Flag resource is used to communicate prospective warnings of potential issues when providing care to the patient. The population of the Flag Resource is optional as not all subjects will have relevant issues.
 
-BaRS Senders **should** populate Flag resources and **should** make adequate provision in their solution to support key flags in BaRS Application workflows, for example, Additional Patient Information. When populating this resource, Senders **must** include both *flag.category* and *flag.code* values using the specific [BaRS CodeSystems](https://simplifier.net/nhsbookingandreferrals/~resources?category=CodeSystem&sortBy=DisplayName).
+BaRS Senders **should** populate Flag resources and **should** make adequate provision in their solution to support key flags in BaRS Application workflows, for example, [Additional Patient Information](https://simplifier.net/NHSBookingandReferrals/01dcdcbb-93c0-4418-a5f5-d8b2573d4866). When populating this resource, Senders **must** include both *flag.category* and *flag.code* values using the specific [BaRS CodeSystems](https://simplifier.net/nhsbookingandreferrals/~resources?category=CodeSystem&sortBy=DisplayName).
 
 When a BARS Receiver processes information in a Flag resource;
 
