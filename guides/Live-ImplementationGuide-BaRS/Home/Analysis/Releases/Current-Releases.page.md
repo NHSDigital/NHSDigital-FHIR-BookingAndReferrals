@@ -20,7 +20,7 @@ Implementation Guide   | 1.11.1   | v1      | Live     | Current Release | 19/05
 
 ### Overview of the release
 
-Release 1.11.1 of the BaRS Implementation Guide is a patch release including an additional encounter.status value for Application 6 CAD-CAD Out of Area Referral, published with supporting documentation. BaRS Core version is uplifted to 1.4.1 in line with an update to the BaRS FHIR API OAS file.  
+Release 1.11.1 of the BaRS Implementation Guide is a patch release including an additional encounter.status value for Application 6 CAD to CAD Out of Area Referral, published with supporting documentation. BaRS Core version is uplifted to 1.4.1 in line with an update to the BaRS FHIR API OAS file.  Updates to the BaRS FHIR API OAS file are limited to changes relating to internal endpoint catalogue management and do not affect supplier development.
 
 Also included in this release are minor changes to BaRS Application 8 and bug fixes and corrections throughout the guide.
  
