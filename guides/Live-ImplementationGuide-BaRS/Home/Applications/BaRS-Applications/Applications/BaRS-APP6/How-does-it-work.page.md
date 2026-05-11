@@ -10,8 +10,12 @@ This section describes how the primary operations used in this application work.
 * CAD to CAD Mutual Aid Request
 
 <br>
-<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfArea-1.0.2.svg" target="_blank>">
-<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfArea-1.0.2.svg" width="1200"></img></a>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfArea-1.0.3.svg" target="_blank>">
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfArea-1.0.3.svg" width="1200"></img></a>
+
+<br>
+<a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfAreaAsncResponses-1.0.0.svg" target="_blank>">
+<img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADOutOfAreaAsncResponses-1.0.0" width="1200"></img></a>
 
 <br>
 <a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/WorkFlows/CADCallAssist-1.0.2.svg" target="_blank>">

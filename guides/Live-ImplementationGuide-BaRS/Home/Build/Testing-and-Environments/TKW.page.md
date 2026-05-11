@@ -33,7 +33,7 @@ During the registration process, the 'Target Identifier' and 'ODS Code' values a
 
 Once registered, requests can be made of TKW in any given workflow e.g. booking, validation etc. and the tool will record and provide downloadable validation reports for each request made. 
 
-The Scenarios (including Stateful Scenarios) outlined below highlight how to elicit particular behaviour required, note the specific sentinel values for NHSD-Target-Identifier and patient NHS Number. As a Sender, the various requests can be made and TKW will repond accoridngly. 
+The Scenarios (including Stateful Scenarios) outlined below highlight how to elicit particular behaviour required, note the specific sentinel values for NHSD-Target-Identifier and patient NHS Number. As a Sender, the various requests can be made and TKW will respond accordingly. 
 
 NB: It is important for Senders to remember TKW is a stateless receiver and is not checking the relationship between requests (except in a handful of stateful scenarios - outlined below). This is important when developing workflows such as linking a booking and referral and transactional Integrity.
 
