@@ -20,7 +20,9 @@ Implementation Guide   | 1.11.1   | v1      | Live     | Current Release | 19/05
 
 ### Overview of the release
 
-TBC
+Release 1.11.1 of the BaRS Implementation Guide is a patch release including an additional encounter.status value for Application 6 CAD-CAD Out of Area Referral, published with supporting documentation. BaRS Core version is uplifted to 1.4.1 in line with an update to the BaRS FHIR API OAS file.  
+
+Also included in this release are minor changes to BaRS Application 8 and bug fixes and corrections throughout the guide.
  
 A clinical safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new hazards have been identified in this release. The latest version of the BaRS clinical safety case and hazard log can be downloaded from the <a href= "https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#hazard-log-and-clinical-safety-case-report-cscr-" target="_blank"> BaRS FHIR API onboarding support information page </a>.
 
