@@ -20,6 +20,19 @@ The BaRS referral process as shown above does not include guidance on how a user
 
 #### Directory of Services API
 
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> DOS API Deprecation <hr>
+<p> The current version of the DOS API, as described below, is being deprecated, with a new API currently in Beta. <a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-search-api">Documentation for the new API can be found here</a>, which includes the estimated roadmap.
+<p> Whilst suppliers can continue to develop towards the current API, this would then require future rework to utilize the new API as the deprecation process continues. 
+<p> For more information on the deprecation, as well as guidance on onboarding and implementing towards the new API, please contact the DOS team directly.
+<p> You can contact the DOS team via one of the contact options below, stating <b>“For the attention of Find the Right Service Team – Integrated Search.”</b>
+<p><b>Contact Options:</b><br/>
+<ul>
+<li><a href="https://nhsdigitallive.service-now.com/csm?id=csm_index">ServiceNow Portal (preferred option)</a> </li> 
+<li>Email - <a href="ssd.nationalservicedesk@nhs.net">ssd.nationalservicedesk@nhs.net</a> </li>
+<li>Telephone - 0300 3035035 - Please call if your query is urgent </li>
+</ul> 
+</div>
+
 Pharmacy services are profiled on the <a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">Directory of Services (DoS).</a>
 
 For this application, systems should use the <a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-urgent-and-emergency-care-rest" target="_blank">Directory of Services - Urgent and Emergency Care - REST API.</a>
@@ -27,7 +40,7 @@ For this application, systems should use the <a href="https://digital.nhs.uk/dev
 Details on how to develop to use this API and onboard to use it in production, are provided in the links above.
 
 For this application the Service Type search will be used:
-<a href="https://developer.nhs.uk/apis/dos-api/byServiceType.html" target="_blank">Search by Service Type | docs-dos-api (developer.nhs.uk).</a>
+<a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-urgent-and-emergency-care-rest#get-/services/byServiceType/-caseId-/-postcode-/-searchDistance-/-gppracticeId-/-age-/-gender-/-disposition-/-serviceTypeIds-/-numberPerType-" target="_blank">Search by Service Type | docs-dos-api (developer.nhs.uk).</a>
 
 
 #### Guidance on how to call the DoS API
