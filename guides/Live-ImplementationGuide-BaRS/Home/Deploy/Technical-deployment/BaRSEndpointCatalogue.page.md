@@ -16,7 +16,7 @@ The BaRS Proxy uses the ServiceId in the HTTP Header to reference the BaRS Endpo
 
 * Note the ServiceId used in Service Discovery (NHS Directory of Service or other Service Discovery tool)
 
-* Obtain the service's URL endpoint details from the Receiving supplier or provider.  The endpoint will need to be certified and meet the criteria for connection to the BaRS Proxy.  More details are available in [Connecting as a receiver](https://simplifier.net/guide/nhsbookingandreferralstandard/Home\Build\Testing-and-Environments\Connect-as-a-receiver.page.md) 
+* Obtain the service's URL endpoint details from the Receiving supplier or provider.  The endpoint will need to be certified and meet the criteria for connection to the BaRS Proxy.  More details are available in [Connecting as a receiver](https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Build/Testing-and-Environments/Connect-as-a-receiver) 
 
 * Email: <england.bookingandreferralstandard@nhs.net> with the ServiceId and endpoint details.  State the environment to be configured, INT or PROD, and include planned dates for testing.
 
