@@ -382,7 +382,7 @@ Receive_Request
 		
 		if (Message == "update")
 		{
-			if (currentLocalData.LastUpdated > originaRequest.ReceivedDate)
+			if (currentLocalData.LastUpdated > originalRequest.ReceivedDate)
 			{
 				OperationOutcome.issue.code = "conflict"
 				throw exception with 'REC_CONFLICT'
@@ -393,7 +393,7 @@ Receive_Request
 			{
 				if (currentLocalData.Item.exists)
 				{
-					if (currentLocalData.LastUpdated > originaRequest.Received)
+					if (currentLocalData.LastUpdated > originalRequest.Received)
 					{
 						OperationOutcome.issue.code = "conflict"
 						throw exception with 'REC_CONFLICT'
@@ -563,6 +563,6 @@ This attribute will have three possible states:
 * present and false
 * present and true
 
-For the first two cases, it can be assumed that referrals can be made without a booking. Only if the attribute is *present* **and** *true* should a referral be witheld if there has been no booking.
+For the first two cases, it can be assumed that referrals can be made without a booking. Only if the attribute is *present* **and** *true* should a referral be withheld if there has been no booking.
 
 <hr>

@@ -581,7 +581,7 @@ Receive_Request
 		
 		if (Message == "update")
 		{
-			if (currentLocalData.LastUpdated > originaRequest.ReceivedDate)
+			if (currentLocalData.LastUpdated > originalRequest.ReceivedDate)
 			{
 				OperationOutcome.issue.code = "conflict"
 				throw exception with 'REC_CONFLICT'
@@ -592,7 +592,7 @@ Receive_Request
 			{
 				if (currentLocalData.Item.exists)
 				{
-					if (currentLocalData.LastUpdated > originaRequest.Received)
+					if (currentLocalData.LastUpdated > originalRequest.Received)
 					{
 						OperationOutcome.issue.code = "conflict"
 						throw exception with 'REC_CONFLICT'

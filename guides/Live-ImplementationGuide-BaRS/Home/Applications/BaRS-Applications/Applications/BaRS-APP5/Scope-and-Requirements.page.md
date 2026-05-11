@@ -16,7 +16,7 @@ The payload and workflow have been designed to support this service. Other {{pag
 ### Functional Scope
 **Service Discovery**
 - Establishing a service to direct requests to is a mandatory step in the workflow
-- There is no restriction on the service discovery tools used. Any are capable of being supported whether national or proprietary. However, the NHS England Directory of Services supports this application and futher details are provided in the 'Find a Service' section
+- There is no restriction on the service discovery tools used. Any are capable of being supported whether national or proprietary. However, the NHS England Directory of Services supports this application and further details are provided in the 'Find a Service' section
 - The service **must** be configured within the BaRS infrastructure (Endpoint Catalogue) before requests can be made 
 
 **Referral**
@@ -32,7 +32,7 @@ The payload and workflow have been designed to support this service. Other {{pag
 - Consent within BaRS will be for Direct-Care only 
 - Certificates for Receiving messages to use nhs.uk domains only
 - Receiving endpoints are to be internet facing
-- Clincial Constraints exist - See Hazard Log
+- Clinical Constraints exist - See Hazard Log
 - No element level 'updates' to requests are supported. A new request must be generated to change information in the referral request
 - Where an Online Consultation tool is used to refer, the referral must be verified by a human representative of the sending organisation before the request is made
 - Referrals to the Oral Contraception service must adhere to the [published policy specification](https://www.england.nhs.uk/long-read/nhs-pharmacy-contraception-service/) 
@@ -78,7 +78,7 @@ The payload and workflow have been designed to support this service. Other {{pag
 
 **Re-refer** 
 -	The referral Sender **must** be capable of re-referring within the current consultation or after the consultation event
--	If the patient recontacts the sending service after the sender's consultation has been completed, the patient **should** be reassessed prior to attempting to re-refer
+-	If the patient re-contacts the sending service after the sender's consultation has been completed, the patient **should** be reassessed prior to attempting to re-refer
 -	The referral Sender **should** revoke the original referral prior to making a re-referral, whether within the current consultation or after the consultation event
 -   Where the re-referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.4.1, text:failure scenarios}} for more detail.
 -   Where the re-referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.4.1, text:failure scenarios}} for more detail.

@@ -16,7 +16,7 @@ To support the workflows for this application of the standard the operations tha
 
 ### Find a Service
 
-The BaRS referral process as shown above does not include guidance on how a user should determine if a referral to Pharmacy is appropriate for the patient.  It is the responsibility of the referring organisaton to ensure patients are pre-screened by GP Practice staff (care navigators or clinicians) prior to beginning the referral process, using their own judgement or an appropriate triage tool.  
+The BaRS referral process as shown above does not include guidance on how a user should determine if a referral to Pharmacy is appropriate for the patient.  It is the responsibility of the referring organisation to ensure patients are pre-screened by GP Practice staff (care navigators or clinicians) prior to beginning the referral process, using their own judgement or an appropriate triage tool.  
 
 #### Directory of Services API
 
@@ -40,7 +40,7 @@ For this application, systems should use the <a href="https://digital.nhs.uk/dev
 Details on how to develop to use this API and onboard to use it in production, are provided in the links above.
 
 For this application the Service Type search will be used:
-<a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-urgent-and-emergency-care-rest#get-/services/byServiceType/-caseId-/-postcode-/-searchDistance-/-gppracticeId-/-age-/-gender-/-disposition-/-serviceTypeIds-/-numberPerType-" target="_blank">Search by Service Type | docs-dos-api (developer.nhs.uk).</a>
+<a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-urgent-and-emergency-care-rest#get-/services/byServiceType/-caseId-/-postcode-/-searchDistance-/-gppracticeId-/-age-/-gender-/-disposition-/-serviceTypeIds-/-numberPerType-" target="_blank">Search by Service Type.</a>
 
 
 #### Guidance on how to call the DoS API
@@ -59,7 +59,7 @@ The search parameters to be used are as follows:
                         <th>Parameter</th>
                         <th>Type</th>
                         <th>Required?</th>
-						<th>GP to Pharamcy Guidance Notes</th>
+						<th>GP to Pharmacy Guidance Notes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -530,7 +530,7 @@ Receive_Request
 		
 		if (Message == "update")
 		{
-			if (currentLocalData.LastUpdated > originaRequest.ReceivedDate)
+			if (currentLocalData.LastUpdated > originalRequest.ReceivedDate)
 			{
 				OperationOutcome.issue.code = "conflict"
 				throw exception with 'REC_CONFLICT'
@@ -541,7 +541,7 @@ Receive_Request
 			{
 				if (currentLocalData.Item.exists)
 				{
-					if (currentLocalData.LastUpdated > originaRequest.Received)
+					if (currentLocalData.LastUpdated > lRequest.Received)
 					{
 						OperationOutcome.issue.code = "conflict"
 						throw exception with 'REC_CONFLICT'
