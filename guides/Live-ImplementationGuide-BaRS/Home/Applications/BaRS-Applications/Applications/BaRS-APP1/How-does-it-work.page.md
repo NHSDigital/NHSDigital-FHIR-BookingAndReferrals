@@ -581,7 +581,7 @@ Receive_Request
 		
 		if (Message == "update")
 		{
-			if (currentLocalData.LastUpdated > originaRequest.ReceivedDate)
+			if (currentLocalData.LastUpdated > originalRequest.ReceivedDate)
 			{
 				OperationOutcome.issue.code = "conflict"
 				throw exception with 'REC_CONFLICT'
@@ -592,7 +592,7 @@ Receive_Request
 			{
 				if (currentLocalData.Item.exists)
 				{
-					if (currentLocalData.LastUpdated > originaRequest.Received)
+					if (currentLocalData.LastUpdated > originalRequest.Received)
 					{
 						OperationOutcome.issue.code = "conflict"
 						throw exception with 'REC_CONFLICT'
@@ -720,7 +720,20 @@ This means that these services will only accept a referral if a booking has also
 
 If no appointment is available then a referral should not be made. 
 
-To achieve this, a "service attribute" is configurable against services. This will allow the service to be flagged as "booking only". Therefore if this attribute is present on the service all consumer systems should withhold referrals. <a href="https://developer.nhs.uk/apis/dos-api/ccs_fields_v1.5_service_attribute.html" target="_blank">The DoS API documentation for this can be found here</a>.
+To achieve this, a "service attribute" is configurable against services. This will allow the service to be flagged as "booking only". Therefore if this attribute is present on the service all consumer systems should withhold referrals. <a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-urgent-and-emergency-care-rest" target="_blank">The DoS API documentation for this can be found here</a>.
+
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> DOS API Deprecation <hr>
+<p> The current version of the DOS API is being deprecated, with a new API currently in Beta. <a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-search-api">Documentation for the new API can be found here</a>, which includes the estimated roadmap.
+<p> Whilst suppliers can continue to develop towards the current API, this would then require future rework to utilize the new API as the deprecation process continues. 
+<p> For more information on the deprecation, as well as guidance on onboarding and implementing towards the new API, please contact the DOS team directly.
+<p> You can contact the DOS team via one of the contact options below, stating <b>“For the attention of Find the Right Service Team – Integrated Search.”</b>
+<p><b>Contact Options:</b><br/>
+<ul>
+<li><a href="https://nhsdigitallive.service-now.com/csm?id=csm_index">ServiceNow Portal (preferred option)</a> </li> 
+<li>Email - <a href="ssd.nationalservicedesk@nhs.net">ssd.nationalservicedesk@nhs.net</a> </li>
+<li>Telephone - 0300 3035035 - Please call if your query is urgent </li>
+</ul> 
+</div>
 
 ##### Workflow
 

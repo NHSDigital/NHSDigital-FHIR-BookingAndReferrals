@@ -16,9 +16,22 @@ To support the workflows for this application of the standard the operations tha
 
 ### Find a Service
 
-The BaRS referral process as shown above does not include guidance on how a user should determine if a referral to Pharmacy is appropriate for the patient.  It is the responsibility of the referring organisaton to ensure patients are pre-screened by GP Practice staff (care navigators or clinicians) prior to beginning the referral process, using their own judgement or an appropriate triage tool.  
+The BaRS referral process as shown above does not include guidance on how a user should determine if a referral to Pharmacy is appropriate for the patient.  It is the responsibility of the referring organisation to ensure patients are pre-screened by GP Practice staff (care navigators or clinicians) prior to beginning the referral process, using their own judgement or an appropriate triage tool.  
 
 #### Directory of Services API
+
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:</b> DOS API Deprecation <hr>
+<p> The current version of the DOS API, as described below, is being deprecated, with a new API currently in Beta. <a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-search-api">Documentation for the new API can be found here</a>, which includes the estimated roadmap.
+<p> Whilst suppliers can continue to develop towards the current API, this would then require future rework to utilize the new API as the deprecation process continues. 
+<p> For more information on the deprecation, as well as guidance on onboarding and implementing towards the new API, please contact the DOS team directly.
+<p> You can contact the DOS team via one of the contact options below, stating <b>“For the attention of Find the Right Service Team – Integrated Search.”</b>
+<p><b>Contact Options:</b><br/>
+<ul>
+<li><a href="https://nhsdigitallive.service-now.com/csm?id=csm_index">ServiceNow Portal (preferred option)</a> </li> 
+<li>Email - <a href="ssd.nationalservicedesk@nhs.net">ssd.nationalservicedesk@nhs.net</a> </li>
+<li>Telephone - 0300 3035035 - Please call if your query is urgent </li>
+</ul> 
+</div>
 
 Pharmacy services are profiled on the <a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">Directory of Services (DoS).</a>
 
@@ -27,7 +40,7 @@ For this application, systems should use the <a href="https://digital.nhs.uk/dev
 Details on how to develop to use this API and onboard to use it in production, are provided in the links above.
 
 For this application the Service Type search will be used:
-<a href="https://developer.nhs.uk/apis/dos-api/byServiceType.html" target="_blank">Search by Service Type | docs-dos-api (developer.nhs.uk).</a>
+<a href="https://digital.nhs.uk/developer/api-catalogue/directory-of-services-urgent-and-emergency-care-rest#get-/services/byServiceType/-caseId-/-postcode-/-searchDistance-/-gppracticeId-/-age-/-gender-/-disposition-/-serviceTypeIds-/-numberPerType-" target="_blank">Search by Service Type.</a>
 
 
 #### Guidance on how to call the DoS API
@@ -46,7 +59,7 @@ The search parameters to be used are as follows:
                         <th>Parameter</th>
                         <th>Type</th>
                         <th>Required?</th>
-						<th>GP to Pharamcy Guidance Notes</th>
+						<th>GP to Pharmacy Guidance Notes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -517,7 +530,7 @@ Receive_Request
 		
 		if (Message == "update")
 		{
-			if (currentLocalData.LastUpdated > originaRequest.ReceivedDate)
+			if (currentLocalData.LastUpdated > originalRequest.ReceivedDate)
 			{
 				OperationOutcome.issue.code = "conflict"
 				throw exception with 'REC_CONFLICT'
@@ -528,7 +541,7 @@ Receive_Request
 			{
 				if (currentLocalData.Item.exists)
 				{
-					if (currentLocalData.LastUpdated > originaRequest.Received)
+					if (currentLocalData.LastUpdated > lRequest.Received)
 					{
 						OperationOutcome.issue.code = "conflict"
 						throw exception with 'REC_CONFLICT'
