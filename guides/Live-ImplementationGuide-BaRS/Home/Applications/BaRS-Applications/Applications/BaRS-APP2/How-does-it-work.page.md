@@ -531,7 +531,7 @@ To achieve this, a "service attribute" is configurable against services. This wi
 <p><b>Contact Options:</b><br/>
 <ul>
 <li><a href="https://nhsdigitallive.service-now.com/csm?id=csm_index">ServiceNow Portal (preferred option)</a> </li> 
-<li>Email - <a href="ssd.nationalservicedesk@nhs.net">ssd.nationalservicedesk@nhs.net</a> </li>
+<li>Email - <a href="mailto:ssd.nationalservicedesk@nhs.net">ssd.nationalservicedesk@nhs.net</a> </li>
 <li>Telephone - 0300 3035035 - Please call if your query is urgent </li>
 </ul> 
 </div>
