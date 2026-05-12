@@ -28,7 +28,7 @@ The BaRS referral process as shown above does not include guidance on how a user
 <p><b>Contact Options:</b><br/>
 <ul>
 <li><a href="https://nhsdigitallive.service-now.com/csm?id=csm_index">ServiceNow Portal (preferred option)</a> </li> 
-<li>Email - <a href="ssd.nationalservicedesk@nhs.net">ssd.nationalservicedesk@nhs.net</a> </li>
+<li>Email - <a href="mailto:ssd.nationalservicedesk@nhs.net">ssd.nationalservicedesk@nhs.net</a> </li>
 <li>Telephone - 0300 3035035 - Please call if your query is urgent </li>
 </ul> 
 </div>
