@@ -61,6 +61,18 @@
     <display value="999 to SDEC" />
   </concept>
   <concept>
+    <code value="a1t10" />
+    <display value="111 to UEC" />
+  </concept>
+  <concept>
+    <code value="a1t11" />
+    <display value="IUC CAS to UEC" />
+  </concept>
+  <concept>
+    <code value="a1t12" />
+    <display value="999 to UEC" />
+  </concept>
+  <concept>
     <code value="a2t1" />
     <display value="111 Online to ED" />
   </concept>
@@ -77,6 +89,14 @@
     <display value="S and R to UTC" />
   </concept>
   <concept>
+    <code value="a2t5" />
+    <display value="111 Online to UEC" />
+  </concept>
+  <concept>
+    <code value="a2t6" />
+    <display value="S and R to UEC" />
+  </concept>
+  <concept>
     <code value="a3t1" />
     <display value="999 to CAS Referral" />
   </concept>
@@ -91,6 +111,10 @@
   <concept>
     <code value="a4t3" />
     <display value="999 to Community Services" />
+  </concept>
+  <concept>
+    <code value="a4t4" />
+    <display value="999 to UEC Validation" />
   </concept>
   <concept>
     <code value="a5t1" />
