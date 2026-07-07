@@ -46,7 +46,7 @@ When a BARS Sender populates the Location resource:
     *  what3words
 
 *  They **should** populate the *Location.address* for all property based locations. 
-*  They **should** populate *Location.address.line* which is a repeatable element, with the the order in which lines should appear in an address label
+*  They **should** populate *Location.address.line* which is a repeatable element, with the order in which lines should appear in an address label
 *  They **should** populate *Location.name* when there is a property name
 *  They **should** populate *Location.address.text* with a text representation of the full address (including the address name), with each line separated by a comma
 

@@ -29,7 +29,7 @@ There are four functions that are required surrounding appointments. This sectio
 
 ## Interface
 
-The following table describes how the BaRS API accomodates these four capabilities using the [/Appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#post-/Appointment) endpoint and the [/Appointment/\{id\}](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) endpoint
+The following table describes how the BaRS API accommodates these four capabilities using the [/Appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#post-/Appointment) endpoint and the [/Appointment/\{id\}](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_2_0#put-/Appointment/-id-) endpoint
 
 | Capability | Endpoint | VERB | Description |
 |------------|-----------|-----|--------------|

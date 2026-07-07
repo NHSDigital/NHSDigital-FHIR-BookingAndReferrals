@@ -8,7 +8,7 @@ The Booking and Referral Standard (BaRS) will follow [Semantic Versioning](https
 Full details can be found at the [Semantic Versioning](https://semver.org/) site, key points outlined below:
 
 #### Major version
-The major version is incremented when an incompatible changes are made, i.e. a non backwards compatible change.
+The major version is incremented when incompatible changes are made, i.e. a non backwards compatible change.
 
 #### Minor version
 The minor version increments when changes are made in a backwards compatible manner.
@@ -39,14 +39,14 @@ Breaking change will always be considered before being implemented, the overhead
 
 ### <span style="color:red">**For the Core elements of BaRS (BaRS Core) suppliers will be expected to revise their solution to support a MAJOR release within six months from the version release date**</span>
 
-<span style="color:red">Note: Major releases of BaRS Core will be NO LESS than SIX MONTHS from the preceeding major release</span>
+<span style="color:red">Note: Major releases of BaRS Core will be NO LESS than SIX MONTHS from the preceding major release</span>
 
 
 <center>
 {{render:versioning.png}}
 </center>
 
-Compatibilty is verified dynamically during workflows through the 'version' element defined on the Capability Statement and Message Definitions. Senders and Receivers should operate on the highest version they are both compatible with and negoitate down, where possible. 
+Compatibility is verified dynamically during workflows through the 'version' element defined on the Capability Statement and Message Definitions. Senders and Receivers should operate on the highest version they are both compatible with and negotiate down, where possible. 
 
 A Sender **must** check the returned 'version' in these resources before proceeding to make requests of a Receiver. For version 1.0.0 **only** versions within the major version v1.0.0 should be considered compatible (1.0.0 extensions excluded):-
 
@@ -61,7 +61,7 @@ A Receiver **should** check the version a Sender is expecting interoperate on by
 </center>
 
 ### Pre-release Labels
-These labels will be taken from the GDS (Goverment Digital Services) development process stages, and will be one of:
+These labels will be taken from the GDS (Government Digital Services) development process stages, and will be one of:
 
 * **Discovery**: a Feasibility study. A 'No code' development. Designed to find out what users are trying to achieve, any constraints, improvement opportunities
 
@@ -69,11 +69,11 @@ These labels will be taken from the GDS (Goverment Digital Services) development
 
 * **Private Beta**: Working version and test with invited users. Handle real transactions and work at scale. ‘Invite only’ or regional. Must Pass assessment by business and technical SME’s
 
-* **Public Beta**: All users can participate. Version unlikely to change substantially, but still needs further testing by a wider group of implementors before becoming live
+* **Public Beta**: All users can participate. Version unlikely to change substantially, but still needs further testing by a wider group of implementers before becoming live
 
 * **Live**: The live phase is about supporting the service in a sustainable way, and continuing to iterate and make improvements
 
-* **Retiring**: Implementors notified that the service is discontinued and not to be used for new developments
+* **Retiring**: Implementers notified that the service is discontinued and not to be used for new developments
 
 <hr>
 
@@ -88,7 +88,7 @@ APIs should have the ability to route traffic based on the version header as sho
 
 <a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images//Versioning/API_Proxies-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/Versioning/API_Proxies-1.1.0.svg" width="800"></img></a>
 
-API Versioning between entities is fairly loose, only the major versioning differences would case a failure. with the exception of new endpoints which will be gated by minor versioning. The diagram below shows desired behavior in all versioning negotiations at the API.
+API Versioning between entities is fairly loose, only the major versioning differences would case a failure. with the exception of new endpoints which will be gated by minor versioning. The diagram below shows desired behaviour in all versioning negotiations at the API.
 
 <a href="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images//Versioning/API_Interactions-1.1.0.svg" target="_blank"><img src="https://raw.githubusercontent.com/NHSDigital/NHSDigital-FHIR-BookingAndReferrals/main/BaRS-Images/Versioning/API_Interactions-1.1.0.svg" width="1800"/></img></a>
 
@@ -102,7 +102,7 @@ The CapabilityStatement, coupled with the Accept header can define what version 
 
 ### MessageDefinition (step 3)
 
-The serviceID will help dictate what MessageDefinitions are returned and ensure they are specifiic to the service being queried. The version of the MessageDefinitions returned would be linked to the version of the Use case. The use case is identified using the useContext element.
+The serviceID will help dictate what MessageDefinitions are returned and ensure they are specific to the service being queried. The version of the MessageDefinitions returned would be linked to the version of the Use case. The use case is identified using the useContext element.
 
 For example, a service could service multiple applications covered by a single message definition, of varying versions. They would then choose the version of the message definition most appropriate for the use case. Knowing, from Service Discovery, that the Receiver accepts that type of referral and that it requires that version of the messageDefinition.
 

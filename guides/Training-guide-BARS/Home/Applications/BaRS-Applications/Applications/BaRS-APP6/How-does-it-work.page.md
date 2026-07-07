@@ -89,7 +89,7 @@ Calls may be re-routed by the BT Emergency Call Service to an Ambulance Service 
 - The referral Receiver is identified based on nationally agreed polygons that set geographic boundaries of responsibility for each AST. Service discovery will use these polygons to ascertain the ServiceID of the referral Receiver.
 - The Service ID is used to query the BaRS Endpoint Catalogue to identify the referral Receiver's CAD system's endpoint details
 - The sender will check that the Receiver supports the intended Referral use case before sending.
-- The referral Sender will send the BaRS Referral to the referral Receiver, which includes information required by the referral Receiver to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
+- The referral Sender will send the BaRS Referral to the referral Receiver, which includes information required by the referral Receiver to continue the patient's clinical care. This will also include the JourneyID created at the patient's first contact.
 
 ### Create Case
 - The referral Receiver's CAD will create a new case (Encounter) on receipt of the BaRS Referral and populate it with the patient and clinical details provided in the referral
