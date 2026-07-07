@@ -5,7 +5,7 @@ topic: core-StandardPattern-Endpoint-Introduction-1.5.0
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Important:  Versioning information - Preview</b>
 <p>
 
-This version of core is strictly a preview of what is currently in development for 1.4.x and should <b>not be built against.</b>
+This version of core is strictly a preview of what is currently in development for 1.5.0 and should <b>not be built against.</b>
 
 <table>
 <thead>
@@ -17,9 +17,9 @@ This version of core is strictly a preview of what is currently in development f
 </thead>
 <tbody>
 	<tr>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.5.0" target="_blank">v1.4.x</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.11.x</a></td>
-		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0" target="_blank">v1.4.x</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.5.0" target="_blank">v1.5.0</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</a></td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0" target="_blank">v1.5.0</a></td>
 	</tr>
 </tbody>
 </table>
