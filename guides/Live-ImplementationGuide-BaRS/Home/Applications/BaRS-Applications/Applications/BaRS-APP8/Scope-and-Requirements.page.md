@@ -65,8 +65,8 @@ Definitions used in these requirements:
 - The referral Receiver **must** clearly identify any included safeguarding concern to the end user
 - The referral Receiver **must** accurately represent information made by the Sender to the end user.
 - The referral Sender **must** make available the human readable identifier for the referral, included in the HTTP synchronous response, to the end user
-- Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.4.1, text:failure scenarios}} for more detail
-- Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.4.1, text:failure scenarios}} for more detail
+- Where the referral was <ins>not</ins> successful, the Receiver **must** send an appropriate response. See {{pagelink:core-failure_scenarios-1.5.0, text:failure scenarios}} for more detail
+- Where the referral was <ins>not</ins> successful, the Sender **must** present an appropriate message to the end user. See {{pagelink:core-failure_scenarios-1.5.0, text:failure scenarios}} for more detail
 - The referral Sender **must** indicate consent to share (for Direct Care) to the Receiver 
 - The referral Sender **must** indicate the urgency (using the [agreed codesystem](https://simplifier.net/nhsbookingandreferrals/bars-broker-priority-status)) of the request to the Receiver 
 
@@ -76,9 +76,9 @@ Definitions used in these requirements:
 
 
 ### Error Handling 
-- Suppliers **must** adhere to the {{pagelink:core-ErrorHandling-1.4.1, text:error handling guidance}} 
+- Suppliers **must** adhere to the {{pagelink:core-ErrorHandling-1.5.0, text:error handling guidance}} 
 
 
 ### Non Functional 
-- Suppliers **must** adhere to the {{pagelink:core-NFR-1.4.1, text:non functional requirements}}
+- Suppliers **must** adhere to the {{pagelink:core-NFR-1.5.0, text:non functional requirements}}
 
