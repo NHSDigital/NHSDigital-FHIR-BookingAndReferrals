@@ -32,7 +32,7 @@ The ability to -
 
 ## Interface
 
-The following table describes how the BaRS API accomodates these four capabilities using the [/Appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#post-/Appointment) endpoint and the [/Appointment/\{id\}](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#put-/Appointment/-id-) endpoint
+The following table describes how the BaRS API accommodates these four capabilities using the [/Appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#post-/Appointment) endpoint and the [/Appointment/\{id\}](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#put-/Appointment/-id-) endpoint
 
 | Capability | Endpoint | VERB | Description |
 |------------|-----------|-----|--------------|

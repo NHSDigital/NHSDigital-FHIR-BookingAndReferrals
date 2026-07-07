@@ -19,7 +19,7 @@ There are 4 capabilities that are required surrounding appointments. This sectio
 
 ## interface
 
-The following table describes how the BaRS API accomodates these 4 capabilities using the /Appointment endpoint and the /Appointment/[id] endpoint
+The following table describes how the BaRS API accommodates these 4 capabilities using the /Appointment endpoint and the /Appointment/[id] endpoint
 
 | Capability | Endpoint | VERB | Description |
 |------------|-----------|-----|--------------|

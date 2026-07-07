@@ -1,7 +1,7 @@
 ## Glossary
 
 </P>
-Below is a non exhaustive list of terms used throughout the BaRS documentation. 
+Below is a non-exhaustive list of terms used throughout the BaRS documentation. 
 </p>
 
 |Term / Abbreviation	|  What it stands for |

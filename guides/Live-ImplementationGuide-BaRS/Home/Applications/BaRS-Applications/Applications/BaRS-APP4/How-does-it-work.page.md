@@ -7,7 +7,7 @@ topic: APP4-HowDoesItWork
 
 This section describes how the primary operations used in this application work.
 
-Application 4 supports complex workflows which include enabling the the Requester to:
+Application 4 supports complex workflows which include enabling the Requester to:
 * Refer a patient for a specified activity to be carried out within a stated timescale (breach time)
 * Receive notification of if the referral has been rejected or accepted and is in progress (Interim Validation Response)
 * Retrieve the case by cancelling the referral
@@ -38,7 +38,7 @@ This details a 999 Ambulance Service Trust (Requester) Referral into the followi
 - Prior to making a Validation Request, the Requester will undertake a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch (CAD) system, using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. For cases with an ambulance disposition, local business rules will be applied to determine if the case meets the requirement for validation by a CAS clinician, Falls Community service Healthcare Professional (HCP). For cases requiring clinical validation in a CAS, this will usually be Ambulance Response Programme (ARP) priority C3 and C4 cases, but may include C2 segmentation cases, subject to local agreements between the 999 AST and the CAS.
 - A suitable Responder service is identified, based on the patient’s clinical need and location. Service discovery will use local directories or UEC DOS to ascertain the ServiceID
 - The Service ID is used to query the BaRS Endpoint Catalogue to identify the Receiver's endpoint details.
-- The Requester will send the Validation Request to the Responder, which includes information required by an appropriate HCP to continue the patent's clinical care. This will also include the JourneyID created at the patient's first contact.
+- The Requester will send the Validation Request to the Responder, which includes information required by an appropriate HCP to continue the patient's clinical care. This will also include the JourneyID created at the patient's first contact.
 - The Responder will acknowledge the Validation Request on receipt.
 - On receipt of the Acknowledgement (synchronous response), the Requester may move the case to a 'pending' stack. If the case exceeds the validation breach time before a validation response is received, a fail-safe process should be implemented to ensure that an ambulance is dispatched within the time frame determined by the original triage outcome.
 - If additional or changed information about the case is captured by the Requester subsequent to sending the Validation Request, but prior to receiving an Interim Validation Response or Validation Response, they may send a Validation Request Update to ensure that the Responder has the most up to date information.
