@@ -78,6 +78,10 @@ Using a nested set of *questionnaireResponse.item*, *questionnaireResponse.linkI
 ### Consent 
 In the BaRS UEC Applications the level of consent is stipulated to be for 'Direct Care' only. A referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 
 
+### Related Person 
+
+Related Person is used to carry information about the patient's Next of Kin and their contact details.  This is different to 3rd party contact details which are carried in the Patient resource.
+
 <hr>
 
 <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i>
