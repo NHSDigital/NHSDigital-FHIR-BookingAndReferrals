@@ -8,12 +8,12 @@ The Reschedule operation supports amending the slot a booking is made against. T
 
 Steps to Reschedule:
 
-* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/Appointment/-id-) operation using the .id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, a search of the Registry can be undertaken following the {{pagelink:core-StandardPattern-document-reference-Sender-1.5.0, text: Document Reference Standard Pattern - Sender}}. NB: If a match cannot be obtained using this method the process of updating must be performed manually
-* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/Slot) from the service
+* Perform a [GET](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/Appointment/-id-) operation using the .id of the appointment to /Appointment/\{id\}. Alternatively, if the .id is not known, a search of the Registry can be undertaken following the {{pagelink:core-StandardPattern-document-reference-Sender-1.5.0, text: Document Reference Standard Pattern - Sender}}. NB: If a match cannot be obtained using this method the process of updating must be performed manually
+* [Request Available slots](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/Slot) from the service
 * Select a new slot
 * Update the resource with the new slot. NB: Only the .slot element of the resource must be updated
-* Perform a [PATCH](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#patch-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
-* Once processed, the Receiver of the booking must [update (PUT)](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#put-/DocumentReference/-id-) the pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-Receiver-1.5.0, text: Document Reference Standard Pattern - Receiver}}. The principal update to the pointer is to change the .context element to alter the slot time - 
+* Perform a [PATCH](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#patch-/Appointment/-id-) operation using the id of the appointment to /Appointment/\{id\}
+* Once processed, the Receiver of the booking must [update (PUT)](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#put-/DocumentReference/-id-) the pointer in the central Registry, as described in {{pagelink:core-StandardPattern-document-reference-Receiver-1.5.0, text: Document Reference Standard Pattern - Receiver}}. The principal update to the pointer is to change the .context element to alter the slot time - 
 
 ```json
 "context": {

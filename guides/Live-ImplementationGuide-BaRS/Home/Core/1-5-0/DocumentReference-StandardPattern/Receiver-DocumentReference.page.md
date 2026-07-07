@@ -10,7 +10,7 @@ The FHIR DocumentReference resource allows you to create a reference to a clinic
 
 
 ### Step 1: Identify the booking or referral to create a pointer for
-When a Receiver processes a request for a booking (Appointment) or referral (ServiceRequest), the next step in the workflow is to create a pointer for the newly created resource (Appointment or ServiceRequest) on the central Registry. This will be undertaken via a POST [DocumentReference](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#post-/DocumentReference) request to the BaRS Proxy.
+When a Receiver processes a request for a booking (Appointment) or referral (ServiceRequest), the next step in the workflow is to create a pointer for the newly created resource (Appointment or ServiceRequest) on the central Registry. This will be undertaken via a POST [DocumentReference](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#post-/DocumentReference) request to the BaRS Proxy.
 
 
 ### Step 2: Set content of the DocumentReference (pointer)
@@ -28,7 +28,7 @@ The resource .id of the booking (Appointment) or referral (ServiceRequest) (crea
 	}
 ```
 
-The second identifier of note is the Receiving service who own the resource. The 'system' indicates the Service Discovery tool and the 'value', the identifier. In the code snippet below, the system '*https://fhir.nhs.uk/Id/dos-service-id*' indicates the Receiver service is on the Urgent and Emergency Care Directory of Services (UEC DoS) as service 2000072491. The Sender of any request will use the 'system' and 'value' here to build the base64 encoded HTTP Header NHSD-Target-Identifier, as defined for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/ServiceRequest/-id-). 
+The second identifier of note is the Receiving service who own the resource. The 'system' indicates the Service Discovery tool and the 'value', the identifier. In the code snippet below, the system '*https://fhir.nhs.uk/Id/dos-service-id*' indicates the Receiver service is on the Urgent and Emergency Care Directory of Services (UEC DoS) as service 2000072491. The Sender of any request will use the 'system' and 'value' here to build the base64 encoded HTTP Header NHSD-Target-Identifier, as defined for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/ServiceRequest/-id-). 
 
 ```json
 "identifier": [
@@ -95,20 +95,20 @@ The third identifier (currently optional) relates to the product-id, system '*ht
 ```
 
 ### Step 3: Save and Transmit the DocumentReference (pointer)
-Once all the necessary fields are populated, perform a [POST](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#post-/DocumentReference) of the DocumentReference to the /DocumentReference endpoint on the BaRS proxy. This will create a DocumentReference in the NRL.
+Once all the necessary fields are populated, perform a [POST](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#post-/DocumentReference) of the DocumentReference to the /DocumentReference endpoint on the BaRS proxy. This will create a DocumentReference in the NRL.
 
-After saving, the DocumentReference will be assigned a unique id (e.g., DocumentReference/12345). This can be used to reference or [retrieve](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/DocumentReference/-id-) the DocumentReference in the future.
+After saving, the DocumentReference will be assigned a unique id (e.g., DocumentReference/12345). This can be used to reference or [retrieve](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/DocumentReference/-id-) the DocumentReference in the future.
 
 ### Step 4: Verify the DocumentReference
-To ensure that the DocumentReference was created successfully, retrieve it using its [id](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/DocumentReference/-id-) or [search](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/DocumentReference) for it using relevant parameters. Make sure to validate the returned DocumentReference to confirm that all the contents are accurate.
+To ensure that the DocumentReference was created successfully, retrieve it using its [id](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/DocumentReference/-id-) or [search](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/DocumentReference) for it using relevant parameters. Make sure to validate the returned DocumentReference to confirm that all the contents are accurate.
 
 ### Updating a DocumentReference
-A DocumentReference can be updated by performing a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#put-/DocumentReference/-id-) request with the updated resource to the /DocumentReference endpoint on the BaRS proxy with the appropriate DocumentReference.id. A read operation must be performed prior to this to ensure that the new DocumentReference is the most up to date.
+A DocumentReference can be updated by performing a [PUT](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#put-/DocumentReference/-id-) request with the updated resource to the /DocumentReference endpoint on the BaRS proxy with the appropriate DocumentReference.id. A read operation must be performed prior to this to ensure that the new DocumentReference is the most up to date.
 
 **Note**: A Receiver can only update DocumentReference resources that they created and own.
 
 ### Delete a DocumentReference
-A DocumentReference can be removed by performing a [DELETE](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#delete-/DocumentReference/-id-) request to the /DocumentReference endpoint on the BaRS proxy with the appropriate DocumentReference.id. A read operation must be performed prior to this to ensure that the action is appropriate.
+A DocumentReference can be removed by performing a [DELETE](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#delete-/DocumentReference/-id-) request to the /DocumentReference endpoint on the BaRS proxy with the appropriate DocumentReference.id. A read operation must be performed prior to this to ensure that the action is appropriate.
 
 **Note**: A Receiver can only delete DocumentReference resources they created and own.
 

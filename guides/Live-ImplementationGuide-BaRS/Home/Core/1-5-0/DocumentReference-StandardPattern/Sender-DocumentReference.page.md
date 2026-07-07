@@ -8,7 +8,7 @@ topic: core-StandardPattern-document-reference-Sender-1.5.0
 The FHIR DocumentReference resource represents a reference to a clinical document or resource, in the case of BaRS a pointer to an active booking or referral. It contains metadata about the booking or referral, such as its type (booking or referral), author, and subject (the patient's NHS number), as well as a reference to the actual document's .id and where it resides (the service who owns it); the two key data points needed to retrieve it. 
 
 ### Step 2: Search for the booking or referral pointer (DocumentReference)
-FHIR DocumentReference resources holding pointers for BaRS bookings and referrals are stored in a central Registry, within NRL (National Record Locator), as decribed above, and interrogated through the [BaRS API DocumentReference](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/DocumentReference).
+FHIR DocumentReference resources holding pointers for BaRS bookings and referrals are stored in a central Registry, within NRL (National Record Locator), as decribed above, and interrogated through the [BaRS API DocumentReference](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/DocumentReference).
 
 To find a booking or referral location, you need to search for the appropriate DocumentReference resource from the Registry, using search parameters. It is mandatory to include the subject:identifier (the patient's NHS number). Other parameters can be used to filter the response further e.g type of document (booking and referral). 
 
@@ -17,7 +17,7 @@ Once you retrieve the Document Reference(s) (pointers) from the search, inspect 
 
 **identifier:** The DocumentReference will have several identifiers which are required to locate the booking or referral at a Receiver service.
 
-The .id of the booking or referral is indicated by the system '*https://fhir.nhs.uk/Id/BaRS-Identifier*'. The value can be used to directly request the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/ServiceRequest/-id-) by .id, once you know Receiver service holding it (see next identifier).
+The .id of the booking or referral is indicated by the system '*https://fhir.nhs.uk/Id/BaRS-Identifier*'. The value can be used to directly request the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/ServiceRequest/-id-) by .id, once you know Receiver service holding it (see next identifier).
 
 ```json
 "identifier": [
@@ -27,7 +27,7 @@ The .id of the booking or referral is indicated by the system '*https://fhir.nhs
 	}
 ```
 
-The second identifier, required to make the subsequent request for the booking or referral in question, has a system of '*https://fhir.nhs.uk/Id/dos-service-id*' and enables the Sender to direct their request to the Receiver service which owns it. The Sender will use the system and value here to build the base64 encoded HTTP Header NHSD-Target-Identifier, as defined for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/ServiceRequest/-id-).
+The second identifier, required to make the subsequent request for the booking or referral in question, has a system of '*https://fhir.nhs.uk/Id/dos-service-id*' and enables the Sender to direct their request to the Receiver service which owns it. The Sender will use the system and value here to build the base64 encoded HTTP Header NHSD-Target-Identifier, as defined for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/ServiceRequest/-id-).
 
 ```json
 "identifier": [
@@ -47,7 +47,7 @@ The third identifier (currently optional) relates to the product-id, system '*ht
 	}
 ```
 
-**type:** within the DocumentReference Resource, indicates whether the pointer is for a booking or referral. BaRS currently only supports bookings (749001000000101) and referrals (736253002), described using SNOMED codes. This information is required to direct the subsequent request to the correct endpoint for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/ServiceRequest/-id-)
+**type:** within the DocumentReference Resource, indicates whether the pointer is for a booking or referral. BaRS currently only supports bookings (749001000000101) and referrals (736253002), described using SNOMED codes. This information is required to direct the subsequent request to the correct endpoint for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/ServiceRequest/-id-)
 
 ```json
 "type": {
@@ -61,7 +61,7 @@ The third identifier (currently optional) relates to the product-id, system '*ht
 }
 ```
 
-**subject:** The subject will describe the patient, by means of an NHS number. This element is not explicitly required to request the specific resource dictated by the pointer but could be used to search a service more widely for related [bookings](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/Appointment) and [referrals](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/ServiceRequest), using the search by patient endpoints. 
+**subject:** The subject will describe the patient, by means of an NHS number. This element is not explicitly required to request the specific resource dictated by the pointer but could be used to search a service more widely for related [bookings](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/Appointment) and [referrals](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/ServiceRequest), using the search by patient endpoints. 
 
 ```json
 "subject": {
@@ -94,7 +94,7 @@ The third identifier (currently optional) relates to the product-id, system '*ht
 ```
 
 ### Step 4: Retrieve the booking or referral
-The booking or referral resource can be retrieved by making a GET request for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1#get-/ServiceRequest/-id-). 
+The booking or referral resource can be retrieved by making a GET request for the [booking](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/Appointment/-id-) or [referral](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0#get-/ServiceRequest/-id-). 
 
 The two key values required to make the request are the first two identifiers in the DocumentReference;  the resource .id ('*https://fhir.nhs.uk/Id/BaRS-Identifier*') and service id ('*https://fhir.nhs.uk/Id/dos-service-id*'). Use the resource .id populate the location of the request and service id to populate the NHSD-Target-Identifier HTTP Header, as described in the worked example below.  
 
