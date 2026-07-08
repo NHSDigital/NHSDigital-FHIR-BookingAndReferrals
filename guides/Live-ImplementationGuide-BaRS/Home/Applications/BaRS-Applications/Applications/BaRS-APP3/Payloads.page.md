@@ -5,7 +5,7 @@ topic: APP3-Payloads
 ## {{page-title}}
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.4.1, text:Standard Pattern Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.5.0, text:Standard Pattern Message Header}}. 
 
 The MessageHeader resource for the Referral Request should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-request'
@@ -46,7 +46,7 @@ When a BARS Sender populates the Location resource:
     *  what3words
 
 *  They **should** populate the *Location.address* for all property based locations. 
-*  They **should** populate *Location.address.line* which is a repeatable element, with the the order in which lines should appear in an address label
+*  They **should** populate *Location.address.line* which is a repeatable element, with the order in which lines should appear in an address label
 *  They **should** populate *Location.name* when there is a property name
 *  They **should** populate *Location.address.text* with a text representation of the full address (including the address name), with each line separated by a comma
 
@@ -91,7 +91,7 @@ The level of consent currently supported by BaRS is for 'Direct Care' only. In e
 
 ## Referral Cancellation Payload
 
-The ability to cancel a Referral Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.4.1, text:Standard Patterns - Cancellation}}.
+The ability to cancel a Referral Request is a core workflow in BaRS. For details on the use of the standard pattern for cancellation please see the following {{pagelink:core-SPCancellation-1.5.0, text:Standard Patterns - Cancellation}}.
 
 <br>
 <hr>

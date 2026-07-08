@@ -13,7 +13,7 @@ This page provides a catalogue of implementation guides that have been developed
 
 
 
-These guides are designed to be used in conjunction with the documentation for {{pagelink:design-core-1.4.1}}.
+These guides are designed to be used in conjunction with the documentation for {{pagelink:design-core-1.5.0}}.
 
 
 
@@ -23,12 +23,13 @@ These guides are designed to be used in conjunction with the documentation for {
 | {{pagelink:application2, text: Booking and Referrals into UEC (Application 2)}} | <p>111 Online - ED <br>111 Online - UTC <br> S&R - ED <br> S&R - UTC <br> <p>               | 2.0.0           | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.0.7" target="_blank">v1.0.0</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a> |
 | {{pagelink:application3, text: Referral into UEC (Application 3)}} | <p>999-CAS Referral<br> | 2.0.0     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.0.7" target="_blank">v1.0.0</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a> |
 | {{pagelink:application4, text: Referral into UEC for Validation (Application 4)}} | <p>999-CAS Validation<br> <p>999 AST to Falls Lifting Service<br> <p>999 AST to Community Services <br> | 2.0.0     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.0.7" target="_blank">v1.0.0</a> | <a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Design/BaRS-Core?version=1.0.0" target="_blank">v1.0.0</a> |
-| {{pagelink:application5, text: Referrals into Pharmacy (Application 5)}}      | <p>Primary Care to Community Pharmacy (Pharmacy First)<br> <p>Primary Care to Pharmacy Contraception (Oral Contraception) <br> <p>Primary Care to Pharmacy Blood Pressure Check Service<br> | 1.2.0     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">v1.3.0</a> | {{pagelink:design-core-1.4.1, text:v1.3.0}} |
+| {{pagelink:application5, text: Referrals into Pharmacy (Application 5)}}      | <p>Primary Care to Community Pharmacy (Pharmacy First)<br> <p>Primary Care to Pharmacy Contraception (Oral Contraception) <br> <p>Primary Care to Pharmacy Blood Pressure Check Service<br> | 1.2.0     | <a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0" target="_blank">v1.3.0</a> | {{pagelink:design-core-1.5.0, text:v1.3.0}} |
 
 
 <hr>
 
 ## Versioning Matrix
+
 
 Table detailing active versions of the latest Applications in Production (or currently being built to) and their supporting Implementation Guide, Core and API versions
 
@@ -73,6 +74,10 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</a></td>
 	</tr>
 	<tr>
+		<td>Application 1 v2.1.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</a></td>
+	</tr>
+	<tr>
 		<td>Application 2 v1.0.1</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">v1.1.0</a></td>
 	</tr>
@@ -101,7 +106,10 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 3 v1.0.0</td>
+		<td>Application 2 v2.0.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</a></td>
+	</tr>
+	<tr><td>Application 3 v1.0.0</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
 	<tr>
@@ -183,10 +191,6 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 6 v1.0.0-beta.7</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
-	</tr>
-	<tr>
 		<td>Application 6 v1.0.0-beta.8</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.1" target="_blank">v1.11.1</a></td>
 	</tr>
@@ -197,14 +201,10 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">1.0.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 8 v1.0.0-alpha</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
-		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.11.0" target="_blank">v1.4.0</a></td>
-		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1" target="_blank">1.4.x</a></td>
-	</tr>
-	<tr>
-		<td>Application 8 v1.0.0-alpha.2</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.1" target="_blank">v1.11.1</a></td>
+		<td>Application 8 v1.0.0-alpha.3</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</a></td>
+		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.12.0" target="_blank">v1.5.0</a></td>
+		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0" target="_blank">1.5.x</a></td>
 	</tr>
 	<tr>
 		<td></td>

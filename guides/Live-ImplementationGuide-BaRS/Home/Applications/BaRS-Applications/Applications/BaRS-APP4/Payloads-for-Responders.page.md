@@ -17,7 +17,7 @@ For Interim Validation Response example bundles see:
 <br>
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.4.1, text:Standard Pattern - Message Header}}. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.5.0, text:Standard Pattern - Message Header}}. 
 
 The MessageHeader resource in the Interim Validation Response should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
@@ -66,7 +66,7 @@ example bundles see:
 * For additional example bundles please check [BaRS Example Bundles](https://simplifier.net/nhsbookingandreferrals/~resources?category=Example&exampletype=Bundle&sortBy=LastUpdateDate_desc)
 
 ### MessageHeader Resource
-For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.4.1, text:Standard Pattern - Message Header}} for more information. 
+For detailed information on the use of MessageHeader please refer to the {{pagelink:core-SPMessageHeader-1.5.0, text:Standard Pattern - Message Header}} for more information. 
 
 The MessageHeader resource in the Interim Validation Response should have the following resource elements set as follows:
 * **MessageHeader.eventCoding** - **must** be populated with 'servicerequest-response'
@@ -104,7 +104,7 @@ When a BARS Responder populates the Location resource:
     *  what3words
 
 *  They **should** populate the *Location.address* for all property based locations. 
-*  They **should** populate *Location.address.line* which is a repeatable element, with the the order in which lines should appear in an address label
+*  They **should** populate *Location.address.line* which is a repeatable element, with the order in which lines should appear in an address label
 *  They **should** populate *Location.address.name* when there is a property name
 *  They **should** populate *Location.address.text* with a text representation of the full address (including the address name), with each line separated by a comma
 

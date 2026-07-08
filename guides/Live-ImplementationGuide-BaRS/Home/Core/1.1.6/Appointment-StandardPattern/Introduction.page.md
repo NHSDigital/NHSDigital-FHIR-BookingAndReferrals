@@ -12,7 +12,7 @@ topic: core-StandardPattern-appointment-Introduction-1.1.6
 
 The [BaRS API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) suite can be used where there is no specific use-case supported by the {{pagelink:Home/Applications/BaRS-Applications, text:Applications}} to fulfil generic Appointment workflows, referred to as Appointment Management Foundation. This section outlines the functionality supported, workflows involved and how these correspond with the [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0). 
 
-This includes using {{pagelink:core-StandardPattern-document-reference-1.1.6, text: DocumentReference Standard Pattern}} to write pointers for Appointments to a central respository, commonly referred to as the Registry. 
+This includes using {{pagelink:core-StandardPattern-document-reference-1.1.6, text: DocumentReference Standard Pattern}} to write pointers for Appointments to a central repository, commonly referred to as the Registry. 
 
 The Appointment Management Foundation is based on {{pagelink:design-core-1.1.6, text:BaRS Core}} and an understanding of the central tenets is essential before beginning. This includes: - 
 * {{pagelink:core-EndToEndWorkflow-1.1.6, text:End to end workflow }} - how Senders and Receivers, interacting through the central Proxy, negotiate compatibility and engage
@@ -29,7 +29,7 @@ There are four functions that are required surrounding appointments. This sectio
 
 ## Interface
 
-The following table describes how the BaRS API accomodates these four capabilities using the [/Appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#post-/Appointment) endpoint and the [/Appointment/\{id\}](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#put-/Appointment/-id-) endpoint
+The following table describes how the BaRS API accommodates these four capabilities using the [/Appointment](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#post-/Appointment) endpoint and the [/Appointment/\{id\}](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_1_0#put-/Appointment/-id-) endpoint
 
 | Capability | Endpoint | VERB | Description |
 |------------|-----------|-----|--------------|

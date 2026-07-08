@@ -1,28 +1,28 @@
-## Current Release 1.11.1
+## Current Release 1.12.0
 
 Product Link           | Version | Handle  | Phase    | State           | Release Date | Stability  | Change Log Link
 -----------------------|---------|---------|----------|-----------------|--------------|------------|-----------------
-Implementation Guide   | 1.11.1   | v1      | Live     | Current Release | 19/05/2026 | Stable     |{{pagelink:trn-General}}
-[FHIR Package](https://simplifier.net/packages/uk.nhsdigital.bars.r4/1.40.0) | 1.40.0| v1      | Live     | Current Release | 19/05/2026  | Stable     |
-{{pagelink:design-core-1.4.1, text:BaRS Core}}              | 1.4.1   | v1      | Live     | Current Release | 19/05/2026   | Stable     |{{pagelink:trn-core, text: BaRS Core Change Log}}
-[API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1)    | 1.4.1   | v1      | Live     | Current Release | 19/05/2026  | Stable     |{{pagelink:trn-api}}
+Implementation Guide   | 1.12.0   | v1      | Live     | Current Release | 16/07/2026 | Stable     |{{pagelink:trn-General}}
+[FHIR Package](https://simplifier.net/packages/uk.nhsdigital.bars.r4/1.41.0) | 1.41.0| v1      | Live     | Current Release | 16/07/2026  | Stable     |
+{{pagelink:design-core-1.5.0, text:BaRS Core}}              | 1.5.0   | v1      | Live     | Current Release | 16/07/2026   | Stable     |{{pagelink:trn-core, text: BaRS Core Change Log}}
+[API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0)    | 1.5.0   | v1      | Live     | Current Release | 16/07/2026  | Stable     |{{pagelink:trn-api}}
 {{pagelink: build-testing, text: TKW}}  | 1.0.21   | v1      | Live     | Current Release | 12/11/2025   | Stable     |{{pagelink:trn-tkw}}
-{{pagelink:application1, text:BaRS-APP1}}   | 2.0.0   | v1      | Live     | Current Release | 12/11/2025   | Stable     |{{pagelink:trn-app1,text:BaRS APP1 Change Log}}
-{{pagelink:application2, text:BaRS-APP2}}   | 2.0.0   | v1      | Live     | Current Release | 12/11/2025   | Stable     |{{pagelink:trn-app2,text:BaRS APP2 Change Log}}
+{{pagelink:application1, text:BaRS-APP1}}   | 2.1.0   | v1      | Live     | Current Release | 16/07/2026   | Stable     |{{pagelink:trn-app1,text:BaRS APP1 Change Log}}
+{{pagelink:application2, text:BaRS-APP2}}   | 2.1.0   | v1      | Live     | Current Release | 16/07/2026   | Stable     |{{pagelink:trn-app2,text:BaRS APP2 Change Log}}
 {{pagelink:application3, text:BaRS-APP3}}   | 2.0.0   | v1      | Live     | Current Release | 12/11/2025   | Stable |{{pagelink:trn-app3,text:BaRS APP3 Change Log}}
 {{pagelink:application4, text:BaRS-APP4}}   | 2.0.0   | v1      | Live     | Current Release | 12/11/2025   | Stable |{{pagelink:trn-app4,text:BaRS APP4 Change Log}}
 {{pagelink:application5, text:BaRS-APP5}}   | 1.2.0   | v1      | Live     | Current Release | 26/03/2026   | Stable |{{pagelink:trn-app5,text:BaRS APP5 Change Log}}
 {{pagelink:application6, text:BaRS-APP6}}   | 1.0.0-beta.8 | beta      |      | Current Release | 19/05/2026   | Pre-Release |{{pagelink:trn-app6,text:BaRS APP6 Change Log}}
 {{pagelink:application7, text:BaRS-APP7}}   | 1.0.0-alpha.4 | alpha      |      | Current Release | 02/07/2025  | Pre-Release |{{pagelink:trn-app7,text:BaRS APP7 Change Log}}
-{{pagelink:application8, text:BaRS-APP8}}   | 1.0.0-alpha.2 | alpha      |      | Current Release | 19/05/2026  | Pre-Release |{{pagelink:trn-app8,text:BaRS APP8 Change Log}}
+{{pagelink:application8, text:BaRS-APP8}}   | 1.0.0-alpha.3 | alpha      |      | Current Release | 16/07/2026  | Pre-Release |{{pagelink:trn-app8,text:BaRS APP8 Change Log}}
 
 
 
 ### Overview of the release
 
-Release 1.11.1 of the BaRS Implementation Guide is a patch release including an additional encounter.status value for Application 6 CAD to CAD Out of Area Referral, published with supporting documentation. BaRS Core version is uplifted to 1.4.1 in line with an update to the BaRS FHIR API OAS file.  Updates to the BaRS FHIR API OAS file are limited to changes relating to internal endpoint catalogue management and do not affect supplier development.
-
-Also included in this release are minor changes to BaRS Application 8 and bug fixes and corrections throughout the guide.
+Release 1.12.0 of the BaRS Implementation Guide is a minor release including an additional optional FHIR resource for Related Person in the payloads for Applications 1 and 2. Message definitions and examples in Simplifier are updated to support this change. Following supplier feedback, use case category codes have been updated to support senders in implementing the change effectively. Minor changes are applied to the implementation guidance for Application 8 following consultation at alpha stage. BaRS Core version is uplifted to 1.5.0 in line with an update to the BaRS FHIR API OAS file.  
+ 
+Also included in this release are minor changes and bug fixes and corrections throughout the guide.
  
 A clinical safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new hazards have been identified in this release. The latest version of the BaRS clinical safety case and hazard log can be downloaded from the <a href= "https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#hazard-log-and-clinical-safety-case-report-cscr-" target="_blank"> BaRS FHIR API onboarding support information page </a>.
 
@@ -74,6 +74,10 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</a></td>
 	</tr>
 	<tr>
+		<td>Application 1 v2.1.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</a></td>
+	</tr>
+	<tr>
 		<td>Application 2 v1.0.1</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.1.0" target="_blank">v1.1.0</a></td>
 	</tr>
@@ -102,7 +106,10 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.10.0" target="_blank">v1.10.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 3 v1.0.0</td>
+		<td>Application 2 v2.0.0</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</a></td>
+	</tr>
+	<tr><td>Application 3 v1.0.0</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.4.0" target="_blank">v1.4.0</a></td>
 	</tr>
 	<tr>
@@ -184,10 +191,6 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 6 v1.0.0-beta.7</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
-	</tr>
-	<tr>
 		<td>Application 6 v1.0.0-beta.8</td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.1" target="_blank">v1.11.1</a></td>
 	</tr>
@@ -198,14 +201,10 @@ Table detailing active versions of the latest Applications in Production (or cur
 		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1_0_0" target="_blank">1.0.0</a></td>
 	</tr>
 	<tr>
-		<td>Application 8 v1.0.0-alpha</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.0" target="_blank">v1.11.0</a></td>
-		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.11.0" target="_blank">v1.4.0</a></td>
-		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1" target="_blank">1.4.x</a></td>
-	</tr>
-	<tr>
-		<td>Application 8 v1.0.0-alpha.2</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.1" target="_blank">v1.11.1</a></td>
+		<td>Application 8 v1.0.0-alpha.3</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</a></td>
+		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.12.0" target="_blank">v1.5.0</a></td>
+		<td rowspan=1 style="text-align: center; vertical-align: middle;"><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0" target="_blank">1.5.x</a></td>
 	</tr>
 	<tr>
 		<td></td>

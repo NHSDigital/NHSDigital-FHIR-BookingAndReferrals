@@ -21,10 +21,10 @@ topic: Application8
 </thead>
 <tbody>
 	<tr>
-		<td>Application 8 v1.0.0-alpha.2</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.11.1" target="_blank">v1.1.x</a></td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.11.1" target="_blank">v1.11.1</a></td>
-		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1" target="_blank">v1.4.x</a></td>
+		<td>Application 8 v1.0.0-alpha.3</td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.12.0" target="_blank">v1.1.x</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</a></td>
+		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0" target="_blank">v1.5.x</a></td>
 	</tr>
 </tbody>
 </table>
@@ -46,7 +46,7 @@ This application supports the use of the following use cases:
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.4.1, text:BaRS Core implementation guide}} and [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.4.1) when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.5.0, text:BaRS Core implementation guide}} and [API Specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.5.0) when developing to the standard. 
 
 ### Data model endorsements
 

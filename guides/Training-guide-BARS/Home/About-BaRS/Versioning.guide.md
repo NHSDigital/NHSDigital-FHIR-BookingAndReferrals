@@ -8,7 +8,7 @@ The Booking and Referral Standard (BaRS) will follow [Semantic Versioning](https
 Full details can be found at the [Semantic Versioning](https://semver.org/) site, key points outlined below:
 
 #### Major version
-The major version is incremented when an incompatible changes are made, i.e. a non backwards compatible change.
+The major version is incremented when incompatible changes are made, i.e. a non backwards compatible change.
 
 #### Minor version
 The minor version increments when changes are made in a backwards compatible manner.

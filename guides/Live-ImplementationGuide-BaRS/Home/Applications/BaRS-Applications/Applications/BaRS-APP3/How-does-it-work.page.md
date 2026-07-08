@@ -16,7 +16,7 @@ This workflow details a referral into a CAS from a 999 Ambulance Service Trust (
 - Prior to referral the 999 AST will undertake a triage of the patient to determine the acuity of the case. This will typically be undertaken by a call handler on the Computer Aided Dispatch system (CAD) using an approved Clinical Decision Support System (CDSS) such as NHS Pathways or AMPDS. For cases with a non-ambulance disposition (CAT5), local business rules will be applied to determine if the case meets the requirement for referral to a CAS for consultation.
 - For cases requiring a referral to CAS, a suitable CAS is identified based on the patient’s clinical need and location. Service discovery will use local directories or UEC DOS to ascertain the Service ID
 - The Service ID is used to query the BaRS endpoint catalogue to identify the receiving CAS system's endpoint details. This process is happening in the background that Senders and Receivers do not need to manage. 
-- The 999-AST will send the referral to the CAS via the BaRS Proxy, including the information required by a CAS Clinician to continue the patent's clinical care. This will also include the Journey ID created at the patient's first contact.
+- The 999-AST will send the referral to the CAS via the BaRS Proxy, including the information required by a CAS Clinician to continue the patient's clinical care. This will also include the Journey ID created at the patient's first contact.
 - The CAS system will acknowledge the referral on receipt, after which the case may be closed by the 999 AST on the CAD. It should be noted that Duty of care is passed from the 999 AST with the referral and is considered accepted by the CAS on receipt of the acknowledgement.
 - Prior to the consultation the case will typically be posted to a queue for prioritisation, based on information in the referral. This may be based on the call back time, determined locally or nationally based on the triage outcome codes. E.g. Where cases have a Pathways disposition (Dx) these are prioritised in accordance with the criteria specified in the IUC CAS service specification which sets out call-back times by Dx code.
 - The CAS Clinician will contact the patient, or their representative, utilising information in the referral message, then undertakes a consultation which may include a triage. The consultation will be informed by the clinical information sent by the referring service. This will be recorded in the CAS system.
@@ -30,7 +30,7 @@ To support the workflows for this application of the standard the operations tha
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.4.1, text:standard pattern for BaRS Composite Messages}}.
+Making a referral for this application follows the {{pagelink:Core-StandardPattern-1.5.0, text:standard pattern for BaRS Composite Messages}}.
 
 The Message Definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -102,7 +102,7 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.4.1, text:standard pattern for BaRS cancellation}}. 
+To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.5.0, text:standard pattern for BaRS cancellation}}. 
 
 The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 

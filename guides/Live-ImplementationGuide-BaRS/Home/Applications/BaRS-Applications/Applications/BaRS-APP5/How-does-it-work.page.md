@@ -175,7 +175,7 @@ When a service is chosen, the "Service ID" field in the DOS data will be used as
 
 ### Make a Referral
 
-Making a referral for this application follows the {{pagelink:core-standardpattern-1.4.1, text:standard pattern for BaRS Composite Messages}}.
+Making a referral for this application follows the {{pagelink:core-standardpattern-1.5.0, text:standard pattern for BaRS Composite Messages}}.
 
 The Message Definition that defines this payload for this application is: {{link:MessageDefinition-BARS-MessageDefinition-ServiceRequest-Request-Referral}}
 <p>
@@ -249,7 +249,7 @@ X-Correlation-Id = <GUID_000002>
 
 ### Cancel a Referral
 
-To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.4.1, text:standard pattern for BaRS cancellation}}. 
+To cancel a referral this Application follows the {{pagelink:core-SPCancellation-1.5.0, text:standard pattern for BaRS cancellation}}. 
 
 The Message Definition that defines the payload for this Application is: {{link:messagedefinition-barsmessagedefinitionservicerequestrequestcancelled}}
 
