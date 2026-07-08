@@ -20,8 +20,8 @@ Implementation Guide   | 1.12.0   | v1      | Live     | Current Release | 16/07
 
 ### Overview of the release
 
-Release 1.12.0 of the BaRS Implementation Guide is a minor release including an additional optional FHIR resource for Related Person in the payloads for Applications 1 and 2. Message definitions and examples in Simplifer are updated to support this change.  Use case category codes have been updated to support senders in implementing the change effectively, following supplier feedback. Minor changes are applied to the implmentation guidance for Application 8 following consulation at alpha stage. BaRS Core version is uplifted to 1.5.0 in line with an update to the BaRS FHIR API OAS file.  
-
+Release 1.12.0 of the BaRS Implementation Guide is a minor release including an additional optional FHIR resource for Related Person in the payloads for Applications 1 and 2. Message definitions and examples in Simplifier are updated to support this change. Following supplier feedback, use case category codes have been updated to support senders in implementing the change effectively. Minor changes are applied to the implementation guidance for Application 8 following consultation at alpha stage. BaRS Core version is uplifted to 1.5.0 in line with an update to the BaRS FHIR API OAS file.  
+ 
 Also included in this release are minor changes and bug fixes and corrections throughout the guide.
  
 A clinical safety assessment of the scope of this release has determined that it has not significantly changed the clinical safety profile of the BaRS. No new hazards have been identified in this release. The latest version of the BaRS clinical safety case and hazard log can be downloaded from the <a href= "https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/onboarding-support-information#hazard-log-and-clinical-safety-case-report-cscr-" target="_blank"> BaRS FHIR API onboarding support information page </a>.
