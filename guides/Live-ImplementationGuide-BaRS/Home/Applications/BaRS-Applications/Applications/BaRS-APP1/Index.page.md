@@ -20,7 +20,7 @@ topic: Application1
 <tbody>
 	<tr>
 		<td>Application 1 v2.1.0</td>
-		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.10.0" target="_blank">v1.0.x</a></td>
+		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/Home/Core?version=1.12.0" target="_blank">v1.0.x</a></td>
 		<td><a href="https://simplifier.net/guide/nhsbookingandreferralstandard/home?version=1.12.0" target="_blank">v1.12.0</td>
 		<td><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.0.7" target="_blank">v1.0.0</a></td>
 	</tr>

@@ -52,7 +52,7 @@ This application supports the use of the following use cases:
 
 ### Overview
 
-This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.4.1, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
+This page provides guidance for implementing the Referral Standard (BaRS) specifically for the use cases listed above. It should be used alongside the {{pagelink:design-core-1.5.0, text:BaRS Core implementation guide}} and Payload Definitions when developing to the standard. 
 
 </br>
 </br>
