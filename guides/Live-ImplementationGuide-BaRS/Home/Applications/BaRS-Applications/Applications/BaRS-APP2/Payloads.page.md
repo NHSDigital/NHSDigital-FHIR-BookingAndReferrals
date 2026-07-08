@@ -41,7 +41,7 @@ The Encounter is used to represent the interaction between a patient and healthc
 
 In the initial referral request, the Sender will include an Encounter resource as the container for their assessment, which established the need for the referral. This encounter **should** include a reference to the Sender's assessment under *encounter.identifier*. Additionally, the *encounter.episodeOfCare* **must** be populated with a 'Journey ID' reference which can be used in subsequent referrals to allow the audit of the route a patient took through service providers to resolve their initial request for care. 
 
-A second Encounter resource is used to transfer the human readable reference of the newly created referral, at the Receiver side. When a referral request is made, the Receiver **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response to the Sender's request. This new 'planned' encounter will have both an Id and an Identifier value, indicating the Receiver's human readable and local references, respectively. This secondary, 'planned', encounter is <ins>not</ins> mandatory and has a cardinality of 0..1, unlike the primary encounter resource (1..1)(See the Entity Relationship Diagram for reference). The human readable (Identifier) reference is intended to allow Senders to provide something to the patient which they can take between services to support consistent joined up care, although, it is also a useful link for the services themselves to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
+A second Encounter resource is used to transfer the human readable reference of the newly created referral, at the Receiver side. When a referral request is made, the Receiver **should** include a new, secondary, encounter resource with the status of 'planned' in their synchronous HTTP response to the Sender's request. This new 'planned' encounter will have both an id and an identifier value, representing the Receiver's local reference and human readable reference respectively. This secondary, 'planned', encounter is <ins>not</ins> mandatory and has a cardinality of 0..1, unlike the primary encounter resource (1..1)(See the Entity Relationship Diagram for reference). The human readable (Identifier) reference is intended to allow Senders to provide something to the patient which they can take between services to support consistent joined up care, although, it is also a useful link for the services themselves to use when discussing a patient's transition of care. The local (Id) reference is not intended to be human readable but rather machine readable.
 
 ### CarePlan Resource
 The CarePlan resource is used in a referral request to communicate the assessment triage outcome and any associated clinical information, based on the assessment performed by the Sender. The Receiver will to utilise the detail in this resource to summarise what the previous assessment ascertained about the patient, to be used in any subsequent consultation with the patient.
@@ -77,6 +77,10 @@ Using a nested set of *questionnaireResponse.item*, *questionnaireResponse.linkI
 
 ### Consent 
 In the BaRS UEC Applications the level of consent is stipulated to be for 'Direct Care' only. A referral **must** contain a Consent resource and it **must** adhere to the [example](https://simplifier.net/NHSBookingandReferrals/8fc39b95-89a6-45fb-914f-1458a10e9e14/~json) provided under the BaRS FHIR assets. 
+
+### Related Person 
+
+Related Person is used to carry information about the patient's Next of Kin and their contact details.  This is different to 3rd party contact details which are carried in the Patient resource.
 
 <hr>
 
