@@ -5,7 +5,7 @@
   </patient>
   <relationship> 
     <coding> 
-      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/> 
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/> 
       <code value="N"/> 
 	  <display value="Next-of-Kin" />
     </coding>     
