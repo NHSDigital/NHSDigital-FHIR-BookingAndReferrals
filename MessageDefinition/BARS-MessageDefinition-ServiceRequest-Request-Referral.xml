@@ -215,4 +215,10 @@
     <min value="0" />
     <max value="1" />
   </focus>
+  <focus>
+    <code value="RelatedPerson" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+    <min value="0" />
+    <max value="*" />
+  </focus>
 </MessageDefinition>

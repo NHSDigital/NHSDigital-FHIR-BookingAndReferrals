@@ -1,0 +1,24 @@
+<RelatedPerson xmlns="http://hl7.org/fhir">
+ <id value="b7494ac0-dd23-4ec5-8ff7-132c43c30e53"/>
+  <patient> 
+    <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"/> 
+  </patient>
+  <relationship> 
+    <coding> 
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/> 
+      <code value="N"/> 
+	  <display value="Next-of-Kin" />
+    </coding>     
+  </relationship>
+  <name> 
+    <use value="usual"/> 
+    <family value="Peter"/> 
+    <given value="Frend"/> 
+  </name> 
+  <telecom> 
+    <system value="phone"/> 
+    <value value="07990330033"/> 
+    <use value="mobile"/> 
+  </telecom>
+  <gender value="male"/>
+</RelatedPerson> 
