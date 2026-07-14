@@ -6,7 +6,7 @@
   <name value="BARS Message Definition ServiceRequest - Response Referral" />
   <title value="BARS Message Definition ServiceRequest - Response Referral" />
   <status value="active" />
-  <date value="2025-03-24" />
+  <date value="2026-07-13" />
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
