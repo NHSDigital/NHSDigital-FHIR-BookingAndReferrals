@@ -1,5 +1,5 @@
 ---
-topic: core-EndToEndWorkflow-HTTPResponseHeader-1.5.0
+topic: core-EndToEndWorkflow-HTTPResponseHeader-1.6.0
 ---
 
 

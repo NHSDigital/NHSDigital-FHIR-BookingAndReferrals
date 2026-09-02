@@ -1,5 +1,5 @@
 ---
-topic: core-EndToEndWorkflow-Transactional-Integrity-1.5.0
+topic: core-EndToEndWorkflow-Transactional-Integrity-1.6.0
 ---
 
 ## {{page-title}}

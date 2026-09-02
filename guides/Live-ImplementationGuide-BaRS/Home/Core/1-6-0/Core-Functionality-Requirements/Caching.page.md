@@ -1,5 +1,5 @@
 ---
-topic: core-FunctionalityRequirements-Caching-1.5.0
+topic: core-FunctionalityRequirements-Caching-1.6.0
 ---
 
 ### Caching

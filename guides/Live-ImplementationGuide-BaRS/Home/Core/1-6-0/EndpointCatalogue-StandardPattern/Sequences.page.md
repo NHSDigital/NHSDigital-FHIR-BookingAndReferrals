@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-Endpoint-Sequences-1.5.0
+topic: core-StandardPattern-Endpoint-Sequences-1.6.0
 ---
 
 # Sequences

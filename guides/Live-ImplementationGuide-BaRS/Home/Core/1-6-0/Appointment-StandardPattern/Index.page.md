@@ -1,3 +1,3 @@
 ---
-topic: core-StandardPattern-appointment-1.5.0
+topic: core-StandardPattern-appointment-1.6.0
 ---

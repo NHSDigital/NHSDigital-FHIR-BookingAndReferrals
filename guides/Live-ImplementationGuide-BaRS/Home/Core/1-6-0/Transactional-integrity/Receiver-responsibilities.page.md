@@ -1,5 +1,5 @@
 ---
-topic: Core-TransactionalIntegrity-Receiver-1.5.0
+topic: Core-TransactionalIntegrity-Receiver-1.6.0
 ---
 
 ## Receiver responsibilities

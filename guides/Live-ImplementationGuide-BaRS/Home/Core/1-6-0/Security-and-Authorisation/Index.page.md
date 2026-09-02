@@ -1,4 +1,4 @@
 ---
-topic: core-Security-1.5.0
+topic: core-Security-1.6.0
 ---
 

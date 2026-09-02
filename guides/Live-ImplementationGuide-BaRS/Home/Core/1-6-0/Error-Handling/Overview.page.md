@@ -1,5 +1,5 @@
 ---
-topic: core-ErrorHandling-Overview-1.5.0
+topic: core-ErrorHandling-Overview-1.6.0
 ---
 
 ### Overview

@@ -1,5 +1,5 @@
 ---
-topic: core-ErrorHandling-OpOut-1.5.0
+topic: core-ErrorHandling-OpOut-1.6.0
 ---
 
 ### OperationOutcome Example

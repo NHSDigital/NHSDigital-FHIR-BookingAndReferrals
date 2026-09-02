@@ -1,5 +1,5 @@
 ---
-topic: core-Security-Oauth-1.5.0
+topic: core-Security-Oauth-1.6.0
 ---
 
 ## OAuth Endpoints

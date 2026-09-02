@@ -1,5 +1,5 @@
 ---
-topic: core-StandardPattern-Endpoints-1.5.0
+topic: core-StandardPattern-Endpoints-1.6.0
 ---
 
 

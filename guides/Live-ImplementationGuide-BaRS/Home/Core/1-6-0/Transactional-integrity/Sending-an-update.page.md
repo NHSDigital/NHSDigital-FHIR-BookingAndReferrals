@@ -1,5 +1,5 @@
 ---
-topic: Core-TransactionalIntegrity-Update-1.5.0
+topic: Core-TransactionalIntegrity-Update-1.6.0
 ---
 
 ## Sending an update

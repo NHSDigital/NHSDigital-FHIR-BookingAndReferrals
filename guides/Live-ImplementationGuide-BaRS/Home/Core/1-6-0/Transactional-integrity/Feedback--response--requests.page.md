@@ -1,5 +1,5 @@
 ---
-topic: Core-TransactionalIntegrity-Feedback-1.5.0
+topic: Core-TransactionalIntegrity-Feedback-1.6.0
 ---
 
 ## Feedback (response) requests

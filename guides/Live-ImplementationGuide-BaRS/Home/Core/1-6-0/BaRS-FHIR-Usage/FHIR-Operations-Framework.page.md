@@ -1,5 +1,5 @@
 ---
-topic: core-FHIRUsage-FHIR-Operations-1.5.0
+topic: core-FHIRUsage-FHIR-Operations-1.6.0
 ---
 
 ## FHIR Operations framework 

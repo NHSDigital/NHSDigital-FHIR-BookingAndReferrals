@@ -1,5 +1,5 @@
 ---
-topic: core-SPFindResource-1.5.0
+topic: core-SPFindResource-1.6.0
 ---
 
 
