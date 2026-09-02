@@ -1,0 +1,20 @@
+- name: Index
+  filename: Index.page.md
+- name: Introduction
+  filename: Introduction.page.md
+- name: Message Routing
+  filename: Message-Routing.page.md
+- name: Capability Statement
+  filename: Capability-Statement.page.md
+- name: GET /MessageDefinition
+  filename: GET--MessageDefinition.page.md
+- name: GET /Slots
+  filename: GET--Slots.page.md
+- name: GET /Appointment
+  filename: GET--Appointment.page.md
+- name: GET /ServiceRequest
+  filename: GET--ServiceRequest.page.md
+- name: Bundle Processing
+  filename: Bundle-Processing.page.md
+- name: General Failure Scenarios
+  filename: General-Failure-Scenarios.page.md
