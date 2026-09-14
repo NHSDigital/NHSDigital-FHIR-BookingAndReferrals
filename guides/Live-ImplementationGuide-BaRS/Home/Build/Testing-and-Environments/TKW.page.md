@@ -152,7 +152,7 @@ The follow is a list of headers needed for the requests, these follow the patter
 |New referral for Out-of-Area CAD referral|6|NHSD Target Identifier (HTTP Header)|2000159910|Request will be validated against the Application6 Out-of-Area CAD-CAD use-case|
 |Get Referral - HTTP 405|1, 2, 3, 5 & 6|/ServiceRequest/61215702-0049-4d76-9807-2123f0a6ca15||GET must be for ServiceRequest Id 61215702-0049-4d76-9807-2123f0a6ca15 and returns 405|
 |Get Referral - HTTP 429|1, 2, 3, 5 & 6|/ServiceRequest/9d280ad9-6dda-46d2-a75e-f5b47b2f4e87||GET must be for ServiceRequest Id 9d280ad9-6dda-46d2-a75e-f5b47b2f4e87 and returns 429|
-|Get Referral - HTTP 503|1, 2, 3, 5 & 6|/ServiceRequest/0b42eac3-0175-43c8-bbab-efaa8ca31ccf||GET must be for ServiceRequest Id 4d65ddaa-4d09-41cd-87c9-aeb9c0c96352 and returns 503|
+|Get Referral - HTTP 503|1, 2, 3, 5 & 6|/ServiceRequest/4d65ddaa-4d09-41cd-87c9-aeb9c0c96352||GET must be for ServiceRequest Id 4d65ddaa-4d09-41cd-87c9-aeb9c0c96352 and returns 503|
 
 ## Validation 
 
