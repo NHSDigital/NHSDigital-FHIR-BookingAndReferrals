@@ -14,7 +14,7 @@ Request for an **Account Manager** to be set up by sending an email to the BaRS 
 
 When planning a project to build a BaRS solution, the inclusion of assurance must exist from the outset. 
 
-The process of being assured via the SCAL can take between 2-4 weeks (average), from the point of the first complete submission. This allows some time in any plan for resubmissions after review by the Solution Assurance team.  
+The process of being assured via the SCAL can vary depending on the completeness and quality of the first submission, requests for further information, and any required resumbmissions after review by the Solution Assurance team. Sufficient time should therefore be included in any project plan for the assurance process.
 
 It is advised the SCAL requirements are reviewed after reading the implementation guidance. The two combined will help build a backlog of requirements for the anticipated solution. For example, there is implementation guidance for {{pagelink:core-EHFailureScenarios-1.1.3, text:error handling}} while the SCAL highlights the expectation for logging and auditing of errors.
 
