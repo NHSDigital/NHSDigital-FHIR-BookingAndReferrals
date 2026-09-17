@@ -22,6 +22,7 @@ Step 3: The above steps enables access to the APIM platform. To authorise the ac
 * App ID (PROD)* 
 * App ID (INT) (both App IDs are needed to connect to PROD)*
 * App Description*
+* Connected APIs*
 * Name of the Organisation
 * ODS code of the Organisation
 * Product Name (as stated in the SCAL or TCC)
