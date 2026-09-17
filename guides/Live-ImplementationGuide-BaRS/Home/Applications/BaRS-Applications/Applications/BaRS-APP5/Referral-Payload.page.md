@@ -478,7 +478,7 @@ This payload is used to transmit all the necessary information that is required 
 <p>
 <details>
   <summary>> <b class="barslink">MedicationStatement </b></summary>
-  <p> This resource MAY be used to carry new medication prescribed at the encounter. This SHOULD NOT be used to carry Medication History obtained from external sources.</p>
+  <p> This resource is used to carry **new** medication prescribed at the encounter. This SHOULD NOT be used to carry Medication History obtained from external sources.</p>
         {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement , hybrid}}
         <p>
 
@@ -550,7 +550,7 @@ This payload is used to transmit all the necessary information that is required 
 <p>
 <details>
   <summary>> <b class="barslink">Allergy Intolerance</b></summary>
-  <p>This resource MAY be used to carry new Allergies confirmed at the senders encounter. This SHOULD NOT be used to carry Allergy History obtained from external sources.</p>
+  <p>This resource is used to carry **new** Allergies confirmed at the senders encounter. This SHOULD NOT be used to carry Allergy History obtained from external sources.</p>
         {{tree:https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance , hybrid}}
         <p>
 

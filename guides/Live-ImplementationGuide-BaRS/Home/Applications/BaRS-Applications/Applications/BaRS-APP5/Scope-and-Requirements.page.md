@@ -56,8 +56,8 @@ The payload and workflow have been designed to support this service. Other {{pag
 - The referral Sender **must** include the Pharmacy Service that the request is intended for (from the defined list)
 - The referral Sender **must** indicate consent to share (for Direct Care) to the Receiver 
 - The referral Sender **should** indicate the urgency (providing timeframe within which included actions are expected to take place) of the request to the Receiver 
-- The referral Sender **must** indicate novel medications, established during the latest assessment and not available on existing records, to the Receiver 
-- The referral Sender **must** indicate novel allergies, established during the latest assessment and not available on existing records, to the Receiver 
+- The referral Sender **must** indicate medications administered or prescribed during the latest assessment and not available on existing records to the Receiver. 
+- The referral Sender **must** indicate new allergies, established during the latest assessment and not available on existing records, to the Receiver.
 - The referral Sender **must** indicate localised Special Patient Notes (SPNs) to the Receiver, if they hold any for the patient
 - The referral Sender **must** include the sending organisation type (organization.type in FHIR) to indicate the referral entry method into a Receiver
 - The referral Sender **should** include the Body Mass Index (BMI) of the patient being referred
