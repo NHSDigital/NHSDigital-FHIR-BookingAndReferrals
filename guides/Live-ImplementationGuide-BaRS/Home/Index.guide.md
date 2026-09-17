@@ -19,7 +19,7 @@ Step 4: {{pagelink:fhir_assets, text:FHIR Assets}}
 Supporting information about the use of FHIR to implement the standard and gain access to BaRS FHIR assets including examples, bundles and CodeSystems.
 
 Step 5: {{pagelink:build-testing, text:Testing and environments}}
-Understand how to connect to the BaRS environments; sandbox, integration and production. Find out how to access the testing tool (TKW). 
+Understand how to connect to the BaRS environments; integration and production. Find out how to access the testing tool (TKW). 
 
 Step 6: {{pagelink:assure, text:Gain Assurance}}
 Understand and complete the assurance process using the supplier conformance assessment list (SCAL). Follow steps to create an account with the Digital Onboarding Service.

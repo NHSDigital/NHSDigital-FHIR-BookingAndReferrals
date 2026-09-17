@@ -15,7 +15,6 @@ All inbound connections to the BaRS API will be presented with environment speci
 
 | Certificate CN                   | Thumbprint                               | Parent CN                        | Parent Thumbprint                        | Environment |
 |----------------------------------|------------------------------------------|----------------------------------|------------------------------------------|-------------|
-| dev.api.service.nhs.uk           | 8c41b2d0080ff4f83ef4164078d17bab5ed53cbb | DigiCert TLS RSA SHA256 2020 CA1 | 1c58a3a8518e8759bf075b76b750d4f2df264fcd | Sandbox     |
 | int.api.service.nhs.uk           | 634680dfafcf3a6e229741ae7ad5b98dbe70d822 | DigiCert TLS RSA SHA256 2020 CA1 | 1c58a3a8518e8759bf075b76b750d4f2df264fcd | INT         |
 | api.service.nhs.uk               | 2673f9045ba6f8ff8b7b82a9046f9b599af27cab | DigiCert TLS RSA SHA256 2020 CA1 | 1c58a3a8518e8759bf075b76b750d4f2df264fcd | Prod        |
 | DigiCert TLS RSA SHA256 2020 CA1 | 1c58a3a8518e8759bf075b76b750d4f2df264fcd | DigiCert Global Root CA          | a8985d3a65e5e5c4b2d7d66d40c6dd2fb19c5436 | All         |
@@ -171,10 +170,10 @@ ysWdIG7hl3g=
 
 ## Outbound
 
-All outbound connections from the BaRS API proxy to Receivers, with the exception of the Sandbox environment, will be secured using TLS-MA.
+All outbound connections from the BaRS API proxy to Receivers will be secured using TLS-MA.
 
 ### PTL
-The PTL environments will present a certificate issued by the NHS PTL Root Authority, as the RootCA. This does not include the Sandbox environment.
+The PTL environments will present a certificate issued by the NHS PTL Root Authority, as the RootCA.
 
 Details of the certificate chain described in the table below can be found in the [How to Connect Guidance](https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates).
 

@@ -40,7 +40,6 @@ There are numerous stages, environments, and systems involved. NHS England (BaRS
 
 | Testing Stage         | NHS Environment  | BaRS API (API-M)             | Solution Environment      | DoS (if required)       |
 |-----------------------|------------------|------------------------------|---------------------------|-------------------------|
-| API Spec 'Try this API'| Sandbox          | sandbox.api.service.nhs.uk    |                           |                         |
 | INT Development        | INT              | int.api.service.nhs.uk        | Development (supplier)    | UserTest                |
 | INT Assurance          | INT              | int.api.service.nhs.uk        | Development (supplier)    | UserTest                |
 | UAT Testing            | INT              | int.api.service.nhs.uk        | UAT (provider)            | UserTest                |

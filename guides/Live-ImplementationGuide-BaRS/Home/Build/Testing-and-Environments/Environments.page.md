@@ -1,7 +1,7 @@
 ## {{page-title}}
 
 
-BaRS Sandbox is available from the [BaRS API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0). It demonstrates key functionality without the overhead of security requirements, giving developers the opportunity to understand the product before progressing development.
+BaRS API usage examples are available from the [BaRS API specification](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir/v1.3.0). It demonstrates key functionality without the overhead of security requirements, giving developers the opportunity to understand the product before progressing development.
 
 BaRS Integration (INT) is a live-like environment for suppliers progressing with development and testing to use.  To use INT, you will need to follow the instructions to {{pagelink:connect-as-a-sender, text:Connect as a sender}} or {{pagelink:connect-as-a-receiver, text:Connect as a receiver}} 
 

@@ -20,4 +20,5 @@ This page will list all updates to the BaRS API Specification.
 |<mark style="background-color: LightGreen">non-breaking</mark> |Non-breaking changed introduced to the standard since the last release  |
 |<mark style="background-color: #ff8080">breaking</mark>        |Breaking changed introduced to the standard since the last release |
 |<mark style="background-color: Yellow">correction</mark>       |Correction to the standard since the last release |
+<hr>
 
