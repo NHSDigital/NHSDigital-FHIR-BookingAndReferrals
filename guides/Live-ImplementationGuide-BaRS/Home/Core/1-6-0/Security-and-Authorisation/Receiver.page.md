@@ -8,10 +8,8 @@ BaRS will utilise TLS-MA (Mutual Authentication) to communicate with receiving e
 
 - The receiver will need to request a certificate under the NHS Root CA
     - There are two different certificate chains for INT and Prod
-    - INT Certificate chains, which are superseded from 4/06/2024, can be found [here](https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates)
-    - Prod Certificate chains, which expire from 4/06/2024, can be found [here](https://digital.nhs.uk/services/path-to-live-environments/live-environment)
-    - **Current** INT Certificate chains can be found [here](https://pki.nhs.uk/G2Transition/)
-    - **Current** Prod Certificate chains can be found [here](https://pki.nhs.uk/G2Transition/)
+    - **Current** INT Certificate chains can be found [here](https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates)
+    - **Current** Prod Certificate chains can be found [here](https://digital.nhs.uk/services/path-to-live-environments/live-environment)
 
 - The receiving endpoint will present the certificate obtained for TLS-MA
 - The receiving endpoint will need to trust the Root CAs and SubCAs for their respective environments
