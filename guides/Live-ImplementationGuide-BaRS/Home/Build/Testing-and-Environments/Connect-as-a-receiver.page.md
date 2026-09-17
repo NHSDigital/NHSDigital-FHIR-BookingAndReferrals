@@ -20,7 +20,19 @@ There are different certificate chains for INT and PROD:
 
 Your domain must be registered before you begin the process to obtain your certificate  generating a certificate request. The fully qualified domain name (FQDN) is equal to the certificate name (CN) by convention.
 
-Step 3: Create a Certificate Signing Request (*.csr). This is the file you will send to us so we can generate a signed certificate for your endpoints. Create a private key; a password is optional.
+Step 3: The above steps enables access to the APIM platform. To authorise the access to the BaRS Proxy (which is hosted on the APIM Platform), you must provide the following to the BaRS Team (via email <england.bookingandreferralstandard@nhs.net>):
+
+* App Name* 
+* App ID (PROD)* 
+* App ID (INT) (both App IDs are needed to connect to PROD)*
+* App Description*
+* Connected APIs*
+* Name of the Organisation
+* ODS code of the Organisation
+
+The starred (\*) items can be found by logging into the [Digital Onboarding Service](https://onboarding.prod.api.platform.nhs.uk) and selecting 'Environment access' under the *Introduction and onboarding* section.
+
+Step 4: Create a Certificate Signing Request (*.csr). This is the file you will send to us so we can generate a signed certificate for your endpoints. Create a private key; a password is optional.
 ```
 openssl genpkey -algorithm RSA -out private.key -aes256
 ```
@@ -31,7 +43,7 @@ openssl req -new -key private.key -out request.csr
 ```
 **Note:** <small>_Generate the CSR with only the common name field populated, which must match the FQDN. All other fields can remain blank. The email field MUST be blank. Please note FQDNs MUST be in the .nhs.uk domain as we can only issue certificates in this domain._</small>
 
-Step 4: Send the .csr file to be signed by NHS England and get the client certificate. To do this, follow these environment specific steps:
+Step 5: Send the .csr file to be signed by NHS England and get the client certificate. To do this, follow these environment specific steps:
 
 <br> 
 
